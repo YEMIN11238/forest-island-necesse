@@ -1,0 +1,41 @@
+{
+  "sourceRecovery": {
+    "primary": "Vineflower 1.12.0; CFR 0.152 alternative HUD recovery",
+    "primaryInput": "Necesse-1.3.3.jar",
+    "primaryTopLevelFiles": 6493,
+    "extraServerClassFiles": 18,
+    "extraServerTopLevelFiles": 11,
+    "totalSourceFiles": 6504
+  },
+  "scope": "Complete core game source reconstruction and compilation attempt; no original game class files are on compiler classpath or copied into output. Runtime resources, libraries and Steam authentication remain supplied by the installed purchased game.",
+  "phases": [
+    {
+      "name": "CFR baseline",
+      "errorCount": 343,
+      "emittedClassFiles": 0
+    },
+    {
+      "name": "Vineflower syntax baseline",
+      "errorCount": 66,
+      "emittedClassFiles": 0
+    },
+    {
+      "name": "Anonymous cast repair",
+      "errorCount": 120
+    },
+    {
+      "name": "Generic and lambda repair pass1",
+      "errorCount": 34
+    },
+    {
+      "name": "Source merge and capture repair pass2",
+      "errorCount": 8
+    },
+    {
+      "name": "Full FLOW diagnostics",
+      "errorCount": 50,
+      "note": "Reports all remaining flow errors in one batch; error growth is greater diagnostic coverage, not new source regression."
+    }
+  ],
+  "policy": "Retain all original gameplay and debug branches. Fix decompiler-level typing, local variable capture and source scope. Preserve original Steam entry and authentication; no bypass. No whole methods replaced with stubs."
+}

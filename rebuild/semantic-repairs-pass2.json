@@ -1,0 +1,32 @@
+[
+  {
+    "file": "engine/modLoader/classes/ModPatchClasses.java",
+    "reason": "Restore external-library lost generics on Class, patch list and exception reference",
+    "beforeSha256": "245f31f60e22b7199670481c14c14f87da0e4adbe846f8adb5f693a5facf052e",
+    "afterSha256": "8a7fcfc29b844da2496119af1bdd7aac8008308b9c28dedc8e0a375f166b6dae"
+  },
+  {
+    "file": "engine/save/LevelSave.java",
+    "reason": "Separate inner lambda identifier from outer level variable; recover string set generic",
+    "beforeSha256": "3a76ca60a9d1635bb25f21f9720feb3978e03c77710da6fc4bb807746c7ba776",
+    "afterSha256": "3fb77e25bb3c429acdf2ded9fe3733bdf744cb3d04f4f9754689b4a55410a5c6"
+  },
+  {
+    "file": "inventory/container/object/HomestoneContainer.java",
+    "reason": "Restore waystone list generic types",
+    "beforeSha256": "2ac20c21573c3a74d7d90164786d995e0c4688ba01aa2ec5683dc295eee904f0",
+    "afterSha256": "18da97726879f67bbdae5d6f0b8d3566cf062b6a19fd9ee09ad82015cece45fe"
+  },
+  {
+    "file": "inventory/item/toolItem/swordToolItem/BloodClawToolItem.java",
+    "reason": "Resolve entity field on anonymous attack event, preserving inherited field access",
+    "beforeSha256": "336a64c407e5eb87eb511193f610315fd1cd2ff73d089fd2ed5950649955c154",
+    "afterSha256": "dea7f23bbc04edb1862f6033e86b4746cd6020b203e416055ba4108311722751"
+  },
+  {
+    "file": "gfx/ui/HUD.java",
+    "reason": "Use same-input CFR recovery for HUD; preserves original debug switch block scopes and typed lambdas",
+    "beforeSha256": "5a64b30b60b189b4c2bdb719739d9a459d29c57d5bc7d7ccf45eb9db874cfb5a",
+    "afterSha256": "228e8cd613d9ed6cd48ccff170c9efd6a968bd9c58f030591e17aa6b3575aff2"
+  }
+]

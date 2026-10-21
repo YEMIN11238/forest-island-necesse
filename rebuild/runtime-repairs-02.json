@@ -1,0 +1,54 @@
+{
+  "changes": [
+    {
+      "file": "necesse/engine/input/controller/ControllerInput.java",
+      "reason": "Restore original bytecode order: collection initialization before GAME_CONTROLS, activeActionSet and DESKTOP_CONTROLS.",
+      "beforeSha256": "7011ccf720945d925e664b941eedf8f6659774de98f4bbea4ff186a0563618f7",
+      "afterSha256": "7f1c18696b6d8c67d071265ed7b4762f572db372135c30cc45d16e581aa2d585"
+    },
+    {
+      "file": "necesse/engine/localization/Localization.java",
+      "reason": "Restore NoTranslation registration before EnglishTranslation construction.",
+      "beforeSha256": "64901dbe5b6b358723224d85aa33c1964dfec2bb94e41a37b27d5fa02135fe0c",
+      "afterSha256": "511b5e0b17197da914588cc2294ea0b6f4ca9d270e42c8de6209422df074d0d6"
+    },
+    {
+      "file": "necesse/gfx/ui/GameInterfaceStyle.java",
+      "reason": "Restore primal creation/add before ghost construction, ghost configuration/add before legacy construction, and defaultPath assignment last.",
+      "beforeSha256": "992738fe5b275d9afb4b9c8949f84d756f6b7ea8ea58a3ac2b822e1c5dbd15fb",
+      "afterSha256": "5d74fb49b4f58310f300e0ab64b4e45d790df0aaab678b32dbff4924bf4b8f75"
+    },
+    {
+      "file": "necesse/level/maps/presets/set/FlowerPatchSet.java",
+      "reason": "Restore original constant construction order (and therefore PresetSet registration order) from original PUTSTATIC sequence.",
+      "beforeSha256": "2301691fa6e722d96194d5755b5a311a093cccb7e1dd9b7a604d2f284d44d015",
+      "afterSha256": "7331e6344561e2d47bbf2ce3d393fb509b843317951e2bcfaa614b56780f60a4"
+    },
+    {
+      "file": "necesse/level/maps/presets/set/PathSet.java",
+      "reason": "Restore original constant construction order (and therefore PresetSet registration order) from original PUTSTATIC sequence.",
+      "beforeSha256": "fd1e2b50b4b0ad928d8ef9e4282fc0783fc714715cfb4332ae6ab5fa93bc2025",
+      "afterSha256": "f6f19359e948064160d1653b34cbe7b5a62493715dbb528884a649777e2f8815"
+    },
+    {
+      "file": "necesse/level/maps/presets/set/RockAndOreSet.java",
+      "reason": "Restore original constant construction order (and therefore PresetSet registration order) from original PUTSTATIC sequence.",
+      "beforeSha256": "71e0cf596826046f19a258a96fb06f7a7ae49cafd4d24e493096bed7ab42c2b7",
+      "afterSha256": "e3b01ffa9b5b506b90f7044ec8d9c9a1601fd04104c9d72a90178568d9ab6b2a"
+    },
+    {
+      "file": "necesse/level/maps/presets/set/TreeSet.java",
+      "reason": "Restore original constant construction order (and therefore PresetSet registration order) from original PUTSTATIC sequence.",
+      "beforeSha256": "dd6187c78fd5efcd8429572fa047bd66223ba09877ded18cc6b7cd797233fbd1",
+      "afterSha256": "1c384c73acdb837cb796eec7cc71b4bf0a8f2b4462865f1807896ba34d96cd30"
+    },
+    {
+      "file": "necesse/level/maps/presets/set/WallSet.java",
+      "reason": "Restore original constant construction order (and therefore PresetSet registration order) from original PUTSTATIC sequence.",
+      "beforeSha256": "ee86d38d4656b3ef727a94f6494293b249e2cad358de789343e0cd4b2ed82c5e",
+      "afterSha256": "ffb71a1e5dc5a332c03e823f49f4381ccc24218b2e44a96aec6740fe7136418d"
+    }
+  ],
+  "originalBytecodeEvidence": "static-init-order-runtime01.json; work/necesse-rebuild/GameInterfaceStyle-original-bytecode.txt",
+  "behaviorGoal": "Original initialization sequencing, no new gameplay behavior"
+}

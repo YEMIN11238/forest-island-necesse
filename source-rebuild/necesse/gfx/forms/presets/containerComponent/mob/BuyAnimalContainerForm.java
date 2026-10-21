@@ -1,0 +1,64 @@
+package necesse.gfx.forms.presets.containerComponent.mob;
+
+import java.awt.Rectangle;
+import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.engine.localization.message.GameMessageBuilder;
+import necesse.engine.localization.message.LocalMessage;
+import necesse.engine.network.client.Client;
+import necesse.engine.window.GameWindow;
+import necesse.entity.mobs.PlayerMob;
+import necesse.gfx.fairType.TypeParsers;
+import necesse.gfx.forms.ContainerComponent;
+import necesse.gfx.forms.components.FormDialogueOption;
+import necesse.inventory.InventoryItem;
+import necesse.inventory.container.mob.BuyAnimalContainer;
+
+public class BuyAnimalContainerForm<T extends BuyAnimalContainer> extends MobContainerFormSwitcher<T> {
+   public DialogueForm dialogueForm = this.addComponent(new DialogueForm("buyAnimal", 408, 170, ContainerComponent.getMaxFocusHeight(), false));
+   public FormDialogueOption buyButton;
+
+   public BuyAnimalContainerForm(Client client, T container) {
+      super(client, container);
+      GameMessageBuilder builder = new GameMessageBuilder();
+
+      for (InventoryItem item : container.price.getItems()) {
+         builder.append("\n ");
+         builder.append(TypeParsers.getItemParseString(item) + "x" + item.getAmount() + " ").append(item.getItemLocalization());
+      }
+
+      this.dialogueForm
+         .reset(
+            new LocalMessage("ui", "buyanimal", "animal", container.getMob().getLocalization()),
+            new LocalMessage("ui", "buyanimalcost", "animal", container.getMob().getLocalization(), "cost", builder)
+         );
+      this.buyButton = this.dialogueForm.addDialogueOption(new LocalMessage("ui", "buybutton"), () -> container.buyAnimalAction.runAndSend());
+      this.dialogueForm.addDialogueOption(new LocalMessage("ui", "backbutton"), () -> client.closeContainer(true));
+      this.dialogueForm.updateContentAndHeight();
+      ContainerComponent.setPosFocus(this.dialogueForm);
+      this.updateBuyButton();
+      this.makeCurrent(this.dialogueForm);
+   }
+
+   public void updateBuyButton() {
+      if (this.buyButton != null) {
+         this.buyButton.setActive(this.container.canPayForAnimal());
+      }
+   }
+
+   @Override
+   public void draw(TickManager tickManager, PlayerMob perspective, Rectangle renderBox) {
+      this.updateBuyButton();
+      super.draw(tickManager, perspective, renderBox);
+   }
+
+   @Override
+   public void onWindowResized(GameWindow window) {
+      super.onWindowResized(window);
+      ContainerComponent.setPosFocus(this.dialogueForm);
+   }
+
+   @Override
+   public boolean shouldOpenInventory() {
+      return true;
+   }
+}

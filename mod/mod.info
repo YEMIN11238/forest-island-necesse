@@ -1,0 +1,9 @@
+{
+	id = localforest.island,
+	name = Local Forest Island,
+	version = 0.1.0,
+	gameVersion = 1.3.3,
+	author = Local Forest,
+	description = Native Necesse gameplay with generated forest island art and a fixed island world.,
+	clientside = false
+}

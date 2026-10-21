@@ -1,0 +1,98 @@
+package necesse.level.gameObject.happinessObject;
+
+import java.awt.Color;
+import java.awt.Rectangle;
+import java.util.List;
+import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.entity.mobs.PlayerMob;
+import necesse.gfx.camera.GameCamera;
+import necesse.gfx.drawOptions.texture.TextureDrawOptions;
+import necesse.gfx.drawables.LevelSortedDrawable;
+import necesse.gfx.drawables.OrderableDrawables;
+import necesse.gfx.gameTexture.GameTexture;
+import necesse.inventory.item.toolItem.ToolType;
+import necesse.inventory.lootTable.LootTable;
+import necesse.level.gameObject.furniture.FurnitureObject;
+import necesse.level.maps.Level;
+import necesse.level.maps.light.GameLight;
+import necesse.level.maps.multiTile.MultiTile;
+import necesse.level.maps.multiTile.StaticMultiTile;
+
+class FishianBathtub2Object extends FurnitureObject {
+   protected String texturePath;
+   public GameTexture texture;
+   protected int counterID;
+
+   protected FishianBathtub2Object(String texturePath, ToolType toolType, Color mapColor, String... category) {
+      super(new Rectangle(0, 10, 24, 2));
+      this.texturePath = texturePath;
+      this.counterID = -1;
+      this.toolType = toolType;
+      this.mapColor = mapColor;
+      this.objectHealth = 50;
+      this.isLightTransparent = true;
+      if (category.length > 0) {
+         this.setItemCategory(category);
+         this.setCraftingCategory(category);
+      } else {
+         this.setItemCategory("objects", "furniture");
+         this.setCraftingCategory("objects", "furniture");
+      }
+   }
+
+   @Override
+   public MultiTile getMultiTile(int rotation) {
+      return new StaticMultiTile(1, 0, 2, 1, false, this.counterID, this.getID());
+   }
+
+   @Override
+   public void loadTextures() {
+      super.loadTextures();
+      this.texture = GameTexture.fromFile(this.texturePath);
+   }
+
+   @Override
+   public void addDrawables(
+      List<LevelSortedDrawable> list,
+      OrderableDrawables tileList,
+      Level level,
+      int tileX,
+      int tileY,
+      TickManager tickManager,
+      GameCamera camera,
+      PlayerMob perspective
+   ) {
+      GameLight light = level.getLightLevel(tileX, tileY);
+      int drawX = camera.getTileDrawX(tileX);
+      int drawY = camera.getTileDrawY(tileY);
+      final TextureDrawOptions top = this.texture.initDraw().sprite(1, 0, 32).addObjectDamageOverlay(this, level, tileX, tileY).light(light).pos(drawX, drawY);
+      final TextureDrawOptions bot = this.texture.initDraw().sprite(1, 1, 32).addObjectDamageOverlay(this, level, tileX, tileY).light(light).pos(drawX, drawY);
+      list.add(new LevelSortedDrawable(this, tileX, tileY) {
+         @Override
+         public int getSortY() {
+            return 5;
+         }
+
+         @Override
+         public void draw(TickManager tickManager) {
+            top.draw();
+         }
+      });
+      list.add(new LevelSortedDrawable(this, tileX, tileY) {
+         @Override
+         public int getSortY() {
+            return 28;
+         }
+
+         @Override
+         public void draw(TickManager tickManager) {
+            bot.draw();
+         }
+      });
+   }
+
+   @Override
+   public LootTable getLootTable(Level level, int layerID, int tileX, int tileY) {
+      return new LootTable();
+   }
+}

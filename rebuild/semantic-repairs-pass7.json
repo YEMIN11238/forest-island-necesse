@@ -1,0 +1,26 @@
+[
+  {
+    "file": "gfx/ui/HUD.java",
+    "reason": "Recover complete HUD.draw control flow from same-bytecode Vineflower; retain CFR other methods with typed lambdas and explicit debug scopes",
+    "beforeSha256": "164acb2775e7f1552c17a58431e5539351e6704237d697b7cfde306381a8af8a",
+    "afterSha256": "99baf18562d0f41811bdb60162e07e97e1f29235fafb5b2d0c17d6ec015927ea"
+  },
+  {
+    "file": "engine/loading/ClientLoader.java",
+    "reason": "Restore precise multi-catch rethrow using same exception instance, rather than widened Throwable alias",
+    "beforeSha256": "e55942d9d145d10f7384147783357b5073d86b3141e1f9fe4d543421b1595615",
+    "afterSha256": "905e02bd12580fe864f0dd3c90f4e1bc652c4e34b8741e3459947e4f32543975"
+  },
+  {
+    "file": "entity/mobs/hostile/bosses/ascendedWizard/AscendedWizardMob.java",
+    "reason": "Restore independent effectively-final idle parameters for normal and transformed boss stage lambdas",
+    "beforeSha256": "cab5deb7a82f1a2034e810e9510293987c04b8f6ed8adba6dbf65ed36845044c",
+    "afterSha256": "9c00865c998bd1f6e558cf54144a39a54f2e8f42b921ccf64d4d65686f664409"
+  },
+  {
+    "file": "entity/mobs/hostile/bosses/SpiderEmpressMob.java",
+    "reason": "Restore stable raging-phase idle-time capture after local-slot reuse",
+    "beforeSha256": "58b5f8cf835d769680af7c9b77c001ab07497d5bcf689aab7e8f03a718c378fd",
+    "afterSha256": "22ebb3072652d46824d3cbc203b8c91d6a32bdac5ebf798e5535e683029d6557"
+  }
+]

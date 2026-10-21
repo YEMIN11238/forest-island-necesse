@@ -1,0 +1,10 @@
+[
+  {
+    "file": "necesse/gfx/ui/HUD.java",
+    "reason": "Restore generic element types on region/job lists"
+  },
+  {
+    "file": "necesse/gfx/forms/presets/playerStats/PlayerStatsForm.java",
+    "reason": "Restore distinct effective-final capture of each stats pane scrollbar width; no shared mutable local across lambdas"
+  }
+]

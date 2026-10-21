@@ -1,0 +1,14 @@
+{
+  "Necesse.jar": {
+    "sha256": "3390e31e593b7ea9f75dee59c7d54f29be3d5705a5eff647ba2053f9a2c170a7",
+    "manifestSha256": "074f26004079317c65dfd142407f2dc01c686fd367e24941d1db7598606f2939",
+    "manifestMaxLineBytes": 72,
+    "classCount": 10249
+  },
+  "Server.jar": {
+    "sha256": "83e08ad78ceb5f6f24b5ed9bee96ce63160e4f72a7bff8dafd8b99cb649952ef",
+    "manifestSha256": "1c70995f320f4df3a9894f71bb34cde863e0a692ba1e1d5c05e92a2c40be3d9c",
+    "manifestMaxLineBytes": 72,
+    "classCount": 10191
+  }
+}

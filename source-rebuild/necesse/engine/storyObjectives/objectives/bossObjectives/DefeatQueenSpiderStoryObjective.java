@@ -1,0 +1,18 @@
+package necesse.engine.storyObjectives.objectives.bossObjectives;
+
+import necesse.engine.storyObjectives.StoryObjectiveManager;
+import necesse.inventory.lootTable.LootTable;
+import necesse.inventory.lootTable.lootItem.LootItem;
+
+public class DefeatQueenSpiderStoryObjective extends DefeatBossStoryObjective {
+   public static LootTable rewards = new LootTable(new LootItem("ammopouch"));
+
+   public DefeatQueenSpiderStoryObjective(StoryObjectiveManager manager) {
+      super(manager, "queenspider", "ammopouch");
+   }
+
+   @Override
+   public LootTable getRewards() {
+      return rewards;
+   }
+}

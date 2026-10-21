@@ -1,0 +1,6 @@
+[
+  {
+    "file": "necesse/gfx/forms/presets/containerComponent/settlement/SettlementWorkstationConfigForm.java",
+    "reason": "Restore effective-final random candidate capture per iteration; same RNG calls and uniqueness predicate"
+  }
+]

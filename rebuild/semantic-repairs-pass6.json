@@ -1,0 +1,6 @@
+[
+  {
+    "file": "necesse/level/maps/incursion/BiomeMissionIncursionData.java",
+    "reason": "Restore per-pane final lambda captures after local-slot reuse for loot and modifier forms"
+  }
+]

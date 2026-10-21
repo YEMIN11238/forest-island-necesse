@@ -1,0 +1,42 @@
+{
+  "status": "source-repaired",
+  "files": [
+    {
+      "file": "necesse/engine/world/worldPresets/LevelPresetsRegion.java",
+      "beforeSha256": "da38734bf2a89cdb4b0860ed03d8cf711f725e665d2578cefc18eaecf5155e6c",
+      "afterSha256": "926a88b28b3536e7b937e90ab9ce51c194eb93039f26d1d4118971918698cad2",
+      "change": "Snapshot the completed region biome weight instead of capturing the reassigned biomeID temporary. No loop or weighting formula removed."
+    },
+    {
+      "file": "necesse/level/maps/incursion/GraveyardIncursionLevel.java",
+      "beforeSha256": "fa7caf2a5037b9ac741d1b2d2c711ec855b58e3c9c427621fe489e5fda90dead",
+      "afterSha256": "04b7adb9f9f3369f66c9c46f58e0cb60b9692ca13884f2fc5bc38ba6018a4b1d",
+      "change": "Split crypt path tile ID from earlier usable grid width so both path-carving lambdas capture the intended immutable registry ID."
+    },
+    {
+      "file": "necesse/level/maps/levelData/jobs/HasStorageLevelJob.java",
+      "beforeSha256": "2d39f231631234b636cb8648e57460a642ee73b190b309169ad009b29864dd10",
+      "afterSha256": "710820f6afbed4f9178bbd0a847488944aba807a53ad5727b6fad01ed864e215",
+      "change": "Use separate final storageJobID and workstationJobID matching each stream rather than reassigning a shared captured variable."
+    },
+    {
+      "file": "necesse/level/maps/biomes/plains/PlainsCaveLevel.java",
+      "beforeSha256": "9608a0cecdddd98b41c4331da0311f386f32b8121b572a4888c7531988ed3c63",
+      "afterSha256": "e4e9641d7d240564519c7e9a1a07d51d500d79c5efdda24fa61935cdccf7844a",
+      "change": "Split crate object registry ID from earlier random direction angle; preserve mini-biome crate placement and RNG calls."
+    },
+    {
+      "file": "necesse/level/maps/levelData/jobs/UseWorkstationLevelJob.java",
+      "beforeSha256": "3ef500260c9671dbf49a1c8b0c6bc3eb4632b46fb7daf2d31321e5236bcd0501",
+      "afterSha256": "d0bbca2151d0931fa0e22b22480cf9e76ad29bf789bf16ce6f49c6ad8086361c",
+      "change": "Mutable selectedRecipe holds the loop result; each inner recipe candidate and the selected outer result get distinct final recipe snapshots. Crafting, pickup, drop-off, callbacks and cancellation flows retained."
+    },
+    {
+      "file": "necesse/level/maps/presets/PresetUtils.java",
+      "beforeSha256": "dd2d78b130eebf7deb1ebd6ddfe153fa4294f5f90808c46466ca29dbe5f21749",
+      "afterSha256": "69512930c913fc52fe2c5b48560b90ceed9f0d1c6b16094b192be925858b4e64",
+      "change": "Generate immutable candidate ID each attempt and preserve noneMatch/redo rejection condition and random-call sequence; assign nextUniqueID only on successful candidate."
+    }
+  ],
+  "validation": "No full build run by this worker, per parent coordination; parent/full_rebuild owns whole-project javac. Changes are capture-scope repairs without deleting methods or replacing gameplay."
+}

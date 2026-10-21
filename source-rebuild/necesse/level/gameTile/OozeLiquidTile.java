@@ -1,0 +1,138 @@
+package necesse.level.gameTile;
+
+import java.awt.Color;
+import java.util.List;
+import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.engine.registries.BuffRegistry;
+import necesse.engine.util.GameRandom;
+import necesse.entity.mobs.Mob;
+import necesse.entity.mobs.buffs.ActiveBuff;
+import necesse.entity.particle.Particle;
+import necesse.entity.particle.ParticleOption;
+import necesse.gfx.GameResources;
+import necesse.gfx.camera.GameCamera;
+import necesse.gfx.drawables.LevelSortedDrawable;
+import necesse.gfx.drawables.LevelTileTerrainDrawOptions;
+import necesse.gfx.gameTexture.GameTexture;
+import necesse.gfx.gameTexture.GameTextureSection;
+import necesse.level.maps.Level;
+import necesse.level.maps.biomes.Biome;
+
+public class OozeLiquidTile extends LiquidTile {
+   public GameTextureSection deepTexture;
+   public GameTextureSection shallowTexture;
+   protected final GameRandom drawRandom;
+
+   public OozeLiquidTile() {
+      super(new Color(25, 225, 25), "ooze");
+      this.lightLevel = 150;
+      this.lightHue = 120.0F;
+      this.lightSat = 0.6F;
+      this.drawRandom = new GameRandom();
+   }
+
+   @Override
+   protected void loadTextures() {
+      super.loadTextures();
+      this.deepTexture = tileTextures.addTexture(GameTexture.fromFile("tiles/waterdeep"));
+      this.shallowTexture = tileTextures.addTexture(GameTexture.fromFile("tiles/watershallow"));
+   }
+
+   @Override
+   public double getPathCost(Level level, int tileX, int tileY, Mob mob) {
+      return !mob.isLavaImmune() ? 1000.0 : super.getPathCost(level, tileX, tileY, mob);
+   }
+
+   @Override
+   public void tickEffect(Level level, int x, int y) {
+      if (GameRandom.globalRandom.getEveryXthChance(200) && level.getObjectID(x, y) == 0) {
+         int spriteRes = 12;
+         Color particleColor = this.getLiquidColor(level, x, y).brighter();
+         level.entityManager
+            .addParticle(
+               ParticleOption.base(x * 32 + GameRandom.globalRandom.nextInt(32 - spriteRes), y * 32 + GameRandom.globalRandom.nextInt(32 - spriteRes)),
+               Particle.GType.COSMETIC
+            )
+            .lifeTime(1000)
+            .sprite((options, lifeTime, timeAlive, lifePercent) -> {
+               int frames = GameResources.liquidBlobParticle.getWidth() / spriteRes;
+               return options.add(GameResources.liquidBlobParticle.sprite((int)(lifePercent * frames), 0, spriteRes));
+            })
+            .color(particleColor);
+         GameRandom random = GameRandom.globalRandom;
+         level.entityManager
+            .addParticle(
+               ParticleOption.base(x * 32 + GameRandom.globalRandom.nextInt(32 - spriteRes), y * 32 + GameRandom.globalRandom.nextInt(32 - spriteRes)),
+               Particle.GType.COSMETIC
+            )
+            .sprite(GameResources.smokePuff.sprite(random.getIntBetween(0, 4), 0, 32))
+            .color(new Color(205, 210, 218))
+            .sizeFades(16, 32)
+            .movesFriction(0.0F, -10.0F, 0.7F)
+            .moves(
+               (pos, delta, lifeTime, timeAlive, lifePercent) -> {
+                  pos.x = pos.x
+                     + (random.nextBoolean() ? (float)(Math.sin(timeAlive / 100.0F) * delta) * 0.1F : (float)(Math.cos(timeAlive / 100.0F) * delta) * 0.1F);
+                  pos.y -= (2.0F - lifePercent) * delta * 0.05F;
+               }
+            )
+            .fadesAlphaTime(100, 200)
+            .lifeTime(1000 + random.getIntBetween(0, 1000));
+      }
+   }
+
+   @Override
+   public void tick(Mob mob, Level level, int x, int y) {
+      if (mob.canLevelInteract()
+         && !mob.isFlying()
+         && !mob.isWaterWalking()
+         && level.inLiquid(mob.getX(), mob.getY())
+         && level.isServer()
+         && mob.canTakeDamage()
+         && !mob.isSlimeImmune()
+         && !mob.isOnGenericCooldown("slimedamage")) {
+         mob.startGenericCooldown("slimedamage", 500L);
+         mob.addBuff(new ActiveBuff(BuffRegistry.Debuffs.SLIME_POISON, mob, 10.0F, null), true);
+      }
+   }
+
+   @Override
+   public Color getLiquidColor(Level level, int tileX, int tileY, Biome biome) {
+      return this.getLiquidColor(4);
+   }
+
+   @Override
+   protected void addLiquidTopDrawables(
+      LevelTileTerrainDrawOptions list, List<LevelSortedDrawable> sortedList, Level level, int tileX, int tileY, GameCamera camera, TickManager tickManager
+   ) {
+      boolean addBobbing;
+      synchronized (this.drawRandom) {
+         addBobbing = this.drawRandom.seeded(getTileSeed(tileX, tileY)).getChance(0.15F);
+      }
+
+      if (addBobbing) {
+         int drawX = camera.getTileDrawX(tileX);
+         int drawY = camera.getTileDrawY(tileY);
+         int offset = this.getLiquidBobbing(level, tileX, tileY);
+         int xOffset;
+         int yOffset;
+         GameTextureSection bobbingTexture;
+         if (level.liquidManager.getHeight(tileX, tileY) <= -10) {
+            xOffset = 0;
+            yOffset = offset;
+            bobbingTexture = this.deepTexture;
+         } else {
+            xOffset = offset;
+            yOffset = 0;
+            bobbingTexture = this.shallowTexture;
+         }
+
+         int tile;
+         synchronized (this.drawRandom) {
+            tile = this.drawRandom.seeded(getTileSeed(tileX, tileY)).nextInt(bobbingTexture.getHeight() / 32);
+         }
+
+         list.add(bobbingTexture.sprite(0, tile, 32)).color(this.getLiquidColor(level, tileX, tileY).brighter()).pos(drawX + xOffset, drawY + yOffset - 2);
+      }
+   }
+}

@@ -1,0 +1,23 @@
+# Generated runtime, game data and local sessions
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+*.class
+/runtime/
+/resources-original/
+/profile/
+/test-profile*/
+/logs/
+/mod/build/
+/mod/dist/
+/rebuild/classes/
+/rebuild/*.jar
+/rebuild/sources.args
+/evidence/
+!/evidence/
+/evidence/*
+!/evidence/release-validation.json
+!/evidence/app-package.json
+!/evidence/mod-build.json
+!/evidence/server-client-comparison.json

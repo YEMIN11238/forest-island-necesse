@@ -1,0 +1,186 @@
+package necesse.entity.mobs.hostile.bosses;
+
+import java.awt.Rectangle;
+import java.awt.geom.Point2D.Float;
+import java.util.List;
+import java.util.stream.Stream;
+import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.engine.gameLoop.tickManager.TicksPerSecond;
+import necesse.engine.localization.message.GameMessage;
+import necesse.engine.localization.message.StaticMessage;
+import necesse.engine.modifiers.ModifierValue;
+import necesse.engine.network.server.ServerClient;
+import necesse.engine.registries.MobRegistry;
+import necesse.engine.util.GameMath;
+import necesse.engine.util.GameRandom;
+import necesse.entity.mobs.GameDamage;
+import necesse.entity.mobs.Mob;
+import necesse.entity.mobs.MobDrawable;
+import necesse.entity.mobs.PlayerMob;
+import necesse.entity.mobs.WormMobHead;
+import necesse.entity.mobs.buffs.BuffModifiers;
+import necesse.entity.particle.FleshParticle;
+import necesse.entity.particle.Particle;
+import necesse.gfx.GameResources;
+import necesse.gfx.camera.GameCamera;
+import necesse.gfx.drawables.OrderableDrawables;
+import necesse.gfx.gameTexture.GameSprite;
+import necesse.level.maps.Level;
+import necesse.level.maps.light.GameLight;
+
+public class CrystalDragonBody extends BossWormMobBody<CrystalDragonHead, CrystalDragonBody> {
+   public int spriteY;
+   public TicksPerSecond particleSpawner = TicksPerSecond.ticksPerSecond(50);
+
+   public CrystalDragonBody() {
+      super(1000);
+      this.isSummoned = true;
+      this.collision = new Rectangle(-30, -25, 60, 50);
+      this.hitBox = new Rectangle(-40, -35, 80, 70);
+      this.selectBox = new Rectangle(-40, -60, 80, 80);
+   }
+
+   @Override
+   public GameMessage getLocalization() {
+      CrystalDragonHead head = this.master.get(this.getLevel());
+      return head != null ? head.getLocalization() : new StaticMessage("crystaldragonbody");
+   }
+
+   @Override
+   public void init() {
+      super.init();
+   }
+
+   @Override
+   public GameDamage getCollisionDamage(Mob target, boolean fromPacket, ServerClient packetSubmitter) {
+      return CrystalDragonHead.bodyCollisionDamage;
+   }
+
+   @Override
+   public boolean canCollisionHit(Mob target) {
+      return this.height < 45.0F && super.canCollisionHit(target);
+   }
+
+   @Override
+   public void clientTick() {
+      super.clientTick();
+      if (this.isVisible()) {
+         this.particleSpawner.gameTick();
+
+         while (this.particleSpawner.shouldTick()) {
+            this.getLevel()
+               .entityManager
+               .addParticle(
+                  this.x + GameRandom.globalRandom.floatGaussian() * 45.0F,
+                  this.y + GameRandom.globalRandom.floatGaussian() * 30.0F + 5.0F,
+                  Particle.GType.COSMETIC
+               )
+               .movesConstant(GameRandom.globalRandom.floatGaussian() * 6.0F, GameRandom.globalRandom.floatGaussian() * 3.0F)
+               .sizeFades(5, 10)
+               .givesLight()
+               .heightMoves(this.height + 10.0F, this.height + GameRandom.globalRandom.getFloatBetween(30.0F, 40.0F))
+               .lifeTime(1000);
+            if (this.spriteY == 7) {
+               this.getLevel()
+                  .entityManager
+                  .addParticle(
+                     this.x + GameRandom.globalRandom.floatGaussian() * 15.0F,
+                     this.y + GameRandom.globalRandom.floatGaussian() * 10.0F + 5.0F,
+                     Particle.GType.COSMETIC
+                  )
+                  .sprite(GameResources.pearlescentShardParticles.sprite(GameRandom.globalRandom.nextInt(4), 0, 18, 24))
+                  .sizeFades(11, 22)
+                  .ignoreLight(true)
+                  .givesLight()
+                  .heightMoves(this.height + 10.0F, this.height + GameRandom.globalRandom.getFloatBetween(30.0F, 40.0F))
+                  .lifeTime(2000);
+            }
+         }
+      }
+   }
+
+   @Override
+   public Stream<ModifierValue<?>> getDefaultModifiers() {
+      return Stream.of(new ModifierValue<>(BuffModifiers.SLOW, 0.0F).max(0.0F), new ModifierValue<>(BuffModifiers.POISON_DAMAGE_FLAT, 0.0F).max(0.0F));
+   }
+
+   @Override
+   public void spawnDeathParticles(float knockbackX, float knockbackY) {
+      if (this.isVisible()) {
+         for (int i = 0; i < 4; i++) {
+            this.getLevel()
+               .entityManager
+               .addParticle(
+                  new FleshParticle(
+                     this.getLevel(),
+                     MobRegistry.Textures.crystalDragon,
+                     4,
+                     this.spriteY + GameRandom.globalRandom.getIntBetween(0, 1),
+                     64,
+                     this.x,
+                     this.y,
+                     20.0F,
+                     knockbackX,
+                     knockbackY
+                  ),
+                  Particle.GType.IMPORTANT_COSMETIC
+               );
+         }
+      }
+   }
+
+   @Override
+   protected void addDrawables(
+      List<MobDrawable> list,
+      OrderableDrawables tileList,
+      OrderableDrawables topList,
+      Level level,
+      int x,
+      int y,
+      TickManager tickManager,
+      GameCamera camera,
+      PlayerMob perspective
+   ) {
+      super.addDrawables(list, tileList, topList, level, x, y, tickManager, camera, perspective);
+      if (this.isVisible()) {
+         GameLight light = level.getLightLevel(this);
+         int drawX = camera.getDrawX(x) - 112;
+         int drawY = camera.getDrawY(y);
+         if (this.next != null) {
+            Float dir = new Float(this.next.x - x, this.next.y - this.next.height - (y - this.height));
+            float angle = GameMath.fixAngle(GameMath.getAngle(dir));
+            final MobDrawable drawOptions = WormMobHead.getAngledDrawable(
+               this,
+               new GameSprite(MobRegistry.Textures.crystalDragon, 0, this.spriteY, 224),
+               null,
+               light.minLevelCopy(100.0F),
+               (int)this.height,
+               angle,
+               drawX,
+               drawY,
+               130,
+               perspective
+            );
+            MobDrawable drawOptionsShadow = WormMobHead.getAngledDrawable(
+               this,
+               new GameSprite(MobRegistry.Textures.crystalDragon_shadow, 0, this.spriteY, 224),
+               null,
+               light,
+               (int)this.height,
+               angle,
+               drawX,
+               drawY + 40,
+               130,
+               perspective
+            );
+            topList.add(new MobDrawable() {
+               @Override
+               public void draw(TickManager tickManager) {
+                  drawOptions.draw(tickManager);
+               }
+            });
+            tileList.add(drawOptionsShadow::draw);
+         }
+      }
+   }
+}

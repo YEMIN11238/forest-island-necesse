@@ -1,0 +1,97 @@
+[
+  {
+    "path": "source-rebuild/necesse/entity/mobs/friendly/human/HumanMob.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/ControllerKeyboardForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 2
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/components/FormStoryObjectiveComponent.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/components/FormWorldSaveComponent.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/SettingsForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 4
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/MainMenuForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/NewSaveWorldSettingsForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 2
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/PauseMenuForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/object/FueledIncineratorInventoryContainerForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/object/MusicPlayerContainerForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/object/OEInventoryContainerForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/item/PortableMusicPlayerContainerForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/mob/EquipmentForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/mob/SettlerStyleForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/mob/PlayerStyleForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/containerComponent/mob/ShopContainerForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/debug/NoiseTestForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/debug/DebugSceneForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 10
+  },
+  {
+    "path": "source-rebuild/necesse/gfx/forms/presets/debug/OneWorldTestForm.java",
+    "replacement": "Removed synthetic (<unrepresentable>) cast; retained expression and body",
+    "count": 1
+  }
+]

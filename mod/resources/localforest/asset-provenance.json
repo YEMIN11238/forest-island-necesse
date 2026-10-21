@@ -1,0 +1,401 @@
+{
+  "source": "Previously generated user-approved local island art; normalized to the established pixel grid.",
+  "sprites": [
+    {
+      "id": "crown-leafy",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/crown-leafy/sprite.png",
+      "sourceSha256": "f806ab47ef554b7863c4c69c282bdb7f46415f07f42ccb50b00d3a6583a30b75",
+      "size": [
+        36,
+        30
+      ]
+    },
+    {
+      "id": "crown-young",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/crown-young/sprite.png",
+      "sourceSha256": "8b63090544a981033f5f0bd1740f72ad2010a621c9cf5e84e1ddc93a611968d1",
+      "size": [
+        28,
+        32
+      ]
+    },
+    {
+      "id": "fern",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/fern/sprite.png",
+      "sourceSha256": "6c28ea212679964db52e542cffb78e8d0f7d1f37f63ffd3b462b00cfea394428",
+      "size": [
+        16,
+        14
+      ]
+    },
+    {
+      "id": "berry-bush",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/berry-bush/sprite.png",
+      "sourceSha256": "891fe5a82e32e2237adc48658d21e7e21c1f161a99711e9647301626af5fed9c",
+      "size": [
+        19,
+        14
+      ]
+    },
+    {
+      "id": "wildflowers",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/wildflowers/sprite.png",
+      "sourceSha256": "01f558319a539b3e04e8e6c7b7cbcf2d15267c5ba0f32ae73e56d78b4f03b241",
+      "size": [
+        16,
+        16
+      ]
+    },
+    {
+      "id": "reeds",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/reeds/sprite.png",
+      "sourceSha256": "509abbe60191d5c6929c91a746873301b34b989d21ddfb68cc131f132288b0c7",
+      "size": [
+        13,
+        23
+      ]
+    },
+    {
+      "id": "mushroom-log",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/mushroom-log/sprite.png",
+      "sourceSha256": "c6858490ff0acbec5327fb487366e4bedd69550129b56dfba33aa9568b137d74",
+      "size": [
+        25,
+        14
+      ]
+    },
+    {
+      "id": "flower-planter",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/ecology-v6/flower-planter/sprite.png",
+      "sourceSha256": "02c929cdb95b0e49ca50986b5128750fee7391d969f457b71748fcda110a5c66",
+      "size": [
+        15,
+        19
+      ]
+    },
+    {
+      "id": "timber-rack",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/timber-rack/sprite.png",
+      "sourceSha256": "6a93f4e6a738bdbfd5489578fa552ad658adb8e63c1f4777d2fdf32fc54bbfd0",
+      "size": [
+        20,
+        28
+      ]
+    },
+    {
+      "id": "purple-cauldron",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/purple-cauldron/sprite.png",
+      "sourceSha256": "5bfce29c124ad453df4830378c83199ba709dccce8b413b81442987c883c8196",
+      "size": [
+        20,
+        20
+      ]
+    },
+    {
+      "id": "trail-sign",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/trail-sign/sprite.png",
+      "sourceSha256": "4ee2cc23e6a3e8963f9dbaa2d9c400a7fb273a96025bb19370d81a87092b5550",
+      "size": [
+        16,
+        21
+      ]
+    },
+    {
+      "id": "stone-furnace",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/stone-furnace/sprite.png",
+      "sourceSha256": "20c1fd61668b73c83c291289865babb586b746dca9d4a89e02edb252a6986b90",
+      "size": [
+        19,
+        24
+      ]
+    },
+    {
+      "id": "stone-basin",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/stone-basin/sprite.png",
+      "sourceSha256": "80c8ac074bf7c8193b64dae469ced67b3183f1b0605177591aabea5d3e73c00c",
+      "size": [
+        19,
+        15
+      ]
+    },
+    {
+      "id": "smith-workbench",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v6/smith-workbench/sprite.png",
+      "sourceSha256": "f79851a319eba164c749a84ade15ea531b869771f1cdff301c6b555061d027a1",
+      "size": [
+        21,
+        20
+      ]
+    },
+    {
+      "id": "lamp-post",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props-v7/lamp-post/sprite.png",
+      "sourceSha256": "37458f2b51d1fc7c94d9f298ff05267c6abe2e5aec2ac6ea2ef1049d62da6355",
+      "size": [
+        14,
+        46
+      ]
+    },
+    {
+      "id": "bush",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/bushes/bush-video-v1/upright-hedge.png",
+      "sourceSha256": "232af799fc8d113677850ee7db176474942bcbbe6ba14f2bb0fbd37d280ea33f",
+      "size": [
+        12,
+        25
+      ]
+    },
+    {
+      "id": "grass",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/foliage/grass-tuft-a-v1/grass-tuft.png",
+      "sourceSha256": "f002549b365c97e16f8417b57438a13cfaaa40bc7aedb279843de4f8ca3552b0",
+      "size": [
+        9,
+        12
+      ]
+    },
+    {
+      "id": "flowers",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/foliage/wildflowers-a-v1/wildflowers.png",
+      "sourceSha256": "671293506b936585119c2d38fd7e80eee885b8e4402bdbca31bcb81c5b1053fd",
+      "size": [
+        10,
+        13
+      ]
+    },
+    {
+      "id": "rock",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props/rock-a-v1/rock-cluster.png",
+      "sourceSha256": "7e0efbb52ee2cfc8773fb5eacf4e41a3710235ac1e34532bf7860711fc3bb184",
+      "size": [
+        16,
+        11
+      ]
+    },
+    {
+      "id": "chest",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props/chest-a-v1/wooden-chest.png",
+      "sourceSha256": "c2106aeadfa8d19af4614329cbcab4b3fe2a3b96f1bea9e199917e4f1650e901",
+      "size": [
+        17,
+        13
+      ]
+    },
+    {
+      "id": "bench",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/props/workbench-a-v1/workbench.png",
+      "sourceSha256": "7d4eec1a02283dc32a8dc832ffa39c28d88e3e0d55064a6db8ad508824e4f279",
+      "size": [
+        24,
+        17
+      ]
+    },
+    {
+      "id": "house",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/buildings/cottage-a-v1/cottage-master.png",
+      "sourceSha256": "2ba8037c5394a4c71dba45044b4b88c5b0b7339c6b8e961ac6df0a9b38ef116a",
+      "size": [
+        88,
+        92
+      ]
+    },
+    {
+      "id": "logs",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-wood-a-v1/campfire-wood-base.png",
+      "sourceSha256": "5d320df32e6ec8b0de37985932a6552943cc6231eeeee989934f2eafa90b00f1",
+      "size": [
+        22,
+        10
+      ]
+    },
+    {
+      "id": "brazier",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/brazier-video-v1/stone-brazier.png",
+      "sourceSha256": "a7103d7a4b79a0e7493ba0aedb79f6d144059d36dcffd78312cf970347f87c68",
+      "size": [
+        16,
+        20
+      ]
+    },
+    {
+      "id": "smoke",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-smoke-a-v1/campfire-smoke-puff.png",
+      "sourceSha256": "ca35ccd7eadded2f2714e98bb9ed02a4538c173331a7690de84b7c5f3d500899",
+      "size": [
+        12,
+        16
+      ]
+    },
+    {
+      "id": "shore",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain/shore-a-v1/grass-shore-edge.png",
+      "sourceSha256": "89b47b3a74c4d586267c01e6131841495d18cf7d3ca7930e0a269979575f7c7e",
+      "size": [
+        64,
+        8
+      ]
+    },
+    {
+      "id": "earth",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain/earth-side-a-v1/earth-side-face.png",
+      "sourceSha256": "fdeb9bf59cc5dd359bf7d3bdb66858a8fa050cca3a158fe7bad5119ecf4f6c74",
+      "size": [
+        64,
+        7
+      ]
+    },
+    {
+      "id": "ground",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain-v7/grass-clean-v7/sprite.png",
+      "sourceSha256": "e506327cc2e0187b1194381a000802591a5a7f71d9426bc569ba7ec7f9c8cb13",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "dirt",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain/dirt-a-v1/dirt-base.png",
+      "sourceSha256": "85bbcd343a3d20e3fcd1714a50756445d174fe17fb4fdf1b8f2ea07407af98bc",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "shallow",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain/water-shallow-a-v1/water-shallow-base.png",
+      "sourceSha256": "6139a5cd8e9ba17ca5c28ee12bab8a52aa387f5b544d9bae45a50a4f81dfb849",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "deep",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain/water-deep-a-v1/water-deep-base.png",
+      "sourceSha256": "a8dbaa1bef16a3836c4a73bcc01b55a0029dcb7c409896f3e35a369159076a09",
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "id": "ocean-art",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/terrain-v7/water-shapes-v7/sprite.png",
+      "sourceSha256": "dae8311fd7c96be9b6607b76c9fae4bd1aa7acf51ae49376b93fbbc983f27e90",
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "id": "tree-a-top",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/trees/tree-video-v3/tree-a-top.png",
+      "sourceSha256": "372478d64956507ede90b448f360edd16404ab874b3bb97907d2a92994e7c785",
+      "size": [
+        36,
+        30
+      ]
+    },
+    {
+      "id": "tree-b-top",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/trees/tree-video-v3/tree-b-top.png",
+      "sourceSha256": "372478d64956507ede90b448f360edd16404ab874b3bb97907d2a92994e7c785",
+      "size": [
+        36,
+        30
+      ]
+    },
+    {
+      "id": "tree-a-wood",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/trees/tree-video-v3/tree-a-wood.png",
+      "sourceSha256": "382a9ad11b8e8b55f277a5b296547108de4feae876c6e2e2a4a39996d3de9c5e",
+      "size": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "tree-b-wood",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/trees/tree-video-v3/tree-b-wood.png",
+      "sourceSha256": "62cbbb13a132688a2b3d49b413b3bd62f4959771e94b9054e45a190069f45b61",
+      "size": [
+        10,
+        12
+      ]
+    },
+    {
+      "id": "flame-0",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-00.png",
+      "sourceSha256": "036e70bb0d29f4843ca2ca052af73cdb0f2bb1dec5b4f877382cd1396b4f779d",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-1",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-01.png",
+      "sourceSha256": "d6e390ca0c6ef779747b0d722fb60873671e76da9e0c833952502552239c8d00",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-2",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-02.png",
+      "sourceSha256": "ec3fb0fc0bba343ec66d33a1953bb6a4e2ac07e138514591f079368a7d1eb35a",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-3",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-03.png",
+      "sourceSha256": "0117f7e7255eff1a1670a749f35b9369be5592f95fe245ea3418606fc13d23d6",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-4",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-04.png",
+      "sourceSha256": "946276c1113892619e7db64ebc1cb3945e425cd65ab8a754a93d5fd1f8e06093",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-05.png",
+      "sourceSha256": "6cbd6bcdfff9efabb7c9a7a4d8688184658edb3295e715d211f42c108da72d7a",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-06.png",
+      "sourceSha256": "8060f26d8b6c31c175e8a44b543a7d514e2bbf3d19b6eae24a1a7cd958203d62",
+      "size": [
+        24,
+        36
+      ]
+    },
+    {
+      "id": "flame-7",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/stardew-source-investigation/art/fire/campfire-flame-cycle-v1/frames/flame-07.png",
+      "sourceSha256": "398dae47c8de1f58b71358d7f3b595bedad556ad46b66239c16a2fd6344fd327",
+      "size": [
+        24,
+        36
+      ]
+    }
+  ]
+}

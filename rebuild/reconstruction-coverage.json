@@ -1,0 +1,31 @@
+{
+  "originalClientClassFiles": 10249,
+  "originalServerClassFiles": 10191,
+  "sharedClassNames": 10173,
+  "serverExclusiveClassFiles": 18,
+  "originalUnionClassFiles": 10267,
+  "serverExclusiveClasses": [
+    "StartDesktopClient.class",
+    "StartDesktopServer.class",
+    "necesse/engine/platforms/desktop/DesktopPlatform$1.class",
+    "necesse/engine/platforms/desktop/DesktopPlatform$2.class",
+    "necesse/engine/platforms/desktop/DesktopPlatform.class",
+    "necesse/engine/platforms/desktop/control/DesktopInputManager.class",
+    "necesse/engine/platforms/desktop/forms/FormDesktopHostSettings.class",
+    "necesse/engine/platforms/desktop/network/DesktopNetworkManager$1.class",
+    "necesse/engine/platforms/desktop/network/DesktopNetworkManager$DesktopConnectApprovedData.class",
+    "necesse/engine/platforms/desktop/network/DesktopNetworkManager.class",
+    "necesse/engine/platforms/desktop/network/server/network/DesktopServerOpenNetwork$ServerListenThread.class",
+    "necesse/engine/platforms/desktop/network/server/network/DesktopServerOpenNetwork.class",
+    "necesse/engine/platforms/desktop/server/DesktopServerWindow.class",
+    "necesse/engine/platforms/desktop/server/ServerJFrame$1.class",
+    "necesse/engine/platforms/desktop/server/ServerJFrame$2.class",
+    "necesse/engine/platforms/desktop/server/ServerJFrame.class",
+    "necesse/engine/platforms/desktop/server/ServerScanThread.class",
+    "necesse/engine/platforms/desktop/stats/DesktopStatsProvider.class"
+  ],
+  "totalRecoveredTopLevelSourceFiles": 6504,
+  "compiledClassFiles": 10221,
+  "namedClassAPICoverageReport": "api-comparison.json",
+  "compilerGeneratedClassCountNote": "Anonymous/synthetic class numbering and generation may differ. Source-built count is not byte-for-byte class identity coverage."
+}

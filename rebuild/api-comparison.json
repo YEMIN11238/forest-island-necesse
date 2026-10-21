@@ -1,0 +1,8 @@
+{
+  "scope": "Named classes (anonymous/synthetic-numbered classes excluded); public/protected non-synthetic fields and non-bridge methods, including descriptors and access flags. No behavioral equivalence claim.",
+  "checkedClasses": 7540,
+  "missingNamedClasses": [],
+  "apiDifferences": [],
+  "originalAllClassFiles": 10267,
+  "rebuiltAllClassFiles": 10221
+}

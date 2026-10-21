@@ -1,0 +1,7 @@
+[
+  {
+    "file": "necesse/engine/dlc/DLC.java",
+    "reason": "Restore original <clinit> bytecode order: allocate DLCs, allocate stringIDToIDMap, then register SUPPORTER_PACK; no entitlement or authentication logic changed",
+    "evidence": "javap -c -p necesse.engine.dlc.DLC on original input"
+  }
+]

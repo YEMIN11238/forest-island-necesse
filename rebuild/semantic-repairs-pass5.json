@@ -1,0 +1,6 @@
+[
+  {
+    "file": "necesse/entity/mobs/itemAttacker/FollowPosition.java",
+    "reason": "Capture stable range local instead of reassigned circumference slot; bytecode/source assignment circumference=range precedes capture"
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "tag": "repaired-pass1",
+  "exitCode": 1,
+  "elapsedSeconds": 7.008161,
+  "sourceFiles": 6504,
+  "compiledClassFiles": 398,
+  "originalGameJarOnClasspath": false,
+  "command": [
+    "/Users/zhangjunhao/Documents/Codex/tools/jdk-21.0.12.1+1/Contents/Home/bin/javac",
+    "-J-Xmx3g",
+    "-J-Duser.language=en",
+    "-J-Duser.country=US",
+    "--release",
+    "17",
+    "-encoding",
+    "UTF-8",
+    "-Xmaxerrs",
+    "10000",
+    "-Xmaxwarns",
+    "100",
+    "-cp",
+    "/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/byte-buddy-1.12.8.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/byte-buddy-agent-1.12.8.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/jna-5.10.0.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/jna-platform-5.10.0.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-3.4.1-natives-linux.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-3.4.1-natives-macos-arm64.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-3.4.1-natives-macos.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-3.4.1-natives-windows.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-3.4.1.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-glfw-3.4.1-natives-linux.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-glfw-3.4.1-natives-macos-arm64.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-glfw-3.4.1-natives-macos.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-glfw-3.4.1-natives-windows.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-glfw-3.4.1.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-openal-3.4.1-natives-linux.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-openal-3.4.1-natives-macos-arm64.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-openal-3.4.1-natives-macos.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-openal-3.4.1-natives-windows.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-openal-3.4.1.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-opengl-3.4.1-natives-linux.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-opengl-3.4.1-natives-macos-arm64.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-opengl-3.4.1-natives-macos.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-opengl-3.4.1-natives-windows.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-opengl-3.4.1.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-stb-3.4.1-natives-linux.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-stb-3.4.1-natives-macos-arm64.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-stb-3.4.1-natives-macos.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-stb-3.4.1-natives-windows.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/lwjgl-stb-3.4.1.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/oshi-core-5.8.5.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/slf4j-api-1.7.32.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/slf4j-nop-1.7.30.jar:/Users/zhangjunhao/Library/Application Support/Steam/steamapps/common/Necesse/Necesse.app/Contents/Resources/lib/steamworks4j-1.10.2-FAIR.jar",
+    "-d",
+    "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/rebuild/classes",
+    "@/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/rebuild/sources.args"
+  ]
+}

@@ -1,0 +1,15 @@
+package necesse.level.maps.levelData.settlementData.settler.personalities;
+
+import necesse.entity.mobs.friendly.human.HumanMob;
+import necesse.inventory.recipe.Ingredient;
+
+public class GemCollectorSettlerPersonality extends CollectorSettlerPersonality {
+   public GemCollectorSettlerPersonality(HumanMob mob) {
+      super(mob);
+   }
+
+   @Override
+   public Ingredient[] getCollectorCost() {
+      return new Ingredient[]{new Ingredient("anygem", 1)};
+   }
+}

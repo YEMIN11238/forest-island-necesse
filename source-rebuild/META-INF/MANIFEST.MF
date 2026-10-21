@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Main-Class: StartSteamClient
+Class-Path: lib/steamworks4j-1.10.2-FAIR.jar lib/lwjgl-glfw-3.4.1.jar li
+ b/lwjgl-glfw-3.4.1-natives-linux.jar lib/lwjgl-glfw-3.4.1-natives-macos
+ .jar lib/lwjgl-glfw-3.4.1-natives-macos-arm64.jar lib/lwjgl-glfw-3.4.1-
+ natives-windows.jar lib/lwjgl-openal-3.4.1.jar lib/lwjgl-openal-3.4.1-n
+ atives-linux.jar lib/lwjgl-openal-3.4.1-natives-macos.jar lib/lwjgl-ope
+ nal-3.4.1-natives-macos-arm64.jar lib/lwjgl-openal-3.4.1-natives-window
+ s.jar lib/lwjgl-opengl-3.4.1.jar lib/lwjgl-opengl-3.4.1-natives-linux.j
+ ar lib/lwjgl-opengl-3.4.1-natives-macos.jar lib/lwjgl-opengl-3.4.1-nati
+ ves-macos-arm64.jar lib/lwjgl-opengl-3.4.1-natives-windows.jar lib/lwjg
+ l-stb-3.4.1.jar lib/lwjgl-stb-3.4.1-natives-linux.jar lib/lwjgl-stb-3.4
+ .1-natives-macos.jar lib/lwjgl-stb-3.4.1-natives-macos-arm64.jar lib/lw
+ jgl-stb-3.4.1-natives-windows.jar lib/lwjgl-3.4.1.jar lib/lwjgl-3.4.1-n
+ atives-linux.jar lib/lwjgl-3.4.1-natives-macos.jar lib/lwjgl-3.4.1-nati
+ ves-macos-arm64.jar lib/lwjgl-3.4.1-natives-windows.jar lib/oshi-core-5
+ .8.5.jar lib/slf4j-nop-1.7.30.jar lib/byte-buddy-1.12.8.jar lib/byte-bu
+ ddy-agent-1.12.8.jar lib/jna-platform-5.10.0.jar lib/jna-5.10.0.jar lib
+ /slf4j-api-1.7.32.jar
+

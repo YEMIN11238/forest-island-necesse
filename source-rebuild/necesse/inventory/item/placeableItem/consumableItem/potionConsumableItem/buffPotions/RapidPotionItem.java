@@ -1,0 +1,12 @@
+package necesse.inventory.item.placeableItem.consumableItem.potionConsumableItem.buffPotions;
+
+import necesse.inventory.item.Item;
+import necesse.inventory.item.ItemCategory;
+import necesse.inventory.item.placeableItem.consumableItem.potionConsumableItem.SimplePotionItem;
+
+public class RapidPotionItem extends SimplePotionItem {
+   public RapidPotionItem() {
+      super(100, Item.Rarity.COMMON, "rapidpotion", 300, "rapidpot");
+      this.setItemCategory(ItemCategory.craftingManager, "consumable", "buffpotions");
+   }
+}

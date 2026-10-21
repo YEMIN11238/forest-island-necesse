@@ -1,0 +1,290 @@
+[
+  {
+    "file": "necesse/gfx/ui/HUD.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "d8f0ae13d0abbc86c969c82008567b1619ac7d9981aa6a92831de53ea9960897",
+    "afterSha256": "5a64b30b60b189b4c2bdb719739d9a459d29c57d5bc7d7ccf45eb9db874cfb5a"
+  },
+  {
+    "file": "necesse/inventory/itemFilter/ItemCategoriesFilterChange.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "fcccfad0a9a070496098132e05c5674e3dadadc9651e7e9cdf72152404d1bedd",
+    "afterSha256": "17e6c4aec2656834b32d2fec02b17bb0144f7678ff2877c0a7a57693a5c01b10"
+  },
+  {
+    "file": "necesse/engine/commands/serverCommands/PermissionsServerCommand.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "e6a732a11b417e3c845c95466433d28b07fd7f294228b819bf0ac24395656fcc",
+    "afterSha256": "f767018ae0ecfa549ad256df311f989971c27bbe507c1676e165eaa27a6f89bb"
+  },
+  {
+    "file": "necesse/engine/util/gameAreaSearch/GameAreaSearch.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "b0e9f4ac9a0d7a08eadf3b3b1e015c1cdced01f17175e927823ef42c064641fd",
+    "afterSha256": "b871e52e0b28a8bb4c31816f9854d916b12e9a665bd845d93fbc8201987161de"
+  },
+  {
+    "file": "necesse/engine/modLoader/classes/ModPatchClasses.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "7532096825a2eb64707d91baf0a292ca4eb9ae92f6dcde14701f2a3f9bfb065f",
+    "afterSha256": "245f31f60e22b7199670481c14c14f87da0e4adbe846f8adb5f693a5facf052e"
+  },
+  {
+    "file": "necesse/engine/save/LevelSave.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "895ab7e9d46589feb7ad1fe4aed49c2153f407e8488ba90b1d83118290115cc1",
+    "afterSha256": "3a76ca60a9d1635bb25f21f9720feb3978e03c77710da6fc4bb807746c7ba776"
+  },
+  {
+    "file": "necesse/inventory/container/object/HomestoneContainer.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "25c425e5f14b3a49000b5dde43748fa07a8478fd99ee9d01a6e77f266036c2c8",
+    "afterSha256": "2ac20c21573c3a74d7d90164786d995e0c4688ba01aa2ec5683dc295eee904f0"
+  },
+  {
+    "file": "necesse/inventory/item/toolItem/swordToolItem/BloodClawToolItem.java",
+    "reason": "Use same-bytecode Vineflower recovery without LVT names to avoid shadowed locals/closure captures",
+    "beforeSha256": "f6d0b87116d8e49d349b436638f3a0b4889046b2e7d55641426e2f3f849fa213",
+    "afterSha256": "336a64c407e5eb87eb511193f610315fd1cd2ff73d089fd2ed5950649955c154"
+  },
+  {
+    "file": "necesse/level/gameObject/GameObject.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "5962aa29a504e4657c61fb8c40b5573585f994757eda72ed6997b7fe02ae03da",
+    "afterSha256": "ed3bbf6781a827b8cfc319e807ef3dc82853c7758800008d04e14f04c4712393"
+  },
+  {
+    "file": "necesse/engine/modifiers/ModifierManager.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "79fa570b6c9781efa851906cb285290341e6af55c365dfbb66f12d398ae40561",
+    "afterSha256": "19b0287eb0cc31285e31b198ea712736c83b0388f8d469febef3d3f757f5599d"
+  },
+  {
+    "file": "necesse/engine/modifiers/ModifierContainer.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "4a1c185d32f15c21a49b3ae8841b3bd785f9ca7f374f94d22c65a1e394f1d732",
+    "afterSha256": "ab0ff6478454c350f7f16d0010db0ef56fb798f114741abd2eb0910087826f1d"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "c19ca43d51ecb10c92e3c9dd484c4f437492f44ce5ba5c1c31c37c334e419bbc",
+    "afterSha256": "48cc1b266e55e5f094232d0e14fd8e6748e78ab0e80469a162b72c9e06f9480f"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "48cc1b266e55e5f094232d0e14fd8e6748e78ab0e80469a162b72c9e06f9480f",
+    "afterSha256": "8bd2f77d5d74c4fcb52f8935a85c558fc8e7b3f0e56056b821dad9b64df0cf32"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "8bd2f77d5d74c4fcb52f8935a85c558fc8e7b3f0e56056b821dad9b64df0cf32",
+    "afterSha256": "76457da1fcea287758508948ae1a7ab6e57ef9fee2146f48a4adacaff3648faa"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "76457da1fcea287758508948ae1a7ab6e57ef9fee2146f48a4adacaff3648faa",
+    "afterSha256": "f0cc13239291976c09cab85998c52d34f199f5650c58cce52e37b1ed2e780fef"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "f0cc13239291976c09cab85998c52d34f199f5650c58cce52e37b1ed2e780fef",
+    "afterSha256": "48c76cd07837474cbaa982e3db3f2ee6ae01fdcf43172418b4e7285a5cead361"
+  },
+  {
+    "file": "necesse/engine/util/GameLinkedList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "48c76cd07837474cbaa982e3db3f2ee6ae01fdcf43172418b4e7285a5cead361",
+    "afterSha256": "b687a9d9b03db3cb1d339fcd8d0d418331ecd24847f51e2f22238542900a1f04"
+  },
+  {
+    "file": "necesse/entity/mobs/ai/behaviourTree/CompositeTypedAINode.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "53783cf9bf92b7f0610b56077924524a4510748c87c11b3159e63c23c707badf",
+    "afterSha256": "b41720ab5fd34896e2ef1ba0d7da92f61f8e7dcee58cb6395c65b6a9f90d2ced"
+  },
+  {
+    "file": "necesse/engine/util/pathfinding/Pathfinding.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "8932382927dcc17657efa4b261b1c16dc64735910f62daf64dea03a6cff325ea",
+    "afterSha256": "7c3401460c414da9b4d5998cc4bfe92cfd1989a68f6f8b00b62e48e0a70ba626"
+  },
+  {
+    "file": "necesse/engine/util/pathfinding/Pathfinding.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "7c3401460c414da9b4d5998cc4bfe92cfd1989a68f6f8b00b62e48e0a70ba626",
+    "afterSha256": "c2099a3042d3abbaa79c6976ed9c73d9880278b0d721af748ca79db40d9039cc"
+  },
+  {
+    "file": "necesse/engine/util/pathfinding/Pathfinding.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "c2099a3042d3abbaa79c6976ed9c73d9880278b0d721af748ca79db40d9039cc",
+    "afterSha256": "244b6d4c14c92d60ef67b696bcb747c513fae7cdbba0df822896e0c4b148cfed"
+  },
+  {
+    "file": "necesse/engine/util/gameAreaSearch/GameAreaStream.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "fbc18428884a55700ab0a4064001666f77364ead123b84bb565ae5794b890cf5",
+    "afterSha256": "510f857f3cda0bd6519804d5df9c6f9ca122f9a6d45542120fb04354322d7aee"
+  },
+  {
+    "file": "necesse/entity/mobs/job/JobTypeHandler.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "9471d13a9f3c57f265c050954cc30a820d8e72aef594aee29ee352cf6c12d033",
+    "afterSha256": "8bde5c1d3a18b9cf09f6b2b0c7a4d714f82384e4c5fe28c87794a7da0fc74ffd"
+  },
+  {
+    "file": "necesse/gfx/forms/components/FormDropdownSelectionButton.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "c173bfe2a0fb6426ec28287b58c8e0d53d46f670433ebd6d127d91dbb32028ba",
+    "afterSha256": "8dc52f105df743e671d1fcddc80352c025d7961ba35e9b6dfc2c30dd86506d1d"
+  },
+  {
+    "file": "necesse/gfx/forms/components/FormDropdownSelectionButton.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "8dc52f105df743e671d1fcddc80352c025d7961ba35e9b6dfc2c30dd86506d1d",
+    "afterSha256": "f8d4a3b13e15e3fa6aa45b5153fbb41ff967c3820970cd74f26f47d2839181c4"
+  },
+  {
+    "file": "necesse/entity/projectile/Projectile.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "f3cfde0664148c276fbb4b45652215e007cb5c16d505611639dbe6ef7f88baff",
+    "afterSha256": "427060a003484edf2a9534493f4093511164f78adbb11adc47f68022e457dec9"
+  },
+  {
+    "file": "necesse/entity/mobs/ai/path/TilePathfinding.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "29a252c7a9a5194170edb2c3d2524d452e2f2e6eb19dcf9f2bafd7a89cc5af18",
+    "afterSha256": "f263e8032bc90fbd979bf12b17d87ec0d524651d0235bbbf17fc175f63b4f7df"
+  },
+  {
+    "file": "necesse/engine/util/MapQueue.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "98c8f359053640d56b18ced4e2882c7996c3326fa3f8e7fc81abdf10b80835fe",
+    "afterSha256": "072fb7d800376e81a1d81d0b22c7722ed6b665cd90eb8a8a248ce1e2172411bd"
+  },
+  {
+    "file": "necesse/engine/network/client/ClientLevelLoading.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "73d7481fdf96aecbea0cecf551cc807c0dbb201ff8e6cc206f87303b03803db1",
+    "afterSha256": "4d88f4c5310b8b006dd81a3e1338d123384dc2e419e0592fe9240fda27e2e235"
+  },
+  {
+    "file": "necesse/level/maps/presets/set/PresetSet.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "d652ac6e79a4128b6308ec22b86f35aaddc16327c2df6a38d84a389ad8bec838",
+    "afterSha256": "6cff019508a172fc69d9edcf0527791debae8edea8ee556110125c96dd2bbaeb"
+  },
+  {
+    "file": "necesse/engine/GameEvents.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "0bca3979c238207440e653c5586716426d1f8db10c14a19205a324a5110599c2",
+    "afterSha256": "e2551f24bd97e1af1c8f0a06e6d449f7454e02905b6af29dcdb6176e388ce39f"
+  },
+  {
+    "file": "necesse/engine/commands/parameterHandlers/ParameterHandler.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "054ac6164ac41ab435fd02fa297ac5d3669d377c08930b28c28a9716f355d1f7",
+    "afterSha256": "3a53d2352fdb8f8e23648b0fafc0970b8667282f1da64e4db6c536222c22aabd"
+  },
+  {
+    "file": "necesse/engine/registries/BiomeRegistry.java",
+    "reason": "Restore cast from registry object to declared generic return",
+    "beforeSha256": "36e9456586da71d4893c8c555cc3f948f6b4f2fb0c11cc2ffaf599bfe87f5d69",
+    "afterSha256": "5b4ee648133af6f2f0a8635fe3360b8e538c93ccfdb1abfa4d62131c78e34cd3"
+  },
+  {
+    "file": "necesse/engine/registries/BuffRegistry.java",
+    "reason": "Restore cast from registry object to declared generic return",
+    "beforeSha256": "dd97978c30d61385a332ec5e7b693fc353fef2564f0f6b70cd013ad6036f1622",
+    "afterSha256": "86a8aad82c11a25d750d9fc509e8533761fefcaffb73daba32b3e83e44f4fc03"
+  },
+  {
+    "file": "necesse/engine/registries/IncursionBiomeRegistry.java",
+    "reason": "Restore cast from registry object to declared generic return",
+    "beforeSha256": "e14974b13bdadde18215d31e82e1f341bacfd8cafba910946682a5ec92d3e156",
+    "afterSha256": "a1ff9e31a3552334498c0912abcda924e700a51c8d41564e0f6643e07b314c0c"
+  },
+  {
+    "file": "necesse/engine/registries/ItemRegistry.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "f7578bff3c202ac06007222b2e8b66bc40c19593367adf4a2647b28ea7b6e6e8",
+    "afterSha256": "6b00f84fc284d44492d259db4dd1b19c1222352f71e0894079cc1cb17da3b9c8"
+  },
+  {
+    "file": "necesse/engine/registries/RegionLayerRegistry.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "f23b14af7dbc1ee70b33b2d133a55654c6df2f0f71989273c72d91ebcc7f13e0",
+    "afterSha256": "c6c9acd1584bde712502d541504852b0fc1d382584f559dd0ca4ec664fe2f285"
+  },
+  {
+    "file": "necesse/engine/registries/UniqueIncursionModifierRegistry.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "57e26840500dc488af1c5cede7cc99e8509a243a85a1e4b53d2b51c13afd5757",
+    "afterSha256": "8e16f47ffcc91cb9e4c41a7089802ada65925a88d253d5431ac4c301306beb89"
+  },
+  {
+    "file": "necesse/engine/util/MultiValueWatcher.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "abdaaf9df397a039ed4937cedde1690cb548e013686e6f02bbef02eda0ce58df",
+    "afterSha256": "500c6839d1bdfdbc3c1af7ef47cc96a53212ec13f7094477b76d223532e220a4"
+  },
+  {
+    "file": "necesse/engine/util/PointerList.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "a1d7ce90ce16bbcf4028d990da961bfbd99a05742b3cefded281e28e977307f2",
+    "afterSha256": "c41c8596c538c3e136f3d17a5b6c0df1f9c5167630b86ea8fe8c4f190525e4c9"
+  },
+  {
+    "file": "necesse/entity/ParticleBeamHandler.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "624ced4ec7baa1cc90d56af2802cf920ce660bb96576d78ee075e811eaef130d",
+    "afterSha256": "436319949e04fd7390fc9b61ef6f4b253d346421f82b598d380229e0fe44be24"
+  },
+  {
+    "file": "necesse/entity/ParticleBeamHandler.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "436319949e04fd7390fc9b61ef6f4b253d346421f82b598d380229e0fe44be24",
+    "afterSha256": "62b230416e390d4f9055935744dd2f6a90cd3b8c094be9e9284842837a078702"
+  },
+  {
+    "file": "necesse/entity/mobs/WormMobHead.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "7c492fba2ac12300091854331b51eef092f55ebfd32b3ccb1d8fc9a8c714fa1e",
+    "afterSha256": "e08b33a407308f370540aad2f6e37a258f56a07ecbfae3672f2d0df98e85bb40"
+  },
+  {
+    "file": "necesse/entity/mobs/WormMobHead.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "e08b33a407308f370540aad2f6e37a258f56a07ecbfae3672f2d0df98e85bb40",
+    "afterSha256": "785f6771aacb6d0187eb4b5e53ec2a770c229b5ce215def6cd0b526eff9539ef"
+  },
+  {
+    "file": "necesse/gfx/ThemeColorRegistry.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "2fe159155446cc28fad77f052226843574ee6c6fc0679754af38940988419e45",
+    "afterSha256": "5249735e41c0ec8d73d91f5f6c0a62e4a79c8f1a62171b2389fc952f14bbfc2a"
+  },
+  {
+    "file": "necesse/gfx/forms/events/FormKeyEventsHandler.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "153d7b5eb82187d503ba583408b73d0d4b5acd7adf8583214b1b3a473350ebb7",
+    "afterSha256": "e3c6f9564eace2f5e67c9bade4f470e47f56251fe6dcb0e6e6079794bdf4cb0f"
+  },
+  {
+    "file": "necesse/gfx/forms/presets/PresetDebugPreviewForm.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "1e8f34d5af74000f10db1375c22d3877d9eaf0a1f78525439689e3c6e56b815c",
+    "afterSha256": "86f4bdc91c4d1796b40c9777e62264d0ce300e86e166469088022c22086342d1"
+  },
+  {
+    "file": "necesse/gfx/forms/presets/debug/tools/TestThoughtBubblesGameTool.java",
+    "reason": "Restore erased generic cast / inferred owner or type",
+    "beforeSha256": "4a5349f9098fe41bd0ffb484294a54342348ba95fd1f0395c6370e7d278440d8",
+    "afterSha256": "4f5fa5285398dd36d1b97f78304a5b15a8fb945236b0e29a7f51c465b4f7dbca"
+  }
+]

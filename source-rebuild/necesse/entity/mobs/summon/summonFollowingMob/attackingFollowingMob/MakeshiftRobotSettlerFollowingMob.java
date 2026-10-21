@@ -1,0 +1,161 @@
+package necesse.entity.mobs.summon.summonFollowingMob.attackingFollowingMob;
+
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.util.List;
+import necesse.engine.gameLoop.tickManager.TickManager;
+import necesse.engine.registries.MobRegistry;
+import necesse.engine.sound.SoundEffect;
+import necesse.engine.sound.SoundManager;
+import necesse.engine.sound.SoundSettings;
+import necesse.engine.util.GameRandom;
+import necesse.entity.mobs.GameDamage;
+import necesse.entity.mobs.MaskShaderOptions;
+import necesse.entity.mobs.Mob;
+import necesse.entity.mobs.MobDrawable;
+import necesse.entity.mobs.PlayerMob;
+import necesse.entity.mobs.ai.behaviourTree.BehaviourTreeAI;
+import necesse.entity.mobs.ai.behaviourTree.trees.PlayerFollowerChaserAI;
+import necesse.entity.mobs.buffs.BuffModifiers;
+import necesse.entity.particle.FleshParticle;
+import necesse.entity.particle.Particle;
+import necesse.gfx.GameResources;
+import necesse.gfx.camera.GameCamera;
+import necesse.gfx.drawOptions.DrawOptions;
+import necesse.gfx.drawOptions.human.HumanDrawOptions;
+import necesse.gfx.drawables.OrderableDrawables;
+import necesse.inventory.InventoryItem;
+import necesse.level.maps.Level;
+import necesse.level.maps.light.GameLight;
+
+public class MakeshiftRobotSettlerFollowingMob extends AttackingFollowingMob {
+   public int lifeTime = 15000;
+
+   public MakeshiftRobotSettlerFollowingMob() {
+      super(10);
+      this.setSpeed(60.0F);
+      this.setFriction(3.0F);
+      this.attackAnimTime = 400;
+      this.attackCooldown = 400;
+      this.moveAccuracy = 10;
+      this.collision = new Rectangle(-10, -7, 20, 14);
+      this.hitBox = new Rectangle(-12, -14, 24, 24);
+      this.selectBox = new Rectangle(-13, -30, 26, 40);
+      this.swimMaskMove = 16;
+      this.swimMaskOffset = 0;
+      this.swimSinkOffset = -4;
+   }
+
+   @Override
+   public void init() {
+      super.init();
+      this.ai = new BehaviourTreeAI<>(
+         this,
+         new PlayerFollowerChaserAI<MakeshiftRobotSettlerFollowingMob>(576, 64, false, false, 640, 64) {
+            public boolean attackTarget(MakeshiftRobotSettlerFollowingMob mob, Mob target) {
+               if (mob.canAttack()) {
+                  mob.attack(target.getX(), target.getY(), false);
+                  GameDamage damage = new GameDamage(
+                     MakeshiftRobotSettlerFollowingMob.this.summonDamage.damage
+                        * MakeshiftRobotSettlerFollowingMob.this.buffManager.getModifier(BuffModifiers.ALL_DAMAGE)
+                  );
+                  target.isServerHit(damage, mob.dx, mob.dy, 15.0F, mob);
+                  return true;
+               } else {
+                  return false;
+               }
+            }
+         }
+      );
+   }
+
+   @Override
+   public void clientTick() {
+      super.clientTick();
+   }
+
+   @Override
+   public void serverTick() {
+      super.serverTick();
+      this.lifeTime -= 50;
+      if (this.lifeTime <= 0) {
+         this.remove(0.0F, 0.0F, null, true);
+      }
+   }
+
+   @Override
+   public void spawnDeathParticles(float knockbackX, float knockbackY) {
+      for (int i = 0; i < 4; i++) {
+         this.getLevel()
+            .entityManager
+            .addParticle(
+               new FleshParticle(
+                  this.getLevel(),
+                  MobRegistry.Textures.makeshiftRobotSettler.body,
+                  GameRandom.globalRandom.nextInt(5),
+                  8,
+                  32,
+                  this.x,
+                  this.y,
+                  20.0F,
+                  knockbackX,
+                  knockbackY
+               ),
+               Particle.GType.IMPORTANT_COSMETIC
+            );
+      }
+   }
+
+   @Override
+   protected SoundSettings getHitDeathSound() {
+      return new SoundSettings(GameResources.fadedeath3).volume(0.5F).basePitch(1.5F);
+   }
+
+   @Override
+   public void addDrawables(
+      List<MobDrawable> list,
+      OrderableDrawables tileList,
+      OrderableDrawables topList,
+      Level level,
+      int x,
+      int y,
+      TickManager tickManager,
+      GameCamera camera,
+      PlayerMob perspective
+   ) {
+      super.addDrawables(list, tileList, topList, level, x, y, tickManager, camera, perspective);
+      GameLight light = level.getLightLevel(x / 32, y / 32);
+      int drawX = camera.getDrawX(x) - 22 - 10;
+      int drawY = camera.getDrawY(y) - 44 - 7;
+      float animProgress = this.getAttackAnimProgress();
+      int dir = this.getDir();
+      Point sprite = this.getAnimSprite(x, y, dir);
+      drawY += this.getBobbing(x, y);
+      drawY += this.getLevel().getTile(x / 32, y / 32).getMobSinkingAmount(this);
+      MaskShaderOptions swimMask = this.getSwimMaskShaderOptions(this.inLiquidFloat(x, y));
+      HumanDrawOptions humanDrawOptions = new HumanDrawOptions(level, MobRegistry.Textures.makeshiftRobotSettler)
+         .sprite(sprite)
+         .mask(swimMask)
+         .dir(dir)
+         .light(light);
+      if (this.isAttacking) {
+         humanDrawOptions.itemAttack(new InventoryItem("stopsignsword"), null, animProgress, this.attackDir.x, this.attackDir.y);
+      }
+
+      final DrawOptions drawOptions = humanDrawOptions.pos(drawX, drawY);
+      list.add(new MobDrawable() {
+         @Override
+         public void draw(TickManager tickManager) {
+            drawOptions.draw();
+         }
+      });
+   }
+
+   @Override
+   public void showAttack(int x, int y, int seed, boolean showAllDirections) {
+      super.showAttack(x, y, seed, showAllDirections);
+      if (this.isClient()) {
+         SoundManager.playSound(GameResources.swing1, SoundEffect.effect(this).volume(0.3F));
+      }
+   }
+}
