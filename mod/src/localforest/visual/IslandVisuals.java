@@ -3,6 +3,10 @@ package localforest.visual;
 import java.awt.Color;
 import java.util.*;
 import localforest.world.IslandWorld;
+import localforest.scene.RegionSceneQuery;
+import localforest.scene.SceneStructures;
+import localforest.scene.StructureInstance;
+import localforest.scene.TileBounds;
 import necesse.engine.gameLoop.tickManager.TickManager;
 import necesse.entity.mobs.PlayerMob;
 import necesse.entity.objectEntity.FueledInventoryObjectEntity;
@@ -70,7 +74,7 @@ public final class IslandVisuals {
     public static int mod(int n,int d) { return Math.floorMod(n,d); }
     public static double seconds(Level l) {return l.getWorldEntity().getWorldTime()/1000.0;}
     public static GameLight light(Level l,int x,int y) {return SceneLighting.enabled()?SceneLighting.light(l,x*32+16,y*32+29):l.getLightLevel(x,y).minLevelCopy(54);}
-    public static boolean land(Level l,int x,int y) {return x>=0&&y>=0&&x<l.tileWidth&&y<l.tileHeight&&!l.getTile(x,y).isLiquid;}
+    public static boolean land(Level l,int x,int y) {return !RegionSceneQuery.liquid(l,x,y);}
     private static SharedTextureDrawOptions terrainBatch(LevelTileTerrainDrawOptions out,String name,int priority) {
         return out.specialDrawables.getOrCreate("localforest-"+name,priority,()->new SharedTextureDrawOptions(art.get(name)));
     }
@@ -115,6 +119,10 @@ public final class IslandVisuals {
             LevelTileTerrainDrawOptions over,OrderableDrawables objects,List<LevelSortedDrawable> sorted,
             Level level,int tx,int ty,GameCamera camera,TickManager tick) {
         if(!active(level))return false;
+        RegionSceneQuery.observe(level,camera);
+        // Cave geology keeps the native stone/ore tile art; surface vegetation
+        // and raised ocean banks are not appropriate receivers underground.
+        if(level.isCave)return false;
         if(SceneLighting.enabled())RadianceShadowRenderer.addShore(objects,level,camera,SceneLighting.shadowSources(level));
         int dx=camera.getTileDrawX(tx),dy=camera.getTileDrawY(ty),v=variation(tx,ty);
         if(tile.isLiquid) {
@@ -147,8 +155,12 @@ public final class IslandVisuals {
         // Lighting this texture again would square the brightness and reveal every 32px tile.
         String runtimeGround=MosslumeArt.groundTexture(level,tx,ty);
         if(runtimeGround!=null)terrainBatch(under,runtimeGround,0).addFull().size(32,32).pos(dx,dy);
-        else if(!NaturalPathRenderer.draw(under,level,tx,ty,dx,dy))
-            terrainBatch(under,base,0).addSection(sx,sx+32,sy,sy+32).pos(dx,dy);
+        else if(!NaturalPathRenderer.draw(under,level,tx,ty,dx,dy)) {
+            SharedTextureDrawOptions ground=base.equals("ground")
+                ?under.specialDrawables.getOrCreate("localforest-ground",0,()->DaylightMaterials.groundBatch(art.get("ground"),level))
+                :terrainBatch(under,base,0);
+            ground.addSection(sx,sx+32,sy,sy+32).pos(dx,dy);
+        }
         if(!land(level,tx,ty+1)) {
             terrainBatch(over,"earth",1).addSection(mod(tx,2)*32,mod(tx,2)*32+32,0,7).size(32,11).pos(dx,dy+30);
             terrainBatch(over,"shore",2).addSection(mod(tx,2)*32,mod(tx,2)*32+32,0,8).size(32,4).pos(dx,dy+29);
@@ -156,7 +168,7 @@ public final class IslandVisuals {
         if(!land(level,tx-1,ty))terrainBatch(over,"earth",1).addSection(0,5,0,7).size(3,33).pos(dx-2,dy+2);
         if(!land(level,tx+1,ty))terrainBatch(over,"earth",1).addSection(0,5,0,7).size(3,33).pos(dx+31,dy+2);
         // Low native-free undergrowth follows shore and trail edges; native objects retain all interaction.
-        if(!dirt&&level.getObjectID(tx,ty)==0&&!houseFootprint(tx,ty)&&mod(v,11)<3) {
+        if(!dirt&&level.getObjectID(tx,ty)==0&&!houseFootprint(level,tx,ty)&&mod(v,11)<3) {
             String[] kinds={"fern","berry-bush","wildflowers","grass","mushroom-log","flowers","reeds"};
             String kind=kinds[mod(v>>>5,kinds.length)];
             if(kind.equals("reeds")&&land(level,tx-1,ty)&&land(level,tx+1,ty)&&land(level,tx,ty-1)&&land(level,tx,ty+1))kind="fern";
@@ -164,27 +176,35 @@ public final class IslandVisuals {
             final int x=dx+16+(mod(v>>>9,9)-4),y=dy+29;
             sorted.add(sorted(level.getObject(tx,ty),tx,ty,26,()->windSprite(k,x,y,scale,level,tx,ty,false,1)));
         }
-        if(tx==52&&ty==43&&houseExists(level))addHouse(sorted,objects,level,camera,tx,ty);
+        StructureInstance house=SceneStructures.atFoot(level,tx,ty);
+        if(house!=null&&SceneStructures.exists(level,house))addHouse(sorted,objects,level,camera,house);
         // Emitters are tied to tile positions; the sorted foot remains fixed while particles ascend.
-        if(tx>=32&&tx<=59&&ty>=25&&ty<=48&&mod(v,31)==0) {
+        if(moteArea(level,tx,ty)&&mod(v,31)==0) {
             final int tilex=tx,tiley=ty;
             sorted.add(sorted(level.getObject(tx,ty),tx,ty,27,()->motes(level,camera,tilex,tiley)));
         }
         terrainDraws++;return true;
     }
-    public static boolean houseFootprint(int x,int y) {return x>=50&&x<=54&&y>=39&&y<=42;}
-    public static boolean houseExists(Level level) {
-        for(int x=50;x<=54;x++)for(int y=39;y<=42;y++) {
-            String id=level.getObject(x,y).getStringID();if(id.contains("woodwall")||id.equals("localforesthousewall"))return true;
-        }return false;
+    public static boolean houseFootprint(Level level,int x,int y) {
+        return SceneStructures.containing(level,x,y)!=null;
     }
-    private static void addHouse(List<LevelSortedDrawable> sorted,OrderableDrawables tiles,Level level,GameCamera camera,int tx,int ty) {
+    public static boolean houseExists(Level level) {
+        for(StructureInstance house:SceneStructures.houses(level))if(SceneStructures.exists(level,house))return true;
+        return false;
+    }
+    private static boolean moteArea(Level level,int tx,int ty) {
+        if(level.gndData.getBoolean("mosslumeGenerated"))return true;
+        // Preserve the approved old test scene while generated worlds emit locally.
+        return tx>=32&&tx<=59&&ty>=25&&ty<=48;
+    }
+    private static void addHouse(List<LevelSortedDrawable> sorted,OrderableDrawables tiles,Level level,GameCamera camera,StructureInstance house) {
+        int tx=house.footTileX,ty=house.footTileY;
         int x=camera.getTileDrawX(tx)+16,y=camera.getTileDrawY(ty)+4;
         addShadow(tiles,MosslumeArt.active(level)?"mosslume-house-shadow":"house",x,y,MosslumeArt.active(level)?2f:2.75f,level,tx,ty,100);
         sorted.add(sorted(level.getObject(tx,ty),tx,ty,23,()->{
             PlayerMob local=level.getClient()==null?null:level.getClient().getPlayer();
-            float opacity=local!=null&&houseFootprint(local.getTileX(),local.getTileY())?.28f:1f;
-            if(!MosslumeArt.house(level,camera,x,y))bottom("house",x,y,2.75f,light(level,tx,ty),opacity);
+            float opacity=local!=null&&house.contains(local.getTileX(),local.getTileY())?.28f:1f;
+            if(!MosslumeArt.house(level,camera,x,y,house))bottom("house",x,y,2.75f,light(level,tx,ty),opacity);
             for(int i=0;i<2;i++) {
                 float age=(float)((seconds(level)*.22+i*.5)%1);
                 bottom("smoke",x-13+(int)(Math.sin(age*4+i)*5),y-178-(int)(age*40),1.25f+age*.3f,new GameLight(150),(float)(Math.sin(age*Math.PI)*.12));
@@ -224,8 +244,9 @@ public final class IslandVisuals {
     public static boolean object(GameObject object,List<LevelSortedDrawable> list,OrderableDrawables tileList,
             Level level,int tx,int ty,TickManager tick,GameCamera camera,PlayerMob perspective,String type) {
         if(!active(level))return false;
+        RegionSceneQuery.observe(level,camera);
         if(MosslumeArt.object(object,list,tileList,level,tx,ty,tick,camera,perspective,type))return true;
-        if(type.equals("wall"))return houseFootprint(tx,ty);
+        if(type.equals("wall"))return houseFootprint(level,tx,ty);
         final int v=variation(tx,ty),x=camera.getTileDrawX(tx)+16,y=camera.getTileDrawY(ty)+29;
         final GameLight l=light(level,tx,ty);
         if(type.equals("tree")) {
@@ -292,13 +313,15 @@ public final class IslandVisuals {
     }
     private static final class Source {float x,y,z,strength;Source(float x,float y,float z,float strength){this.x=x;this.y=y;this.z=z;this.strength=strength;}}
     private static final Map<Level,LightSnapshot> sourceCache=new WeakHashMap<>();
-    private static final class LightSnapshot { long time; final List<Source> lights=new ArrayList<>(); }
+    private static final class LightSnapshot { long time; TileBounds bounds; final List<Source> lights=new ArrayList<>(); }
     private static synchronized List<Source> allSources(Level level) {
         long now=level.getWorldEntity().getWorldTime();
         LightSnapshot snapshot=sourceCache.get(level);
-        if(snapshot!=null&&now>=snapshot.time&&now-snapshot.time<120)return snapshot.lights;
-        snapshot=new LightSnapshot(); snapshot.time=now;
-        for(int yy=0;yy<level.tileHeight;yy++)for(int xx=0;xx<level.tileWidth;xx++) {
+        TileBounds bounds=RegionSceneQuery.visibleLights(level);
+        if(snapshot!=null&&bounds.equals(snapshot.bounds)&&now>=snapshot.time&&now-snapshot.time<120)return snapshot.lights;
+        snapshot=new LightSnapshot(); snapshot.time=now;snapshot.bounds=bounds;
+        for(int yy=bounds.top;yy<bounds.bottom;yy++)for(int xx=bounds.left;xx<bounds.right;xx++) {
+            if(!RegionSceneQuery.loaded(level,xx,yy))continue;
             GameObject o=level.getObject(xx,yy);int brightness=o.getLightLevel(level,0,xx,yy);
             if(brightness>0)snapshot.lights.add(new Source(xx*32+16,yy*32+12,o.getStringID().contains("torch")?48:28,brightness/100f));
         }

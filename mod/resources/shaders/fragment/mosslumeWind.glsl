@@ -4,6 +4,7 @@ uniform vec2 texture_pixel_size;
 uniform float smoothing_factor;
 uniform int pixelCoverage;
 uniform int surfaceLighting;
+uniform vec3 dayMaterial;
 uniform vec3 ambientRGB;
 uniform vec2 worldFoot;
 uniform vec2 spriteSize;
@@ -85,6 +86,13 @@ void main() {
     // not blur the world render target or change the source pixel dimensions.
     vec4 color = pixelCoverage != 0 ? pixelCoveredSample(gl_TexCoord[0].xy)
                                    : texture2D(texture, gl_TexCoord[0].xy);
+    // Only crowns have a nonzero day amount. Keep painted highlight luminance
+    // while reducing neon saturation; night takes the original arithmetic path.
+    if (dayMaterial.x > 0.0) {
+        float luminance = dot(color.rgb, vec3(0.2126, 0.7152, 0.0722));
+        vec3 graded = mix(vec3(luminance), color.rgb, dayMaterial.y) * dayMaterial.z;
+        color.rgb = mix(color.rgb, graded, dayMaterial.x);
+    }
     gl_FragColor = surfaceLighting != 0
         ? vec4(color.rgb * surfaceLight(gl_TexCoord[0].xy), color.a * gl_Color.a)
         : color * gl_Color;

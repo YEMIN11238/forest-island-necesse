@@ -3,6 +3,7 @@ package localforest.visual;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.*;
+import localforest.scene.StructureInstance;
 import javax.imageio.ImageIO;
 import necesse.engine.GameLaunch;
 import necesse.engine.gameLoop.tickManager.TickManager;
@@ -55,6 +56,7 @@ public final class MosslumeArt {
         alias("berry","blueberry","raspberry","blackberry");alias("trade-coin","coin");
         alias("bread","freshbread");alias("vegetable-stew","vegetablestew","potatosoup");alias("grilled-fish","cookedfish","roastedfish");
         for(String d:DIRS){load("players/player-stand-"+d);load("players/player-walk-"+d);for(String role:new String[]{"farmer","carpenter","merchant"})load("residents/"+role+"-"+d);}
+        CompanionSprites.initResources();
         String[] objects={"anvil","bed","berry-empty","berry-flowering","berry-unripe","berry-ripe","bookshelf","chair","chest-closed","chest-opening","chest-open","cupboard","fallen-branch","floor-lamp","interior-wall","noticeboard","occlusion-trim","plank-floor","potted-plant","rock-cracked","rock-damaged","rock-depleted","rock-intact","sapling","seedling","stump","stump-regrowth","table","wall-lamp","woven-rug","young-tree"};
         for(String s:objects){load("world/"+s);registerShadow("world/"+s);}
         for(String s:new String[]{"roof","walls","door-closed","door-open","windows-dark","windows-lit"})load("world/house-layers/"+s);
@@ -117,15 +119,10 @@ public final class MosslumeArt {
 
     public static GameTexture resident(String role,int dir){return ready?textures.get("residents/"+role+"-"+DIRS[Math.floorMod(dir,4)]):null;}
     public static boolean drawResident(HumanMob mob,List<MobDrawable> list,Level level,int x,int y,GameCamera camera,PlayerMob player){
-        if(!active(level)||mob.getUsingObject()!=null||mob.isDowned()||mob.isAttacking)return false;
-        if(!mob.isVisible())return true;
-        String id=mob.getStringID(),role=id.contains("farmer")?"farmer":id.contains("merchant")?"merchant":"carpenter";
-        final GameTexture t=resident(role,mob.getDir());if(t==null)return false;
-        final GameLight light=IslandVisuals.light(level,mob.getTileX(),mob.getTileY());
-        final int dx=camera.getDrawX(x)-CHARACTER_FOOT_X*CHARACTER_SCALE,dy=camera.getDrawY(y)-CHARACTER_FOOT_Y*CHARACTER_SCALE;
-        final DrawOptions marker=mob.getMarkerDrawOptions(x,y,light,camera,0,-69,player);
-        list.add(new MobDrawable(){public void draw(TickManager tick){t.initDraw().size(CHARACTER_FRAME*CHARACTER_SCALE,CHARACTER_FRAME*CHARACTER_SCALE).light(light).draw(dx,dy);marker.draw();residentDraws++;}});
-        return true;
+        return CompanionSprites.draw(mob,list,level,x,y,camera,player,null,null,0);
+    }
+    public static boolean drawResident(HumanMob mob,List<MobDrawable> list,Level level,int x,int y,GameCamera camera,PlayerMob player,InventoryItem attacking,InventoryItem held,long heldUntil){
+        return CompanionSprites.draw(mob,list,level,x,y,camera,player,attacking,held,heldUntil);
     }
     public static String groundTexture(Level level,int tx,int ty){
         if(!active(level))return null;
@@ -160,18 +157,18 @@ public final class MosslumeArt {
         list.add(IslandVisuals.sorted(object,tx,ty,23,()->{if(type.equals("bush")||type.equals("crop")||type.equals("sapling"))IslandVisuals.windSprite(drawKey,x,y,s,level,tx,ty,false,1);else IslandVisuals.litBottom(drawKey,x,y,s,level,tx,ty,1);}));
         worldDraws++;return true;
     }
-    public static boolean house(Level level,GameCamera camera,int footX,int footY){
+    public static boolean house(Level level,GameCamera camera,int footX,int footY,StructureInstance house){
         if(!active(level))return false;
-        PlayerMob player=level.getClient()==null?null:level.getClient().getPlayer();boolean inside=player!=null&&IslandVisuals.houseFootprint(player.getTileX(),player.getTileY());
-        boolean open=level.getObject(52,42).getStringID().contains("open");
+        PlayerMob player=level.getClient()==null?null:level.getClient().getPlayer();boolean inside=player!=null&&house.contains(player.getTileX(),player.getTileY());
+        boolean open=level.getObject(house.doorTileX,house.doorTileY).getStringID().contains("open");
         float hour=level.getWorldEntity().getDayTimeHourFloat();boolean lit=hour>=18||hour<7;
         final float scale=Boolean.getBoolean("mosslume.visual.legacy")?2.4f:2f;
         int x=footX-Math.round(48*scale),y=footY-Math.round(108*scale);
-        GameLight light=IslandVisuals.light(level,52,43);
+        GameLight light=IslandVisuals.light(level,house.footTileX,house.footTileY);
         for(String layer:new String[]{"walls",open?"door-open":"door-closed",lit?"windows-lit":"windows-dark","roof"}){
             float alpha=inside?(layer.equals("roof")?.12f:.36f):1f;
             GameTexture t=textures.get("world/house-layers/"+layer);
-            if(!layer.equals("windows-lit")&&SceneLighting.enabled()&&CrownWindRenderer.draw(t,footX,footY+Math.round(4*scale),scale,light,alpha,52,43,false,level,false,100))continue;
+            if(!layer.equals("windows-lit")&&SceneLighting.enabled()&&CrownWindRenderer.draw(t,footX,footY+Math.round(4*scale),scale,light,alpha,house.footTileX,house.footTileY,false,level,false,100))continue;
             t.initDraw().size(Math.round(96*scale),Math.round(112*scale)).light(layer.equals("windows-lit")?new GameLight(150):light).alpha(alpha).draw(x,y);
         }
         return true;

@@ -4,10 +4,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 from pathlib import Path
 import plistlib
 import shutil
 import subprocess
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = ROOT.parent / 'necesse-island'
@@ -17,6 +19,19 @@ SOURCE_ICON = Path('/Users/zhangjunhao/Downloads/dbb8c4169775beba6f44880b2bd1131
 
 def run(*args: str | Path) -> None:
     subprocess.run([str(arg) for arg in args], check=True)
+
+
+def copy_atomic(source: str | Path, target: str | Path) -> str:
+    """Replace the inode instead of rewriting cached/signed Mach-O files in place."""
+    target=Path(target)
+    fd,temporary=tempfile.mkstemp(prefix='.'+target.name+'.',dir=target.parent)
+    os.close(fd)
+    try:
+        shutil.copy2(source,temporary)
+        os.replace(temporary,target)
+    finally:
+        if os.path.exists(temporary):os.unlink(temporary)
+    return str(target)
 
 
 def prepare_icon() -> Path:
@@ -52,6 +67,7 @@ def main() -> None:
     parser.add_argument('--profile-name', default='Mosslume', help='Isolated default data directory for this application.')
     parser.add_argument('--version', default='0.3.0', help='Bundle version label.')
     parser.add_argument('--skip-links', action='store_true', help='Do not alter project or desktop daily-use entries.')
+    parser.add_argument('--no-profile-migration', action='store_true', help='Start an isolated new-world profile without importing legacy saves.')
     options = parser.parse_args()
     if '/' in options.profile_name or options.profile_name in ('', '.', '..'):
         parser.error('--profile-name must be a directory name')
@@ -89,9 +105,9 @@ def main() -> None:
             continue
         target = game / name
         if source.is_dir():
-            shutil.copytree(source, target, dirs_exist_ok=True)
+            shutil.copytree(source, target, dirs_exist_ok=True, copy_function=copy_atomic)
         else:
-            shutil.copy2(source, target)
+            copy_atomic(source, target)
     # The loader reads these loose overrides before mod classes initialize.
     branding = BASE / 'mod/resources/mosslume/branding'
     loose_resources = game / 'res'
@@ -101,13 +117,13 @@ def main() -> None:
         source = branding / source_name
         if source.exists():
             loose_resources.mkdir(exist_ok=True)
-            shutil.copy2(source, loose_resources / target_name)
+            copy_atomic(source, loose_resources / target_name)
             installed_overrides.append('res/' + target_name)
     mods = res / 'Mods'
     mods.mkdir(exist_ok=True)
-    shutil.copy2(mod, mods / 'localforest-island.jar')
-    shutil.copy2(launcher, mac / 'MosslumeLauncher')
-    shutil.copy2(icon, res / 'Mosslume.icns')
+    copy_atomic(mod, mods / 'localforest-island.jar')
+    copy_atomic(launcher, mac / 'MosslumeLauncher')
+    copy_atomic(icon, res / 'Mosslume.icns')
     info = {
         'CFBundleName': 'Mosslume', 'CFBundleDisplayName': 'Mosslume',
         'CFBundleIdentifier': 'local.mosslume.game.preview' if options.skip_links else 'local.mosslume.game',
@@ -115,6 +131,7 @@ def main() -> None:
         'CFBundlePackageType': 'APPL', 'CFBundleShortVersionString': options.version,
         'CFBundleVersion': '4', 'CFBundleIconFile': 'Mosslume.icns',
         'MosslumeProfileName': options.profile_name,
+        'MosslumeMigrateLegacyProfile': not options.no_profile_migration,
         'NSHighResolutionCapable': True, 'LSMinimumSystemVersion': '11.0',
         'NSHumanReadableCopyright': 'Mosslume development build',
     }
@@ -140,7 +157,7 @@ def main() -> None:
         'launcherArchitectures': subprocess.check_output(['/usr/bin/lipo', '-archs', str(launcher)], text=True).strip(),
         'defaultLaunch': 'branded menu, -islandprofile -mosslume; no automatic -load',
         'earlyLoadingArtOverrides': installed_overrides,
-        'profileMigration': 'At first normal launch, copy old saves only if the new saves directory is absent; copy settings.cfg only if absent. Old profile untouched.',
+        'profileMigration': 'Disabled; isolated new-world profile.' if options.no_profile_migration else 'At first normal launch, copy old saves only if the new saves directory is absent; copy settings.cfg only if absent. Old profile untouched.',
         'runtimeSelfContained': True, 'launched': False,
     }, ensure_ascii=False, indent=2) + '\n')
     print(installed)

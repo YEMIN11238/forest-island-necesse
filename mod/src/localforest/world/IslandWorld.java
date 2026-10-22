@@ -35,14 +35,19 @@ public final class IslandWorld {
  private static int coastID;
  private static final List<Placement> placements=new ArrayList<>();
  public static boolean enabled(){return Boolean.getBoolean("localforest.islandprofile")||(GameLaunch.launchOptions!=null&&GameLaunch.launchOptions.containsKey("islandprofile"));}
- public static boolean isIsland(Level l){return l instanceof IslandLevel||(l!=null&&l.gndData.getBoolean("localforestisland"));}
+ public static boolean isIsland(Level l){return l instanceof IslandLevel||l instanceof GeneratedWorldLevel||(l!=null&&l.gndData.getBoolean("localforestisland"));}
  public static void init(){
   LevelRegistry.registerLevel("localforestisland",IslandLevel.class);
+  LevelRegistry.registerLevel("mosslumegenerated",GeneratedWorldLevel.class);
   NaturalPathWorld.init();
   coastID=ObjectRegistry.registerObject("lfcoastbarrier",new CoastBarrier(),-1.0f,false);
   WorldGenerator.registerGenerator(new WorldGenerator(){
    @Override public Level getNewLevel(LevelIdentifier id,Server server,GameBlackboard board){
-    if(enabled()&&LevelIdentifier.SURFACE_IDENTIFIER.equals(id))return new IslandLevel(id,IslandLayout.WIDTH,IslandLayout.HEIGHT,server.world.worldEntity);
+    if(!enabled())return null;
+    WorldDefinition definition=WorldDefinition.forWorld(server.world.worldEntity);
+    if(definition!=null&&(LevelIdentifier.SURFACE_IDENTIFIER.equals(id)||LevelIdentifier.CAVE_IDENTIFIER.equals(id)))
+      return new GeneratedWorldLevel(id,definition.width,definition.height,server.world.worldEntity);
+    if(definition==null&&LevelIdentifier.SURFACE_IDENTIFIER.equals(id))return new IslandLevel(id,IslandLayout.WIDTH,IslandLayout.HEIGHT,server.world.worldEntity);
     return null;
    }
   });
@@ -52,6 +57,8 @@ public final class IslandWorld {
  }
  public static void postInit(){buildPlacements();}
  public static void initializeNewWorld(WorldEntity world){
+  WorldDefinition definition=WorldDefinition.forWorld(world);
+  if(definition!=null){initializeGeneratedWorld(world,definition);return;}
   world.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
   world.spawnTile=new Point(IslandLayout.SPAWN_X,IslandLayout.SPAWN_Y);
   world.defaultSpawnTile=new Point(world.spawnTile);
@@ -65,13 +72,104 @@ public final class IslandWorld {
  private static void onConnected(ServerClient c){
   if(!enabled())return;
   Level l=c.getLevel();if(!isIsland(l))return;
+  WorldDefinition definition=WorldDefinition.forLevel(l);
+  if(definition!=null){connectGenerated(c,l,definition);return;}
   NaturalPathWorld.migrate(l);
-  c.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
-  c.spawnTile=new Point(IslandLayout.SPAWN_X,IslandLayout.SPAWN_Y);
+  preserveOrRepairSpawn(c,null);
   ServerSettlementData data=SettlementsWorldData.getSettlementsData(l).getOrCreateServerData(l,51,36);
-  data.networkData.setOwner(c);data.networkData.setName(new StaticMessage("林间小岛"));
+  data.networkData.setOwner(c);
+  if(!data.networkData.isSettlementNameSet())data.networkData.setName(new StaticMessage("林间小岛"));
   if(c.playerMob!=null&&!IslandLayout.isLand(c.playerMob.getTileX(),c.playerMob.getTileY())){
    c.playerMob.setPos(IslandLayout.SPAWN_X*32+16,IslandLayout.SPAWN_Y*32+16,true);
+  }
+ }
+ private static void initializeGeneratedWorld(WorldEntity world,WorldDefinition d){
+  world.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
+  world.spawnTile=new Point(d.spawnX,d.spawnY);world.defaultSpawnTile=new Point(world.spawnTile);
+  world.setWorldTime((long)(world.hourToDayTime(8f)*1000f));
+  world.serverWorld.settings.canSettlersDie=false;
+  world.serverWorld.settings.playerHunger=true;
+  world.serverWorld.settings.difficulty=d.rules.equals("relaxed")?necesse.engine.GameDifficulty.CASUAL:necesse.engine.GameDifficulty.CLASSIC;
+  world.serverWorld.settings.saveSettings();
+  Level level=world.serverWorld.getLevel(world.spawnLevelIdentifier);
+  level.regionManager.ensureTilesAreLoaded(d.campX-48,d.campY-48,d.campX+56,d.campY+48);
+  addGeneratedResidents(level,d);
+  System.out.println("MOSSLUME_GENERATED_WORLD_READY preset="+d.preset+" userSeed="+d.userSeed+" generator="+d.generatorVersion+" content="+d.contentVersion+" dimensions="+d.width+"x"+d.height);
+ }
+ private static void connectGenerated(ServerClient client,Level level,WorldDefinition d){
+  preserveOrRepairSpawn(client,d);
+  if(level.isSurfaceLevel()){
+   ServerSettlementData settlement=SettlementsWorldData.getSettlementsData(level).getOrCreateServerData(level,d.campX+2,d.campY-4);
+   settlement.networkData.setOwner(client);
+   if(!settlement.networkData.isSettlementNameSet())settlement.networkData.setName(new StaticMessage("苔光营地"));
+   completeInitialRecruitment(level,settlement);
+   if(client.playerMob!=null&&(!level.isTileWithinBounds(client.playerMob.getTileX(),client.playerMob.getTileY())||level.getTile(client.playerMob.getTileX(),client.playerMob.getTileY()).isLiquid))
+    client.playerMob.setPos(d.spawnX*32+16,d.spawnY*32+16,true);
+  }
+ }
+ /** Connection happens after native player save loading. Preserve its bed/respawn target;
+  * only repair missing, out-of-bounds or unsupported-level data. Native respawn validation
+  * still checks whether the selected bed exists and permits respawning when it is used.
+  */
+ private static void preserveOrRepairSpawn(ServerClient client,WorldDefinition d){
+  boolean allowed=LevelIdentifier.SURFACE_IDENTIFIER.equals(client.spawnLevelIdentifier)
+   ||d!=null&&LevelIdentifier.CAVE_IDENTIFIER.equals(client.spawnLevelIdentifier);
+  int width=d==null?IslandLayout.WIDTH:d.width,height=d==null?IslandLayout.HEIGHT:d.height;
+  Point tile=client.spawnTile;
+  if(allowed&&tile!=null&&tile.x>=0&&tile.y>=0&&tile.x<width&&tile.y<height)return;
+  client.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
+  client.spawnTile=d==null?new Point(IslandLayout.SPAWN_X,IslandLayout.SPAWN_Y):new Point(d.spawnX,d.spawnY);
+ }
+ private static void addGeneratedResidents(Level level,WorldDefinition d){
+  if(level.gndData.getBoolean("mosslumeResidentsSeededV1"))return;
+  ServerSettlementData settlement=SettlementsWorldData.getSettlementsData(level).getOrCreateServerData(level,d.campX+2,d.campY-4);
+  settlement.networkData.markPreventDisbanding();settlement.networkData.setName(new StaticMessage("苔光营地"));
+  for(int i=0;i<2;i++){
+   HumanMob mob=(HumanMob)MobRegistry.getMob(i==0?"elderhuman":"farmerhuman",level);
+   mob.canDespawn=false;mob.setSettlerName(i==0?"林叔":"小禾");
+   int x=d.campX-2+i*3,y=d.campY-2;
+   mob.onSpawned(x*32+16,y*32+16);level.entityManager.addMob(mob,x*32+16,y*32+16);
+   LevelSettler settler=new LevelSettler(settlement,mob);
+   SettlementBed bed=settlement.addOrValidateBed(d.houseX-1+i*2,d.houseY-2);
+   if(bed!=null)settlement.moveSettler(settler,bed,null);else settlement.moveIn(settler);
+   level.gndData.setInt(i==0?"mosslumeInitialElderId":"mosslumeInitialFarmerId",mob.getUniqueID());
+  }
+  completeInitialRecruitment(level,settlement);
+  for(WorldContent.TemplateObject object:d.content.campObjects){
+   if(object.role().endsWith("storage"))settlement.storageManager.assignStorage(object.x(d),object.y(d),false);
+   if(object.role().equals("workstation"))settlement.storageManager.assignWorkstation(object.x(d),object.y(d),false);
+  }
+  for(int i=0;i<6;i++){
+   String type=i<2?"sheep":i<4?"chicken":"rabbit";
+   necesse.entity.mobs.Mob animal=MobRegistry.getMob(type,level);
+   int x=d.campX-9+i*2,y=d.campY-11;
+   if(level.getObjectID(x,y)!=0)level.setObject(x,y,0);
+   animal.onSpawned(x*32+16,y*32+16);animal.canDespawn=false;
+   level.entityManager.addMob(animal,x*32+16,y*32+16);
+  }
+  level.gndData.setBoolean("mosslumeResidentsSeededV1",true);
+ }
+ /** Finish the same recruitment lifecycle as the native shop action, once per starter resident.
+  * Early 0.4 previews only moved residents into beds and omitted their joining thought/cooldowns.
+  * Match those two residents narrowly; never refresh the bonus on every connection or affect recruits.
+  */
+ private static void completeInitialRecruitment(Level level,ServerSettlementData settlement){
+  for(LevelSettler settler:settlement.getSettlers()){
+   if(!(settler.getMob() instanceof HumanMob))continue;
+   HumanMob mob=(HumanMob)settler.getMob();
+   if(!mob.isSettler()||mob.getSettlementUniqueID()!=settlement.uniqueID||mob.getLevel()!=level)continue;
+   boolean elder=mob.getStringID().equals("elderhuman"),farmer=mob.getStringID().equals("farmerhuman");
+   if(!elder&&!farmer)continue;
+   String identity=elder?"mosslumeInitialElderId":"mosslumeInitialFarmerId";
+   int known=level.gndData.getInt(identity);
+   if(known!=0?known!=mob.getUniqueID():!mob.getSettlerName().equals(elder?"林叔":"小禾"))continue;
+   String marker="mosslumeRecruitedV1_"+mob.getUniqueID();
+   if(level.gndData.getBoolean(marker))continue;
+   mob.onRecruited(null,settlement,settler);
+   mob.updateHappiness();
+   level.gndData.setInt(identity,mob.getUniqueID());
+   level.gndData.setBoolean(marker,true);
+   System.out.println("MOSSLUME_STARTER_RECRUITMENT_READY type="+mob.getStringID()+" id="+mob.getUniqueID());
   }
  }
  private static void addResidents(Level l){

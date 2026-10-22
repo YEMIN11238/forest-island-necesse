@@ -10,6 +10,8 @@ __pycache__/
 /test-profile*/
 /logs/
 /mod/build/
+/build/
+/mosslume/build/
 /mod/dist/
 /rebuild/classes/
 /rebuild/*.jar

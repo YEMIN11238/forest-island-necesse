@@ -2,6 +2,10 @@ package localforest.visual;
 
 import java.awt.Color;
 import java.util.*;
+import localforest.scene.RegionSceneQuery;
+import localforest.scene.SceneStructures;
+import localforest.scene.StructureInstance;
+import localforest.scene.TileBounds;
 import necesse.level.maps.Level;
 import necesse.level.gameObject.GameObject;
 import necesse.level.maps.light.GameLight;
@@ -18,20 +22,31 @@ public final class SceneLighting {
         }
     }
     private static final class Snapshot {
-        final long time;final List<Source> sources;
+        final long time;final TileBounds bounds;final List<Source> sources;
         List<RadianceShadowRenderer.Light> shadows;
-        final Map<Long,float[]> terrainSmooth=new HashMap<>(),terrainFlat=new HashMap<>(),points=new HashMap<>();
-        Snapshot(long time,List<Source> sources){this.time=time;this.sources=Collections.unmodifiableList(sources);}
+        final TileColorCache terrainSmooth,terrainFlat,points;
+        Snapshot(long time,TileBounds bounds,List<Source> sources){
+            this.time=time;this.bounds=bounds;this.sources=Collections.unmodifiableList(sources);
+            terrainSmooth=new TileColorCache(bounds);terrainFlat=new TileColorCache(bounds);
+            // Smooth-light samples include the right/bottom corner of the
+            // final tile, one point beyond the half-open tile rectangle.
+            points=new TileColorCache(new TileBounds(bounds.left,bounds.top,bounds.right+1,bounds.bottom+1));
+        }
     }
     private static final Map<Level,Snapshot> cache=new WeakHashMap<>();
-    public static long terrainSamples,spritePasses;
+    public static long terrainSamples,spritePasses,lightTilesScanned;
+    public static int lastQueryTiles;
     public static boolean enabled(){return !Boolean.getBoolean("mosslume.lighting.legacy");}
     public static synchronized List<Source> sources(Level level){
         long time=level.getWorldEntity().getWorldTime();
         Snapshot old=cache.get(level);
-        if(old!=null&&time>=old.time&&time-old.time<120)return old.sources;
+        TileBounds bounds=RegionSceneQuery.visibleLights(level);
+        if(old!=null&&bounds.equals(old.bounds)&&time>=old.time&&time-old.time<120)return old.sources;
         ArrayList<Source> lights=new ArrayList<>();
-        for(int y=0;y<level.tileHeight;y++)for(int x=0;x<level.tileWidth;x++){
+        lastQueryTiles=0;
+        for(int y=bounds.top;y<bounds.bottom;y++)for(int x=bounds.left;x<bounds.right;x++){
+            if(!RegionSceneQuery.loaded(level,x,y))continue;
+            lightTilesScanned++;lastQueryTiles++;
             GameObject o=level.getObject(x,y);int nativeLevel=o.getLightLevel(level,0,x,y);
             if(nativeLevel<=0)continue;
             boolean tall=o.getStringID().contains("torch");
@@ -39,13 +54,20 @@ public final class SceneLighting {
                 tall?56:36,Math.min(1.2f,nativeLevel/100f),tall?144:176,1f,.82f,.36f));
         }
         float night=night(level);
-        if(night>.01f&&IslandVisuals.houseExists(level)){
-            lights.add(new Source(-10,52*32-43,43*32-25,34,.42f*night,104,1f,.73f,.28f));
-            lights.add(new Source(-11,52*32+65,43*32-25,34,.42f*night,104,1f,.73f,.28f));
+        if(night>.01f){
+            int index=0;
+            for(StructureInstance house:SceneStructures.houses(level)){
+                if(bounds.contains(house.footTileX,house.footTileY)&&SceneStructures.exists(level,house)){
+                    lights.add(new Source(-10-index*2,house.windowX(0),house.windowY(),34,.42f*night,104,1f,.73f,.28f));
+                    lights.add(new Source(-11-index*2,house.windowX(1),house.windowY(),34,.42f*night,104,1f,.73f,.28f));
+                }
+                index++;
+            }
         }
-        Snapshot result=new Snapshot(time,lights);cache.put(level,result);return result.sources;
+        Snapshot result=new Snapshot(time,bounds,lights);cache.put(level,result);return result.sources;
     }
     public static float night(Level level){
+        if(level.isCave)return 1f;
         float h=level.getWorldEntity().getDayTimeHourFloat();
         return h>=18?Math.min(1,(h-18)/1.5f):h<7?Math.min(1,(7-h)/1.5f):0;
     }
@@ -56,7 +78,7 @@ public final class SceneLighting {
         double angle=(level.getWorldEntity().getDayTimeHourFloat()-12)*.055;
         float dx=(float)(.65-Math.sin(angle)*.25),dy=.60f;
         float length=(float)Math.hypot(dx,dy);
-        out.add(new RadianceShadowRenderer.Light(-1,dx/length,dy/length,200,.58f,.90f,true));
+        if(!level.isCave)out.add(new RadianceShadowRenderer.Light(-1,dx/length,dy/length,200,.58f,.90f,true));
         for(Source s:lights)out.add(new RadianceShadowRenderer.Light(s.key,s.x,s.y,s.z,s.strength*flicker(s),s.radius,false));
         snapshot.shadows=Collections.unmodifiableList(out);return snapshot.shadows;
     }
@@ -95,19 +117,18 @@ public final class SceneLighting {
     }
     public static synchronized float[] terrain(Level level,int tx,int ty,boolean smooth){
         sources(level);Snapshot snapshot=cache.get(level);
-        long key=((long)tx<<32)|(ty&0xffffffffL);
-        Map<Long,float[]> fields=smooth?snapshot.terrainSmooth:snapshot.terrainFlat;
-        float[] cached=fields.get(key);terrainSamples++;if(cached!=null)return cached;
+        TileColorCache fields=smooth?snapshot.terrainSmooth:snapshot.terrainFlat;
+        float[] cached=fields.get(tx,ty);terrainSamples++;if(cached!=null)return cached;
         float[] out=new float[16];
         for(int i=0;i<4;i++){
             int ox=(i==1||i==2)?1:0,oy=i>=2?1:0;
             float wx=(tx+.5f+(smooth?ox:0))*32,wy=(ty+.5f+(smooth?oy:0))*32;
-            int px=tx+(smooth?ox:0),py=ty+(smooth?oy:0);long pointKey=((long)px<<32)|(py&0xffffffffL);
-            float[] c=snapshot.points.get(pointKey);
-            if(c==null){boolean water=!IslandVisuals.land(level,px,py);c=color(level,wx,wy,water);snapshot.points.put(pointKey,c);}
+            int px=tx+(smooth?ox:0),py=ty+(smooth?oy:0);
+            float[] c=snapshot.points.get(px,py);
+            if(c==null){boolean water=!IslandVisuals.land(level,px,py);c=color(level,wx,wy,water);snapshot.points.put(px,py,c);}
             out[i*4]=Math.min(1,c[0]);out[i*4+1]=Math.min(1,c[1]);out[i*4+2]=Math.min(1,c[2]);out[i*4+3]=1;
         }
-        fields.put(key,out);return out;
+        fields.put(tx,ty,out);return out;
     }
     /** Uniforms are consumed by both the wind mesh and rigid props, in world coordinates. */
     public static void bind(GameShader shader,Level level,float wx,float wy,float width,float height,float elevation,boolean rounded){
@@ -120,13 +141,14 @@ public final class SceneLighting {
         List<Source> source=sources(level);
         Source first=null,second=null,third=null;float a1=0,a2=0,a3=0;
         for(Source s:source){float e=energy(s,wx,wy);if(e>a1){third=second;a3=a2;second=first;a2=a1;first=s;a1=e;}else if(e>a2){third=second;a3=a2;second=s;a2=e;}else if(e>a3){third=s;a3=e;}}
-        Source[] selected={first,second,third};
-        for(int i=0;i<3;i++){
-            Source s=selected[i];
-            shader.pass4f("lamp"+i,s==null?0:s.x,s==null?0:s.y,s==null?0:s.z,s==null?1:s.radius);
-            shader.pass4f("lampColor"+i,s==null?0:s.r,s==null?0:s.g,s==null?0:s.b,s==null?0:s.strength*flicker(s));
-        }
+        bindLamp(shader,"lamp0","lampColor0",first);
+        bindLamp(shader,"lamp1","lampColor1",second);
+        bindLamp(shader,"lamp2","lampColor2",third);
         spritePasses++;
+    }
+    private static void bindLamp(GameShader shader,String lampName,String colorName,Source s){
+        shader.pass4f(lampName,s==null?0:s.x,s==null?0:s.y,s==null?0:s.z,s==null?1:s.radius);
+        shader.pass4f(colorName,s==null?0:s.r,s==null?0:s.g,s==null?0:s.b,s==null?0:s.strength*flicker(s));
     }
     private SceneLighting(){}
 }

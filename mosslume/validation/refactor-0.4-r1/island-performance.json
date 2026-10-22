@@ -1,0 +1,19 @@
+{
+  "scope":"Wall-clock intervals between MainGame.frameTick exits; includes engine rendering, swap/vsync and scheduler wait. Not GPU or CPU render time.",
+  "readPixelsDuringMeasurement":false,
+  "pngEncodingDuringMeasurement":false,
+  "frames":422,
+  "elapsedSeconds":10.010840,
+  "meanMs":23.454073,
+  "medianMs":20.579000,
+  "p95Ms":43.254500,
+  "p99Ms":68.705750,
+  "maximumMs":110.502708,
+  "meanFps":42.636517,
+  "over33_333ms":42,
+  "over50ms":15,
+  "over100ms":1,
+  "heapUsedStartBytes":286353168,
+  "heapUsedEndBytes":395600240,
+  "gcCollections":8
+}

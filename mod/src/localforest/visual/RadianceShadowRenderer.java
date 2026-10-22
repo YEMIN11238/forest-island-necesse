@@ -3,6 +3,7 @@ package localforest.visual;
 import java.nio.ByteBuffer;
 import java.nio.FloatBuffer;
 import java.util.*;
+import localforest.scene.RegionSceneQuery;
 import org.lwjgl.BufferUtils;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL13;
@@ -106,7 +107,8 @@ public final class RadianceShadowRenderer {
     private static int[] touched,stamps;
     private static int touchedCount,stamp=1;
     private static boolean[] waterTiles;
-    private static int mapWidth,mapHeight;
+    private static int mapWidth,mapHeight,mapOriginX,mapOriginY;
+    public static int receiverTileCount,receiverOriginX,receiverOriginY,receiverWidth,receiverHeight;
     public static long frames,castsDrawn,shoreQuads,drawBatches;
     public static int lastLightCount;
     public static double lastCpuMillis,meanCpuMillis,maxCpuMillis;
@@ -144,7 +146,7 @@ public final class RadianceShadowRenderer {
         Group g=group(tiles,level,lights);g.shore=true;
         g.cameraX=-camera.getTileDrawX(0);g.cameraY=-camera.getTileDrawY(0);
     }
-    private static boolean water(Level l,float wx,float wy){int x=(int)Math.floor(wx/32),y=(int)Math.floor(wy/32);return x<0||y<0||x>=mapWidth||y>=mapHeight||waterTiles[y*mapWidth+x];}
+    private static boolean water(Level l,float wx,float wy){return nativeWater(l,(int)Math.floor(wx/32),(int)Math.floor(wy/32));}
     private static void touch(int at){if(stamps[at]!=stamp){stamps[at]=stamp;touched[touchedCount++]=at;}}
     private static void raster(Cast c,Light light,Layer layer,Group g,double time) {
         float rootWX=c.x+g.cameraX,rootWY=c.y+g.cameraY;
@@ -264,22 +266,34 @@ public final class RadianceShadowRenderer {
             gpuMasks[i]=window.getNewFrameBuffer(w,h);
             if(!gpuMasks[i].isComplete())throw new IllegalStateException("Incomplete shadow buffer "+i);
         }
-        if(waterMap==null||waterMap.getWidth()!=group.level.tileWidth||waterMap.getHeight()!=group.level.tileHeight) {
+        prepareWaterTiles(group,w,h);
+        if(waterMap==null||waterMap.getWidth()!=mapWidth||waterMap.getHeight()!=mapHeight) {
             if(waterMap!=null)waterMap.delete();
-            waterMap=new GameTexture("mosslume-shadow-water-receivers",group.level.tileWidth,group.level.tileHeight);
+            waterMap=new GameTexture("mosslume-shadow-water-receivers",mapWidth,mapHeight);
             waterMap.setBlendQuality(GameTexture.BlendQuality.NEAREST);
-            waterUpload=BufferUtils.createByteBuffer(group.level.tileWidth*group.level.tileHeight*4);
+            waterUpload=BufferUtils.createByteBuffer(mapWidth*mapHeight*4);
         }
         waterUpload.clear();
-        mapWidth=group.level.tileWidth;mapHeight=group.level.tileHeight;
-        if(waterTiles==null||waterTiles.length!=mapWidth*mapHeight)waterTiles=new boolean[mapWidth*mapHeight];
-        for(int y=0;y<group.level.tileHeight;y++)for(int x=0;x<group.level.tileWidth;x++) {
-            boolean liquid=group.level.getTile(x,y).isLiquid;waterTiles[y*mapWidth+x]=liquid;
+        for(boolean liquid:waterTiles) {
             byte value=(byte)(liquid?255:0);
             waterUpload.put(value).put(value).put(value).put((byte)255);
         }
         waterUpload.flip();waterMap.bindTexture(GL13.GL_TEXTURE1);
-        GL11.glTexSubImage2D(GL11.GL_TEXTURE_2D,0,0,0,group.level.tileWidth,group.level.tileHeight,GL11.GL_RGBA,GL11.GL_UNSIGNED_BYTE,waterUpload);
+        GL11.glTexSubImage2D(GL11.GL_TEXTURE_2D,0,0,0,mapWidth,mapHeight,GL11.GL_RGBA,GL11.GL_UNSIGNED_BYTE,waterUpload);
+    }
+    /** Receiver data is camera-sized, independent of total map dimensions or coordinates. */
+    private static void prepareWaterTiles(Group group,int width,int height) {
+        final int margin=3;
+        mapOriginX=(int)Math.floor(group.cameraX/32.0)-margin;
+        mapOriginY=(int)Math.floor(group.cameraY/32.0)-margin;
+        // Fixed dimensions avoid GPU texture reallocation on each tile crossing.
+        mapWidth=(width+31)/32+margin*2+1;
+        mapHeight=(height+31)/32+margin*2+1;
+        if(waterTiles==null||waterTiles.length!=mapWidth*mapHeight)waterTiles=new boolean[mapWidth*mapHeight];
+        for(int y=0;y<mapHeight;y++)for(int x=0;x<mapWidth;x++)
+            waterTiles[y*mapWidth+x]=RegionSceneQuery.liquid(group.level,mapOriginX+x,mapOriginY+y);
+        receiverTileCount=mapWidth*mapHeight;
+        receiverOriginX=mapOriginX;receiverOriginY=mapOriginY;receiverWidth=mapWidth;receiverHeight=mapHeight;
     }
     private static void prepareGpuCast(Group group,Cast c,Light light) {
         c.gpuVisible=false;
@@ -332,7 +346,10 @@ public final class RadianceShadowRenderer {
         GL11.glDrawArrays(GL11.GL_TRIANGLE_STRIP,0,vertexUpload.remaining()/5);
         drawBatches++;
     }
-    private static boolean nativeWater(Level level,int x,int y){return x<0||y<0||x>=mapWidth||y>=mapHeight||waterTiles[y*mapWidth+x];}
+    private static boolean nativeWater(Level level,int x,int y){
+        int localX=x-mapOriginX,localY=y-mapOriginY;
+        return localX<0||localY<0||localX>=mapWidth||localY>=mapHeight||waterTiles[localY*mapWidth+localX];
+    }
     private static void gpuShoreEdge(Group group,Light light,float ax,float ay,float bx,float by) {
         float mx=(ax+bx)*.5f,my=(ay+by)*.5f;
         if(!light.directional&&light.energy(mx,my)<.035f)return;
@@ -393,7 +410,8 @@ public final class RadianceShadowRenderer {
                 maskShader.use();
                 try {
                     maskShader.pass2f("cameraWorld",group.cameraX,group.cameraY);
-                    maskShader.pass2f("mapSize",group.level.tileWidth,group.level.tileHeight);
+                    maskShader.pass2f("mapSize",mapWidth,mapHeight);
+                    maskShader.pass2f("mapOrigin",mapOriginX,mapOriginY);
                     maskShader.pass1i("waterMap",1);waterMap.bindTexture(GL13.GL_TEXTURE1);
                     Light light=visible.get(i);
                     synchronized(group.casts){for(Cast c:group.casts)prepareGpuCast(group,c,light);}
@@ -448,9 +466,7 @@ public final class RadianceShadowRenderer {
         for(int i=0;i<touchedCount;i++)upload.putInt(touched[i]*4,0);
         touchedCount=0;
         if(++stamp==0){Arrays.fill(stamps,0);stamp=1;}
-        mapWidth=g.level.tileWidth;mapHeight=g.level.tileHeight;
-        if(waterTiles==null||waterTiles.length!=mapWidth*mapHeight)waterTiles=new boolean[mapWidth*mapHeight];
-        for(int ty=0;ty<mapHeight;ty++)for(int tx=0;tx<mapWidth;tx++)waterTiles[ty*mapWidth+tx]=g.level.getTile(tx,ty).isLiquid;
+        prepareWaterTiles(g,w,h);
         List<Light> visible=new ArrayList<>();
         for(Light l:g.lights)if(l.directional||l.x+l.radius>=g.cameraX&&l.x-l.radius<=g.cameraX+w&&l.y+l.radius>=g.cameraY&&l.y-l.radius<=g.cameraY+h)visible.add(l);
         visible.sort((a,b)->Float.compare(b.energy(g.cameraX+w*.5f,g.cameraY+h*.5f),a.energy(g.cameraX+w*.5f,g.cameraY+h*.5f)));

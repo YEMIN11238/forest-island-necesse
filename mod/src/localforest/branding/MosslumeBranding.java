@@ -82,24 +82,33 @@ public final class MosslumeBranding {
         Form form = menu.mainForm;
         form.clearComponents();
         form.setWidth(330);
-        form.setHeight(164);
+        form.setHeight(268);
         form.drawBase = false;
         form.drawEdge = false;
         menu.mainSideButtons.setHidden(true);
         menu.dlcSideButtons.setHidden(true);
         menu.subscribeNewsletter.setHidden(true);
 
-        FormTextButton enter = form.addComponent(new MosslumeButton("进入小岛", 15, 6, 300));
+        MosslumeNewWorldForm newWorld = menu.addComponent(new MosslumeNewWorldForm(settings -> {
+            GameLaunch.useCharacter = "";
+            menu.mainMenu.startSingleplayer(null, settings, null);
+        }, menu.mainMenu::addNotice, () -> menu.makeCurrent(menu.main)));
+        MosslumeWorldSelect worlds = menu.addComponent(new MosslumeWorldSelect(menu.mainMenu, () -> menu.makeCurrent(menu.main)));
+        form.addComponent(new MosslumeButton("新的世界", 15, 6, 300))
+            .onClicked(event -> { menu.makeCurrent(newWorld); newWorld.onStarted(); });
+        form.addComponent(new MosslumeButton("继续 · 世界存档", 15, 58, 300))
+            .onClicked(event -> { worlds.loadWorlds(); menu.makeCurrent(worlds); });
+        FormTextButton enter = form.addComponent(new MosslumeButton("原有小岛 · 画面对照", 15, 110, 300));
         enter.setCooldown(1200);
         enter.prioritizeControllerFocus();
         enter.onClicked(event -> enterIsland(menu.mainMenu));
-        form.addComponent(new MosslumeButton("设置", 15, 58, 300))
+        form.addComponent(new MosslumeButton("设置", 15, 162, 300))
             .onClicked(event -> menu.makeCurrent(menu.settings));
-        FormTextButton exit = form.addComponent(new MosslumeButton("退出游戏", 15, 110, 300));
+        FormTextButton exit = form.addComponent(new MosslumeButton("退出游戏", 15, 214, 300));
         exit.onClicked(event -> WindowManager.getWindow().requestClose());
         exit.controllerDownFocus = exit;
         position(menu, WindowManager.getWindow());
-        System.out.println("MOSSLUME_TITLE_MENU_READY buttons=enter,settings,exit");
+        System.out.println("MOSSLUME_TITLE_MENU_READY buttons=newWorld,saves,baseline,settings,exit");
     }
 
     public static void position(MainMenuForm menu, GameWindow window) {
@@ -172,7 +181,8 @@ public final class MosslumeBranding {
         if (!qaEnabled() || !ready || qaFailed || qaEntered || qaTitleStarted == 0L) return;
         if (qaCaptured) {
             qaEntered = true;
-            enterIsland(menu);
+            if (System.getProperty("mosslume.refactorProbe") != null) enterRefactorProbe(menu);
+            else enterIsland(menu);
             try { writeQaEvidence("native_entry_callback_invoked"); }
             catch (Exception error) { System.err.println("MOSSLUME_QA_EVIDENCE_FAILED " + error); }
             return;
@@ -208,6 +218,31 @@ public final class MosslumeBranding {
             qaFailed = true;
             System.err.println("MOSSLUME_QA_TITLE_CAPTURE_FAILED " + error);
             error.printStackTrace();
+        }
+    }
+
+    /** Uses the creation/load callbacks above, only in an explicitly isolated integration profile. */
+    private static void enterRefactorProbe(MainMenu menu) {
+        if (!GlobalData.appDataPath().contains("Mosslume-QA-Refactor"))
+            throw new IllegalStateException("Refactor probes require an isolated QA profile");
+        try {
+            String name="MosslumeRefactor";
+            java.io.File existing=necesse.engine.world.World.worldExistsWithName(name);
+            GameLaunch.useCharacter="";
+            if(existing!=null) {
+                WorldSave save=new WorldSave(existing,true,true,true);
+                localforest.world.WorldDefinition.forWorld(save.getWorldEntity());
+                menu.startSingleplayer(save,new ServerCreationSettings(existing),null);
+            } else {
+                ServerCreationSettings settings=MosslumeNewWorldForm.settings(name,
+                    System.getProperty("mosslume.refactorProbe.seed","4212026"),
+                    System.getProperty("mosslume.refactorProbe.preset","forest_island"),"relaxed");
+                menu.startSingleplayer(null,settings,null);
+            }
+            System.out.println("MOSSLUME_REFACTOR_PROBE_ENTER existing="+(existing!=null));
+        } catch(Exception error) {
+            qaFailed=true;System.err.println("MOSSLUME_REFACTOR_PROBE_ENTER_FAILED "+error);error.printStackTrace();
+            menu.addNotice("测试世界无法载入："+error.getMessage());
         }
     }
 

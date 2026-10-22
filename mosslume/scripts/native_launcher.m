@@ -152,7 +152,8 @@ int main(int argc, char **argv) {
         if (fd >= 0) { dup2(fd, 1); dup2(fd, 2); close(fd); }
         printf("\nMOSSLUME_NATIVE_APP version=%s kernel=Necesse-source-built-1.3.3.jar\n", version.UTF8String);
         printf("MOSSLUME_PROFILE %s\n", profile); fflush(stdout);
-        if (!profileOverride && migrateProfile(userHome, profile)) {
+        BOOL migrateLegacy = bundleInfo[@"MosslumeMigrateLegacyProfile"] == nil || [bundleInfo[@"MosslumeMigrateLegacyProfile"] boolValue];
+        if (!profileOverride && migrateLegacy && migrateProfile(userHome, profile)) {
             alertFailure("迁移小岛存档失败，原存档没有修改。请检查磁盘空间和新存档目录的权限。", logfile); return 1;
         }
         snprintf(java, sizeof java, "%s/jre/bin/java", game);

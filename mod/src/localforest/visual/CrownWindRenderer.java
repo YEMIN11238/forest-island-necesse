@@ -34,7 +34,9 @@ public final class CrownWindRenderer {
         private final Map<String,Integer> integers = new HashMap<>();
         private WindShader() { super("mosslumeWind", "mosslumeWind"); }
         @Override public int getUniform(String name) {
-            return locations.computeIfAbsent(name, super::getUniform);
+            Integer location=locations.get(name);
+            if(location==null){location=super.getUniform(name);locations.put(name,location);}
+            return location;
         }
         private boolean changed(String name,float a,float b,float c,float d){
             float[] old=values.get(name);
@@ -125,6 +127,7 @@ public final class CrownWindRenderer {
             current.pass1i("pixelCoverage", wind&&PIXEL_COVERAGE ? 1 : 0);
             current.pass2f("texture_pixel_size", 1f / texture.getWidth(), 1f / texture.getHeight());
             current.pass1f("smoothing_factor", 1f);
+            DaylightMaterials.bindCrown(current,level,crown);
             if(level!=null&&SceneLighting.enabled())SceneLighting.bind(current,level,tileX*32+16,tileY*32+29,width,height,elevation,crown);
             else current.pass1i("surfaceLighting",0);
             texture.bindTexture(GL13.GL_TEXTURE0);

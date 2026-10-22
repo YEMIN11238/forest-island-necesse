@@ -21,11 +21,13 @@ import localforest.visual.IslandVisuals;
 
 @ModEntry
 public class IslandMod {
-    public static final String VERSION="0.3.0-s2";
+    public static final String VERSION="0.4.0-r1";
     public static boolean enabled() { return GameLaunch.launchOptions!=null && GameLaunch.launchOptions.containsKey("islandprofile"); }
     public void init() {
         if(!enabled())return;
         IslandWorld.init();IslandNativeChecks.register();IslandVisuals.init();
+        localforest.companions.CompanionSystem.init();
+        RefactorNativeChecks.register();
         System.out.println("LOCALFOREST_INIT version="+VERSION+" kernel=Necesse-1.3.3 profile="+GlobalData.appDataPath());
     }
     public void initResources() { if(enabled()){IslandVisuals.initResources();localforest.branding.MosslumeBranding.initResources();} }
@@ -41,6 +43,7 @@ public class IslandMod {
         Platform.getWindowManager().updateDisplayModeAfterTick();
         ensureCharacter();IslandWorld.postInit();IslandVisuals.postInit();
         localforest.branding.MosslumeBranding.postInit();
+        localforest.ai.AiIntentService.install();
         System.out.println("LOCALFOREST_READY native gameplay enabled; generated art adapter initialized");
     }
     private void ensureCharacter() {

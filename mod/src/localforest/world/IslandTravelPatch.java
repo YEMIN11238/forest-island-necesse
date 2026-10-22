@@ -10,6 +10,7 @@ public class IslandTravelPatch {
  public static boolean enter(@Advice.This ServerClient client,@Advice.Argument(0) LevelIdentifier target){
   if(!IslandWorld.enabled()||LevelIdentifier.SURFACE_IDENTIFIER.equals(target))return false;
   if(!IslandWorld.isIsland(client.getLevel()))return false;
+  if(WorldDefinition.forLevel(client.getLevel())!=null&&LevelIdentifier.CAVE_IDENTIFIER.equals(target))return false;
   System.out.println("LOCALFOREST_MAP_EXIT_BLOCKED "+target);return true;
  }
 }

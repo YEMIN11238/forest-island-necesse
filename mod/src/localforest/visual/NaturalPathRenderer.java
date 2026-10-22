@@ -83,7 +83,7 @@ public final class NaturalPathRenderer {
             entry.neighbours=signature;rebuilds++;
         }
         final GameTexture page=pages.get(entry.page);
-        SharedTextureDrawOptions batch=under.specialDrawables.getOrCreate("mosslume-natural-path-"+entry.page,0,()->new SharedTextureDrawOptions(page));
+        SharedTextureDrawOptions batch=under.specialDrawables.getOrCreate("mosslume-natural-path-"+entry.page,0,()->DaylightMaterials.groundBatch(page,level));
         batch.addSection(entry.x,entry.x+TILE,entry.y,entry.y+TILE).pos(dx,dy);
         draws++;return true;
     }

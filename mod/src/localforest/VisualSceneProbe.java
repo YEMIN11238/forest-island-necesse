@@ -342,6 +342,8 @@ public final class VisualSceneProbe {
             + ",\n  \"comparisonHourCaptured\":" + secondHourSnapshot
             + ",\n  \"surfaceLightingSamples\":" + localforest.visual.SceneLighting.terrainSamples
             + ",\n  \"surfaceLightingSpritePasses\":" + localforest.visual.SceneLighting.spritePasses
+            + ",\n  \"dayGroundBatchDraws\":" + localforest.visual.DaylightMaterials.groundBatchDraws
+            + ",\n  \"companionSpriteCounters\":" + quote(localforest.visual.CompanionSprites.counters().toString())
             + ",\n  \"naturalPathDraws\":" + localforest.visual.NaturalPathRenderer.draws
             + ",\n  \"radianceShadowFrames\":" + localforest.visual.RadianceShadowRenderer.frames
             + ",\n  \"radianceShadowGPU\":" + localforest.visual.RadianceShadowRenderer.gpuActive

@@ -32,7 +32,7 @@ public class IslandDiagnostics {
     private static boolean styled;
     public static void tick(MainGame game) {
         if(!IslandMod.enabled())return;
-        if(!titled){long win=GLFW.glfwGetCurrentContext();if(win!=0){GLFW.glfwSetWindowTitle(win,localforest.visual.MosslumeArt.enabled()?"Mosslume · 道路与光影预览":"林间小岛 · Necesse 内核 0.1");titled=true;}}
+        if(!titled){long win=GLFW.glfwGetCurrentContext();if(win!=0){GLFW.glfwSetWindowTitle(win,localforest.visual.MosslumeArt.enabled()?"Mosslume · 世界与伙伴预览 0.4":"林间小岛 · Necesse 内核 0.1");titled=true;}}
         Client client=game.getClient();PlayerMob player=client==null?null:client.getPlayer();
         if(player==null||player.getLevel()==null||!IslandWorld.isIsland(player.getLevel()))return;
         if(!styled){client.storyManager.hideStoryObjectives=true;necesse.gfx.forms.presets.sidebar.TrackedSidebarForm.updateTrackedList();styled=true;}

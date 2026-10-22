@@ -10,7 +10,7 @@ public final class NaturalPathWorld {
     public static long migratedTiles,restoredGrassTiles,removedGrassObjects,preservedPlayerTiles,preservedOtherTiles;
     public static void init(){tileID=TileRegistry.registerTile("mosslumenaturalpath",new NaturalPathTile(),0f,false,false,false);}
     public static void migrate(Level level) {
-        if(!IslandWorld.isIsland(level)||!level.isServer()||level.gndData.getBoolean(MIGRATION))return;
+        if(!IslandWorld.isIsland(level)||WorldDefinition.forLevel(level)!=null||!level.isServer()||level.gndData.getBoolean(MIGRATION))return;
         level.regionManager.ensureTilesAreLoaded(0,0,IslandLayout.WIDTH-1,IslandLayout.HEIGHT-1);
         int changed=0,restored=0,removed=0,player=0,other=0;
         for(int[] p:IslandLayout.PATHS) {

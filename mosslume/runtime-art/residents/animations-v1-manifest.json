@@ -1,0 +1,1673 @@
+{
+  "version": 1,
+  "tool": "built-in image_gen",
+  "method": "alpha-gap crop and nearest-neighbor export; no painted/generated code",
+  "bodySourceHeight": 32,
+  "framePixels": [
+    64,
+    64
+  ],
+  "foot": [
+    32,
+    52
+  ],
+  "runtimeScale": 2,
+  "existingStaticAssetsPreserved": true,
+  "sourceAtlases": [
+    {
+      "file": "art/characters/residents/animations/farmer-walk-v1.png",
+      "dimensions": [
+        1239,
+        1270
+      ],
+      "rows": 4,
+      "columns": 4,
+      "sha256": "769889f2637ccde89fdd5177ed15f0b8686f73d0f8509194a5583ffbe5d03dea"
+    },
+    {
+      "file": "art/characters/residents/animations/farmer-states-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "rows": 2,
+      "columns": 2,
+      "sha256": "a4f4a454cf95684554cfda1b37d4bd9dc36232e4f7ed3b103f908afa42933ca5"
+    },
+    {
+      "file": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "dimensions": [
+        1236,
+        1272
+      ],
+      "rows": 4,
+      "columns": 4,
+      "sha256": "9e839e84cf9a306a9b7edc4f21c29f552f8fa4d9dd354db9fe3d3001f31fbf67"
+    },
+    {
+      "file": "art/characters/residents/animations/carpenter-states-v1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "rows": 2,
+      "columns": 2,
+      "sha256": "ba08015f5ccac2264fadfd613b9dec4c5f95be86064d4c7f5d64a8db7c3a147e"
+    }
+  ],
+  "limitations": [
+    "Work and carry are single front-right action poses, not four-way animated action cycles.",
+    "Downed is a left-head/right-foot resting pose; sleep is supine head-up for native bed rotation.",
+    "Walk poses are generated, with 1,2,3,2 loop; pose identity reviewed visually, not motion-capture ground truth."
+  ],
+  "entries": [
+    {
+      "file": "frames/farmer-down-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "8e3aee4b92de1480f173f7c2ced4840c6b730db5008a5775649ce3d354fcb9b2",
+      "role": "farmer",
+      "direction": "down",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        167,
+        42,
+        314,
+        319
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11552346570397112
+    },
+    {
+      "file": "frames/farmer-down-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "ae05caee2c50ee5c5c2801e0b20a6a8f6c859ce875cfcc14f875e9e37f9bd259",
+      "role": "farmer",
+      "direction": "down",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        425,
+        44,
+        573,
+        322
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11552346570397112
+    },
+    {
+      "file": "frames/farmer-down-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        40,
+        53
+      ],
+      "sha256": "46ad5efec9bc8e50375fd5bf9e190d3c14ec70b2c350777730f0938e6ec5aa5d",
+      "role": "farmer",
+      "direction": "down",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        676,
+        44,
+        827,
+        327
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11552346570397112
+    },
+    {
+      "file": "frames/farmer-down-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        40,
+        53
+      ],
+      "sha256": "795bcc466824340ccd63312a6597a2fde9d20d42f2f0c287ad6d8b6aa19aad6a",
+      "role": "farmer",
+      "direction": "down",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        933,
+        42,
+        1079,
+        327
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11552346570397112
+    },
+    {
+      "file": "farmer-idle-down.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "8e3aee4b92de1480f173f7c2ced4840c6b730db5008a5775649ce3d354fcb9b2",
+      "role": "farmer",
+      "action": "idle",
+      "direction": "down",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "farmer-walk-down.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        232,
+        53
+      ],
+      "sha256": "e19d5b94f6b471c475f0101687cd63a8b600cb270e40ded5532555fceac25503",
+      "role": "farmer",
+      "action": "walk",
+      "direction": "down",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/farmer-right-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "bf8a12a917fbe8ebbb92041abeb4acdee5f5c5618a90db6b43df0abd60cf00a4",
+      "role": "farmer",
+      "direction": "right",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        160,
+        352,
+        305,
+        633
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11387900355871886
+    },
+    {
+      "file": "frames/farmer-right-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "2934c19b2aa1ff6290781ebfade29b432015879fa6dcedff9e38205f6604b19d",
+      "role": "farmer",
+      "direction": "right",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        419,
+        352,
+        567,
+        633
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11387900355871886
+    },
+    {
+      "file": "frames/farmer-right-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        40,
+        53
+      ],
+      "sha256": "55c8ddf382f7e1dee3976ea90d6b8697d807ac9ade891f122b52d835db2af2d4",
+      "role": "farmer",
+      "direction": "right",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        683,
+        352,
+        827,
+        633
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11387900355871886
+    },
+    {
+      "file": "frames/farmer-right-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "f468a25938355bb567d105180acf951bc10347457db17363daaa0d9ac8a5b83a",
+      "role": "farmer",
+      "direction": "right",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        932,
+        352,
+        1082,
+        633
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11387900355871886
+    },
+    {
+      "file": "farmer-idle-right.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "bf8a12a917fbe8ebbb92041abeb4acdee5f5c5618a90db6b43df0abd60cf00a4",
+      "role": "farmer",
+      "action": "idle",
+      "direction": "right",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "farmer-walk-right.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        232,
+        53
+      ],
+      "sha256": "c6a69e537bf6427544aededaf23066a670e7253ec2044721d636d4b583484a5d",
+      "role": "farmer",
+      "action": "walk",
+      "direction": "right",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/farmer-up-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "5d5081e340a99b68ddeb2d6a1ffc857be507d103f930b9b0005a1851b2208451",
+      "role": "farmer",
+      "direction": "up",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        166,
+        659,
+        313,
+        929
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11851851851851852
+    },
+    {
+      "file": "frames/farmer-up-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "sha256": "1ff5800fe1a73d34e2bba455092941e379de6eff0bb4de1c6e4ac42b024396c4",
+      "role": "farmer",
+      "direction": "up",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        419,
+        659,
+        575,
+        937
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11851851851851852
+    },
+    {
+      "file": "frames/farmer-up-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "sha256": "eb7f77b4626bed347d386d764962f0729008c97c23ee6a4425bf71ac8e0d1ef6",
+      "role": "farmer",
+      "direction": "up",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        675,
+        659,
+        827,
+        937
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11851851851851852
+    },
+    {
+      "file": "frames/farmer-up-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "sha256": "f603c510fb2780e4373fd55bf35e7c80eeb9cb56464566b62eca30a4dc5b56f4",
+      "role": "farmer",
+      "direction": "up",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        929,
+        659,
+        1081,
+        937
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11851851851851852
+    },
+    {
+      "file": "farmer-idle-up.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "sha256": "5d5081e340a99b68ddeb2d6a1ffc857be507d103f930b9b0005a1851b2208451",
+      "role": "farmer",
+      "action": "idle",
+      "direction": "up",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "farmer-walk-up.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        53
+      ],
+      "sha256": "7975103342405890c26aeafe3c14be78ad5e2b2659974f71e45fede0e4438fd7",
+      "role": "farmer",
+      "action": "walk",
+      "direction": "up",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/farmer-left-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "d12c1c50f2e4b4b1c11bbb60360da472d96ccdb334c307edb34c1e6ccc8c545e",
+      "role": "farmer",
+      "direction": "left",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        160,
+        954,
+        306,
+        1232
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11510791366906475
+    },
+    {
+      "file": "frames/farmer-left-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "4bf0e118834d616e3d2c56ad48ab5fea9d952caaff49a497bab8a8443f93fa85",
+      "role": "farmer",
+      "direction": "left",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        417,
+        954,
+        563,
+        1232
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11510791366906475
+    },
+    {
+      "file": "frames/farmer-left-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "b0f061d96cf3f8d5f61ca25c5e8e78eead154214292d26599b83270fdf3548a5",
+      "role": "farmer",
+      "direction": "left",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        671,
+        954,
+        817,
+        1232
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11510791366906475
+    },
+    {
+      "file": "frames/farmer-left-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        20,
+        41,
+        53
+      ],
+      "sha256": "8138e7e8274b360c67d38fc65d43089993413b748114ff6cc64d6f7afb4d7ed0",
+      "role": "farmer",
+      "direction": "left",
+      "source": "art/characters/residents/animations/farmer-walk-v1.png",
+      "sourceRect": [
+        924,
+        951,
+        1071,
+        1236
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11510791366906475
+    },
+    {
+      "file": "farmer-idle-left.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "d12c1c50f2e4b4b1c11bbb60360da472d96ccdb334c307edb34c1e6ccc8c545e",
+      "role": "farmer",
+      "action": "idle",
+      "direction": "left",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "farmer-walk-left.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        20,
+        233,
+        53
+      ],
+      "sha256": "84e7102a80e743020416dc897280373f845570f604687ab92c9f870afbd24f9f",
+      "role": "farmer",
+      "action": "walk",
+      "direction": "left",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "farmer-work.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        20,
+        29,
+        39,
+        53
+      ],
+      "sha256": "a89562fce1b86707751352e8766c573f31877bb4ebf4243afa8cac4e34c14859",
+      "role": "farmer",
+      "action": "work",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/farmer-states-v1.png",
+      "sourceRect": [
+        237,
+        192,
+        599,
+        639
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05378151260504202
+    },
+    {
+      "file": "farmer-carry.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        40,
+        53
+      ],
+      "sha256": "c6466f285aad2237bb8b68820500892c06f545d850467e3bc28dbe9547f6c459",
+      "role": "farmer",
+      "action": "carry",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/farmer-states-v1.png",
+      "sourceRect": [
+        792,
+        60,
+        1079,
+        655
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05378151260504202
+    },
+    {
+      "file": "farmer-downed.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        1,
+        38,
+        33,
+        53
+      ],
+      "sha256": "0c4d4269e88f6c74f2dca27845aaa45561cdc1f8dfaa2ac692f36947575f1e3f",
+      "role": "farmer",
+      "action": "downed",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/farmer-states-v1.png",
+      "sourceRect": [
+        113,
+        842,
+        680,
+        1108
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.0564373897707231
+    },
+    {
+      "file": "farmer-sleep.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        25,
+        38,
+        53
+      ],
+      "sha256": "37aef3b56817b46a8ede295e332deec9b713d2d74c157b9f13d71322271dbb7f",
+      "role": "farmer",
+      "action": "sleep",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/farmer-states-v1.png",
+      "sourceRect": [
+        832,
+        678,
+        1074,
+        1201
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05378151260504202
+    },
+    {
+      "file": "frames/carpenter-down-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        41,
+        53
+      ],
+      "sha256": "071450395b0e95ecf4a389e48201d893eb7a8e7e609ed5a811e23709076c9359",
+      "role": "carpenter",
+      "direction": "down",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        129,
+        73,
+        285,
+        332
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12355212355212356
+    },
+    {
+      "file": "frames/carpenter-down-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        42,
+        53
+      ],
+      "sha256": "08035918040c0500ebaeb391482263e5dfe04bef7b7aa993682168d9a673818f",
+      "role": "carpenter",
+      "direction": "down",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        410,
+        71,
+        561,
+        332
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12355212355212356
+    },
+    {
+      "file": "frames/carpenter-down-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        41,
+        53
+      ],
+      "sha256": "bfac32523efed6982c36670c371c7be154d30b2a57260b731e659cbc9e8f755b",
+      "role": "carpenter",
+      "direction": "down",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        673,
+        73,
+        827,
+        332
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12355212355212356
+    },
+    {
+      "file": "frames/carpenter-down-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        41,
+        53
+      ],
+      "sha256": "c19e1ed1481aee35a90d6c2365d8428c833710c34cf0a63167fb690538bbdff1",
+      "role": "carpenter",
+      "direction": "down",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        950,
+        72,
+        1107,
+        332
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12355212355212356
+    },
+    {
+      "file": "carpenter-idle-down.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        41,
+        53
+      ],
+      "sha256": "071450395b0e95ecf4a389e48201d893eb7a8e7e609ed5a811e23709076c9359",
+      "role": "carpenter",
+      "action": "idle",
+      "direction": "down",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "carpenter-walk-down.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        23,
+        21,
+        233,
+        53
+      ],
+      "sha256": "0668d7b91b7233ca77e26aa8267a57063cd4fd692cf91c752536f0b1cee08149",
+      "role": "carpenter",
+      "action": "walk",
+      "direction": "down",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/carpenter-right-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        39,
+        53
+      ],
+      "sha256": "09d47383eef6671d1e1c109e6e61772602b34bdadae54b420b3fcb391b4d2b58",
+      "role": "carpenter",
+      "direction": "right",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        147,
+        353,
+        268,
+        626
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-right-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        22,
+        41,
+        53
+      ],
+      "sha256": "440f89f0240b09ec017c6ff8ae8a2cc54e80ff9775983a478e1de6a31483a070",
+      "role": "carpenter",
+      "direction": "right",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        420,
+        355,
+        561,
+        621
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-right-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        22,
+        39,
+        53
+      ],
+      "sha256": "13bb8ad3634cadb2fe5e379f3daaab34242157bccd59b5a28769c3a6682fc29c",
+      "role": "carpenter",
+      "direction": "right",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        695,
+        355,
+        817,
+        623
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-right-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "863a06728710b83a873478de78a3c9b9c19b3090ac303a113a194fb4fdbec39e",
+      "role": "carpenter",
+      "direction": "right",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        968,
+        355,
+        1109,
+        624
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "carpenter-idle-right.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        39,
+        53
+      ],
+      "sha256": "09d47383eef6671d1e1c109e6e61772602b34bdadae54b420b3fcb391b4d2b58",
+      "role": "carpenter",
+      "action": "idle",
+      "direction": "right",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "carpenter-walk-right.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        231,
+        53
+      ],
+      "sha256": "9b683e7344ee1eb7c940f2004c16faed42bf8ac0cc0e7717d43388949d2cdf97",
+      "role": "carpenter",
+      "action": "walk",
+      "direction": "right",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/carpenter-up-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        43,
+        53
+      ],
+      "sha256": "4a85b2c6c395fd2aa11ac22fdada982d403f110c5b7aaa922e96c66b1aa8061b",
+      "role": "carpenter",
+      "direction": "up",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        126,
+        645,
+        297,
+        908
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12167300380228137
+    },
+    {
+      "file": "frames/carpenter-up-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "sha256": "a79b83f8938dea75c83377f789cf563a1ce8b7d70e99ae875b6a4d4f78580e31",
+      "role": "carpenter",
+      "direction": "up",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        406,
+        643,
+        572,
+        908
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12167300380228137
+    },
+    {
+      "file": "frames/carpenter-up-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "sha256": "cbcc02143f75aecb497343f463507edf20e274f975613a0130d2c3b59304e31d",
+      "role": "carpenter",
+      "direction": "up",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        671,
+        644,
+        834,
+        907
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12167300380228137
+    },
+    {
+      "file": "frames/carpenter-up-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "sha256": "6d755f0991d9864b7c08b27cb32693acc5f02f1d80b0873ebdce72046ff07ffa",
+      "role": "carpenter",
+      "direction": "up",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        944,
+        644,
+        1111,
+        907
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.12167300380228137
+    },
+    {
+      "file": "carpenter-idle-up.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        43,
+        53
+      ],
+      "sha256": "4a85b2c6c395fd2aa11ac22fdada982d403f110c5b7aaa922e96c66b1aa8061b",
+      "role": "carpenter",
+      "action": "idle",
+      "direction": "up",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "carpenter-walk-up.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        22,
+        21,
+        234,
+        53
+      ],
+      "sha256": "c69e38cdf58c0afa6698d72d5c0131b2ba246f08be6d664be259422b017f30fc",
+      "role": "carpenter",
+      "action": "walk",
+      "direction": "up",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "frames/carpenter-left-0.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        40,
+        53
+      ],
+      "sha256": "9f4edc41e90afe1ea96b5f495b0aec9ff76eb9d094caf9a36326b968e00cdc15",
+      "role": "carpenter",
+      "direction": "left",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        146,
+        931,
+        273,
+        1204
+      ],
+      "sourceColumn": 0,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-left-1.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "2094d4bfe0bdaf8b08346b57994ebccf241fe7c7193146d51f46ebe320fd4341",
+      "role": "carpenter",
+      "direction": "left",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        407,
+        931,
+        554,
+        1202
+      ],
+      "sourceColumn": 1,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-left-2.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        40,
+        53
+      ],
+      "sha256": "2e2ae15e4f0126e84393f5de5a6a239f9bc286a85f1d1e104432ae1b2efcf9fe",
+      "role": "carpenter",
+      "direction": "left",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        686,
+        931,
+        811,
+        1204
+      ],
+      "sourceColumn": 2,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "frames/carpenter-left-3.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "sha256": "b486c16171cb47154a32af250597e23130984f1b772dc078faeb82207ed57d3d",
+      "role": "carpenter",
+      "direction": "left",
+      "source": "art/characters/residents/animations/carpenter-walk-v1.png",
+      "sourceRect": [
+        953,
+        932,
+        1096,
+        1204
+      ],
+      "sourceColumn": 3,
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.11721611721611722
+    },
+    {
+      "file": "carpenter-idle-left.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        40,
+        53
+      ],
+      "sha256": "9f4edc41e90afe1ea96b5f495b0aec9ff76eb9d094caf9a36326b968e00cdc15",
+      "role": "carpenter",
+      "action": "idle",
+      "direction": "left",
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "carpenter-walk-left.png",
+      "dimensions": [
+        256,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        21,
+        232,
+        53
+      ],
+      "sha256": "bea68e0d1c6a6f179ccc39abc23454bd6bf652d8a5c603f5b5d37ff3c73c052f",
+      "role": "carpenter",
+      "action": "walk",
+      "direction": "left",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "foot": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "carpenter-work.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        20,
+        27,
+        42,
+        53
+      ],
+      "sha256": "5e70202e08f3584253678a970cfe71c3d2be8f653869a043a1c6257fc0d9ec6f",
+      "role": "carpenter",
+      "action": "work",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/carpenter-states-v1.png",
+      "sourceRect": [
+        217,
+        176,
+        609,
+        631
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05734767025089606
+    },
+    {
+      "file": "carpenter-carry.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        25,
+        21,
+        41,
+        53
+      ],
+      "sha256": "40abdc179310bd89a94fa72602938507794b526976dd88b6334a850ca69c62f7",
+      "role": "carpenter",
+      "action": "carry",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/carpenter-states-v1.png",
+      "sourceRect": [
+        815,
+        73,
+        1099,
+        631
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05734767025089606
+    },
+    {
+      "file": "carpenter-downed.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        1,
+        39,
+        33,
+        53
+      ],
+      "sha256": "e67383b6c3329f07a45b0e2c5129fa17299e744809e49f5941bec6d61ce2e4d5",
+      "role": "carpenter",
+      "action": "downed",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/carpenter-states-v1.png",
+      "sourceRect": [
+        71,
+        838,
+        698,
+        1117
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.051036682615629984
+    },
+    {
+      "file": "carpenter-sleep.png",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alphaBounds": [
+        24,
+        23,
+        41,
+        53
+      ],
+      "sha256": "91ddd6bb664edcee3cefe2213fc42bb3bcb388a92d80fafb383a4960c6aa440d",
+      "role": "carpenter",
+      "action": "sleep",
+      "frameSize": [
+        64,
+        64
+      ],
+      "source": "art/characters/residents/animations/carpenter-states-v1.png",
+      "sourceRect": [
+        809,
+        684,
+        1114,
+        1199
+      ],
+      "foot": [
+        32,
+        52
+      ],
+      "scale": 0.05734767025089606
+    }
+  ]
+}
