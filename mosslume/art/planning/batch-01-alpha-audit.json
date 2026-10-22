@@ -1,0 +1,366 @@
+{
+  "player_directions": {
+    "width": 1254,
+    "height": 1254,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_fraction": 0.77484,
+    "near_opaque_fraction": 0.17569,
+    "top_alpha_counts": [
+      [
+        0,
+        1218447
+      ],
+      [
+        253,
+        199940
+      ],
+      [
+        252,
+        49573
+      ],
+      [
+        1,
+        22364
+      ],
+      [
+        251,
+        15956
+      ],
+      [
+        250,
+        8260
+      ],
+      [
+        2,
+        6354
+      ],
+      [
+        249,
+        5031
+      ]
+    ],
+    "edge_max_alpha": 1,
+    "cell_divider_max_alpha": null,
+    "samples": {
+      "0,0": 1,
+      "418,1": 0,
+      "209,313": 0,
+      "209,522": 0,
+      "627,627": 0,
+      "1253,1253": 0
+    }
+  },
+  "player_portraits": {
+    "width": 1536,
+    "height": 1024,
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.44338,
+    "near_opaque_fraction": 0.47465,
+    "top_alpha_counts": [
+      [
+        0,
+        697370
+      ],
+      [
+        253,
+        611282
+      ],
+      [
+        252,
+        96940
+      ],
+      [
+        1,
+        31215
+      ],
+      [
+        251,
+        23621
+      ],
+      [
+        250,
+        12574
+      ],
+      [
+        249,
+        9149
+      ],
+      [
+        2,
+        8669
+      ]
+    ],
+    "edge_max_alpha": 2,
+    "cell_divider_max_alpha": 252,
+    "samples": {
+      "0,0": 0,
+      "512,1": 0,
+      "256,256": 253,
+      "256,426": 253,
+      "768,512": 0,
+      "1535,1023": 0
+    }
+  },
+  "farmer_portraits": {
+    "width": 1536,
+    "height": 1024,
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.34052,
+    "near_opaque_fraction": 0.5524,
+    "top_alpha_counts": [
+      [
+        253,
+        681034
+      ],
+      [
+        0,
+        535596
+      ],
+      [
+        252,
+        142005
+      ],
+      [
+        1,
+        39540
+      ],
+      [
+        251,
+        28754
+      ],
+      [
+        250,
+        16683
+      ],
+      [
+        2,
+        15492
+      ],
+      [
+        249,
+        10778
+      ]
+    ],
+    "edge_max_alpha": 2,
+    "cell_divider_max_alpha": 253,
+    "samples": {
+      "0,0": 0,
+      "512,1": 0,
+      "256,256": 253,
+      "256,426": 253,
+      "768,512": 2,
+      "1535,1023": 0
+    }
+  },
+  "carpenter_portraits": {
+    "width": 1536,
+    "height": 1024,
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.43746,
+    "near_opaque_fraction": 0.50112,
+    "top_alpha_counts": [
+      [
+        0,
+        688062
+      ],
+      [
+        253,
+        632313
+      ],
+      [
+        252,
+        121162
+      ],
+      [
+        1,
+        27139
+      ],
+      [
+        251,
+        23536
+      ],
+      [
+        250,
+        10868
+      ],
+      [
+        2,
+        7660
+      ],
+      [
+        249,
+        6524
+      ]
+    ],
+    "edge_max_alpha": 1,
+    "cell_divider_max_alpha": 1,
+    "samples": {
+      "0,0": 0,
+      "512,1": 0,
+      "256,256": 253,
+      "256,426": 253,
+      "768,512": 0,
+      "1535,1023": 0
+    }
+  },
+  "merchant_portraits": {
+    "width": 1536,
+    "height": 1024,
+    "alpha_min": 0,
+    "alpha_max": 254,
+    "fully_transparent_fraction": 0.38386,
+    "near_opaque_fraction": 0.51118,
+    "top_alpha_counts": [
+      [
+        0,
+        603767
+      ],
+      [
+        252,
+        401382
+      ],
+      [
+        253,
+        331024
+      ],
+      [
+        251,
+        48133
+      ],
+      [
+        1,
+        31830
+      ],
+      [
+        250,
+        23311
+      ],
+      [
+        249,
+        14942
+      ],
+      [
+        2,
+        12039
+      ]
+    ],
+    "edge_max_alpha": 1,
+    "cell_divider_max_alpha": 245,
+    "samples": {
+      "0,0": 0,
+      "512,1": 0,
+      "256,256": 252,
+      "256,426": 253,
+      "768,512": 158,
+      "1535,1023": 0
+    }
+  },
+  "tools": {
+    "width": 1774,
+    "height": 887,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_fraction": 0.6596,
+    "near_opaque_fraction": 0.19099,
+    "top_alpha_counts": [
+      [
+        0,
+        1037909
+      ],
+      [
+        252,
+        157515
+      ],
+      [
+        1,
+        85084
+      ],
+      [
+        253,
+        84486
+      ],
+      [
+        251,
+        39780
+      ],
+      [
+        2,
+        25570
+      ],
+      [
+        250,
+        18086
+      ],
+      [
+        3,
+        14642
+      ]
+    ],
+    "edge_max_alpha": 74,
+    "cell_divider_max_alpha": null,
+    "samples": {
+      "0,0": 0,
+      "591,1": 0,
+      "295,221": 252,
+      "295,369": 0,
+      "887,443": 50,
+      "1773,886": 0
+    }
+  },
+  "tools_clean": {
+    "width": 1774,
+    "height": 887,
+    "alpha_min": 0,
+    "alpha_max": 255,
+    "fully_transparent_fraction": 0.72136,
+    "near_opaque_fraction": 0.21314,
+    "top_alpha_counts": [
+      [
+        0,
+        1135088
+      ],
+      [
+        253,
+        255964
+      ],
+      [
+        252,
+        48231
+      ],
+      [
+        1,
+        28878
+      ],
+      [
+        251,
+        16790
+      ],
+      [
+        2,
+        9755
+      ],
+      [
+        250,
+        8726
+      ],
+      [
+        249,
+        5232
+      ]
+    ],
+    "edge_max_alpha": 0,
+    "cell_divider_max_alpha": null,
+    "samples": {
+      "0,0": 0,
+      "591,1": 0,
+      "295,221": 253,
+      "295,369": 0,
+      "887,443": 1,
+      "1773,886": 0
+    }
+  }
+}

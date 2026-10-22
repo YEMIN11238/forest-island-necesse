@@ -32,10 +32,13 @@ public class IslandDiagnostics {
     private static boolean styled;
     public static void tick(MainGame game) {
         if(!IslandMod.enabled())return;
-        if(!titled){long win=GLFW.glfwGetCurrentContext();if(win!=0){GLFW.glfwSetWindowTitle(win,"林间小岛 · Necesse 内核 0.1");titled=true;}}
+        if(!titled){long win=GLFW.glfwGetCurrentContext();if(win!=0){GLFW.glfwSetWindowTitle(win,localforest.visual.MosslumeArt.enabled()?"Mosslume · 道路与光影预览":"林间小岛 · Necesse 内核 0.1");titled=true;}}
         Client client=game.getClient();PlayerMob player=client==null?null:client.getPlayer();
         if(player==null||player.getLevel()==null||!IslandWorld.isIsland(player.getLevel()))return;
         if(!styled){client.storyManager.hideStoryObjectives=true;necesse.gfx.forms.presets.sidebar.TrackedSidebarForm.updateTrackedList();styled=true;}
+        // A separate opt-in S0/S1 probe owns its own timing and lifetime. Do not let
+        // the old three-screenshot smoke timer interrupt its longer capture pass.
+        if(VisualSceneProbe.enabled()){VisualSceneProbe.tick(game);return;}
         if(!GameLaunch.launchOptions.containsKey("islandcapture"))return;
         long now=System.currentTimeMillis();if(entered==0)entered=now;
         if(captures>=3){
@@ -53,6 +56,7 @@ public class IslandDiagnostics {
             String json="{\"kernel\":\""+System.getProperty("localforest.kernel","unknown")+"\",\"mod\":\""+IslandMod.VERSION+"\",\"level\":\""+level.getIdentifier()+"\",\"width\":"+level.tileWidth+",\"height\":"+level.tileHeight+",\"objects\":"+objects+",\"playerX\":"+player.x+",\"playerY\":"+player.y+",\"capturedAtMillis\":"+now+"}";
             Files.write(path.resolve("state-"+captures+".json"),json.getBytes(StandardCharsets.UTF_8));
             captureFrame(captures);captures++;
+            System.out.println("MOSSLUME_DRAW_COUNTS players="+localforest.visual.MosslumeArt.playerDraws+" items="+localforest.visual.MosslumeArt.iconDraws+" world="+localforest.visual.MosslumeArt.worldDraws+" residents="+localforest.visual.MosslumeArt.residentDraws);
             System.out.println("LOCALFOREST_CAPTURE "+json);
         }catch(Exception e){throw new RuntimeException("Could not capture owned island session",e);}
     }

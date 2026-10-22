@@ -1,0 +1,13 @@
+{
+  "workingName": "Mosslume",
+  "workingChineseName": "苔光之岛",
+  "asset": "title-screen-v1.png",
+  "prompt": "title-screen-v1.prompt.txt",
+  "generationMode": "built-in image_gen",
+  "transparentBackground": false,
+  "purpose": "Independent game title-screen visual concept; environment background and title lettering",
+  "menuButtonsBakedIntoImage": false,
+  "gameStartupIntegration": "not applied in this visual-concept step",
+  "intendedAnimationLayers": ["water reflections", "canopy wind", "campfire and warm light flicker", "chimney smoke", "rising fireflies"],
+  "createdLocalDate": "2026-10-21"
+}

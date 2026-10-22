@@ -1,0 +1,13 @@
+Use case: style-transfer.
+Asset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.
+Input image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.
+Use neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.
+Composition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.
+Crop: WHEAT. Exactly six states in reading order:
+1 SOWN: three tiny wheat grains partially nestled in a tiny dark-brown root-contact mark, no green leaves.
+2 SPROUT: very small two-leaf bright green seedling, about one fifth mature height.
+3 YOUNG: compact tuft of 4-5 upright slender green blades, about two fifths mature height.
+4 GROWING: several taller green jointed stems with small green unripe ear tips, about three quarters mature height.
+5 RIPE: full clump of 4-5 curved golden wheat ears and ochre stalks, obvious grain kernels, a few green basal leaves; tallest state, harvest-ready, no basket or loose bundle.
+6 HARVESTED: short cut tan stubble, 3-4 clipped stalk ends at the same root point, no ripe ears.
+All six states retain ONE shared plant base/root anchor. Mature wheat logical height about 24 pixels, harvested stubble about 5 pixels.

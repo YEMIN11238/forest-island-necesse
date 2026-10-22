@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-22",
+  "taskSpace": 83,
+  "summary": {
+    "atlases": 8,
+    "components": 37
+  },
+  "errors": [],
+  "checks": {
+    "house": {
+      "state": "{\"roof\":true,\"door\":true,\"light\":true}",
+      "canvasChanged": true,
+      "hash": "89cf7615e9e6e059aa8d40139d35c4ec67d2609c634aeb92a2c2eae49267f77c"
+    },
+    "berry": {
+      "state": "berry-empty",
+      "canvasChanged": true,
+      "hash": "19d58000fd065bd021bee9687990aca734a899e69b55dd7360e926ad4d8a2927"
+    },
+    "rock": {
+      "state": "rock-depleted",
+      "canvasChanged": true,
+      "hash": "7d41523ba41d9b0f8526f4411d526cfac11ce27db57f3a5f35ade03df6ec8f86"
+    },
+    "chest": {
+      "state": "chest-open",
+      "canvasChanged": true,
+      "hash": "13fe45351eb57ea08a18481bd7a5b7e90fb92ffe3c1a0caa12bb23b3c518ebf3"
+    }
+  },
+  "roofHidden": {
+    "state": "{\"roof\":false,\"door\":true,\"light\":true}",
+    "canvasChanged": true
+  },
+  "visualScope": "Actual rendered canvases captured for image inspection, not a full-page screenshot",
+  "integratedIntoGame": false,
+  "visualReviewCompleted": true,
+  "visualReviewNotes": [
+    "小屋关门/开门、暗窗/亮窗及隐藏屋顶的实际渲染画布已查看；门窗框局部重叠和锚点仍需生产校准。",
+    "家具试摆画布已查看；地板模块的深色外框形成明显拼缝，下一阶段需要补无边框无缝地板与墙体连接模块。",
+    "树桩、幼树与小树在同屏采用不同尺寸，未按缩略图统一放大。",
+    "岩石耗尽状态保留碎石低矮高度，未把碎石放大至完整岩石高度。"
+  ],
+  "sourceChecks": [
+    {
+      "id": "cottage_layers",
+      "count": 6,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "furniture",
+      "count": 6,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "interior_parts",
+      "count": 6,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "tree_states",
+      "count": 6,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "berry_states",
+      "count": 4,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "rock_states",
+      "count": 4,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "chest_states",
+      "count": 3,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    },
+    {
+      "id": "village_props",
+      "count": 2,
+      "hashMatches": true,
+      "regionsNoVisibleEdgeClipping": true
+    }
+  ]
+}

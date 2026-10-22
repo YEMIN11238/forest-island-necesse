@@ -1,0 +1,1900 @@
+{
+  "inventorySelectionVerified": true,
+  "barMinMaxVerified": true,
+  "dialogueExpressionVerified": true,
+  "disabledButtonVerified": true,
+  "pageScreenshotStatus": "full_page_capture_timed_out_twice; inspected_rendered_canvas_outputs_instead",
+  "ready": true,
+  "view": "dialogue",
+  "expression": 1,
+  "selected": "mushroom",
+  "itemCount": 42,
+  "errors": [],
+  "disabledButton": true,
+  "reports": [
+    {
+      "id": "tools",
+      "width": 1774,
+      "height": 887,
+      "regions": [
+        {
+          "id": "axe",
+          "sourceRegion": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            26,
+            19,
+            377,
+            396
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "pickaxe",
+          "sourceRegion": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            480,
+            24,
+            365,
+            391
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "shovel",
+          "sourceRegion": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            935,
+            19,
+            367,
+            396
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "hoe",
+          "sourceRegion": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            1367,
+            19,
+            394,
+            396
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "watering-can",
+          "sourceRegion": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "tightSourceRect": [
+            21,
+            462,
+            400,
+            375
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "fishing-rod",
+          "sourceRegion": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            469,
+            458,
+            385,
+            398
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "hammer",
+          "sourceRegion": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            916,
+            468,
+            386,
+            394
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "materials",
+      "width": 1448,
+      "height": 1086,
+      "regions": [
+        {
+          "id": "log",
+          "sourceRegion": [
+            10,
+            35,
+            350,
+            350
+          ],
+          "tightSourceRect": [
+            40,
+            60,
+            316,
+            306
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "stone",
+          "sourceRegion": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            399,
+            85,
+            298,
+            266
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "plant-fiber",
+          "sourceRegion": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            752,
+            50,
+            321,
+            311
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "plank",
+          "sourceRegion": [
+            1090,
+            35,
+            350,
+            350
+          ],
+          "tightSourceRect": [
+            1122,
+            75,
+            301,
+            291
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "clay",
+          "sourceRegion": [
+            10,
+            400,
+            350,
+            325
+          ],
+          "tightSourceRect": [
+            27,
+            426,
+            325,
+            275
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "copper-ore",
+          "sourceRegion": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            399,
+            415,
+            303,
+            292
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "iron-ore",
+          "sourceRegion": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            755,
+            418,
+            307,
+            285
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "copper-bar",
+          "sourceRegion": [
+            1090,
+            400,
+            350,
+            325
+          ],
+          "tightSourceRect": [
+            1115,
+            424,
+            313,
+            272
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "iron-bar",
+          "sourceRegion": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            32,
+            762,
+            321,
+            276
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "coal",
+          "sourceRegion": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            390,
+            762,
+            320,
+            275
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "icons_farming",
+      "width": 1254,
+      "height": 1254,
+      "regions": [
+        {
+          "id": "wheat-seed",
+          "sourceRegion": [
+            0,
+            0,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            44,
+            52,
+            358,
+            337
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "carrot-seed",
+          "sourceRegion": [
+            418,
+            0,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            456,
+            59,
+            339,
+            333
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "pumpkin-seed",
+          "sourceRegion": [
+            836,
+            0,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            882,
+            59,
+            328,
+            342
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "wheat",
+          "sourceRegion": [
+            25,
+            430,
+            430,
+            410
+          ],
+          "tightSourceRect": [
+            52,
+            446,
+            376,
+            389
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "carrot",
+          "sourceRegion": [
+            465,
+            430,
+            410,
+            410
+          ],
+          "tightSourceRect": [
+            484,
+            446,
+            350,
+            381
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "pumpkin",
+          "sourceRegion": [
+            836,
+            418,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            875,
+            495,
+            334,
+            320
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "apple",
+          "sourceRegion": [
+            0,
+            836,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            74,
+            877,
+            304,
+            325
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "berry",
+          "sourceRegion": [
+            418,
+            836,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            482,
+            910,
+            317,
+            269
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "mushroom",
+          "sourceRegion": [
+            836,
+            836,
+            418,
+            418
+          ],
+          "tightSourceRect": [
+            909,
+            897,
+            287,
+            310
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "icons_food",
+      "width": 1536,
+      "height": 1024,
+      "regions": [
+        {
+          "id": "bread",
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            60,
+            122,
+            384,
+            334
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "vegetable-stew",
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            561,
+            111,
+            407,
+            352
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "grilled-fish",
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            1056,
+            129,
+            456,
+            343
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "tea",
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            88,
+            562,
+            364,
+            367
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "water-flask",
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            603,
+            541,
+            365,
+            416
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "icons_buildables",
+      "width": 1774,
+      "height": 887,
+      "regions": [
+        {
+          "id": "chest",
+          "sourceRegion": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            36,
+            80,
+            377,
+            328
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "workbench",
+          "sourceRegion": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            454,
+            67,
+            422,
+            349
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "furnace",
+          "sourceRegion": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            931,
+            28,
+            374,
+            396
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cooking-pot",
+          "sourceRegion": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            1396,
+            67,
+            350,
+            357
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "campfire",
+          "sourceRegion": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "tightSourceRect": [
+            40,
+            472,
+            364,
+            367
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "lantern",
+          "sourceRegion": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            544,
+            452,
+            242,
+            399
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "wood-wall",
+          "sourceRegion": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            932,
+            468,
+            360,
+            382
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "icons_social",
+      "width": 1263,
+      "height": 1246,
+      "regions": [
+        {
+          "id": "letter",
+          "sourceRegion": [
+            0,
+            0,
+            632,
+            623
+          ],
+          "tightSourceRect": [
+            103,
+            119,
+            523,
+            446
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "trade-coin",
+          "sourceRegion": [
+            632,
+            0,
+            631,
+            623
+          ],
+          "tightSourceRect": [
+            720,
+            118,
+            425,
+            443
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "flower-bouquet",
+          "sourceRegion": [
+            0,
+            623,
+            632,
+            623
+          ],
+          "tightSourceRect": [
+            107,
+            628,
+            520,
+            510
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "parcel",
+          "sourceRegion": [
+            632,
+            623,
+            631,
+            623
+          ],
+          "tightSourceRect": [
+            682,
+            676,
+            504,
+            450
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_controls",
+      "width": 1536,
+      "height": 1024,
+      "regions": [
+        {
+          "id": "button-normal",
+          "sourceRegion": [
+            25,
+            80,
+            365,
+            155
+          ],
+          "tightSourceRect": [
+            41,
+            96,
+            333,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "button-hover",
+          "sourceRegion": [
+            405,
+            80,
+            365,
+            155
+          ],
+          "tightSourceRect": [
+            415,
+            96,
+            333,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "button-pressed",
+          "sourceRegion": [
+            785,
+            80,
+            365,
+            155
+          ],
+          "tightSourceRect": [
+            788,
+            96,
+            333,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "button-disabled",
+          "sourceRegion": [
+            1138,
+            70,
+            388,
+            170
+          ],
+          "tightSourceRect": [
+            1163,
+            96,
+            333,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "tab-inactive",
+          "sourceRegion": [
+            25,
+            300,
+            365,
+            175
+          ],
+          "tightSourceRect": [
+            43,
+            315,
+            331,
+            144
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "tab-active",
+          "sourceRegion": [
+            405,
+            300,
+            365,
+            175
+          ],
+          "tightSourceRect": [
+            422,
+            312,
+            336,
+            148
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "checkbox-empty",
+          "sourceRegion": [
+            865,
+            290,
+            190,
+            190
+          ],
+          "tightSourceRect": [
+            893,
+            318,
+            139,
+            139
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "checkbox-checked",
+          "sourceRegion": [
+            1235,
+            300,
+            180,
+            175
+          ],
+          "tightSourceRect": [
+            1255,
+            318,
+            144,
+            139
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "radio-empty",
+          "sourceRegion": [
+            120,
+            525,
+            180,
+            165
+          ],
+          "tightSourceRect": [
+            132,
+            539,
+            138,
+            134
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "radio-selected",
+          "sourceRegion": [
+            505,
+            525,
+            170,
+            165
+          ],
+          "tightSourceRect": [
+            511,
+            534,
+            144,
+            142
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "toggle-off",
+          "sourceRegion": [
+            810,
+            525,
+            300,
+            165
+          ],
+          "tightSourceRect": [
+            823,
+            545,
+            264,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "toggle-on",
+          "sourceRegion": [
+            1190,
+            525,
+            315,
+            165
+          ],
+          "tightSourceRect": [
+            1202,
+            545,
+            263,
+            127
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "scrollbar-track",
+          "sourceRegion": [
+            160,
+            700,
+            85,
+            270
+          ],
+          "tightSourceRect": [
+            172,
+            716,
+            61,
+            235
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "scrollbar-thumb",
+          "sourceRegion": [
+            530,
+            735,
+            95,
+            210
+          ],
+          "tightSourceRect": [
+            543,
+            756,
+            65,
+            158
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "slider-track",
+          "sourceRegion": [
+            750,
+            795,
+            420,
+            95
+          ],
+          "tightSourceRect": [
+            762,
+            817,
+            395,
+            51
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "slider-thumb",
+          "sourceRegion": [
+            1280,
+            775,
+            150,
+            140
+          ],
+          "tightSourceRect": [
+            1296,
+            795,
+            118,
+            98
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_panels",
+      "width": 1536,
+      "height": 1024,
+      "regions": [
+        {
+          "id": "panel-generic",
+          "sourceRegion": [
+            20,
+            65,
+            445,
+            335
+          ],
+          "tightSourceRect": [
+            30,
+            86,
+            421,
+            285
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "tooltip-panel",
+          "sourceRegion": [
+            480,
+            110,
+            330,
+            250
+          ],
+          "tightSourceRect": [
+            486,
+            121,
+            310,
+            221
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "dialogue-panel",
+          "sourceRegion": [
+            820,
+            70,
+            710,
+            310
+          ],
+          "tightSourceRect": [
+            832,
+            101,
+            679,
+            257
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "portrait-frame",
+          "sourceRegion": [
+            15,
+            455,
+            410,
+            420
+          ],
+          "tightSourceRect": [
+            31,
+            483,
+            377,
+            376
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "recipe-panel",
+          "sourceRegion": [
+            440,
+            405,
+            445,
+            560
+          ],
+          "tightSourceRect": [
+            461,
+            431,
+            402,
+            512
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "toast-panel",
+          "sourceRegion": [
+            905,
+            560,
+            620,
+            250
+          ],
+          "tightSourceRect": [
+            924,
+            583,
+            578,
+            185
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_hud",
+      "width": 1448,
+      "height": 1086,
+      "regions": [
+        {
+          "id": "slot-normal",
+          "sourceRegion": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            61,
+            61,
+            283,
+            273
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "slot-selected",
+          "sourceRegion": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            410,
+            61,
+            284,
+            274
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "slot-disabled",
+          "sourceRegion": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            757,
+            61,
+            285,
+            273
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "health-heart",
+          "sourceRegion": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            1123,
+            94,
+            279,
+            241
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "energy-leaf",
+          "sourceRegion": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            77,
+            407,
+            247,
+            286
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "hunger-plate",
+          "sourceRegion": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            406,
+            407,
+            276,
+            281
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "time-clock",
+          "sourceRegion": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            763,
+            387,
+            264,
+            301
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "date-calendar",
+          "sourceRegion": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            1119,
+            401,
+            283,
+            288
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "weather-sun",
+          "sourceRegion": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            43,
+            725,
+            301,
+            298
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "weather-moon",
+          "sourceRegion": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            423,
+            739,
+            247,
+            275
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "weather-rain",
+          "sourceRegion": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            745,
+            740,
+            298,
+            284
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "currency-coin",
+          "sourceRegion": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "tightSourceRect": [
+            1122,
+            735,
+            280,
+            280
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_bars",
+      "width": 1536,
+      "height": 1024,
+      "regions": [
+        {
+          "id": "health-track",
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            29,
+            207,
+            473,
+            92
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "health-fill",
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            558,
+            230,
+            420,
+            50
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "energy-track",
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            1034,
+            207,
+            472,
+            93
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "energy-fill",
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            36,
+            744,
+            450,
+            50
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "progress-track",
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            530,
+            722,
+            476,
+            92
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "progress-fill",
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            1049,
+            744,
+            451,
+            50
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_feedback",
+      "width": 1261,
+      "height": 1247,
+      "regions": [
+        {
+          "id": "bubble-happy",
+          "sourceRegion": [
+            20,
+            40,
+            305,
+            295
+          ],
+          "tightSourceRect": [
+            41,
+            60,
+            275,
+            251
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "bubble-question",
+          "sourceRegion": [
+            330,
+            40,
+            305,
+            295
+          ],
+          "tightSourceRect": [
+            348,
+            62,
+            277,
+            250
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "bubble-refuse",
+          "sourceRegion": [
+            640,
+            40,
+            305,
+            295
+          ],
+          "tightSourceRect": [
+            654,
+            62,
+            275,
+            250
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "bubble-tired",
+          "sourceRegion": [
+            945,
+            40,
+            306,
+            295
+          ],
+          "tightSourceRect": [
+            957,
+            66,
+            275,
+            246
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "bubble-hungry",
+          "sourceRegion": [
+            20,
+            345,
+            305,
+            280
+          ],
+          "tightSourceRect": [
+            39,
+            364,
+            282,
+            244
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "bubble-received",
+          "sourceRegion": [
+            330,
+            345,
+            305,
+            280
+          ],
+          "tightSourceRect": [
+            345,
+            364,
+            281,
+            244
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "relation-heart",
+          "sourceRegion": [
+            630,
+            312,
+            316,
+            312
+          ],
+          "tightSourceRect": [
+            661,
+            402,
+            242,
+            206
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "trust-handshake",
+          "sourceRegion": [
+            946,
+            312,
+            315,
+            312
+          ],
+          "tightSourceRect": [
+            950,
+            385,
+            288,
+            220
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "mood-face",
+          "sourceRegion": [
+            0,
+            624,
+            315,
+            311
+          ],
+          "tightSourceRect": [
+            43,
+            690,
+            264,
+            199
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "schedule-clock",
+          "sourceRegion": [
+            315,
+            624,
+            315,
+            311
+          ],
+          "tightSourceRect": [
+            351,
+            648,
+            261,
+            248
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "quest-scroll",
+          "sourceRegion": [
+            630,
+            624,
+            316,
+            311
+          ],
+          "tightSourceRect": [
+            646,
+            664,
+            263,
+            249
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "success-check",
+          "sourceRegion": [
+            946,
+            624,
+            315,
+            311
+          ],
+          "tightSourceRect": [
+            968,
+            681,
+            245,
+            208
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "failure-cross",
+          "sourceRegion": [
+            0,
+            935,
+            315,
+            312
+          ],
+          "tightSourceRect": [
+            43,
+            964,
+            252,
+            214
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "work-priority",
+          "sourceRegion": [
+            315,
+            935,
+            315,
+            312
+          ],
+          "tightSourceRect": [
+            348,
+            958,
+            252,
+            220
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "prohibited",
+          "sourceRegion": [
+            630,
+            935,
+            316,
+            312
+          ],
+          "tightSourceRect": [
+            655,
+            956,
+            252,
+            221
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "trade-coins",
+          "sourceRegion": [
+            946,
+            935,
+            315,
+            312
+          ],
+          "tightSourceRect": [
+            953,
+            947,
+            267,
+            232
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "ui_cursors",
+      "width": 1774,
+      "height": 887,
+      "regions": [
+        {
+          "id": "cursor-default",
+          "sourceRegion": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            117,
+            116,
+            181,
+            258
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cursor-interact",
+          "sourceRegion": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            518,
+            103,
+            222,
+            288
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cursor-gather",
+          "sourceRegion": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "tightSourceRect": [
+            958,
+            97,
+            311,
+            314
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cursor-build",
+          "sourceRegion": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "tightSourceRect": [
+            1389,
+            94,
+            338,
+            324
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cursor-talk",
+          "sourceRegion": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "tightSourceRect": [
+            81,
+            506,
+            324,
+            267
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "cursor-pickup",
+          "sourceRegion": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            505,
+            518,
+            301,
+            259
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "placement-valid",
+          "sourceRegion": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "tightSourceRect": [
+            942,
+            498,
+            325,
+            295
+          ],
+          "touchesRegionBoundary": false
+        },
+        {
+          "id": "placement-invalid",
+          "sourceRegion": [
+            1330,
+            444,
+            444,
+            443
+          ],
+          "tightSourceRect": [
+            1393,
+            498,
+            327,
+            295
+          ],
+          "touchesRegionBoundary": false
+        }
+      ]
+    },
+    {
+      "id": "farmer_portrait",
+      "width": 1536,
+      "height": 1024,
+      "regions": [
+        {
+          "id": "neutral",
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            48,
+            10,
+            464,
+            492
+          ],
+          "touchesRegionBoundary": true
+        },
+        {
+          "id": "happy",
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            512,
+            10,
+            512,
+            492
+          ],
+          "touchesRegionBoundary": true
+        },
+        {
+          "id": "worried",
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            1024,
+            10,
+            498,
+            492
+          ],
+          "touchesRegionBoundary": true
+        },
+        {
+          "id": "firm",
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            43,
+            515,
+            469,
+            496
+          ],
+          "touchesRegionBoundary": true
+        },
+        {
+          "id": "sad",
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            512,
+            515,
+            512,
+            495
+          ],
+          "touchesRegionBoundary": true
+        },
+        {
+          "id": "surprised",
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "tightSourceRect": [
+            1024,
+            515,
+            499,
+            495
+          ],
+          "touchesRegionBoundary": true
+        }
+      ]
+    }
+  ],
+  "postPreviewDataAdjustment": "Existing material source regions corrected for log/plank/clay/copper-bar; alpha bounds rechecked without changing source PNGs or UI behavior."
+}

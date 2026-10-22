@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/Woohyun-Kang/Sharp-Shimmerless-Shader",
+  "commit": "2a74e7af599335c2ce5e493f823a757925c80db3",
+  "author": "zadpos",
+  "license": "CC0-1.0",
+  "source": "shaders_glsl/shaders/sharp-shimmerless.glsl",
+  "adaptedShader": "outputs/necesse-island/mod/resources/shaders/fragment/mosslumeSharpShimmerless.glsl",
+  "adaptedShaderSha256": "1199241ebdff651da504d40db653b70ddf556964d8d23ac1ac836f5b6d669291",
+  "integration": "Replaces only the final scene pixel-scaling stage. Actual preceding FBO dimensions and output framebuffer dimensions are passed each draw. Linear sampling required by the area filter. No kernel modifications.",
+  "legacySwitch": "-Dmosslume.pixel.legacy=true",
+  "runtimeVerified": false
+}

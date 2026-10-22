@@ -1,0 +1,40 @@
+Mosslume 第五批素材清单
+生成方式：内置 image_gen；保留透明背景与默认生成原件。
+8张图集 / 37个源组件与状态 / 运行游戏接入：未完成。
+
+小屋屋顶、墙体与门窗分层源图（6）
+art/environment/housing/cottage-layers-source-v1.png
+包含：屋顶与烟囱、下层墙体、门·关闭、门·打开、窗·暗、窗·亮
+
+床、桌椅、柜架和室内灯具（6）
+art/environment/furniture/basic-furniture-source-v1.png
+包含：床、餐桌、椅子、双门柜、置物书架、落地灯
+
+室内地板、墙面与小装饰（6）
+art/environment/housing/interior-parts-source-v1.png
+包含：木地板、室内墙面、前景遮挡边、编织地毯、盆栽、壁灯
+
+树桩、幼树与再生状态（6）
+art/environment/nature/tree-resource-states-source-v1.png
+包含：树桩、树桩再生、新芽、幼树、小树、落枝
+
+浆果灌木四种采集状态（4）
+art/environment/nature/berry-harvest-states-source-v1.png
+包含：采摘后、开花、青果、成熟
+
+岩石采集与破碎状态（4）
+art/environment/nature/rock-harvest-states-source-v1.png
+包含：完整、裂纹、破损、剩余碎石
+
+木箱关闭、半开与打开状态（3）
+art/environment/props/chest-states-source-v1.png
+包含：关闭、半开、打开
+
+铁砧与原创村庄公告牌（2）
+art/environment/props/village-props-source-v1.png
+包含：铁砧、村庄公告牌
+
+预览：art/previews/world-assets-batch-05-v1.html
+提示词：art/planning/第五批素材-生成提示词.txt
+剩余清单：art/planning/缺失素材清单-v6.txt
+注意：源图、状态图和预览拼装未算作生产贴图/完整动画或游戏替换完成。

@@ -38,6 +38,7 @@ public final class IslandWorld {
  public static boolean isIsland(Level l){return l instanceof IslandLevel||(l!=null&&l.gndData.getBoolean("localforestisland"));}
  public static void init(){
   LevelRegistry.registerLevel("localforestisland",IslandLevel.class);
+  NaturalPathWorld.init();
   coastID=ObjectRegistry.registerObject("lfcoastbarrier",new CoastBarrier(),-1.0f,false);
   WorldGenerator.registerGenerator(new WorldGenerator(){
    @Override public Level getNewLevel(LevelIdentifier id,Server server,GameBlackboard board){
@@ -64,6 +65,7 @@ public final class IslandWorld {
  private static void onConnected(ServerClient c){
   if(!enabled())return;
   Level l=c.getLevel();if(!isIsland(l))return;
+  NaturalPathWorld.migrate(l);
   c.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
   c.spawnTile=new Point(IslandLayout.SPAWN_X,IslandLayout.SPAWN_Y);
   ServerSettlementData data=SettlementsWorldData.getSettlementsData(l).getOrCreateServerData(l,51,36);

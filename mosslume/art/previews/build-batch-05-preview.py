@@ -1,0 +1,52 @@
+"""Package original PNGs and source-region metadata; never modifies raster assets."""
+from pathlib import Path
+import base64
+import json
+
+ART = Path(__file__).resolve().parents[1]
+manifest = json.loads((ART / 'planning/batch-05-manifest.json').read_text())
+bundle = {}
+regions = {}
+for asset in manifest['assets']:
+    path = ART.parent / asset['file']
+    bundle[asset['id']] = 'data:image/png;base64,' + base64.b64encode(path.read_bytes()).decode()
+    for region in asset['regions']:
+        regions[region['id']] = {**region, 'atlas': asset['id'], 'file': asset['file']}
+
+html = r'''<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mosslume · 房屋与采集素材 05</title>
+<style>
+:root{color-scheme:dark;--bg:#0c1719;--panel:#142729;--line:#36514d;--gold:#e8b965;--text:#efe5ca;--muted:#a5b8aa}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}main{max-width:1240px;margin:auto;padding:42px 28px 70px}header{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-bottom:1px solid var(--line);padding-bottom:25px}h1{font-size:32px;letter-spacing:4px;margin:0;color:var(--gold)}h2{font-size:19px;margin:0 0 8px}p{margin:8px 0;color:var(--muted)}a{color:var(--gold)}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:3px}.badge{display:inline-block;border:1px solid var(--line);padding:5px 11px;border-radius:20px;margin:4px;color:var(--muted);white-space:nowrap}.intro{margin:24px 0}.twocol{display:grid;grid-template-columns:0.86fr 1.35fr;gap:20px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;overflow:hidden}canvas{display:block;max-width:100%;height:auto;image-rendering:pixelated}.stage{background:#101d22;border:1px solid #304841;border-radius:10px;display:grid;place-items:center;min-height:300px;margin:16px 0}.controls{display:flex;flex-wrap:wrap;gap:9px;align-items:center}button,select{font:inherit;color:var(--text);background:#203a39;border:1px solid #51705c;border-radius:7px;padding:7px 12px;cursor:pointer}button:hover,select:hover{border-color:var(--gold)}button[aria-pressed=true]{background:#5e4829;border-color:var(--gold)}label{color:var(--muted)}.note{font-size:12px;color:var(--muted)}.states{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:22px 0}.states .stage{min-height:190px}.states canvas{width:100%;max-width:300px}.trees{margin:22px 0}.trees canvas{margin:18px auto}.catalog{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:20px}.sprite{border:1px solid var(--line);border-radius:10px;background:#122124;padding:10px;text-align:center}.sprite canvas{width:144px;margin:auto;background-color:#172c2d;background-image:conic-gradient(#1c3332 25%,transparent 0 50%,#1c3332 0 75%,transparent 0);background-size:16px 16px;border-radius:6px}.sprite strong{display:block;font-size:13px;margin:8px 0 0}.sprite small{font-size:10px;color:var(--muted);word-break:break-all}.section{margin-top:38px}.footer{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;font-size:13px}.tree-labels{display:grid;grid-template-columns:repeat(6,1fr);text-align:center;font-size:12px;color:var(--muted)}@media(max-width:820px){.twocol,.states{grid-template-columns:1fr}header{display:block}.stage{min-height:230px}main{padding:26px 16px}.panel{padding:16px}}
+</style><main>
+<header><div><div class="eyebrow">ART COLLECTION / BATCH 05</div><h1>MOSSLUME</h1><p>房屋、家具与采集状态</p></div><div><span class="badge">8 张源图集</span><span class="badge">37 个组件 / 状态</span><span class="badge">透明背景</span></div></header>
+<p class="intro">这一批补齐小屋分层、基础家具和资源采集前后的变化。下方可以切换门窗、采摘、采矿与箱子状态；这些是美术试摆，尚未接入游戏。</p>
+<div id="loading" role="status">正在载入素材…</div><div id="content" hidden>
+<div class="twocol"><section class="panel"><h2>小屋分层试摆</h2><p>沿用橙色屋架、紫瓦与蓝色门廊。</p><div class="stage"><canvas id="house" width="480" height="432" aria-label="小屋分层拼装预览"></canvas></div><div class="controls"><button id="roofToggle" aria-pressed="true">显示屋顶</button><button id="doorToggle" aria-pressed="false">打开门</button><button id="lightToggle" aria-pressed="false">窗户亮灯</button></div><p class="note">屋顶、墙体与门窗独立。当前为预览坐标；墙体比例、遮挡线与门窗锚点还需运行规格校准。</p></section>
+<section class="panel"><h2>室内家具试摆</h2><p>床、桌椅、柜架、灯具、地毯与盆栽使用同一套木色。</p><div class="stage"><canvas id="room" width="672" height="384" aria-label="室内家具比例预览"></canvas></div><p class="note">按 32 像素地块估算摆放比例。地板目前为单模块源图，拼缝和墙体转角仍待补齐；这里没有模拟夜间光影。</p></section></div>
+<div class="states"><section class="panel"><h2>浆果灌木</h2><div class="stage"><canvas id="berry" width="300" height="210" aria-label="浆果四状态预览"></canvas></div><label>状态 <select id="berryState"><option value="berry-ripe">成熟 · 可采摘</option><option value="berry-empty">采摘后 · 无果</option><option value="berry-flowering">开花</option><option value="berry-unripe">青果</option></select></label></section>
+<section class="panel"><h2>岩石采集</h2><div class="stage"><canvas id="rock" width="300" height="210" aria-label="岩石采集四状态预览"></canvas></div><label>状态 <select id="rockState"><option value="rock-intact">完整</option><option value="rock-cracked">初次裂纹</option><option value="rock-damaged">明显破损</option><option value="rock-depleted">剩余碎石</option></select></label></section>
+<section class="panel"><h2>箱子开关</h2><div class="stage"><canvas id="chest" width="300" height="210" aria-label="箱子三状态预览"></canvas></div><label>状态 <select id="chestState"><option value="chest-closed">关闭</option><option value="chest-opening">半开</option><option value="chest-open">打开</option></select></label><p class="note">三种姿态源图，流畅开合仍需补间与铰链校准。</p></section></div>
+<section class="panel trees"><h2>树木采集与再生</h2><p>共用地面基线，不把小树苗放大成成年树。</p><canvas id="trees" width="1080" height="210" aria-label="树木生命周期比例预览"></canvas><div class="tree-labels"><span>树桩</span><span>树桩再生</span><span>新芽</span><span>幼树</span><span>小树</span><span>落枝</span></div></section>
+<section class="section"><h2>全部 37 个组件与状态</h2><p>缩略图用于检查形状；场景内实际大小以上方试摆为准。源图保留透明背景。</p><div class="catalog" id="catalog"></div></section>
+<div class="footer">内置 image_gen 生成 · 源图数量已补入清单，运行替换待完成。<br><a href="../planning/缺失素材清单-v6.txt">剩余素材清单</a> · <a href="../planning/第五批素材-生成提示词.txt">本批提示词</a> · <a href="ui-inventory-batch-04-v1.html">上一批：背包与 UI</a></div>
+</div></main>
+<script>
+const BUNDLE=__BUNDLE__,REGIONS=__REGIONS__;
+const loaded={},S={roof:true,door:false,light:false};
+window.previewReady=false;window.previewErrors=[];
+window.addEventListener('error',e=>window.previewErrors.push(e.message));
+function ctxFor(id,scale=1){let c=document.getElementById(id),ctx=c.getContext('2d');ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,c.width,c.height);ctx.imageSmoothingEnabled=false;ctx.scale(scale,scale);return ctx}
+function draw(ctx,id,x,y,w,h){const r=REGIONS[id],b=r.previewTrimRect;h=h??w*b[3]/b[2];ctx.drawImage(loaded[r.atlas],...b,x,y,w,h);return h}
+function at(ctx,id,cx,ground,w){const b=REGIONS[id].previewTrimRect,h=w*b[3]/b[2];draw(ctx,id,Math.round(cx-w/2),Math.round(ground-h),w,h)}
+function house(){const c=ctxFor('house',3);draw(c,'cottage-walls',40,71,80,49);draw(c,S.door?'door-open':'door-closed',65,92,30,28);draw(c,S.light?'window-lit':'window-dark',51,94,11,11);draw(c,S.light?'window-lit':'window-dark',98,94,11,11);if(S.roof)draw(c,'cottage-roof',35,19,90,71);for(const [id,key] of [['roofToggle','roof'],['doorToggle','door'],['lightToggle','light']])document.getElementById(id).setAttribute('aria-pressed',String(S[key]));document.getElementById('house').dataset.state=JSON.stringify(S)}
+function room(){const c=ctxFor('room',3);for(let y=32;y<112;y+=32)for(let x=16;x<208;x+=32){c.save();c.beginPath();c.rect(16,32,192,80);c.clip();draw(c,'plank-floor',x,y,32,32);c.restore()}for(let x=16;x<208;x+=64)draw(c,'interior-wall',x,12,64,37);at(c,'woven-rug',115,111,52);at(c,'wall-lamp',202,42,9);at(c,'bookshelf',143,66,28);at(c,'cupboard',181,68,28);at(c,'potted-plant',28,68,13);at(c,'bed',49,101,32);at(c,'table',115,92,42);at(c,'floor-lamp',201,94,12);at(c,'chair',115,117,20)}
+function resource(kind){const c=ctxFor(kind,3),id=document.getElementById(kind+'State').value,r=REGIONS[id],b=r.previewTrimRect;const scales={berry:36/555,rock:32/514};let w=kind==='chest'?30:b[2]*scales[kind];at(c,id,50,57,w);document.getElementById(kind).dataset.state=id}
+function trees(){const c=ctxFor('trees',3),ids=['stump','stump-regrowth','seedling','sapling','young-tree','fallen-branch'],widths=[18,18,8,18,29,20];ids.forEach((id,i)=>at(c,id,30+60*i,61,widths[i]))}
+function gallery(){const host=document.getElementById('catalog');for(const r of Object.values(REGIONS)){let card=document.createElement('div');card.className='sprite';const cv=document.createElement('canvas');cv.width=144;cv.height=120;cv.dataset.component=r.id;cv.setAttribute('aria-label',r.name);card.append(cv);let strong=document.createElement('strong');strong.textContent=r.name;card.append(strong);let small=document.createElement('small');small.textContent=r.id;card.append(small);host.append(card);let ctx=cv.getContext('2d');ctx.imageSmoothingEnabled=false;const b=r.previewTrimRect,k=Math.min(120/b[2],96/b[3]),w=b[2]*k,h=b[3]*k;draw(ctx,r.id,Math.round((144-w)/2),Math.round((120-h)/2),w,h)}}
+async function init(){await Promise.all(Object.entries(BUNDLE).map(([id,src])=>new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>{loaded[id]=im;resolve()};im.onerror=()=>reject(new Error('Image failed: '+id));im.src=src})));house();room();trees();for(const k of ['berry','rock','chest']){resource(k);document.getElementById(k+'State').onchange=()=>resource(k)}for(const [id,key] of [['roofToggle','roof'],['doorToggle','door'],['lightToggle','light']])document.getElementById(id).onclick=()=>{S[key]=!S[key];house()};gallery();document.getElementById('loading').hidden=true;document.getElementById('content').hidden=false;window.previewReady=true;window.previewSummary={atlases:Object.keys(loaded).length,components:Object.keys(REGIONS).length}}
+init().catch(e=>{document.getElementById('loading').textContent='素材加载失败：'+e.message;window.previewErrors.push(e.message)});
+</script></html>'''
+html = html.replace('__BUNDLE__', json.dumps(bundle)).replace('__REGIONS__', json.dumps(regions, ensure_ascii=False))
+target = ART / 'previews/world-assets-batch-05-v1.html'
+target.write_text(html)
+print(json.dumps({'preview': str(target), 'bytes': target.stat().st_size, 'sourceComponents': len(regions)}, ensure_ascii=False))

@@ -1,0 +1,2596 @@
+{
+  "snapshot": "0.3.0 visual baseline before world/NPC refactor",
+  "source": "outputs/mosslume",
+  "copiedFiles": 516,
+  "excluded": [
+    "build caches",
+    "app symlinks",
+    "test profiles",
+    "personal saves",
+    "runtime logs",
+    "nested Git metadata"
+  ],
+  "adapterSha256": "720feaac7f568127f946797281d1e88659591444937e753e7848205a2afa1234",
+  "files": [
+    {
+      "path": "mosslume/README.md",
+      "bytes": 7203,
+      "sha256": "14e0f6b9ad310aaa7b07b0ae54bf2d6a0583975856a6df0b3ffef925e2860bd4"
+    },
+    {
+      "path": "mosslume/art/characters/character-lineup-concept-v1.png",
+      "bytes": 1837603,
+      "sha256": "236d963d480039ef7a2d29af371f5acbf7f66c77cf268029bb239bf14cbf4445"
+    },
+    {
+      "path": "mosslume/art/characters/character-lineup-concept-v1.prompt.txt",
+      "bytes": 3216,
+      "sha256": "028b721040a98112f62870e98ddf07f16e92be7423febb52276daeb97780e083"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-chop-source-v1.png",
+      "bytes": 1724452,
+      "sha256": "6e94b4bf68ba19dc47460b4074be7c0c84574d9472a77c61940d284997281542"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-chop-source-v1.prompt.txt",
+      "bytes": 2866,
+      "sha256": "5475de85e723a613ab3895d280c4ea49758367de87a5714c9ef11291510867f0"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-mine-source-v1.png",
+      "bytes": 1718918,
+      "sha256": "c757fa2a7705ccc68ef6b3a7e8277d73359d4bab362208eeecd2f14985bb012e"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-mine-source-v1.prompt.txt",
+      "bytes": 2911,
+      "sha256": "ac4ade6d488a84626b739bfc5cc40def15b7dab9f9549c972456d2a9d609a4e6"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-down-source-v1.png",
+      "bytes": 1687613,
+      "sha256": "f340a3290f297b73db145c6c25d3431dbb48ae8f4adb6b65230e4d6c64b99efb"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-down-source-v1.prompt.txt",
+      "bytes": 3859,
+      "sha256": "c9c196f41f355317d21f6aae80fbba368ced06b135b874ff74936b0fd092fac7"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-left-source-v1.png",
+      "bytes": 1685894,
+      "sha256": "58eb58b07cb0762f50a4d82cf9fdf7b4cc99a45f95a08c030d15ee3c3646b168"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-left-source-v1.prompt.txt",
+      "bytes": 3078,
+      "sha256": "0ec4f5ee109d07d57ac090a76e0bfd719c82de3801f61452bbf7e73dc625d1c9"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-right-source-v1.png",
+      "bytes": 1698723,
+      "sha256": "2e59abe89b8a47c708354327b702aab63c8034836a5afcf5aefa77822194f8b3"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-right-source-v1.prompt.txt",
+      "bytes": 3984,
+      "sha256": "66a42ae3f983798992e9d6ca2665d34ceab0de61a560c602a345191b2b723593"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-up-source-v1.png",
+      "bytes": 1616565,
+      "sha256": "6800bea55dc60d6e93f12651550fce73cc7a7c72c979b1c56eef65f80289d064"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-walk-up-source-v1.prompt.txt",
+      "bytes": 2972,
+      "sha256": "f8aa5b47cc1d4c05ec47c29fe8320b82e928124ce250de05efef996fa17fb67e"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-water-source-v1.png",
+      "bytes": 1786458,
+      "sha256": "c8d166c775d6c4f1f44fd20a78d0f852c29da458f90939988c20f75a97497390"
+    },
+    {
+      "path": "mosslume/art/characters/player/animations/player-water-source-v1.prompt.txt",
+      "bytes": 2924,
+      "sha256": "0b59993216dea4a334e2a5e5ce3ec6c56c0d4516734f6408e80f247a98b767f6"
+    },
+    {
+      "path": "mosslume/art/characters/player/player-compact-v2.png",
+      "bytes": 610028,
+      "sha256": "ee146fa6a29bcd4f05bc6afbbee64744617bdde417aa8617d23cc57577ebf67b"
+    },
+    {
+      "path": "mosslume/art/characters/player/player-compact-v2.prompt.txt",
+      "bytes": 2509,
+      "sha256": "b5f894fa1ccbaee2de6a26fdeda3b006a155922205c55cc413332001ed25ee5a"
+    },
+    {
+      "path": "mosslume/art/characters/player/player-directions-prototype-v1.png",
+      "bytes": 656525,
+      "sha256": "ee01066f763dffd6f81061f3802d56cd1d91a39eedb14bc5d4a8dfd63aa5b50a"
+    },
+    {
+      "path": "mosslume/art/characters/player/player-directions-prototype-v1.prompt.txt",
+      "bytes": 2111,
+      "sha256": "2c15b20428a1c5e6106dac83eb7c5f3abb95d3fcbf6df7a03ed9f22952e16995"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/carpenter-expressions-v1.png",
+      "bytes": 2447532,
+      "sha256": "aa4504d0ce44465fa0d217027386bac6f0fff0b33e7d03d47f05992ba1b7a0ce"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/carpenter-expressions-v1.prompt.txt",
+      "bytes": 1386,
+      "sha256": "b39a3fcce8bef0642a37de6916b729a6c9bed59871c28f37b490cafb55ae1e35"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/farmer-expressions-v1.png",
+      "bytes": 2585424,
+      "sha256": "85a20011f029cf37e21a0e35bc1255d9d4effa57a9d48195ec6bdc7776c77fb9"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/farmer-expressions-v1.prompt.txt",
+      "bytes": 1478,
+      "sha256": "e52ebd3d6ac14d31c6ec7288e75b60c7e9b1f8a267fdddbc3e99ec87a3a6255f"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/merchant-expressions-v1.png",
+      "bytes": 2644150,
+      "sha256": "c6ea95021e89d229772804cf91d5bb5dcaea1f0682dc0de87ef862e8840a09fe"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/merchant-expressions-v1.prompt.txt",
+      "bytes": 1429,
+      "sha256": "e5ca94361c6e60bb90b84a2603fc3a9489fdf2f34d79b2f3f9cdc2b8ae345105"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/player-expressions-v1.png",
+      "bytes": 2284075,
+      "sha256": "e0c1105f253e1747bd8a541500768cfa58c7b07fa9d0960f0e4653cb5e3513b5"
+    },
+    {
+      "path": "mosslume/art/characters/portraits/player-expressions-v1.prompt.txt",
+      "bytes": 1503,
+      "sha256": "f5643c93d04eccc809e8999b6a9099c20a143fcd3f089dfdfd1d9ea8cdc12d6e"
+    },
+    {
+      "path": "mosslume/art/characters/residents/carpenter-directions-source-v1.png",
+      "bytes": 1014751,
+      "sha256": "e9be74df9e59830fd40f5e9b423fcb861d6dd6996d581aaad03aceade65bbdec"
+    },
+    {
+      "path": "mosslume/art/characters/residents/carpenter-directions-source-v1.prompt.txt",
+      "bytes": 3514,
+      "sha256": "aab651263d49b4a82699f4fdc26360be4e017209b6a67d6f54931d8e5467b01b"
+    },
+    {
+      "path": "mosslume/art/characters/residents/farmer-directions-source-v1.png",
+      "bytes": 803935,
+      "sha256": "10ccf8d12fba0bcfd684c76538e34a15232f6bda7f31bea8192c5211a61812d4"
+    },
+    {
+      "path": "mosslume/art/characters/residents/farmer-directions-source-v1.prompt.txt",
+      "bytes": 2388,
+      "sha256": "ce4b2ae6433a78b59a67bb524ecda031258a24ef6f0b5f6ed2ac3a94f964cfa4"
+    },
+    {
+      "path": "mosslume/art/characters/residents/merchant-directions-source-v1.png",
+      "bytes": 847119,
+      "sha256": "b329854aa5858c46beb7dcf6c28b04b4a8dbf1bbc7671eb36793b333731f0345"
+    },
+    {
+      "path": "mosslume/art/characters/residents/merchant-directions-source-v1.prompt.txt",
+      "bytes": 3521,
+      "sha256": "fe8c90c4c61cc1ad693b19fbc6d44050e0aa1184251ac4a14778cf4709d8c59a"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/bench-mask.png",
+      "bytes": 150,
+      "sha256": "a82a9eda88c2714daa58f1c0c2be0222d3e72f51b39108d8352c4f4fc8deab29"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/bench.png",
+      "bytes": 1138,
+      "sha256": "3dc571b774a921d77a2c672af5ec1067d4ee17214198b8d69f5dda0bbeef2603"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/berry-bush-mask.png",
+      "bytes": 160,
+      "sha256": "83d3396f6068ebc50c582c5eb226c190ca9c3faccb9af5e843e939e0493aaf09"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/berry-bush.png",
+      "bytes": 712,
+      "sha256": "05dd2eea59c49e1b18c8c143d1eb0bea07f08fade23248b3b5f44323d09b4fe8"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/brazier-mask.png",
+      "bytes": 159,
+      "sha256": "a11ae6eb28be714d0d6570cea97df8d05e222f82a1713f4e908444c3bc682b01"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/brazier.png",
+      "bytes": 821,
+      "sha256": "a7c39c83c332459d4713fc41baebcc0a598514910fbe90c71755f2a80c99ed28"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/bush-mask.png",
+      "bytes": 154,
+      "sha256": "7ab53f53d486705bc61e993ff98c7ef8c3cdcbc2968fd3d8413fdbecf2bbae1c"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/bush.png",
+      "bytes": 912,
+      "sha256": "795123413d365308f563301748f8705157fc9a46043c78dc55f8e14bbb9abf67"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/chest-mask.png",
+      "bytes": 107,
+      "sha256": "e27dc45b94733803bae6b66b35711a0fa85250beaea89da8f2cceb13f7023e19"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/chest.png",
+      "bytes": 723,
+      "sha256": "a4b03800485b049ad10934986eab691e4f07927776de9e142b46057afe2029b5"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/crown-leafy-mask.png",
+      "bytes": 248,
+      "sha256": "1a3c2e24896b77797c3e1517f1fdef29094be51fd3952910969c692896be69cd"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/crown-leafy.png",
+      "bytes": 2356,
+      "sha256": "021deb0133cbf9487ac6ee67ecb679c02c19a15eb6a5fd2dc730b297166ecae5"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/crown-young-mask.png",
+      "bytes": 236,
+      "sha256": "21339f8fa172604044169b66d23e40cd355312b35ddb5dfff25d3eb30b89c804"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/crown-young.png",
+      "bytes": 2133,
+      "sha256": "0c5601cce728e0947bef4622721f91eb826d03fd30506db22f6dbe6b999b0cd1"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/deep.png",
+      "bytes": 5861,
+      "sha256": "55e157a2cb728f2dd11afc358fce9386cd56cc1fd60ab867b5084af46e074e6d"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/dirt.png",
+      "bytes": 7656,
+      "sha256": "7234c381abdb192e69327c70ab8fa43fa4bdddd61ab34b7bef099893bb9059a3"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/earth-mask.png",
+      "bytes": 164,
+      "sha256": "93aee1934dced60c154a47247fdd3e510c337f5228ec1b3711ea1a25def77899"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/earth.png",
+      "bytes": 833,
+      "sha256": "68e9d550081abdff936fe895b41c05fcfcbe4d5791bc700081c9fc8175f07efc"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/fern-mask.png",
+      "bytes": 159,
+      "sha256": "d854d14d0a5ea97c03d627cb31de83cab233075e158ce1bf58bb604d281a14f4"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/fern.png",
+      "bytes": 567,
+      "sha256": "3ca8ef23bebbeb20b5bd928241878f6c2b336127d416e8f1b93bd4edccf4385f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-0.png",
+      "bytes": 1307,
+      "sha256": "036e70bb0d29f4843ca2ca052af73cdb0f2bb1dec5b4f877382cd1396b4f779d"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-1.png",
+      "bytes": 1427,
+      "sha256": "d6e390ca0c6ef779747b0d722fb60873671e76da9e0c833952502552239c8d00"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-2.png",
+      "bytes": 1514,
+      "sha256": "ec3fb0fc0bba343ec66d33a1953bb6a4e2ac07e138514591f079368a7d1eb35a"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-3.png",
+      "bytes": 1356,
+      "sha256": "0117f7e7255eff1a1670a749f35b9369be5592f95fe245ea3418606fc13d23d6"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-4.png",
+      "bytes": 1254,
+      "sha256": "946276c1113892619e7db64ebc1cb3945e425cd65ab8a754a93d5fd1f8e06093"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-5.png",
+      "bytes": 1322,
+      "sha256": "6cbd6bcdfff9efabb7c9a7a4d8688184658edb3295e715d211f42c108da72d7a"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-6.png",
+      "bytes": 1387,
+      "sha256": "8060f26d8b6c31c175e8a44b543a7d514e2bbf3d19b6eae24a1a7cd958203d62"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flame-7.png",
+      "bytes": 1270,
+      "sha256": "398dae47c8de1f58b71358d7f3b595bedad556ad46b66239c16a2fd6344fd327"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flower-planter-mask.png",
+      "bytes": 135,
+      "sha256": "8077a9845e940ce3cac789561ff8503c4606194af3e845fc37ccb1a035e717c5"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flower-planter.png",
+      "bytes": 917,
+      "sha256": "957671cc48e6c2120cd5ba88e079c7bf5acbde8c4d9471a05a26fdc5a6c36a5e"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flowers-mask.png",
+      "bytes": 148,
+      "sha256": "9b85bf9c6eb30104d90fb77b5db6ae1913fc8b69a9952ca158f7e23660c77774"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/flowers.png",
+      "bytes": 394,
+      "sha256": "21a65761218ba2d6a93000b68cc5f0875c854cea3e1fd46e3109ee312bf4ef35"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/glow.png",
+      "bytes": 1534,
+      "sha256": "d2d1f907c038054c0c27492e590df1b4147c66ae50e90de4db7afd30c4ad9b6e"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/grass-mask.png",
+      "bytes": 120,
+      "sha256": "17969e790fc2c458d333ffd178dc5a93ccfcd93e71b1ef362f1385d6b2f5f213"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/grass.png",
+      "bytes": 330,
+      "sha256": "de03b7e509e106ea44ed78f9de629f6e25cef52d6d8e71f5f9e09e0e0c6e2c13"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/ground.png",
+      "bytes": 6457,
+      "sha256": "d5b6a5e7ee60cfb8ab2bfa9b120aaae6b468a75018dc17a6834a655b90443c14"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/house-mask.png",
+      "bytes": 519,
+      "sha256": "c86cd047160b3b35753335b1da2e3bd633eb20318e040d7632867d287e294726"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/house.png",
+      "bytes": 14292,
+      "sha256": "7c97c2bdb5dc2dd33a14b8945a7127c8bb3ed528e4c2551ddce6fd0b22fc2df4"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/lamp-post-mask.png",
+      "bytes": 175,
+      "sha256": "75cfe6f4664f43f95b85e0f3925ccb3dc5c81825199e1de3db9fa486d4634c32"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/lamp-post.png",
+      "bytes": 875,
+      "sha256": "7da5280aedb1aeb100a5188b5a5ed0fc4e6cfdff7a1c53bbe278edce056f712b"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/logs-mask.png",
+      "bytes": 150,
+      "sha256": "b4dbd44439dcbd609b3b5b058ce61e84f6d973e3e65ca784dfbbf1248147e5f8"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/logs.png",
+      "bytes": 674,
+      "sha256": "93bb9d240953b9cfeae82743790c3ebb16d6a977d0b25644491653a3d7363dd5"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/mote.png",
+      "bytes": 194,
+      "sha256": "d6d9fb0618856b66bd2cc1c49376d54ed940f0260ed7859680e2df5fa6e2451f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/mushroom-log-mask.png",
+      "bytes": 158,
+      "sha256": "a14e86cfae303d2d5442ee4c64e739f178e17ae4b6877d299daa9eeb7170c8a6"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/mushroom-log.png",
+      "bytes": 1023,
+      "sha256": "5f8cf52e82afc5a7688472cf3a034df2d04fb507984fa506b76aa1ef5d63a7b6"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/ocean-art.png",
+      "bytes": 75506,
+      "sha256": "0a49e75692a6693211dd77cf6de5806e6ba242d38361ff70d8498a803c591af3"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/purple-cauldron-mask.png",
+      "bytes": 160,
+      "sha256": "d8981494e81c87a44e1b56a6a85331760af22e0310c486ce707284152bf06d6e"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/purple-cauldron.png",
+      "bytes": 952,
+      "sha256": "91f192a0db6e5f0da9ce1c52b44b41f21355877663f23c7dce24e85fce34cdca"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/reeds-mask.png",
+      "bytes": 183,
+      "sha256": "3ae3041cdc49cd487cc26190d336c5f57e0d52844fdb52860c681845b61bf0dd"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/reeds.png",
+      "bytes": 618,
+      "sha256": "603295dda51db54a1c9f99ecae0c2bae803f941c040ed077b8004f69aa29c88f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/rock-mask.png",
+      "bytes": 134,
+      "sha256": "b1842f6abaaa7d36a664f9820a52b8fed55d0db5d947a64333353a18624c09ed"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/rock.png",
+      "bytes": 536,
+      "sha256": "6a56ba1b647e8c780ef298c118bf924b0d1c2d3e3b5518c3ce15a3f0da8ba6cf"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/shallow.png",
+      "bytes": 6015,
+      "sha256": "c53ee9229ed97a0bce0a3570739e22eea6a4310fd451918a774e10042a47bb18"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/shore-mask.png",
+      "bytes": 166,
+      "sha256": "a1a09c399a9b0d16b88d5237f1e68d05e929fe98450f1403229fe595b2a6ceac"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/shore.png",
+      "bytes": 1193,
+      "sha256": "e067f1502505121ba8069e4cf7349a0e94b86d436a1634ce557aad32cca8722a"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/smith-workbench-mask.png",
+      "bytes": 166,
+      "sha256": "f5a8a436a2f42fed6fa7818fc790468502b2c49888e8144ba3f041da930123a4"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/smith-workbench.png",
+      "bytes": 1091,
+      "sha256": "49ae7c8627499d79485e3000e743295b4889baa3b24ea98baa59b6cd429aa530"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/smoke-mask.png",
+      "bytes": 159,
+      "sha256": "cd7414a7a0bbeb6d49958e68293619a05d8911c870e1f0ccfdb9533531e7c796"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/smoke.png",
+      "bytes": 518,
+      "sha256": "a12bea6af1f57223d0326515a56dd441d79e020ce9095c15f7d07533ef028467"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/stone-basin-mask.png",
+      "bytes": 142,
+      "sha256": "f1256d083e1ce1d0483848c5e1eb36fe741aa521d6a7ece677160433c93d5e19"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/stone-basin.png",
+      "bytes": 714,
+      "sha256": "8bf6ddc0b049dd4c3b8e28edbcd165ecf4123b9a55ff08218f01c7581cf58295"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/stone-furnace-mask.png",
+      "bytes": 136,
+      "sha256": "68528ab302899e90acac6430aca396036507c137d34bc31aa5bc3cddc1240ce6"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/stone-furnace.png",
+      "bytes": 1217,
+      "sha256": "2c0667962f348e966720075bbf8d8f77e4bf72e8283b60b10bafe761e1b519a7"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/timber-rack-mask.png",
+      "bytes": 171,
+      "sha256": "71e26040e1485776ed21aeff8c82308f3df1f4e2fce6ae99c7d1cee68897733f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/timber-rack.png",
+      "bytes": 1555,
+      "sha256": "e8a9d442c5b5f6d1a2ac9c14909c9509ee5477583b6cacd73a66588dcf15efa3"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/trail-sign-mask.png",
+      "bytes": 135,
+      "sha256": "2d030dbcaaeea47b98403c20badee3c019c7630ab8ee331746c3cf19ed0f0abb"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/trail-sign.png",
+      "bytes": 622,
+      "sha256": "fdbf6d0222a15bf7365c40fc9e3fe86f256a2f62ceeab4cdd26892498674581b"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-a-top-mask.png",
+      "bytes": 221,
+      "sha256": "73f2c2dd7ec3f444b40ab3e4037adfa4820dc6f25dbaeeda57f59d9c1476ceaa"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-a-top.png",
+      "bytes": 2433,
+      "sha256": "b7812d97959033a3fbdb1cc81198378275203e076d86cf75ae31c5f61882208f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-a-wood-mask.png",
+      "bytes": 117,
+      "sha256": "1b079ed1a028a6fcdc9c3699236aa29ebc36af2a22d78db48638cff126269bee"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-a-wood.png",
+      "bytes": 396,
+      "sha256": "60f83e75b574cb8794df914b298404927feccb2d16141d3d3748ed0fa70bcc67"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-b-top-mask.png",
+      "bytes": 221,
+      "sha256": "73f2c2dd7ec3f444b40ab3e4037adfa4820dc6f25dbaeeda57f59d9c1476ceaa"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-b-top.png",
+      "bytes": 2433,
+      "sha256": "b7812d97959033a3fbdb1cc81198378275203e076d86cf75ae31c5f61882208f"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-b-wood-mask.png",
+      "bytes": 122,
+      "sha256": "cf75deef063f2d05451ead70896f05a245df1c926886ccb85ca7b46acad677e5"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/tree-b-wood.png",
+      "bytes": 397,
+      "sha256": "d1adcb3e4045c960291a03dafe3065a1bb418b5171d0c038bd6290a5495860f6"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/wildflowers-mask.png",
+      "bytes": 172,
+      "sha256": "53611e3be4b539353fc4e03233c0e55ad437c16d2f7ac4442e71f72a16336503"
+    },
+    {
+      "path": "mosslume/art/environment/existing-v1/wildflowers.png",
+      "bytes": 630,
+      "sha256": "f71984cdff05930ffb9cb4d46bd3cd02a6150609b31e4fa7d04b0a2b86af78d4"
+    },
+    {
+      "path": "mosslume/art/environment/furniture/basic-furniture-source-v1.png",
+      "bytes": 1320432,
+      "sha256": "3d091571755645b60834512f6f03bbabbb4550c30af867f1089c409c3fb5d4b9"
+    },
+    {
+      "path": "mosslume/art/environment/furniture/basic-furniture-source-v1.prompt.txt",
+      "bytes": 2310,
+      "sha256": "8aed6ea10161cb20709f3b4d2906a3fe67418e70051d395c20f431a51d80fb92"
+    },
+    {
+      "path": "mosslume/art/environment/housing/cottage-layers-source-v1.png",
+      "bytes": 1364343,
+      "sha256": "11e4b5da90651ee19aae06f01d40e73cc3cd830163d2453c3484c5cafca4ee2f"
+    },
+    {
+      "path": "mosslume/art/environment/housing/cottage-layers-source-v1.prompt.txt",
+      "bytes": 2813,
+      "sha256": "970459fee08e6658898b771a64b3840297a56a79e377e6de2e3f63868fee5aed"
+    },
+    {
+      "path": "mosslume/art/environment/housing/interior-parts-source-v1.png",
+      "bytes": 1286982,
+      "sha256": "08957351937bc72966712394f778a944f7ce14957e3ebccd9c71a6cb14061fed"
+    },
+    {
+      "path": "mosslume/art/environment/housing/interior-parts-source-v1.prompt.txt",
+      "bytes": 2379,
+      "sha256": "b3d27ce0c3a22b67b3f4d18ea0424f93c104016b0371853be15c0ff08cc8f8f1"
+    },
+    {
+      "path": "mosslume/art/environment/nature/berry-harvest-states-source-v1.png",
+      "bytes": 1150518,
+      "sha256": "b7789cf9fc27a9d949c9c4cde3905598d4acbb662d6507925f87347062a34cc4"
+    },
+    {
+      "path": "mosslume/art/environment/nature/berry-harvest-states-source-v1.prompt.txt",
+      "bytes": 1915,
+      "sha256": "adb22ca22ffb7a0ab120a51a42d9575f48fcbd279194711c347f0870d7546f5c"
+    },
+    {
+      "path": "mosslume/art/environment/nature/rock-harvest-states-source-v1.png",
+      "bytes": 634679,
+      "sha256": "c76b76c176dd34b3aaf8927f0d45b927747613c54cbf4a939eea9f735c8599e3"
+    },
+    {
+      "path": "mosslume/art/environment/nature/rock-harvest-states-source-v1.prompt.txt",
+      "bytes": 1954,
+      "sha256": "30699e00a781f982565238e7d2181e29b00d9c2f7962d1ed5a5cecf047238677"
+    },
+    {
+      "path": "mosslume/art/environment/nature/tree-resource-states-source-v1.png",
+      "bytes": 1229665,
+      "sha256": "cecda250ba637a8c451d7f8e5c5c9594fadbcb4e088b104d76c593530fb180d5"
+    },
+    {
+      "path": "mosslume/art/environment/nature/tree-resource-states-source-v1.prompt.txt",
+      "bytes": 2237,
+      "sha256": "5811c9d35c4d821e3086c796008efd06c0e526f2e1824e7980617d0756b7f238"
+    },
+    {
+      "path": "mosslume/art/environment/props/chest-states-source-v1.png",
+      "bytes": 861032,
+      "sha256": "754cd0441e6e3a9ef064c41d95781c492fe2f2b224f25e9cf1ea640d1e66e9b2"
+    },
+    {
+      "path": "mosslume/art/environment/props/chest-states-source-v1.prompt.txt",
+      "bytes": 1854,
+      "sha256": "b3fe907a0b6d2d041a1b1b89f17ef2f3e65a3843c79cd40f878c8394a5845efe"
+    },
+    {
+      "path": "mosslume/art/environment/props/village-props-source-v1.png",
+      "bytes": 595157,
+      "sha256": "019331bfc5719c91b8bcf04ded6cb6ca2e3df42f94b406347fb5b3d51fd95ef6"
+    },
+    {
+      "path": "mosslume/art/environment/props/village-props-source-v1.prompt.txt",
+      "bytes": 1974,
+      "sha256": "19b60e4c2ffe60c223c7df8a2e4ba05957936402ce86061d6550d7f7b9f21cfc"
+    },
+    {
+      "path": "mosslume/art/farming/crops/carrot-growth-source-v1.png",
+      "bytes": 1251312,
+      "sha256": "897d9265550e510945cb2bd55fea7ff39d05e3168169e9ad961986e46eae6d12"
+    },
+    {
+      "path": "mosslume/art/farming/crops/carrot-growth-source-v1.prompt.txt",
+      "bytes": 2607,
+      "sha256": "70585e04b8d401838ce79ea5e0c4ae8fd389fa3e089dbe3a87ca50bec2e4f713"
+    },
+    {
+      "path": "mosslume/art/farming/crops/pumpkin-growth-source-v1.png",
+      "bytes": 1329698,
+      "sha256": "ff1f6bce37db9b6741afaf783e58a3edd7aff3f86d82b65f40e0d830a89ce868"
+    },
+    {
+      "path": "mosslume/art/farming/crops/pumpkin-growth-source-v1.prompt.txt",
+      "bytes": 2512,
+      "sha256": "48afaabde1edff995fe4ff41433dae92b9beca49002775a3742b8eadb093a578"
+    },
+    {
+      "path": "mosslume/art/farming/crops/wheat-growth-source-v1.png",
+      "bytes": 1359163,
+      "sha256": "a7b0bfd0b784cdc042b766dc4a9843d45838c8d9c45febcb1b1477ccaee2dccb"
+    },
+    {
+      "path": "mosslume/art/farming/crops/wheat-growth-source-v1.prompt.txt",
+      "bytes": 2486,
+      "sha256": "be3d96d3ed4c532e01a41b383b0851a531b4489aee44ed56087e6dc75ffc31a4"
+    },
+    {
+      "path": "mosslume/art/items/buildables/buildables-atlas-v1.png",
+      "bytes": 997981,
+      "sha256": "cf2f235d29a2af12e3b7cab2f3ec476182eecb16289bf9868cd194c3e43169ac"
+    },
+    {
+      "path": "mosslume/art/items/buildables/buildables-atlas-v1.prompt.txt",
+      "bytes": 2680,
+      "sha256": "03bdacc02d07ab5daf51a31169ed6d7be8481a874d30ba590e1529347b66e6b1"
+    },
+    {
+      "path": "mosslume/art/items/farming/farming-forage-atlas-v1.png",
+      "bytes": 1167950,
+      "sha256": "5ded1dfe37396af3f9950dcaed13e4fa22f55d9ebfd037805e8964f14e77f76c"
+    },
+    {
+      "path": "mosslume/art/items/farming/farming-forage-atlas-v1.prompt.txt",
+      "bytes": 1732,
+      "sha256": "f8801c60d3a3980f5b5d206a309d6517d0b43fe49778db139b268bbbda1f071f"
+    },
+    {
+      "path": "mosslume/art/items/food/food-drink-atlas-v1.png",
+      "bytes": 1423636,
+      "sha256": "41b0508370ee66e6543b156ba62300c053e9145dbe595b9ac6ba8019c1e3c98f"
+    },
+    {
+      "path": "mosslume/art/items/food/food-drink-atlas-v1.prompt.txt",
+      "bytes": 1501,
+      "sha256": "db695db4bc34cfc95d8f7ea3a8599c3d7e4c80ab8f79e12f73391ebd828b2805"
+    },
+    {
+      "path": "mosslume/art/items/materials/basic-materials-atlas-v1.png",
+      "bytes": 1071223,
+      "sha256": "0d0dbf424926b9783d4f390d75671bd6f3f9a499235bc0cdfd7269f4823efc02"
+    },
+    {
+      "path": "mosslume/art/items/materials/basic-materials-atlas-v1.prompt.txt",
+      "bytes": 1809,
+      "sha256": "cdfc36d2784322d87f0e78fe05be2829da0184b82ac85445c0296a03a8503bf3"
+    },
+    {
+      "path": "mosslume/art/items/social/social-quest-atlas-v1.png",
+      "bytes": 1027031,
+      "sha256": "5ffc9e3a3b775a28f834ba2639a445ddaf8abb4a0785e2378b3c5086d5c0588a"
+    },
+    {
+      "path": "mosslume/art/items/social/social-quest-atlas-v1.prompt.txt",
+      "bytes": 1305,
+      "sha256": "9753039422c356e3e53e81b48295c9d1f84a014791244d43e99459081aad2947"
+    },
+    {
+      "path": "mosslume/art/items/tools/basic-tools-atlas-v1.png",
+      "bytes": 781703,
+      "sha256": "c72eb98a7305094988f24293f82285bae6896e87e3384baa885ed0761e336023"
+    },
+    {
+      "path": "mosslume/art/items/tools/basic-tools-atlas-v1.prompt.txt",
+      "bytes": 2293,
+      "sha256": "b946d15d7ab3a4f755360604866e4181810bfc4ddf8822f2119224a63b07727a"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v1.json",
+      "bytes": 47562,
+      "sha256": "6c5d9d4dfd0cf717d356ab873b6a2ea62981122a5ce4f0bb82a1ae08aa485587"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v2.json",
+      "bytes": 48959,
+      "sha256": "2518dd403db3b53f1f17c8e5219ca0ec95947a419ca783528f4f3500b0185f10"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v3.json",
+      "bytes": 50129,
+      "sha256": "4e2a1e7c27664bb372a4fb3f6d49f3514c8b5150dcc13d36d05d858a90da340a"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v4.json",
+      "bytes": 51343,
+      "sha256": "69da07453b1fcfdddc4fa592c9645e9a945f02934167ac6dfe0f730046bf4614"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v5.json",
+      "bytes": 54015,
+      "sha256": "86b583f36e5a40646f044b7061d952d343e45f562586e93e81e2f0dd28f3a319"
+    },
+    {
+      "path": "mosslume/art/planning/asset-backlog-v6.json",
+      "bytes": 56002,
+      "sha256": "24453e036b25c1eb8e63fbf2c1870989f078f27566842057cd5c48cd00861ab6"
+    },
+    {
+      "path": "mosslume/art/planning/batch-01-alpha-audit.json",
+      "bytes": 5382,
+      "sha256": "8c99eeb2c551d77952715f993cb2953e6c9c5c2b4fe68671e73a4548bf05b2ef"
+    },
+    {
+      "path": "mosslume/art/planning/batch-01-manifest.json",
+      "bytes": 24762,
+      "sha256": "ddbac19c351641eb10594c6d170697d1dd1c82d9d3e54c3af220c355db2b49f4"
+    },
+    {
+      "path": "mosslume/art/planning/batch-01-source-records.json",
+      "bytes": 10788,
+      "sha256": "5b6aa8fb7930f994bba25c800c5e0fc1ed9d494f0dc2bb429bdd3e4fd2cbe106"
+    },
+    {
+      "path": "mosslume/art/planning/batch-01-tools-cleanup-record.json",
+      "bytes": 938,
+      "sha256": "3a72b457e8426218cfd097cc78e08a633093e0a92d4884f445dbd9f41dd6fce6"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-browser-audit.json",
+      "bytes": 15216,
+      "sha256": "e7dcb82279a48a94c3887087d0f5bda81d749653944f92b349ceb71c779befaf"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-manifest.json",
+      "bytes": 24528,
+      "sha256": "4ea64696813778de0ca9d6fd0e5f4a69f9b30763622eca591af714dca155dc32"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-preview-check.json",
+      "bytes": 139,
+      "sha256": "b1a9120e7e7162af2a32f6d4a6b6056ae71dec7cffaff9ffcadcff7b73f4fb92"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-prompts.json",
+      "bytes": 19411,
+      "sha256": "218aa253610703c6922ccc5bec10fb40e317bf432f6efe93c3d93413415c6839"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-selected-sources.json",
+      "bytes": 31142,
+      "sha256": "7353d2851a44a6228039d9c52a7a2c41095a0488f0ab19b7ebbef3e22afc669f"
+    },
+    {
+      "path": "mosslume/art/planning/batch-02-walk-sources.json",
+      "bytes": 12025,
+      "sha256": "594ffdc8fddde4aa0ae5d716c52bd3a7d96bacb08d0db1db96ffae8348a04698"
+    },
+    {
+      "path": "mosslume/art/planning/batch-03-alpha-audit.json",
+      "bytes": 9294,
+      "sha256": "9fe9b38ad7fad8abbb009d1f58d161e894c61b8d24e7d2bf70c9e4894a77ff25"
+    },
+    {
+      "path": "mosslume/art/planning/batch-03-initial-sources.json",
+      "bytes": 18161,
+      "sha256": "fe598d7d525558c9124f8f1b716d4a6b96a335d5a58047a74f1fe3a4e31ae491"
+    },
+    {
+      "path": "mosslume/art/planning/batch-03-manifest.json",
+      "bytes": 52273,
+      "sha256": "b03da98fe2031a74a264c8841fc002162bf1ddf20d49165dad48ab1717184e54"
+    },
+    {
+      "path": "mosslume/art/planning/batch-03-prompts.json",
+      "bytes": 16887,
+      "sha256": "34665476135db945a99da80c92336793b4fd7c75b15fc23f7393bf287e334ae8"
+    },
+    {
+      "path": "mosslume/art/planning/batch-03-selected-sources.json",
+      "bytes": 36577,
+      "sha256": "27ee9bcc2d70e30a2f319f9a23d64d62c1fce76afec85c63491b81d5be362995"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-alpha-audit.json",
+      "bytes": 50420,
+      "sha256": "04766c76f5f97fbf372c50328b2acb758c9dd2d257164fc2f55ec9461d962f61"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-browser-audit.json",
+      "bytes": 36700,
+      "sha256": "7a688d3fcba9265445346ad175d794292e00e4d68bbd3a89ee3add7061f054fc"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-existing-material-region-fix.json",
+      "bytes": 2797,
+      "sha256": "447d8a50f71e5a4176a5edec4116bc1d3411ec7ceec03a273ab7f2735ad2ccc9"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-initial-sources.json",
+      "bytes": 21354,
+      "sha256": "8215e54ed67a92f86c7681a7edd31b0eb823c93042b6b548c009d69c1cc7ee72"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-manifest.json",
+      "bytes": 74741,
+      "sha256": "0dd4249637a0d2eb3c989b8f868fa97c73139eeb96816f5dcbb06974002f66ba"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-prompts.json",
+      "bytes": 24970,
+      "sha256": "3350fd1b10452e1b52a74aa2a2b17594e9b8622e4cf7a9bcb72512671c1282e5"
+    },
+    {
+      "path": "mosslume/art/planning/batch-04-selected-sources.json",
+      "bytes": 43161,
+      "sha256": "5be4c6bfb7568117f559c39706d26424a10446efb8eb719baff0fbb4b9007796"
+    },
+    {
+      "path": "mosslume/art/planning/batch-05-alpha-audit.json",
+      "bytes": 1617,
+      "sha256": "f465e3896060fb5ff48ddf7dfdf90f5fc3787e283f45c7d79ff67eb76fc02adc"
+    },
+    {
+      "path": "mosslume/art/planning/batch-05-browser-audit.json",
+      "bytes": 2664,
+      "sha256": "80039bbcaa3e3fde499a96b573019edc1c8827113382546bcbf2b5109c263a32"
+    },
+    {
+      "path": "mosslume/art/planning/batch-05-manifest.json",
+      "bytes": 47748,
+      "sha256": "e5b62aecf05646ad820366c83c1dc561570d565119dd7e2bad9d91e0a0b5d083"
+    },
+    {
+      "path": "mosslume/art/planning/batch-05-prompts.json",
+      "bytes": 20360,
+      "sha256": "fea66628bdc4457c29f00881fa4c20e7499083fc1d700923963f4b61c948d4e9"
+    },
+    {
+      "path": "mosslume/art/planning/batch-05-selected-sources.json",
+      "bytes": 23272,
+      "sha256": "b9935586d1984c55ba7829f8cb86f2a4557fe686ff87369c592318c64f7641b0"
+    },
+    {
+      "path": "mosslume/art/planning/inventory-icon-catalog-v1.json",
+      "bytes": 17795,
+      "sha256": "fdb1a1e423efce47775b18387069aa0cfa9c10d9b321a104d81c9fafcebba04e"
+    },
+    {
+      "path": "mosslume/art/planning/ui-component-catalog-v1.json",
+      "bytes": 28750,
+      "sha256": "2b48e2ac4af984b35ed18d33d142f656bce7cef68a4ebf44b5102935479f9120"
+    },
+    {
+      "path": "mosslume/art/planning/第一批素材-生成提示词.txt",
+      "bytes": 10826,
+      "sha256": "89c9313379a7f2de45971f38b9a634a1acb3547d52126b1eed4c8e83946eb467"
+    },
+    {
+      "path": "mosslume/art/planning/第一批素材清单.txt",
+      "bytes": 1716,
+      "sha256": "8180a19bfcc4f3e5b4713ee6005e221de5a94e104f9af30adf092d302f1ecaad"
+    },
+    {
+      "path": "mosslume/art/planning/第三批素材-生成提示词.txt",
+      "bytes": 19526,
+      "sha256": "1802deedcec73f3f2919b8e2b9dc6c0031658acc0ecadbf4f0d16acba2d98882"
+    },
+    {
+      "path": "mosslume/art/planning/第三批素材清单.txt",
+      "bytes": 2653,
+      "sha256": "0c12b174e7980802c3d5072689ad2807264597b2e89bdee59f3d578d78a613f4"
+    },
+    {
+      "path": "mosslume/art/planning/第二批素材-生成提示词.txt",
+      "bytes": 23308,
+      "sha256": "9512b7025e1fd8786e1a0bf056cfdf92c210a83ee7494232cbbad2ccbf3ef9fb"
+    },
+    {
+      "path": "mosslume/art/planning/第二批素材清单.txt",
+      "bytes": 2174,
+      "sha256": "1cf6fa017056a028f5c236e46d36df2767c3a84945e1d87257d3e9b1491b0675"
+    },
+    {
+      "path": "mosslume/art/planning/第五批素材-生成提示词.txt",
+      "bytes": 17763,
+      "sha256": "02c044f49e3aa3185dd2b6bd5be9b10578e72e82554e1f79c5419be362cd13b6"
+    },
+    {
+      "path": "mosslume/art/planning/第五批素材清单.txt",
+      "bytes": 1695,
+      "sha256": "896c48e745cc520a72f83bd6fc44041b6a4501ad04a3540aa0c4cece4fd25acb"
+    },
+    {
+      "path": "mosslume/art/planning/第四批素材-生成提示词.txt",
+      "bytes": 20963,
+      "sha256": "5c9f9d2f29b5b733f627571c1bf01195f5a038627e6c924dc03c959715388277"
+    },
+    {
+      "path": "mosslume/art/planning/第四批素材清单.txt",
+      "bytes": 3019,
+      "sha256": "cf39ff5f640e13a635f3d70caf239967021f454e71c7fe68dbff0097c8666184"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v1.txt",
+      "bytes": 10860,
+      "sha256": "1ee848d0bd49585d638eff5330bea784b94945b92579c7c71b0964778bebcd6e"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v2.txt",
+      "bytes": 11180,
+      "sha256": "d4ca772ac71d16c3267368ff8b73cd7dda0c7dd2c81ab4a9bd10a75d1f570c3c"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v3.txt",
+      "bytes": 11461,
+      "sha256": "f6a5eaafee80ddeb6c72d4a84659f6ae06755a2c0f7694c36e900c167a28649d"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v4.txt",
+      "bytes": 11817,
+      "sha256": "cb2f8b298dceffa7c9dc6ee4a9beb03c713052480862cb47cf35eaa9d945cbcf"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v5.txt",
+      "bytes": 11253,
+      "sha256": "2c9bd47c1c0bb4121c139bf8ab97387c77c1778bf985b73871e6ae58b3c06881"
+    },
+    {
+      "path": "mosslume/art/planning/缺失素材清单-v6.txt",
+      "bytes": 2656,
+      "sha256": "06e87a67d5140ea80ecc34c53f86f87494d04e4c23c3932ad529c04f780c93a3"
+    },
+    {
+      "path": "mosslume/art/previews/assets-batch-03-v1.html",
+      "bytes": 8188,
+      "sha256": "959fc989db5dcadf75c814d1efc5eb2c095d1f92cd5c47ddde77153b85a7b9d3"
+    },
+    {
+      "path": "mosslume/art/previews/batch-02-frame-1-qa.png",
+      "bytes": 160673,
+      "sha256": "211947d03830b1e9de09f5595d80b3055f277ff35cd53cfd93630565f547e3e0"
+    },
+    {
+      "path": "mosslume/art/previews/batch-02-frame-4-qa.png",
+      "bytes": 162461,
+      "sha256": "afc5f47b8765bae8d482f66074b0a2d8d2178b2fcce549f6aace000362f3cfb7"
+    },
+    {
+      "path": "mosslume/art/previews/batch-02-unified-scale-qa.png",
+      "bytes": 150006,
+      "sha256": "eea2aaaf6bdbf63980bb12787afdd0d96c18215b20c867c09aa68dcf64df994b"
+    },
+    {
+      "path": "mosslume/art/previews/batch-04-rendered-button-qa.png",
+      "bytes": 12164,
+      "sha256": "553c41abe60be3f00dcaaee93d771a720d3adf55db17dedd7a0914f71ef4ab27"
+    },
+    {
+      "path": "mosslume/art/previews/batch-04-rendered-grid-qa.png",
+      "bytes": 218231,
+      "sha256": "59957742c15524f72cb1b373e2726359263b0d9cc418b4d243270d42e688a14b"
+    },
+    {
+      "path": "mosslume/art/previews/batch-04-rendered-health-qa.png",
+      "bytes": 19556,
+      "sha256": "9bb27ddefb9347a1f257cd1f53d061b33a4ce23a2b718b8681ebac5fb818d2e6"
+    },
+    {
+      "path": "mosslume/art/previews/batch-04-rendered-portrait-qa.png",
+      "bytes": 73976,
+      "sha256": "4a919bac864bcbf305564653e580b86661bc1ef68105c4b74b5a54e619039d4e"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-berry-alternate-qa.png",
+      "bytes": 21843,
+      "sha256": "19d58000fd065bd021bee9687990aca734a899e69b55dd7360e926ad4d8a2927"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-berry-qa.png",
+      "bytes": 21952,
+      "sha256": "3ff9f8aeee25715f7037b1417fd401f5007d0f10178563a8ba465c0b216f5121"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-chest-alternate-qa.png",
+      "bytes": 23797,
+      "sha256": "13fe45351eb57ea08a18481bd7a5b7e90fb92ffe3c1a0caa12bb23b3c518ebf3"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-chest-qa.png",
+      "bytes": 17958,
+      "sha256": "774cfd56123c8f08461dd534abdc680c3cdc6d4de72441098e37e48d7c3ef4c6"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-house-alternate-qa.png",
+      "bytes": 150245,
+      "sha256": "89cf7615e9e6e059aa8d40139d35c4ec67d2609c634aeb92a2c2eae49267f77c"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-house-no-roof-qa.png",
+      "bytes": 72982,
+      "sha256": "22061eeb86005506ac8e6409c8914cad6b66f27762669efc16659978f57f1fcb"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-house-qa.png",
+      "bytes": 150075,
+      "sha256": "b6501d9ce593d46e1a891c1bc98ac25be6e7070b968f004b1f87225436eddc6a"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-rock-alternate-qa.png",
+      "bytes": 8484,
+      "sha256": "7d41523ba41d9b0f8526f4411d526cfac11ce27db57f3a5f35ade03df6ec8f86"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-rock-qa.png",
+      "bytes": 14794,
+      "sha256": "2ce877c4ade27254a2bbcf677ff06f21ff22db3d795c0b06999a8e9f07295cfb"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-room-qa.png",
+      "bytes": 240927,
+      "sha256": "3455886cea8de676d7c2d56b0b93c8e26e58fd8859f0d7761d5c919eb278b5c2"
+    },
+    {
+      "path": "mosslume/art/previews/batch-05-rendered-trees-qa.png",
+      "bytes": 43783,
+      "sha256": "98ca7520ce3aa152261a15ef448bfc448e88e22c156bafa42d78b3f7f1bd3d11"
+    },
+    {
+      "path": "mosslume/art/previews/build-batch-05-preview.py",
+      "bytes": 11549,
+      "sha256": "fb19fdb28aaccaeeacd13d595546d54fdaf67dae8c417d213750014caf40d8f7"
+    },
+    {
+      "path": "mosslume/art/previews/player-animation-batch-02-v1.html",
+      "bytes": 15900077,
+      "sha256": "a4b743d3f10634ec41d66a3ac70a1dde8d9e1ada985f9e2b8db7135c595df81e"
+    },
+    {
+      "path": "mosslume/art/previews/ui-inventory-batch-04-v1.html",
+      "bytes": 21689708,
+      "sha256": "a8dc17fd298d4e76093e0b6402685ea75d010b23b60a18b59e86afc48f5d4bd9"
+    },
+    {
+      "path": "mosslume/art/previews/world-assets-batch-05-v1.html",
+      "bytes": 11281343,
+      "sha256": "805db5e035050ceba6a8313614c1decb93639730ece74a3982e5ae88e68ce4bb"
+    },
+    {
+      "path": "mosslume/art/ui/controls/controls-atlas-v1.png",
+      "bytes": 1418454,
+      "sha256": "a53e2d385712acc21612f67510833402da2f5bbc182f7f587cacf201c9cfbcb6"
+    },
+    {
+      "path": "mosslume/art/ui/controls/controls-atlas-v1.prompt.txt",
+      "bytes": 2219,
+      "sha256": "d9d273a2006f35003273651fd9adb76267db23dcb5c31a5bdbfe4e2ebe1f5435"
+    },
+    {
+      "path": "mosslume/art/ui/cursors/cursors-atlas-v1.png",
+      "bytes": 686156,
+      "sha256": "0523648d0b36a0bd51dd2a9d5da435a5e28d93dec667f18abb6543c9e79e3265"
+    },
+    {
+      "path": "mosslume/art/ui/cursors/cursors-atlas-v1.prompt.txt",
+      "bytes": 2172,
+      "sha256": "c1ba38f905df296de25028390db479cac4574033dfb0cf4f0c161d5904613d24"
+    },
+    {
+      "path": "mosslume/art/ui/feedback/feedback-icons-atlas-v1.png",
+      "bytes": 1384224,
+      "sha256": "48645af0f5dea3f68e3258075f1647244b9984363c7137c649d793e870f37380"
+    },
+    {
+      "path": "mosslume/art/ui/feedback/feedback-icons-atlas-v1.prompt.txt",
+      "bytes": 2214,
+      "sha256": "0c5c2b9cd3df817ec9cae2e54fb83d01694b0addd200db03358d7a17f69a8feb"
+    },
+    {
+      "path": "mosslume/art/ui/hud/hud-icons-atlas-v1.png",
+      "bytes": 1176316,
+      "sha256": "09776889adab0f149cf5cb3a20b38324f37e9b4256d2eb880c00f8dce9e9d6da"
+    },
+    {
+      "path": "mosslume/art/ui/hud/hud-icons-atlas-v1.prompt.txt",
+      "bytes": 2026,
+      "sha256": "652b48de63b0d94fcb7cdf483adad8daebde7909a65cb8a50ee23b5661a75245"
+    },
+    {
+      "path": "mosslume/art/ui/hud/status-bars-atlas-v1.png",
+      "bytes": 1026975,
+      "sha256": "8bf6f47a60780e927271168b7373fafbd16c049f5c0697a86214a7fe940bc3af"
+    },
+    {
+      "path": "mosslume/art/ui/hud/status-bars-atlas-v1.prompt.txt",
+      "bytes": 2099,
+      "sha256": "dfa1c85d5c2998360df43a08722b3108620747e319017bf7ab3b86699254317e"
+    },
+    {
+      "path": "mosslume/art/ui/panels/panels-atlas-v1.png",
+      "bytes": 1496642,
+      "sha256": "0ce2bff9634c1857e431ce6e719476de39546f172f06e3673e509de104f8bea7"
+    },
+    {
+      "path": "mosslume/art/ui/panels/panels-atlas-v1.prompt.txt",
+      "bytes": 2099,
+      "sha256": "210d0b3bd27e5b6e1e1bf4973e32ba0382e3ab7cab98287851a5cc8f7d60e979"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.icns",
+      "bytes": 641946,
+      "sha256": "638aff8c56f3d6f67f350d5c5ee6e9dcb48f41a3159b2029efd0a5a08c6a5b3b"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_128x128.png",
+      "bytes": 11727,
+      "sha256": "7f9b63b682854904ffdbfae00815e9fe269f03b9e6c589270bb85b96e1ff7526"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_128x128@2x.png",
+      "bytes": 34658,
+      "sha256": "e464043ff7b819a813a51be78d1773fffcff3ef5a0e7f776a69c0b106a6e73e1"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_16x16.png",
+      "bytes": 690,
+      "sha256": "afd2323de03d5e07256141c0bedeca85a81c556659988999aac3b2b108f1df3e"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_16x16@2x.png",
+      "bytes": 1483,
+      "sha256": "fdac8a846064fe67952c47c92d8990e0e32264c4ab3bac5e10334202eb365f0f"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_256x256.png",
+      "bytes": 34658,
+      "sha256": "e464043ff7b819a813a51be78d1773fffcff3ef5a0e7f776a69c0b106a6e73e1"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_256x256@2x.png",
+      "bytes": 107411,
+      "sha256": "bb5c632bf93ff4555c2f44bfb8d2eaecf5de76a23ff1a435cb74479864217075"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_32x32.png",
+      "bytes": 1483,
+      "sha256": "fdac8a846064fe67952c47c92d8990e0e32264c4ab3bac5e10334202eb365f0f"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_32x32@2x.png",
+      "bytes": 3986,
+      "sha256": "183bed357251b32c5eb720342ce829997086d72c1cab8faf4589e6b2e2354e07"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_512x512.png",
+      "bytes": 107411,
+      "sha256": "bb5c632bf93ff4555c2f44bfb8d2eaecf5de76a23ff1a435cb74479864217075"
+    },
+    {
+      "path": "mosslume/branding/app-icon/Mosslume.iconset/icon_512x512@2x.png",
+      "bytes": 338376,
+      "sha256": "cad536a498a3aaab0bfc6dcb50471ae863ee4afdef6501523222ae7bbdec2f0a"
+    },
+    {
+      "path": "mosslume/branding/app-icon/provenance.json",
+      "bytes": 672,
+      "sha256": "c02821c01f1c994700d72ecf5b2d72de87142638617420b79c6acb5a6b1aa576"
+    },
+    {
+      "path": "mosslume/branding/app-icon/source-backpack.jpg",
+      "bytes": 71799,
+      "sha256": "a42a1ae42fea1342e53e333b15e39f492844b6e621b5d73d98dbbf4fd05e2188"
+    },
+    {
+      "path": "mosslume/branding/title-screen-v1.json",
+      "bytes": 613,
+      "sha256": "30ce173a134c28419d297820453240b939cbd4a8bc6c49d1a13aec0034db7370"
+    },
+    {
+      "path": "mosslume/branding/title-screen-v1.png",
+      "bytes": 2672291,
+      "sha256": "aec76f2e917642150b8c124965f0f86bb20e3cfa2eca3a801628caa03e816e3d"
+    },
+    {
+      "path": "mosslume/branding/title-screen-v1.prompt.txt",
+      "bytes": 3663,
+      "sha256": "9e02d2b9a2c7b5ca6b12b469373dc17b528299bc709149b776d814e0b848c78d"
+    },
+    {
+      "path": "mosslume/docs/PRD-0.3-visual-rebuild.md",
+      "bytes": 22324,
+      "sha256": "38f5059a305338d03e96c2ecf472a46fcfff2797e8f03fa58170bea1a50bb9bd"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-growing.png",
+      "bytes": 688,
+      "sha256": "30a54bfb468e6bdc00344bbddb48180742fb38133294a9057ed82943f26b3ce6"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-harvested.png",
+      "bytes": 232,
+      "sha256": "e15d5d11d0da8f739f7d4a7c70096613569f24812297590f248d2e840015a154"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-ripe.png",
+      "bytes": 1074,
+      "sha256": "6a82575625439e78201ab774af47e24e5c093c16b2238f7f7c9dbc7c6e731501"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-sown.png",
+      "bytes": 196,
+      "sha256": "35cfdbad7a1f5dae9479745ead4029598e1f44a0df5ed2d2a6e3cbf2e7128d3d"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-sprout.png",
+      "bytes": 280,
+      "sha256": "c58680266cf8bfa9c51d0c28ff43c81f60a2cdb765c1f4821271257c7e0932a3"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/carrot-young.png",
+      "bytes": 584,
+      "sha256": "b290602d9c7b6e12946c764258170700549f7b3e74b7c17d65169c73cafae633"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-growing.png",
+      "bytes": 832,
+      "sha256": "9d9fdd839bab1678aca9c443a6f68c5022cb78be6dac9f88d77ca3643cc6d7a5"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-harvested.png",
+      "bytes": 498,
+      "sha256": "f150a632c7b701dfd9131c3c8bee591e477ceccdfa93659feb0b22aecf428c7f"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-ripe.png",
+      "bytes": 1044,
+      "sha256": "8aae4b327e3c92f420f502617f6553d603badc237e3364e7798f57aab5a50fc2"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-sown.png",
+      "bytes": 176,
+      "sha256": "56d3c963c1466d437aa30d9fbbe6bf55b03eb9c37f7af21cedd627368db2a837"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-sprout.png",
+      "bytes": 285,
+      "sha256": "a5171c795ed4756858cbf24f1ef5388c02da1026cf25f7f0c306f00fc26332e7"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/pumpkin-young.png",
+      "bytes": 530,
+      "sha256": "6dd74061ef7ca837512571abc0e7150115b3ff47652da8262e611e38096ae29d"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-growing.png",
+      "bytes": 831,
+      "sha256": "35d6030c4da58ae5d256514b780c811055784bceb7133de30d7be5e4a328ba7b"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-harvested.png",
+      "bytes": 284,
+      "sha256": "81b8a5c62de3ff9dd94b127369a6b765c9fe853648483dde11419c72b38cf4ba"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-ripe.png",
+      "bytes": 1259,
+      "sha256": "5de4dc533acb697d3b82c2491c45e6e9efd82a1548a7ff80d309211fc7dc82d2"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-sown.png",
+      "bytes": 226,
+      "sha256": "2f3b7d8671f1638da62d62e8b82f6044d7a3c88f79c144eaba20a2e6d88d6040"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-sprout.png",
+      "bytes": 321,
+      "sha256": "0693b45a890bd5308be1724adc428765b3591314f2d1dc0a60f7ac94cae99891"
+    },
+    {
+      "path": "mosslume/runtime-art/crops/wheat-young.png",
+      "bytes": 465,
+      "sha256": "3d98148d98ae316d3084718dc4e1589c95766c75543d46dc7270812ea8d18236"
+    },
+    {
+      "path": "mosslume/runtime-art/export-contact-sheet.png",
+      "bytes": 229928,
+      "sha256": "b7f06072ad94ac57cfd68c54e58aeed03668fd0246ff84b00f8e9e84bed68f9b"
+    },
+    {
+      "path": "mosslume/runtime-art/items/apple.png",
+      "bytes": 1734,
+      "sha256": "9643375a9d6eb31d74b332b7018dc23a8a672bb487c03bc49ad78702d6710e30"
+    },
+    {
+      "path": "mosslume/runtime-art/items/axe.png",
+      "bytes": 1177,
+      "sha256": "d770b66345f42e11540004f695133cbe10d2a4045fae4193d1f32b2528a4e7bc"
+    },
+    {
+      "path": "mosslume/runtime-art/items/berry.png",
+      "bytes": 1595,
+      "sha256": "bef1001b3d7a46deb48043fb278b0f93d97fbe1e6ef0871c1f0b228bf44ec773"
+    },
+    {
+      "path": "mosslume/runtime-art/items/bread.png",
+      "bytes": 1712,
+      "sha256": "7e9a46450ef3da3d38e6de5b8943b6e9a113f436424e6d21182418c139708391"
+    },
+    {
+      "path": "mosslume/runtime-art/items/campfire.png",
+      "bytes": 1622,
+      "sha256": "14d80f25d661197aff060560f76a0a31a48b46c3675910b0078e6479a06bba91"
+    },
+    {
+      "path": "mosslume/runtime-art/items/carrot-seed.png",
+      "bytes": 1950,
+      "sha256": "2b1fdfb6b8ca1de2e4d384b43e289ce5034d53146f4efa2afd43fdfbda8c7f00"
+    },
+    {
+      "path": "mosslume/runtime-art/items/carrot.png",
+      "bytes": 1262,
+      "sha256": "41481b3ce6b5e19ed971ba439b834dc3c938b0b1503f0ca9dab297ba9585d60d"
+    },
+    {
+      "path": "mosslume/runtime-art/items/chest.png",
+      "bytes": 1844,
+      "sha256": "987c29d01f28197536019fbc2584abeefeea48fc202fdc9799a4b6536577f9f3"
+    },
+    {
+      "path": "mosslume/runtime-art/items/clay.png",
+      "bytes": 1565,
+      "sha256": "db3b12cbdf7ee98f6b34b93c03632b3db0934dec1f90337b114b1d7557be9b7d"
+    },
+    {
+      "path": "mosslume/runtime-art/items/coal.png",
+      "bytes": 1567,
+      "sha256": "dc589c4c0a2511f5203e415fdd85ebea7098254b7e6e1f5d25c96a9896737338"
+    },
+    {
+      "path": "mosslume/runtime-art/items/cooking-pot.png",
+      "bytes": 1869,
+      "sha256": "697c41ed74659ba8753fbf1dac5d6945b6f76c17ba9c17ac6ee6d61b4998fc4e"
+    },
+    {
+      "path": "mosslume/runtime-art/items/copper-bar.png",
+      "bytes": 1512,
+      "sha256": "2b07f6713840401630da9578348f59969c3a2b93efc0859b758c854ed2ac0161"
+    },
+    {
+      "path": "mosslume/runtime-art/items/copper-ore.png",
+      "bytes": 1932,
+      "sha256": "ac64d7b8631701550f99786df8b4a019f1bb1e7ad8feef07cdec2fb0dbd058d2"
+    },
+    {
+      "path": "mosslume/runtime-art/items/fishing-rod.png",
+      "bytes": 1100,
+      "sha256": "41a061a42681631d27a3268139cacecbe4c78edd1b1f16d26f61be1d3a6fbdf9"
+    },
+    {
+      "path": "mosslume/runtime-art/items/flower-bouquet.png",
+      "bytes": 1770,
+      "sha256": "656e072ec04a8e8c9bb05bb04c95bf27727d5a67506241d3f955a1e82af8679f"
+    },
+    {
+      "path": "mosslume/runtime-art/items/furnace.png",
+      "bytes": 2027,
+      "sha256": "e92c543318f5cf8605760305679d3d79f36e8e9c1beddae6fd7f60a53e20cfc5"
+    },
+    {
+      "path": "mosslume/runtime-art/items/grilled-fish.png",
+      "bytes": 1598,
+      "sha256": "4d0b8112881060d01bff86c8f19d2be9bc7b0f5ebc79f3751c32417f50bd9297"
+    },
+    {
+      "path": "mosslume/runtime-art/items/hammer.png",
+      "bytes": 1100,
+      "sha256": "867dc2c7bc77e96e1c1ca5e3f79a59607651d41e22bf4ce98f87ed61eb236093"
+    },
+    {
+      "path": "mosslume/runtime-art/items/hoe.png",
+      "bytes": 993,
+      "sha256": "0b509e18cb636797f5dd1f59dfa73806cf047ad2e3b7d584c0f959e2c54af99c"
+    },
+    {
+      "path": "mosslume/runtime-art/items/iron-bar.png",
+      "bytes": 1506,
+      "sha256": "1403200fd6934ac446e12b25b05865ecf1629bc9297ee13a166bef0e581a34cd"
+    },
+    {
+      "path": "mosslume/runtime-art/items/iron-ore.png",
+      "bytes": 1944,
+      "sha256": "cbdd44e822fdeb5d104e53f0ae658defb3d95c75c9a47d8de08941966d1a0699"
+    },
+    {
+      "path": "mosslume/runtime-art/items/lantern.png",
+      "bytes": 1283,
+      "sha256": "ee37aed8d3a1d41b4e6df1e0a309debc0a0cc91977127298fb188a51e48ec613"
+    },
+    {
+      "path": "mosslume/runtime-art/items/letter.png",
+      "bytes": 1656,
+      "sha256": "98eda7cedc2866c647c4162c1833ede44ba452f5f3d01cf0e671ea9ed00be156"
+    },
+    {
+      "path": "mosslume/runtime-art/items/log.png",
+      "bytes": 1739,
+      "sha256": "16eedffa8e47358c0441c8fadfe3efcf7bd4e65aae93efc87e7fab0295e7bb8c"
+    },
+    {
+      "path": "mosslume/runtime-art/items/mushroom.png",
+      "bytes": 1714,
+      "sha256": "7914ebd4c134268c8ce829053f0534c35251cba178be895814a21998830f654e"
+    },
+    {
+      "path": "mosslume/runtime-art/items/parcel.png",
+      "bytes": 1780,
+      "sha256": "517357cd3557e63d08d0eae4b1f3695f6ee5d6974b73ed8b1bc6fc5b3777b639"
+    },
+    {
+      "path": "mosslume/runtime-art/items/pickaxe.png",
+      "bytes": 1142,
+      "sha256": "f2e0ca345daa610e8c62794cd3fe6ea93a1e53a9c9c2a7a4941b368d9ef329da"
+    },
+    {
+      "path": "mosslume/runtime-art/items/plank.png",
+      "bytes": 1918,
+      "sha256": "c74fa3529e18f2ca169be3c0e5a8ef4e9097aeb2c38040184743064e92b6f5c9"
+    },
+    {
+      "path": "mosslume/runtime-art/items/plant-fiber.png",
+      "bytes": 1587,
+      "sha256": "7d7370c6d023e48b1454a4b8d4832bfdb1c615cab85eb774561020542b9733fb"
+    },
+    {
+      "path": "mosslume/runtime-art/items/pumpkin-seed.png",
+      "bytes": 1951,
+      "sha256": "e246845b428686dc307e9e4d19a3be614c5b22af1a6aa63c0068e237ef23ec09"
+    },
+    {
+      "path": "mosslume/runtime-art/items/pumpkin.png",
+      "bytes": 1792,
+      "sha256": "9417a7a4c04b7b6c9566b0a3507fd2049f6dc48f8ec6d5077c586820d6a33bcc"
+    },
+    {
+      "path": "mosslume/runtime-art/items/shovel.png",
+      "bytes": 1097,
+      "sha256": "4c5b1ccd31a86d4cd0da48b9987684d08e242b9792b72e6485c15504a8463c17"
+    },
+    {
+      "path": "mosslume/runtime-art/items/stone.png",
+      "bytes": 1751,
+      "sha256": "6b29b79fa462c80933fc3c459001d983b9d107f3368b90eb1207022bb40e7949"
+    },
+    {
+      "path": "mosslume/runtime-art/items/tea.png",
+      "bytes": 1620,
+      "sha256": "552040d816b845823c43a1d9706ea19d9201ff901053f4fda3a34b7465391e24"
+    },
+    {
+      "path": "mosslume/runtime-art/items/trade-coin.png",
+      "bytes": 2117,
+      "sha256": "42607f44620ae7db1a35f2e75ec928a4c3e2837f2f6c1bebc5ee3998da1393ed"
+    },
+    {
+      "path": "mosslume/runtime-art/items/vegetable-stew.png",
+      "bytes": 1874,
+      "sha256": "729dd70f4a5508ecb170e17c98010f45fdadf889bf4eca54d72df9acf8a8c94b"
+    },
+    {
+      "path": "mosslume/runtime-art/items/water-flask.png",
+      "bytes": 1699,
+      "sha256": "c1768b9fcdd7a8389566e09898d3ca4e5438b02c05e6c25ea0790289d0ee16e1"
+    },
+    {
+      "path": "mosslume/runtime-art/items/watering-can.png",
+      "bytes": 1599,
+      "sha256": "739fb55b8b8554467f7471354f8d64b4a4a61eb7b0719d7c90af2e7b07f81678"
+    },
+    {
+      "path": "mosslume/runtime-art/items/wheat-seed.png",
+      "bytes": 1795,
+      "sha256": "e625e9c329d4e0d7b66e102f3b6cc6b9ce09af4846a1ee0d96f467d560c4f913"
+    },
+    {
+      "path": "mosslume/runtime-art/items/wheat.png",
+      "bytes": 1455,
+      "sha256": "78fe4d6b1e37fa3310d295f0512d0eb8d1e7c3817d1fbb1d3f37780ab81dfcb0"
+    },
+    {
+      "path": "mosslume/runtime-art/items/wood-wall.png",
+      "bytes": 1653,
+      "sha256": "e442ecca8a2c05ec98c7930c17ebe8e5020c9dc0ef0cf341501a7f663dfd447b"
+    },
+    {
+      "path": "mosslume/runtime-art/items/workbench.png",
+      "bytes": 1615,
+      "sha256": "e7fc7e198d58ea00e17aaa9022ea8595466c917f750e08707849bd1f2b3da1b3"
+    },
+    {
+      "path": "mosslume/runtime-art/manifest.json",
+      "bytes": 90108,
+      "sha256": "017118870655ca24e19b3561398754de389d2af131555753668e79cf18001030"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-0.png",
+      "bytes": 1631,
+      "sha256": "6185392fb447daf63697ff83ae55cd8dfd9bc16e596423f627c60b351a5e8f37"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-1.png",
+      "bytes": 1689,
+      "sha256": "6a7b0fda887654c5c6a925381caf1b72884087000328d07bd702506ab05bd156"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-2.png",
+      "bytes": 1785,
+      "sha256": "6d9e9717ed8dac50a9a76dbb906a106c8502b5403ac5c14b79a386eb84eb3e07"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-3.png",
+      "bytes": 1741,
+      "sha256": "104959b3092b05c42cf08dd184c894548e1f8ba7b32bb9921d982d78ecac4f27"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-4.png",
+      "bytes": 1622,
+      "sha256": "16ef7108364111b2a02d6f2ac71868f48a919368ddfb220c7f7ac166e9b2d524"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-chop-right-5.png",
+      "bytes": 1629,
+      "sha256": "c61015b116a583482a0f54d4dfed22c0ce45b70821ddb16073ca9c4cca641d99"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-down-0.png",
+      "bytes": 1666,
+      "sha256": "520558fd5016d311df5222c230d388381914a189b47e38ef324b0956d6956b3d"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-down-1.png",
+      "bytes": 1573,
+      "sha256": "280f31ce434f968c5f7beaeb0c8cd361b0642e683727d5440a6183e9a0d14a0b"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-down-2.png",
+      "bytes": 1549,
+      "sha256": "439bdf2e8aeea331ae284ad81f8a5c4c42f1b4361fa22a70a0f9d2c39faf5d56"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-down-3.png",
+      "bytes": 1557,
+      "sha256": "bda0915bf856289df3349328d3b2d17c2cb504d744c1019b356b5345c581e54f"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-left-0.png",
+      "bytes": 1493,
+      "sha256": "0b5ecf2d065e098fe97284b46b88d31544d6a4fbc5030ecf485c5700dd6646c0"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-left-1.png",
+      "bytes": 1565,
+      "sha256": "39bd00f5abb1f4c3c0ab8e7f4326f87ec1578a4a90c218f32c09516c6942e69f"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-left-2.png",
+      "bytes": 1483,
+      "sha256": "c346c21d5a84e1030475931af0c77c036b9ed0a7feb23a3e78031a6dcb4f7e30"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-left-3.png",
+      "bytes": 1530,
+      "sha256": "46d02909d6ad503c085733b118380c1a08245ebb911a1b9ecc51527373437e36"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-right-0.png",
+      "bytes": 1556,
+      "sha256": "b6360363ce2b36652fb022a5cfa6156d968897d5b624f5e1b2df65d6014f30cb"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-right-1.png",
+      "bytes": 1467,
+      "sha256": "579c606ffe530cd7a40ee1a26310c203ae00888e9ddb4d452011eebc20de23ab"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-right-2.png",
+      "bytes": 1442,
+      "sha256": "6e5a8e5daa5b61f4d3e69b323e7238583d1c2079393838f966b7e83e9af04c76"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-right-3.png",
+      "bytes": 1531,
+      "sha256": "fe5a76ca8e6977e5acbde9e31ef057f5bf7fc7727ac1647110ecc3162a3edda4"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-up-0.png",
+      "bytes": 1599,
+      "sha256": "81837b8bedd0feb15b91b4c39e90869573cbc846490c07024492ecc36bd2c961"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-up-1.png",
+      "bytes": 1472,
+      "sha256": "97ad0e7687008a13644dbcb20fd81c607b4f70f7061221a2a98e237b24bec793"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-up-2.png",
+      "bytes": 1526,
+      "sha256": "162a37c085c7938d45aa5f7ecd7e0dcaa28e55fcc8a2d15c55924812b05bf820"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-compact-up-3.png",
+      "bytes": 1455,
+      "sha256": "d24463b2da656441d2946142480afccb429390fcf95b1517fe85b6861571825b"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-0.png",
+      "bytes": 1531,
+      "sha256": "26a4fdb09d39d0463942a351e4ad58c9a579eda221d9fa1201b2f024d07acfa1"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-1.png",
+      "bytes": 1589,
+      "sha256": "95ce24d1d3c874fbce1a315aba4e0c6e60da708101869f3e908e1e7ac859cbf4"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-2.png",
+      "bytes": 1575,
+      "sha256": "941fd9b560334ca290ae2f105d91f3aef57ea21e7c83ebf3945513042cd63b83"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-3.png",
+      "bytes": 1568,
+      "sha256": "100d330422abb746d5886399a44a88bf02b9fffa3458e49cfd561999e0417966"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-4.png",
+      "bytes": 1505,
+      "sha256": "9ec8b2fad520e2a1407bd611b3cf0a93d9539197f3f693ba2cfedddb29770f22"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-mine-right-5.png",
+      "bytes": 1564,
+      "sha256": "e8514d9efd66c9c5787cf2a3cdf4478f83ba014cebe11b82dd9bcc5207d9eb54"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-0.png",
+      "bytes": 1281,
+      "sha256": "e3038b7b8410cc4d8bb6740b96d4b402c3a1bf7a1e1923d9f695c08176badee2"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-1.png",
+      "bytes": 1334,
+      "sha256": "0e7dbc9458e810999c2bf8aa38aac90ceda1a60b1f785a451ecbd9bec57426f6"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-2.png",
+      "bytes": 1343,
+      "sha256": "607432e97a6d5b74ac4d62e038166c88474b2d4b9e85ad3336d837c03273336b"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-3.png",
+      "bytes": 1322,
+      "sha256": "87c00fea2dd3d5806f66775329f67d6ffc67078e52f127b5fdfa1f1315885273"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-4.png",
+      "bytes": 1300,
+      "sha256": "5425eb74d2b95cde6e60acd10a0dd7dccea64b1796739058a2550926a7ec355c"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-down-5.png",
+      "bytes": 1421,
+      "sha256": "a91f3e95c09394f22f610dee149e29d13a170c71fe75f2e2de375d4087aacd7c"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-0.png",
+      "bytes": 1323,
+      "sha256": "be3aeb7d4af0e415f0aec3772974a0d518a0a37c0273308ba7a1222e5927a1c5"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-1.png",
+      "bytes": 1268,
+      "sha256": "b0cb17caf19c912cc3da13f9347a2e82497cbbb087f4166eaa5bf33ecf45399e"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-2.png",
+      "bytes": 1354,
+      "sha256": "3dac39a072bb8f49a9fe61a5cf61fe22b65985ee9c6f79f148ff94692a64c6f0"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-3.png",
+      "bytes": 1403,
+      "sha256": "aff2d6612013a6ca31b5ac9518b2736134efc2a831ae09515592b0b3de91f25d"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-4.png",
+      "bytes": 1336,
+      "sha256": "d05b1239041cd2acfaa8e7b61535ee896715df73e85be41c093b053126f1c2e4"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-left-5.png",
+      "bytes": 1222,
+      "sha256": "82e7489a6425e2c290798e0d84ca214b1889dae066fe1e205447f2bc78d5dbc0"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-0.png",
+      "bytes": 1346,
+      "sha256": "807097fd7edd60d04e466a3f0f6fb0e74f3d6be9cad0ecc0b4c432d7c699e262"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-1.png",
+      "bytes": 1331,
+      "sha256": "8313e54cba0551ec438f6ab63a571d4d57b26d4a3cf30fb473dee46b985ecf5b"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-2.png",
+      "bytes": 1286,
+      "sha256": "d35e03d88678e6f2dfc51cb0558695126ea22ae37e667439f252b81eadd1a12a"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-3.png",
+      "bytes": 1429,
+      "sha256": "971fabef6827f154f11fdf097995b1f98c160fb3362a802da4fc2d18dd8e29ac"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-4.png",
+      "bytes": 1336,
+      "sha256": "3ed05064e71492139f9153a6074ec9f59b4b54a8de4394a9d1bb6b1bd432ad78"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-right-5.png",
+      "bytes": 1232,
+      "sha256": "800ecb35fff93bac4504cb2585baf7ad7a22794791f88fe3f04c881219d10dae"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-0.png",
+      "bytes": 1272,
+      "sha256": "d5e03fe5100f9e59d6ca02e618dded752afa9c5d9c2ec45b628dbd1e398774a6"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-1.png",
+      "bytes": 1243,
+      "sha256": "cb0e5c462aea2214a5e6636016d0355335442612ea4664ce15c56d53f3149454"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-2.png",
+      "bytes": 1252,
+      "sha256": "4de456f8f4a28338e98786636fc6bbfa1be8033d29251ed23c460aa74b177770"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-3.png",
+      "bytes": 1281,
+      "sha256": "64fb74f6524deefff4e10c9bc0ba708d839e52fde45a7d1ef846a4b870901283"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-4.png",
+      "bytes": 1216,
+      "sha256": "c1e6cff09eeb0e33c53f958379c4d52b57fdade2a9b013c2b74b4a241f771198"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-walk-up-5.png",
+      "bytes": 1209,
+      "sha256": "4b8d729aeba923dcc8384d92d793047d60733f2b3bd6e1a2dabe0e7e59070214"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-0.png",
+      "bytes": 1288,
+      "sha256": "bdb0cb9b85d57e787c240cc27c370a880f9055447fe4f08d64713dba7d9b2c1c"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-1.png",
+      "bytes": 1400,
+      "sha256": "1cb3fa14537342c20446dfab10ab7bbd02b5933d5eb991e6a02df221d3cc78d2"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-2.png",
+      "bytes": 1368,
+      "sha256": "1010a2d3a9ba524b67127c257b46287eee838f28f21b55c043284a5134c087b9"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-3.png",
+      "bytes": 1363,
+      "sha256": "73ac1768ab590e370b1cc7c419a9bd978f05f1634f58831fe68079b689fbc1d9"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-4.png",
+      "bytes": 1388,
+      "sha256": "04bfdc4b3d6cd0514768b46658245bfc03830656eccfea10a9b024a3106923cb"
+    },
+    {
+      "path": "mosslume/runtime-art/players/frames/player-water-right-5.png",
+      "bytes": 1249,
+      "sha256": "f28268cab664bd45d70ee5be03e49607c19e9821e4f0d16015fc3d35d1da8a6c"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-chop-right.png",
+      "bytes": 9359,
+      "sha256": "6f3c65ccfcbb6b65400f027845a6af3667c3a53e73948422be29a5091459c366"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-mine-right.png",
+      "bytes": 8433,
+      "sha256": "a67a66fffeeb69f3068fa4b56b4a2f5a80b3d52221a664d3ad1fb701838810fa"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-stand-down.png",
+      "bytes": 1666,
+      "sha256": "520558fd5016d311df5222c230d388381914a189b47e38ef324b0956d6956b3d"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-stand-left.png",
+      "bytes": 1493,
+      "sha256": "0b5ecf2d065e098fe97284b46b88d31544d6a4fbc5030ecf485c5700dd6646c0"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-stand-right.png",
+      "bytes": 1556,
+      "sha256": "b6360363ce2b36652fb022a5cfa6156d968897d5b624f5e1b2df65d6014f30cb"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-stand-up.png",
+      "bytes": 1599,
+      "sha256": "81837b8bedd0feb15b91b4c39e90869573cbc846490c07024492ecc36bd2c961"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-walk-down.png",
+      "bytes": 4503,
+      "sha256": "b815f85aa4bb34b9c02b1f115e448b31a3df7baebabce1dd43b1bed3ea893b9d"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-walk-left.png",
+      "bytes": 4447,
+      "sha256": "ca6b485e095f4b28d2c1a1ef3ac9307250fcd7764b0dcb5f3e0b1019f15c923a"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-walk-right.png",
+      "bytes": 4233,
+      "sha256": "cc6df4954cc39b6a5223ed549185c7cc90bf29d681ea9d4087aefb34f0f0b9d2"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-walk-up.png",
+      "bytes": 4344,
+      "sha256": "c0d82b1ccbcda7a6112fdbb8d1754947588e993c0109536997153e261ce8e2ab"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-walk.png",
+      "bytes": 17066,
+      "sha256": "b8e2b61a9d2e1e38bf75b53e7c17cdf9ce3f30ec16b91f6f2d7dd390e872c091"
+    },
+    {
+      "path": "mosslume/runtime-art/players/player-water-right.png",
+      "bytes": 7197,
+      "sha256": "53b74a6bec4dd5812fda5d8754a179952f6938727df61184829bf1f23fd5d2e7"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-firm.png",
+      "bytes": 118967,
+      "sha256": "2edb211ea3775ed3b5325b4693c8f3512c7eceec19f52ab38558f262bc3bf370"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-happy.png",
+      "bytes": 119118,
+      "sha256": "7a10ba1141ea7f4e0a89c6fc4406cf092fbf4c569ebb0e14cf3537870d8bdc29"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-neutral.png",
+      "bytes": 118310,
+      "sha256": "d10efd0191004f2497892e8a2189a7ae19753ad28baa8ac82de8d71b2c2f2c0c"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-sad.png",
+      "bytes": 119142,
+      "sha256": "fc1c96458b5bf0bd904cfe8bc437e84be43a8ee78f57e207e3a09e99908fe18a"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-surprised.png",
+      "bytes": 119617,
+      "sha256": "ecbbeeacd41d26627608c3688c1fd777e02d5d1275636f2ac53e4170c0b20592"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/carpenter-worried.png",
+      "bytes": 117964,
+      "sha256": "8ebdfc77b1a28e62b3ec79cc72ba3cb62c80a02e291949ad53788978e3b737ec"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-firm.png",
+      "bytes": 128437,
+      "sha256": "2b9eda8443b4ee47ce3c0c2c4dd4358f9225d95e4b031243b395621e4515cf15"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-happy.png",
+      "bytes": 127984,
+      "sha256": "ba9fbf96dd0559e834978f8149ffb9e011864489e8ae2e6a2e133f55cdeb3b13"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-neutral.png",
+      "bytes": 126917,
+      "sha256": "889e55b5c73e7dad6b35f928011f6840a80f5ffc2878da7e76c257bec1b50e48"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-sad.png",
+      "bytes": 129158,
+      "sha256": "7b74b19bc51dd6e002a5e2de62d226e4185e5a3d12c59145475ea722f804025d"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-surprised.png",
+      "bytes": 129040,
+      "sha256": "4b213a147fda68380df15cef201b589ac86e7489eef7cd860311d00d5094cb1d"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/farmer-worried.png",
+      "bytes": 127169,
+      "sha256": "c7614c7ff9c1544a7791c2723c3049a311939d188b0b9ae4681606d80b230c95"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-firm.png",
+      "bytes": 128167,
+      "sha256": "025840110eda52da7123e56d8da7b28ce239b7ad3c3cc271d58a81a2a8980e28"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-happy.png",
+      "bytes": 128422,
+      "sha256": "2498addc37002f99d561b2fcdf38af6d54a33ac6d493b331f779aa1456881ec9"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-neutral.png",
+      "bytes": 127492,
+      "sha256": "c95105f0286e113df40cb6904e7009e0e0c3042c74d4f974cd040c5766ca6e07"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-sad.png",
+      "bytes": 127479,
+      "sha256": "7290a6d5fdd995a8336ea9bb94a45f9784321c68392e63640afbcc3a6ddec5db"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-surprised.png",
+      "bytes": 128143,
+      "sha256": "382cd328b85c685f692d10f1759b1353d62a5cb5a97ba95934cc543234fd4de1"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/merchant-worried.png",
+      "bytes": 127751,
+      "sha256": "138189302bf45d5940f75af39f3b0eb52fa83e66ffd9f2a4ae88513186dc4ea3"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-firm.png",
+      "bytes": 113904,
+      "sha256": "a1c585915151429da3582886ee09a2d1c60dad74063e737a8bcff261008ccabc"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-happy.png",
+      "bytes": 114786,
+      "sha256": "fdbbdda13552ce18cb0128adb41975428e9c3628f33e81bf0f49ccdf35e02968"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-neutral.png",
+      "bytes": 113850,
+      "sha256": "2753fee36f5f540b1c0c4da7fe7035edc3941f25108c93baa2ef1b376ea7b79a"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-sad.png",
+      "bytes": 114632,
+      "sha256": "d3d3f160ab4b18e70367d0b6631d7cfdf6e52c296cedf946bf4693c7e66f017b"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-surprised.png",
+      "bytes": 114051,
+      "sha256": "6cd2773ea4e9fee91e6f9e1da6f1eec0bf46a213ab9dc9cc53afa6a636bb1fb1"
+    },
+    {
+      "path": "mosslume/runtime-art/portraits/player-worried.png",
+      "bytes": 113195,
+      "sha256": "e056d5566a9246b5ed6c69770c1786d068eecaf616c7430455004696e1eaf040"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/carpenter-down.png",
+      "bytes": 1755,
+      "sha256": "ae81faf30bef211f021b27a38a412baca0258b33fe2bfb00819dd9191b840e7e"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/carpenter-left.png",
+      "bytes": 1317,
+      "sha256": "c19d3dee5c7f185404c87e4f7575b59f701676699c2e5805e509c0ca21a8f531"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/carpenter-right.png",
+      "bytes": 1380,
+      "sha256": "62c1d15c93565a4ae29607104df2bc3d5a80b2f68b6ca299f30f2bb4fff4f3fe"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/carpenter-up.png",
+      "bytes": 1682,
+      "sha256": "9efbee40038a891562aa8285dedea4e0c770fc922d0ad6376763f407cc79a69f"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/farmer-down.png",
+      "bytes": 1307,
+      "sha256": "6f5efcfe534d4b980649f59b4a0516d3626ce1fea2007f8bfe48aef297cb9eef"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/farmer-left.png",
+      "bytes": 1149,
+      "sha256": "b3f51b2d7e5db7c3b098932f8725d633ed06286a796e9330f9a48b0ebcbf24bd"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/farmer-right.png",
+      "bytes": 1136,
+      "sha256": "2a71efab7e0c9b4d17d62443d70f870503849a8b491d39bcb835b0e77a934ab0"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/farmer-up.png",
+      "bytes": 1308,
+      "sha256": "a6f3f994665e199b050ebb99616470ac7f44147dce27ff29da1d18fa7029b9f6"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/merchant-down.png",
+      "bytes": 1407,
+      "sha256": "69b677676605a69c7401b2e16440cb4299edb93468ca026b707e875366005226"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/merchant-left.png",
+      "bytes": 1195,
+      "sha256": "8cb471d07c9425043ff0d3c06ae083af9ec0f3752ab3fec3187cc567a0dc8f60"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/merchant-right.png",
+      "bytes": 1179,
+      "sha256": "94a82296c735513af2409feb924ec765ad8a176cdf9d2a96b4d40b948d7c376e"
+    },
+    {
+      "path": "mosslume/runtime-art/residents/merchant-up.png",
+      "bytes": 1282,
+      "sha256": "d61597b24c2807f0d98cdf9440ac2c27592d2556b327a6e99030e84ed13b2548"
+    },
+    {
+      "path": "mosslume/runtime-art/world/anvil.png",
+      "bytes": 1122,
+      "sha256": "570db49b655e38ce670409db67f8b28d9ff268345e60596e7dd76eb5b0104f61"
+    },
+    {
+      "path": "mosslume/runtime-art/world/bed.png",
+      "bytes": 3620,
+      "sha256": "98425c571ed31121913397c0acaf9fbb2be28d180a20eb710ef62167a532d9e9"
+    },
+    {
+      "path": "mosslume/runtime-art/world/berry-empty.png",
+      "bytes": 1448,
+      "sha256": "0a14fa7da0396b1babcc573f0c38005c222c4d41150a5a37333625d9ac631a83"
+    },
+    {
+      "path": "mosslume/runtime-art/world/berry-flowering.png",
+      "bytes": 1479,
+      "sha256": "61841f968fb8be54bb193856149a29027d70a80e006901ced8c612df2ad661aa"
+    },
+    {
+      "path": "mosslume/runtime-art/world/berry-ripe.png",
+      "bytes": 1456,
+      "sha256": "e7cbdcfd2f34f0e58bcdd6f9b9a4714a6d9afa57f56c7f984f4c007677c294ec"
+    },
+    {
+      "path": "mosslume/runtime-art/world/berry-unripe.png",
+      "bytes": 1462,
+      "sha256": "10c4c996eec0a2d551bdf8710f79121d1fcb0af8ee08bed8cc49d8f374285167"
+    },
+    {
+      "path": "mosslume/runtime-art/world/bookshelf.png",
+      "bytes": 2354,
+      "sha256": "3f424225a2702632311a4cbba046c3c45bbe845d691350876af741d2e688d0e4"
+    },
+    {
+      "path": "mosslume/runtime-art/world/chair.png",
+      "bytes": 1558,
+      "sha256": "18451c842e8bfd58555f38e075c473bd4c6dc40b091c5f094df7653176d7d028"
+    },
+    {
+      "path": "mosslume/runtime-art/world/chest-closed.png",
+      "bytes": 1257,
+      "sha256": "c950e627f7365cd985606f1b8c1810d4e54339c83ce1f6b27a12085823fdea0f"
+    },
+    {
+      "path": "mosslume/runtime-art/world/chest-open.png",
+      "bytes": 1678,
+      "sha256": "540c986d0ea1196cd6c306d54c34362ba3390d9a1c0a7f699fb3b6c989da8dc3"
+    },
+    {
+      "path": "mosslume/runtime-art/world/chest-opening.png",
+      "bytes": 1554,
+      "sha256": "bb1005a18e8e44b63a6515fb767ee730d51d4f73b4b4b19ca7a4309c58541706"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-closed-dark.png",
+      "bytes": 17463,
+      "sha256": "6543500fc0c1fbd83cd8a5ded4fecece02b35327c21814f0b16fa7bf8979f0fc"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-closed-lit.png",
+      "bytes": 17466,
+      "sha256": "167511d9939a3a5f9d87c49da348ebcfab816ebcbb7fb348faa91947a2551a4a"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-open-dark.png",
+      "bytes": 17397,
+      "sha256": "1c20dbee868f2be2b989f6e5b089d6ff8ed023a1321a5ac3b275f666ca7642f6"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-open-lit.png",
+      "bytes": 17394,
+      "sha256": "0df45d58c09a6c588da0c903c0388c4eafdbfc3cdbf185893097e7013765287e"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-roof.png",
+      "bytes": 14287,
+      "sha256": "60114ef84e1390918b0d7d09268a363aa37bb9a5fd8a538039ef4a9d6f271b51"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cottage-walls.png",
+      "bytes": 8077,
+      "sha256": "e2ec9f6293e79d983f252eb99a43746beeb758a2ad485faad7cb1320b5b47ab6"
+    },
+    {
+      "path": "mosslume/runtime-art/world/cupboard.png",
+      "bytes": 2178,
+      "sha256": "f83dc10540740a76f6fb352cfa04591540495e9680a7180b9ae8321571380ad0"
+    },
+    {
+      "path": "mosslume/runtime-art/world/door-closed.png",
+      "bytes": 1912,
+      "sha256": "175a86aa140453d2da39b187cf2a04068a2f348ece53cb3b2ee145bc389dc7f9"
+    },
+    {
+      "path": "mosslume/runtime-art/world/door-open.png",
+      "bytes": 1839,
+      "sha256": "eba06a8f55f687c043f0660734a4874d7ed29f55137b759d82c93c2b0a09002a"
+    },
+    {
+      "path": "mosslume/runtime-art/world/fallen-branch.png",
+      "bytes": 868,
+      "sha256": "89bf88a4be0690fef4d1fcf7194753a58eebd3e7461d3edd72d1b9b8bd4dae23"
+    },
+    {
+      "path": "mosslume/runtime-art/world/floor-lamp.png",
+      "bytes": 1204,
+      "sha256": "571eb70f66f56dabd3c87f105087de735b93e04062de374ab2c66db721801829"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/door-closed.png",
+      "bytes": 2256,
+      "sha256": "eb6ed0d18b3383220416263cbef35f7670ac4bf8e3e0272bd3e915dbff779eac"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/door-open.png",
+      "bytes": 2053,
+      "sha256": "0263b93c0ca3e78942c3841d5866f140d0b8d3a21e774fc76e4f2bb61f2c7736"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/roof.png",
+      "bytes": 11380,
+      "sha256": "74205c5d456c099b702d42db805e102b38624dc11e8984df2e7020d0f077a24d"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/walls.png",
+      "bytes": 6877,
+      "sha256": "aa10bc598e90d111e7d367e60b4fbe1529c14819679bd75420650dace12694a0"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/windows-dark.png",
+      "bytes": 635,
+      "sha256": "736af4f4d993ca95d59a0d2e120532aa4bb1add8384597bedbd3d77e453be7cf"
+    },
+    {
+      "path": "mosslume/runtime-art/world/house-layers/windows-lit.png",
+      "bytes": 626,
+      "sha256": "59ea15f6f0058df3abfc05875f532d4d90e0f2794de2f3747beb2c64e637ab0d"
+    },
+    {
+      "path": "mosslume/runtime-art/world/interior-wall.png",
+      "bytes": 4506,
+      "sha256": "8cfabad643da6907b57d6f988c0a55381d8a3d9161647fdcd00c9a3f94800ca1"
+    },
+    {
+      "path": "mosslume/runtime-art/world/noticeboard.png",
+      "bytes": 3903,
+      "sha256": "1161242d48b4a167729917249db7b6b0a4c80d955ba28d1ed374844c7aa86042"
+    },
+    {
+      "path": "mosslume/runtime-art/world/occlusion-trim.png",
+      "bytes": 1167,
+      "sha256": "afa456de268a9e4c0a0f5329c4651b73afb8e06f9cde21eeca8e33e47b9a8c95"
+    },
+    {
+      "path": "mosslume/runtime-art/world/plank-floor.png",
+      "bytes": 2349,
+      "sha256": "5a9e1aa691d1f883d22f3893dd5186de79602c4c72238f0411d5491d25756d30"
+    },
+    {
+      "path": "mosslume/runtime-art/world/potted-plant.png",
+      "bytes": 816,
+      "sha256": "d465ff8462d74dd363614a5729b9463f70e405e6dc9a985da6db73cdcaea708f"
+    },
+    {
+      "path": "mosslume/runtime-art/world/rock-cracked.png",
+      "bytes": 1154,
+      "sha256": "b608cb9bde6f4479f41a2a573e652fcf640ed9363b1b47f253693f214503ed4a"
+    },
+    {
+      "path": "mosslume/runtime-art/world/rock-damaged.png",
+      "bytes": 1210,
+      "sha256": "2b21883d46ac31ee2cd31854552f508813f5a833f67458cd2a744144eb5ab650"
+    },
+    {
+      "path": "mosslume/runtime-art/world/rock-depleted.png",
+      "bytes": 569,
+      "sha256": "d1ec7c2fd98fb9622ae1f1d656f756820710c490fe1f12fcb6cd3fb618b857f0"
+    },
+    {
+      "path": "mosslume/runtime-art/world/rock-intact.png",
+      "bytes": 1142,
+      "sha256": "d09a317b84e6ade63bc068c8daf2e6fee91296488e0c0157f70c6fe888b572e8"
+    },
+    {
+      "path": "mosslume/runtime-art/world/sapling.png",
+      "bytes": 1178,
+      "sha256": "2c42035663a95cfe94fedc1d4a9b60b48379730f667c31e2ba4b77fdb8276138"
+    },
+    {
+      "path": "mosslume/runtime-art/world/seedling.png",
+      "bytes": 281,
+      "sha256": "f3e965d922921d9e960b68ae14ba9e0a1c9e1313dddac65773aa23a17d868312"
+    },
+    {
+      "path": "mosslume/runtime-art/world/stump-regrowth.png",
+      "bytes": 754,
+      "sha256": "3e4096a8b8c283dabe7f025541cef10abea860acc6ad90ff43a34c97c88b7a9a"
+    },
+    {
+      "path": "mosslume/runtime-art/world/stump.png",
+      "bytes": 650,
+      "sha256": "172fc8e8b53015c61d5055a0b8377ee6e21daad996773c45fdbac3135ba61375"
+    },
+    {
+      "path": "mosslume/runtime-art/world/table.png",
+      "bytes": 2642,
+      "sha256": "f4c387697899dd471c7e01a0813697a74dbcab7acd8f7134f2959804efa4baf8"
+    },
+    {
+      "path": "mosslume/runtime-art/world/wall-lamp.png",
+      "bytes": 626,
+      "sha256": "d2ed0b86347a25ebdc7943ffb831f4d15845818cd48cbc7f9bf9a7f656e9c2a1"
+    },
+    {
+      "path": "mosslume/runtime-art/world/window-dark.png",
+      "bytes": 411,
+      "sha256": "95239668908945038907205ebc3464c772a39563162dc25579e75afb5821ebb7"
+    },
+    {
+      "path": "mosslume/runtime-art/world/window-lit.png",
+      "bytes": 409,
+      "sha256": "03e78788907c7f752c16ed40425ff0d7325aa9d821242f056ec2dd23c3a078b8"
+    },
+    {
+      "path": "mosslume/runtime-art/world/woven-rug.png",
+      "bytes": 5209,
+      "sha256": "23f85291de9ffeeec1008230c5145d1fae24ac1322bfc65da4b985d7f15458d0"
+    },
+    {
+      "path": "mosslume/runtime-art/world/young-tree.png",
+      "bytes": 2661,
+      "sha256": "4bef33b3898c8f50abee667b43a54fa0c14d3895cc27bc71b928a1961fdef166"
+    },
+    {
+      "path": "mosslume/scripts/PACKAGING.md",
+      "bytes": 2762,
+      "sha256": "f8d426b1c299c8fd7c796ea5644865b0e7203bbc6245f1c7e1482429dccf74cd"
+    },
+    {
+      "path": "mosslume/scripts/VISUAL-PROBE.md",
+      "bytes": 2962,
+      "sha256": "10d5a9a8cd2b6801291401e7049fc61319498420db4520ac5d20b253455102f8"
+    },
+    {
+      "path": "mosslume/scripts/build_game.py",
+      "bytes": 1868,
+      "sha256": "2230e3cf00311019fb933e15493c0ccf602b18c3ded7e427c3d2a00533af465d"
+    },
+    {
+      "path": "mosslume/scripts/export_runtime_art.py",
+      "bytes": 17118,
+      "sha256": "7207f09b96ed49bfbd7bd39c36dbe40208721c2ad747db42ec9ec19cc1ec9b58"
+    },
+    {
+      "path": "mosslume/scripts/make_visual_probe_video.py",
+      "bytes": 2381,
+      "sha256": "807d42d99d06c800b3b6076b98e0f3f6b45cbab5739cc4ab4a63556ebf7f03e1"
+    },
+    {
+      "path": "mosslume/scripts/native_launcher.m",
+      "bytes": 10653,
+      "sha256": "a522d6efab728bc35b0bc6618632d8074af51a355db2000294cd6abc1e1891a2"
+    },
+    {
+      "path": "mosslume/scripts/package_app.py",
+      "bytes": 8067,
+      "sha256": "342ab612b685c0949e8b6551b90a933e91d122f6e6661374d998c2fa44edafa7"
+    },
+    {
+      "path": "mosslume/scripts/run_visual_probe.py",
+      "bytes": 3789,
+      "sha256": "c40bfbda281ddfe1d861eb351f9f34e2005a495921b18cd62c92c9de6cf4d48b"
+    },
+    {
+      "path": "mosslume/third-party/SDV-Radiance-shadow/LICENSE",
+      "bytes": 1064,
+      "sha256": "edfaadb0ff1e2ace49a01f84ca15771f46e0afdc0930dd229babaa8cd6eb45b3"
+    },
+    {
+      "path": "mosslume/third-party/SDV-Radiance-shadow/README.md",
+      "bytes": 2573,
+      "sha256": "ad304fd81fe58122eb302a2d551e4a913db4e4d2afb29b0fc8f6a6f7e82b7bf8"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/LICENSE.txt",
+      "bytes": 7047,
+      "sha256": "6d489af6292662d9e36d34ce49423784984a5f6e41d7b58f49b01264df59fa03"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/README.md",
+      "bytes": 3608,
+      "sha256": "61e8c3e66f4f4941bacb3bb31840a6bd0194b5cff9f32040a9ce59da20a6d32e"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-curvature-grid.glsl",
+      "bytes": 5442,
+      "sha256": "2af8d375331f261168665f89ecf17c6fc5e9812cb068700841fb54bc303134d4"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-curvature-scanlines.glsl",
+      "bytes": 5163,
+      "sha256": "1b5fbddcb904d0a2c627816ac9f0c7a19f1dc7aa0c9893a26371a74bfa14c18a"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-curvature.glsl",
+      "bytes": 3461,
+      "sha256": "816f9de1294d8fe22b9e7cee1b49e770657f4c847dce74254e759429aae4acac"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-gammacorrected.glsl",
+      "bytes": 3714,
+      "sha256": "64c84e284de0d9d5795a9395a1370b48cf1914fa63322a0f6c3796565e13da2d"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-grid.glsl",
+      "bytes": 4865,
+      "sha256": "1efc4ff84fbf62b7e85f81ef2ad9f2a0a3b7c38c901f814c06f6460387eedb27"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-scanlines.glsl",
+      "bytes": 4586,
+      "sha256": "1d6258dc6128d79bbb887dec81a8faabd6b7e7e72863ffb9b07c62cad169116e"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-subpixel-bgr.glsl",
+      "bytes": 2729,
+      "sha256": "95aaf6482e5ef608e04fb35c9f85e946b3f0dbde0ec35f7c0b0ea2e9e9e374cf"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-subpixel-rgb.glsl",
+      "bytes": 2729,
+      "sha256": "000a52109b05a846d29ef83f7fbff38cbb416e24d2117ad5fd90b99b1dd57332"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-subpixel-vbgr.glsl",
+      "bytes": 2729,
+      "sha256": "82b14e27869adc128bb2d37bc5cdf4704ac6b8f4d0a323e57bf10f1130c30870"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless-subpixel-vrgb.glsl",
+      "bytes": 2733,
+      "sha256": "2663e4f4d2bcc16d533552d246654450f37e914898ddce8587af6613d8b952b1"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/shaders/sharp-shimmerless.glsl",
+      "bytes": 2903,
+      "sha256": "d6d9f34713d971a656309ebb6bf17536081b9188acc4d68a09808aee393b9e82"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-curvature-grid.glslp",
+      "bytes": 90,
+      "sha256": "c2cb2c6e3482dd5825e7a5d4c92c41f2658b0d2891cb98e6ccfff3e705aa0530"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-curvature-scanlines.glslp",
+      "bytes": 95,
+      "sha256": "23f006a6484fda3154087a3c22434ac3de96ff2fe17aa8ccd4ca0d31f3110978"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-curvature.glslp",
+      "bytes": 85,
+      "sha256": "e03cc37c3083eab931ccf8a8bf51ebfc7a928a95fc8799e91aab12c5bb14a7c3"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-gammacorrected.glslp",
+      "bytes": 90,
+      "sha256": "93fb78b337ad680e5b4b94607e78345cec1a1b0119914344f42659d9e6aca6c0"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-grid.glslp",
+      "bytes": 80,
+      "sha256": "1d7be87e74b1dd1a887a3f56dc1997e6031282f221502150451e97071df1b9e2"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-scanlines.glslp",
+      "bytes": 85,
+      "sha256": "ffe46a13489e9d4fa7a491d4c91086f417bd85fa04391f1e0e4887dd64c8c084"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-subpixel-bgr.glslp",
+      "bytes": 91,
+      "sha256": "39556fbaa794bead0117a954a3a10b68c9ece6ded6e7e84356dc984869b95a07"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-subpixel-rgb.glslp",
+      "bytes": 91,
+      "sha256": "40fe496b222d614a13697674ca73f15cf2dcd22204c5acd8e049c257267b401b"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-subpixel-vbgr.glslp",
+      "bytes": 92,
+      "sha256": "4bb9b66e669fd6f0562799d2e883f78c3439e48cae82b16dae5d375e160028f1"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless-subpixel-vrgb.glslp",
+      "bytes": 92,
+      "sha256": "2c9367960ee7dfb9af8a2fef48fe9ea0e1a225841feb281cb346b975d75eaa24"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_glsl/sharp-shimmerless.glslp",
+      "bytes": 75,
+      "sha256": "6146f0db17f0391c3c96edc547ba83d1dc5c193dec84c7ef00f1df8291d0feec"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_slang/shaders/sharp-shimmerless.slang",
+      "bytes": 2386,
+      "sha256": "1cb903a50f6fa2d4d1175f5902d749e4b3b12860b5cf7ee71a1d0e7c909c1880"
+    },
+    {
+      "path": "mosslume/third-party/Sharp-Shimmerless-Shader/shaders_slang/sharp-shimmerless.slangp",
+      "bytes": 83,
+      "sha256": "62da7505c4751d89cf7daa0366b6b5daeb56c1f9128a2253f70969ba1722358e"
+    },
+    {
+      "path": "mosslume/third-party/sharp-shimmerless-provenance.json",
+      "bytes": 746,
+      "sha256": "7435b4929079a834e70ad79bab2bab1abc0a96cd496895f87512457b1c1b831d"
+    },
+    {
+      "path": "mosslume/third-party/simple-wind-2d/LICENSE.md",
+      "bytes": 2619,
+      "sha256": "dba7ed906c42dda2b268f3e4c20e1b3f72e0b53e71a6349951e1e716cf9977f1"
+    },
+    {
+      "path": "mosslume/third-party/simple-wind-2d/README.md",
+      "bytes": 3132,
+      "sha256": "6ad837d9fd1a2753a333782df94e16886a460bfad91bdeec02367299016866f3"
+    },
+    {
+      "path": "mosslume/third-party/simple-wind-2d/upstream/wind_2d.shader",
+      "bytes": 865,
+      "sha256": "89b94502ee567d81a064b7df5dda18d3bb10ebd95e057b597bf9df79e4fc0b6d"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/README.md",
+      "bytes": 954,
+      "sha256": "10ee8e6e1535bc2a588587543947854bbbe7541e496d75efb3a962a37a46a3e5"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/evidence-s2/verification.json",
+      "bytes": 9122,
+      "sha256": "af4fb04fde77e7e9b8fd7b82d97423905bfdf8f3b386a07b46c5e237464fe2f2"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/night-tuning/verification.json",
+      "bytes": 3830,
+      "sha256": "2ca9488775287e0fa8eed98b5e16ba9bd6ea58db8a0553cc2b5371d6be7172c0"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/package-preview-manifest.json",
+      "bytes": 1155,
+      "sha256": "c42273e69ecbbc2b003d9b4332c7e56091b09c22da6e9c8ad4ee98067f5beba5"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/release-artifact.json",
+      "bytes": 2724,
+      "sha256": "4cf952d3f7e2141a631b3a45d2b1d8fe363f654475e0e51fb02f9a114d294840"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/comparison-hour.png",
+      "bytes": 1855258,
+      "sha256": "8e6b5e0a09c51a91843f7e629f4a5b89f80d26a8067c405ade956a2162f2b95f"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/frames.csv",
+      "bytes": 8727,
+      "sha256": "b08a98d20194af754c0ff73a64fc7b191f2cdad4a283653aef9ee932c1bf1fe6"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/full-frame.png",
+      "bytes": 1643197,
+      "sha256": "e92b34f38991ae57beed7461a5945457c336e755717ffefc4f985b4c7750efae"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/manifest.json",
+      "bytes": 2054,
+      "sha256": "c674db572426eb8181347c9ef718a5b635256a4e9768b143a074e9e4016d72a8"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/performance-frames.csv",
+      "bytes": 4528,
+      "sha256": "fe991ec4b2728b9033bd315ca20614c16f559917f8ccf82797bb6d871bd8a8ee"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/performance.json",
+      "bytes": 558,
+      "sha256": "494f6520a1a4db1f170eefe83e7a31a86e947a6263ab616b5bedbb1d5000a897"
+    },
+    {
+      "path": "mosslume/validation/visual-baseline-0.3.0/s2-night-tuning/preview.mp4",
+      "bytes": 1427836,
+      "sha256": "6715ae3da3b1dbabd739d74f04dc02f8d562ad2fe3b8946697556392ec1a7739"
+    }
+  ]
+}

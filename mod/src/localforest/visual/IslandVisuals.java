@@ -47,16 +47,29 @@ public final class IslandVisuals {
         for(int i=0;i<8;i++)art.put("flame-"+i,GameTexture.fromFile("localforest/flame-"+i));
         for(String key:new ArrayList<>(art.keySet()))if(key.endsWith("-mask")) {
             try(java.io.InputStream stream=ResourceEncoder.getResourceInputStream("localforest/"+key+".png")) {
-                masks.put(key.substring(0,key.length()-5),new AlphaMask(ImageIO.read(stream)));
+                String id=key.substring(0,key.length()-5);AlphaMask mask=new AlphaMask(ImageIO.read(stream));
+                masks.put(id,mask);RadianceShadowRenderer.registerMask(id,mask.w,mask.h,mask.a);
             }catch(Exception e){System.err.println("LOCALFOREST_SHADOW_MASK_UNAVAILABLE "+key+" "+e);}
         }
-        ready=true; System.out.println("LOCALFOREST_ART_READY "+art.size()+" textures, native world simulation retained");
+        if(!Boolean.getBoolean("mosslume.visual.legacy"))for(Map.Entry<String,GameTexture> entry:art.entrySet()){
+            // Soft emission sprites intentionally keep linear coverage; pixel art does not.
+            String key=entry.getKey();
+            if(!key.equals("glow")&&!key.equals("smoke")&&!key.equals("mote"))
+                entry.getValue().setBlendQuality(GameTexture.BlendQuality.NEAREST);
+        }
+        ready=true;
+        MosslumeArt.initResources();
+        System.out.println("LOCALFOREST_ART_READY "+art.size()+" textures, native world simulation retained");
+    }
+    public static void registerRuntimeArt(String id,GameTexture texture,BufferedImage image){
+        art.put(id,texture);AlphaMask mask=new AlphaMask(image);masks.put(id,mask);
+        RadianceShadowRenderer.registerMask(id,mask.w,mask.h,mask.a);
     }
     public static boolean active(Level level) {return ready&&level!=null&&IslandWorld.isIsland(level);}
     public static int variation(int x,int y) { int n=x*374761393+y*668265263; n=(n^(n>>>13))*1274126177;return n^(n>>>16); }
     public static int mod(int n,int d) { return Math.floorMod(n,d); }
     public static double seconds(Level l) {return l.getWorldEntity().getWorldTime()/1000.0;}
-    public static GameLight light(Level l,int x,int y) {return l.getLightLevel(x,y).minLevelCopy(54);}
+    public static GameLight light(Level l,int x,int y) {return SceneLighting.enabled()?SceneLighting.light(l,x*32+16,y*32+29):l.getLightLevel(x,y).minLevelCopy(54);}
     public static boolean land(Level l,int x,int y) {return x>=0&&y>=0&&x<l.tileWidth&&y<l.tileHeight&&!l.getTile(x,y).isLiquid;}
     private static SharedTextureDrawOptions terrainBatch(LevelTileTerrainDrawOptions out,String name,int priority) {
         return out.specialDrawables.getOrCreate("localforest-"+name,priority,()->new SharedTextureDrawOptions(art.get(name)));
@@ -102,6 +115,7 @@ public final class IslandVisuals {
             LevelTileTerrainDrawOptions over,OrderableDrawables objects,List<LevelSortedDrawable> sorted,
             Level level,int tx,int ty,GameCamera camera,TickManager tick) {
         if(!active(level))return false;
+        if(SceneLighting.enabled())RadianceShadowRenderer.addShore(objects,level,camera,SceneLighting.shadowSources(level));
         int dx=camera.getTileDrawX(tx),dy=camera.getTileDrawY(ty),v=variation(tx,ty);
         if(tile.isLiquid) {
             double t=seconds(level);
@@ -111,9 +125,9 @@ public final class IslandVisuals {
             int ox=(int)(Math.sin(t*2.94)*2),oy=(int)(Math.cos(t*1.38)*2);
             seaPatch(under,"ocean-art",2,level,tx,ty,dx,dy,ox,oy,t,2);
             // The raised shoreline casts a subtle, coherent receiver-plane shadow onto the sea.
-            if(land(level,tx,ty-1))terrainBatch(under,"glow",3).addFull().size(42,25).color(0.01f,.03f,.08f,.46f).pos(dx-5,dy-4);
-            if(land(level,tx-1,ty))terrainBatch(under,"glow",3).addFull().size(22,40).color(.01f,.03f,.08f,.3f).pos(dx-7,dy-4);
-            if(shore) {
+            if(!SceneLighting.enabled()&&land(level,tx,ty-1))terrainBatch(under,"glow",3).addFull().size(42,25).color(0.01f,.03f,.08f,.46f).pos(dx-5,dy-4);
+            if(!SceneLighting.enabled()&&land(level,tx-1,ty))terrainBatch(under,"glow",3).addFull().size(22,40).color(.01f,.03f,.08f,.3f).pos(dx-7,dy-4);
+            if(!SceneLighting.enabled()&&shore) {
                 List<Source> shoreLights=sources(level,tx,ty);
                 if(!shoreLights.isEmpty()) {
                     Source source=shoreLights.get(0);
@@ -131,7 +145,10 @@ public final class IslandVisuals {
         int sx=mod(tx*32,64),sy=mod(ty*32,64);
         // Native LevelDrawUtils applies the smooth, four-corner tile light pass after terrain.
         // Lighting this texture again would square the brightness and reveal every 32px tile.
-        terrainBatch(under,base,0).addSection(sx,sx+32,sy,sy+32).pos(dx,dy);
+        String runtimeGround=MosslumeArt.groundTexture(level,tx,ty);
+        if(runtimeGround!=null)terrainBatch(under,runtimeGround,0).addFull().size(32,32).pos(dx,dy);
+        else if(!NaturalPathRenderer.draw(under,level,tx,ty,dx,dy))
+            terrainBatch(under,base,0).addSection(sx,sx+32,sy,sy+32).pos(dx,dy);
         if(!land(level,tx,ty+1)) {
             terrainBatch(over,"earth",1).addSection(mod(tx,2)*32,mod(tx,2)*32+32,0,7).size(32,11).pos(dx,dy+30);
             terrainBatch(over,"shore",2).addSection(mod(tx,2)*32,mod(tx,2)*32+32,0,8).size(32,4).pos(dx,dy+29);
@@ -163,11 +180,11 @@ public final class IslandVisuals {
     }
     private static void addHouse(List<LevelSortedDrawable> sorted,OrderableDrawables tiles,Level level,GameCamera camera,int tx,int ty) {
         int x=camera.getTileDrawX(tx)+16,y=camera.getTileDrawY(ty)+4;
-        addShadow(tiles,"house",x,y,2.75f,level,tx,ty,65);
+        addShadow(tiles,MosslumeArt.active(level)?"mosslume-house-shadow":"house",x,y,MosslumeArt.active(level)?2f:2.75f,level,tx,ty,100);
         sorted.add(sorted(level.getObject(tx,ty),tx,ty,23,()->{
             PlayerMob local=level.getClient()==null?null:level.getClient().getPlayer();
             float opacity=local!=null&&houseFootprint(local.getTileX(),local.getTileY())?.28f:1f;
-            bottom("house",x,y,2.75f,light(level,tx,ty),opacity);
+            if(!MosslumeArt.house(level,camera,x,y))bottom("house",x,y,2.75f,light(level,tx,ty),opacity);
             for(int i=0;i<2;i++) {
                 float age=(float)((seconds(level)*.22+i*.5)%1);
                 bottom("smoke",x-13+(int)(Math.sin(age*4+i)*5),y-178-(int)(age*40),1.25f+age*.3f,new GameLight(150),(float)(Math.sin(age*Math.PI)*.12));
@@ -185,8 +202,11 @@ public final class IslandVisuals {
     }
     public static void windSprite(String id,int footX,int footY,float scale,Level level,int tx,int ty,boolean crown,float alpha) {
         GameTexture tex=art.get(id);if(tex==null)return;
+        if(!CrownWindRenderer.isLegacy()&&CrownWindRenderer.draw(tex,footX,footY,scale,light(level,tx,ty),alpha,tx,ty,crown,level,true,crown?62:24))return;
+        // Preserve the original row renderer only for explicit A/B comparison
+        // or a failed shader compile. It is not the default wind implementation.
         SharedTextureDrawOptions rows=new SharedTextureDrawOptions(tex);
-        double phase=seconds(level)*Math.PI*2/2.14+.21+Math.sin(tx*.12+ty*.08)*.02;
+        double phase=CrownWindRenderer.timeSeconds()*Math.PI*2/2.14+.21+Math.sin(tx*.12+ty*.08)*.02;
         float wind=(float)Math.sin(phase);
         for(int row=0;row<tex.getHeight();row++) {
             float upper=1-row/(float)Math.max(1,tex.getHeight()-1);
@@ -196,20 +216,26 @@ public final class IslandVisuals {
                 .pos(footX-Math.round(tex.getWidth()*scale/2)+Math.round(bend),footY-top);
         } rows.draw();
     }
+    public static void litBottom(String id,int x,int y,float scale,Level level,int tx,int ty,float alpha){
+        GameTexture texture=art.get(id);if(texture==null)return;
+        if(SceneLighting.enabled()&&CrownWindRenderer.draw(texture,x,y,scale,light(level,tx,ty),alpha,tx,ty,false,level,false,Math.min(100,texture.getHeight()*scale)))return;
+        bottom(id,x,y,scale,light(level,tx,ty),alpha);
+    }
     public static boolean object(GameObject object,List<LevelSortedDrawable> list,OrderableDrawables tileList,
             Level level,int tx,int ty,TickManager tick,GameCamera camera,PlayerMob perspective,String type) {
         if(!active(level))return false;
+        if(MosslumeArt.object(object,list,tileList,level,tx,ty,tick,camera,perspective,type))return true;
         if(type.equals("wall"))return houseFootprint(tx,ty);
         final int v=variation(tx,ty),x=camera.getTileDrawX(tx)+16,y=camera.getTileDrawY(ty)+29;
         final GameLight l=light(level,tx,ty);
         if(type.equals("tree")) {
             final String crown=mod(v,8)<4?(mod(v>>>5,2)==0?"tree-a-top":"tree-b-top"):mod(v,8)<6?"crown-leafy":"crown-young";
             final String wood=mod(v>>>5,2)==0?"tree-a-wood":"tree-b-wood";
-            final float scale=2.3f+mod(v,5)*.06f;
+            final float scale=Boolean.getBoolean("mosslume.visual.legacy")?2.3f+mod(v,5)*.06f:2f;
             final int rootX=x+mod(v>>>5,9)-4,rootY=y+mod(v>>>11,5)-2;
             addShadow(tileList,crown,rootX,rootY,scale,level,tx,ty,62);
             list.add(sorted(object,tx,ty,23,()->{
-                bottom(wood,rootX,rootY,scale,l,1);
+                litBottom(wood,rootX,rootY,scale,level,tx,ty,1);
                 windSprite(crown,rootX,rootY-Math.round(art.get(wood).getHeight()*scale*.55f),scale,level,tx,ty,true,1);
             })); treeDraws++;return true;
         }
@@ -240,7 +266,7 @@ public final class IslandVisuals {
         addShadow(tileList,id,x,y,scale,level,tx,ty,Math.min(48,art.get(id).getHeight()*scale));
         list.add(sorted(object,tx,ty,23,()->{
             if(type.equals("bush")||type.equals("grass")||type.equals("flowers"))windSprite(artID,x,y,drawScale,level,tx,ty,false,1);
-            else bottom(artID,x,y,drawScale,l,1);
+            else litBottom(artID,x,y,drawScale,level,tx,ty,1);
         })); objectDraws++;return true;
     }
     public static boolean isFueled(Level level,int tx,int ty) {
@@ -296,6 +322,9 @@ public final class IslandVisuals {
     private static final Map<OrderableDrawables,ShadowGroup> shadowGroups=new WeakHashMap<>();
     private static GameTexture shadowTexture;
     private static ByteBuffer shadowUpload;
+    // Same lifetime as the existing upload texture. ShadowGroup objects are
+    // frame-local, so caching here avoids allocating a full-screen array per frame.
+    private static int[] shadowCoverage;
     private static final int SHADOW_RES=2;
     private static final class ShadowStrip {
         final AlphaMask mask;final int row,x,y,w,h,alpha;
@@ -307,7 +336,9 @@ public final class IslandVisuals {
             int sceneW=WindowManager.getWindow().getSceneWidth(),sceneH=WindowManager.getWindow().getSceneHeight();
             int width=(sceneW+SHADOW_RES-1)/SHADOW_RES,height=(sceneH+SHADOW_RES-1)/SHADOW_RES;
             if(width<1||height<1)return;
-            int[] coverage=new int[width*height];
+            if(shadowCoverage==null||shadowCoverage.length!=width*height)shadowCoverage=new int[width*height];
+            else Arrays.fill(shadowCoverage,0);
+            int[] coverage=shadowCoverage;
             synchronized(strips) {
                 for(ShadowStrip strip:strips) {
                     int minY=Math.max(0,Math.floorDiv(strip.y,SHADOW_RES)),maxY=Math.min(height,(strip.y+strip.h+SHADOW_RES-1)/SHADOW_RES);
@@ -345,7 +376,10 @@ public final class IslandVisuals {
         return group;
     }
     /** Max-union alpha silhouettes on a receiver plane, composed once without changing framebuffer state. */
-    private static void addShadow(OrderableDrawables tiles,String id,int fx,int fy,float scale,Level level,int tx,int ty,float height) {
+    public static void addShadow(OrderableDrawables tiles,String id,int fx,int fy,float scale,Level level,int tx,int ty,float height) {
+        if(SceneLighting.enabled()){
+            RadianceShadowRenderer.add(tiles,id,fx,fy,scale,level,tx,ty,height,SceneLighting.shadowSources(level));return;
+        }
         AlphaMask mask=masks.get(id);if(mask==null)return;
         List<Source> lights=sources(level,tx,ty);
         final int rootWX=tx*32+16,rootWY=ty*32+29;

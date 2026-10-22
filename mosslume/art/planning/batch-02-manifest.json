@@ -1,0 +1,971 @@
+{
+  "project": "Mosslume",
+  "batch": "02",
+  "date": "2026-10-22",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "status": "generated_animation_source_drafts",
+  "assets": [
+    {
+      "id": "walk_down",
+      "name": "向下行走",
+      "file": "art/characters/player/animations/player-walk-down-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-walk-down-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-22852bae-c6aa-4d30-b0b6-1c7b00b081ee.png",
+      "sha256": "f340a3290f297b73db145c6c25d3431dbb48ae8f4adb6b65230e4d6c64b99efb",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "down",
+      "suggestedPreviewFps": 8,
+      "status": "draft_pending_phase_cleanup",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7424132029215494,
+        "nearOpaqueFraction": 0.2053241729736328,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            42,
+            427,
+            491
+          ],
+          "anchor": [
+            287.5,
+            489
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            149,
+            42,
+            362,
+            480
+          ],
+          "anchor": [
+            243,
+            477
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            88,
+            42,
+            306,
+            484
+          ],
+          "anchor": [
+            195.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            22,
+            413,
+            465
+          ],
+          "anchor": [
+            320.5,
+            462
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            150,
+            19,
+            354,
+            458
+          ],
+          "anchor": [
+            227,
+            455
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            95,
+            19,
+            311,
+            445
+          ],
+          "anchor": [
+            195,
+            441
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "identity_and_direction_checked; walking_phase_cleanup_still_required",
+      "previewBodyReferenceHeightPixels": 450,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "walk_right",
+      "name": "向右行走",
+      "file": "art/characters/player/animations/player-walk-right-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-walk-right-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-40bccf6e-90f1-4987-958b-938e2d004ebf.png",
+      "sha256": "2e59abe89b8a47c708354327b702aab63c8034836a5afcf5aefa77822194f8b3",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "right",
+      "suggestedPreviewFps": 8,
+      "status": "draft_pending_phase_cleanup",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7378622690836588,
+        "nearOpaqueFraction": 0.203216552734375,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            243,
+            45,
+            511,
+            497
+          ],
+          "anchor": [
+            379,
+            494
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            0,
+            46,
+            363,
+            497
+          ],
+          "anchor": [
+            250,
+            496
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            51,
+            42,
+            259,
+            497
+          ],
+          "anchor": [
+            152.5,
+            494
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            216,
+            15,
+            511,
+            467
+          ],
+          "anchor": [
+            366.5,
+            463
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            0,
+            17,
+            377,
+            467
+          ],
+          "anchor": [
+            181,
+            464
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            50,
+            15,
+            268,
+            467
+          ],
+          "anchor": [
+            142,
+            464
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "identity_and_direction_checked; walking_phase_cleanup_still_required",
+      "previewBodyReferenceHeightPixels": 445,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "walk_up",
+      "name": "向上行走",
+      "file": "art/characters/player/animations/player-walk-up-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-walk-up-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e0c6a049-f87f-4365-8d8c-5935b518dc8f.png",
+      "sha256": "6800bea55dc60d6e93f12651550fce73cc7a7c72c979b1c56eef65f80289d064",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "up",
+      "suggestedPreviewFps": 8,
+      "status": "draft_pending_phase_cleanup",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7324752807617188,
+        "nearOpaqueFraction": 0.19687589009602866,
+        "edgeMaxAlpha": 0
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            240,
+            50,
+            449,
+            506
+          ],
+          "anchor": [
+            353.5,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            50,
+            353,
+            503
+          ],
+          "anchor": [
+            254.5,
+            499
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            55,
+            50,
+            258,
+            505
+          ],
+          "anchor": [
+            156.5,
+            505
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            240,
+            19,
+            455,
+            469
+          ],
+          "anchor": [
+            348.5,
+            466
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            155,
+            19,
+            360,
+            469
+          ],
+          "anchor": [
+            253.5,
+            465
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            65,
+            19,
+            263,
+            469
+          ],
+          "anchor": [
+            164,
+            465
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "identity_and_direction_checked; walking_phase_cleanup_still_required",
+      "previewBodyReferenceHeightPixels": 460,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "walk_left",
+      "name": "向左行走",
+      "file": "art/characters/player/animations/player-walk-left-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-walk-left-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-2007f0e9-a70f-47d8-b497-d1fb7c10c94d.png",
+      "sha256": "58eb58b07cb0762f50a4d82cf9fdf7b4cc99a45f95a08c030d15ee3c3646b168",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "left",
+      "suggestedPreviewFps": 8,
+      "status": "draft_pending_phase_cleanup",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7299931844075521,
+        "nearOpaqueFraction": 0.18380228678385416,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            210,
+            43,
+            444,
+            492
+          ],
+          "anchor": [
+            327,
+            492
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            46,
+            357,
+            489
+          ],
+          "anchor": [
+            266.5,
+            489
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            90,
+            47,
+            286,
+            489
+          ],
+          "anchor": [
+            202.5,
+            487
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            28,
+            453,
+            471
+          ],
+          "anchor": [
+            327.5,
+            470
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            138,
+            28,
+            368,
+            471
+          ],
+          "anchor": [
+            252.5,
+            470
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            96,
+            27,
+            288,
+            467
+          ],
+          "anchor": [
+            226,
+            464
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "identity_and_direction_checked; walking_phase_cleanup_still_required",
+      "previewBodyReferenceHeightPixels": 450,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "chop",
+      "name": "向右砍伐",
+      "file": "art/characters/player/animations/player-chop-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-chop-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a15b8a5b-206e-4566-9720-3ee7bf468257.png",
+      "sha256": "6e94b4bf68ba19dc47460b4074be7c0c84574d9472a77c61940d284997281542",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "right",
+      "suggestedPreviewFps": 6,
+      "status": "draft_pending_anchor_and_layer_export",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png",
+        "art/items/tools/basic-tools-atlas-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7372798919677734,
+        "nearOpaqueFraction": 0.17874018351236978,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            153,
+            137,
+            419,
+            508
+          ],
+          "anchor": [
+            259.5,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            110,
+            134,
+            374,
+            509
+          ],
+          "anchor": [
+            270,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            111,
+            36,
+            369,
+            509
+          ],
+          "anchor": [
+            266,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            122,
+            90,
+            455,
+            460
+          ],
+          "anchor": [
+            274.5,
+            457
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            117,
+            134,
+            452,
+            462
+          ],
+          "anchor": [
+            278,
+            459
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            134,
+            89,
+            443,
+            461
+          ],
+          "anchor": [
+            240.5,
+            458
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "tool_type_and_six_action_phases_checked; layer_export_still_required",
+      "previewBodyReferenceHeightPixels": 370,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "mine",
+      "name": "向右挖矿",
+      "file": "art/characters/player/animations/player-mine-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-mine-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-b229268a-e9b2-4726-8a59-bfec6cb3115d.png",
+      "sha256": "c757fa2a7705ccc68ef6b3a7e8277d73359d4bab362208eeecd2f14985bb012e",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "right",
+      "suggestedPreviewFps": 6,
+      "status": "draft_pending_anchor_and_layer_export",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png",
+        "art/items/tools/basic-tools-atlas-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7438233693440756,
+        "nearOpaqueFraction": 0.16891098022460938,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            184,
+            113,
+            447,
+            501
+          ],
+          "anchor": [
+            283,
+            498
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            113,
+            414,
+            501
+          ],
+          "anchor": [
+            253,
+            498
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            75,
+            51,
+            334,
+            501
+          ],
+          "anchor": [
+            246,
+            499
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            169,
+            82,
+            495,
+            456
+          ],
+          "anchor": [
+            322.5,
+            452
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            137,
+            118,
+            466,
+            456
+          ],
+          "anchor": [
+            303.5,
+            454
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            143,
+            54,
+            422,
+            456
+          ],
+          "anchor": [
+            243,
+            451
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "tool_type_and_six_action_phases_checked; layer_export_still_required",
+      "previewBodyReferenceHeightPixels": 390,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    },
+    {
+      "id": "water",
+      "name": "向右浇水",
+      "file": "art/characters/player/animations/player-water-source-v1.png",
+      "promptFile": "art/characters/player/animations/player-water-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5fbc7bee-7ce0-4261-b766-4bc12fc5a568.png",
+      "sha256": "c8d166c775d6c4f1f44fd20a78d0f852c29da458f90939988c20f75a97497390",
+      "width": 1536,
+      "height": 1024,
+      "columns": 3,
+      "rows": 2,
+      "frameCount": 6,
+      "direction": "right",
+      "suggestedPreviewFps": 6,
+      "status": "draft_pending_anchor_and_layer_export",
+      "runtimeTextureReady": false,
+      "referenceFiles": [
+        "art/characters/player/player-directions-prototype-v1.png",
+        "art/items/tools/basic-tools-atlas-v1.png"
+      ],
+      "alphaAudit": {
+        "fullyTransparentFraction": 0.7135969797770182,
+        "nearOpaqueFraction": 0.1954034169514974,
+        "edgeMaxAlpha": 1
+      },
+      "previewFrames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            170,
+            38,
+            401,
+            484
+          ],
+          "anchor": [
+            266.5,
+            481
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            132,
+            38,
+            445,
+            484
+          ],
+          "anchor": [
+            228,
+            482
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            140,
+            42,
+            447,
+            484
+          ],
+          "anchor": [
+            228.5,
+            481
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            174,
+            37,
+            484,
+            483
+          ],
+          "anchor": [
+            267.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            145,
+            37,
+            450,
+            483
+          ],
+          "anchor": [
+            236.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            137,
+            37,
+            369,
+            483
+          ],
+          "anchor": [
+            232,
+            480
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "previewAnchors": "automatic_foot_color_heuristic_preview_only_not_runtime_rig",
+      "productionFrameRects": "pending_manual_review",
+      "technicalPreviewReview": "loaded_six_nonempty_frames_with_real_alpha",
+      "visualSourceReview": "tool_type_and_six_action_phases_checked; layer_export_still_required",
+      "previewBodyReferenceHeightPixels": 450,
+      "previewBodyScaleStatus": "manual_approximation_for_preview_only"
+    }
+  ],
+  "reviewNotes": [
+    "每张图集含六个动作姿势；保留为动作源图草稿，不能视为完成的运行动画。",
+    "四方向行走图存在步态相位及细节一致性问题，已做一轮针对修正，仍待清理；预览用于暴露这些问题。",
+    "砍伐、挖矿和浇水目前只覆盖向右方向。",
+    "工具与人体暂在同一张源图中；可换装运行版本仍需要分层和统一握持点。",
+    "预览可选择脚点对齐或原始网格；预览中的裁切和位移只影响显示，不修改源PNG。",
+    "播放预览按人物本体参考身高统一显示尺度，避免举起的工具扩大轮廓后让人物显得过小；这是预览显示修正，不代表源图已完成统一生产规格导出。"
+  ],
+  "previewFile": "art/previews/player-animation-batch-02-v1.html",
+  "auditFile": "art/planning/batch-02-browser-audit.json",
+  "previewControlCheck": "art/planning/batch-02-preview-check.json",
+  "visualPreviewScreenshot": "art/previews/batch-02-unified-scale-qa.png",
+  "previewControlStatus": "verified_play_pause_manual_frames_alignment_and_resolution_controls"
+}

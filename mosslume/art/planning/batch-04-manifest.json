@@ -1,0 +1,2180 @@
+{
+  "project": "Mosslume",
+  "batch": "04",
+  "date": "2026-10-22",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "icons_farming",
+      "name": "种子、农产与采集物图标",
+      "group": "items",
+      "file": "art/items/farming/farming-forage-atlas-v1.png",
+      "columns": 3,
+      "rows": 3,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-819337ed-11e3-41f9-9cdb-329eb3c37e27.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "5ded1dfe37396af3f9950dcaed13e4fa22f55d9ebfd037805e8964f14e77f76c",
+      "count": 9,
+      "regions": [
+        {
+          "id": "wheat-seed",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            44,
+            52,
+            358,
+            337
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "carrot-seed",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            418,
+            0,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            456,
+            59,
+            339,
+            333
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "pumpkin-seed",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            836,
+            0,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            882,
+            59,
+            328,
+            342
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "wheat",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            25,
+            430,
+            430,
+            410
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            52,
+            446,
+            376,
+            389
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "carrot",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            465,
+            430,
+            410,
+            410
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            484,
+            446,
+            350,
+            381
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "pumpkin",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            836,
+            418,
+            418,
+            418
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            875,
+            495,
+            334,
+            320
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "apple",
+          "column": 0,
+          "row": 2,
+          "sourceRegion": [
+            0,
+            836,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            74,
+            877,
+            304,
+            325
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "berry",
+          "column": 1,
+          "row": 2,
+          "sourceRegion": [
+            418,
+            836,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            482,
+            910,
+            317,
+            269
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "mushroom",
+          "column": 2,
+          "row": 2,
+          "sourceRegion": [
+            836,
+            836,
+            418,
+            418
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            909,
+            897,
+            287,
+            310
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/items/farming/farming-forage-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-819337ed-11e3-41f9-9cdb-329eb3c37e27.png",
+          "prompt": "Use case: style-transfer.\nAsset type: transparent inventory icon SOURCE atlas, EXACTLY NINE original items, 3 columns x 3 rows, square canvas.\nImage 1 is the approved tool-icon STYLE reference; no tools from it should appear.\nExact reading order:\nTOP ROW: wheat seeds in a small kraft seed packet with a tiny wheat-ear PICTURE mark; carrot seeds in a similar packet with a carrot PICTURE mark; pumpkin seeds in a similar packet with a pumpkin PICTURE mark. No written labels on packets. Each packet has a different simple crop pictogram so the three seed types remain distinct.\nMIDDLE ROW: small tied bundle of ripe golden wheat ears; ONE harvested orange carrot with short feathery green tops; ONE plump ribbed orange pumpkin with curved green stem, no vine bed.\nBOTTOM ROW: red apple with one green leaf; three purple-red berries with small green leaf; one brown-cap cream-stem mushroom.\nSeed packets are closed practical paper pouches, not pots. Produce is harvested inventory items, no soil, roots underground or whole growth-stage diagrams. Exactly one isolated item/group per cell, no duplicates or extra scattered food.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1254,
+        "height": 1254,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.54474,
+        "nearOpaqueFraction": 0.37302,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "icons_food",
+      "name": "食物与饮水图标",
+      "group": "items",
+      "file": "art/items/food/food-drink-atlas-v1.png",
+      "columns": 3,
+      "rows": 2,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a14665e7-3f94-44ee-a211-7c9649337863.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "41b0508370ee66e6543b156ba62300c053e9145dbe595b9ac6ba8019c1e3c98f",
+      "count": 5,
+      "regions": [
+        {
+          "id": "bread",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            60,
+            122,
+            384,
+            334
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "vegetable-stew",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            561,
+            111,
+            407,
+            352
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "grilled-fish",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1056,
+            129,
+            456,
+            343
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "tea",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            88,
+            562,
+            364,
+            367
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "water-flask",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            603,
+            541,
+            365,
+            416
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": null,
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export"
+        }
+      ],
+      "promptFile": "art/items/food/food-drink-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a14665e7-3f94-44ee-a211-7c9649337863.png",
+          "prompt": "Use case: style-transfer.\nAsset type: transparent inventory food icon SOURCE atlas, 3 columns x 2 rows, EXACTLY FIVE icons and empty last cell, wide 3:2 canvas.\nImage 1 is the approved tool-icon STYLE reference, no tools from it appear.\nExact reading order: TOP ROW one small rustic golden bread loaf with score marks; one warm brown bowl of chunky vegetable stew with visible carrot/green vegetable pieces; one cooked whole fish with a few dark grill marks on a simple small ivory plate.\nBOTTOM ROW one ivory-and-teal ceramic teacup with two subtle pale steam pixels/short curls; one compact capped DRINKING WATER FLASK, teal metal with a brown leather strap and copper cap, clearly distinct from a watering can; last bottom-right cell EMPTY and fully alpha transparent.\nAll are practical cozy island food/drink, no cutlery crossing cells, no table, scenery, typography or numerical quantities.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.66644,
+        "nearOpaqueFraction": 0.29185,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "icons_buildables",
+      "name": "建造与生产物品图标",
+      "group": "items",
+      "file": "art/items/buildables/buildables-atlas-v1.png",
+      "columns": 4,
+      "rows": 2,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9b4c30ec-4c1c-488b-9d85-6b998239f154.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "cf2f235d29a2af12e3b7cab2f3ec476182eecb16289bf9868cd194c3e43169ac",
+      "count": 7,
+      "regions": [
+        {
+          "id": "chest",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            36,
+            80,
+            377,
+            328
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "workbench",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            454,
+            67,
+            422,
+            349
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "furnace",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            931,
+            28,
+            374,
+            396
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cooking-pot",
+          "column": 3,
+          "row": 0,
+          "sourceRegion": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1396,
+            67,
+            350,
+            357
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "campfire",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            40,
+            472,
+            364,
+            367
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "lantern",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            544,
+            452,
+            242,
+            399
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "wood-wall",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            932,
+            468,
+            360,
+            382
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": null,
+          "column": 3,
+          "row": 1,
+          "sourceRegion": [
+            1330,
+            444,
+            444,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export"
+        }
+      ],
+      "promptFile": "art/items/buildables/buildables-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-d6f53bfe-1da4-4627-9e02-b88c374fe3f7.png",
+          "prompt": "Use case: style-transfer.\nAsset type: transparent inventory buildable-object icon SOURCE atlas, 4 columns x 2 rows, EXACTLY SEVEN icons, last cell empty; wide 2:1 canvas.\nImage 1 is pixel-icon style reference. Images 2/3/4/5 are existing world objects to preserve identity: image 2 orange-brown closed chest with dark metal latch, image 3 wooden workbench, image 4 compact grey stone furnace with dark arched front and small copper/warm accents, image 5 round purple cauldron with green contents. Enlarge/reinterpret as matching inventory icons, no literal pixel stretching artifacts.\nExact reading order TOP ROW: that closed CHEST; that wooden WORKBENCH with a small fixed tool surface; that STONE FURNACE; that purple COOKING POT/CAULDRON with green contents.\nBOTTOM ROW: small crossed-log CAMPFIRE with a compact orange flame, no glow halo; brass-and-teal framed warm LANTERN with small handle, no long lamppost; small WOOD WALL buildable section made of three joined warm brown planks; last bottom-right cell EMPTY and alpha transparent.\nSame object identity as world sprites; no native game logo, no menus, no buildings other than listed wall, no extra loose tools or fuel piles outside objects.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.",
+          "selected": false
+        },
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9b4c30ec-4c1c-488b-9d85-6b998239f154.png",
+          "prompt": "Use case: precise-object-edit. Edit target: the provided Mosslume 4-column x 2-row buildable inventory icon atlas. Change ONLY the cooking-pot/cauldron icon in the TOP-RIGHT cell. Its round metal body should be muted dark PURPLE / plum iron with a dark teal-black rim and small copper fittings. The liquid visible INSIDE the pot must be GREEN vegetable soup, with a few small light-green vegetable bits. Remove the purple liquid and the two large green floating round orbs. It is a cozy practical cooking cauldron, not a magic potion. Preserve that pot's exact shape, feet, handle placement, size, location, pixel style and light source, and preserve every other icon and the 4x2 layout exactly. Last bottom-right cell stays fully alpha transparent. Entire background genuinely transparent. No added text, grid, glow, shadow, scenery or objects.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "tools",
+        "chest",
+        "bench",
+        "furnace",
+        "pot"
+      ],
+      "alphaAudit": {
+        "width": 1774,
+        "height": 887,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.56568,
+        "nearOpaqueFraction": 0.39474,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "icons_social",
+      "name": "礼物与任务物品图标",
+      "group": "items",
+      "file": "art/items/social/social-quest-atlas-v1.png",
+      "columns": 2,
+      "rows": 2,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-d759c624-bfca-45ca-928f-05ea57be0756.png",
+      "width": 1263,
+      "height": 1246,
+      "sha256": "5ffc9e3a3b775a28f834ba2639a445ddaf8abb4a0785e2378b3c5086d5c0588a",
+      "count": 4,
+      "regions": [
+        {
+          "id": "letter",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            632,
+            623
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            103,
+            119,
+            523,
+            446
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "trade-coin",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            632,
+            0,
+            631,
+            623
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            720,
+            118,
+            425,
+            443
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "flower-bouquet",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            623,
+            632,
+            623
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            107,
+            628,
+            520,
+            510
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "parcel",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            632,
+            623,
+            631,
+            623
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            682,
+            676,
+            504,
+            450
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/items/social/social-quest-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-d759c624-bfca-45ca-928f-05ea57be0756.png",
+          "prompt": "Use case: style-transfer.\nAsset type: transparent inventory social/quest icon SOURCE atlas, EXACTLY FOUR icons, 2x2 square invisible-cell layout.\nImage 1 is approved pixel icon style reference. Exact order: TOP LEFT one folded ivory envelope sealed with small green wax stamp; TOP RIGHT one round antique brass TRADE COIN with simple embossed LEAF symbol, no words or number; BOTTOM LEFT small hand-tied bouquet of pink/purple/yellow meadow flowers with green stems and teal ribbon; BOTTOM RIGHT one kraft-paper parcel tied with simple teal twine.\nKeep envelope and parcel clearly different, coin circular and embossed leaf recognizable, flowers compact. No floating heart, portraits or extra gifts.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1263,
+        "height": 1246,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.56838,
+        "nearOpaqueFraction": 0.38385,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_controls",
+      "name": "按钮与通用控件",
+      "group": "ui",
+      "file": "art/ui/controls/controls-atlas-v1.png",
+      "columns": 4,
+      "rows": 4,
+      "targetCellPixels": null,
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6080d3e3-53c0-48ef-8a36-3f5df8ef2ad0.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "a53e2d385712acc21612f67510833402da2f5bbc182f7f587cacf201c9cfbcb6",
+      "count": 16,
+      "regions": [
+        {
+          "id": "button-normal",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            25,
+            80,
+            365,
+            155
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            41,
+            96,
+            333,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "button-hover",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            405,
+            80,
+            365,
+            155
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            415,
+            96,
+            333,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "button-pressed",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            785,
+            80,
+            365,
+            155
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            788,
+            96,
+            333,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "button-disabled",
+          "column": 3,
+          "row": 0,
+          "sourceRegion": [
+            1138,
+            70,
+            388,
+            170
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            1163,
+            96,
+            333,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "tab-inactive",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            25,
+            300,
+            365,
+            175
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            43,
+            315,
+            331,
+            144
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "tab-active",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            405,
+            300,
+            365,
+            175
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            422,
+            312,
+            336,
+            148
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "checkbox-empty",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            865,
+            290,
+            190,
+            190
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            893,
+            318,
+            139,
+            139
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "checkbox-checked",
+          "column": 3,
+          "row": 1,
+          "sourceRegion": [
+            1235,
+            300,
+            180,
+            175
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            1255,
+            318,
+            144,
+            139
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "radio-empty",
+          "column": 0,
+          "row": 2,
+          "sourceRegion": [
+            120,
+            525,
+            180,
+            165
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            132,
+            539,
+            138,
+            134
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "radio-selected",
+          "column": 1,
+          "row": 2,
+          "sourceRegion": [
+            505,
+            525,
+            170,
+            165
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            511,
+            534,
+            144,
+            142
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "toggle-off",
+          "column": 2,
+          "row": 2,
+          "sourceRegion": [
+            810,
+            525,
+            300,
+            165
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            823,
+            545,
+            264,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "toggle-on",
+          "column": 3,
+          "row": 2,
+          "sourceRegion": [
+            1190,
+            525,
+            315,
+            165
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            1202,
+            545,
+            263,
+            127
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "scrollbar-track",
+          "column": 0,
+          "row": 3,
+          "sourceRegion": [
+            160,
+            700,
+            85,
+            270
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            172,
+            716,
+            61,
+            235
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "scrollbar-thumb",
+          "column": 1,
+          "row": 3,
+          "sourceRegion": [
+            530,
+            735,
+            95,
+            210
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            543,
+            756,
+            65,
+            158
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "slider-track",
+          "column": 2,
+          "row": 3,
+          "sourceRegion": [
+            750,
+            795,
+            420,
+            95
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            762,
+            817,
+            395,
+            51
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "slider-thumb",
+          "column": 3,
+          "row": 3,
+          "sourceRegion": [
+            1280,
+            775,
+            150,
+            140
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            1296,
+            795,
+            118,
+            98
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/controls/controls-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6080d3e3-53c0-48ef-8a36-3f5df8ef2ad0.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent PIXEL UI component SOURCE atlas, 4 columns x 4 rows, EXACTLY SIXTEEN isolated components, one centered per invisible equal square cell. Image 1 is Mosslume brand mood/palette reference ONLY, do not reproduce title lettering or scene. Image 2 is established crisp pixel texture/shading reference.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order:\nROW 1 four identical wide blank 3:1 buttons: NORMAL dark forest green center and fine brass border; HOVER lighter moss-green center and brighter brass border; PRESSED darker inset center, top edge visibly depressed; DISABLED desaturated grey-green center/border. All four same shape/size, NO labels.\nROW 2 blank inactive tab; blank active tab; empty square checkbox; same square checkbox checked with a simple ivory tick.\nROW 3 empty circular radio button; selected radio button with a small gold center dot; short pill toggle OFF knob on left; same toggle ON green field and knob on right.\nROW 4 one narrow vertical scrollbar TRACK without thumb; separate small vertical scrollbar THUMB; one thin horizontal slider TRACK without knob; separate small slider KNOB.\nKeep tracks and thumbs separate reusable subjects, not assembled repeated full controls. All intended button/tab text areas completely blank. The tick is a functional geometric symbol, not a written label. No full panels or slot grids.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "title",
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.68589,
+        "nearOpaqueFraction": 0.25783,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_panels",
+      "name": "面板、对话框与头像框",
+      "group": "ui",
+      "file": "art/ui/panels/panels-atlas-v1.png",
+      "columns": 3,
+      "rows": 2,
+      "targetCellPixels": null,
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5bbe86e2-2ba7-4765-a7f5-16886662e101.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0ce2bff9634c1857e431ce6e719476de39546f172f06e3673e509de104f8bea7",
+      "count": 6,
+      "regions": [
+        {
+          "id": "panel-generic",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            20,
+            65,
+            445,
+            335
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            30,
+            86,
+            421,
+            285
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "tooltip-panel",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            480,
+            110,
+            330,
+            250
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            486,
+            121,
+            310,
+            221
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "dialogue-panel",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            820,
+            70,
+            710,
+            310
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            832,
+            101,
+            679,
+            257
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "portrait-frame",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            15,
+            455,
+            410,
+            420
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            31,
+            483,
+            377,
+            376
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "recipe-panel",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            440,
+            405,
+            445,
+            560
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            461,
+            431,
+            402,
+            512
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "toast-panel",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            905,
+            560,
+            620,
+            250
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            924,
+            583,
+            578,
+            185
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/panels/panels-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5bbe86e2-2ba7-4765-a7f5-16886662e101.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent pixel UI panel SOURCE atlas, 3 columns x 2 rows, exactly SIX separate panel components. Image 1 is Mosslume brand mood only, no copied words/scene. Image 2 pixel style reference.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: TOP LEFT a medium rectangular GENERIC PANEL with warm ivory parchment interior, thin dark teal outer frame and modest brass corner studs; TOP MIDDLE compact dark forest TOOLTIP PANEL with empty dark center and fine brass border; TOP RIGHT wide blank DIALOGUE BOX, about 3:1 aspect, parchment center and dark green/brass edge, no portrait painted inside.\nBOTTOM LEFT square PORTRAIT FRAME with green/brass border and a genuinely TRANSPARENT hole in its middle; BOTTOM MIDDLE tall blank RECIPE/INVENTORY PANEL with same parchment and frame, no item slots baked in; BOTTOM RIGHT short wide dark teal NOTIFICATION/TOAST PANEL with slim brass edge and empty center.\nEach complete component centered in its own invisible square cell with generous empty gutter. Generic and recipe panels should have plain straight repeatable edges and uncluttered corners suitable for later nine-slice work. All surfaces blank. No example text, pictures, portraits, recipes, inventory items, slot grids, tabs or arrows.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "title",
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.53461,
+        "nearOpaqueFraction": 0.42121,
+        "canvasEdgeMaxAlpha": 0
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_hud",
+      "name": "快捷栏格与状态图标",
+      "group": "ui",
+      "file": "art/ui/hud/hud-icons-atlas-v1.png",
+      "columns": 4,
+      "rows": 3,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-b2743467-f152-458f-abb0-36bcb3537369.png",
+      "width": 1448,
+      "height": 1086,
+      "sha256": "09776889adab0f149cf5cb3a20b38324f37e9b4256d2eb880c00f8dce9e9d6da",
+      "count": 12,
+      "regions": [
+        {
+          "id": "slot-normal",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            61,
+            61,
+            283,
+            273
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "slot-selected",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            410,
+            61,
+            284,
+            274
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "slot-disabled",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            757,
+            61,
+            285,
+            273
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "health-heart",
+          "column": 3,
+          "row": 0,
+          "sourceRegion": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1123,
+            94,
+            279,
+            241
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "energy-leaf",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            77,
+            407,
+            247,
+            286
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "hunger-plate",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            406,
+            407,
+            276,
+            281
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "time-clock",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            763,
+            387,
+            264,
+            301
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "date-calendar",
+          "column": 3,
+          "row": 1,
+          "sourceRegion": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1119,
+            401,
+            283,
+            288
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "weather-sun",
+          "column": 0,
+          "row": 2,
+          "sourceRegion": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            43,
+            725,
+            301,
+            298
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "weather-moon",
+          "column": 1,
+          "row": 2,
+          "sourceRegion": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            423,
+            739,
+            247,
+            275
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "weather-rain",
+          "column": 2,
+          "row": 2,
+          "sourceRegion": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            745,
+            740,
+            298,
+            284
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "currency-coin",
+          "column": 3,
+          "row": 2,
+          "sourceRegion": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1122,
+            735,
+            280,
+            280
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/hud/hud-icons-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-b2743467-f152-458f-abb0-36bcb3537369.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel HUD component SOURCE atlas, 4 columns x 3 rows, EXACTLY TWELVE components. Image 1 is Mosslume mood/palette only; image 2 pixel texture reference; image 3 is social icon atlas, use its TOP-RIGHT leaf-stamped brass coin as the SAME currency identity.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: ROW 1 empty normal inventory slot (dark inset green square with muted brass edge); same size selected slot with bright warm gold outline; same size disabled slot with desaturated grey-green edge; plump simple red HEALTH HEART.\nROW 2 fresh green leaf ENERGY icon; small ivory plate with simple fork/spoon HUNGER icon; small round brass/teal TIME CLOCK with hands; small ivory DATE CALENDAR with dark green binding, blank cells and NO numbers/words.\nROW 3 simple gold SUN; soft ivory crescent MOON; blue-grey RAIN CLOUD with three blue drops; leaf-stamped brass CURRENCY COIN matching image 3.\nSlots must remain completely empty, with dark solid interiors and no items. Exactly one isolated component in each invisible equal square cell. Icon silhouettes readable at 32x32. No bars, full HUD screenshot, quantities, numbers, labels or additional decoration.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "title",
+        "tools",
+        "@icons_social"
+      ],
+      "alphaAudit": {
+        "width": 1448,
+        "height": 1086,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.5073,
+        "nearOpaqueFraction": 0.42352,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_bars",
+      "name": "生命、体力与进度条组件",
+      "group": "ui",
+      "file": "art/ui/hud/status-bars-atlas-v1.png",
+      "columns": 3,
+      "rows": 2,
+      "targetCellPixels": null,
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e6f1656b-726c-4690-ade2-aa8a3400c54d.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8bf6f47a60780e927271168b7373fafbd16c049f5c0697a86214a7fe940bc3af",
+      "count": 6,
+      "regions": [
+        {
+          "id": "health-track",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            29,
+            207,
+            473,
+            92
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "health-fill",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            558,
+            230,
+            420,
+            50
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "energy-track",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1034,
+            207,
+            472,
+            93
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "energy-fill",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            36,
+            744,
+            450,
+            50
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "progress-track",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            530,
+            722,
+            476,
+            92
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "progress-fill",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1049,
+            744,
+            451,
+            50
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/hud/status-bars-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e6f1656b-726c-4690-ade2-aa8a3400c54d.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent pixel status-bar SOURCE atlas, 3 columns x 2 rows, exactly SIX separate horizontal components, each one centered with ample empty gutter in an invisible square cell.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nImage 1 is brand palette only, no copied words/scene. Image 2 pixel shading reference.\nExact reading order: TOP LEFT empty HEALTH BAR TRACK, a long slim dark teal channel with narrow brass/wood edge and EMPTY dark inside; TOP MIDDLE separate RED HEALTH FILL strip, full-width plain strip with simple pixel highlights, NO outer track; TOP RIGHT empty ENERGY BAR TRACK identical in form to health track.\nBOTTOM LEFT separate GREEN ENERGY FILL strip, full-width plain strip without frame; BOTTOM MIDDLE empty PROGRESS BAR TRACK, same outer dimensions and channel style; BOTTOM RIGHT separate GOLD PROGRESS FILL strip, full-width plain strip without outer frame.\nAll tracks have consistent about 5:1 width-to-height proportions and equal outer size. All fills have consistent size slightly smaller than tracks' inner channel; smooth repeatable straight centers for runtime clipping. No fixed percentage, no partially filled assembled bar, no heart/leaf icons, no ticks, text or numbers. Do not put track and fill together in one cell.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "title",
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.85577,
+        "nearOpaqueFraction": 0.10739,
+        "canvasEdgeMaxAlpha": 0
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_feedback",
+      "name": "居民气泡与任务关系图标",
+      "group": "ui",
+      "file": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "columns": 4,
+      "rows": 4,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-84c7822b-f8c0-46e9-be88-6f6ad4f8656c.png",
+      "width": 1261,
+      "height": 1247,
+      "sha256": "48645af0f5dea3f68e3258075f1647244b9984363c7137c649d793e870f37380",
+      "count": 16,
+      "regions": [
+        {
+          "id": "bubble-happy",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            20,
+            40,
+            305,
+            295
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            41,
+            60,
+            275,
+            251
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "bubble-question",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            330,
+            40,
+            305,
+            295
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            348,
+            62,
+            277,
+            250
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "bubble-refuse",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            640,
+            40,
+            305,
+            295
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            654,
+            62,
+            275,
+            250
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "bubble-tired",
+          "column": 3,
+          "row": 0,
+          "sourceRegion": [
+            945,
+            40,
+            306,
+            295
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            957,
+            66,
+            275,
+            246
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "bubble-hungry",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            20,
+            345,
+            305,
+            280
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            39,
+            364,
+            282,
+            244
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "bubble-received",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            330,
+            345,
+            305,
+            280
+          ],
+          "regionStatus": "manual_preview_region_pending_tight_export",
+          "previewTrimRect": [
+            345,
+            364,
+            281,
+            244
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "relation-heart",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            630,
+            312,
+            316,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            661,
+            402,
+            242,
+            206
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "trust-handshake",
+          "column": 3,
+          "row": 1,
+          "sourceRegion": [
+            946,
+            312,
+            315,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            950,
+            385,
+            288,
+            220
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "mood-face",
+          "column": 0,
+          "row": 2,
+          "sourceRegion": [
+            0,
+            624,
+            315,
+            311
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            43,
+            690,
+            264,
+            199
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "schedule-clock",
+          "column": 1,
+          "row": 2,
+          "sourceRegion": [
+            315,
+            624,
+            315,
+            311
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            351,
+            648,
+            261,
+            248
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "quest-scroll",
+          "column": 2,
+          "row": 2,
+          "sourceRegion": [
+            630,
+            624,
+            316,
+            311
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            646,
+            664,
+            263,
+            249
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "success-check",
+          "column": 3,
+          "row": 2,
+          "sourceRegion": [
+            946,
+            624,
+            315,
+            311
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            968,
+            681,
+            245,
+            208
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "failure-cross",
+          "column": 0,
+          "row": 3,
+          "sourceRegion": [
+            0,
+            935,
+            315,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            43,
+            964,
+            252,
+            214
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "work-priority",
+          "column": 1,
+          "row": 3,
+          "sourceRegion": [
+            315,
+            935,
+            315,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            348,
+            958,
+            252,
+            220
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "prohibited",
+          "column": 2,
+          "row": 3,
+          "sourceRegion": [
+            630,
+            935,
+            316,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            655,
+            956,
+            252,
+            221
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "trade-coins",
+          "column": 3,
+          "row": 3,
+          "sourceRegion": [
+            946,
+            935,
+            315,
+            312
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            953,
+            947,
+            267,
+            232
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/feedback/feedback-icons-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-84c7822b-f8c0-46e9-be88-6f6ad4f8656c.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel resident/status/quest icon SOURCE atlas, 4 columns x 4 rows, EXACTLY SIXTEEN isolated icon subjects in invisible equal square cells.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nImage 1 is original Mosslume mood/palette only, no copied words or scene; image 2 pixel-art texture reference. Small functional check/cross/question symbols ARE allowed, but no written words, captions or numbers.\nExact reading order:\nROW 1 ivory speech bubble containing simple smiling face (HAPPY); same style bubble containing QUESTION MARK; bubble containing red refusal cross; bubble containing sleepy half-closed eyes (TIRED).\nROW 2 bubble containing a tiny simple bread/plate (HUNGRY); bubble containing a tiny parcel and check (ITEM RECEIVED); small warm pink heart with subtle leaf edge (RELATIONSHIP); simple two hands clasping (TRUST).\nROW 3 simple neutral round face (MOOD); small clock with tiny sun edge (SCHEDULE); rolled ivory quest scroll with one gold star seal (QUEST); green success CHECK.\nROW 4 red failure CROSS; gold upward chevron arrow (WORK PRIORITY); red circle-and-diagonal prohibition sign; simple brass coins above an open hand (TRADE).\nAll icons compact and readable at logical 32x32, one composite icon per cell. Six speech bubbles must have matching outline shape and size. No characters/portraits, long text, badges with numbers or whole interface.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "title",
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1261,
+        "height": 1247,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.46515,
+        "nearOpaqueFraction": 0.40459,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    },
+    {
+      "id": "ui_cursors",
+      "name": "鼠标与放置反馈",
+      "group": "ui",
+      "file": "art/ui/cursors/cursors-atlas-v1.png",
+      "columns": 4,
+      "rows": 2,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a0371185-5baf-48e6-8e13-caa3a25ed384.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "0523648d0b36a0bd51dd2a9d5da435a5e28d93dec667f18abb6543c9e79e3265",
+      "count": 8,
+      "regions": [
+        {
+          "id": "cursor-default",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            444,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            117,
+            116,
+            181,
+            258
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cursor-interact",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            444,
+            0,
+            443,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            518,
+            103,
+            222,
+            288
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cursor-gather",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            887,
+            0,
+            443,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            958,
+            97,
+            311,
+            314
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cursor-build",
+          "column": 3,
+          "row": 0,
+          "sourceRegion": [
+            1330,
+            0,
+            444,
+            444
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1389,
+            94,
+            338,
+            324
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cursor-talk",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            444,
+            444,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            81,
+            506,
+            324,
+            267
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "cursor-pickup",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            444,
+            444,
+            443,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            505,
+            518,
+            301,
+            259
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "placement-valid",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            887,
+            444,
+            443,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            942,
+            498,
+            325,
+            295
+          ],
+          "productionExportValidated": false
+        },
+        {
+          "id": "placement-invalid",
+          "column": 3,
+          "row": 1,
+          "sourceRegion": [
+            1330,
+            444,
+            444,
+            443
+          ],
+          "regionStatus": "nominal_grid_pending_tight_export",
+          "previewTrimRect": [
+            1393,
+            498,
+            327,
+            295
+          ],
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/ui/cursors/cursors-atlas-v1.prompt.txt",
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a0371185-5baf-48e6-8e13-caa3a25ed384.png",
+          "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel cursor/placement SOURCE atlas, 4 columns x 2 rows, EXACTLY EIGHT symbols in equal invisible cells. Image 1 is existing Mosslume tool reference, preserve axe/hammer teal grip + wood/iron identity.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: TOP LEFT clear ivory arrow mouse cursor pointing NORTHWEST with dark outline; TOP SECOND ivory hand cursor with extended index finger; TOP THIRD small arrow cursor paired with the existing iron wood-handled AXE as GATHER cursor; TOP FOURTH small arrow cursor paired with existing iron wood-handled HAMMER as BUILD cursor.\nBOTTOM LEFT small ivory arrow paired with simple ivory speech bubble as TALK cursor; BOTTOM SECOND small grasping hand lifting one tiny brown parcel as PICKUP cursor; BOTTOM THIRD four GREEN placement corner brackets surrounding a small neutral wood-tile footprint with green check; BOTTOM FOURTH identical footprint with RED corner brackets and red cross for blocked placement.\nThe first six are actual compact mouse cursor silhouettes, not huge character hands or full people. Last two have identical tile geometry and differ only validity color/symbol. Strong contrast outline, no glow. No extra tools, labels, words or numbers. Keep generous alpha-transparent padding; cursor hotspot definition happens later, not drawn as a dot.",
+          "selected": true
+        }
+      ],
+      "status": "source_generated_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "referenceKeys": [
+        "tools"
+      ],
+      "alphaAudit": {
+        "width": 1774,
+        "height": 887,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.71472,
+        "nearOpaqueFraction": 0.21102,
+        "canvasEdgeMaxAlpha": 1
+      },
+      "previewRegionCheck": "all_nonempty_regions_fit_without_edge_clipping",
+      "visualSourceReview": "checked_subjects_order_identity_and_no_baked_words"
+    }
+  ],
+  "totals": {
+    "atlases": 10,
+    "newInventoryIcons": 25,
+    "uiSourceComponents": 64,
+    "nonemptySourceRegions": 89
+  },
+  "notes": [
+    "42个首版物品图标的源图数量已补齐；32×32导出与游戏映射仍待完成。",
+    "界面组件为新生成源图；没有替换当前游戏的界面，也没有完成九宫格边界和鼠标热点的生产导出。",
+    "面板和控件源图没有严格落在等分网格上，已单独记录人工选定区域，不能直接按列行等分截取。",
+    "文字、数量、进度数值和界面布局由程序负责；本批图不含烘焙文字。",
+    "烹饪锅图标已修正为暗紫色锅身、绿色汤汁，以对应现有场景物件。",
+    "拼装预览验证了物品选中、状态条最小/最大值、对话表情切换与禁用控件；整页截图工具超时，改为检查实际渲染的组件画布。头像源图仍有肩部格边接触，生产头像裁切仍待人工校对。"
+  ],
+  "previewFile": "art/previews/ui-inventory-batch-04-v1.html",
+  "auditFile": "art/planning/batch-04-alpha-audit.json",
+  "previewAuditFile": "art/planning/batch-04-browser-audit.json",
+  "inventoryCatalog": "art/planning/inventory-icon-catalog-v1.json",
+  "uiCatalog": "art/planning/ui-component-catalog-v1.json",
+  "existingMaterialRegionCorrection": "art/planning/batch-04-existing-material-region-fix.json"
+}

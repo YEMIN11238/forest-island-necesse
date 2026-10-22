@@ -1,0 +1,5 @@
+{
+  "key": "tools_clean",
+  "prompt": "Use case: precise-object-edit. Edit target: the provided Mosslume tool atlas. Remove ONLY the thin horizontal and vertical grid lines/dividers and every stray pixel belonging to these lines, replacing them with genuine alpha transparency. Preserve all seven tool illustrations exactly, their shapes, colors, pose, order, optical size and location. Preserve the 4 columns x 2 rows atlas: axe, pickaxe, shovel, hoe / watering can, fishing rod, hammer, completely empty transparent eighth slot. Entire background/gutters/empty eighth slot must be truly transparent, with no grid or lines at all, no added colored backdrop, glow, checkerboard, shadows or border. Leave tools themselves opaque. Do not redesign or add objects, do not crop the canvas, no text.",
+  "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6f3aa323-bb15-4798-ab4c-6d45bb2cf483.png"
+}

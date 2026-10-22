@@ -1,0 +1,1107 @@
+{
+  "project": "Mosslume",
+  "batch": "05",
+  "date": "2026-10-22",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "totals": {
+    "atlases": 8,
+    "sourceComponents": 37
+  },
+  "assets": [
+    {
+      "id": "cottage_layers",
+      "name": "小屋屋顶、墙体与门窗分层源图",
+      "file": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-170eba0a-d403-4193-9d05-34e66db25fe7.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "11e4b5da90651ee19aae06f01d40e73cc3cd830163d2453c3484c5cafca4ee2f",
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "regions": [
+        {
+          "id": "cottage-roof",
+          "name": "屋顶与烟囱",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            535,
+            570
+          ],
+          "previewTrimRect": [
+            26,
+            106,
+            494,
+            389
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "cottage-walls",
+          "name": "下层墙体",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            535,
+            0,
+            535,
+            570
+          ],
+          "previewTrimRect": [
+            539,
+            232,
+            511,
+            310
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "door-closed",
+          "name": "门·关闭",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1070,
+            0,
+            466,
+            570
+          ],
+          "previewTrimRect": [
+            1143,
+            331,
+            249,
+            211
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 0,
+          "productionExportValidated": false
+        },
+        {
+          "id": "door-open",
+          "name": "门·打开",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            570,
+            535,
+            454
+          ],
+          "previewTrimRect": [
+            146,
+            689,
+            286,
+            242
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "window-dark",
+          "name": "窗·暗",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            535,
+            570,
+            535,
+            454
+          ],
+          "previewTrimRect": [
+            717,
+            739,
+            165,
+            154
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "window-lit",
+          "name": "窗·亮",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1070,
+            570,
+            466,
+            454
+          ],
+          "previewTrimRect": [
+            1196,
+            739,
+            166,
+            154
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/housing/cottage-layers-source-v1.prompt.txt",
+      "referenceKeys": [
+        "house"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.72993,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-170eba0a-d403-4193-9d05-34e66db25fe7.png",
+          "prompt": "Use case: style-transfer.\nAsset type: original cottage modular SOURCE atlas, EXACTLY SIX separated components in 3 columns x 2 rows, landscape canvas.\nImage 1 is our established cottage IDENTITY and pixel style reference. Preserve its steep front-facing A-frame, orange/golden timber eaves and ridge, purple roof tiles, cream ochre plaster walls, dark navy-blue foundation/door arch and orange wooden double door. No new architectural style.\nTOP LEFT: ROOF ONLY including triangular attic gable and small left grey chimney; no lower walls, door, foundation or ground. TOP MIDDLE: COMPLETE LOWER WALL SHELL only, cream plaster and timber supports on dark-blue stone foundation, no roof/chimney. Central front doorway and two small side window openings are truly transparent cutouts, no doors/glass. TOP RIGHT: orange double door CLOSED, with its matching navy arch frame.\nBOTTOM LEFT: same door and navy arch OPEN, both orange leaves folded aside with a dark quiet interior opening; same camera, scale, outer arch silhouette and ground line as the closed door. BOTTOM MIDDLE: one small dark/unlit window unit, timber frame and muted blue glass. BOTTOM RIGHT: identical window unit with amber interior-lit glass, same frame and size; no external glow.\nTechnical: roof and wall cell use a COMMON 96x112 logical assembly canvas and same x center/ground anchor even if individual layers leave lots of empty transparent space. Roof peak at y8, ridge slopes down to eaves at y68; lower wall spans y58 to102; doorway centered with bottom at y102. Keep roof timber decoration only in roof layer so roof can be hidden for interiors. Door/window cells are separate parts at the same world pixel scale; do not enlarge them to fill the cell. Opaque materials, true transparent cutout holes in wall. Not an exploded diagram, no guide outlines or duplicate complete house.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "furniture",
+      "name": "床、桌椅、柜架和室内灯具",
+      "file": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-8edba25f-aded-477a-bbc0-0ea27576e368.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3d091571755645b60834512f6f03bbabbb4550c30af867f1089c409c3fb5d4b9",
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "regions": [
+        {
+          "id": "bed",
+          "name": "床",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            186,
+            45,
+            304,
+            422
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 0,
+          "productionExportValidated": false
+        },
+        {
+          "id": "table",
+          "name": "餐桌",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            628,
+            178,
+            383,
+            285
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "chair",
+          "name": "椅子",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1155,
+            188,
+            186,
+            275
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "cupboard",
+          "name": "双门柜",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            183,
+            543,
+            317,
+            401
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "bookshelf",
+          "name": "置物书架",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            660,
+            575,
+            314,
+            369
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "floor-lamp",
+          "name": "落地灯",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1203,
+            555,
+            136,
+            389
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/furniture/basic-furniture-source-v1.prompt.txt",
+      "referenceKeys": [
+        "house",
+        "bench"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.67083,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-8edba25f-aded-477a-bbc0-0ea27576e368.png",
+          "prompt": "Use case: style-transfer.\nAsset type: SIX compact interior WORLD furniture sprites, 3 columns x 2 rows, landscape transparent source atlas.\nImage 1 supplies cottage architectural identity; image 2 is our actual world workbench for wood palette, outlines and viewing angle. Do not include either whole reference asset.\nExact cell order: top left a single-person wood BED, headboard at top, ivory pillow, muted teal blanket with small copper edge; top middle small rectangular dining TABLE with warm planks and four short legs, EMPTY top; top right matching wood CHAIR facing down toward the viewer, empty seat. Bottom left tall practical CUPBOARD with two closed paneled doors and brass latch; bottom middle modest open BOOKSHELF with a few teal/plum/ochre books and one small jar; bottom right standalone compact FLOOR LANTERN with dark teal metal stem and amber glass, no light bloom.\nGround footprints for scale: bed32x64, table48x32, chair24x24, cupboard32x32 with height48, bookshelf32x24 with height44, floorlamp16x16 with height40 logical px. Maintain this common world scale; chair must be smaller than bed, no normalized equal-sized icon treatment. Entire furniture visible, empty transparent space around all sides. Front-facing top-down oblique camera like the workbench, no isometric diamonds. No room scene, rugs, characters or attached dirt.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "interior_parts",
+      "name": "室内地板、墙面与小装饰",
+      "file": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-64f72300-abd4-406c-963d-28b696fa383b.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "08957351937bc72966712394f778a944f7ce14957e3ebccd9c71a6cb14061fed",
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "regions": [
+        {
+          "id": "plank-floor",
+          "name": "木地板",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            88,
+            129,
+            373,
+            367
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 0,
+          "productionExportValidated": false
+        },
+        {
+          "id": "interior-wall",
+          "name": "室内墙面",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            537,
+            172,
+            473,
+            273
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "occlusion-trim",
+          "name": "前景遮挡边",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1048,
+            324,
+            453,
+            106
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "woven-rug",
+          "name": "编织地毯",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            114,
+            644,
+            389,
+            266
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "potted-plant",
+          "name": "盆栽",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            664,
+            591,
+            227,
+            314
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "wall-lamp",
+          "name": "壁灯",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1191,
+            604,
+            142,
+            292
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/housing/interior-parts-source-v1.prompt.txt",
+      "referenceKeys": [
+        "house",
+        "bench"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.68733,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-64f72300-abd4-406c-963d-28b696fa383b.png",
+          "prompt": "Use case: style-transfer.\nAsset type: SIX interior construction/decor SOURCE components in 3 columns x 2 rows.\nImages 1-2 are cottage identity and world wood sprite style references. Build matching simple room materials, no complete house.\nTOP ROW: (1) ONE square wooden FLOOR MODULE, orthographic top surface only, honey-brown short plank seams, simple 32x32 logical tile appearance, entire square opaque with transparent padding around it; no border bevel or perspective. (2) ONE straight BACK WALL MODULE, cream plaster panel with warm brown timber lower skirting, 48px wide x32px tall logical, front face flat, no doors/windows/roof. (3) ONE horizontal FRONT OCCLUSION TRIM, dark brown top rail and narrow navy stone underside, logical48x10, no wall attached, suitable to layer in front of a character.\nBOTTOM ROW: (4) small oval WOVEN RUG, muted teal and ochre simple geometric border, flat top-down ground view; (5) small terracotta POTTED LEAF PLANT with compact round lime leaves, simple warm pot; (6) WALL LANTERN facing viewer, brass/teal bracket and amber glass, no baked exterior halo.\nAll are independent cutouts with zero surrounding scene; ground plane modules lie flat, wall lamp vertical, no supporting wall behind decorations. Floor is a source tile; do not pretend to include every corner/autotile variant. Rug32x24, pot16x16 footprint with24px height, walllamp16x24 logical. Keep the common world scale.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "tree_states",
+      "name": "树桩、幼树与再生状态",
+      "file": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-f935208f-004e-4afc-8f05-1452e34d56b2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cecda250ba637a8c451d7f8e5c5c9594fadbcb4e088b104d76c593530fb180d5",
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "regions": [
+        {
+          "id": "stump",
+          "name": "树桩",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            141,
+            256,
+            274,
+            159
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "stump-regrowth",
+          "name": "树桩再生",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            630,
+            228,
+            272,
+            188
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "seedling",
+          "name": "新芽",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1220,
+            279,
+            136,
+            137
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "sapling",
+          "name": "幼树",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            175,
+            609,
+            245,
+            299
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "young-tree",
+          "name": "小树",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            606,
+            540,
+            329,
+            375
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "fallen-branch",
+          "name": "落枝",
+          "column": 2,
+          "row": 1,
+          "sourceRegion": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "previewTrimRect": [
+            1165,
+            718,
+            254,
+            172
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/nature/tree-resource-states-source-v1.prompt.txt",
+      "referenceKeys": [
+        "tree",
+        "treeWood"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.81207,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-f935208f-004e-4afc-8f05-1452e34d56b2.png",
+          "prompt": "Use case: style-transfer.\nAsset type: SIX tree lifecycle/harvest SOURCE world sprites in a 3 columns x 2 rows atlas.\nImage 1 is the approved compact yellow-green drooping canopy shape and leaf palette; image 2 is the approved brown trunk. These references are small world sprites, preserve chunky pixel simplicity, do not make detailed illustrations.\nReading order: TOP LEFT clean harvested short TREE STUMP with warm cut rings and a few roots; TOP MIDDLE SAME stump with tiny fresh lime shoot emerging (regrowth state); TOP RIGHT a newly planted tiny SEEDLING, brown stem and two leaves. BOTTOM LEFT small SAPLING with slim trunk and two compact lobed leaf tufts; BOTTOM MIDDLE YOUNG TREE with rounded drooping canopy of the same species, roughly 60 percent the height of mature reference tree, trunk visible; BOTTOM RIGHT one short FALLEN BRANCH with two little leaves, pickup object.\nCommon world scale and neutral ground anchor, all stages use comparable logical48x64 transparent cells. Stump only10px high and18px wide, seedling10px high, sapling24px high, youngtree40px high approximately. Do NOT enlarge tiny stages to icon-size. All six separated, no mature full tree, no grass/dirt patches, chopped debris or attached tools. Each is a state, not a swaying animation frame.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "berry_states",
+      "name": "浆果灌木四种采集状态",
+      "file": "art/environment/nature/berry-harvest-states-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-59f1fbde-e925-44fe-a149-6c2835f55c48.png",
+      "width": 1402,
+      "height": 1122,
+      "sha256": "b7789cf9fc27a9d949c9c4cde3905598d4acbb662d6507925f87347062a34cc4",
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "regions": [
+        {
+          "id": "berry-empty",
+          "name": "采摘后",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            74,
+            128,
+            555,
+            384
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "berry-flowering",
+          "name": "开花",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            701,
+            0,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            775,
+            128,
+            556,
+            384
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "berry-unripe",
+          "name": "青果",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            561,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            74,
+            674,
+            555,
+            382
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "berry-ripe",
+          "name": "成熟",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            701,
+            561,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            774,
+            674,
+            557,
+            382
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/nature/berry-harvest-states-source-v1.prompt.txt",
+      "referenceKeys": [
+        "berry",
+        "tree"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1402,
+        "height": 1122,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.49296,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-59f1fbde-e925-44fe-a149-6c2835f55c48.png",
+          "prompt": "Use case: style-transfer.\nAsset type: FOUR STATE WORLD sprite atlas, 2 columns x 2 rows square canvas, same berry bush repeated exactly.\nImage 1 is the approved low dense world berry shrub. Image 2 is foliage outline/palette style only. Match image 1's low compact irregular yellow-lime foliage mound and dark green outline, not tall grass, fern or giant bush.\nTop left harvested bush with NO fruits/flowers. Top right exactly same bush with 4 small pale cream blossoms. Bottom left exactly same bush with 4 small unripe green berries. Bottom right exactly same bush with 5-6 tiny purple-magenta ripe berry clusters. Keep the identical leaf silhouette, branch locations, root center, scale, base line and camera across all four cells; only flowers/fruits change. Low broad shrub around logical28x20, fixed identical 40x32 logical transparent frame each. This is an interaction/state sheet, not four variants. No soil, planter, ground shadow or detached fruit.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "rock_states",
+      "name": "岩石采集与破碎状态",
+      "file": "art/environment/nature/rock-harvest-states-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-79b902ad-be13-47db-a309-bd11b34bde6e.png",
+      "width": 1402,
+      "height": 1122,
+      "sha256": "c76b76c176dd34b3aaf8927f0d45b927747613c54cbf4a939eea9f735c8599e3",
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "regions": [
+        {
+          "id": "rock-intact",
+          "name": "完整",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            97,
+            162,
+            514,
+            338
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "rock-cracked",
+          "name": "裂纹",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            701,
+            0,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            799,
+            162,
+            512,
+            338
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "rock-damaged",
+          "name": "破损",
+          "column": 0,
+          "row": 1,
+          "sourceRegion": [
+            0,
+            561,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            97,
+            690,
+            518,
+            338
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "rock-depleted",
+          "name": "剩余碎石",
+          "column": 1,
+          "row": 1,
+          "sourceRegion": [
+            701,
+            561,
+            701,
+            561
+          ],
+          "previewTrimRect": [
+            800,
+            873,
+            504,
+            158
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/nature/rock-harvest-states-source-v1.prompt.txt",
+      "referenceKeys": [
+        "rock"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1402,
+        "height": 1122,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.68881,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-79b902ad-be13-47db-a309-bd11b34bde6e.png",
+          "prompt": "Use case: style-transfer.\nAsset type: FOUR successive resource WORLD states of ONE same rock, 2x2 transparent atlas.\nImage 1 is the approved world rock sprite: simple low rounded grey stone, dark outline, a few matte slate facets. Preserve its color family and simple chunky pixel surface, no blue crystals, ores or moss.\nTop left intact rock. Top right SAME full silhouette and rock size, two clear small dark cracks. Bottom left SAME footprint, deeply cracked and missing one small upper corner, remaining mass around70percent. Bottom right depleted resource: only low grey rubble and a tiny stone stub within SAME footprint, no full boulder. No crater, no dirt or separate flying particles.\nAll cells share an identical logical40x32 transparent frame, object x-center20, fixed ground baseline y26; intact footprint roughly26x18px. Do NOT enlarge low rubble to match the height of intact rock. Fixed camera and neutral lighting, readable at tiny world scale. Exactly four states in correct order.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "chest_states",
+      "name": "木箱关闭、半开与打开状态",
+      "file": "art/environment/props/chest-states-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-2f8aa6b0-9d63-49b9-a9c5-96123ed83d05.png",
+      "width": 2172,
+      "height": 724,
+      "sha256": "754cd0441e6e3a9ef064c41d95781c492fe2f2b224f25e9cf1ea640d1e66e9b2",
+      "columns": 3,
+      "rows": 1,
+      "count": 3,
+      "regions": [
+        {
+          "id": "chest-closed",
+          "name": "关闭",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            724,
+            724
+          ],
+          "previewTrimRect": [
+            115,
+            225,
+            543,
+            406
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "chest-opening",
+          "name": "半开",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            724,
+            0,
+            724,
+            724
+          ],
+          "previewTrimRect": [
+            826,
+            115,
+            521,
+            517
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        },
+        {
+          "id": "chest-open",
+          "name": "打开",
+          "column": 2,
+          "row": 0,
+          "sourceRegion": [
+            1448,
+            0,
+            724,
+            724
+          ],
+          "previewTrimRect": [
+            1543,
+            54,
+            516,
+            577
+          ],
+          "regionStatus": "nominal_grid_pending_runtime_export",
+          "edgeMaxAlpha": 0,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/props/chest-states-source-v1.prompt.txt",
+      "referenceKeys": [
+        "chest"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 2172,
+        "height": 724,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.54232,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-2f8aa6b0-9d63-49b9-a9c5-96123ed83d05.png",
+          "prompt": "Use case: style-transfer.\nAsset type: THREE sequential world chest open/closed state sprites, 3 columns x1 row, wide transparent atlas.\nImage 1 is our existing warm orange wooden world chest with dark metal bands, central latch and strong dark outline. Match exact chest identity and compact overhead front-facing angle.\nLEFT: chest completely closed, curved plank lid. MIDDLE: same chest body at same position, lid rotated back half-open on rear hinge. RIGHT: same chest body fully open, lid rotated back, quiet dark empty interior visible. Nothing inside or floating above. Body, feet, front latch position, front panel and width remain identical through all three states; hinge at back edge. Only lid rotates. Shared logical40x40 frame; footprint24x18, fixed ground baseline32; open lid may reach higher within frame. No size or camera changes between frames, no chest variant or extra lock/key.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    },
+    {
+      "id": "village_props",
+      "name": "铁砧与原创村庄公告牌",
+      "file": "art/environment/props/village-props-source-v1.png",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-51b5d97f-e6ad-4fc6-8f60-5fb5991f9a98.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "019331bfc5719c91b8bcf04ded6cb6ca2e3df42f94b406347fb5b3d51fd95ef6",
+      "columns": 2,
+      "rows": 1,
+      "count": 2,
+      "regions": [
+        {
+          "id": "anvil",
+          "name": "铁砧",
+          "column": 0,
+          "row": 0,
+          "sourceRegion": [
+            0,
+            0,
+            755,
+            887
+          ],
+          "previewTrimRect": [
+            209,
+            455,
+            415,
+            350
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 0,
+          "productionExportValidated": false
+        },
+        {
+          "id": "noticeboard",
+          "name": "村庄公告牌",
+          "column": 1,
+          "row": 0,
+          "sourceRegion": [
+            755,
+            0,
+            1019,
+            887
+          ],
+          "previewTrimRect": [
+            817,
+            125,
+            819,
+            680
+          ],
+          "regionStatus": "manual_preview_region_pending_runtime_export",
+          "edgeMaxAlpha": 1,
+          "productionExportValidated": false
+        }
+      ],
+      "promptFile": "art/environment/props/village-props-source-v1.prompt.txt",
+      "referenceKeys": [
+        "bench",
+        "house"
+      ],
+      "status": "source_generated_pending_alignment_and_runtime_export",
+      "runtimeTextureReady": false,
+      "alphaAudit": {
+        "width": 1774,
+        "height": 887,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.69342,
+        "canvasEdgeMaxAlpha": 1,
+        "regionEdgeMaxAlpha": 1
+      },
+      "generationHistory": [
+        {
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-51b5d97f-e6ad-4fc6-8f60-5fb5991f9a98.png",
+          "prompt": "Use case: style-transfer.\nAsset type: TWO original settlement WORLD sprites side by side in a transparent source atlas, 2 columns x1 row.\nImage 1 supplies world workbench pixel scale and wood palette; image 2 supplies cottage amber/purple architectural details. No copies of complete reference assets.\nLEFT: compact practical charcoal-grey iron ANVIL, horn points left, blocky metal top, short warm brown wooden stump pedestal, no tools/embers. RIGHT: village NOTICEBOARD, two short timber posts, tiny purple shingle roof with amber eaves, cream paper map and two small paper notes pinned under roof. One simple green leaf pictogram on center paper, NO letters, glyphs, numbers or writing strokes; we will render text in the game. Clearly a low community board, not a building. Board logical48pxwide x48pxtall; anvil logical24pxwide x24pxtall; keep shared world scale, do not inflate anvil to match board.\nFront-facing overhead RPG sprite camera and simple broad pixel clusters, isolated cutouts with generous gutters.\nStyle: original Mosslume world sprite SOURCE art matching the supplied existing world sprites: compact 2D top-down three-quarter RPG view, front faces visible, horizontal front edges, NOT isometric diamond view. Strong dark forest-green/brown pixel outlines, chunky deliberate square pixel clusters, 3-4 matte shade steps, warm amber wood, vivid yellow-green plants, restrained purple and dark teal details. These are WORLD objects, not glossy inventory icons. Consistent neutral upper-left base light only; dynamic game lighting and cast shadows will be applied separately. Readable at logical 32px ground tiles, enlarged source art for review.\nGenuinely alpha-transparent background including all gutters. NO painted checkerboard, backdrop, ground patch, drop shadow, halo, ambient glow, words, numbers, labels, grid lines, frames or watermarks. Every subject entirely inside its own invisible equal cell with generous transparent padding. No cropping.",
+          "selected": true
+        }
+      ],
+      "visualSourceReview": "checked_subject_count_order_reference_identity_and_alpha_transparency"
+    }
+  ],
+  "notes": [
+    "本批是房屋、家具和资源状态源图，未替换运行游戏。",
+    "房屋组件未遵循统一画布坐标，需要缩放/锚点校准后才可生产导出；预览使用单独校准的拼装参数。",
+    "植物、岩石和门窗为状态图，箱子为三种开关姿态；不代表完整动画或运行时交互已经完成。",
+    "基础光照为中性贴图明暗，动态阴影、夜间光晕交给运行时。",
+    "木地板只有一个源模块，尚未声明为无缝自动拼接图集。"
+  ],
+  "previewFile": "art/previews/world-assets-batch-05-v1.html",
+  "auditFile": "art/planning/batch-05-alpha-audit.json",
+  "previewAuditFile": "art/planning/batch-05-browser-audit.json",
+  "visualReviewNotes": [
+    "小屋关门/开门、暗窗/亮窗及隐藏屋顶的实际渲染画布已查看；门窗框局部重叠和锚点仍需生产校准。",
+    "家具试摆画布已查看；地板模块的深色外框形成明显拼缝，下一阶段需要补无边框无缝地板与墙体连接模块。",
+    "树桩、幼树与小树在同屏采用不同尺寸，未按缩略图统一放大。",
+    "岩石耗尽状态保留碎石低矮高度，未把碎石放大至完整岩石高度。"
+  ]
+}

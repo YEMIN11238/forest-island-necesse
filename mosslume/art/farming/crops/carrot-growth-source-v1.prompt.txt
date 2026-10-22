@@ -1,0 +1,13 @@
+Use case: style-transfer.
+Asset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.
+Input image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.
+Use neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.
+Composition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.
+Crop: CARROT. Exactly six states in reading order:
+1 SOWN: a few tiny dark tan carrot seeds in a tiny dark-brown root-contact mark, no leaves.
+2 SPROUT: tiny pair of rounded cotyledon leaves, about one sixth mature height.
+3 YOUNG: small fern-like fan of 3 light green carrot leaves, no orange root yet.
+4 GROWING: larger feathery green leaf rosette, with a small orange root shoulder just at the root point.
+5 RIPE: dense lush fan of deeply divided carrot leaves, darker leaf undersides and bright lime highlights, with clearly visible orange CARROT SHOULDER seated at ground/root point. Most root stays underground; do NOT draw a whole uprooted floating carrot or underground cutaway.
+6 HARVESTED: tiny disturbed root-contact mark and one clipped green leaf scrap; no carrot root and no intact foliage.
+One plant, not a bunch of carried carrots. Mature foliage logical width about 22 pixels, height about 20 pixels. Leaf scale matches the reference island's compact foliage.

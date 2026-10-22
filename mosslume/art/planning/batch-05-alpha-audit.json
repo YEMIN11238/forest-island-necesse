@@ -1,0 +1,74 @@
+{
+  "cottage_layers": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.72993,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "furniture": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.67083,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "interior_parts": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.68733,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "tree_states": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.81207,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "berry_states": {
+    "width": 1402,
+    "height": 1122,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.49296,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "rock_states": {
+    "width": 1402,
+    "height": 1122,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.68881,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "chest_states": {
+    "width": 2172,
+    "height": 724,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.54232,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  },
+  "village_props": {
+    "width": 1774,
+    "height": 887,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.69342,
+    "canvasEdgeMaxAlpha": 1,
+    "regionEdgeMaxAlpha": 1
+  }
+}

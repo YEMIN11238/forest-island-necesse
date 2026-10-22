@@ -1,0 +1,55 @@
+{
+  "titleSource": "outputs/mosslume/branding/title-screen-v1.png",
+  "titleSha256": "aec76f2e917642150b8c124965f0f86bb20e3cfa2eca3a801628caa03e816e3d",
+  "buttons": [
+    {
+      "id": "button-normal",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRect": [
+        41,
+        96,
+        333,
+        127
+      ],
+      "output": "button-normal.png",
+      "operation": "deterministic atlas crop; original artwork unchanged"
+    },
+    {
+      "id": "button-hover",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRect": [
+        415,
+        96,
+        333,
+        127
+      ],
+      "output": "button-hover.png",
+      "operation": "deterministic atlas crop; original artwork unchanged"
+    },
+    {
+      "id": "button-pressed",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRect": [
+        788,
+        96,
+        333,
+        127
+      ],
+      "output": "button-pressed.png",
+      "operation": "deterministic atlas crop; original artwork unchanged"
+    },
+    {
+      "id": "button-disabled",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRect": [
+        1163,
+        96,
+        333,
+        127
+      ],
+      "output": "button-disabled.png",
+      "operation": "deterministic atlas crop; original artwork unchanged"
+    }
+  ],
+  "blankLogo": "1px transparent functional placeholder; title includes fused Mosslume wordmark"
+}

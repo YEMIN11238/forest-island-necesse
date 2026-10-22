@@ -1,0 +1,21 @@
+{
+  "app": "/Users/zhangjunhao/Applications/Mosslume S1 Preview.app",
+  "projectEntry": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/mosslume/Mosslume.app",
+  "desktopEntry": "/Users/zhangjunhao/Desktop/Mosslume.app",
+  "icon": "/Users/zhangjunhao/Applications/Mosslume S1 Preview.app/Contents/Resources/Mosslume.icns",
+  "profile": "/Users/zhangjunhao/Library/Application Support/Mosslume-S1",
+  "version": "0.3.0",
+  "stableEntriesUnchanged": true,
+  "sourceBuiltKernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "adapterSha256": "720feaac7f568127f946797281d1e88659591444937e753e7848205a2afa1234",
+  "iconSha256": "638aff8c56f3d6f67f350d5c5ee6e9dcb48f41a3159b2029efd0a5a08c6a5b3b",
+  "launcherArchitectures": "x86_64 arm64",
+  "defaultLaunch": "branded menu, -islandprofile -mosslume; no automatic -load",
+  "earlyLoadingArtOverrides": [
+    "res/keyart.png",
+    "res/logo.png"
+  ],
+  "profileMigration": "At first normal launch, copy old saves only if the new saves directory is absent; copy settings.cfg only if absent. Old profile untouched.",
+  "runtimeSelfContained": true,
+  "launched": false
+}

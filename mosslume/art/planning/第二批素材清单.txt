@@ -1,0 +1,44 @@
+Mosslume 第二批素材清单
+日期：2026-10-22
+生成工具：内置 image_gen
+状态：七组动作源图草稿，未接入运行游戏。
+
+新增动作姿势合计42个：
+四方向行走各6帧，共24帧。
+向右砍伐、挖矿、浇水各6帧，共18帧。
+
+向下行走：art/characters/player/animations/player-walk-down-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向右行走：art/characters/player/animations/player-walk-right-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向上行走：art/characters/player/animations/player-walk-up-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向左行走：art/characters/player/animations/player-walk-left-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向右砍伐：art/characters/player/animations/player-chop-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向右挖矿：art/characters/player/animations/player-mine-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+向右浇水：art/characters/player/animations/player-water-source-v1.png
+原始图集1536×1024，3列2行，RGBA透明PNG。
+
+播放预览：art/previews/player-animation-batch-02-v1.html
+预览支持暂停/播放、速度、逐帧、脚点对齐开关、64/128/256像素显示；显示位置调整不会修改源图。
+
+检查结果与未完成部分
+- 七张PNG均有真实透明通道，七组各有六个非空姿势，源图和提示词均已保存。
+- 主角身份、服装配色、方向及工具类型已对照检查。
+- 行走的左右脚相位及跨帧细节仍需清理，保留为草稿，不宣称为完成的运行动画。
+- 三种工具动作目前仅朝右，人物和工具尚未分层，其他方向待补。
+- 脚点自动对齐是预览用启发式，最终角色锚点须结合引擎逐帧校对。
+- 运行规格导出、碰撞范围、工具接触时刻及游戏内验收待完成。
+
+完整参数和原始生成路径：art/planning/batch-02-manifest.json
+完整提示词：art/planning/第二批素材-生成提示词.txt
+更新后的素材缺口：art/planning/缺失素材清单-v3.txt

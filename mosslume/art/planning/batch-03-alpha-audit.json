@@ -1,0 +1,531 @@
+{
+  "npc_farmer": {
+    "width": 1254,
+    "height": 1254,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.76894,
+    "nearOpaqueFraction": 0.18427,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "down",
+        "maxAlpha": 255,
+        "visiblePixels": 90303,
+        "bounds": [
+          264,
+          56,
+          508,
+          607
+        ]
+      },
+      {
+        "id": "right",
+        "maxAlpha": 255,
+        "visiblePixels": 68577,
+        "bounds": [
+          766,
+          60,
+          968,
+          608
+        ]
+      },
+      {
+        "id": "up",
+        "maxAlpha": 255,
+        "visiblePixels": 88287,
+        "bounds": [
+          269,
+          660,
+          504,
+          1206
+        ]
+      },
+      {
+        "id": "left",
+        "maxAlpha": 255,
+        "visiblePixels": 72133,
+        "bounds": [
+          771,
+          663,
+          968,
+          1210
+        ]
+      }
+    ]
+  },
+  "npc_carpenter": {
+    "width": 1254,
+    "height": 1254,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.68613,
+    "nearOpaqueFraction": 0.27618,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "down",
+        "maxAlpha": 255,
+        "visiblePixels": 132104,
+        "bounds": [
+          225,
+          72,
+          579,
+          626
+        ]
+      },
+      {
+        "id": "right",
+        "maxAlpha": 255,
+        "visiblePixels": 96528,
+        "bounds": [
+          761,
+          72,
+          982,
+          626
+        ]
+      },
+      {
+        "id": "up",
+        "maxAlpha": 255,
+        "visiblePixels": 130035,
+        "bounds": [
+          230,
+          627,
+          572,
+          1200
+        ]
+      },
+      {
+        "id": "left",
+        "maxAlpha": 255,
+        "visiblePixels": 97737,
+        "bounds": [
+          762,
+          627,
+          989,
+          1203
+        ]
+      }
+    ]
+  },
+  "npc_merchant": {
+    "width": 1254,
+    "height": 1254,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.75552,
+    "nearOpaqueFraction": 0.20601,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "down",
+        "maxAlpha": 255,
+        "visiblePixels": 100737,
+        "bounds": [
+          250,
+          57,
+          513,
+          624
+        ]
+      },
+      {
+        "id": "right",
+        "maxAlpha": 255,
+        "visiblePixels": 79402,
+        "bounds": [
+          758,
+          57,
+          988,
+          624
+        ]
+      },
+      {
+        "id": "up",
+        "maxAlpha": 255,
+        "visiblePixels": 91818,
+        "bounds": [
+          262,
+          659,
+          519,
+          1208
+        ]
+      },
+      {
+        "id": "left",
+        "maxAlpha": 255,
+        "visiblePixels": 77996,
+        "bounds": [
+          781,
+          656,
+          1010,
+          1214
+        ]
+      }
+    ]
+  },
+  "materials": {
+    "width": 1448,
+    "height": 1086,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.5941,
+    "nearOpaqueFraction": 0.33993,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "log",
+        "maxAlpha": 255,
+        "visiblePixels": 57264,
+        "bounds": [
+          40,
+          60,
+          355,
+          361
+        ]
+      },
+      {
+        "id": "stone",
+        "maxAlpha": 255,
+        "visiblePixels": 55735,
+        "bounds": [
+          399,
+          85,
+          696,
+          350
+        ]
+      },
+      {
+        "id": "plant-fiber",
+        "maxAlpha": 255,
+        "visiblePixels": 52145,
+        "bounds": [
+          752,
+          50,
+          1072,
+          360
+        ]
+      },
+      {
+        "id": "plank",
+        "maxAlpha": 255,
+        "visiblePixels": 59150,
+        "bounds": [
+          1122,
+          75,
+          1422,
+          361
+        ]
+      },
+      {
+        "id": "clay",
+        "maxAlpha": 255,
+        "visiblePixels": 59901,
+        "bounds": [
+          27,
+          362,
+          351,
+          700
+        ]
+      },
+      {
+        "id": "copper-ore",
+        "maxAlpha": 255,
+        "visiblePixels": 60677,
+        "bounds": [
+          399,
+          415,
+          701,
+          706
+        ]
+      },
+      {
+        "id": "iron-ore",
+        "maxAlpha": 255,
+        "visiblePixels": 62656,
+        "bounds": [
+          755,
+          418,
+          1061,
+          702
+        ]
+      },
+      {
+        "id": "copper-bar",
+        "maxAlpha": 255,
+        "visiblePixels": 51547,
+        "bounds": [
+          1115,
+          362,
+          1427,
+          695
+        ]
+      },
+      {
+        "id": "iron-bar",
+        "maxAlpha": 255,
+        "visiblePixels": 53012,
+        "bounds": [
+          32,
+          762,
+          352,
+          1037
+        ]
+      },
+      {
+        "id": "coal",
+        "maxAlpha": 255,
+        "visiblePixels": 60688,
+        "bounds": [
+          390,
+          762,
+          709,
+          1036
+        ]
+      },
+      {
+        "id": null,
+        "maxAlpha": 1,
+        "visiblePixels": 0,
+        "bounds": null
+      },
+      {
+        "id": null,
+        "maxAlpha": 1,
+        "visiblePixels": 0,
+        "bounds": null
+      }
+    ]
+  },
+  "crop_wheat": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.77087,
+    "nearOpaqueFraction": 0.13489,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "sown",
+        "maxAlpha": 253,
+        "visiblePixels": 10370,
+        "bounds": [
+          204,
+          325,
+          343,
+          432
+        ]
+      },
+      {
+        "id": "sprout",
+        "maxAlpha": 254,
+        "visiblePixels": 15190,
+        "bounds": [
+          685,
+          277,
+          878,
+          511
+        ]
+      },
+      {
+        "id": "young",
+        "maxAlpha": 254,
+        "visiblePixels": 32223,
+        "bounds": [
+          1158,
+          157,
+          1393,
+          432
+        ]
+      },
+      {
+        "id": "growing",
+        "maxAlpha": 254,
+        "visiblePixels": 65017,
+        "bounds": [
+          145,
+          535,
+          431,
+          956
+        ]
+      },
+      {
+        "id": "ripe",
+        "maxAlpha": 254,
+        "visiblePixels": 116838,
+        "bounds": [
+          548,
+          512,
+          1010,
+          959
+        ]
+      },
+      {
+        "id": "harvested",
+        "maxAlpha": 254,
+        "visiblePixels": 16272,
+        "bounds": [
+          1198,
+          804,
+          1356,
+          958
+        ]
+      }
+    ]
+  },
+  "crop_carrot": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.76552,
+    "nearOpaqueFraction": 0.1244,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "sown",
+        "maxAlpha": 254,
+        "visiblePixels": 7358,
+        "bounds": [
+          192,
+          372,
+          334,
+          460
+        ]
+      },
+      {
+        "id": "sprout",
+        "maxAlpha": 253,
+        "visiblePixels": 12857,
+        "bounds": [
+          683,
+          322,
+          836,
+          454
+        ]
+      },
+      {
+        "id": "young",
+        "maxAlpha": 254,
+        "visiblePixels": 40825,
+        "bounds": [
+          1130,
+          187,
+          1440,
+          459
+        ]
+      },
+      {
+        "id": "growing",
+        "maxAlpha": 253,
+        "visiblePixels": 58769,
+        "bounds": [
+          90,
+          627,
+          463,
+          928
+        ]
+      },
+      {
+        "id": "ripe",
+        "maxAlpha": 254,
+        "visiblePixels": 101521,
+        "bounds": [
+          550,
+          573,
+          1023,
+          928
+        ]
+      },
+      {
+        "id": "harvested",
+        "maxAlpha": 253,
+        "visiblePixels": 9563,
+        "bounds": [
+          1024,
+          754,
+          1440,
+          935
+        ]
+      }
+    ]
+  },
+  "crop_pumpkin": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.66372,
+    "nearOpaqueFraction": 0.13959,
+    "canvasEdgeMaxAlpha": 1,
+    "cells": [
+      {
+        "id": "sown",
+        "maxAlpha": 253,
+        "visiblePixels": 6614,
+        "bounds": [
+          202,
+          348,
+          339,
+          427
+        ]
+      },
+      {
+        "id": "sprout",
+        "maxAlpha": 253,
+        "visiblePixels": 14226,
+        "bounds": [
+          672,
+          296,
+          861,
+          418
+        ]
+      },
+      {
+        "id": "young",
+        "maxAlpha": 253,
+        "visiblePixels": 37895,
+        "bounds": [
+          1094,
+          227,
+          1440,
+          418
+        ]
+      },
+      {
+        "id": "growing",
+        "maxAlpha": 254,
+        "visiblePixels": 65084,
+        "bounds": [
+          73,
+          682,
+          471,
+          911
+        ]
+      },
+      {
+        "id": "ripe",
+        "maxAlpha": 254,
+        "visiblePixels": 96667,
+        "bounds": [
+          552,
+          625,
+          1013,
+          918
+        ]
+      },
+      {
+        "id": "harvested",
+        "maxAlpha": 253,
+        "visiblePixels": 33622,
+        "bounds": [
+          1119,
+          754,
+          1465,
+          909
+        ]
+      }
+    ]
+  }
+}

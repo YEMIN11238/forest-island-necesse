@@ -1,0 +1,59 @@
+Mosslume 第三批素材清单
+日期：2026-10-22
+生成工具：内置 image_gen
+状态：7张源图集已保存，未接入游戏。
+
+新增内容：
+- 农夫、木匠、商人各4方向，共12个静态方向造型。
+- 原木、石头、植物纤维、木板、黏土、铜矿、铁矿、铜锭、铁锭、煤，共10个资源图标。
+- 小麦、胡萝卜、南瓜各6状态，共18个作物状态。
+
+居民图集读取顺序：左上正面/向下，右上向右，左下背面/向上，右下向左。
+作物图集读取顺序：播种、发芽、幼苗、成长、成熟、收获后。
+资源图集读取顺序：原木、石头、植物纤维、木板；黏土、铜矿、铁矿、铜锭；铁锭、煤、空、空。
+
+农夫四方向造型
+art/characters/residents/farmer-directions-source-v1.png
+1254×1254，RGBA透明PNG；4个可见内容格。
+
+木匠四方向造型
+art/characters/residents/carpenter-directions-source-v1.png
+1254×1254，RGBA透明PNG；4个可见内容格。
+
+商人四方向造型
+art/characters/residents/merchant-directions-source-v1.png
+1254×1254，RGBA透明PNG；4个可见内容格。
+
+十种基础资源图标
+art/items/materials/basic-materials-atlas-v1.png
+1448×1086，RGBA透明PNG；10个可见内容格。
+
+小麦六阶段
+art/farming/crops/wheat-growth-source-v1.png
+1536×1024，RGBA透明PNG；6个可见内容格。
+
+胡萝卜六阶段
+art/farming/crops/carrot-growth-source-v1.png
+1536×1024，RGBA透明PNG；6个可见内容格。
+
+南瓜六阶段
+art/farming/crops/pumpkin-growth-source-v1.png
+1536×1024，RGBA透明PNG；6个可见内容格。
+
+检查与修正：
+- 七图集已检查透明通道、内容格数及内容顺序。
+- 资源图集末尾两个槽位没有可见内容；少量alpha=1的透明边缘噪声保留在原始输出中。
+- 木匠头身比例修正为与现有小人更接近的比例；商人背面背包和肩带位置已修正。
+- 三种作物都有不同的成长形态和收获后状态，采用参考图的明亮黄绿与深色轮廓。
+
+仍待完成：
+- 人物源图裁切、统一脚点、64×64运行导出、分层与行走/职业动画。
+- 图标32×32导出；目前首版42图标已有17个源图，剩余25个。
+- 作物根部锚点、32×32导出、干湿耕地/施肥素材和运行状态映射。
+- 前两批主角动作仍有步态衔接和工具分层修整项。
+- 游戏内比例、遮挡、受光与交互验证。
+
+预览：art/previews/assets-batch-03-v1.html
+完整提示词：art/planning/第三批素材-生成提示词.txt
+参数与版本历史：art/planning/batch-03-manifest.json
+素材缺口：art/planning/缺失素材清单-v4.txt

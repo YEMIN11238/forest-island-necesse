@@ -1,0 +1,9 @@
+Use case: style-transfer.
+Asset type: transparent inventory icon SOURCE atlas, EXACTLY NINE original items, 3 columns x 3 rows, square canvas.
+Image 1 is the approved tool-icon STYLE reference; no tools from it should appear.
+Exact reading order:
+TOP ROW: wheat seeds in a small kraft seed packet with a tiny wheat-ear PICTURE mark; carrot seeds in a similar packet with a carrot PICTURE mark; pumpkin seeds in a similar packet with a pumpkin PICTURE mark. No written labels on packets. Each packet has a different simple crop pictogram so the three seed types remain distinct.
+MIDDLE ROW: small tied bundle of ripe golden wheat ears; ONE harvested orange carrot with short feathery green tops; ONE plump ribbed orange pumpkin with curved green stem, no vine bed.
+BOTTOM ROW: red apple with one green leaf; three purple-red berries with small green leaf; one brown-cap cream-stem mushroom.
+Seed packets are closed practical paper pouches, not pots. Produce is harvested inventory items, no soil, roots underground or whole growth-stage diagrams. Exactly one isolated item/group per cell, no duplicates or extra scattered food.
+Style: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.

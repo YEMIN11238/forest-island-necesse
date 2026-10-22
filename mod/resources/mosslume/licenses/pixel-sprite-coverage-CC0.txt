@@ -1,0 +1,13 @@
+Sub-pixel accurate pixel sprite filtering
+Author: Morris Tabor Arroad (mortarroad)
+Source: https://godotshaders.com/shader/sub-pixel-accurate-pixel-sprite-filtering/
+Author page: https://godotshaders.com/author/mortarroad/
+License: CC0
+CC0 public domain dedication: https://creativecommons.org/publicdomain/zero/1.0/
+
+The UV mapping was reused from the engine's existing fragPixelScaling.glsl,
+whose embedded source notice identifies the author, source URL and CC0 license.
+Mosslume's mosslumeWind.glsl adapts it for local moving-sprite coverage using
+four NEAREST texel-center samples and premultiplied-alpha interpolation.
+The original notice is retained in the derived shader. No global texture
+filtering or full-screen blur is introduced by this adaptation.

@@ -1,0 +1,33 @@
+Mosslume 素材缺口清单 v6
+日期：2026-10-22
+本次新增：8张源图集，37个组件/状态；不是37类独立物件。
+全部新图仍未接入运行游戏；大图源素材不等于原生32/64像素贴图已完成。
+
+第五批已补：
+• 小屋屋顶、墙体与门窗分层源图：6个源组件/状态；art/environment/housing/cottage-layers-source-v1.png
+• 床、桌椅、柜架和室内灯具：6个源组件/状态；art/environment/furniture/basic-furniture-source-v1.png
+• 室内地板、墙面与小装饰：6个源组件/状态；art/environment/housing/interior-parts-source-v1.png
+• 树桩、幼树与再生状态：6个源组件/状态；art/environment/nature/tree-resource-states-source-v1.png
+• 浆果灌木四种采集状态：4个源组件/状态；art/environment/nature/berry-harvest-states-source-v1.png
+• 岩石采集与破碎状态：4个源组件/状态；art/environment/nature/rock-harvest-states-source-v1.png
+• 木箱关闭、半开与打开状态：3个源组件/状态；art/environment/props/chest-states-source-v1.png
+• 铁砧与原创村庄公告牌：2个源组件/状态；art/environment/props/village-props-source-v1.png
+
+后续优先：
+1. 主角及居民：行走相位、工具各朝向、职业动作；人物与工具分层、脚点和运行规格导出。
+2. 房屋：对齐屋顶/墙体/门窗，室内转角、门洞遮挡、楼层与碰撞；家具其他朝向、坐下/睡眠衔接。
+3. 道路与岸线：弯角、端头、内外角、T形与交叉、浅滩连接。
+4. 农田：干/湿/施肥土和边缘，与18个作物生长状态对应。
+5. 建造：完整墙体/屋顶/地板/围栏模块与施工状态。
+6. 生活设施：码头、小船、水井、晾晒架、邮箱及损坏/修复；当前新增公告牌尚未替换运行物件。
+7. 动物与反馈：首版猫/狗、鸡、鱼；木屑、石屑、尘土、水花、泡沫、雨滴与涟漪。
+8. 独立启动：无字首页背景、透明Logo、应用图标、加载小动效；地图标记。
+9. UI/图标：42个物品图标和64个基础界面组件已有源图，继续裁切、九宫格/鼠标热点和游戏内绑定。
+
+本批检查边界：
+• 8张源图均有真实Alpha透明背景；37个区域均未切到有效图形边缘。
+• 分层小屋未保持统一生成坐标；预览为单独校准的拼装试摆，正式导出需再校准。
+• 资源状态不是随风动画；箱子三姿态仍需铰链对齐和补间。
+• 地板只有一个源模块，未承诺无缝拼接及完整自动拼接图集。
+
+详细记录：art/planning/asset-backlog-v6.json；art/planning/batch-05-manifest.json。

@@ -1,0 +1,1459 @@
+{
+  "project": "Mosslume",
+  "sourceComponentCount": 64,
+  "status": "source_generated_pending_production_slicing_hotspots_and_engine_integration",
+  "components": [
+    {
+      "id": "button-normal",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        25,
+        80,
+        365,
+        155
+      ],
+      "previewTrimRect": [
+        41,
+        96,
+        333,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "button-hover",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        405,
+        80,
+        365,
+        155
+      ],
+      "previewTrimRect": [
+        415,
+        96,
+        333,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "button-pressed",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        785,
+        80,
+        365,
+        155
+      ],
+      "previewTrimRect": [
+        788,
+        96,
+        333,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "button-disabled",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        1138,
+        70,
+        388,
+        170
+      ],
+      "previewTrimRect": [
+        1163,
+        96,
+        333,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "tab-inactive",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        25,
+        300,
+        365,
+        175
+      ],
+      "previewTrimRect": [
+        43,
+        315,
+        331,
+        144
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "tab-active",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        405,
+        300,
+        365,
+        175
+      ],
+      "previewTrimRect": [
+        422,
+        312,
+        336,
+        148
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "checkbox-empty",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        865,
+        290,
+        190,
+        190
+      ],
+      "previewTrimRect": [
+        893,
+        318,
+        139,
+        139
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "checkbox-checked",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        1235,
+        300,
+        180,
+        175
+      ],
+      "previewTrimRect": [
+        1255,
+        318,
+        144,
+        139
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "radio-empty",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        120,
+        525,
+        180,
+        165
+      ],
+      "previewTrimRect": [
+        132,
+        539,
+        138,
+        134
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "radio-selected",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        505,
+        525,
+        170,
+        165
+      ],
+      "previewTrimRect": [
+        511,
+        534,
+        144,
+        142
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "toggle-off",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        810,
+        525,
+        300,
+        165
+      ],
+      "previewTrimRect": [
+        823,
+        545,
+        264,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "toggle-on",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        1190,
+        525,
+        315,
+        165
+      ],
+      "previewTrimRect": [
+        1202,
+        545,
+        263,
+        127
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "scrollbar-track",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        160,
+        700,
+        85,
+        270
+      ],
+      "previewTrimRect": [
+        172,
+        716,
+        61,
+        235
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "scrollbar-thumb",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        530,
+        735,
+        95,
+        210
+      ],
+      "previewTrimRect": [
+        543,
+        756,
+        65,
+        158
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "slider-track",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        750,
+        795,
+        420,
+        95
+      ],
+      "previewTrimRect": [
+        762,
+        817,
+        395,
+        51
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "slider-thumb",
+      "atlasId": "ui_controls",
+      "sourceAtlas": "art/ui/controls/controls-atlas-v1.png",
+      "sourceRegion": [
+        1280,
+        775,
+        150,
+        140
+      ],
+      "previewTrimRect": [
+        1296,
+        795,
+        118,
+        98
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "panel-generic",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        20,
+        65,
+        445,
+        335
+      ],
+      "previewTrimRect": [
+        30,
+        86,
+        421,
+        285
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "tooltip-panel",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        480,
+        110,
+        330,
+        250
+      ],
+      "previewTrimRect": [
+        486,
+        121,
+        310,
+        221
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "dialogue-panel",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        820,
+        70,
+        710,
+        310
+      ],
+      "previewTrimRect": [
+        832,
+        101,
+        679,
+        257
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "portrait-frame",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        15,
+        455,
+        410,
+        420
+      ],
+      "previewTrimRect": [
+        31,
+        483,
+        377,
+        376
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "recipe-panel",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        440,
+        405,
+        445,
+        560
+      ],
+      "previewTrimRect": [
+        461,
+        431,
+        402,
+        512
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "toast-panel",
+      "atlasId": "ui_panels",
+      "sourceAtlas": "art/ui/panels/panels-atlas-v1.png",
+      "sourceRegion": [
+        905,
+        560,
+        620,
+        250
+      ],
+      "previewTrimRect": [
+        924,
+        583,
+        578,
+        185
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "slot-normal",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        61,
+        61,
+        283,
+        273
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "slot-selected",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        362,
+        0,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        410,
+        61,
+        284,
+        274
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "slot-disabled",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        724,
+        0,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        757,
+        61,
+        285,
+        273
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "health-heart",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        1086,
+        0,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        1123,
+        94,
+        279,
+        241
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "energy-leaf",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        362,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        77,
+        407,
+        247,
+        286
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "hunger-plate",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        362,
+        362,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        406,
+        407,
+        276,
+        281
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "time-clock",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        724,
+        362,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        763,
+        387,
+        264,
+        301
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "date-calendar",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        1086,
+        362,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        1119,
+        401,
+        283,
+        288
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "weather-sun",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        724,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        43,
+        725,
+        301,
+        298
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "weather-moon",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        362,
+        724,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        423,
+        739,
+        247,
+        275
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "weather-rain",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        724,
+        724,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        745,
+        740,
+        298,
+        284
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "currency-coin",
+      "atlasId": "ui_hud",
+      "sourceAtlas": "art/ui/hud/hud-icons-atlas-v1.png",
+      "sourceRegion": [
+        1086,
+        724,
+        362,
+        362
+      ],
+      "previewTrimRect": [
+        1122,
+        735,
+        280,
+        280
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "health-track",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        29,
+        207,
+        473,
+        92
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "health-fill",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        558,
+        230,
+        420,
+        50
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "energy-track",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        1024,
+        0,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        1034,
+        207,
+        472,
+        93
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "energy-fill",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        36,
+        744,
+        450,
+        50
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "progress-track",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        530,
+        722,
+        476,
+        92
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "progress-fill",
+      "atlasId": "ui_bars",
+      "sourceAtlas": "art/ui/hud/status-bars-atlas-v1.png",
+      "sourceRegion": [
+        1024,
+        512,
+        512,
+        512
+      ],
+      "previewTrimRect": [
+        1049,
+        744,
+        451,
+        50
+      ],
+      "targetPixels": null,
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-happy",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        20,
+        40,
+        305,
+        295
+      ],
+      "previewTrimRect": [
+        41,
+        60,
+        275,
+        251
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-question",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        330,
+        40,
+        305,
+        295
+      ],
+      "previewTrimRect": [
+        348,
+        62,
+        277,
+        250
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-refuse",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        640,
+        40,
+        305,
+        295
+      ],
+      "previewTrimRect": [
+        654,
+        62,
+        275,
+        250
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-tired",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        945,
+        40,
+        306,
+        295
+      ],
+      "previewTrimRect": [
+        957,
+        66,
+        275,
+        246
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-hungry",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        20,
+        345,
+        305,
+        280
+      ],
+      "previewTrimRect": [
+        39,
+        364,
+        282,
+        244
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "bubble-received",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        330,
+        345,
+        305,
+        280
+      ],
+      "previewTrimRect": [
+        345,
+        364,
+        281,
+        244
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "relation-heart",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        630,
+        312,
+        316,
+        312
+      ],
+      "previewTrimRect": [
+        661,
+        402,
+        242,
+        206
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "trust-handshake",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        946,
+        312,
+        315,
+        312
+      ],
+      "previewTrimRect": [
+        950,
+        385,
+        288,
+        220
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "mood-face",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        624,
+        315,
+        311
+      ],
+      "previewTrimRect": [
+        43,
+        690,
+        264,
+        199
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "schedule-clock",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        315,
+        624,
+        315,
+        311
+      ],
+      "previewTrimRect": [
+        351,
+        648,
+        261,
+        248
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "quest-scroll",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        630,
+        624,
+        316,
+        311
+      ],
+      "previewTrimRect": [
+        646,
+        664,
+        263,
+        249
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "success-check",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        946,
+        624,
+        315,
+        311
+      ],
+      "previewTrimRect": [
+        968,
+        681,
+        245,
+        208
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "failure-cross",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        935,
+        315,
+        312
+      ],
+      "previewTrimRect": [
+        43,
+        964,
+        252,
+        214
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "work-priority",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        315,
+        935,
+        315,
+        312
+      ],
+      "previewTrimRect": [
+        348,
+        958,
+        252,
+        220
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "prohibited",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        630,
+        935,
+        316,
+        312
+      ],
+      "previewTrimRect": [
+        655,
+        956,
+        252,
+        221
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "trade-coins",
+      "atlasId": "ui_feedback",
+      "sourceAtlas": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "sourceRegion": [
+        946,
+        935,
+        315,
+        312
+      ],
+      "previewTrimRect": [
+        953,
+        947,
+        267,
+        232
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-default",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "previewTrimRect": [
+        117,
+        116,
+        181,
+        258
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-interact",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        444,
+        0,
+        443,
+        444
+      ],
+      "previewTrimRect": [
+        518,
+        103,
+        222,
+        288
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-gather",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        887,
+        0,
+        443,
+        444
+      ],
+      "previewTrimRect": [
+        958,
+        97,
+        311,
+        314
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-build",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        1330,
+        0,
+        444,
+        444
+      ],
+      "previewTrimRect": [
+        1389,
+        94,
+        338,
+        324
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-talk",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        0,
+        444,
+        444,
+        443
+      ],
+      "previewTrimRect": [
+        81,
+        506,
+        324,
+        267
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "cursor-pickup",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        444,
+        444,
+        443,
+        443
+      ],
+      "previewTrimRect": [
+        505,
+        518,
+        301,
+        259
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "placement-valid",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        887,
+        444,
+        443,
+        443
+      ],
+      "previewTrimRect": [
+        942,
+        498,
+        325,
+        295
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    },
+    {
+      "id": "placement-invalid",
+      "atlasId": "ui_cursors",
+      "sourceAtlas": "art/ui/cursors/cursors-atlas-v1.png",
+      "sourceRegion": [
+        1330,
+        444,
+        444,
+        443
+      ],
+      "previewTrimRect": [
+        1393,
+        498,
+        327,
+        295
+      ],
+      "targetPixels": [
+        32,
+        32
+      ],
+      "productionNineSlice": null,
+      "cursorHotspot": null,
+      "runtimeTextureReady": false
+    }
+  ]
+}

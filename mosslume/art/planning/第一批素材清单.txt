@@ -1,0 +1,40 @@
+Mosslume 第一批素材清单
+日期：2026-10-21
+生成工具：内置 image_gen
+状态：源图已保存，未替换游戏运行素材。
+
+主角四方向站立造型试片
+art/characters/player/player-directions-prototype-v1.png
+原始图集 1254×1254；真实RGBA透明通道。
+
+主角六种表情
+art/characters/portraits/player-expressions-v1.png
+原始图集 1536×1024；真实RGBA透明通道。
+
+农夫六种表情
+art/characters/portraits/farmer-expressions-v1.png
+原始图集 1536×1024；真实RGBA透明通道。
+
+木匠六种表情
+art/characters/portraits/carpenter-expressions-v1.png
+原始图集 1536×1024；真实RGBA透明通道。
+
+商人六种表情
+art/characters/portraits/merchant-expressions-v1.png
+原始图集 1536×1024；真实RGBA透明通道。
+
+七种基础工具图标
+art/items/tools/basic-tools-atlas-v1.png
+原始图集 1774×887；真实RGBA透明通道。
+
+本批共6张图集：4个主角方向、24个表情头像、7个工具图标。
+主角方向试片只用于确认外观和比例；它不是行走动画，也没有衣物/手臂分层。
+头像和工具需要裁切、规格导出、游戏内尺度验证；本批不修改运行游戏。
+四名角色六种表情顺序：平静、开心、担忧、坚定/生气、难过、惊讶。
+主角方向顺序：左上向下、右上向右、左下向上、右下向左。
+工具顺序：斧、镐、铲、锄；浇水壶、鱼竿、锤、空白。
+下一批优先：主角四方向行走及工具动作，再做三名居民动作和余下35个物品图标。
+详细参数：batch-01-manifest.json
+完整提示词：第一批素材-生成提示词.txt
+更新后缺口：asset-backlog-v2.json
+旧版盘点保留不覆盖。

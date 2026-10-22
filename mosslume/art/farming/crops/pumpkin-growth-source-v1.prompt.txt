@@ -1,0 +1,13 @@
+Use case: style-transfer.
+Asset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.
+Input image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.
+Use neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.
+Composition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.
+Crop: PUMPKIN. Exactly six states in reading order:
+1 SOWN: two tiny pale pumpkin seeds partially in a tiny dark root-contact mark, no green leaf.
+2 SPROUT: small pair of thick round seed leaves.
+3 YOUNG: small creeping vine with 2-3 lobed green leaves, no fruit.
+4 GROWING: broader vine with 4 lobed leaves and one tiny pale-green immature pumpkin under a yellow flower; larger than state 3.
+5 RIPE: one plump ribbed orange pumpkin nestled among dark-outlined lime-green lobed leaves and a curled stem, about 24 logical pixels wide, fruit seated at ground level rather than hovering; brightest orange reserved for ripe fruit.
+6 HARVESTED: short clipped vine stub and two small remaining leaves at the same root point, no fruit.
+Same root origin across all stages. Mature clump is wide and low, not as tall as wheat. One pumpkin per mature clump, no huge fruit or decorative crate.

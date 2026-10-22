@@ -1,0 +1,71 @@
+Mosslume 素材生成第一批｜内置 image_gen｜2026-10-21
+
+=主角四方向站立造型试片=
+保存路径：art/characters/player/player-directions-prototype-v1.png
+
+Use case: identity-preserve.
+Asset type: four-direction standing pixel sprite prototype atlas for a 2D top-down game, opaque figures on a genuinely transparent background.
+Input image: reference character-design lineup. Use ONLY the leftmost traveler as the identity reference, keeping his short tousled dark chestnut hair, warm face, deep teal short jacket, ivory shirt, copper-orange neckerchief, brown trousers, ankle boots and canvas cross-body satchel. Do not use the other three people.
+Primary request: redraw this same original character as four small, clean, compact game sprites in a precise 2 by 2 atlas. Top left faces FRONT toward viewer (down); top right faces RIGHT in true side profile; bottom left faces BACK away from viewer (up); bottom right faces LEFT in true side profile. Exactly one whole standing character per quadrant, all equal size, neutral arms ready to carry a tool, empty hands. All sprites share the same foot baseline within their quadrants and the same body proportions. The back view must have no face or front neckerchief. The bag strap and bag position must stay anatomically consistent across views.
+Style: real deliberate low-resolution pixel art, approximately 40 logical pixels in visible character height placed in a logical 64x64 transparent cell, shown enlarged by an integer-like factor for inspection. Compact approximately 2.5 heads tall. Simple readable pixel clusters, hard square edges, clean one-pixel-equivalent dark outline, tightly limited cohesive palette. This is a small game sprite redrawing, not four big painted concept illustrations. A slight overhead/top-down RPG camera, not isometric. Neutral diffuse light, no baked sunlight or ground shadow.
+Composition: square image, four equal quadrants, generous fully transparent margins, each figure centered horizontally, feet at about 80% of its quadrant height, same scale in every quadrant. No drawn grid, labels, direction arrows, text, UI, backdrop, props, extra characters, glow, shadow ellipses or watermark. Preserve true transparency. This is a static four-view prototype, not a walk animation.
+
+
+=主角六种表情=
+保存路径：art/characters/portraits/player-expressions-v1.png
+
+Use case: identity-preserve.
+Asset type: transparent dialogue portrait expression atlas, 3 columns by 2 rows, six bust portraits of ONE original Mosslume character.
+Input image: character reference lineup. Use ONLY the LEFTMOST protagonist. Preserve exact identity: young androgynous adult, warm light-medium skin, short tousled dark chestnut hair, deep teal jacket over ivory shirt, copper-orange neckerchief, canvas satchel strap. Same face, age, hair shape, costume, lighting and head scale throughout.
+Six expressions in reading order: top row neutral attentive, happy warm smile, worried; bottom row irritated/firm (not villainous), sad, pleasantly surprised. Expressions should be visibly different and emotionally believable. Same gentle three-quarter-facing-camera head-and-shoulders pose in all six, eyes remain at the same height, no hands or tools in the crop.
+Style: polished illustrated pixel-character dialogue portraits matching the provided concept, deliberate pixel-like edges and warm matte shading, clear expressive eyes, forest teal / cream / copper palette, detailed enough for a 256x256 dialogue portrait, no photorealism or 3D.
+Composition: wide 3:2 atlas with exactly six equal cells, one portrait centered in each, clear generous transparent gutters, all hair/head and both shoulders fully inside each cell. Consistent crop and scale. Entire background and gutters genuinely transparent. No boxes, grid lines, captions, names, text, extra people, scenery, shadows or watermark.
+
+
+=农夫六种表情=
+保存路径：art/characters/portraits/farmer-expressions-v1.png
+
+Use case: identity-preserve.
+Asset type: transparent dialogue portrait expression atlas, 3 columns by 2 rows, six bust portraits of ONE original Mosslume character.
+Input image: character reference lineup. Use ONLY the SECOND person from the left, the female farmer. Preserve exact identity: young adult woman, sun-warmed medium skin, copper/auburn hair in a side braid, cream rolled-sleeve shirt, sage-green work clothes and muted golden ochre apron. Keep her face shape, braid position, age, costume and head scale identical in all cells. No basket or seedlings in these portraits.
+Six expressions in reading order: top row neutral attentive, happy warm smile, worried; bottom row irritated/firm, sad, pleasantly surprised. Expressions should be clearly distinguishable while retaining her practical, caring personality. Same gentle three-quarter-facing-camera head-and-shoulders pose, same eye height, same crop, no hands.
+Style: polished illustrated pixel-character dialogue portraits matching the provided concept, deliberate pixel-like edges and warm matte shading, expressive eyes, restrained warm woodland colors, suitable for a 256x256 dialogue portrait, no photorealism or 3D.
+Composition: wide 3:2 atlas with exactly six equal cells, one bust per cell, generous transparent gutters, full hair and shoulders visible, consistent crop and scale. Genuinely transparent background. No boxes, grid lines, captions, names, text, extra people, scenery, shadows or watermark.
+
+
+=木匠六种表情=
+保存路径：art/characters/portraits/carpenter-expressions-v1.png
+
+Use case: identity-preserve.
+Asset type: transparent dialogue portrait expression atlas, 3 columns by 2 rows, six bust portraits of ONE original Mosslume character.
+Input image: character reference lineup. Use ONLY the THIRD person from the left, the male carpenter. Preserve exact identity: middle-aged sturdy man, medium-deep brown skin, short salt-and-pepper curly hair, neat short beard, blue-grey work shirt and warm tan leather apron straps. Keep the same age, friendly strong face, beard, hair shape, costume, head scale and lighting. No hammer in the crop.
+Six expressions in reading order: top row neutral attentive, happy warm smile, worried; bottom row irritated/firm, sad, pleasantly surprised. He is patient and dependable, not a threatening warrior. Same gentle three-quarter-facing-camera head-and-shoulders pose, eye height, crop and scale in all six, no hands.
+Style: polished illustrated pixel-character dialogue portraits matching the reference concept, deliberate pixel-like edges, matte fabric and warm skin shading, suitable for a 256x256 dialogue portrait, no photorealism or 3D.
+Composition: wide 3:2 atlas, exactly six equal cells, one complete bust per cell, generous transparent gutters. Head/hair and shoulders fully inside their cell. Genuine transparent background, no boxes, grid lines, captions, names, text, extra people, scenery, shadows or watermark.
+
+
+=商人六种表情=
+保存路径：art/characters/portraits/merchant-expressions-v1.png
+
+Use case: identity-preserve.
+Asset type: transparent dialogue portrait expression atlas, 3 columns by 2 rows, six bust portraits of ONE original Mosslume character.
+Input image: character reference lineup. Use ONLY the RIGHTMOST woman, the traveling merchant. Preserve exact identity: adult woman with deep brown skin, dark curly hair gathered with a muted plum headscarf, gold hoop earrings, cream shirt, muted plum-brown travel coat and small turquoise pendant. Keep the same face, age, hairstyle, scarf placement, costume and head scale in all cells.
+Six expressions in reading order: top row neutral attentive, happy warm smile, worried; bottom row irritated/firm, sad, pleasantly surprised. She is sociable, alert and independent. Same gentle three-quarter-facing-camera head-and-shoulders pose, same eye height and crop in all six, no hands, map or compass in the crop.
+Style: polished illustrated pixel-character dialogue portraits matching the reference concept, deliberate pixel-like edges, expressive eyes, warm matte shading, restrained plum / cream / turquoise palette, suitable for a 256x256 dialogue portrait, no photorealism or 3D.
+Composition: wide 3:2 atlas, exactly six equal cells, one bust per cell, transparent generous gutters, all hair/scarf and shoulders fully visible in each cell. Genuine transparent background. No boxes, grid lines, captions, names, text, extra people, scenery, shadows or watermark.
+
+
+=七种基础工具图标=
+保存路径：art/items/tools/basic-tools-atlas-v1.png
+
+Use case: stylized-concept.
+Asset type: original Mosslume basic-tool inventory icon atlas, truly transparent PNG, four equal columns by two equal rows.
+Primary request: exactly SEVEN different practical handcrafted tools, one per cell, last bottom-right cell empty and transparent. Reading order: top row wood-handled axe, wood-handled pickaxe, shovel, hoe; bottom row copper-and-teal watering can, simple wooden fishing rod with a small reel and line, carpenter's hammer, EMPTY.
+Style: crisp carefully authored low-resolution pixel-art inventory icons, each designed to remain readable at logical 32x32, enlarged for viewing. Strong clean dark outline, deliberate square pixel clusters, matte iron/copper and warm brown wood handles, restrained teal accents to match the cozy forest-island game Mosslume. Same consistent three-quarter item view and light source in each cell, clear shapes, modest highlights, original designs. Not clipart, not realistic photographs, not smooth 3D, not painted on cards.
+Composition: clean wide 2:1 atlas with eight equal invisible square cells, icon centered with consistent padding and optical scale in each occupied cell, no parts crossing a cell boundary. Axe head has one blade, pickaxe has pointed curved ends, hoe has one right-angled flat blade distinct from shovel and pickaxe. All seven objects must be visibly distinct. Transparent background and gutters. No character, hands, labels, text, numbers, borders, slot frames, grid lines, scenery, shadows or watermark.
+
+--- Grid cleanup edit ---
+
+Use case: precise-object-edit. Edit target: the provided Mosslume tool atlas. Remove ONLY the thin horizontal and vertical grid lines/dividers and every stray pixel belonging to these lines, replacing them with genuine alpha transparency. Preserve all seven tool illustrations exactly, their shapes, colors, pose, order, optical size and location. Preserve the 4 columns x 2 rows atlas: axe, pickaxe, shovel, hoe / watering can, fishing rod, hammer, completely empty transparent eighth slot. Entire background/gutters/empty eighth slot must be truly transparent, with no grid or lines at all, no added colored backdrop, glow, checkerboard, shadows or border. Leave tools themselves opaque. Do not redesign or add objects, do not crop the canvas, no text.
+
+

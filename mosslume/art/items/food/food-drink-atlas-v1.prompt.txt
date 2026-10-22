@@ -1,0 +1,7 @@
+Use case: style-transfer.
+Asset type: transparent inventory food icon SOURCE atlas, 3 columns x 2 rows, EXACTLY FIVE icons and empty last cell, wide 3:2 canvas.
+Image 1 is the approved tool-icon STYLE reference, no tools from it appear.
+Exact reading order: TOP ROW one small rustic golden bread loaf with score marks; one warm brown bowl of chunky vegetable stew with visible carrot/green vegetable pieces; one cooked whole fish with a few dark grill marks on a simple small ivory plate.
+BOTTOM ROW one ivory-and-teal ceramic teacup with two subtle pale steam pixels/short curls; one compact capped DRINKING WATER FLASK, teal metal with a brown leather strap and copper cap, clearly distinct from a watering can; last bottom-right cell EMPTY and fully alpha transparent.
+All are practical cozy island food/drink, no cutlery crossing cells, no table, scenery, typography or numerical quantities.
+Style: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark.

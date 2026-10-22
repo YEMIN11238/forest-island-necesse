@@ -1,0 +1,1164 @@
+{
+  "project": "Mosslume",
+  "localDate": "2026-10-21",
+  "scope": "首版固定小岛生活游戏的美术缺口及原创角色方向；未修改运行游戏或接入新角色。",
+  "audit": {
+    "runtimePngFiles": 77,
+    "shadowMasks": 31,
+    "fireAnimationFrames": 8,
+    "otherTextures": 38,
+    "oldMasterCatalogEntries": 41,
+    "codeAudit": "人物/装备层未替换；多数UI与物品图标未替换；小麦、床、铁砧、定居点标识等仍有原生图；未知物件仍存在原生绘制回退。"
+  },
+  "styleTargets": {
+    "worldTilePixels": [
+      32,
+      32
+    ],
+    "characterFrameCanvasPixels": [
+      64,
+      64
+    ],
+    "suggestedVisibleCharacterHeightPixels": [
+      36,
+      44
+    ],
+    "directions": [
+      "up",
+      "right",
+      "down",
+      "left"
+    ],
+    "anchorPolicy": "统一脚底锚点；先将一张站立试片与当前树、门、工作台同屏校对后锁定；64×64是透明画布而不是人物必须画满。",
+    "characterProportion": "运行小人拟定约2.5头身；当前大图为造型设定，运行版需简化重绘。",
+    "layering": [
+      "body",
+      "head/hair",
+      "clothes",
+      "left/right arms",
+      "feet",
+      "held tool"
+    ],
+    "lightingPolicy": "基础贴图保持中性明暗；实时受光、投影、昼夜和发光交给程序。",
+    "portraitPixels": [
+      256,
+      256
+    ],
+    "itemIconPixels": [
+      32,
+      32
+    ]
+  },
+  "characterConcept": {
+    "file": "art/characters/character-lineup-concept-v1.png",
+    "status": "concept_only",
+    "runtimeSpriteSheet": false,
+    "rolesLeftToRight": [
+      {
+        "id": "player",
+        "role": "主角",
+        "appearance": "深青短外套、米白内衬、铜橙领巾、短深棕发、斜挎布包",
+        "characterDirection": "好奇、亲切，基础造型可后续扩展",
+        "runtimeArtStatus": "missing"
+      },
+      {
+        "id": "farmer",
+        "role": "农夫",
+        "appearance": "铜红编发、鼠尾草绿工作服、赭黄围裙、种子袋与小篮",
+        "characterDirection": "细心、有耐心，关心植物与季节",
+        "runtimeArtStatus": "missing"
+      },
+      {
+        "id": "carpenter",
+        "role": "木匠",
+        "appearance": "结实身形、灰棕卷发短胡须、蓝灰衬衣、棕皮围裙与工具腰带",
+        "characterDirection": "稳重、重视手艺和承诺",
+        "runtimeArtStatus": "missing"
+      },
+      {
+        "id": "merchant",
+        "role": "商人",
+        "appearance": "深色卷发、暗梅色头巾与旅行短外套、地图卷、铜指南针与皮包",
+        "characterDirection": "健谈、独立、好奇，连接岛内外消息",
+        "runtimeArtStatus": "missing"
+      }
+    ]
+  },
+  "packages": [
+    {
+      "id": "CHAR-01",
+      "priority": "P0",
+      "name": "原创角色设定",
+      "status": "concept_only",
+      "deliverables": [
+        "已生成一张四人设定合照；仍需逐人正侧背设定与轮廓/配色确认"
+      ],
+      "notes": "设定合照不能作为游戏内动作图集；角色名字、性格和造型均为首版提案。"
+    },
+    {
+      "id": "CHAR-02",
+      "priority": "P0",
+      "name": "主角运行贴图",
+      "status": "missing",
+      "deliverables": [
+        "四方向站立/呼吸",
+        "四方向行走",
+        "身体、头发、衣服、左右手臂和鞋靴的分层图集",
+        "坐下、睡眠与受伤反馈"
+      ],
+      "notes": "先做一种基础造型；动作相位、脚点与手持工具锚点必须一致。"
+    },
+    {
+      "id": "CHAR-03",
+      "priority": "P0",
+      "name": "三名居民运行贴图",
+      "status": "missing",
+      "deliverables": [
+        "农夫、木匠、商人的四方向基础动作",
+        "浇水/种植/收获",
+        "锯木/锤击/搬运",
+        "展示货物/交易/休息"
+      ],
+      "notes": "通用动作骨架可共享，各角色外观仍需独立制作；离线时也能按原生日程和任务运行。"
+    },
+    {
+      "id": "CHAR-04",
+      "priority": "P0",
+      "name": "对话头像和表情",
+      "status": "missing",
+      "deliverables": [
+        "4名角色各6种表情：平静、开心、担忧、生气、难过、惊讶，共24个头像",
+        "气泡表情图标：开心、疑问、拒绝、疲劳、饥饿、收到物品"
+      ],
+      "notes": "建议256×256透明头像；脸型、衣着和发型须与运行贴图一致。"
+    },
+    {
+      "id": "BRAND-01",
+      "priority": "P0",
+      "name": "独立品牌与加载素材",
+      "status": "partial",
+      "deliverables": [
+        "已有Mosslume首页主视觉",
+        "仍缺无字首页背景",
+        "独立透明Logo",
+        "应用图标及小尺寸变体",
+        "加载进度组件/小动效"
+      ],
+      "notes": "首页现有Logo与背景合在一张图中，动态首页需另做分层；不算已经接入启动流程。"
+    },
+    {
+      "id": "UI-01",
+      "priority": "P0",
+      "name": "主菜单与通用界面皮肤",
+      "status": "missing",
+      "deliverables": [
+        "按钮正常/悬停/按下/禁用状态",
+        "九宫格面板、页签、滚动条、滑杆与勾选框",
+        "暂停、设置、保存/读取列表所用组件"
+      ],
+      "notes": "文字由引擎绘制，不把按钮文字和所有面板烘焙成整张截图。"
+    },
+    {
+      "id": "UI-02",
+      "priority": "P0",
+      "name": "游戏HUD",
+      "status": "missing",
+      "deliverables": [
+        "快捷栏与选中槽",
+        "生命、体力/能量、饥饿等首版采用的状态图标",
+        "时间、天气、日期与货币图标",
+        "交互提示与物品提示框"
+      ],
+      "notes": "先按首版真正采用的属性设计，避免为未开放系统批量画图。"
+    },
+    {
+      "id": "UI-03",
+      "priority": "P0",
+      "name": "背包、箱子、制作、交易界面",
+      "status": "missing",
+      "deliverables": [
+        "背包/装备槽图标",
+        "制作分类、配方状态、材料不足与产出图标",
+        "箱子存取/整理图标",
+        "买卖/数量/价格组件"
+      ],
+      "notes": "世界里的箱子已换图，背包中的箱子图标和界面尚未因此自动替换。"
+    },
+    {
+      "id": "UI-04",
+      "priority": "P0",
+      "name": "对话、关系与任务界面",
+      "status": "missing",
+      "deliverables": [
+        "头像框、对话框与选项状态",
+        "关系/信任/心情和日程图标",
+        "任务类型与完成/失败提示",
+        "居民工作优先级与禁止标记"
+      ],
+      "notes": "优先表达居民状态与真实可执行任务；AI功能尚未接入。"
+    },
+    {
+      "id": "UI-05",
+      "priority": "P0",
+      "name": "鼠标与交互反馈",
+      "status": "missing",
+      "deliverables": [
+        "常规/交互/采集/放置鼠标指针",
+        "可放置与不可放置轮廓",
+        "拾取、对话、工作目标提示"
+      ],
+      "notes": "保持图标含义直观，与世界内物件一致。"
+    },
+    {
+      "id": "ITEM-01",
+      "priority": "P0",
+      "name": "首批物品图标",
+      "status": "missing",
+      "deliverables": [
+        "建议首批42个图标，详见itemIconProposal",
+        "基础分辨率32×32，透明PNG"
+      ],
+      "notes": "这是拟定首版范围；现有原生配方和物品不能默认全部进入独立版。"
+    },
+    {
+      "id": "ITEM-02",
+      "priority": "P0",
+      "name": "工具手持图与世界掉落图",
+      "status": "missing",
+      "deliverables": [
+        "斧、镐、铲、锄、浇水壶、鱼竿、锤的手持贴图与握持锚点",
+        "物品落地、拾取时所需图像",
+        "背包图标/手持图/地面图的映射表"
+      ],
+      "notes": "工具从人物上分层；某些物品可复用图像，但须逐一确认显示尺度和锚点。"
+    },
+    {
+      "id": "FARM-01",
+      "priority": "P0",
+      "name": "作物生命周期",
+      "status": "missing",
+      "deliverables": [
+        "建议首批小麦、胡萝卜、南瓜3种",
+        "每种需种下、发芽、幼苗、成长、成熟/可收获、收获后或枯萎状态",
+        "干湿耕地与施肥状态"
+      ],
+      "notes": "确切帧数按作物代码和首版玩法锁定；当前小麦仍使用原生贴图。"
+    },
+    {
+      "id": "HOUSE-01",
+      "priority": "P0",
+      "name": "可进入房屋的分层",
+      "status": "partial",
+      "deliverables": [
+        "已有单张小屋外观",
+        "补屋顶、墙体、门、窗的独立层",
+        "开门/关门、窗户亮/暗状态",
+        "室内木地板、墙面与遮挡边缘"
+      ],
+      "notes": "现有单张外观图不足以覆盖进屋、开门和建造变化。"
+    },
+    {
+      "id": "HOUSE-02",
+      "priority": "P0",
+      "name": "基础家具",
+      "status": "missing",
+      "deliverables": [
+        "床与床品",
+        "桌子、椅子、柜子、置物架",
+        "室内灯具与可摆放小装饰"
+      ],
+      "notes": "现有床等家具仍有原生图；先覆盖首版可进入室内。"
+    },
+    {
+      "id": "PROP-01",
+      "priority": "P0",
+      "name": "当前岛屿中漏替换物件",
+      "status": "partial",
+      "deliverables": [
+        "铁砧",
+        "定居点标识改为我们的村庄公告牌或标志",
+        "箱子开/关状态",
+        "工作台/炉灶运行状态及物品图标"
+      ],
+      "notes": "现有箱子、工作台、炉灶等已有基础世界贴图，先补缺口和状态。"
+    },
+    {
+      "id": "TERRAIN-01",
+      "priority": "P0",
+      "name": "道路与岸线完整过渡",
+      "status": "partial",
+      "deliverables": [
+        "已有草地、泥地、水面、土侧面和岸线",
+        "补道路端头、直线、弯角、内外角、T形与交叉过渡",
+        "岸线内外角、浅滩与小沙滩连接块"
+      ],
+      "notes": "用于修正当前硬台阶式路缘，不重新随机生成一张新地图。"
+    },
+    {
+      "id": "NATURE-01",
+      "priority": "P0",
+      "name": "资源物件的采集状态",
+      "status": "partial",
+      "deliverables": [
+        "已有树冠/树干、灌木、石头",
+        "补树桩、幼树与再生状态",
+        "浆果有果/无果、石块受损/破碎/剩余状态",
+        "对应木材、石料与果实图标"
+      ],
+      "notes": "遮罩尽量从透明轮廓生成；不要把31张遮罩误算为31种新场景物件。"
+    },
+    {
+      "id": "BUILD-01",
+      "priority": "P1",
+      "name": "可建造模块",
+      "status": "missing",
+      "deliverables": [
+        "可拼接墙体、转角、门窗、屋顶、地板",
+        "围栏直线/转角/门",
+        "建筑预览和施工状态"
+      ],
+      "notes": "模块尺寸与碰撞体统一；完成素材前不放开任意原生建筑清单。"
+    },
+    {
+      "id": "PROP-02",
+      "priority": "P1",
+      "name": "生活与海岛设施",
+      "status": "partial",
+      "deliverables": [
+        "已有花箱、木料架、路灯等",
+        "补码头、栈桥、小船/商船停靠状态",
+        "水井、晾晒架、邮箱、公共花园、公告栏",
+        "设施开关/损坏/修复状态"
+      ],
+      "notes": "依实际加入的玩法逐项制作，首页中的装饰不等于已有可交互运行素材。"
+    },
+    {
+      "id": "ANIMAL-01",
+      "priority": "P1",
+      "name": "首版动物与水生物",
+      "status": "missing",
+      "deliverables": [
+        "宠物猫或狗的基础动作",
+        "鸡的站立/走动/进食与产物",
+        "首版鱼类、鱼影与垂钓反馈"
+      ],
+      "notes": "只有采用这些玩法才制作；覆盖当前可能出现的原生环境生物，或先限制生成。"
+    },
+    {
+      "id": "FX-01",
+      "priority": "P1",
+      "name": "操作与建设反馈",
+      "status": "missing",
+      "deliverables": [
+        "砍树木屑、挖矿碎石、耕作尘土",
+        "浇水/落水水花",
+        "采集/制作成功和建造进度反馈",
+        "受伤或任务反馈"
+      ],
+      "notes": "优先少量可复用粒子纹理；不必每个动作都生成完整视频。"
+    },
+    {
+      "id": "FX-02",
+      "priority": "P1",
+      "name": "环境动效补充",
+      "status": "partial",
+      "deliverables": [
+        "已有8帧火焰、烟雾、光斑和荧光点",
+        "按需要补泡沫、落叶、漂浮叶片、雨滴与涟漪"
+      ],
+      "notes": "水面和光色优先继续由程序驱动；无需把全部昼夜变化画成大量帧。"
+    },
+    {
+      "id": "MAP-01",
+      "priority": "P1",
+      "name": "小岛地图图标",
+      "status": "missing",
+      "deliverables": [
+        "住宅、农田、工坊、码头、居民、任务地点等图标",
+        "导航与位置标记"
+      ],
+      "notes": "只覆盖我们的小岛；程序生成的地图底色不需要逐格手绘。"
+    },
+    {
+      "id": "SEASON-01",
+      "priority": "P2",
+      "name": "季节与节日变体",
+      "status": "missing",
+      "deliverables": [
+        "植物季节配色与少量形态变体",
+        "天气、节日和公共活动装饰",
+        "对应食品、礼物与事件物件"
+      ],
+      "notes": "基础版稳定后按事件补，不预先批量重画所有素材。"
+    },
+    {
+      "id": "CUSTOM-01",
+      "priority": "P2",
+      "name": "角色外观扩展",
+      "status": "missing",
+      "deliverables": [
+        "更多发型、肤色、衣服与帽子",
+        "季节服装与角色专属饰物"
+      ],
+      "notes": "首批固定四名角色完成后扩展，避免组合数量失控。"
+    }
+  ],
+  "itemIconProposal": {
+    "tools": [
+      "axe",
+      "pickaxe",
+      "shovel",
+      "hoe",
+      "watering-can",
+      "fishing-rod",
+      "hammer"
+    ],
+    "materials": [
+      "log",
+      "stone",
+      "plant-fiber",
+      "plank",
+      "clay",
+      "copper-ore",
+      "iron-ore",
+      "copper-bar",
+      "iron-bar",
+      "coal"
+    ],
+    "farming-and-forage": [
+      "wheat-seed",
+      "carrot-seed",
+      "pumpkin-seed",
+      "wheat",
+      "carrot",
+      "pumpkin",
+      "apple",
+      "berry",
+      "mushroom"
+    ],
+    "food": [
+      "bread",
+      "vegetable-stew",
+      "grilled-fish",
+      "tea",
+      "water-flask"
+    ],
+    "buildables": [
+      "chest",
+      "workbench",
+      "furnace",
+      "cooking-pot",
+      "campfire",
+      "lantern",
+      "wood-wall"
+    ],
+    "social-and-quest": [
+      "letter",
+      "trade-coin",
+      "flower-bouquet",
+      "parcel"
+    ]
+  },
+  "existingArt": [
+    {
+      "file": "art/environment/existing-v1/bench-mask.png",
+      "kind": "shadow_mask",
+      "width": 24,
+      "height": 17,
+      "sha256": "a82a9eda88c2714daa58f1c0c2be0222d3e72f51b39108d8352c4f4fc8deab29",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/bench-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/bench.png",
+      "kind": "base_texture_or_effect",
+      "width": 24,
+      "height": 17,
+      "sha256": "3dc571b774a921d77a2c672af5ec1067d4ee17214198b8d69f5dda0bbeef2603",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/bench.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/berry-bush-mask.png",
+      "kind": "shadow_mask",
+      "width": 19,
+      "height": 14,
+      "sha256": "83d3396f6068ebc50c582c5eb226c190ca9c3faccb9af5e843e939e0493aaf09",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/berry-bush-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/berry-bush.png",
+      "kind": "base_texture_or_effect",
+      "width": 19,
+      "height": 14,
+      "sha256": "05dd2eea59c49e1b18c8c143d1eb0bea07f08fade23248b3b5f44323d09b4fe8",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/berry-bush.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/brazier-mask.png",
+      "kind": "shadow_mask",
+      "width": 16,
+      "height": 20,
+      "sha256": "a11ae6eb28be714d0d6570cea97df8d05e222f82a1713f4e908444c3bc682b01",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/brazier-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/brazier.png",
+      "kind": "base_texture_or_effect",
+      "width": 16,
+      "height": 20,
+      "sha256": "a7c39c83c332459d4713fc41baebcc0a598514910fbe90c71755f2a80c99ed28",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/brazier.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/bush-mask.png",
+      "kind": "shadow_mask",
+      "width": 12,
+      "height": 25,
+      "sha256": "7ab53f53d486705bc61e993ff98c7ef8c3cdcbc2968fd3d8413fdbecf2bbae1c",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/bush-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/bush.png",
+      "kind": "base_texture_or_effect",
+      "width": 12,
+      "height": 25,
+      "sha256": "795123413d365308f563301748f8705157fc9a46043c78dc55f8e14bbb9abf67",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/bush.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/chest-mask.png",
+      "kind": "shadow_mask",
+      "width": 17,
+      "height": 13,
+      "sha256": "e27dc45b94733803bae6b66b35711a0fa85250beaea89da8f2cceb13f7023e19",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/chest-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/chest.png",
+      "kind": "base_texture_or_effect",
+      "width": 17,
+      "height": 13,
+      "sha256": "a4b03800485b049ad10934986eab691e4f07927776de9e142b46057afe2029b5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/chest.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/crown-leafy-mask.png",
+      "kind": "shadow_mask",
+      "width": 36,
+      "height": 30,
+      "sha256": "1a3c2e24896b77797c3e1517f1fdef29094be51fd3952910969c692896be69cd",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/crown-leafy-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/crown-leafy.png",
+      "kind": "base_texture_or_effect",
+      "width": 36,
+      "height": 30,
+      "sha256": "021deb0133cbf9487ac6ee67ecb679c02c19a15eb6a5fd2dc730b297166ecae5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/crown-leafy.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/crown-young-mask.png",
+      "kind": "shadow_mask",
+      "width": 28,
+      "height": 32,
+      "sha256": "21339f8fa172604044169b66d23e40cd355312b35ddb5dfff25d3eb30b89c804",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/crown-young-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/crown-young.png",
+      "kind": "base_texture_or_effect",
+      "width": 28,
+      "height": 32,
+      "sha256": "0c5601cce728e0947bef4622721f91eb826d03fd30506db22f6dbe6b999b0cd1",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/crown-young.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/deep.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 64,
+      "sha256": "55e157a2cb728f2dd11afc358fce9386cd56cc1fd60ab867b5084af46e074e6d",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/deep.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/dirt.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 64,
+      "sha256": "7234c381abdb192e69327c70ab8fa43fa4bdddd61ab34b7bef099893bb9059a3",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/dirt.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/earth-mask.png",
+      "kind": "shadow_mask",
+      "width": 64,
+      "height": 7,
+      "sha256": "93aee1934dced60c154a47247fdd3e510c337f5228ec1b3711ea1a25def77899",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/earth-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/earth.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 7,
+      "sha256": "68e9d550081abdff936fe895b41c05fcfcbe4d5791bc700081c9fc8175f07efc",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/earth.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/fern-mask.png",
+      "kind": "shadow_mask",
+      "width": 16,
+      "height": 14,
+      "sha256": "d854d14d0a5ea97c03d627cb31de83cab233075e158ce1bf58bb604d281a14f4",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/fern-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/fern.png",
+      "kind": "base_texture_or_effect",
+      "width": 16,
+      "height": 14,
+      "sha256": "3ca8ef23bebbeb20b5bd928241878f6c2b336127d416e8f1b93bd4edccf4385f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/fern.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-0.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "036e70bb0d29f4843ca2ca052af73cdb0f2bb1dec5b4f877382cd1396b4f779d",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-0.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-1.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "d6e390ca0c6ef779747b0d722fb60873671e76da9e0c833952502552239c8d00",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-1.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-2.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "ec3fb0fc0bba343ec66d33a1953bb6a4e2ac07e138514591f079368a7d1eb35a",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-2.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-3.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "0117f7e7255eff1a1670a749f35b9369be5592f95fe245ea3418606fc13d23d6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-3.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-4.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "946276c1113892619e7db64ebc1cb3945e425cd65ab8a754a93d5fd1f8e06093",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-4.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-5.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "6cbd6bcdfff9efabb7c9a7a4d8688184658edb3295e715d211f42c108da72d7a",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-5.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-6.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "8060f26d8b6c31c175e8a44b543a7d514e2bbf3d19b6eae24a1a7cd958203d62",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-6.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flame-7.png",
+      "kind": "fire_animation_frame",
+      "width": 24,
+      "height": 36,
+      "sha256": "398dae47c8de1f58b71358d7f3b595bedad556ad46b66239c16a2fd6344fd327",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flame-7.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flower-planter-mask.png",
+      "kind": "shadow_mask",
+      "width": 15,
+      "height": 19,
+      "sha256": "8077a9845e940ce3cac789561ff8503c4606194af3e845fc37ccb1a035e717c5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flower-planter-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flower-planter.png",
+      "kind": "base_texture_or_effect",
+      "width": 15,
+      "height": 19,
+      "sha256": "957671cc48e6c2120cd5ba88e079c7bf5acbde8c4d9471a05a26fdc5a6c36a5e",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flower-planter.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flowers-mask.png",
+      "kind": "shadow_mask",
+      "width": 10,
+      "height": 13,
+      "sha256": "9b85bf9c6eb30104d90fb77b5db6ae1913fc8b69a9952ca158f7e23660c77774",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flowers-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/flowers.png",
+      "kind": "base_texture_or_effect",
+      "width": 10,
+      "height": 13,
+      "sha256": "21a65761218ba2d6a93000b68cc5f0875c854cea3e1fd46e3109ee312bf4ef35",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/flowers.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/glow.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 64,
+      "sha256": "d2d1f907c038054c0c27492e590df1b4147c66ae50e90de4db7afd30c4ad9b6e",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/glow.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/grass-mask.png",
+      "kind": "shadow_mask",
+      "width": 9,
+      "height": 12,
+      "sha256": "17969e790fc2c458d333ffd178dc5a93ccfcd93e71b1ef362f1385d6b2f5f213",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/grass-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/grass.png",
+      "kind": "base_texture_or_effect",
+      "width": 9,
+      "height": 12,
+      "sha256": "de03b7e509e106ea44ed78f9de629f6e25cef52d6d8e71f5f9e09e0e0c6e2c13",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/grass.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/ground.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 64,
+      "sha256": "d5b6a5e7ee60cfb8ab2bfa9b120aaae6b468a75018dc17a6834a655b90443c14",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/ground.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/house-mask.png",
+      "kind": "shadow_mask",
+      "width": 88,
+      "height": 92,
+      "sha256": "c86cd047160b3b35753335b1da2e3bd633eb20318e040d7632867d287e294726",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/house-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/house.png",
+      "kind": "base_texture_or_effect",
+      "width": 88,
+      "height": 92,
+      "sha256": "7c97c2bdb5dc2dd33a14b8945a7127c8bb3ed528e4c2551ddce6fd0b22fc2df4",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/house.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/lamp-post-mask.png",
+      "kind": "shadow_mask",
+      "width": 14,
+      "height": 46,
+      "sha256": "75cfe6f4664f43f95b85e0f3925ccb3dc5c81825199e1de3db9fa486d4634c32",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/lamp-post-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/lamp-post.png",
+      "kind": "base_texture_or_effect",
+      "width": 14,
+      "height": 46,
+      "sha256": "7da5280aedb1aeb100a5188b5a5ed0fc4e6cfdff7a1c53bbe278edce056f712b",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/lamp-post.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/logs-mask.png",
+      "kind": "shadow_mask",
+      "width": 22,
+      "height": 10,
+      "sha256": "b4dbd44439dcbd609b3b5b058ce61e84f6d973e3e65ca784dfbbf1248147e5f8",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/logs-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/logs.png",
+      "kind": "base_texture_or_effect",
+      "width": 22,
+      "height": 10,
+      "sha256": "93bb9d240953b9cfeae82743790c3ebb16d6a977d0b25644491653a3d7363dd5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/logs.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/mote.png",
+      "kind": "base_texture_or_effect",
+      "width": 9,
+      "height": 9,
+      "sha256": "d6d9fb0618856b66bd2cc1c49376d54ed940f0260ed7859680e2df5fa6e2451f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/mote.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/mushroom-log-mask.png",
+      "kind": "shadow_mask",
+      "width": 25,
+      "height": 14,
+      "sha256": "a14e86cfae303d2d5442ee4c64e739f178e17ae4b6877d299daa9eeb7170c8a6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/mushroom-log-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/mushroom-log.png",
+      "kind": "base_texture_or_effect",
+      "width": 25,
+      "height": 14,
+      "sha256": "5f8cf52e82afc5a7688472cf3a034df2d04fb507984fa506b76aa1ef5d63a7b6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/mushroom-log.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/ocean-art.png",
+      "kind": "base_texture_or_effect",
+      "width": 256,
+      "height": 256,
+      "sha256": "0a49e75692a6693211dd77cf6de5806e6ba242d38361ff70d8498a803c591af3",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/ocean-art.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/purple-cauldron-mask.png",
+      "kind": "shadow_mask",
+      "width": 20,
+      "height": 20,
+      "sha256": "d8981494e81c87a44e1b56a6a85331760af22e0310c486ce707284152bf06d6e",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/purple-cauldron-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/purple-cauldron.png",
+      "kind": "base_texture_or_effect",
+      "width": 20,
+      "height": 20,
+      "sha256": "91f192a0db6e5f0da9ce1c52b44b41f21355877663f23c7dce24e85fce34cdca",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/purple-cauldron.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/reeds-mask.png",
+      "kind": "shadow_mask",
+      "width": 13,
+      "height": 23,
+      "sha256": "3ae3041cdc49cd487cc26190d336c5f57e0d52844fdb52860c681845b61bf0dd",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/reeds-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/reeds.png",
+      "kind": "base_texture_or_effect",
+      "width": 13,
+      "height": 23,
+      "sha256": "603295dda51db54a1c9f99ecae0c2bae803f941c040ed077b8004f69aa29c88f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/reeds.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/rock-mask.png",
+      "kind": "shadow_mask",
+      "width": 16,
+      "height": 11,
+      "sha256": "b1842f6abaaa7d36a664f9820a52b8fed55d0db5d947a64333353a18624c09ed",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/rock-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/rock.png",
+      "kind": "base_texture_or_effect",
+      "width": 16,
+      "height": 11,
+      "sha256": "6a56ba1b647e8c780ef298c118bf924b0d1c2d3e3b5518c3ce15a3f0da8ba6cf",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/rock.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/shallow.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 64,
+      "sha256": "c53ee9229ed97a0bce0a3570739e22eea6a4310fd451918a774e10042a47bb18",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/shallow.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/shore-mask.png",
+      "kind": "shadow_mask",
+      "width": 64,
+      "height": 8,
+      "sha256": "a1a09c399a9b0d16b88d5237f1e68d05e929fe98450f1403229fe595b2a6ceac",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/shore-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/shore.png",
+      "kind": "base_texture_or_effect",
+      "width": 64,
+      "height": 8,
+      "sha256": "e067f1502505121ba8069e4cf7349a0e94b86d436a1634ce557aad32cca8722a",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/shore.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/smith-workbench-mask.png",
+      "kind": "shadow_mask",
+      "width": 21,
+      "height": 20,
+      "sha256": "f5a8a436a2f42fed6fa7818fc790468502b2c49888e8144ba3f041da930123a4",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/smith-workbench-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/smith-workbench.png",
+      "kind": "base_texture_or_effect",
+      "width": 21,
+      "height": 20,
+      "sha256": "49ae7c8627499d79485e3000e743295b4889baa3b24ea98baa59b6cd429aa530",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/smith-workbench.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/smoke-mask.png",
+      "kind": "shadow_mask",
+      "width": 12,
+      "height": 16,
+      "sha256": "cd7414a7a0bbeb6d49958e68293619a05d8911c870e1f0ccfdb9533531e7c796",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/smoke-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/smoke.png",
+      "kind": "base_texture_or_effect",
+      "width": 12,
+      "height": 16,
+      "sha256": "a12bea6af1f57223d0326515a56dd441d79e020ce9095c15f7d07533ef028467",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/smoke.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/stone-basin-mask.png",
+      "kind": "shadow_mask",
+      "width": 19,
+      "height": 15,
+      "sha256": "f1256d083e1ce1d0483848c5e1eb36fe741aa521d6a7ece677160433c93d5e19",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/stone-basin-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/stone-basin.png",
+      "kind": "base_texture_or_effect",
+      "width": 19,
+      "height": 15,
+      "sha256": "8bf6ddc0b049dd4c3b8e28edbcd165ecf4123b9a55ff08218f01c7581cf58295",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/stone-basin.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/stone-furnace-mask.png",
+      "kind": "shadow_mask",
+      "width": 19,
+      "height": 24,
+      "sha256": "68528ab302899e90acac6430aca396036507c137d34bc31aa5bc3cddc1240ce6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/stone-furnace-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/stone-furnace.png",
+      "kind": "base_texture_or_effect",
+      "width": 19,
+      "height": 24,
+      "sha256": "2c0667962f348e966720075bbf8d8f77e4bf72e8283b60b10bafe761e1b519a7",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/stone-furnace.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/timber-rack-mask.png",
+      "kind": "shadow_mask",
+      "width": 20,
+      "height": 28,
+      "sha256": "71e26040e1485776ed21aeff8c82308f3df1f4e2fce6ae99c7d1cee68897733f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/timber-rack-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/timber-rack.png",
+      "kind": "base_texture_or_effect",
+      "width": 20,
+      "height": 28,
+      "sha256": "e8a9d442c5b5f6d1a2ac9c14909c9509ee5477583b6cacd73a66588dcf15efa3",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/timber-rack.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/trail-sign-mask.png",
+      "kind": "shadow_mask",
+      "width": 16,
+      "height": 21,
+      "sha256": "2d030dbcaaeea47b98403c20badee3c019c7630ab8ee331746c3cf19ed0f0abb",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/trail-sign-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/trail-sign.png",
+      "kind": "base_texture_or_effect",
+      "width": 16,
+      "height": 21,
+      "sha256": "fdbf6d0222a15bf7365c40fc9e3fe86f256a2f62ceeab4cdd26892498674581b",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/trail-sign.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-a-top-mask.png",
+      "kind": "shadow_mask",
+      "width": 36,
+      "height": 30,
+      "sha256": "73f2c2dd7ec3f444b40ab3e4037adfa4820dc6f25dbaeeda57f59d9c1476ceaa",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-a-top-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-a-top.png",
+      "kind": "base_texture_or_effect",
+      "width": 36,
+      "height": 30,
+      "sha256": "b7812d97959033a3fbdb1cc81198378275203e076d86cf75ae31c5f61882208f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-a-top.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-a-wood-mask.png",
+      "kind": "shadow_mask",
+      "width": 10,
+      "height": 12,
+      "sha256": "1b079ed1a028a6fcdc9c3699236aa29ebc36af2a22d78db48638cff126269bee",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-a-wood-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-a-wood.png",
+      "kind": "base_texture_or_effect",
+      "width": 10,
+      "height": 12,
+      "sha256": "60f83e75b574cb8794df914b298404927feccb2d16141d3d3748ed0fa70bcc67",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-a-wood.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-b-top-mask.png",
+      "kind": "shadow_mask",
+      "width": 36,
+      "height": 30,
+      "sha256": "73f2c2dd7ec3f444b40ab3e4037adfa4820dc6f25dbaeeda57f59d9c1476ceaa",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-b-top-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-b-top.png",
+      "kind": "base_texture_or_effect",
+      "width": 36,
+      "height": 30,
+      "sha256": "b7812d97959033a3fbdb1cc81198378275203e076d86cf75ae31c5f61882208f",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-b-top.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-b-wood-mask.png",
+      "kind": "shadow_mask",
+      "width": 10,
+      "height": 12,
+      "sha256": "cf75deef063f2d05451ead70896f05a245df1c926886ccb85ca7b46acad677e5",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-b-wood-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/tree-b-wood.png",
+      "kind": "base_texture_or_effect",
+      "width": 10,
+      "height": 12,
+      "sha256": "d1adcb3e4045c960291a03dafe3065a1bb418b5171d0c038bd6290a5495860f6",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/tree-b-wood.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/wildflowers-mask.png",
+      "kind": "shadow_mask",
+      "width": 16,
+      "height": 16,
+      "sha256": "53611e3be4b539353fc4e03233c0e55ad437c16d2f7ac4442e71f72a16336503",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/wildflowers-mask.png",
+      "status": "existing_generated_art_candidate"
+    },
+    {
+      "file": "art/environment/existing-v1/wildflowers.png",
+      "kind": "base_texture_or_effect",
+      "width": 16,
+      "height": 16,
+      "sha256": "f71984cdff05930ffb9cb4d46bd3cd02a6150609b31e4fa7d04b0a2b86af78d4",
+      "source": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/resources/localforest/wildflowers.png",
+      "status": "existing_generated_art_candidate"
+    }
+  ],
+  "acceptance": [
+    "首页、加载、HUD、背包、制作、对话、交易和已开放室内逐一验收，不出现未替换的原游戏角色/Logo/图标。",
+    "场景物件、背包图标、地面掉落与手持贴图保持同一个物品身份。",
+    "素材覆盖与开放玩法白名单配套；开发阶段记录原生贴图回退，逐一替换或暂不开放对应入口。",
+    "动画统一脚点、人物比例、方向、工具握持点；设定图不计为动作图集完成。",
+    "已有基础素材优先复用、补状态与过渡，不以重复生图代替完整接入。"
+  ]
+}

@@ -1,0 +1,3984 @@
+{
+  "project": "Mosslume",
+  "version": 1,
+  "date": "2026-10-22",
+  "generator": "Deterministic Pillow crop/nearest-neighbor runtime format export; no image generation",
+  "sourceArtworkPreserved": true,
+  "integratedIntoGame": false,
+  "worldTilePixels": 32,
+  "playerFramePixels": [
+    64,
+    64
+  ],
+  "playerFootAnchor": [
+    32,
+    52
+  ],
+  "characterBodySourcePixels": 32,
+  "characterRenderScale": 2,
+  "characterBodyWorldPixels": 64,
+  "counts": {
+    "item": 42,
+    "player_frame": 16,
+    "player_standing": 4,
+    "player_strip": 4,
+    "player_combined_walk": 1,
+    "resident_standing": 12,
+    "portrait": 24,
+    "world": 37,
+    "crop": 18,
+    "house_layer": 6,
+    "house_composite": 4
+  },
+  "totalPngAssets": 168,
+  "notes": [
+    "Runtime-sized first-playable exports, not a production art acceptance claim.",
+    "Compact v2 player has four directions, an idle pose and four-frame walk loop; attacks use this same body with a direction-aware runtime tool overlay. Original v1 tool/body drafts are not loaded.",
+    "Characters normalize to 32 source pixels and render at integer 2x; all exported soles align to source y=52. Compact player source is sliced by transparent gaps; NPC designs remain from batch 03.",
+    "World sprites use compact widths matching existing 32px tile art; resource state height changes are preserved.",
+    "House parts require assembly/occlusion calibration; floor tile still has visible border seams.",
+    "Resident exports are static four-direction only; portraits retain source shoulder-edge cropping.",
+    "Exported item IDs require explicit native registry mapping by game integration code."
+  ],
+  "entries": [
+    {
+      "file": "items/axe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "d770b66345f42e11540004f695133cbe10d2a4045fae4193d1f32b2528a4e7bc",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "axe",
+      "name": "斧",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        26,
+        19,
+        377,
+        396
+      ]
+    },
+    {
+      "file": "items/pickaxe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "f2e0ca345daa610e8c62794cd3fe6ea93a1e53a9c9c2a7a4941b368d9ef329da",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "pickaxe",
+      "name": "镐",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        480,
+        24,
+        365,
+        391
+      ]
+    },
+    {
+      "file": "items/shovel.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "4c5b1ccd31a86d4cd0da48b9987684d08e242b9792b72e6485c15504a8463c17",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "shovel",
+      "name": "铲",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        935,
+        19,
+        367,
+        396
+      ]
+    },
+    {
+      "file": "items/hoe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "0b509e18cb636797f5dd1f59dfa73806cf047ad2e3b7d584c0f959e2c54af99c",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "category": "item",
+      "id": "hoe",
+      "name": "锄",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        1367,
+        19,
+        394,
+        396
+      ]
+    },
+    {
+      "file": "items/watering-can.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "739fb55b8b8554467f7471354f8d64b4a4a61eb7b0719d7c90af2e7b07f81678",
+      "alphaBounds": [
+        2,
+        3,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "watering-can",
+      "name": "浇水壶",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        21,
+        462,
+        400,
+        375
+      ]
+    },
+    {
+      "file": "items/fishing-rod.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "41a061a42681631d27a3268139cacecbe4c78edd1b1f16d26f61be1d3a6fbdf9",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "fishing-rod",
+      "name": "鱼竿",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        469,
+        458,
+        385,
+        398
+      ]
+    },
+    {
+      "file": "items/hammer.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "867dc2c7bc77e96e1c1ca5e3f79a59607651d41e22bf4ce98f87ed61eb236093",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "hammer",
+      "name": "锤",
+      "source": "art/items/tools/basic-tools-atlas-v1.png",
+      "sourceRegion": [
+        916,
+        468,
+        386,
+        394
+      ]
+    },
+    {
+      "file": "items/log.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "16eedffa8e47358c0441c8fadfe3efcf7bd4e65aae93efc87e7fab0295e7bb8c",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "log",
+      "name": "原木",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        40,
+        60,
+        316,
+        306
+      ]
+    },
+    {
+      "file": "items/stone.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "6b29b79fa462c80933fc3c459001d983b9d107f3368b90eb1207022bb40e7949",
+      "alphaBounds": [
+        2,
+        3,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "stone",
+      "name": "石头",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        399,
+        85,
+        298,
+        266
+      ]
+    },
+    {
+      "file": "items/plant-fiber.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "7d7370c6d023e48b1454a4b8d4832bfdb1c615cab85eb774561020542b9733fb",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "plant-fiber",
+      "name": "植物纤维",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        752,
+        50,
+        321,
+        311
+      ]
+    },
+    {
+      "file": "items/plank.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "c74fa3529e18f2ca169be3c0e5a8ef4e9097aeb2c38040184743064e92b6f5c9",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "plank",
+      "name": "木板",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        1122,
+        75,
+        301,
+        291
+      ]
+    },
+    {
+      "file": "items/clay.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "db3b12cbdf7ee98f6b34b93c03632b3db0934dec1f90337b114b1d7557be9b7d",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "clay",
+      "name": "黏土",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        27,
+        426,
+        325,
+        275
+      ]
+    },
+    {
+      "file": "items/copper-ore.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "ac64d7b8631701550f99786df8b4a019f1bb1e7ad8feef07cdec2fb0dbd058d2",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "copper-ore",
+      "name": "铜矿",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        399,
+        415,
+        303,
+        292
+      ]
+    },
+    {
+      "file": "items/iron-ore.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "cbdd44e822fdeb5d104e53f0ae658defb3d95c75c9a47d8de08941966d1a0699",
+      "alphaBounds": [
+        2,
+        3,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "iron-ore",
+      "name": "铁矿",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        755,
+        418,
+        307,
+        285
+      ]
+    },
+    {
+      "file": "items/copper-bar.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "2b07f6713840401630da9578348f59969c3a2b93efc0859b758c854ed2ac0161",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "copper-bar",
+      "name": "铜锭",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        1115,
+        424,
+        313,
+        272
+      ]
+    },
+    {
+      "file": "items/iron-bar.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "1403200fd6934ac446e12b25b05865ecf1629bc9297ee13a166bef0e581a34cd",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "iron-bar",
+      "name": "铁锭",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        32,
+        762,
+        321,
+        276
+      ]
+    },
+    {
+      "file": "items/coal.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "dc589c4c0a2511f5203e415fdd85ebea7098254b7e6e1f5d25c96a9896737338",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "coal",
+      "name": "煤",
+      "source": "art/items/materials/basic-materials-atlas-v1.png",
+      "sourceRegion": [
+        390,
+        762,
+        320,
+        275
+      ]
+    },
+    {
+      "file": "items/wheat-seed.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e625e9c329d4e0d7b66e102f3b6cc6b9ce09af4846a1ee0d96f467d560c4f913",
+      "alphaBounds": [
+        2,
+        3,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "wheat-seed",
+      "name": "小麦种子",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        44,
+        52,
+        358,
+        337
+      ]
+    },
+    {
+      "file": "items/carrot-seed.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "2b1fdfb6b8ca1de2e4d384b43e289ce5034d53146f4efa2afd43fdfbda8c7f00",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "category": "item",
+      "id": "carrot-seed",
+      "name": "胡萝卜种子",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        456,
+        59,
+        339,
+        333
+      ]
+    },
+    {
+      "file": "items/pumpkin-seed.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e246845b428686dc307e9e4d19a3be614c5b22af1a6aa63c0068e237ef23ec09",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "pumpkin-seed",
+      "name": "南瓜种子",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        882,
+        59,
+        328,
+        342
+      ]
+    },
+    {
+      "file": "items/wheat.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "78fe4d6b1e37fa3310d295f0512d0eb8d1e7c3817d1fbb1d3f37780ab81dfcb0",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "wheat",
+      "name": "小麦",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        52,
+        446,
+        376,
+        389
+      ]
+    },
+    {
+      "file": "items/carrot.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "41481b3ce6b5e19ed971ba439b834dc3c938b0b1503f0ca9dab297ba9585d60d",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "carrot",
+      "name": "胡萝卜",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        484,
+        446,
+        350,
+        381
+      ]
+    },
+    {
+      "file": "items/pumpkin.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "9417a7a4c04b7b6c9566b0a3507fd2049f6dc48f8ec6d5077c586820d6a33bcc",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "pumpkin",
+      "name": "南瓜",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        875,
+        495,
+        334,
+        320
+      ]
+    },
+    {
+      "file": "items/apple.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "9643375a9d6eb31d74b332b7018dc23a8a672bb487c03bc49ad78702d6710e30",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "apple",
+      "name": "苹果",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        74,
+        877,
+        304,
+        325
+      ]
+    },
+    {
+      "file": "items/berry.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "bef1001b3d7a46deb48043fb278b0f93d97fbe1e6ef0871c1f0b228bf44ec773",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "berry",
+      "name": "浆果",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        482,
+        910,
+        317,
+        269
+      ]
+    },
+    {
+      "file": "items/mushroom.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "7914ebd4c134268c8ce829053f0534c35251cba178be895814a21998830f654e",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "mushroom",
+      "name": "蘑菇",
+      "source": "art/items/farming/farming-forage-atlas-v1.png",
+      "sourceRegion": [
+        909,
+        897,
+        287,
+        310
+      ]
+    },
+    {
+      "file": "items/bread.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "7e9a46450ef3da3d38e6de5b8943b6e9a113f436424e6d21182418c139708391",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "bread",
+      "name": "面包",
+      "source": "art/items/food/food-drink-atlas-v1.png",
+      "sourceRegion": [
+        60,
+        122,
+        384,
+        334
+      ]
+    },
+    {
+      "file": "items/vegetable-stew.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "729dd70f4a5508ecb170e17c98010f45fdadf889bf4eca54d72df9acf8a8c94b",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "vegetable-stew",
+      "name": "蔬菜汤",
+      "source": "art/items/food/food-drink-atlas-v1.png",
+      "sourceRegion": [
+        561,
+        111,
+        407,
+        352
+      ]
+    },
+    {
+      "file": "items/grilled-fish.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "4d0b8112881060d01bff86c8f19d2be9bc7b0f5ebc79f3751c32417f50bd9297",
+      "alphaBounds": [
+        2,
+        5,
+        30,
+        26
+      ],
+      "category": "item",
+      "id": "grilled-fish",
+      "name": "烤鱼",
+      "source": "art/items/food/food-drink-atlas-v1.png",
+      "sourceRegion": [
+        1056,
+        129,
+        456,
+        343
+      ]
+    },
+    {
+      "file": "items/tea.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "552040d816b845823c43a1d9706ea19d9201ff901053f4fda3a34b7465391e24",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "category": "item",
+      "id": "tea",
+      "name": "茶",
+      "source": "art/items/food/food-drink-atlas-v1.png",
+      "sourceRegion": [
+        88,
+        562,
+        364,
+        367
+      ]
+    },
+    {
+      "file": "items/water-flask.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "c1768b9fcdd7a8389566e09898d3ca4e5438b02c05e6c25ea0790289d0ee16e1",
+      "alphaBounds": [
+        3,
+        2,
+        28,
+        30
+      ],
+      "category": "item",
+      "id": "water-flask",
+      "name": "饮水壶",
+      "source": "art/items/food/food-drink-atlas-v1.png",
+      "sourceRegion": [
+        603,
+        541,
+        365,
+        416
+      ]
+    },
+    {
+      "file": "items/chest.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "987c29d01f28197536019fbc2584abeefeea48fc202fdc9799a4b6536577f9f3",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "chest",
+      "name": "箱子",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        36,
+        80,
+        377,
+        328
+      ]
+    },
+    {
+      "file": "items/workbench.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e7fc7e198d58ea00e17aaa9022ea8595466c917f750e08707849bd1f2b3da1b3",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        27
+      ],
+      "category": "item",
+      "id": "workbench",
+      "name": "工作台",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        454,
+        67,
+        422,
+        349
+      ]
+    },
+    {
+      "file": "items/furnace.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e92c543318f5cf8605760305679d3d79f36e8e9c1beddae6fd7f60a53e20cfc5",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "furnace",
+      "name": "熔炉",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        931,
+        28,
+        374,
+        396
+      ]
+    },
+    {
+      "file": "items/cooking-pot.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "697c41ed74659ba8753fbf1dac5d6945b6f76c17ba9c17ac6ee6d61b4998fc4e",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "cooking-pot",
+      "name": "烹饪锅",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        1396,
+        67,
+        350,
+        357
+      ]
+    },
+    {
+      "file": "items/campfire.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "14d80f25d661197aff060560f76a0a31a48b46c3675910b0078e6479a06bba91",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        30
+      ],
+      "category": "item",
+      "id": "campfire",
+      "name": "篝火",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        40,
+        472,
+        364,
+        367
+      ]
+    },
+    {
+      "file": "items/lantern.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "ee37aed8d3a1d41b4e6df1e0a309debc0a0cc91977127298fb188a51e48ec613",
+      "alphaBounds": [
+        7,
+        2,
+        24,
+        30
+      ],
+      "category": "item",
+      "id": "lantern",
+      "name": "提灯",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        544,
+        452,
+        242,
+        399
+      ]
+    },
+    {
+      "file": "items/wood-wall.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e442ecca8a2c05ec98c7930c17ebe8e5020c9dc0ef0cf341501a7f663dfd447b",
+      "alphaBounds": [
+        3,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "wood-wall",
+      "name": "木墙",
+      "source": "art/items/buildables/buildables-atlas-v1.png",
+      "sourceRegion": [
+        932,
+        468,
+        360,
+        382
+      ]
+    },
+    {
+      "file": "items/letter.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "98eda7cedc2866c647c4162c1833ede44ba452f5f3d01cf0e671ea9ed00be156",
+      "alphaBounds": [
+        2,
+        4,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "letter",
+      "name": "信件",
+      "source": "art/items/social/social-quest-atlas-v1.png",
+      "sourceRegion": [
+        103,
+        119,
+        523,
+        446
+      ]
+    },
+    {
+      "file": "items/trade-coin.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "42607f44620ae7db1a35f2e75ec928a4c3e2837f2f6c1bebc5ee3998da1393ed",
+      "alphaBounds": [
+        2,
+        2,
+        29,
+        30
+      ],
+      "category": "item",
+      "id": "trade-coin",
+      "name": "交易币",
+      "source": "art/items/social/social-quest-atlas-v1.png",
+      "sourceRegion": [
+        720,
+        118,
+        425,
+        443
+      ]
+    },
+    {
+      "file": "items/flower-bouquet.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "656e072ec04a8e8c9bb05bb04c95bf27727d5a67506241d3f955a1e82af8679f",
+      "alphaBounds": [
+        2,
+        2,
+        30,
+        29
+      ],
+      "category": "item",
+      "id": "flower-bouquet",
+      "name": "花束",
+      "source": "art/items/social/social-quest-atlas-v1.png",
+      "sourceRegion": [
+        107,
+        628,
+        520,
+        510
+      ]
+    },
+    {
+      "file": "items/parcel.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "517357cd3557e63d08d0eae4b1f3695f6ee5d6974b73ed8b1bc6fc5b3777b639",
+      "alphaBounds": [
+        2,
+        3,
+        30,
+        28
+      ],
+      "category": "item",
+      "id": "parcel",
+      "name": "包裹",
+      "source": "art/items/social/social-quest-atlas-v1.png",
+      "sourceRegion": [
+        682,
+        676,
+        504,
+        450
+      ]
+    },
+    {
+      "file": "players/frames/player-compact-down-0.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "520558fd5016d311df5222c230d388381914a189b47e38ef324b0956d6956b3d",
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-down",
+      "frame": 0,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        115,
+        122,
+        207
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-down-1.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "280f31ce434f968c5f7beaeb0c8cd361b0642e683727d5440a6183e9a0d14a0b",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-down",
+      "frame": 1,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        423,
+        115,
+        133,
+        207
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-down-2.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "439bdf2e8aeea331ae284ad81f8a5c4c42f1b4361fa22a70a0f9d2c39faf5d56",
+      "alphaBounds": [
+        23,
+        21,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-down",
+      "frame": 2,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        687,
+        115,
+        122,
+        207
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-down-3.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "bda0915bf856289df3349328d3b2d17c2cb504d744c1019b356b5345c581e54f",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-down",
+      "frame": 3,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        934,
+        115,
+        134,
+        207
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/player-stand-down.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "520558fd5016d311df5222c230d388381914a189b47e38ef324b0956d6956b3d",
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "category": "player_standing",
+      "direction": "down",
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        115,
+        122,
+        207
+      ],
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "players/player-walk-down.png",
+      "width": 256,
+      "height": 64,
+      "sha256": "b815f85aa4bb34b9c02b1f115e448b31a3df7baebabce1dd43b1bed3ea893b9d",
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        53
+      ],
+      "category": "player_strip",
+      "action": "walk-down",
+      "source": "art/characters/player/player-compact-v2.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "animationPhaseValidated": false,
+      "note": "Compact four-pose source; pose order reviewed, detailed limb identity is still art-review pending."
+    },
+    {
+      "file": "players/frames/player-compact-right-0.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "b6360363ce2b36652fb022a5cfa6156d968897d5b624f5e1b2df65d6014f30cb",
+      "alphaBounds": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-right",
+      "frame": 0,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        377,
+        122,
+        212
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-right-1.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "579c606ffe530cd7a40ee1a26310c203ae00888e9ddb4d452011eebc20de23ab",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-right",
+      "frame": 1,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        423,
+        377,
+        133,
+        212
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-right-2.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "6e5a8e5daa5b61f4d3e69b323e7238583d1c2079393838f966b7e83e9af04c76",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-right",
+      "frame": 2,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        687,
+        377,
+        122,
+        212
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-right-3.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "fe5a76ca8e6977e5acbde9e31ef057f5bf7fc7727ac1647110ecc3162a3edda4",
+      "alphaBounds": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-right",
+      "frame": 3,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        934,
+        377,
+        134,
+        212
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/player-stand-right.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "b6360363ce2b36652fb022a5cfa6156d968897d5b624f5e1b2df65d6014f30cb",
+      "alphaBounds": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "category": "player_standing",
+      "direction": "right",
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        377,
+        122,
+        212
+      ],
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "players/player-walk-right.png",
+      "width": 256,
+      "height": 64,
+      "sha256": "cc6df4954cc39b6a5223ed549185c7cc90bf29d681ea9d4087aefb34f0f0b9d2",
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        53
+      ],
+      "category": "player_strip",
+      "action": "walk-right",
+      "source": "art/characters/player/player-compact-v2.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "animationPhaseValidated": false,
+      "note": "Compact four-pose source; pose order reviewed, detailed limb identity is still art-review pending."
+    },
+    {
+      "file": "players/frames/player-compact-up-0.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "81837b8bedd0feb15b91b4c39e90869573cbc846490c07024492ecc36bd2c961",
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-up",
+      "frame": 0,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        667,
+        122,
+        208
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-up-1.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "97ad0e7687008a13644dbcb20fd81c607b4f70f7061221a2a98e237b24bec793",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-up",
+      "frame": 1,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        423,
+        667,
+        133,
+        208
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-up-2.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "162a37c085c7938d45aa5f7ecd7e0dcaa28e55fcc8a2d15c55924812b05bf820",
+      "alphaBounds": [
+        23,
+        21,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-up",
+      "frame": 2,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        687,
+        667,
+        122,
+        208
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-up-3.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "d24463b2da656441d2946142480afccb429390fcf95b1517fe85b6861571825b",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-up",
+      "frame": 3,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        934,
+        667,
+        134,
+        208
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/player-stand-up.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "81837b8bedd0feb15b91b4c39e90869573cbc846490c07024492ecc36bd2c961",
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "category": "player_standing",
+      "direction": "up",
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        667,
+        122,
+        208
+      ],
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "players/player-walk-up.png",
+      "width": 256,
+      "height": 64,
+      "sha256": "c0d82b1ccbcda7a6112fdbb8d1754947588e993c0109536997153e261ce8e2ab",
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        53
+      ],
+      "category": "player_strip",
+      "action": "walk-up",
+      "source": "art/characters/player/player-compact-v2.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "animationPhaseValidated": false,
+      "note": "Compact four-pose source; pose order reviewed, detailed limb identity is still art-review pending."
+    },
+    {
+      "file": "players/frames/player-compact-left-0.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "0b5ecf2d065e098fe97284b46b88d31544d6a4fbc5030ecf485c5700dd6646c0",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-left",
+      "frame": 0,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        931,
+        122,
+        210
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-left-1.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "39bd00f5abb1f4c3c0ab8e7f4326f87ec1578a4a90c218f32c09516c6942e69f",
+      "alphaBounds": [
+        23,
+        20,
+        42,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-left",
+      "frame": 1,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        423,
+        931,
+        133,
+        210
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-left-2.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "c346c21d5a84e1030475931af0c77c036b9ed0a7feb23a3e78031a6dcb4f7e30",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-left",
+      "frame": 2,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        687,
+        931,
+        122,
+        210
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/frames/player-compact-left-3.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "46d02909d6ad503c085733b118380c1a08245ebb911a1b9ecc51527373437e36",
+      "alphaBounds": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "category": "player_frame",
+      "action": "compact-left",
+      "frame": 3,
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        934,
+        931,
+        134,
+        210
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "targetBodyHeight": 32,
+      "runtimeScale": 2
+    },
+    {
+      "file": "players/player-stand-left.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "0b5ecf2d065e098fe97284b46b88d31544d6a4fbc5030ecf485c5700dd6646c0",
+      "alphaBounds": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "category": "player_standing",
+      "direction": "left",
+      "source": "art/characters/player/player-compact-v2.png",
+      "sourceRegion": [
+        174,
+        931,
+        122,
+        210
+      ],
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "players/player-walk-left.png",
+      "width": 256,
+      "height": 64,
+      "sha256": "ca6b485e095f4b28d2c1a1ef3ac9307250fcd7764b0dcb5f3e0b1019f15c923a",
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        53
+      ],
+      "category": "player_strip",
+      "action": "walk-left",
+      "source": "art/characters/player/player-compact-v2.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "frameCount": 4,
+      "sourceColumns": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "animationPhaseValidated": false,
+      "note": "Compact four-pose source; pose order reviewed, detailed limb identity is still art-review pending."
+    },
+    {
+      "file": "players/player-walk.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "b8e2b61a9d2e1e38bf75b53e7c17cdf9ce3f30ec16b91f6f2d7dd390e872c091",
+      "alphaBounds": [
+        23,
+        20,
+        233,
+        245
+      ],
+      "category": "player_combined_walk",
+      "source": "art/characters/player/player-compact-v2.png",
+      "frameSize": [
+        64,
+        64
+      ],
+      "rows": [
+        "up",
+        "right",
+        "down",
+        "left"
+      ],
+      "framesPerDirection": 4,
+      "footAnchor": [
+        32,
+        52
+      ]
+    },
+    {
+      "file": "residents/farmer-down.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "6f5efcfe534d4b980649f59b4a0516d3626ce1fea2007f8bfe48aef297cb9eef",
+      "alphaBounds": [
+        25,
+        21,
+        39,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "farmer",
+      "direction": "down",
+      "source": "art/characters/residents/farmer-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/farmer-right.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "2a71efab7e0c9b4d17d62443d70f870503849a8b491d39bcb835b0e77a934ab0",
+      "alphaBounds": [
+        26,
+        21,
+        38,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "farmer",
+      "direction": "right",
+      "source": "art/characters/residents/farmer-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/farmer-up.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "a6f3f994665e199b050ebb99616470ac7f44147dce27ff29da1d18fa7029b9f6",
+      "alphaBounds": [
+        25,
+        21,
+        39,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "farmer",
+      "direction": "up",
+      "source": "art/characters/residents/farmer-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/farmer-left.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "b3f51b2d7e5db7c3b098932f8725d633ed06286a796e9330f9a48b0ebcbf24bd",
+      "alphaBounds": [
+        26,
+        21,
+        38,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "farmer",
+      "direction": "left",
+      "source": "art/characters/residents/farmer-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/carpenter-down.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "ae81faf30bef211f021b27a38a412baca0258b33fe2bfb00819dd9191b840e7e",
+      "alphaBounds": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "carpenter",
+      "direction": "down",
+      "source": "art/characters/residents/carpenter-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/carpenter-right.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "62c1d15c93565a4ae29607104df2bc3d5a80b2f68b6ca299f30f2bb4fff4f3fe",
+      "alphaBounds": [
+        26,
+        21,
+        38,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "carpenter",
+      "direction": "right",
+      "source": "art/characters/residents/carpenter-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/carpenter-up.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "9efbee40038a891562aa8285dedea4e0c770fc922d0ad6376763f407cc79a69f",
+      "alphaBounds": [
+        23,
+        21,
+        42,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "carpenter",
+      "direction": "up",
+      "source": "art/characters/residents/carpenter-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/carpenter-left.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "c19d3dee5c7f185404c87e4f7575b59f701676699c2e5805e509c0ca21a8f531",
+      "alphaBounds": [
+        26,
+        21,
+        38,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "carpenter",
+      "direction": "left",
+      "source": "art/characters/residents/carpenter-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/merchant-down.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "69b677676605a69c7401b2e16440cb4299edb93468ca026b707e875366005226",
+      "alphaBounds": [
+        24,
+        21,
+        39,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "merchant",
+      "direction": "down",
+      "source": "art/characters/residents/merchant-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/merchant-right.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "94a82296c735513af2409feb924ec765ad8a176cdf9d2a96b4d40b948d7c376e",
+      "alphaBounds": [
+        25,
+        21,
+        38,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "merchant",
+      "direction": "right",
+      "source": "art/characters/residents/merchant-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/merchant-up.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "d61597b24c2807f0d98cdf9440ac2c27592d2556b327a6e99030e84ed13b2548",
+      "alphaBounds": [
+        24,
+        22,
+        39,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "merchant",
+      "direction": "up",
+      "source": "art/characters/residents/merchant-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "residents/merchant-left.png",
+      "width": 64,
+      "height": 64,
+      "sha256": "8cb471d07c9425043ff0d3c06ae083af9ec0f3752ab3fec3187cc567a0dc8f60",
+      "alphaBounds": [
+        26,
+        21,
+        39,
+        53
+      ],
+      "category": "resident_standing",
+      "role": "merchant",
+      "direction": "left",
+      "source": "art/characters/residents/merchant-directions-source-v1.png",
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 1
+    },
+    {
+      "file": "portraits/player-neutral.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "2753fee36f5f540b1c0c4da7fe7035edc3941f25108c93baa2ef1b376ea7b79a",
+      "alphaBounds": [
+        24,
+        4,
+        254,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "neutral",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/player-happy.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "fdbbdda13552ce18cb0128adb41975428e9c3628f33e81bf0f49ccdf35e02968",
+      "alphaBounds": [
+        7,
+        4,
+        256,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "happy",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/player-worried.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "e056d5566a9246b5ed6c69770c1786d068eecaf616c7430455004696e1eaf040",
+      "alphaBounds": [
+        0,
+        5,
+        222,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "worried",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/player-firm.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "a1c585915151429da3582886ee09a2d1c60dad74063e737a8bcff261008ccabc",
+      "alphaBounds": [
+        23,
+        4,
+        254,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "firm",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/player-sad.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "d3d3f160ab4b18e70367d0b6631d7cfdf6e52c296cedf946bf4693c7e66f017b",
+      "alphaBounds": [
+        7,
+        4,
+        256,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "sad",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/player-surprised.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "6cd2773ea4e9fee91e6f9e1da6f1eec0bf46a213ab9dc9cc53afa6a636bb1fb1",
+      "alphaBounds": [
+        0,
+        4,
+        222,
+        249
+      ],
+      "category": "portrait",
+      "role": "player",
+      "expression": "surprised",
+      "source": "art/characters/portraits/player-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-neutral.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "889e55b5c73e7dad6b35f928011f6840a80f5ffc2878da7e76c257bec1b50e48",
+      "alphaBounds": [
+        23,
+        4,
+        256,
+        252
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "neutral",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-happy.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "ba9fbf96dd0559e834978f8149ffb9e011864489e8ae2e6a2e133f55cdeb3b13",
+      "alphaBounds": [
+        0,
+        4,
+        256,
+        252
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "happy",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-worried.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "c7614c7ff9c1544a7791c2723c3049a311939d188b0b9ae4681606d80b230c95",
+      "alphaBounds": [
+        8,
+        4,
+        249,
+        252
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "worried",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-firm.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "2b9eda8443b4ee47ce3c0c2c4dd4358f9225d95e4b031243b395621e4515cf15",
+      "alphaBounds": [
+        21,
+        1,
+        256,
+        250
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "firm",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-sad.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "7b74b19bc51dd6e002a5e2de62d226e4185e5a3d12c59145475ea722f804025d",
+      "alphaBounds": [
+        0,
+        1,
+        256,
+        249
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "sad",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/farmer-surprised.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "4b213a147fda68380df15cef201b589ac86e7489eef7cd860311d00d5094cb1d",
+      "alphaBounds": [
+        0,
+        1,
+        250,
+        249
+      ],
+      "category": "portrait",
+      "role": "farmer",
+      "expression": "surprised",
+      "source": "art/characters/portraits/farmer-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-neutral.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "d10efd0191004f2497892e8a2189a7ae19753ad28baa8ac82de8d71b2c2f2c0c",
+      "alphaBounds": [
+        8,
+        12,
+        250,
+        249
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "neutral",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-happy.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "7a10ba1141ea7f4e0a89c6fc4406cf092fbf4c569ebb0e14cf3537870d8bdc29",
+      "alphaBounds": [
+        7,
+        11,
+        250,
+        249
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "happy",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-worried.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "8ebdfc77b1a28e62b3ec79cc72ba3cb62c80a02e291949ad53788978e3b737ec",
+      "alphaBounds": [
+        7,
+        12,
+        248,
+        249
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "worried",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-firm.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "2edb211ea3775ed3b5325b4693c8f3512c7eceec19f52ab38558f262bc3bf370",
+      "alphaBounds": [
+        8,
+        11,
+        251,
+        249
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "firm",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-sad.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "fc1c96458b5bf0bd904cfe8bc437e84be43a8ee78f57e207e3a09e99908fe18a",
+      "alphaBounds": [
+        7,
+        13,
+        250,
+        249
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "sad",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/carpenter-surprised.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "ecbbeeacd41d26627608c3688c1fd777e02d5d1275636f2ac53e4170c0b20592",
+      "alphaBounds": [
+        7,
+        9,
+        249,
+        248
+      ],
+      "category": "portrait",
+      "role": "carpenter",
+      "expression": "surprised",
+      "source": "art/characters/portraits/carpenter-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-neutral.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "c95105f0286e113df40cb6904e7009e0e0c3042c74d4f974cd040c5766ca6e07",
+      "alphaBounds": [
+        12,
+        8,
+        243,
+        256
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "neutral",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-happy.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "2498addc37002f99d561b2fcdf38af6d54a33ac6d493b331f779aa1456881ec9",
+      "alphaBounds": [
+        11,
+        8,
+        244,
+        256
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "happy",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-worried.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "138189302bf45d5940f75af39f3b0eb52fa83e66ffd9f2a4ae88513186dc4ea3",
+      "alphaBounds": [
+        12,
+        8,
+        243,
+        256
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "worried",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-firm.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "025840110eda52da7123e56d8da7b28ce239b7ad3c3cc271d58a81a2a8980e28",
+      "alphaBounds": [
+        12,
+        0,
+        244,
+        236
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "firm",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-sad.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "7290a6d5fdd995a8336ea9bb94a45f9784321c68392e63640afbcc3a6ddec5db",
+      "alphaBounds": [
+        13,
+        0,
+        244,
+        235
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "sad",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "portraits/merchant-surprised.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "382cd328b85c685f692d10f1759b1353d62a5cb5a97ba95934cc543234fd4de1",
+      "alphaBounds": [
+        11,
+        0,
+        243,
+        235
+      ],
+      "category": "portrait",
+      "role": "merchant",
+      "expression": "surprised",
+      "source": "art/characters/portraits/merchant-expressions-v1.png",
+      "shoulderCropReviewPending": true
+    },
+    {
+      "file": "world/cottage-roof.png",
+      "width": 90,
+      "height": 71,
+      "sha256": "60114ef84e1390918b0d7d09268a363aa37bb9a5fd8a538039ef4a9d6f271b51",
+      "alphaBounds": [
+        0,
+        0,
+        90,
+        71
+      ],
+      "category": "world",
+      "id": "cottage-roof",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        26,
+        106,
+        494,
+        389
+      ],
+      "groundAnchor": [
+        45.0,
+        71
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/cottage-walls.png",
+      "width": 80,
+      "height": 49,
+      "sha256": "e2ec9f6293e79d983f252eb99a43746beeb758a2ad485faad7cb1320b5b47ab6",
+      "alphaBounds": [
+        0,
+        0,
+        80,
+        49
+      ],
+      "category": "world",
+      "id": "cottage-walls",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        539,
+        232,
+        511,
+        310
+      ],
+      "groundAnchor": [
+        40.0,
+        49
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/door-closed.png",
+      "width": 30,
+      "height": 25,
+      "sha256": "175a86aa140453d2da39b187cf2a04068a2f348ece53cb3b2ee145bc389dc7f9",
+      "alphaBounds": [
+        0,
+        0,
+        30,
+        25
+      ],
+      "category": "world",
+      "id": "door-closed",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        1143,
+        331,
+        249,
+        211
+      ],
+      "groundAnchor": [
+        15.0,
+        25
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/door-open.png",
+      "width": 30,
+      "height": 25,
+      "sha256": "eba06a8f55f687c043f0660734a4874d7ed29f55137b759d82c93c2b0a09002a",
+      "alphaBounds": [
+        0,
+        0,
+        30,
+        25
+      ],
+      "category": "world",
+      "id": "door-open",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        146,
+        689,
+        286,
+        242
+      ],
+      "groundAnchor": [
+        15.0,
+        25
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/window-dark.png",
+      "width": 11,
+      "height": 10,
+      "sha256": "95239668908945038907205ebc3464c772a39563162dc25579e75afb5821ebb7",
+      "alphaBounds": [
+        0,
+        0,
+        11,
+        10
+      ],
+      "category": "world",
+      "id": "window-dark",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        717,
+        739,
+        165,
+        154
+      ],
+      "groundAnchor": [
+        5.5,
+        10
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/window-lit.png",
+      "width": 11,
+      "height": 10,
+      "sha256": "03e78788907c7f752c16ed40425ff0d7325aa9d821242f056ec2dd23c3a078b8",
+      "alphaBounds": [
+        0,
+        0,
+        11,
+        10
+      ],
+      "category": "world",
+      "id": "window-lit",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "sourceRegion": [
+        1196,
+        739,
+        166,
+        154
+      ],
+      "groundAnchor": [
+        5.5,
+        10
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/bed.png",
+      "width": 32,
+      "height": 44,
+      "sha256": "98425c571ed31121913397c0acaf9fbb2be28d180a20eb710ef62167a532d9e9",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        44
+      ],
+      "category": "world",
+      "id": "bed",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        186,
+        45,
+        304,
+        422
+      ],
+      "groundAnchor": [
+        16.0,
+        44
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/table.png",
+      "width": 42,
+      "height": 31,
+      "sha256": "f4c387697899dd471c7e01a0813697a74dbcab7acd8f7134f2959804efa4baf8",
+      "alphaBounds": [
+        0,
+        0,
+        42,
+        31
+      ],
+      "category": "world",
+      "id": "table",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        628,
+        178,
+        383,
+        285
+      ],
+      "groundAnchor": [
+        21.0,
+        31
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/chair.png",
+      "width": 20,
+      "height": 30,
+      "sha256": "18451c842e8bfd58555f38e075c473bd4c6dc40b091c5f094df7653176d7d028",
+      "alphaBounds": [
+        0,
+        0,
+        20,
+        30
+      ],
+      "category": "world",
+      "id": "chair",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        1155,
+        188,
+        186,
+        275
+      ],
+      "groundAnchor": [
+        10.0,
+        30
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/cupboard.png",
+      "width": 28,
+      "height": 35,
+      "sha256": "f83dc10540740a76f6fb352cfa04591540495e9680a7180b9ae8321571380ad0",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        35
+      ],
+      "category": "world",
+      "id": "cupboard",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        183,
+        543,
+        317,
+        401
+      ],
+      "groundAnchor": [
+        14.0,
+        35
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/bookshelf.png",
+      "width": 28,
+      "height": 33,
+      "sha256": "3f424225a2702632311a4cbba046c3c45bbe845d691350876af741d2e688d0e4",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        33
+      ],
+      "category": "world",
+      "id": "bookshelf",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        660,
+        575,
+        314,
+        369
+      ],
+      "groundAnchor": [
+        14.0,
+        33
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/floor-lamp.png",
+      "width": 12,
+      "height": 34,
+      "sha256": "571eb70f66f56dabd3c87f105087de735b93e04062de374ab2c66db721801829",
+      "alphaBounds": [
+        0,
+        0,
+        12,
+        34
+      ],
+      "category": "world",
+      "id": "floor-lamp",
+      "source": "art/environment/furniture/basic-furniture-source-v1.png",
+      "sourceRegion": [
+        1203,
+        555,
+        136,
+        389
+      ],
+      "groundAnchor": [
+        6.0,
+        34
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/plank-floor.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "5a9e1aa691d1f883d22f3893dd5186de79602c4c72238f0411d5491d25756d30",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "category": "world",
+      "id": "plank-floor",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        88,
+        129,
+        373,
+        367
+      ],
+      "groundAnchor": [
+        16.0,
+        32
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/interior-wall.png",
+      "width": 64,
+      "height": 37,
+      "sha256": "8cfabad643da6907b57d6f988c0a55381d8a3d9161647fdcd00c9a3f94800ca1",
+      "alphaBounds": [
+        0,
+        0,
+        64,
+        37
+      ],
+      "category": "world",
+      "id": "interior-wall",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        537,
+        172,
+        473,
+        273
+      ],
+      "groundAnchor": [
+        32.0,
+        37
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/occlusion-trim.png",
+      "width": 48,
+      "height": 11,
+      "sha256": "afa456de268a9e4c0a0f5329c4651b73afb8e06f9cde21eeca8e33e47b9a8c95",
+      "alphaBounds": [
+        0,
+        0,
+        48,
+        11
+      ],
+      "category": "world",
+      "id": "occlusion-trim",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        1048,
+        324,
+        453,
+        106
+      ],
+      "groundAnchor": [
+        24.0,
+        11
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/woven-rug.png",
+      "width": 52,
+      "height": 36,
+      "sha256": "23f85291de9ffeeec1008230c5145d1fae24ac1322bfc65da4b985d7f15458d0",
+      "alphaBounds": [
+        0,
+        0,
+        52,
+        36
+      ],
+      "category": "world",
+      "id": "woven-rug",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        114,
+        644,
+        389,
+        266
+      ],
+      "groundAnchor": [
+        26.0,
+        36
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/potted-plant.png",
+      "width": 13,
+      "height": 18,
+      "sha256": "d465ff8462d74dd363614a5729b9463f70e405e6dc9a985da6db73cdcaea708f",
+      "alphaBounds": [
+        0,
+        0,
+        13,
+        18
+      ],
+      "category": "world",
+      "id": "potted-plant",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        664,
+        591,
+        227,
+        314
+      ],
+      "groundAnchor": [
+        6.5,
+        18
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/wall-lamp.png",
+      "width": 9,
+      "height": 19,
+      "sha256": "d2ed0b86347a25ebdc7943ffb831f4d15845818cd48cbc7f9bf9a7f656e9c2a1",
+      "alphaBounds": [
+        0,
+        0,
+        9,
+        19
+      ],
+      "category": "world",
+      "id": "wall-lamp",
+      "source": "art/environment/housing/interior-parts-source-v1.png",
+      "sourceRegion": [
+        1191,
+        604,
+        142,
+        292
+      ],
+      "groundAnchor": [
+        4.5,
+        19
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/stump.png",
+      "width": 18,
+      "height": 10,
+      "sha256": "172fc8e8b53015c61d5055a0b8377ee6e21daad996773c45fdbac3135ba61375",
+      "alphaBounds": [
+        0,
+        0,
+        18,
+        10
+      ],
+      "category": "world",
+      "id": "stump",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        141,
+        256,
+        274,
+        159
+      ],
+      "groundAnchor": [
+        9.0,
+        10
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/stump-regrowth.png",
+      "width": 18,
+      "height": 12,
+      "sha256": "3e4096a8b8c283dabe7f025541cef10abea860acc6ad90ff43a34c97c88b7a9a",
+      "alphaBounds": [
+        0,
+        0,
+        18,
+        12
+      ],
+      "category": "world",
+      "id": "stump-regrowth",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        630,
+        228,
+        272,
+        188
+      ],
+      "groundAnchor": [
+        9.0,
+        12
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/seedling.png",
+      "width": 8,
+      "height": 8,
+      "sha256": "f3e965d922921d9e960b68ae14ba9e0a1c9e1313dddac65773aa23a17d868312",
+      "alphaBounds": [
+        0,
+        0,
+        8,
+        8
+      ],
+      "category": "world",
+      "id": "seedling",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        1220,
+        279,
+        136,
+        137
+      ],
+      "groundAnchor": [
+        4.0,
+        8
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/sapling.png",
+      "width": 18,
+      "height": 22,
+      "sha256": "2c42035663a95cfe94fedc1d4a9b60b48379730f667c31e2ba4b77fdb8276138",
+      "alphaBounds": [
+        0,
+        0,
+        18,
+        22
+      ],
+      "category": "world",
+      "id": "sapling",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        175,
+        609,
+        245,
+        299
+      ],
+      "groundAnchor": [
+        9.0,
+        22
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/young-tree.png",
+      "width": 29,
+      "height": 33,
+      "sha256": "4bef33b3898c8f50abee667b43a54fa0c14d3895cc27bc71b928a1961fdef166",
+      "alphaBounds": [
+        0,
+        0,
+        29,
+        33
+      ],
+      "category": "world",
+      "id": "young-tree",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        606,
+        540,
+        329,
+        375
+      ],
+      "groundAnchor": [
+        14.5,
+        33
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/fallen-branch.png",
+      "width": 20,
+      "height": 14,
+      "sha256": "89bf88a4be0690fef4d1fcf7194753a58eebd3e7461d3edd72d1b9b8bd4dae23",
+      "alphaBounds": [
+        0,
+        0,
+        20,
+        14
+      ],
+      "category": "world",
+      "id": "fallen-branch",
+      "source": "art/environment/nature/tree-resource-states-source-v1.png",
+      "sourceRegion": [
+        1165,
+        718,
+        254,
+        172
+      ],
+      "groundAnchor": [
+        10.0,
+        14
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/berry-empty.png",
+      "width": 28,
+      "height": 19,
+      "sha256": "0a14fa7da0396b1babcc573f0c38005c222c4d41150a5a37333625d9ac631a83",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        19
+      ],
+      "category": "world",
+      "id": "berry-empty",
+      "source": "art/environment/nature/berry-harvest-states-source-v1.png",
+      "sourceRegion": [
+        74,
+        128,
+        555,
+        384
+      ],
+      "groundAnchor": [
+        14.0,
+        19
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/berry-flowering.png",
+      "width": 28,
+      "height": 19,
+      "sha256": "61841f968fb8be54bb193856149a29027d70a80e006901ced8c612df2ad661aa",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        19
+      ],
+      "category": "world",
+      "id": "berry-flowering",
+      "source": "art/environment/nature/berry-harvest-states-source-v1.png",
+      "sourceRegion": [
+        775,
+        128,
+        556,
+        384
+      ],
+      "groundAnchor": [
+        14.0,
+        19
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/berry-unripe.png",
+      "width": 28,
+      "height": 19,
+      "sha256": "10c4c996eec0a2d551bdf8710f79121d1fcb0af8ee08bed8cc49d8f374285167",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        19
+      ],
+      "category": "world",
+      "id": "berry-unripe",
+      "source": "art/environment/nature/berry-harvest-states-source-v1.png",
+      "sourceRegion": [
+        74,
+        674,
+        555,
+        382
+      ],
+      "groundAnchor": [
+        14.0,
+        19
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/berry-ripe.png",
+      "width": 28,
+      "height": 19,
+      "sha256": "e7cbdcfd2f34f0e58bcdd6f9b9a4714a6d9afa57f56c7f984f4c007677c294ec",
+      "alphaBounds": [
+        0,
+        0,
+        28,
+        19
+      ],
+      "category": "world",
+      "id": "berry-ripe",
+      "source": "art/environment/nature/berry-harvest-states-source-v1.png",
+      "sourceRegion": [
+        774,
+        674,
+        557,
+        382
+      ],
+      "groundAnchor": [
+        14.0,
+        19
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/rock-intact.png",
+      "width": 26,
+      "height": 17,
+      "sha256": "d09a317b84e6ade63bc068c8daf2e6fee91296488e0c0157f70c6fe888b572e8",
+      "alphaBounds": [
+        0,
+        0,
+        26,
+        17
+      ],
+      "category": "world",
+      "id": "rock-intact",
+      "source": "art/environment/nature/rock-harvest-states-source-v1.png",
+      "sourceRegion": [
+        97,
+        162,
+        514,
+        338
+      ],
+      "groundAnchor": [
+        13.0,
+        17
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/rock-cracked.png",
+      "width": 26,
+      "height": 17,
+      "sha256": "b608cb9bde6f4479f41a2a573e652fcf640ed9363b1b47f253693f214503ed4a",
+      "alphaBounds": [
+        0,
+        0,
+        26,
+        17
+      ],
+      "category": "world",
+      "id": "rock-cracked",
+      "source": "art/environment/nature/rock-harvest-states-source-v1.png",
+      "sourceRegion": [
+        799,
+        162,
+        512,
+        338
+      ],
+      "groundAnchor": [
+        13.0,
+        17
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/rock-damaged.png",
+      "width": 26,
+      "height": 17,
+      "sha256": "2b21883d46ac31ee2cd31854552f508813f5a833f67458cd2a744144eb5ab650",
+      "alphaBounds": [
+        0,
+        0,
+        26,
+        17
+      ],
+      "category": "world",
+      "id": "rock-damaged",
+      "source": "art/environment/nature/rock-harvest-states-source-v1.png",
+      "sourceRegion": [
+        97,
+        690,
+        518,
+        338
+      ],
+      "groundAnchor": [
+        13.0,
+        17
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/rock-depleted.png",
+      "width": 25,
+      "height": 8,
+      "sha256": "d1ec7c2fd98fb9622ae1f1d656f756820710c490fe1f12fcb6cd3fb618b857f0",
+      "alphaBounds": [
+        0,
+        0,
+        25,
+        8
+      ],
+      "category": "world",
+      "id": "rock-depleted",
+      "source": "art/environment/nature/rock-harvest-states-source-v1.png",
+      "sourceRegion": [
+        800,
+        873,
+        504,
+        158
+      ],
+      "groundAnchor": [
+        12.5,
+        8
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/chest-closed.png",
+      "width": 24,
+      "height": 18,
+      "sha256": "c950e627f7365cd985606f1b8c1810d4e54339c83ce1f6b27a12085823fdea0f",
+      "alphaBounds": [
+        0,
+        0,
+        24,
+        18
+      ],
+      "category": "world",
+      "id": "chest-closed",
+      "source": "art/environment/props/chest-states-source-v1.png",
+      "sourceRegion": [
+        115,
+        225,
+        543,
+        406
+      ],
+      "groundAnchor": [
+        12.0,
+        18
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/chest-opening.png",
+      "width": 24,
+      "height": 24,
+      "sha256": "bb1005a18e8e44b63a6515fb767ee730d51d4f73b4b4b19ca7a4309c58541706",
+      "alphaBounds": [
+        0,
+        0,
+        24,
+        24
+      ],
+      "category": "world",
+      "id": "chest-opening",
+      "source": "art/environment/props/chest-states-source-v1.png",
+      "sourceRegion": [
+        826,
+        115,
+        521,
+        517
+      ],
+      "groundAnchor": [
+        12.0,
+        24
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/chest-open.png",
+      "width": 24,
+      "height": 27,
+      "sha256": "540c986d0ea1196cd6c306d54c34362ba3390d9a1c0a7f699fb3b6c989da8dc3",
+      "alphaBounds": [
+        0,
+        0,
+        24,
+        27
+      ],
+      "category": "world",
+      "id": "chest-open",
+      "source": "art/environment/props/chest-states-source-v1.png",
+      "sourceRegion": [
+        1543,
+        54,
+        516,
+        577
+      ],
+      "groundAnchor": [
+        12.0,
+        27
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/anvil.png",
+      "width": 24,
+      "height": 20,
+      "sha256": "570db49b655e38ce670409db67f8b28d9ff268345e60596e7dd76eb5b0104f61",
+      "alphaBounds": [
+        0,
+        0,
+        24,
+        20
+      ],
+      "category": "world",
+      "id": "anvil",
+      "source": "art/environment/props/village-props-source-v1.png",
+      "sourceRegion": [
+        209,
+        455,
+        415,
+        350
+      ],
+      "groundAnchor": [
+        12.0,
+        20
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "world/noticeboard.png",
+      "width": 48,
+      "height": 40,
+      "sha256": "1161242d48b4a167729917249db7b6b0a4c80d955ba28d1ed374844c7aa86042",
+      "alphaBounds": [
+        0,
+        0,
+        48,
+        40
+      ],
+      "category": "world",
+      "id": "noticeboard",
+      "source": "art/environment/props/village-props-source-v1.png",
+      "sourceRegion": [
+        817,
+        125,
+        819,
+        680
+      ],
+      "groundAnchor": [
+        24.0,
+        40
+      ],
+      "anchorStatus": "first_playable_provisional"
+    },
+    {
+      "file": "crops/wheat-sown.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "2f3b7d8671f1638da62d62e8b82f6044d7a3c88f79c144eaba20a2e6d88d6040",
+      "alphaBounds": [
+        12,
+        23,
+        19,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "sown",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/wheat-sprout.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "0693b45a890bd5308be1724adc428765b3591314f2d1dc0a60f7ac94cae99891",
+      "alphaBounds": [
+        11,
+        17,
+        21,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "sprout",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/wheat-young.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "3d98148d98ae316d3084718dc4e1589c95766c75543d46dc7270812ea8d18236",
+      "alphaBounds": [
+        10,
+        15,
+        22,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "young",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/wheat-growing.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "35d6030c4da58ae5d256514b780c811055784bceb7133de30d7be5e4a328ba7b",
+      "alphaBounds": [
+        8,
+        7,
+        23,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "growing",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/wheat-ripe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "5de4dc533acb697d3b82c2491c45e6e9efd82a1548a7ff80d309211fc7dc82d2",
+      "alphaBounds": [
+        4,
+        6,
+        28,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "ripe",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/wheat-harvested.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "81b8a5c62de3ff9dd94b127369a6b765c9fe853648483dde11419c72b38cf4ba",
+      "alphaBounds": [
+        12,
+        21,
+        20,
+        29
+      ],
+      "category": "crop",
+      "crop": "wheat",
+      "state": "harvested",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/wheat-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-sown.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "35cfdbad7a1f5dae9479745ead4029598e1f44a0df5ed2d2a6e3cbf2e7128d3d",
+      "alphaBounds": [
+        12,
+        24,
+        19,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "sown",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-sprout.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "c58680266cf8bfa9c51d0c28ff43c81f60a2cdb765c1f4821271257c7e0932a3",
+      "alphaBounds": [
+        12,
+        22,
+        20,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "sprout",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-young.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "b290602d9c7b6e12946c764258170700549f7b3e74b7c17d65169c73cafae633",
+      "alphaBounds": [
+        8,
+        15,
+        24,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "young",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-growing.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "30a54bfb468e6bdc00344bbddb48180742fb38133294a9057ed82943f26b3ce6",
+      "alphaBounds": [
+        6,
+        14,
+        25,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "growing",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-ripe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "6a82575625439e78201ab774af47e24e5c093c16b2238f7f7c9dbc7c6e731501",
+      "alphaBounds": [
+        4,
+        11,
+        28,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "ripe",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/carrot-harvested.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "e15d5d11d0da8f739f7d4a7c70096613569f24812297590f248d2e840015a154",
+      "alphaBounds": [
+        14,
+        25,
+        26,
+        29
+      ],
+      "category": "crop",
+      "crop": "carrot",
+      "state": "harvested",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/carrot-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-sown.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "56d3c963c1466d437aa30d9fbbe6bf55b03eb9c37f7af21cedd627368db2a837",
+      "alphaBounds": [
+        12,
+        25,
+        19,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "sown",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-sprout.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "a5171c795ed4756858cbf24f1ef5388c02da1026cf25f7f0c306f00fc26332e7",
+      "alphaBounds": [
+        11,
+        23,
+        21,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "sprout",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-young.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "6dd74061ef7ca837512571abc0e7150115b3ff47652da8262e611e38096ae29d",
+      "alphaBounds": [
+        7,
+        19,
+        25,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "young",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        0,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-growing.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "9d9fdd839bab1678aca9c443a6f68c5022cb78be6dac9f88d77ca3643cc6d7a5",
+      "alphaBounds": [
+        5,
+        17,
+        26,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "growing",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        0,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-ripe.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "8aae4b327e3c92f420f502617f6553d603badc237e3364e7798f57aab5a50fc2",
+      "alphaBounds": [
+        4,
+        14,
+        28,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "ripe",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        512,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "crops/pumpkin-harvested.png",
+      "width": 32,
+      "height": 32,
+      "sha256": "f150a632c7b701dfd9131c3c8bee591e477ceccdfa93659feb0b22aecf428c7f",
+      "alphaBounds": [
+        7,
+        21,
+        25,
+        29
+      ],
+      "category": "crop",
+      "crop": "pumpkin",
+      "state": "harvested",
+      "groundAnchor": [
+        16,
+        29
+      ],
+      "source": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "sourceRegion": [
+        1024,
+        512,
+        512,
+        512
+      ]
+    },
+    {
+      "file": "world/house-layers/roof.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "74205c5d456c099b702d42db805e102b38624dc11e8984df2e7020d0f077a24d",
+      "alphaBounds": [
+        3,
+        7,
+        93,
+        78
+      ],
+      "category": "house_layer",
+      "id": "roof",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/house-layers/walls.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "aa10bc598e90d111e7d367e60b4fbe1529c14819679bd75420650dace12694a0",
+      "alphaBounds": [
+        8,
+        59,
+        88,
+        108
+      ],
+      "category": "house_layer",
+      "id": "walls",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/house-layers/door-closed.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "eb6ed0d18b3383220416263cbef35f7670ac4bf8e3e0272bd3e915dbff779eac",
+      "alphaBounds": [
+        33,
+        80,
+        63,
+        108
+      ],
+      "category": "house_layer",
+      "id": "door-closed",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/house-layers/door-open.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "0263b93c0ca3e78942c3841d5866f140d0b8d3a21e774fc76e4f2bb61f2c7736",
+      "alphaBounds": [
+        33,
+        80,
+        63,
+        108
+      ],
+      "category": "house_layer",
+      "id": "door-open",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/house-layers/windows-dark.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "736af4f4d993ca95d59a0d2e120532aa4bb1add8384597bedbd3d77e453be7cf",
+      "alphaBounds": [
+        19,
+        82,
+        77,
+        93
+      ],
+      "category": "house_layer",
+      "id": "windows-dark",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/house-layers/windows-lit.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "59ea15f6f0058df3abfc05875f532d4d90e0f2794de2f3747beb2c64e637ab0d",
+      "alphaBounds": [
+        19,
+        82,
+        77,
+        93
+      ],
+      "category": "house_layer",
+      "id": "windows-lit",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/cottage-closed-dark.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "6543500fc0c1fbd83cd8a5ded4fecece02b35327c21814f0b16fa7bf8979f0fc",
+      "alphaBounds": [
+        3,
+        7,
+        93,
+        108
+      ],
+      "category": "house_composite",
+      "id": "cottage-closed-dark",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/cottage-closed-lit.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "167511d9939a3a5f9d87c49da348ebcfab816ebcbb7fb348faa91947a2551a4a",
+      "alphaBounds": [
+        3,
+        7,
+        93,
+        108
+      ],
+      "category": "house_composite",
+      "id": "cottage-closed-lit",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/cottage-open-dark.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "1c20dbee868f2be2b989f6e5b089d6ff8ed023a1321a5ac3b275f666ca7642f6",
+      "alphaBounds": [
+        3,
+        7,
+        93,
+        108
+      ],
+      "category": "house_composite",
+      "id": "cottage-open-dark",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    },
+    {
+      "file": "world/cottage-open-lit.png",
+      "width": 96,
+      "height": 112,
+      "sha256": "0df45d58c09a6c588da0c903c0388c4eafdbfc3cdbf185893097e7013765287e",
+      "alphaBounds": [
+        3,
+        7,
+        93,
+        108
+      ],
+      "category": "house_composite",
+      "id": "cottage-open-lit",
+      "source": "art/environment/housing/cottage-layers-source-v1.png",
+      "groundAnchor": [
+        48,
+        108
+      ],
+      "assemblyCoordinates": "batch05_preview_calibration"
+    }
+  ]
+}

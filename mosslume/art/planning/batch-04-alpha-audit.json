@@ -1,0 +1,2549 @@
+{
+  "icons_farming": {
+    "width": 1254,
+    "height": 1254,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.54474,
+    "nearOpaqueFraction": 0.37302,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "wheat-seed",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          44,
+          52,
+          401,
+          388
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          44,
+          52,
+          358,
+          337
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "carrot-seed",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          418,
+          0,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          456,
+          59,
+          794,
+          391
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          456,
+          59,
+          339,
+          333
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "pumpkin-seed",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          836,
+          0,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          882,
+          59,
+          1209,
+          400
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          882,
+          59,
+          328,
+          342
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "wheat",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          25,
+          430,
+          430,
+          410
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          52,
+          446,
+          427,
+          834
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          52,
+          446,
+          376,
+          389
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "carrot",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          465,
+          430,
+          410,
+          410
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          484,
+          446,
+          833,
+          826
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          484,
+          446,
+          350,
+          381
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "pumpkin",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          836,
+          418,
+          418,
+          418
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          875,
+          495,
+          1208,
+          814
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          875,
+          495,
+          334,
+          320
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "apple",
+        "column": 0,
+        "row": 2,
+        "sourceRegion": [
+          0,
+          836,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          74,
+          877,
+          377,
+          1201
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          74,
+          877,
+          304,
+          325
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "berry",
+        "column": 1,
+        "row": 2,
+        "sourceRegion": [
+          418,
+          836,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          482,
+          910,
+          798,
+          1178
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          482,
+          910,
+          317,
+          269
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "mushroom",
+        "column": 2,
+        "row": 2,
+        "sourceRegion": [
+          836,
+          836,
+          418,
+          418
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          909,
+          897,
+          1195,
+          1206
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          909,
+          897,
+          287,
+          310
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "icons_food": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.66644,
+    "nearOpaqueFraction": 0.29185,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "bread",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          60,
+          122,
+          443,
+          455
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          60,
+          122,
+          384,
+          334
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "vegetable-stew",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          561,
+          111,
+          967,
+          462
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          561,
+          111,
+          407,
+          352
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "grilled-fish",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1056,
+          129,
+          1511,
+          471
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1056,
+          129,
+          456,
+          343
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "tea",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          88,
+          562,
+          451,
+          928
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          88,
+          562,
+          364,
+          367
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "water-flask",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          603,
+          541,
+          967,
+          956
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          603,
+          541,
+          365,
+          416
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": null,
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "visiblePixels": 0,
+        "alphaMax": 1,
+        "visibleBounds": null,
+        "centerAlpha": 0,
+        "tightSourceRect": null
+      }
+    ]
+  },
+  "icons_buildables": {
+    "width": 1774,
+    "height": 887,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.56568,
+    "nearOpaqueFraction": 0.39474,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "chest",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          36,
+          80,
+          412,
+          407
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          36,
+          80,
+          377,
+          328
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "workbench",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          454,
+          67,
+          875,
+          415
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          454,
+          67,
+          422,
+          349
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "furnace",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          931,
+          28,
+          1304,
+          423
+        ],
+        "centerAlpha": 254,
+        "tightSourceRect": [
+          931,
+          28,
+          374,
+          396
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cooking-pot",
+        "column": 3,
+        "row": 0,
+        "sourceRegion": [
+          1330,
+          0,
+          444,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1396,
+          67,
+          1745,
+          423
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1396,
+          67,
+          350,
+          357
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "campfire",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          40,
+          472,
+          403,
+          838
+        ],
+        "centerAlpha": 254,
+        "tightSourceRect": [
+          40,
+          472,
+          364,
+          367
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "lantern",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          544,
+          452,
+          785,
+          850
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          544,
+          452,
+          242,
+          399
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "wood-wall",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          932,
+          468,
+          1291,
+          849
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          932,
+          468,
+          360,
+          382
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": null,
+        "column": 3,
+        "row": 1,
+        "sourceRegion": [
+          1330,
+          444,
+          444,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "visiblePixels": 0,
+        "alphaMax": 1,
+        "visibleBounds": null,
+        "centerAlpha": 0,
+        "tightSourceRect": null
+      }
+    ]
+  },
+  "icons_social": {
+    "width": 1263,
+    "height": 1246,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.56838,
+    "nearOpaqueFraction": 0.38385,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "letter",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          632,
+          623
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          103,
+          119,
+          625,
+          564
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          103,
+          119,
+          523,
+          446
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "trade-coin",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          632,
+          0,
+          631,
+          623
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          720,
+          118,
+          1144,
+          560
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          720,
+          118,
+          425,
+          443
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "flower-bouquet",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          623,
+          632,
+          623
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          107,
+          628,
+          626,
+          1137
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          107,
+          628,
+          520,
+          510
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "parcel",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          632,
+          623,
+          631,
+          623
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          682,
+          676,
+          1185,
+          1125
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          682,
+          676,
+          504,
+          450
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_controls": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.68589,
+    "nearOpaqueFraction": 0.25783,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "button-normal",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          25,
+          80,
+          365,
+          155
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          41,
+          96,
+          373,
+          222
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          41,
+          96,
+          333,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "button-hover",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          405,
+          80,
+          365,
+          155
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          415,
+          96,
+          747,
+          222
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          415,
+          96,
+          333,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "button-pressed",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          785,
+          80,
+          365,
+          155
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          788,
+          96,
+          1120,
+          222
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          788,
+          96,
+          333,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "button-disabled",
+        "column": 3,
+        "row": 0,
+        "sourceRegion": [
+          1138,
+          70,
+          388,
+          170
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1163,
+          96,
+          1495,
+          222
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1163,
+          96,
+          333,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "tab-inactive",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          25,
+          300,
+          365,
+          175
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          43,
+          315,
+          373,
+          458
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          43,
+          315,
+          331,
+          144
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "tab-active",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          405,
+          300,
+          365,
+          175
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          422,
+          312,
+          757,
+          459
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          422,
+          312,
+          336,
+          148
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "checkbox-empty",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          865,
+          290,
+          190,
+          190
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 253,
+        "visibleBounds": [
+          893,
+          318,
+          1031,
+          456
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          893,
+          318,
+          139,
+          139
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "checkbox-checked",
+        "column": 3,
+        "row": 1,
+        "sourceRegion": [
+          1235,
+          300,
+          180,
+          175
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1255,
+          318,
+          1398,
+          456
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1255,
+          318,
+          144,
+          139
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "radio-empty",
+        "column": 0,
+        "row": 2,
+        "sourceRegion": [
+          120,
+          525,
+          180,
+          165
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          132,
+          539,
+          269,
+          672
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          132,
+          539,
+          138,
+          134
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "radio-selected",
+        "column": 1,
+        "row": 2,
+        "sourceRegion": [
+          505,
+          525,
+          170,
+          165
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          511,
+          534,
+          654,
+          675
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          511,
+          534,
+          144,
+          142
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "toggle-off",
+        "column": 2,
+        "row": 2,
+        "sourceRegion": [
+          810,
+          525,
+          300,
+          165
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          823,
+          545,
+          1086,
+          671
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          823,
+          545,
+          264,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "toggle-on",
+        "column": 3,
+        "row": 2,
+        "sourceRegion": [
+          1190,
+          525,
+          315,
+          165
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1202,
+          545,
+          1464,
+          671
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1202,
+          545,
+          263,
+          127
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "scrollbar-track",
+        "column": 0,
+        "row": 3,
+        "sourceRegion": [
+          160,
+          700,
+          85,
+          270
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 253,
+        "visibleBounds": [
+          172,
+          716,
+          232,
+          950
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          172,
+          716,
+          61,
+          235
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "scrollbar-thumb",
+        "column": 1,
+        "row": 3,
+        "sourceRegion": [
+          530,
+          735,
+          95,
+          210
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          543,
+          756,
+          607,
+          913
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          543,
+          756,
+          65,
+          158
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "slider-track",
+        "column": 2,
+        "row": 3,
+        "sourceRegion": [
+          750,
+          795,
+          420,
+          95
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          762,
+          817,
+          1156,
+          867
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          762,
+          817,
+          395,
+          51
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "slider-thumb",
+        "column": 3,
+        "row": 3,
+        "sourceRegion": [
+          1280,
+          775,
+          150,
+          140
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 253,
+        "visibleBounds": [
+          1296,
+          795,
+          1413,
+          892
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1296,
+          795,
+          118,
+          98
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_panels": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.53461,
+    "nearOpaqueFraction": 0.42121,
+    "canvasEdgeMaxAlpha": 0,
+    "regions": [
+      {
+        "id": "panel-generic",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          20,
+          65,
+          445,
+          335
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          30,
+          86,
+          450,
+          370
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          30,
+          86,
+          421,
+          285
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "tooltip-panel",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          480,
+          110,
+          330,
+          250
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          486,
+          121,
+          795,
+          341
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          486,
+          121,
+          310,
+          221
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "dialogue-panel",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          820,
+          70,
+          710,
+          310
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          832,
+          101,
+          1510,
+          357
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          832,
+          101,
+          679,
+          257
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "portrait-frame",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          15,
+          455,
+          410,
+          420
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          31,
+          483,
+          407,
+          858
+        ],
+        "centerAlpha": 0,
+        "tightSourceRect": [
+          31,
+          483,
+          377,
+          376
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "recipe-panel",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          440,
+          405,
+          445,
+          560
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          461,
+          431,
+          862,
+          942
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          461,
+          431,
+          402,
+          512
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "toast-panel",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          905,
+          560,
+          620,
+          250
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          924,
+          583,
+          1501,
+          767
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          924,
+          583,
+          578,
+          185
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_hud": {
+    "width": 1448,
+    "height": 1086,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.5073,
+    "nearOpaqueFraction": 0.42352,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "slot-normal",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          61,
+          61,
+          343,
+          333
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          61,
+          61,
+          283,
+          273
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "slot-selected",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          362,
+          0,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          410,
+          61,
+          693,
+          334
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          410,
+          61,
+          284,
+          274
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "slot-disabled",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          724,
+          0,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          757,
+          61,
+          1041,
+          333
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          757,
+          61,
+          285,
+          273
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "health-heart",
+        "column": 3,
+        "row": 0,
+        "sourceRegion": [
+          1086,
+          0,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1123,
+          94,
+          1401,
+          334
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1123,
+          94,
+          279,
+          241
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "energy-leaf",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          362,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          77,
+          407,
+          323,
+          692
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          77,
+          407,
+          247,
+          286
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "hunger-plate",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          362,
+          362,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          406,
+          407,
+          681,
+          687
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          406,
+          407,
+          276,
+          281
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "time-clock",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          724,
+          362,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          763,
+          387,
+          1026,
+          687
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          763,
+          387,
+          264,
+          301
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "date-calendar",
+        "column": 3,
+        "row": 1,
+        "sourceRegion": [
+          1086,
+          362,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1119,
+          401,
+          1401,
+          688
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1119,
+          401,
+          283,
+          288
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "weather-sun",
+        "column": 0,
+        "row": 2,
+        "sourceRegion": [
+          0,
+          724,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          43,
+          725,
+          343,
+          1022
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          43,
+          725,
+          301,
+          298
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "weather-moon",
+        "column": 1,
+        "row": 2,
+        "sourceRegion": [
+          362,
+          724,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          423,
+          739,
+          669,
+          1013
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          423,
+          739,
+          247,
+          275
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "weather-rain",
+        "column": 2,
+        "row": 2,
+        "sourceRegion": [
+          724,
+          724,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          745,
+          740,
+          1042,
+          1023
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          745,
+          740,
+          298,
+          284
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "currency-coin",
+        "column": 3,
+        "row": 2,
+        "sourceRegion": [
+          1086,
+          724,
+          362,
+          362
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1122,
+          735,
+          1401,
+          1014
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1122,
+          735,
+          280,
+          280
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_bars": {
+    "width": 1536,
+    "height": 1024,
+    "alphaMin": 0,
+    "alphaMax": 254,
+    "fullyTransparentFraction": 0.85577,
+    "nearOpaqueFraction": 0.10739,
+    "canvasEdgeMaxAlpha": 0,
+    "regions": [
+      {
+        "id": "health-track",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          29,
+          207,
+          501,
+          298
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          29,
+          207,
+          473,
+          92
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "health-fill",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          558,
+          230,
+          977,
+          279
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          558,
+          230,
+          420,
+          50
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "energy-track",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1034,
+          207,
+          1505,
+          299
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1034,
+          207,
+          472,
+          93
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "energy-fill",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          36,
+          744,
+          485,
+          793
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          36,
+          744,
+          450,
+          50
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "progress-track",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          530,
+          722,
+          1005,
+          813
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          530,
+          722,
+          476,
+          92
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "progress-fill",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 254,
+        "visibleBounds": [
+          1049,
+          744,
+          1499,
+          793
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1049,
+          744,
+          451,
+          50
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_feedback": {
+    "width": 1261,
+    "height": 1247,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.46515,
+    "nearOpaqueFraction": 0.40459,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "bubble-happy",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          20,
+          40,
+          305,
+          295
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          41,
+          60,
+          315,
+          310
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          41,
+          60,
+          275,
+          251
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "bubble-question",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          330,
+          40,
+          305,
+          295
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          348,
+          62,
+          624,
+          311
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          348,
+          62,
+          277,
+          250
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "bubble-refuse",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          640,
+          40,
+          305,
+          295
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          654,
+          62,
+          928,
+          311
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          654,
+          62,
+          275,
+          250
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "bubble-tired",
+        "column": 3,
+        "row": 0,
+        "sourceRegion": [
+          945,
+          40,
+          306,
+          295
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          957,
+          66,
+          1231,
+          311
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          957,
+          66,
+          275,
+          246
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "bubble-hungry",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          20,
+          345,
+          305,
+          280
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          39,
+          364,
+          320,
+          607
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          39,
+          364,
+          282,
+          244
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "bubble-received",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          330,
+          345,
+          305,
+          280
+        ],
+        "regionStatus": "manual_preview_region_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          345,
+          364,
+          625,
+          607
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          345,
+          364,
+          281,
+          244
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "relation-heart",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          630,
+          312,
+          316,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          661,
+          402,
+          902,
+          607
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          661,
+          402,
+          242,
+          206
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "trust-handshake",
+        "column": 3,
+        "row": 1,
+        "sourceRegion": [
+          946,
+          312,
+          315,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          950,
+          385,
+          1237,
+          604
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          950,
+          385,
+          288,
+          220
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "mood-face",
+        "column": 0,
+        "row": 2,
+        "sourceRegion": [
+          0,
+          624,
+          315,
+          311
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          43,
+          690,
+          306,
+          888
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          43,
+          690,
+          264,
+          199
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "schedule-clock",
+        "column": 1,
+        "row": 2,
+        "sourceRegion": [
+          315,
+          624,
+          315,
+          311
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          351,
+          648,
+          611,
+          895
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          351,
+          648,
+          261,
+          248
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "quest-scroll",
+        "column": 2,
+        "row": 2,
+        "sourceRegion": [
+          630,
+          624,
+          316,
+          311
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          646,
+          664,
+          908,
+          912
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          646,
+          664,
+          263,
+          249
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "success-check",
+        "column": 3,
+        "row": 2,
+        "sourceRegion": [
+          946,
+          624,
+          315,
+          311
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          968,
+          681,
+          1212,
+          888
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          968,
+          681,
+          245,
+          208
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "failure-cross",
+        "column": 0,
+        "row": 3,
+        "sourceRegion": [
+          0,
+          935,
+          315,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          43,
+          964,
+          294,
+          1177
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          43,
+          964,
+          252,
+          214
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "work-priority",
+        "column": 1,
+        "row": 3,
+        "sourceRegion": [
+          315,
+          935,
+          315,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          348,
+          958,
+          599,
+          1177
+        ],
+        "centerAlpha": 252,
+        "tightSourceRect": [
+          348,
+          958,
+          252,
+          220
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "prohibited",
+        "column": 2,
+        "row": 3,
+        "sourceRegion": [
+          630,
+          935,
+          316,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          655,
+          956,
+          906,
+          1176
+        ],
+        "centerAlpha": 248,
+        "tightSourceRect": [
+          655,
+          956,
+          252,
+          221
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "trade-coins",
+        "column": 3,
+        "row": 3,
+        "sourceRegion": [
+          946,
+          935,
+          315,
+          312
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          953,
+          947,
+          1219,
+          1178
+        ],
+        "centerAlpha": 251,
+        "tightSourceRect": [
+          953,
+          947,
+          267,
+          232
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  },
+  "ui_cursors": {
+    "width": 1774,
+    "height": 887,
+    "alphaMin": 0,
+    "alphaMax": 255,
+    "fullyTransparentFraction": 0.71472,
+    "nearOpaqueFraction": 0.21102,
+    "canvasEdgeMaxAlpha": 1,
+    "regions": [
+      {
+        "id": "cursor-default",
+        "column": 0,
+        "row": 0,
+        "sourceRegion": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          117,
+          116,
+          297,
+          373
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          117,
+          116,
+          181,
+          258
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cursor-interact",
+        "column": 1,
+        "row": 0,
+        "sourceRegion": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          518,
+          103,
+          739,
+          390
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          518,
+          103,
+          222,
+          288
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cursor-gather",
+        "column": 2,
+        "row": 0,
+        "sourceRegion": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          958,
+          97,
+          1268,
+          410
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          958,
+          97,
+          311,
+          314
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cursor-build",
+        "column": 3,
+        "row": 0,
+        "sourceRegion": [
+          1330,
+          0,
+          444,
+          444
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1389,
+          94,
+          1726,
+          417
+        ],
+        "centerAlpha": 251,
+        "tightSourceRect": [
+          1389,
+          94,
+          338,
+          324
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cursor-talk",
+        "column": 0,
+        "row": 1,
+        "sourceRegion": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          81,
+          506,
+          404,
+          772
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          81,
+          506,
+          324,
+          267
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "cursor-pickup",
+        "column": 1,
+        "row": 1,
+        "sourceRegion": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          505,
+          518,
+          805,
+          776
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          505,
+          518,
+          301,
+          259
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "placement-valid",
+        "column": 2,
+        "row": 1,
+        "sourceRegion": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          942,
+          498,
+          1266,
+          792
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          942,
+          498,
+          325,
+          295
+        ],
+        "touchesRegionBoundary": false
+      },
+      {
+        "id": "placement-invalid",
+        "column": 3,
+        "row": 1,
+        "sourceRegion": [
+          1330,
+          444,
+          444,
+          443
+        ],
+        "regionStatus": "nominal_grid_pending_tight_export",
+        "alphaMax": 255,
+        "visibleBounds": [
+          1393,
+          498,
+          1719,
+          792
+        ],
+        "centerAlpha": 253,
+        "tightSourceRect": [
+          1393,
+          498,
+          327,
+          295
+        ],
+        "touchesRegionBoundary": false
+      }
+    ]
+  }
+}

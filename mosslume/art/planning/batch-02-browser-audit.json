@@ -1,0 +1,834 @@
+{
+  "loaded": 7,
+  "paused": true,
+  "frame": 0,
+  "errors": [],
+  "stats": [
+    {
+      "id": "walk_down",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            42,
+            427,
+            491
+          ],
+          "anchor": [
+            287.5,
+            489
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            149,
+            42,
+            362,
+            480
+          ],
+          "anchor": [
+            243,
+            477
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            88,
+            42,
+            306,
+            484
+          ],
+          "anchor": [
+            195.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            22,
+            413,
+            465
+          ],
+          "anchor": [
+            320.5,
+            462
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            150,
+            19,
+            354,
+            458
+          ],
+          "anchor": [
+            227,
+            455
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            95,
+            19,
+            311,
+            445
+          ],
+          "anchor": [
+            195,
+            441
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7424132029215494,
+        "nearOpaqueFraction": 0.2053241729736328,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 447,
+      "maxHalfWidth": 139.5
+    },
+    {
+      "id": "walk_right",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            243,
+            45,
+            511,
+            497
+          ],
+          "anchor": [
+            379,
+            494
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            0,
+            46,
+            363,
+            497
+          ],
+          "anchor": [
+            250,
+            496
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            51,
+            42,
+            259,
+            497
+          ],
+          "anchor": [
+            152.5,
+            494
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            216,
+            15,
+            511,
+            467
+          ],
+          "anchor": [
+            366.5,
+            463
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            0,
+            17,
+            377,
+            467
+          ],
+          "anchor": [
+            181,
+            464
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            50,
+            15,
+            268,
+            467
+          ],
+          "anchor": [
+            142,
+            464
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7378622690836588,
+        "nearOpaqueFraction": 0.203216552734375,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 452,
+      "maxHalfWidth": 250
+    },
+    {
+      "id": "walk_up",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            240,
+            50,
+            449,
+            506
+          ],
+          "anchor": [
+            353.5,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            50,
+            353,
+            503
+          ],
+          "anchor": [
+            254.5,
+            499
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            55,
+            50,
+            258,
+            505
+          ],
+          "anchor": [
+            156.5,
+            505
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            240,
+            19,
+            455,
+            469
+          ],
+          "anchor": [
+            348.5,
+            466
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            155,
+            19,
+            360,
+            469
+          ],
+          "anchor": [
+            253.5,
+            465
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            65,
+            19,
+            263,
+            469
+          ],
+          "anchor": [
+            164,
+            465
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7324752807617188,
+        "nearOpaqueFraction": 0.19687589009602866,
+        "edgeMaxAlpha": 0
+      },
+      "maxAbove": 455,
+      "maxHalfWidth": 113.5
+    },
+    {
+      "id": "walk_left",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            210,
+            43,
+            444,
+            492
+          ],
+          "anchor": [
+            327,
+            492
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            46,
+            357,
+            489
+          ],
+          "anchor": [
+            266.5,
+            489
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            90,
+            47,
+            286,
+            489
+          ],
+          "anchor": [
+            202.5,
+            487
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            202,
+            28,
+            453,
+            471
+          ],
+          "anchor": [
+            327.5,
+            470
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            138,
+            28,
+            368,
+            471
+          ],
+          "anchor": [
+            252.5,
+            470
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            96,
+            27,
+            288,
+            467
+          ],
+          "anchor": [
+            226,
+            464
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7299931844075521,
+        "nearOpaqueFraction": 0.18380228678385416,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 449,
+      "maxHalfWidth": 130
+    },
+    {
+      "id": "chop",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            153,
+            137,
+            419,
+            508
+          ],
+          "anchor": [
+            259.5,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            110,
+            134,
+            374,
+            509
+          ],
+          "anchor": [
+            270,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            111,
+            36,
+            369,
+            509
+          ],
+          "anchor": [
+            266,
+            504
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            122,
+            90,
+            455,
+            460
+          ],
+          "anchor": [
+            274.5,
+            457
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            117,
+            134,
+            452,
+            462
+          ],
+          "anchor": [
+            278,
+            459
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            134,
+            89,
+            443,
+            461
+          ],
+          "anchor": [
+            240.5,
+            458
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7372798919677734,
+        "nearOpaqueFraction": 0.17874018351236978,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 468,
+      "maxHalfWidth": 202.5
+    },
+    {
+      "id": "mine",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            184,
+            113,
+            447,
+            501
+          ],
+          "anchor": [
+            283,
+            498
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            152,
+            113,
+            414,
+            501
+          ],
+          "anchor": [
+            253,
+            498
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            75,
+            51,
+            334,
+            501
+          ],
+          "anchor": [
+            246,
+            499
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            169,
+            82,
+            495,
+            456
+          ],
+          "anchor": [
+            322.5,
+            452
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            137,
+            118,
+            466,
+            456
+          ],
+          "anchor": [
+            303.5,
+            454
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            143,
+            54,
+            422,
+            456
+          ],
+          "anchor": [
+            243,
+            451
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7438233693440756,
+        "nearOpaqueFraction": 0.16891098022460938,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 448,
+      "maxHalfWidth": 179
+    },
+    {
+      "id": "water",
+      "sourceSize": [
+        1536,
+        1024
+      ],
+      "frames": [
+        {
+          "sx": 0,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            170,
+            38,
+            401,
+            484
+          ],
+          "anchor": [
+            266.5,
+            481
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            132,
+            38,
+            445,
+            484
+          ],
+          "anchor": [
+            228,
+            482
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 0,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            140,
+            42,
+            447,
+            484
+          ],
+          "anchor": [
+            228.5,
+            481
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 0,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            174,
+            37,
+            484,
+            483
+          ],
+          "anchor": [
+            267.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 512,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            145,
+            37,
+            450,
+            483
+          ],
+          "anchor": [
+            236.5,
+            480
+          ],
+          "pixelsPresent": true
+        },
+        {
+          "sx": 1024,
+          "sy": 512,
+          "cw": 512,
+          "ch": 512,
+          "bounds": [
+            137,
+            37,
+            369,
+            483
+          ],
+          "anchor": [
+            232,
+            480
+          ],
+          "pixelsPresent": true
+        }
+      ],
+      "alpha": {
+        "fullyTransparentFraction": 0.7135969797770182,
+        "nearOpaqueFraction": 0.1954034169514974,
+        "edgeMaxAlpha": 1
+      },
+      "maxAbove": 444,
+      "maxHalfWidth": 218.5
+    }
+  ]
+}

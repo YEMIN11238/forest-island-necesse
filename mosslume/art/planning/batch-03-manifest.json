@@ -1,0 +1,1344 @@
+{
+  "project": "Mosslume",
+  "batch": "03",
+  "date": "2026-10-22",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "npc_farmer",
+      "name": "农夫四方向造型",
+      "kind": "resident_direction_source",
+      "file": "art/characters/residents/farmer-directions-source-v1.png",
+      "promptFile": "art/characters/residents/farmer-directions-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-90cf45dd-9e8b-4322-ad53-b87084f2f030.png",
+      "sha256": "10ccf8d12fba0bcfd684c76538e34a15232f6bda7f31bea8192c5211a61812d4",
+      "width": 1254,
+      "height": 1254,
+      "targetCellPixels": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "cells": [
+        {
+          "id": "down",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "right",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "up",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "left",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "art/characters/character-lineup-concept-v1.png",
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "status": "static_design_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: identity-preserve.\nAsset type: Mosslume original resident four-direction STANDING design source atlas, transparent PNG, 2 columns x 2 rows.\nInput image 1 is the approved four-person original concept lineup. Use ONLY the specified resident; all other people must be absent.\nInput image 2 is the approved protagonist's four-view game-character design. Use image 2 ONLY for the SAME small game-sprite body proportions, camera elevation, pixel-cluster style and optical body height, NOT for its protagonist identity or costume.\nExactly four full-body views of ONE resident, in this exact reading order: TOP LEFT front/down toward viewer; TOP RIGHT profile facing RIGHT, nose pointing right; BOTTOM LEFT back/up away from viewer with NO face or eyes; BOTTOM RIGHT profile facing LEFT, nose pointing left.\nFriendly cozy top-down/three-quarter pixel-game character, approximately three-head proportions like image 2, clear silhouettes and deliberate square pixel clusters, simplified clothes detail, warm neutral matte lighting. Maintain SAME head/body size, hair volume, costume and local foot baseline across all four views. Relaxed empty hands at sides; all equipment attached to belt rather than held in hands. Preserve anatomical accessory placement when rotating.\nComposition: square canvas with four equal invisible square cells, one centered whole body per cell, generous transparent padding around hair, hands and boots. Character crown near 15% cell height, planted soles near 87%, consistent local foot anchor. No clipping. No grid lines, separators, frames, lettering, names, text, extra people, scenery, ground, drop shadows, colored halos, glow, watermark or background. Genuine alpha transparency everywhere except the figure. This is four poses, NOT a crowd or motion sequence.\nResident identity: SECOND person from left in image 1, the young adult female farmer. Copper/auburn hair in one thick side braid, warm sun-touched medium skin, cream collared rolled-sleeve shirt, sage green work overalls/trousers, ochre-yellow practical apron tied at waist, small seed pouch at belt, brown cuffed work boots. Keep same warm face and gentle competent mood. Braid rests over anatomical RIGHT shoulder in front view and is visible on the corresponding side/back views. No basket, tools, produce or hat. Slim-to-average sturdy working build; same optical height as protagonist.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-90cf45dd-9e8b-4322-ad53-b87084f2f030.png",
+          "selected": true
+        }
+      ],
+      "alphaAudit": {
+        "width": 1254,
+        "height": 1254,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.76894,
+        "nearOpaqueFraction": 0.18427,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "down",
+            "maxAlpha": 255,
+            "visiblePixels": 90303,
+            "bounds": [
+              264,
+              56,
+              508,
+              607
+            ]
+          },
+          {
+            "id": "right",
+            "maxAlpha": 255,
+            "visiblePixels": 68577,
+            "bounds": [
+              766,
+              60,
+              968,
+              608
+            ]
+          },
+          {
+            "id": "up",
+            "maxAlpha": 255,
+            "visiblePixels": 88287,
+            "bounds": [
+              269,
+              660,
+              504,
+              1206
+            ]
+          },
+          {
+            "id": "left",
+            "maxAlpha": 255,
+            "visiblePixels": 72133,
+            "bounds": [
+              771,
+              663,
+              968,
+              1210
+            ]
+          }
+        ]
+      },
+      "visualReview": "identity_views_costume_and_back_satchel_correction_checked"
+    },
+    {
+      "id": "npc_carpenter",
+      "name": "木匠四方向造型",
+      "kind": "resident_direction_source",
+      "file": "art/characters/residents/carpenter-directions-source-v1.png",
+      "promptFile": "art/characters/residents/carpenter-directions-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e2668348-eae3-44ec-948c-794148cf7392.png",
+      "sha256": "e9be74df9e59830fd40f5e9b423fcb861d6dd6996d581aaad03aceade65bbdec",
+      "width": 1254,
+      "height": 1254,
+      "targetCellPixels": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "cells": [
+        {
+          "id": "down",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "right",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "up",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "left",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "art/characters/character-lineup-concept-v1.png",
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "status": "static_design_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: identity-preserve.\nAsset type: Mosslume original resident four-direction STANDING design source atlas, transparent PNG, 2 columns x 2 rows.\nInput image 1 is the approved four-person original concept lineup. Use ONLY the specified resident; all other people must be absent.\nInput image 2 is the approved protagonist's four-view game-character design. Use image 2 ONLY for the SAME small game-sprite body proportions, camera elevation, pixel-cluster style and optical body height, NOT for its protagonist identity or costume.\nExactly four full-body views of ONE resident, in this exact reading order: TOP LEFT front/down toward viewer; TOP RIGHT profile facing RIGHT, nose pointing right; BOTTOM LEFT back/up away from viewer with NO face or eyes; BOTTOM RIGHT profile facing LEFT, nose pointing left.\nFriendly cozy top-down/three-quarter pixel-game character, approximately three-head proportions like image 2, clear silhouettes and deliberate square pixel clusters, simplified clothes detail, warm neutral matte lighting. Maintain SAME head/body size, hair volume, costume and local foot baseline across all four views. Relaxed empty hands at sides; all equipment attached to belt rather than held in hands. Preserve anatomical accessory placement when rotating.\nComposition: square canvas with four equal invisible square cells, one centered whole body per cell, generous transparent padding around hair, hands and boots. Character crown near 15% cell height, planted soles near 87%, consistent local foot anchor. No clipping. No grid lines, separators, frames, lettering, names, text, extra people, scenery, ground, drop shadows, colored halos, glow, watermark or background. Genuine alpha transparency everywhere except the figure. This is four poses, NOT a crowd or motion sequence.\nResident identity: THIRD person from left in image 1, the middle-aged male carpenter. Medium-deep brown skin, short salt-and-pepper tight curly hair, neat short beard, friendly strong face, broad stocky torso, blue-grey rolled-sleeve work shirt, warm tan leather apron with front pocket, brown leather tool belt, dark brown trousers and work boots. ONE small hammer remains holstered on belt, never in hand. Preserve his age, curly hair, beard and apron. Wider shoulders than protagonist but similar optical height, no giant warrior proportions. No axe, helmet or weapon.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a75ef85d-b8a6-4c79-b82d-3bdbcc66cddd.png",
+          "selected": false
+        },
+        {
+          "prompt": "Use case: identity-preserve. Image 1 is the edit target, the four-direction Mosslume carpenter atlas. Image 2 is ONLY the protagonist game-body proportion reference. Change only the carpenter's head-to-body PROPORTIONS across all four views to fit the same cozy small game-character family as image 2. Increase the carpenter head, curly hair and face scale about 25%, shorten the torso/legs slightly within the same full-body height, aiming approximately THREE heads tall. Keep him a sturdy middle-aged adult, not a child. Preserve his exact medium-deep brown skin, salt-and-pepper curls, beard, blue-grey rolled-sleeve shirt, tan apron, belt tools, stocky shoulders, boots and warm expression. Preserve same view order: front/down, right profile, back/up no face, left profile. Four equal invisible cells, centered figures and consistent boot baseline, entire silhouette inside each cell with padding. Keep image 1 palette and pixel-art rendering; no added props, extra characters, grid, text, background, shadow or glow. Genuine alpha-transparent background. No longer, thinner or realistic adult body proportions.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e2668348-eae3-44ec-948c-794148cf7392.png",
+          "selected": true
+        }
+      ],
+      "alphaAudit": {
+        "width": 1254,
+        "height": 1254,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.68613,
+        "nearOpaqueFraction": 0.27618,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "down",
+            "maxAlpha": 255,
+            "visiblePixels": 132104,
+            "bounds": [
+              225,
+              72,
+              579,
+              626
+            ]
+          },
+          {
+            "id": "right",
+            "maxAlpha": 255,
+            "visiblePixels": 96528,
+            "bounds": [
+              761,
+              72,
+              982,
+              626
+            ]
+          },
+          {
+            "id": "up",
+            "maxAlpha": 255,
+            "visiblePixels": 130035,
+            "bounds": [
+              230,
+              627,
+              572,
+              1200
+            ]
+          },
+          {
+            "id": "left",
+            "maxAlpha": 255,
+            "visiblePixels": 97737,
+            "bounds": [
+              762,
+              627,
+              989,
+              1203
+            ]
+          }
+        ]
+      },
+      "visualReview": "identity_views_costume_and_back_satchel_correction_checked"
+    },
+    {
+      "id": "npc_merchant",
+      "name": "商人四方向造型",
+      "kind": "resident_direction_source",
+      "file": "art/characters/residents/merchant-directions-source-v1.png",
+      "promptFile": "art/characters/residents/merchant-directions-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-4a71f478-6d21-49b4-b88f-a2f28c3c2d61.png",
+      "sha256": "b329854aa5858c46beb7dcf6c28b04b4a8dbf1bbc7671eb36793b333731f0345",
+      "width": 1254,
+      "height": 1254,
+      "targetCellPixels": [
+        64,
+        64
+      ],
+      "columns": 2,
+      "rows": 2,
+      "count": 4,
+      "cells": [
+        {
+          "id": "down",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "right",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "up",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "left",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "art/characters/character-lineup-concept-v1.png",
+        "art/characters/player/player-directions-prototype-v1.png"
+      ],
+      "status": "static_design_pending_runtime_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: identity-preserve.\nAsset type: Mosslume original resident four-direction STANDING design source atlas, transparent PNG, 2 columns x 2 rows.\nInput image 1 is the approved four-person original concept lineup. Use ONLY the specified resident; all other people must be absent.\nInput image 2 is the approved protagonist's four-view game-character design. Use image 2 ONLY for the SAME small game-sprite body proportions, camera elevation, pixel-cluster style and optical body height, NOT for its protagonist identity or costume.\nExactly four full-body views of ONE resident, in this exact reading order: TOP LEFT front/down toward viewer; TOP RIGHT profile facing RIGHT, nose pointing right; BOTTOM LEFT back/up away from viewer with NO face or eyes; BOTTOM RIGHT profile facing LEFT, nose pointing left.\nFriendly cozy top-down/three-quarter pixel-game character, approximately three-head proportions like image 2, clear silhouettes and deliberate square pixel clusters, simplified clothes detail, warm neutral matte lighting. Maintain SAME head/body size, hair volume, costume and local foot baseline across all four views. Relaxed empty hands at sides; all equipment attached to belt rather than held in hands. Preserve anatomical accessory placement when rotating.\nComposition: square canvas with four equal invisible square cells, one centered whole body per cell, generous transparent padding around hair, hands and boots. Character crown near 15% cell height, planted soles near 87%, consistent local foot anchor. No clipping. No grid lines, separators, frames, lettering, names, text, extra people, scenery, ground, drop shadows, colored halos, glow, watermark or background. Genuine alpha transparency everywhere except the figure. This is four poses, NOT a crowd or motion sequence.\nResident identity: FOURTH/RIGHTMOST person in image 1, the adult female traveling merchant. Deep brown skin, dark curls gathered under a muted plum headscarf with teal knot/tails, simple gold hoop earrings, cream shirt, short plum-brown travel coat with restrained teal/copper trim, loose dark cuffed trousers, brown boots, turquoise pendant. Brown satchel on anatomical RIGHT hip, one small rolled map attached at belt, small round brass compass on the bag. Keep same clever warm face and independent friendly mood. No large cloak, weapons or held object. Similar optical height and body proportions to protagonist.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7396fb18-7282-4c9a-aabd-4fd18dbf596f.png",
+          "selected": false
+        },
+        {
+          "prompt": "Use case: precise-object-edit. Image 1 is the edit target, the four-view original Mosslume merchant atlas. Correct ONLY the BOTTOM-LEFT back/up view's satchel, attached rolled map, compass and shoulder strap. Front/down in TOP-LEFT has the satchel on image-LEFT, meaning the character's anatomical RIGHT hip. Therefore in the BOTTOM-LEFT back view the satchel must be on image-RIGHT, her anatomical RIGHT hip. Move the existing back-view satchel, rolled map and hanging compass from image-left to image-right of that back-view body, attached to the same right hip. The diagonal strap in back view must run from image-LEFT shoulder down toward image-RIGHT hip. Keep the torso, hair, headscarf, face-free rear head, coat, trousers, boots and hands in that back view unchanged. Keep the other THREE poses in their existing cells unchanged. Same 2x2 atlas dimensions and exact character identity, colors, lighting, size and pixel style. No mirror of the whole body or entire image. Genuine alpha-transparent background, no grid, lines, text, shadows, halo, extra objects or scenery.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-4a71f478-6d21-49b4-b88f-a2f28c3c2d61.png",
+          "selected": true
+        }
+      ],
+      "alphaAudit": {
+        "width": 1254,
+        "height": 1254,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.75552,
+        "nearOpaqueFraction": 0.20601,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "down",
+            "maxAlpha": 255,
+            "visiblePixels": 100737,
+            "bounds": [
+              250,
+              57,
+              513,
+              624
+            ]
+          },
+          {
+            "id": "right",
+            "maxAlpha": 255,
+            "visiblePixels": 79402,
+            "bounds": [
+              758,
+              57,
+              988,
+              624
+            ]
+          },
+          {
+            "id": "up",
+            "maxAlpha": 255,
+            "visiblePixels": 91818,
+            "bounds": [
+              262,
+              659,
+              519,
+              1208
+            ]
+          },
+          {
+            "id": "left",
+            "maxAlpha": 255,
+            "visiblePixels": 77996,
+            "bounds": [
+              781,
+              656,
+              1010,
+              1214
+            ]
+          }
+        ]
+      },
+      "visualReview": "identity_views_costume_and_back_satchel_correction_checked"
+    },
+    {
+      "id": "materials",
+      "name": "十种基础资源图标",
+      "kind": "material_icon_source",
+      "file": "art/items/materials/basic-materials-atlas-v1.png",
+      "promptFile": "art/items/materials/basic-materials-atlas-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9d8dff30-5ca0-499a-bca9-34af53da4b37.png",
+      "sha256": "0d0dbf424926b9783d4f390d75671bd6f3f9a499235bc0cdfd7269f4823efc02",
+      "width": 1448,
+      "height": 1086,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "columns": 4,
+      "rows": 3,
+      "count": 10,
+      "cells": [
+        {
+          "id": "log",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "stone",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            362,
+            0,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "plant-fiber",
+          "column": 2,
+          "row": 0,
+          "nominalSourceRect": [
+            724,
+            0,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "plank",
+          "column": 3,
+          "row": 0,
+          "nominalSourceRect": [
+            1086,
+            0,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "clay",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            362,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "copper-ore",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            362,
+            362,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "iron-ore",
+          "column": 2,
+          "row": 1,
+          "nominalSourceRect": [
+            724,
+            362,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "copper-bar",
+          "column": 3,
+          "row": 1,
+          "nominalSourceRect": [
+            1086,
+            362,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "iron-bar",
+          "column": 0,
+          "row": 2,
+          "nominalSourceRect": [
+            0,
+            724,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "coal",
+          "column": 1,
+          "row": 2,
+          "nominalSourceRect": [
+            362,
+            724,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": null,
+          "column": 2,
+          "row": 2,
+          "nominalSourceRect": [
+            724,
+            724,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": null,
+          "column": 3,
+          "row": 2,
+          "nominalSourceRect": [
+            1086,
+            724,
+            362,
+            362
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "art/items/tools/basic-tools-atlas-v1.png"
+      ],
+      "status": "icons_pending_crop_and_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: style-transfer.\nAsset type: Mosslume transparent inventory MATERIAL icon source atlas, 4 columns x 3 rows, exactly TEN distinct original material icons and TWO empty transparent slots.\nInput image 1 is the approved seven-tool icon atlas. Match ONLY its deliberate chunky low-resolution pixel clusters, dark outlines, warm wood/metal shading and consistent three-quarter item angle. No tools from that image should appear.\nExact cell reading order:\nTOP ROW: 1 bark-covered short LOG with visible cut growth rings; 2 chunky grey STONE with broad matte facets; 3 green/dried PLANT FIBER bundle tied with simple twine; 4 small stack of three flat light-brown sawn PLANKS.\nMIDDLE ROW: 5 two or three earthy red-brown CLAY lumps, smooth and matte; 6 rough grey COPPER ORE rock with clearly orange copper flecks; 7 rough grey IRON ORE rock with dark silvery iron veins, NO orange flecks; 8 one refined orange-copper rectangular COPPER BAR ingot with bevels.\nBOTTOM ROW: 9 one refined cool grey-silver rectangular IRON BAR ingot with bevels; 10 black lumpy COAL with subtle charcoal-grey edges; 11 EMPTY; 12 EMPTY.\nDesign every icon to be clear at logical 32x32. Each item fits comfortably within its own invisible square cell with balanced optical scale and ample transparent gutters. Raw ores look irregular and rough, smelted bars look regular and manufactured; stone, clay and coal must have different shapes and values. Neutral soft matte light, restrained highlights, no neon or magical glow.\nWide 4:3 canvas. Exactly 10 isolated icon subjects in the listed cells; bottom row last TWO cells remain completely alpha transparent. Genuine alpha-transparent background and gutters. No grid, dividers, tile frames, labels, numbers, letters, text, shadows, ground, hands, scenery, extra icons or watermark.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9d8dff30-5ca0-499a-bca9-34af53da4b37.png",
+          "selected": true
+        }
+      ],
+      "alphaAudit": {
+        "width": 1448,
+        "height": 1086,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "fullyTransparentFraction": 0.5941,
+        "nearOpaqueFraction": 0.33993,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "log",
+            "maxAlpha": 255,
+            "visiblePixels": 57264,
+            "bounds": [
+              40,
+              60,
+              355,
+              361
+            ]
+          },
+          {
+            "id": "stone",
+            "maxAlpha": 255,
+            "visiblePixels": 55735,
+            "bounds": [
+              399,
+              85,
+              696,
+              350
+            ]
+          },
+          {
+            "id": "plant-fiber",
+            "maxAlpha": 255,
+            "visiblePixels": 52145,
+            "bounds": [
+              752,
+              50,
+              1072,
+              360
+            ]
+          },
+          {
+            "id": "plank",
+            "maxAlpha": 255,
+            "visiblePixels": 59150,
+            "bounds": [
+              1122,
+              75,
+              1422,
+              361
+            ]
+          },
+          {
+            "id": "clay",
+            "maxAlpha": 255,
+            "visiblePixels": 59901,
+            "bounds": [
+              27,
+              362,
+              351,
+              700
+            ]
+          },
+          {
+            "id": "copper-ore",
+            "maxAlpha": 255,
+            "visiblePixels": 60677,
+            "bounds": [
+              399,
+              415,
+              701,
+              706
+            ]
+          },
+          {
+            "id": "iron-ore",
+            "maxAlpha": 255,
+            "visiblePixels": 62656,
+            "bounds": [
+              755,
+              418,
+              1061,
+              702
+            ]
+          },
+          {
+            "id": "copper-bar",
+            "maxAlpha": 255,
+            "visiblePixels": 51547,
+            "bounds": [
+              1115,
+              362,
+              1427,
+              695
+            ]
+          },
+          {
+            "id": "iron-bar",
+            "maxAlpha": 255,
+            "visiblePixels": 53012,
+            "bounds": [
+              32,
+              762,
+              352,
+              1037
+            ]
+          },
+          {
+            "id": "coal",
+            "maxAlpha": 255,
+            "visiblePixels": 60688,
+            "bounds": [
+              390,
+              762,
+              709,
+              1036
+            ]
+          },
+          {
+            "id": null,
+            "maxAlpha": 1,
+            "visiblePixels": 0,
+            "bounds": null
+          },
+          {
+            "id": null,
+            "maxAlpha": 1,
+            "visiblePixels": 0,
+            "bounds": null
+          }
+        ]
+      },
+      "visualReview": "ten_distinct_materials_in_expected_order_empty_last_two_slots_checked"
+    },
+    {
+      "id": "crop_wheat",
+      "name": "小麦六阶段",
+      "kind": "crop_growth_state_source",
+      "file": "art/farming/crops/wheat-growth-source-v1.png",
+      "promptFile": "art/farming/crops/wheat-growth-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9b8c4621-cae6-4fd7-acd3-f58c043ca9cf.png",
+      "sha256": "a7b0bfd0b784cdc042b766dc4a9843d45838c8d9c45febcb1b1477ccaee2dccb",
+      "width": 1536,
+      "height": 1024,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "cells": [
+        {
+          "id": "sown",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "sprout",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "young",
+          "column": 2,
+          "row": 0,
+          "nominalSourceRect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "growing",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "ripe",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "harvested",
+          "column": 2,
+          "row": 1,
+          "nominalSourceRect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "/Users/zhangjunhao/Downloads/截屏2026-10-09 10.42.44.png"
+      ],
+      "status": "growth_states_pending_root_anchor_and_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: style-transfer.\nAsset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.\nInput image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.\nUse neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.\nComposition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.\nCrop: WHEAT. Exactly six states in reading order:\n1 SOWN: three tiny wheat grains partially nestled in a tiny dark-brown root-contact mark, no green leaves.\n2 SPROUT: very small two-leaf bright green seedling, about one fifth mature height.\n3 YOUNG: compact tuft of 4-5 upright slender green blades, about two fifths mature height.\n4 GROWING: several taller green jointed stems with small green unripe ear tips, about three quarters mature height.\n5 RIPE: full clump of 4-5 curved golden wheat ears and ochre stalks, obvious grain kernels, a few green basal leaves; tallest state, harvest-ready, no basket or loose bundle.\n6 HARVESTED: short cut tan stubble, 3-4 clipped stalk ends at the same root point, no ripe ears.\nAll six states retain ONE shared plant base/root anchor. Mature wheat logical height about 24 pixels, harvested stubble about 5 pixels.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-9b8c4621-cae6-4fd7-acd3-f58c043ca9cf.png",
+          "selected": true
+        }
+      ],
+      "stateSequence": [
+        "sown",
+        "sprout",
+        "young",
+        "growing",
+        "ripe",
+        "harvested"
+      ],
+      "loopAnimation": false,
+      "matureCellIndex": 4,
+      "targetMatureVisualSizePixels": [
+        24,
+        24
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.77087,
+        "nearOpaqueFraction": 0.13489,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "sown",
+            "maxAlpha": 253,
+            "visiblePixels": 10370,
+            "bounds": [
+              204,
+              325,
+              343,
+              432
+            ]
+          },
+          {
+            "id": "sprout",
+            "maxAlpha": 254,
+            "visiblePixels": 15190,
+            "bounds": [
+              685,
+              277,
+              878,
+              511
+            ]
+          },
+          {
+            "id": "young",
+            "maxAlpha": 254,
+            "visiblePixels": 32223,
+            "bounds": [
+              1158,
+              157,
+              1393,
+              432
+            ]
+          },
+          {
+            "id": "growing",
+            "maxAlpha": 254,
+            "visiblePixels": 65017,
+            "bounds": [
+              145,
+              535,
+              431,
+              956
+            ]
+          },
+          {
+            "id": "ripe",
+            "maxAlpha": 254,
+            "visiblePixels": 116838,
+            "bounds": [
+              548,
+              512,
+              1010,
+              959
+            ]
+          },
+          {
+            "id": "harvested",
+            "maxAlpha": 254,
+            "visiblePixels": 16272,
+            "bounds": [
+              1198,
+              804,
+              1356,
+              958
+            ]
+          }
+        ]
+      },
+      "visualReview": "six_distinct_growth_harvest_states_size_progression_and_ripe_identity_checked"
+    },
+    {
+      "id": "crop_carrot",
+      "name": "胡萝卜六阶段",
+      "kind": "crop_growth_state_source",
+      "file": "art/farming/crops/carrot-growth-source-v1.png",
+      "promptFile": "art/farming/crops/carrot-growth-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-18414c0a-e389-4b43-9868-8d5c02d5c68a.png",
+      "sha256": "897d9265550e510945cb2bd55fea7ff39d05e3168169e9ad961986e46eae6d12",
+      "width": 1536,
+      "height": 1024,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "cells": [
+        {
+          "id": "sown",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "sprout",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "young",
+          "column": 2,
+          "row": 0,
+          "nominalSourceRect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "growing",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "ripe",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "harvested",
+          "column": 2,
+          "row": 1,
+          "nominalSourceRect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "/Users/zhangjunhao/Downloads/截屏2026-10-09 10.42.44.png"
+      ],
+      "status": "growth_states_pending_root_anchor_and_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: style-transfer.\nAsset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.\nInput image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.\nUse neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.\nComposition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.\nCrop: CARROT. Exactly six states in reading order:\n1 SOWN: a few tiny dark tan carrot seeds in a tiny dark-brown root-contact mark, no leaves.\n2 SPROUT: tiny pair of rounded cotyledon leaves, about one sixth mature height.\n3 YOUNG: small fern-like fan of 3 light green carrot leaves, no orange root yet.\n4 GROWING: larger feathery green leaf rosette, with a small orange root shoulder just at the root point.\n5 RIPE: dense lush fan of deeply divided carrot leaves, darker leaf undersides and bright lime highlights, with clearly visible orange CARROT SHOULDER seated at ground/root point. Most root stays underground; do NOT draw a whole uprooted floating carrot or underground cutaway.\n6 HARVESTED: tiny disturbed root-contact mark and one clipped green leaf scrap; no carrot root and no intact foliage.\nOne plant, not a bunch of carried carrots. Mature foliage logical width about 22 pixels, height about 20 pixels. Leaf scale matches the reference island's compact foliage.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-18414c0a-e389-4b43-9868-8d5c02d5c68a.png",
+          "selected": true
+        }
+      ],
+      "stateSequence": [
+        "sown",
+        "sprout",
+        "young",
+        "growing",
+        "ripe",
+        "harvested"
+      ],
+      "loopAnimation": false,
+      "matureCellIndex": 4,
+      "targetMatureVisualSizePixels": [
+        24,
+        24
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.76552,
+        "nearOpaqueFraction": 0.1244,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "sown",
+            "maxAlpha": 254,
+            "visiblePixels": 7358,
+            "bounds": [
+              192,
+              372,
+              334,
+              460
+            ]
+          },
+          {
+            "id": "sprout",
+            "maxAlpha": 253,
+            "visiblePixels": 12857,
+            "bounds": [
+              683,
+              322,
+              836,
+              454
+            ]
+          },
+          {
+            "id": "young",
+            "maxAlpha": 254,
+            "visiblePixels": 40825,
+            "bounds": [
+              1130,
+              187,
+              1440,
+              459
+            ]
+          },
+          {
+            "id": "growing",
+            "maxAlpha": 253,
+            "visiblePixels": 58769,
+            "bounds": [
+              90,
+              627,
+              463,
+              928
+            ]
+          },
+          {
+            "id": "ripe",
+            "maxAlpha": 254,
+            "visiblePixels": 101521,
+            "bounds": [
+              550,
+              573,
+              1023,
+              928
+            ]
+          },
+          {
+            "id": "harvested",
+            "maxAlpha": 253,
+            "visiblePixels": 9563,
+            "bounds": [
+              1024,
+              754,
+              1440,
+              935
+            ]
+          }
+        ]
+      },
+      "visualReview": "six_distinct_growth_harvest_states_size_progression_and_ripe_identity_checked"
+    },
+    {
+      "id": "crop_pumpkin",
+      "name": "南瓜六阶段",
+      "kind": "crop_growth_state_source",
+      "file": "art/farming/crops/pumpkin-growth-source-v1.png",
+      "promptFile": "art/farming/crops/pumpkin-growth-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-eabd1705-dd65-4a29-90be-2ae995862daf.png",
+      "sha256": "ff1f6bce37db9b6741afaf783e58a3edd7aff3f86d82b65f40e0d830a89ce868",
+      "width": 1536,
+      "height": 1024,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "columns": 3,
+      "rows": 2,
+      "count": 6,
+      "cells": [
+        {
+          "id": "sown",
+          "column": 0,
+          "row": 0,
+          "nominalSourceRect": [
+            0,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "sprout",
+          "column": 1,
+          "row": 0,
+          "nominalSourceRect": [
+            512,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "young",
+          "column": 2,
+          "row": 0,
+          "nominalSourceRect": [
+            1024,
+            0,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "growing",
+          "column": 0,
+          "row": 1,
+          "nominalSourceRect": [
+            0,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "ripe",
+          "column": 1,
+          "row": 1,
+          "nominalSourceRect": [
+            512,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        },
+        {
+          "id": "harvested",
+          "column": 2,
+          "row": 1,
+          "nominalSourceRect": [
+            1024,
+            512,
+            512,
+            512
+          ],
+          "rectStatus": "nominal_grid_pending_export_review"
+        }
+      ],
+      "referenceFiles": [
+        "/Users/zhangjunhao/Downloads/截屏2026-10-09 10.42.44.png"
+      ],
+      "status": "growth_states_pending_root_anchor_and_export",
+      "runtimeTextureReady": false,
+      "generationHistory": [
+        {
+          "prompt": "Use case: style-transfer.\nAsset type: Mosslume original farm crop growth-state SOURCE atlas, transparent PNG, 3 columns x 2 rows, six different sequential states of ONE crop.\nInput image is a visual-style reference for the island world ONLY: use the same compact top-down/three-quarter 2D pixel look, plump distinct leaf clusters, dark green outlines, lime/yellow-green highlights and dense readable shapes. Do not reproduce any island, building, tree, interface, character or text from the reference.\nUse neutral evenly lit base textures: no night illumination baked in. Deliberate crisp square pixel clusters, simple limited color groups, clean dark outline, suitable for logical 32x32 world sprites, magnified for source-art review. Not watercolor, vector clipart, realistic botany, smooth 3D or a farming infographic.\nComposition: 3 columns by 2 rows of six equal invisible square cells. Same camera, SAME WORLD SCALE and root point across all six states, root point at (50% cell width, 82% cell height). Size must GROW naturally between states: do not enlarge seeds or seedlings to fill the cell. Mature plant fits within about 75% of cell height and width, with clear transparent padding. Crop alone with at most a tiny root-contact soil speck; no square soil tile, no large soil platform, no flowerpot, no below-ground cutaway, no ground shadow. Every cell contains exactly one planted clump/state. Genuine alpha-transparent backgrounds and gutters. No grids, frames, divider lines, captions, lettering, numbers, arrows, text, watermark or extra plants. Stages are game states, not all the same full-grown plant recolored.\nCrop: PUMPKIN. Exactly six states in reading order:\n1 SOWN: two tiny pale pumpkin seeds partially in a tiny dark root-contact mark, no green leaf.\n2 SPROUT: small pair of thick round seed leaves.\n3 YOUNG: small creeping vine with 2-3 lobed green leaves, no fruit.\n4 GROWING: broader vine with 4 lobed leaves and one tiny pale-green immature pumpkin under a yellow flower; larger than state 3.\n5 RIPE: one plump ribbed orange pumpkin nestled among dark-outlined lime-green lobed leaves and a curled stem, about 24 logical pixels wide, fruit seated at ground level rather than hovering; brightest orange reserved for ripe fruit.\n6 HARVESTED: short clipped vine stub and two small remaining leaves at the same root point, no fruit.\nSame root origin across all stages. Mature clump is wide and low, not as tall as wheat. One pumpkin per mature clump, no huge fruit or decorative crate.",
+          "source": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-eabd1705-dd65-4a29-90be-2ae995862daf.png",
+          "selected": true
+        }
+      ],
+      "stateSequence": [
+        "sown",
+        "sprout",
+        "young",
+        "growing",
+        "ripe",
+        "harvested"
+      ],
+      "loopAnimation": false,
+      "matureCellIndex": 4,
+      "targetMatureVisualSizePixels": [
+        24,
+        24
+      ],
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alphaMin": 0,
+        "alphaMax": 254,
+        "fullyTransparentFraction": 0.66372,
+        "nearOpaqueFraction": 0.13959,
+        "canvasEdgeMaxAlpha": 1,
+        "cells": [
+          {
+            "id": "sown",
+            "maxAlpha": 253,
+            "visiblePixels": 6614,
+            "bounds": [
+              202,
+              348,
+              339,
+              427
+            ]
+          },
+          {
+            "id": "sprout",
+            "maxAlpha": 253,
+            "visiblePixels": 14226,
+            "bounds": [
+              672,
+              296,
+              861,
+              418
+            ]
+          },
+          {
+            "id": "young",
+            "maxAlpha": 253,
+            "visiblePixels": 37895,
+            "bounds": [
+              1094,
+              227,
+              1440,
+              418
+            ]
+          },
+          {
+            "id": "growing",
+            "maxAlpha": 254,
+            "visiblePixels": 65084,
+            "bounds": [
+              73,
+              682,
+              471,
+              911
+            ]
+          },
+          {
+            "id": "ripe",
+            "maxAlpha": 254,
+            "visiblePixels": 96667,
+            "bounds": [
+              552,
+              625,
+              1013,
+              918
+            ]
+          },
+          {
+            "id": "harvested",
+            "maxAlpha": 253,
+            "visiblePixels": 33622,
+            "bounds": [
+              1119,
+              754,
+              1465,
+              909
+            ]
+          }
+        ]
+      },
+      "visualReview": "six_distinct_growth_harvest_states_size_progression_and_ripe_identity_checked"
+    }
+  ],
+  "notes": [
+    "居民为四方向静态造型源图，行走与职业动作待制作。",
+    "作物六格对应六个生长/采集状态，不是自动循环动画。",
+    "目标人物画布64×64、图标与作物32×32；当前保存原始大图，裁切、统一锚点、运行导出与同屏比例检查待完成。",
+    "木匠头身比例和商人背面背包位置已各做一轮修正；原始生成版本保留在默认生成目录，全部生成记录已保存。",
+    "前两批主角动作的步态修整与工具分层仍待完成。"
+  ],
+  "previewFile": "art/previews/assets-batch-03-v1.html",
+  "auditFile": "art/planning/batch-03-alpha-audit.json",
+  "totals": {
+    "atlases": 7,
+    "residentDirectionalPoses": 12,
+    "materialIcons": 10,
+    "cropGrowthStates": 18,
+    "nonemptySourceCells": 40
+  }
+}

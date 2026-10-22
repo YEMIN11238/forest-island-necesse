@@ -1,0 +1,9 @@
+Use case: style-transfer.
+Asset type: Mosslume transparent inventory MATERIAL icon source atlas, 4 columns x 3 rows, exactly TEN distinct original material icons and TWO empty transparent slots.
+Input image 1 is the approved seven-tool icon atlas. Match ONLY its deliberate chunky low-resolution pixel clusters, dark outlines, warm wood/metal shading and consistent three-quarter item angle. No tools from that image should appear.
+Exact cell reading order:
+TOP ROW: 1 bark-covered short LOG with visible cut growth rings; 2 chunky grey STONE with broad matte facets; 3 green/dried PLANT FIBER bundle tied with simple twine; 4 small stack of three flat light-brown sawn PLANKS.
+MIDDLE ROW: 5 two or three earthy red-brown CLAY lumps, smooth and matte; 6 rough grey COPPER ORE rock with clearly orange copper flecks; 7 rough grey IRON ORE rock with dark silvery iron veins, NO orange flecks; 8 one refined orange-copper rectangular COPPER BAR ingot with bevels.
+BOTTOM ROW: 9 one refined cool grey-silver rectangular IRON BAR ingot with bevels; 10 black lumpy COAL with subtle charcoal-grey edges; 11 EMPTY; 12 EMPTY.
+Design every icon to be clear at logical 32x32. Each item fits comfortably within its own invisible square cell with balanced optical scale and ample transparent gutters. Raw ores look irregular and rough, smelted bars look regular and manufactured; stone, clay and coal must have different shapes and values. Neutral soft matte light, restrained highlights, no neon or magical glow.
+Wide 4:3 canvas. Exactly 10 isolated icon subjects in the listed cells; bottom row last TWO cells remain completely alpha transparent. Genuine alpha-transparent background and gutters. No grid, dividers, tile frames, labels, numbers, letters, text, shadows, ground, hands, scenery, extra icons or watermark.

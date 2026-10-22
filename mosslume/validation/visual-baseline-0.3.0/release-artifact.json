@@ -1,0 +1,46 @@
+{
+  "releaseTag": "v0.3.0-visual-baseline",
+  "preparedAtUTC": "2026-10-22T14:55:06.120448+00:00",
+  "sourceApp": "/Users/zhangjunhao/Applications/Mosslume S1 Preview.app",
+  "packagedApp": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/mosslume/build/releases/v0.3.0-visual-baseline/staging/Mosslume S1 Preview.app",
+  "archive": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/mosslume/build/releases/v0.3.0-visual-baseline/Mosslume-0.3.0-visual-baseline-mac.zip",
+  "archiveBytes": 387048173,
+  "archiveSha256": "b62bd3bf525c0586ed8158fbac665cf4e14be09afffdeca58a804741c1d4514b",
+  "sourceAppTreeSha256": "99b28b1e67fd9fe5b08a2251c2c593da95709053ab239fa45f8aabff4a91b106",
+  "packagedAppTreeSha256": "e20cfb85f1a1360f477095281f0bbb408f6a08edba5751b8a819707326ad21b1",
+  "sourceAppBytes": 492000362,
+  "packagedAppBytes": 491997327,
+  "appTreeHashAlgorithm": "SHA-256 of sorted UTF-8 relative_path + NUL + octal_mode + NUL + file_sha256_or_symlink:target + newline, excluding directories.",
+  "adapterSha256": "720feaac7f568127f946797281d1e88659591444937e753e7848205a2afa1234",
+  "kernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "launcherArchitectures": "x86_64 arm64",
+  "jre": "Eclipse Adoptium Temurin 17.0.19+10, Darwin x86_64; Apple Silicon requires Rosetta",
+  "excludedGeneratedFiles": [
+    "Contents/Resources/Game/latest-crash.log"
+  ],
+  "changedFilesInStaging": [
+    "Contents/MacOS/MosslumeLauncher",
+    "Contents/_CodeSignature/CodeResources"
+  ],
+  "stagingChangeReason": "Excluded generated latest-crash.log, then renewed ad-hoc code signature. No gameplay code, resource artwork or adapter/kernel payload changed.",
+  "sourceAppSignatureVerified": true,
+  "stagedAppSignatureVerified": true,
+  "zipCRCVerified": true,
+  "appLaunched": false,
+  "recompiled": false,
+  "sourceAppModified": false,
+  "profile": "~/Library/Application Support/Mosslume-S1",
+  "defaultLaunch": "Mosslume menu, -islandprofile -mosslume; no automatic -load",
+  "privateDataAudit": "Path audit found no personal save/profile/credential files inside app. Generated crash log excluded. User profiles outside app were not read or packaged.",
+  "requirements": [
+    "macOS",
+    "Steam installed, running and signed in with existing ownership validation",
+    "Rosetta on Apple Silicon"
+  ],
+  "validationScope": "Static packaging and content hashes only; this task did not rerun gameplay. Native visual/performance evidence belongs to s2-night-tuning.",
+  "limitations": [
+    "Not notarized; ad-hoc signature only",
+    "Current 0.3.0 visual preview, not AI NPC or procedural-world refactor",
+    "No claim of stable 60 fps or full input/gameplay regression"
+  ]
+}

@@ -20,7 +20,7 @@ public class IslandLevel extends Level {
  @Override public void generateRegion(Region r){
   for(int x=0;x<r.tileWidth;x++)for(int y=0;y<r.tileHeight;y++){
    int tx=x+r.tileXOffset,ty=y+r.tileYOffset;
-   int tile=IslandLayout.isLand(tx,ty)?(IslandLayout.isPath(tx,ty)?TileRegistry.dirtID:TileRegistry.grassID):TileRegistry.waterID;
+   int tile=IslandLayout.isLand(tx,ty)?(IslandLayout.isPath(tx,ty)?NaturalPathWorld.tileID:TileRegistry.grassID):TileRegistry.waterID;
    int sx=tx-IslandLayout.OFFSET_X,sy=ty-IslandLayout.OFFSET_Y;
    if(IslandLayout.isHouse(sx,sy))tile=TileRegistry.woodFloorID;
    if(sx>=17&&sx<=19&&sy>=29&&sy<=31)tile=TileRegistry.farmlandID;

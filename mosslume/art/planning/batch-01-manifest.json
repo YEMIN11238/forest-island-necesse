@@ -1,0 +1,911 @@
+{
+  "project": "Mosslume",
+  "batch": "01",
+  "date": "2026-10-21",
+  "generator": "built-in image_gen",
+  "reference": "art/characters/character-lineup-concept-v1.png",
+  "integratedIntoGame": false,
+  "originalGeneratedFilesPreserved": true,
+  "assets": [
+    {
+      "id": "player_directions",
+      "name": "主角四方向站立造型试片",
+      "file": "art/characters/player/player-directions-prototype-v1.png",
+      "promptFile": "art/characters/player/player-directions-prototype-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a0d7b4c9-be30-43e4-bf63-bf7b081655c1.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "ee01066f763dffd6f81061f3802d56cd1d91a39eedb14bc5d4a8dfd63aa5b50a",
+      "status": "static_direction_prototype",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        64,
+        64
+      ],
+      "atlas": {
+        "columns": 2,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "down",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              627,
+              627
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "right",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              627,
+              0,
+              627,
+              627
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "up",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              627,
+              627,
+              627
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "left",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              627,
+              627,
+              627,
+              627
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1254,
+        "height": 1254,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "fully_transparent_fraction": 0.77484,
+        "near_opaque_fraction": 0.17569,
+        "top_alpha_counts": [
+          [
+            0,
+            1218447
+          ],
+          [
+            253,
+            199940
+          ],
+          [
+            252,
+            49573
+          ],
+          [
+            1,
+            22364
+          ],
+          [
+            251,
+            15956
+          ],
+          [
+            250,
+            8260
+          ],
+          [
+            2,
+            6354
+          ],
+          [
+            249,
+            5031
+          ]
+        ],
+        "edge_max_alpha": 1,
+        "cell_divider_max_alpha": null,
+        "samples": {
+          "0,0": 1,
+          "418,1": 0,
+          "209,313": 0,
+          "209,522": 0,
+          "627,627": 0,
+          "1253,1253": 0
+        }
+      },
+      "visualReview": "checked_four_directions_and_complete_bodies"
+    },
+    {
+      "id": "player_portraits",
+      "name": "主角六种表情",
+      "file": "art/characters/portraits/player-expressions-v1.png",
+      "promptFile": "art/characters/portraits/player-expressions-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-05ed0988-4c52-4d7d-b953-490d8e9fb4e9.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e0c1105f253e1747bd8a541500768cfa58c7b07fa9d0960f0e4653cb5e3513b5",
+      "status": "generated_portrait_atlas_pending_crop_review",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        256,
+        256
+      ],
+      "atlas": {
+        "columns": 3,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "neutral",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "happy",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              512,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "worried",
+            "column": 2,
+            "row": 0,
+            "nominalSourceRect": [
+              1024,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "firm",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "sad",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              512,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "surprised",
+            "column": 2,
+            "row": 1,
+            "nominalSourceRect": [
+              1024,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.44338,
+        "near_opaque_fraction": 0.47465,
+        "top_alpha_counts": [
+          [
+            0,
+            697370
+          ],
+          [
+            253,
+            611282
+          ],
+          [
+            252,
+            96940
+          ],
+          [
+            1,
+            31215
+          ],
+          [
+            251,
+            23621
+          ],
+          [
+            250,
+            12574
+          ],
+          [
+            249,
+            9149
+          ],
+          [
+            2,
+            8669
+          ]
+        ],
+        "edge_max_alpha": 2,
+        "cell_divider_max_alpha": 252,
+        "samples": {
+          "0,0": 0,
+          "512,1": 0,
+          "256,256": 253,
+          "256,426": 253,
+          "768,512": 0,
+          "1535,1023": 0
+        }
+      },
+      "visualReview": "checked_subject_order_identity_costume_and_expression_variation"
+    },
+    {
+      "id": "farmer_portraits",
+      "name": "农夫六种表情",
+      "file": "art/characters/portraits/farmer-expressions-v1.png",
+      "promptFile": "art/characters/portraits/farmer-expressions-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-f8c77c8b-b473-4949-8261-3aff40b9a189.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "85a20011f029cf37e21a0e35bc1255d9d4effa57a9d48195ec6bdc7776c77fb9",
+      "status": "generated_portrait_atlas_pending_crop_review",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        256,
+        256
+      ],
+      "atlas": {
+        "columns": 3,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "neutral",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "happy",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              512,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "worried",
+            "column": 2,
+            "row": 0,
+            "nominalSourceRect": [
+              1024,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "firm",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "sad",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              512,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "surprised",
+            "column": 2,
+            "row": 1,
+            "nominalSourceRect": [
+              1024,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.34052,
+        "near_opaque_fraction": 0.5524,
+        "top_alpha_counts": [
+          [
+            253,
+            681034
+          ],
+          [
+            0,
+            535596
+          ],
+          [
+            252,
+            142005
+          ],
+          [
+            1,
+            39540
+          ],
+          [
+            251,
+            28754
+          ],
+          [
+            250,
+            16683
+          ],
+          [
+            2,
+            15492
+          ],
+          [
+            249,
+            10778
+          ]
+        ],
+        "edge_max_alpha": 2,
+        "cell_divider_max_alpha": 253,
+        "samples": {
+          "0,0": 0,
+          "512,1": 0,
+          "256,256": 253,
+          "256,426": 253,
+          "768,512": 2,
+          "1535,1023": 0
+        }
+      },
+      "visualReview": "checked_subject_order_identity_costume_and_expression_variation"
+    },
+    {
+      "id": "carpenter_portraits",
+      "name": "木匠六种表情",
+      "file": "art/characters/portraits/carpenter-expressions-v1.png",
+      "promptFile": "art/characters/portraits/carpenter-expressions-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-ee963c77-77e9-43ed-875c-a5b9c3837c09.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "aa4504d0ce44465fa0d217027386bac6f0fff0b33e7d03d47f05992ba1b7a0ce",
+      "status": "generated_portrait_atlas_pending_crop_review",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        256,
+        256
+      ],
+      "atlas": {
+        "columns": 3,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "neutral",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "happy",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              512,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "worried",
+            "column": 2,
+            "row": 0,
+            "nominalSourceRect": [
+              1024,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "firm",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "sad",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              512,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "surprised",
+            "column": 2,
+            "row": 1,
+            "nominalSourceRect": [
+              1024,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.43746,
+        "near_opaque_fraction": 0.50112,
+        "top_alpha_counts": [
+          [
+            0,
+            688062
+          ],
+          [
+            253,
+            632313
+          ],
+          [
+            252,
+            121162
+          ],
+          [
+            1,
+            27139
+          ],
+          [
+            251,
+            23536
+          ],
+          [
+            250,
+            10868
+          ],
+          [
+            2,
+            7660
+          ],
+          [
+            249,
+            6524
+          ]
+        ],
+        "edge_max_alpha": 1,
+        "cell_divider_max_alpha": 1,
+        "samples": {
+          "0,0": 0,
+          "512,1": 0,
+          "256,256": 253,
+          "256,426": 253,
+          "768,512": 0,
+          "1535,1023": 0
+        }
+      },
+      "visualReview": "checked_subject_order_identity_costume_and_expression_variation"
+    },
+    {
+      "id": "merchant_portraits",
+      "name": "商人六种表情",
+      "file": "art/characters/portraits/merchant-expressions-v1.png",
+      "promptFile": "art/characters/portraits/merchant-expressions-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-404a7a0e-d4b8-48ef-8005-77e3ef842854.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c6ea95021e89d229772804cf91d5bb5dcaea1f0682dc0de87ef862e8840a09fe",
+      "status": "generated_portrait_atlas_pending_crop_review",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        256,
+        256
+      ],
+      "atlas": {
+        "columns": 3,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "neutral",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "happy",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              512,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "worried",
+            "column": 2,
+            "row": 0,
+            "nominalSourceRect": [
+              1024,
+              0,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "firm",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "sad",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              512,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "surprised",
+            "column": 2,
+            "row": 1,
+            "nominalSourceRect": [
+              1024,
+              512,
+              512,
+              512
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1536,
+        "height": 1024,
+        "alpha_min": 0,
+        "alpha_max": 254,
+        "fully_transparent_fraction": 0.38386,
+        "near_opaque_fraction": 0.51118,
+        "top_alpha_counts": [
+          [
+            0,
+            603767
+          ],
+          [
+            252,
+            401382
+          ],
+          [
+            253,
+            331024
+          ],
+          [
+            251,
+            48133
+          ],
+          [
+            1,
+            31830
+          ],
+          [
+            250,
+            23311
+          ],
+          [
+            249,
+            14942
+          ],
+          [
+            2,
+            12039
+          ]
+        ],
+        "edge_max_alpha": 1,
+        "cell_divider_max_alpha": 245,
+        "samples": {
+          "0,0": 0,
+          "512,1": 0,
+          "256,256": 252,
+          "256,426": 253,
+          "768,512": 158,
+          "1535,1023": 0
+        }
+      },
+      "visualReview": "checked_subject_order_identity_costume_and_expression_variation"
+    },
+    {
+      "id": "tools",
+      "name": "七种基础工具图标",
+      "file": "art/items/tools/basic-tools-atlas-v1.png",
+      "promptFile": "art/items/tools/basic-tools-atlas-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6f3aa323-bb15-4798-ab4c-6d45bb2cf483.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "c72eb98a7305094988f24293f82285bae6896e87e3384baa885ed0761e336023",
+      "status": "generated_icon_atlas_pending_export",
+      "runtimeTextureReady": false,
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "atlas": {
+        "columns": 4,
+        "rows": 2,
+        "readingOrder": [
+          {
+            "id": "axe",
+            "column": 0,
+            "row": 0,
+            "nominalSourceRect": [
+              0,
+              0,
+              444,
+              444
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "pickaxe",
+            "column": 1,
+            "row": 0,
+            "nominalSourceRect": [
+              444,
+              0,
+              443,
+              444
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "shovel",
+            "column": 2,
+            "row": 0,
+            "nominalSourceRect": [
+              887,
+              0,
+              443,
+              444
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "hoe",
+            "column": 3,
+            "row": 0,
+            "nominalSourceRect": [
+              1330,
+              0,
+              444,
+              444
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "watering-can",
+            "column": 0,
+            "row": 1,
+            "nominalSourceRect": [
+              0,
+              444,
+              444,
+              443
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "fishing-rod",
+            "column": 1,
+            "row": 1,
+            "nominalSourceRect": [
+              444,
+              444,
+              443,
+              443
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": "hammer",
+            "column": 2,
+            "row": 1,
+            "nominalSourceRect": [
+              887,
+              444,
+              443,
+              443
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          },
+          {
+            "id": null,
+            "column": 3,
+            "row": 1,
+            "nominalSourceRect": [
+              1330,
+              444,
+              444,
+              443
+            ],
+            "rectStatus": "nominal_grid_requires_export_review"
+          }
+        ]
+      },
+      "alphaAudit": {
+        "width": 1774,
+        "height": 887,
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "fully_transparent_fraction": 0.72136,
+        "near_opaque_fraction": 0.21314,
+        "top_alpha_counts": [
+          [
+            0,
+            1135088
+          ],
+          [
+            253,
+            255964
+          ],
+          [
+            252,
+            48231
+          ],
+          [
+            1,
+            28878
+          ],
+          [
+            251,
+            16790
+          ],
+          [
+            2,
+            9755
+          ],
+          [
+            250,
+            8726
+          ],
+          [
+            249,
+            5232
+          ]
+        ],
+        "edge_max_alpha": 0,
+        "cell_divider_max_alpha": null,
+        "samples": {
+          "0,0": 0,
+          "591,1": 0,
+          "295,221": 253,
+          "295,369": 0,
+          "887,443": 1,
+          "1773,886": 0
+        }
+      },
+      "visualReview": "checked_seven_distinct_tools_empty_eighth_slot_grid_removed",
+      "generationHistory": [
+        {
+          "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-d2390e95-128e-4369-8d39-862c80566f94.png",
+          "disposition": "superseded_by_grid_cleanup",
+          "prompt": "Use case: stylized-concept.\nAsset type: original Mosslume basic-tool inventory icon atlas, truly transparent PNG, four equal columns by two equal rows.\nPrimary request: exactly SEVEN different practical handcrafted tools, one per cell, last bottom-right cell empty and transparent. Reading order: top row wood-handled axe, wood-handled pickaxe, shovel, hoe; bottom row copper-and-teal watering can, simple wooden fishing rod with a small reel and line, carpenter's hammer, EMPTY.\nStyle: crisp carefully authored low-resolution pixel-art inventory icons, each designed to remain readable at logical 32x32, enlarged for viewing. Strong clean dark outline, deliberate square pixel clusters, matte iron/copper and warm brown wood handles, restrained teal accents to match the cozy forest-island game Mosslume. Same consistent three-quarter item view and light source in each cell, clear shapes, modest highlights, original designs. Not clipart, not realistic photographs, not smooth 3D, not painted on cards.\nComposition: clean wide 2:1 atlas with eight equal invisible square cells, icon centered with consistent padding and optical scale in each occupied cell, no parts crossing a cell boundary. Axe head has one blade, pickaxe has pointed curved ends, hoe has one right-angled flat blade distinct from shovel and pickaxe. All seven objects must be visibly distinct. Transparent background and gutters. No character, hands, labels, text, numbers, borders, slot frames, grid lines, scenery, shadows or watermark."
+        },
+        {
+          "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6f3aa323-bb15-4798-ab4c-6d45bb2cf483.png",
+          "disposition": "selected",
+          "prompt": "Use case: precise-object-edit. Edit target: the provided Mosslume tool atlas. Remove ONLY the thin horizontal and vertical grid lines/dividers and every stray pixel belonging to these lines, replacing them with genuine alpha transparency. Preserve all seven tool illustrations exactly, their shapes, colors, pose, order, optical size and location. Preserve the 4 columns x 2 rows atlas: axe, pickaxe, shovel, hoe / watering can, fishing rod, hammer, completely empty transparent eighth slot. Entire background/gutters/empty eighth slot must be truly transparent, with no grid or lines at all, no added colored backdrop, glow, checkerboard, shadows or border. Leave tools themselves opaque. Do not redesign or add objects, do not crop the canvas, no text."
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "原始大图图集已生成；尚未导出角色64×64、头像256×256和工具32×32运行纹理。",
+    "主角四方向为静态造型试片，尚无行走、呼吸或工具动作；身体/服装/手臂尚未分层。",
+    "头像摆放按3×2设计，导出前须人工校对裁切区域，不能直接认定为像素对齐的运行图集。",
+    "不修改现有游戏、世界或存档。"
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "date": "2026-10-22",
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "id": "icons_farming",
+      "group": "items",
+      "name": "种子、农产与采集物图标",
+      "columns": 3,
+      "rows": 3,
+      "cells": [
+        "wheat-seed",
+        "carrot-seed",
+        "pumpkin-seed",
+        "wheat",
+        "carrot",
+        "pumpkin",
+        "apple",
+        "berry",
+        "mushroom"
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "tools"
+      ],
+      "file": "art/items/farming/farming-forage-atlas-v1.png",
+      "prompt": "Use case: style-transfer.\nAsset type: transparent inventory icon SOURCE atlas, EXACTLY NINE original items, 3 columns x 3 rows, square canvas.\nImage 1 is the approved tool-icon STYLE reference; no tools from it should appear.\nExact reading order:\nTOP ROW: wheat seeds in a small kraft seed packet with a tiny wheat-ear PICTURE mark; carrot seeds in a similar packet with a carrot PICTURE mark; pumpkin seeds in a similar packet with a pumpkin PICTURE mark. No written labels on packets. Each packet has a different simple crop pictogram so the three seed types remain distinct.\nMIDDLE ROW: small tied bundle of ripe golden wheat ears; ONE harvested orange carrot with short feathery green tops; ONE plump ribbed orange pumpkin with curved green stem, no vine bed.\nBOTTOM ROW: red apple with one green leaf; three purple-red berries with small green leaf; one brown-cap cream-stem mushroom.\nSeed packets are closed practical paper pouches, not pots. Produce is harvested inventory items, no soil, roots underground or whole growth-stage diagrams. Exactly one isolated item/group per cell, no duplicates or extra scattered food.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark."
+    },
+    {
+      "id": "icons_food",
+      "group": "items",
+      "name": "食物与饮水图标",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        "bread",
+        "vegetable-stew",
+        "grilled-fish",
+        "tea",
+        "water-flask",
+        null
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "tools"
+      ],
+      "file": "art/items/food/food-drink-atlas-v1.png",
+      "prompt": "Use case: style-transfer.\nAsset type: transparent inventory food icon SOURCE atlas, 3 columns x 2 rows, EXACTLY FIVE icons and empty last cell, wide 3:2 canvas.\nImage 1 is the approved tool-icon STYLE reference, no tools from it appear.\nExact reading order: TOP ROW one small rustic golden bread loaf with score marks; one warm brown bowl of chunky vegetable stew with visible carrot/green vegetable pieces; one cooked whole fish with a few dark grill marks on a simple small ivory plate.\nBOTTOM ROW one ivory-and-teal ceramic teacup with two subtle pale steam pixels/short curls; one compact capped DRINKING WATER FLASK, teal metal with a brown leather strap and copper cap, clearly distinct from a watering can; last bottom-right cell EMPTY and fully alpha transparent.\nAll are practical cozy island food/drink, no cutlery crossing cells, no table, scenery, typography or numerical quantities.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark."
+    },
+    {
+      "id": "icons_buildables",
+      "group": "items",
+      "name": "建造与生产物品图标",
+      "columns": 4,
+      "rows": 2,
+      "cells": [
+        "chest",
+        "workbench",
+        "furnace",
+        "cooking-pot",
+        "campfire",
+        "lantern",
+        "wood-wall",
+        null
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "tools",
+        "chest",
+        "bench",
+        "furnace",
+        "pot"
+      ],
+      "file": "art/items/buildables/buildables-atlas-v1.png",
+      "prompt": "Use case: style-transfer.\nAsset type: transparent inventory buildable-object icon SOURCE atlas, 4 columns x 2 rows, EXACTLY SEVEN icons, last cell empty; wide 2:1 canvas.\nImage 1 is pixel-icon style reference. Images 2/3/4/5 are existing world objects to preserve identity: image 2 orange-brown closed chest with dark metal latch, image 3 wooden workbench, image 4 compact grey stone furnace with dark arched front and small copper/warm accents, image 5 round purple cauldron with green contents. Enlarge/reinterpret as matching inventory icons, no literal pixel stretching artifacts.\nExact reading order TOP ROW: that closed CHEST; that wooden WORKBENCH with a small fixed tool surface; that STONE FURNACE; that purple COOKING POT/CAULDRON with green contents.\nBOTTOM ROW: small crossed-log CAMPFIRE with a compact orange flame, no glow halo; brass-and-teal framed warm LANTERN with small handle, no long lamppost; small WOOD WALL buildable section made of three joined warm brown planks; last bottom-right cell EMPTY and alpha transparent.\nSame object identity as world sprites; no native game logo, no menus, no buildings other than listed wall, no extra loose tools or fuel piles outside objects.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark."
+    },
+    {
+      "id": "icons_social",
+      "group": "items",
+      "name": "礼物与任务物品图标",
+      "columns": 2,
+      "rows": 2,
+      "cells": [
+        "letter",
+        "trade-coin",
+        "flower-bouquet",
+        "parcel"
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "tools"
+      ],
+      "file": "art/items/social/social-quest-atlas-v1.png",
+      "prompt": "Use case: style-transfer.\nAsset type: transparent inventory social/quest icon SOURCE atlas, EXACTLY FOUR icons, 2x2 square invisible-cell layout.\nImage 1 is approved pixel icon style reference. Exact order: TOP LEFT one folded ivory envelope sealed with small green wax stamp; TOP RIGHT one round antique brass TRADE COIN with simple embossed LEAF symbol, no words or number; BOTTOM LEFT small hand-tied bouquet of pink/purple/yellow meadow flowers with green stems and teal ribbon; BOTTOM RIGHT one kraft-paper parcel tied with simple teal twine.\nKeep envelope and parcel clearly different, coin circular and embossed leaf recognizable, flowers compact. No floating heart, portraits or extra gifts.\nStyle: match image 1's existing Mosslume inventory pixel-art style, consistent three-quarter item view, warm wood/copper, restrained deep teal accents, matte materials, strong dark outline and deliberate square pixel clusters. Readable at logical 32x32, enlarged for source-art review. Same light direction and optical scale. Each subject stays in its own equal invisible square cell, generous empty padding, no cell-boundary crossings. Genuine alpha-transparent background and gutters, no ground shadow, ambient glow, colored backdrop, grid lines, slot frames, captions, words, numbers, UI or watermark."
+    },
+    {
+      "id": "ui_controls",
+      "group": "ui",
+      "name": "按钮与通用控件",
+      "columns": 4,
+      "rows": 4,
+      "cells": [
+        "button-normal",
+        "button-hover",
+        "button-pressed",
+        "button-disabled",
+        "tab-inactive",
+        "tab-active",
+        "checkbox-empty",
+        "checkbox-checked",
+        "radio-empty",
+        "radio-selected",
+        "toggle-off",
+        "toggle-on",
+        "scrollbar-track",
+        "scrollbar-thumb",
+        "slider-track",
+        "slider-thumb"
+      ],
+      "targetCellPixels": null,
+      "refs": [
+        "title",
+        "tools"
+      ],
+      "file": "art/ui/controls/controls-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent PIXEL UI component SOURCE atlas, 4 columns x 4 rows, EXACTLY SIXTEEN isolated components, one centered per invisible equal square cell. Image 1 is Mosslume brand mood/palette reference ONLY, do not reproduce title lettering or scene. Image 2 is established crisp pixel texture/shading reference.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order:\nROW 1 four identical wide blank 3:1 buttons: NORMAL dark forest green center and fine brass border; HOVER lighter moss-green center and brighter brass border; PRESSED darker inset center, top edge visibly depressed; DISABLED desaturated grey-green center/border. All four same shape/size, NO labels.\nROW 2 blank inactive tab; blank active tab; empty square checkbox; same square checkbox checked with a simple ivory tick.\nROW 3 empty circular radio button; selected radio button with a small gold center dot; short pill toggle OFF knob on left; same toggle ON green field and knob on right.\nROW 4 one narrow vertical scrollbar TRACK without thumb; separate small vertical scrollbar THUMB; one thin horizontal slider TRACK without knob; separate small slider KNOB.\nKeep tracks and thumbs separate reusable subjects, not assembled repeated full controls. All intended button/tab text areas completely blank. The tick is a functional geometric symbol, not a written label. No full panels or slot grids."
+    },
+    {
+      "id": "ui_panels",
+      "group": "ui",
+      "name": "面板、对话框与头像框",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        "panel-generic",
+        "tooltip-panel",
+        "dialogue-panel",
+        "portrait-frame",
+        "recipe-panel",
+        "toast-panel"
+      ],
+      "targetCellPixels": null,
+      "refs": [
+        "title",
+        "tools"
+      ],
+      "file": "art/ui/panels/panels-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent pixel UI panel SOURCE atlas, 3 columns x 2 rows, exactly SIX separate panel components. Image 1 is Mosslume brand mood only, no copied words/scene. Image 2 pixel style reference.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: TOP LEFT a medium rectangular GENERIC PANEL with warm ivory parchment interior, thin dark teal outer frame and modest brass corner studs; TOP MIDDLE compact dark forest TOOLTIP PANEL with empty dark center and fine brass border; TOP RIGHT wide blank DIALOGUE BOX, about 3:1 aspect, parchment center and dark green/brass edge, no portrait painted inside.\nBOTTOM LEFT square PORTRAIT FRAME with green/brass border and a genuinely TRANSPARENT hole in its middle; BOTTOM MIDDLE tall blank RECIPE/INVENTORY PANEL with same parchment and frame, no item slots baked in; BOTTOM RIGHT short wide dark teal NOTIFICATION/TOAST PANEL with slim brass edge and empty center.\nEach complete component centered in its own invisible square cell with generous empty gutter. Generic and recipe panels should have plain straight repeatable edges and uncluttered corners suitable for later nine-slice work. All surfaces blank. No example text, pictures, portraits, recipes, inventory items, slot grids, tabs or arrows."
+    },
+    {
+      "id": "ui_hud",
+      "group": "ui",
+      "name": "快捷栏格与状态图标",
+      "columns": 4,
+      "rows": 3,
+      "cells": [
+        "slot-normal",
+        "slot-selected",
+        "slot-disabled",
+        "health-heart",
+        "energy-leaf",
+        "hunger-plate",
+        "time-clock",
+        "date-calendar",
+        "weather-sun",
+        "weather-moon",
+        "weather-rain",
+        "currency-coin"
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "title",
+        "tools",
+        "@icons_social"
+      ],
+      "file": "art/ui/hud/hud-icons-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel HUD component SOURCE atlas, 4 columns x 3 rows, EXACTLY TWELVE components. Image 1 is Mosslume mood/palette only; image 2 pixel texture reference; image 3 is social icon atlas, use its TOP-RIGHT leaf-stamped brass coin as the SAME currency identity.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: ROW 1 empty normal inventory slot (dark inset green square with muted brass edge); same size selected slot with bright warm gold outline; same size disabled slot with desaturated grey-green edge; plump simple red HEALTH HEART.\nROW 2 fresh green leaf ENERGY icon; small ivory plate with simple fork/spoon HUNGER icon; small round brass/teal TIME CLOCK with hands; small ivory DATE CALENDAR with dark green binding, blank cells and NO numbers/words.\nROW 3 simple gold SUN; soft ivory crescent MOON; blue-grey RAIN CLOUD with three blue drops; leaf-stamped brass CURRENCY COIN matching image 3.\nSlots must remain completely empty, with dark solid interiors and no items. Exactly one isolated component in each invisible equal square cell. Icon silhouettes readable at 32x32. No bars, full HUD screenshot, quantities, numbers, labels or additional decoration."
+    },
+    {
+      "id": "ui_bars",
+      "group": "ui",
+      "name": "生命、体力与进度条组件",
+      "columns": 3,
+      "rows": 2,
+      "cells": [
+        "health-track",
+        "health-fill",
+        "energy-track",
+        "energy-fill",
+        "progress-track",
+        "progress-fill"
+      ],
+      "targetCellPixels": null,
+      "refs": [
+        "title",
+        "tools"
+      ],
+      "file": "art/ui/hud/status-bars-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: reusable transparent pixel status-bar SOURCE atlas, 3 columns x 2 rows, exactly SIX separate horizontal components, each one centered with ample empty gutter in an invisible square cell.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nImage 1 is brand palette only, no copied words/scene. Image 2 pixel shading reference.\nExact reading order: TOP LEFT empty HEALTH BAR TRACK, a long slim dark teal channel with narrow brass/wood edge and EMPTY dark inside; TOP MIDDLE separate RED HEALTH FILL strip, full-width plain strip with simple pixel highlights, NO outer track; TOP RIGHT empty ENERGY BAR TRACK identical in form to health track.\nBOTTOM LEFT separate GREEN ENERGY FILL strip, full-width plain strip without frame; BOTTOM MIDDLE empty PROGRESS BAR TRACK, same outer dimensions and channel style; BOTTOM RIGHT separate GOLD PROGRESS FILL strip, full-width plain strip without outer frame.\nAll tracks have consistent about 5:1 width-to-height proportions and equal outer size. All fills have consistent size slightly smaller than tracks' inner channel; smooth repeatable straight centers for runtime clipping. No fixed percentage, no partially filled assembled bar, no heart/leaf icons, no ticks, text or numbers. Do not put track and fill together in one cell."
+    },
+    {
+      "id": "ui_feedback",
+      "group": "ui",
+      "name": "居民气泡与任务关系图标",
+      "columns": 4,
+      "rows": 4,
+      "cells": [
+        "bubble-happy",
+        "bubble-question",
+        "bubble-refuse",
+        "bubble-tired",
+        "bubble-hungry",
+        "bubble-received",
+        "relation-heart",
+        "trust-handshake",
+        "mood-face",
+        "schedule-clock",
+        "quest-scroll",
+        "success-check",
+        "failure-cross",
+        "work-priority",
+        "prohibited",
+        "trade-coins"
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "title",
+        "tools"
+      ],
+      "file": "art/ui/feedback/feedback-icons-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel resident/status/quest icon SOURCE atlas, 4 columns x 4 rows, EXACTLY SIXTEEN isolated icon subjects in invisible equal square cells.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nImage 1 is original Mosslume mood/palette only, no copied words or scene; image 2 pixel-art texture reference. Small functional check/cross/question symbols ARE allowed, but no written words, captions or numbers.\nExact reading order:\nROW 1 ivory speech bubble containing simple smiling face (HAPPY); same style bubble containing QUESTION MARK; bubble containing red refusal cross; bubble containing sleepy half-closed eyes (TIRED).\nROW 2 bubble containing a tiny simple bread/plate (HUNGRY); bubble containing a tiny parcel and check (ITEM RECEIVED); small warm pink heart with subtle leaf edge (RELATIONSHIP); simple two hands clasping (TRUST).\nROW 3 simple neutral round face (MOOD); small clock with tiny sun edge (SCHEDULE); rolled ivory quest scroll with one gold star seal (QUEST); green success CHECK.\nROW 4 red failure CROSS; gold upward chevron arrow (WORK PRIORITY); red circle-and-diagonal prohibition sign; simple brass coins above an open hand (TRADE).\nAll icons compact and readable at logical 32x32, one composite icon per cell. Six speech bubbles must have matching outline shape and size. No characters/portraits, long text, badges with numbers or whole interface."
+    },
+    {
+      "id": "ui_cursors",
+      "group": "ui",
+      "name": "鼠标与放置反馈",
+      "columns": 4,
+      "rows": 2,
+      "cells": [
+        "cursor-default",
+        "cursor-interact",
+        "cursor-gather",
+        "cursor-build",
+        "cursor-talk",
+        "cursor-pickup",
+        "placement-valid",
+        "placement-invalid"
+      ],
+      "targetCellPixels": [
+        32,
+        32
+      ],
+      "refs": [
+        "tools"
+      ],
+      "file": "art/ui/cursors/cursors-atlas-v1.png",
+      "prompt": "Use case: ui-mockup.\nAsset type: transparent pixel cursor/placement SOURCE atlas, 4 columns x 2 rows, EXACTLY EIGHT symbols in equal invisible cells. Image 1 is existing Mosslume tool reference, preserve axe/hammer teal grip + wood/iron identity.\nOriginal Mosslume cozy forest-island PIXEL GAME UI skin. Palette: deep forest/teal green, warm ivory parchment, muted moss green and small antique brass/copper edges. Crisp deliberately stepped pixel corners and restrained square-pixel shading, readable small-scale silhouettes; little ornament, tiny corner studs only. Neutral matte lighting. Not modern glass, smooth vectors, glossy 3D, photoreal paper, elaborate vines, decorative fantasy cards or a complete game screenshot. All written text comes from the game engine: DO NOT draw words, letters, names, numbers or captions. Draw only the requested reusable component shapes. Genuine alpha-transparent background and gutters. No scenery, people, backdrop, black fill outside components, grid, separator lines, watermark, drop shadows or glow. Ample transparent padding around every component.\nExact reading order: TOP LEFT clear ivory arrow mouse cursor pointing NORTHWEST with dark outline; TOP SECOND ivory hand cursor with extended index finger; TOP THIRD small arrow cursor paired with the existing iron wood-handled AXE as GATHER cursor; TOP FOURTH small arrow cursor paired with existing iron wood-handled HAMMER as BUILD cursor.\nBOTTOM LEFT small ivory arrow paired with simple ivory speech bubble as TALK cursor; BOTTOM SECOND small grasping hand lifting one tiny brown parcel as PICKUP cursor; BOTTOM THIRD four GREEN placement corner brackets surrounding a small neutral wood-tile footprint with green check; BOTTOM FOURTH identical footprint with RED corner brackets and red cross for blocked placement.\nThe first six are actual compact mouse cursor silhouettes, not huge character hands or full people. Last two have identical tile geometry and differ only validity color/symbol. Strong contrast outline, no glow. No extra tools, labels, words or numbers. Keep generous alpha-transparent padding; cursor hotspot definition happens later, not drawn as a dot."
+    }
+  ]
+}
