@@ -1,6 +1,6 @@
 # Mosslume 当前视觉基线与历史底座
 
-当前快照为 **0.3.0 visual baseline**，对应重构前已运行检查的 Mosslume 画面预览。标签 `v0.3.0-visual-baseline` 保存此版本；后续世界与 NPC 方案仍在讨论，本快照未新增随机世界或大模型 NPC。
+当前快照为 **0.3.0 visual baseline**，对应重构前已运行检查的 Mosslume 画面预览。标签 `v0.3.0-visual-baseline.1` 保存完整恢复资料；后续世界与 NPC 方案仍在讨论，本快照未新增随机世界或大模型 NPC。
 
 本次保存最新 Java 适配源码、运行素材、原创美术源图、素材导出与打包脚本、第三方 shader 来源和许可证，以及实际昼夜截图和视频。`mosslume/` 是原 `outputs/mosslume/` 的可移植资料快照；当前 `mod/` 是实际运行的适配器源码。个人存档、日志和测试缓存不在仓库中。
 
@@ -26,7 +26,7 @@ workspace/
 ```sh
 git clone https://github.com/YEMIN11238/forest-island-necesse.git necesse-island
 cd necesse-island
-git checkout v0.3.0-visual-baseline
+git checkout v0.3.0-visual-baseline.1
 cp -R mosslume ../mosslume
 python3 scripts/restore_release_runtime.py --app '/path/to/Mosslume S1 Preview.app'
 cd ../mosslume
