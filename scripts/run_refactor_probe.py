@@ -14,9 +14,11 @@ def main():
     p.add_argument('--baseline',action='store_true')
     p.add_argument('--ladders',action='store_true')
     p.add_argument('--harvest',action='store_true')
+    p.add_argument('--ai',action='store_true',help='Explicit opt-in: three paid DeepSeek requests using local configuration')
     p.add_argument('--perf-seconds',type=int,default=10)
     p.add_argument('--jfr',action='store_true',help='Opt-in CPU/allocation sampling of this disposable process')
     args=p.parse_args()
+    if args.ai and (args.reload or args.baseline or args.ladders or args.harvest):p.error('--ai needs its own fresh case')
     if args.harvest and (args.reload or args.baseline or args.ladders):p.error('--harvest needs its own fresh daytime case')
     if args.baseline and (args.reload or args.ladders):p.error('--baseline is a fresh visual-only case')
     if not args.case.replace('-','').replace('_','').isalnum():p.error('Invalid case name')
@@ -31,10 +33,11 @@ def main():
     if not args.baseline:
         props.update({'mosslume.refactorProbe':str(out),'mosslume.refactorProbe.seed':args.seed,
             'mosslume.refactorProbe.preset':args.preset})
-    if args.reload or args.ladders or args.harvest:props['mosslume.refactorProbe.stop']='true'
+    if args.reload or args.ladders or args.harvest or args.ai:props['mosslume.refactorProbe.stop']='true'
     if args.ladders:props['mosslume.refactorProbe.ladders']='true'
     if args.harvest:props['mosslume.refactorProbe.harvest']='true'
-    if not args.reload and not args.ladders and not args.harvest:
+    if args.ai:props['mosslume.refactorProbe.ai']='true'
+    if not args.reload and not args.ladders and not args.harvest and not args.ai:
         props.update({'mosslume.visualProbe':str(out),'mosslume.visualProbe.hour':21,
             'mosslume.visualProbe.compareHour':12,'mosslume.visualProbe.perfSeconds':min(120,max(2,args.perf_seconds)),
             'mosslume.visualProbe.captureSeconds':8,'mosslume.visualProbe.captureFps':24,

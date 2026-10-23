@@ -30,6 +30,8 @@ public final class CompanionPanel extends Form {
     private boolean wasRunning=true;
     private String selected="";
     private String lastText="";
+    private boolean modelPending;
+    private long modelDeadline;
     private long nextRefresh;
     private FormTextButton toggle;
     private FormLabel details,feedback,memories,modelState;
@@ -62,7 +64,7 @@ public final class CompanionPanel extends Form {
     private void rebuild(){
         if(input!=null&&!input.isDisposed())lastText=input.getText();
         clearComponents();addToggle();
-        setHeight(expanded?438:40);if(!expanded)return;
+        setHeight(expanded?506:40);if(!expanded)return;
         FormTextButton choose=addComponent(new FormTextButton("切换伙伴",12,42,176));
         choose.onClicked(e->{List<CompanionView> all=CompanionSystem.snapshot(client).companions();if(!all.isEmpty()){invalidateReplies();int i=0;for(;i<all.size();i++)if(all.get(i).id().equals(selected))break;selected=all.get((i+1)%all.size()).id();rebuild();}});
         FormTextButton journal=addComponent(new FormTextButton(showMemories?"任务":"共同经历",196,42,92));
@@ -82,15 +84,16 @@ public final class CompanionPanel extends Form {
         addAction("暂停","PAUSE",12,222);addAction("继续","RESUME",106,222);addAction("取消","CANCEL",200,222);
         FormTextButton rescue=addComponent(new FormTextButton("靠近伙伴后打开救治对话",12,260,276));rescue.onClicked(e->command("OPEN_RESCUE"));
         feedback=addComponent(new FormLabel("",new FontOptions(14),-1,14,300,270));
-        modelState=addComponent(new FormLabel("模型稍后配置 · 离线任务可用",new FontOptions(14),-1,14,342,270));
-        input=addComponent(new FormTextInput(12,365,FormInputSize.SIZE_32_TO_40,196,200));input.setText(lastText);
-        send=addComponent(new FormTextButton("发送",216,365,72));
-        send.onClicked(e->{CompanionView v=selection();if(v==null)return;lastText=input.getText();long version=replyVersion.incrementAndGet();CompanionSystem.submitText(client,v.id(),lastText,message->replies.add(new Reply(version,message)));});
-        memories=addComponent(new FormLabel("",new FontOptions(12),-1,14,410,270));
+        modelState=addComponent(new FormLabel("模型稍后配置 · 离线任务可用",new FontOptions(14),-1,14,410,270));
+        input=addComponent(new FormTextInput(12,438,FormInputSize.SIZE_32_TO_40,196,200));input.setText(lastText);
+        send=addComponent(new FormTextButton("发送",216,438,72));
+        send.onClicked(e->{CompanionView v=selection();if(v==null||modelPending)return;lastText=input.getText();long version=replyVersion.incrementAndGet();modelPending=true;modelDeadline=System.nanoTime()+22_000_000_000L;feedback.setText("正在听你说话……",270);refreshNow();CompanionSystem.submitText(client,v.id(),lastText,message->replies.add(new Reply(version,message)));});
+        memories=addComponent(new FormLabel("",new FontOptions(12),-1,14,483,270));
         refreshNow();
     }
     private void addAction(String title,String action,int x,int y){addComponent(new FormTextButton(title,x,y,88)).onClicked(e->command(action));}
     private void command(String action){
+        modelPending=false;
         long version=replyVersion.incrementAndGet();
         CompanionView v=selection();if(v==null){replies.add(new Reply(version,"伙伴尚未载入"));return;}
         if(client.getPlayer()==null)return;
@@ -101,18 +104,19 @@ public final class CompanionPanel extends Form {
     }
     private void refreshNow(){
         if(!expanded||details==null)return;
+        if(modelPending&&System.nanoTime()>modelDeadline){invalidateReplies();feedback.setText("请求超时或伙伴状态已变化，请重新发起。",270);}
         CompanionView v=selection();
         details.setText(v==null?"还没有已加入营地的伙伴":v.name()+" · "+v.state()+"\n"+CompanionWorldData.actionLabel(v.action())+"\n"+shorten(v.message(),34),272);
-        Reply r;while((r=replies.poll())!=null)if(r.version()==replyVersion.get())feedback.setText(shorten(r.message(),35),270);
+        Reply r;while((r=replies.poll())!=null)if(r.version()==replyVersion.get()){modelPending=false;feedback.setText(shorten(r.message(),140),270);}
         if(v!=null&&!v.memories().isEmpty()){
             var recent=v.memories().get(v.memories().size()-1);
             if(recent.type().equals("request_blocked"))feedback.setText(shorten(recent.text(),35),270);
         }
-        boolean model=localforest.ai.AiIntentService.isConfigured();input.setActive(model);send.setActive(model);
-        modelState.setText(model?"AI 接口已连接，指令仍由游戏校验":"模型稍后配置 · 离线任务可用",270);
+        boolean model=localforest.ai.AiIntentService.isConfigured();input.setActive(model&&!modelPending);send.setActive(model&&!modelPending);
+        modelState.setText(model?localforest.ai.AiIntentService.status():"模型稍后配置 · 离线任务可用",270);
         if(v!=null&&!v.memories().isEmpty())memories.setText("最近："+shorten(v.memories().get(v.memories().size()-1).text(),22),270);
     }
-    private void invalidateReplies(){replyVersion.incrementAndGet();replies.clear();CompanionSystem.invalidateModelRequests(client);}
+    private void invalidateReplies(){modelPending=false;replyVersion.incrementAndGet();replies.clear();CompanionSystem.invalidateModelRequests(client);}
     @Override public void dispose(){
         invalidateReplies();super.dispose();
         if(panel==this){panel=null;current=new WeakReference<>(null);}

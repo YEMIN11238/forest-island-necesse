@@ -1,8 +1,8 @@
 {
-  "javaSources": 85,
-  "classes": 156,
+  "javaSources": 104,
+  "classes": 188,
   "jar": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/dist/localforest-island.jar",
-  "sha256": "71d91e41da40132ec36bc9aeb5ca40adb8723b6cbc9c9f27f271c4d61ed4b106",
+  "sha256": "e009b72bd884cde57621894e591bf6bb26d2cf7cc53f5a555328336439c31041",
   "classpathKernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
   "compilation": "javac --release 17",
   "scope": "Mod compilation; does not assert full recovered kernel recompilation or runtime correctness."

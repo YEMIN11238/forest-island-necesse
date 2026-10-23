@@ -1,0 +1,7 @@
+[
+  {
+    "test": "localforest.ai.DeepSeekProviderTest",
+    "exit": 0,
+    "output": "DeepSeekProviderTest PASS: JSON/action validation, chat-only, budget/restart, HTTP mapping, usage, cancellation, sanitized errors, response-size bound; no paid calls\n"
+  }
+]

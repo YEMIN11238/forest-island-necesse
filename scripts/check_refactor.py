@@ -14,7 +14,7 @@ def main():
     sources=[*sorted((ROOT/'mod/tests').rglob('*.java')),*sorted((ROOT/'tests').glob('*.java'))]
     subprocess.run([str(JDK/'javac'),'--release','17','-encoding','UTF-8','-classpath',cp,'-d',str(classes),*map(str,sources)],check=True)
     names=['MemoryRankingCheck','localforest.world.GeneratedLayoutTest','localforest.scene.SceneGeometryTest','localforest.scene.SceneViewportTest','localforest.scene.SceneMetadataTest','localforest.visual.DaylightMaterialTest','localforest.visual.TileColorCacheTest',
-        'localforest.tasks.CompanionTaskSaveTest','localforest.companions.CompanionWorldSaveTest','localforest.tasks.NativeWorkCompletionTest']
+        'localforest.tasks.CompanionTaskSaveTest','localforest.companions.CompanionWorldSaveTest','localforest.tasks.NativeWorkCompletionTest','localforest.ai.DeepSeekProviderTest']
     results=[]
     for name in names:
         run=subprocess.run([str(JDK/'java'),'-classpath',cp,name],text=True,capture_output=True,timeout=60)

@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-23",
+  "ai": {
+    "provider": "deepseek-flash",
+    "thinking": false,
+    "maximumRequests": 3,
+    "noInventoryInjection": true,
+    "interactions": [
+      {
+        "nativeFollowMatched": true,
+        "reply": "好，我收好手上的活，跟你走，路上顺便看看有没有能采的。\n意图已提交校验",
+        "request": "follow"
+      },
+      {
+        "reply": "好，我就停在这儿，看看附近的作物。\n意图已提交校验",
+        "request": "cancel",
+        "nativeCancelMatched": true
+      },
+      {
+        "reply": "我叫小禾。刚才跟着你走了一段，后来指令取消了，现在我在恢复日常活计。别的细节我记不太清，不敢乱说。",
+        "request": "conversation",
+        "taskUnchanged": true
+      }
+    ],
+    "successfulModelCalls": 3,
+    "inputTokens": 2364,
+    "outputTokens": 238,
+    "peakRateUpperEstimateRmb": 0.006632,
+    "passed": true
+  },
+  "passed": true,
+  "elapsedSeconds": 9.292309792,
+  "scope": "Opt-in three-request DeepSeek integration in a disposable native world: natural-language follow and cancel matched native commands, conversation preserved task. No physical input or autonomous-behavior claim."
+}

@@ -48,7 +48,7 @@ import necesse.inventory.recipe.Recipes;
 import necesse.level.maps.Level;
 import net.bytebuddy.asm.Advice;
 
-/** Opt-in native integration checks. No production save, model call or physical mouse input. */
+/** Opt-in native checks. Paid model calls require the separate refactorProbe.ai flag. */
 public final class RefactorNativeChecks extends WorldData {
     private static final String WORLD_KEY="MosslumeRefactorChecks";
     private static final int MARKER=4261023;
@@ -72,6 +72,7 @@ public final class RefactorNativeChecks extends WorldData {
     private long startNanos,phaseNanos;
     private WorldDefinition definition;
     private NativeHarvestCheck harvestCheck;
+    private volatile localforest.ai.NativeModelCheck modelCheck;
     private int harvestRequestIndex=100;
     private final Map<String,Object> evidence=new LinkedHashMap<>();
     private final List<Map<String,Object>> commandEvidence=new ArrayList<>();
@@ -118,6 +119,7 @@ public final class RefactorNativeChecks extends WorldData {
         if(!game.isRunning())game.setRunning(true);
         PlayerMob player=client.getPlayer();if(player==null||player.getLevel()==null)return;
         probeClient=client;Level level=player.getLevel();
+        if(check.modelCheck!=null)check.modelCheck.frame(client);
         if(IslandWorld.isIsland(level)&&!level.isCave){
             TileBounds b=RegionSceneQuery.visibleLights(level);
             visual=new VisualSample(level.tileWidth,level.tileHeight,SceneLighting.lastQueryTiles,b.width()*b.height(),
@@ -140,7 +142,7 @@ public final class RefactorNativeChecks extends WorldData {
         if(done||!enabled()||!safeProfile()||!isServer())return;
         try{
             long now=System.nanoTime();if(startNanos==0)startNanos=now;
-            require(now-startNanos<(Boolean.getBoolean("mosslume.refactorProbe.harvest")?180_000_000_000L:60_000_000_000L),"Native probe timed out in phase "+phase);
+            require(now-startNanos<(Boolean.getBoolean("mosslume.refactorProbe.harvest")||Boolean.getBoolean("mosslume.refactorProbe.ai")?180_000_000_000L:60_000_000_000L),"Native probe timed out in phase "+phase);
             ServerClient client=getServer().streamClients().filter(c->c.hasSpawned()&&c.playerMob!=null).findFirst().orElse(null);
             if(client==null)return;
             if(!started){
@@ -148,7 +150,11 @@ public final class RefactorNativeChecks extends WorldData {
                 started=true;definition=WorldDefinition.forLevel(client.getLevel());require(definition!=null,"Generated definition missing");
                 checkWorld(client);
                 phaseNanos=now;
-                if(Boolean.getBoolean("mosslume.refactorProbe.harvest")){
+                if(Boolean.getBoolean("mosslume.refactorProbe.ai")){
+                    require(!loaded,"AI smoke check requires a fresh disposable world");
+                    modelCheck=new localforest.ai.NativeModelCheck();phase=8;
+                    evidence.put("ai",modelCheck.evidence());evidence.put("inventoryInjectionSkipped",true);
+                }else if(Boolean.getBoolean("mosslume.refactorProbe.harvest")){
                     require(!loaded,"Harvest probe requires a fresh disposable world");
                     harvestCheck=new NativeHarvestCheck(definition,(companion,action,x,y)->{
                         request=new Request(++harvestRequestIndex,companion.id(),action,x,y,companion.revision());
@@ -182,6 +188,7 @@ public final class RefactorNativeChecks extends WorldData {
                 request=null;selectedId=harvestCheck.companionId();selectedMob=harvestCheck.mobId();
                 savedMemoryId=harvestCheck.latestTaskId();phase=6;
             }
+            if(phase==8&&modelCheck.tick(client,probeClient,now))phase=6;
             if(phase==6)finishWhenRendered(now);
         }catch(Throwable error){fail(error);}
     }
@@ -350,7 +357,8 @@ public final class RefactorNativeChecks extends WorldData {
         render.put("companionSprites",v.companionSprites());evidence.put("visual",render);
         checkpointComplete=true;done=true;evidence.put("passed",true);evidence.put("reload",loaded);evidence.put("profile",GlobalData.appDataPath());
         evidence.put("elapsedSeconds",(now-startNanos)/1e9);evidence.put("checkpointMarker",marker);
-        evidence.put("scope",harvestCheck==null?
+        evidence.put("scope",modelCheck!=null?
+            "Opt-in three-request DeepSeek integration in a disposable native world: natural-language follow and cancel matched native commands, conversation preserved task. No physical input or autonomous-behavior claim.":harvestCheck==null?
             "Native server inventory/world/command checks in an opt-in disposable QA profile; commands use the same client queue as UI buttons. No physical mouse, AI-provider, aesthetic similarity or long-session performance claim.":
             "Native crop harvest, in-flight cancellation and re-execution in an opt-in fresh disposable QA profile. Uses original generated crops and native inventories; no crop/item injection. Harvest output is not a warehouse-delivery claim.");
         write(loaded?"native-checks-reload.json":"native-checks.json");

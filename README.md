@@ -1,6 +1,6 @@
 # Mosslume 世界与伙伴重构
 
-当前开发分支是 **0.4.0-r1 世界与离线伙伴预览**。包含新建/选择世界、两种有限种子世界、洞穴通道、伙伴任务和真实事件记录；保留既有清晰像素显示、风动和光影。模型选择按用户决定后移，默认不发起任何模型请求。完整目标见 [PRD 0.4](docs/PRD-0.4-world-companions-refactor.md)，当前实现与尚未完成的部分见 [实施记录](docs/IMPLEMENTATION-0.4-r1.md)。
+当前开发分支是 **0.4.0-r2 世界与 DeepSeek 伙伴预览**。包含新建/选择世界、两种有限种子世界、洞穴通道、伙伴任务和真实事件记录；保留既有像素显示、风动和光影。DeepSeek 需通过本机私有配置显式启用，只有发送文字指令才调用；没有凭据时保持离线。接入与用量限制见 [DeepSeek 本机配置](docs/AI-DEEPSEEK-SETUP.md)。完整目标见 [PRD 0.4](docs/PRD-0.4-world-companions-refactor.md)，基础重构与未完成部分见 [r1 实施记录](docs/IMPLEMENTATION-0.4-r1.md)。
 
 稳定版仍是标签 `v0.3.0-visual-baseline.1`，没有被本轮预览替换。0.4 使用独立应用 `~/Applications/Mosslume 0.4 Preview.app` 和资料目录 `~/Library/Application Support/Mosslume-0.4`，不自动迁移旧个人存档。
 
@@ -9,7 +9,7 @@ python3 scripts/check_refactor.py
 python3 scripts/package_refactor.py --skip-build
 ```
 
-隔离原生检查使用 `scripts/run_refactor_probe.py --case <新名字>`；`--reload` 验证同一档恢复，`--ladders --preset woodland` 验证洞穴往返，`--harvest` 验证原生采收与取消。每个首次案例必须使用新名字，证据默认写入忽略的 `build/refactor-evidence/`。检查会真实修改其专用 QA 存档，不应对个人资料目录使用探针。
+隔离原生检查使用 `scripts/run_refactor_probe.py --case <新名字>`；`--reload` 验证同一档恢复，`--ladders --preset woodland` 验证洞穴往返，`--harvest` 验证原生采收与取消。`--ai` 是单独显式启用的三请求付费模型验证，常规测试不调用模型。每个首次案例必须使用新名字，证据默认写入忽略的 `build/refactor-evidence/`。检查会真实修改其专用 QA 存档，不应对个人资料目录使用探针。
 
 本次保存最新 Java 适配源码、运行素材、原创美术源图、素材导出与打包脚本、第三方 shader 来源和许可证，以及实际昼夜截图和视频。`mosslume/` 是原 `outputs/mosslume/` 的可移植资料快照；当前 `mod/` 是实际运行的适配器源码。个人存档、日志和测试缓存不在仓库中。
 

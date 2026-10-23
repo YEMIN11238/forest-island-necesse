@@ -21,7 +21,7 @@ import localforest.visual.IslandVisuals;
 
 @ModEntry
 public class IslandMod {
-    public static final String VERSION="0.4.0-r1";
+    public static final String VERSION="0.4.0-r2";
     public static boolean enabled() { return GameLaunch.launchOptions!=null && GameLaunch.launchOptions.containsKey("islandprofile"); }
     public void init() {
         if(!enabled())return;
