@@ -1,0 +1,11 @@
+{
+  "app": "/Users/zhangjunhao/Applications/Mosslume World Preview.app",
+  "version": "0.5.0",
+  "kernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "modSha256": "adec99735d0395fdb54feedfd4bfcf4e593c3cf6c51e542e5a5119f1199d0f8e",
+  "nativeCase": "r6-coast-native-20261024-g2",
+  "visualCase": "r6-coast-visual-20261024-b",
+  "paidModelCallsThisTurn": 0,
+  "physicalMouseKeyboardTested": false,
+  "referenceExactMatch": false
+}

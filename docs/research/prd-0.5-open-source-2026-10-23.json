@@ -1,0 +1,214 @@
+{
+  "document": "Mosslume PRD 0.5 source research",
+  "checkedAt": "2026-10-23",
+  "baselineCommit": "3c22e95",
+  "scope": "Research manifest, not an integration or dependency lockfile. Proposed ports and tools are not installed by this document.",
+  "releaseNote": "Inspection commit can differ from a mentioned release tag. Resolve the adopted release to an exact commit and package hash before integration.",
+  "repositories": [
+    {
+      "id": "OS01",
+      "repo": "mindcraft-bots/mindcraft",
+      "commit": "f6a9556cf756e6bd88a75cc2fa0d5aed7599b101",
+      "license": "MIT",
+      "status": "planned_source_port",
+      "paths": [
+        "src/agent/action_manager.js",
+        "src/agent/self_prompter.js",
+        "src/agent/modes.js"
+      ],
+      "use": "Port action lifecycle, interruption and loop-stop semantics to Java above native jobs; replace polling with budgeted event scheduling.",
+      "exclude": "Mineflayer, Minecraft world, generated code execution and process-kill recovery."
+    },
+    {
+      "id": "OS02",
+      "repo": "a16z-infra/ai-town",
+      "commit": "8e05997f2409275669c8344b84a51692e83f3f33",
+      "license": "MIT",
+      "status": "partial_port_exists_planned_extension",
+      "paths": [
+        "convex/agent/memory.ts"
+      ],
+      "use": "Existing rankAndTouchMemories scoring port; planned conversation summary and source-linked reflection ports.",
+      "exclude": "Convex backend, browser world, mandatory embeddings and complete agent integration claim."
+    },
+    {
+      "id": "OS03",
+      "repo": "libgdx/libgdx",
+      "commit": "03799a27a37fe8b10446872d48aa24cb68fb70f8",
+      "license": "Apache-2.0",
+      "status": "planned_source_port_and_build_tool_trial",
+      "paths": [
+        "gdx/src/com/badlogic/gdx/graphics/g2d/SpriteBatch.java",
+        "extensions/gdx-tools/src/com/badlogic/gdx/tools/texturepacker/TexturePacker.java"
+      ],
+      "use": "Port CPU vertex-buffer/flush accounting to compatible native GL2.1 rendering; trial offline atlas packing.",
+      "exclude": "Engine replacement, GL3-only instancing, reordering transparent sprites across depth."
+    },
+    {
+      "id": "OS04",
+      "repo": "async-profiler/async-profiler",
+      "commit": "dd50d53079c81033c788ecbf515c5f9ff5afb5c4",
+      "license": "Apache-2.0",
+      "status": "planned_development_tool",
+      "release": "v4.6",
+      "paths": [
+        "README.md"
+      ],
+      "use": "CPU/native/alloc/lock diagnosis with JFR; use macOS x64 artifact for current bundled x64 JVM.",
+      "exclude": "No game runtime dependency; CPU samples are not GPU elapsed time."
+    },
+    {
+      "id": "OS05",
+      "repo": "Auburn/FastNoiseLite",
+      "commit": "785f37a9ad76e283586a379675085f2063ae03f7",
+      "license": "MIT",
+      "status": "existing_source_dependency",
+      "paths": [
+        "Java/FastNoiseLite.java"
+      ],
+      "use": "Keep deterministic terrain noise and versioned generator; extend biome data.",
+      "exclude": "Does not supply connectivity, safe resource access or complete world generation."
+    },
+    {
+      "id": "OS06",
+      "repo": "PHUICMT/SDV-Radiance",
+      "commit": "bff10581b2fd104f4ed094f67ae5afaa7a024c67",
+      "license": "MIT",
+      "status": "existing_partial_source_port",
+      "paths": [
+        "src/Shadow/ShadowRenderer.cs",
+        "src/Shadow/ShadowRenderer.GroundedCasts.cs"
+      ],
+      "use": "Keep grounded projection and current game-specific ground/water receiver integration.",
+      "exclude": "Not a port of volumetrics, wall receivers, authored normals or full reflection pipeline."
+    },
+    {
+      "id": "OS07",
+      "repo": "JaccomoLorenz/godot-simple-wind-shader-2d",
+      "commit": "5a1ee79571530749b707c8fa3154acbe90aee727",
+      "license": "MIT",
+      "status": "existing_shader_port",
+      "paths": [
+        "assets/maujoe.simple_wind_shader_2d/shaders/wind_2d.shader"
+      ],
+      "use": "Keep continuous wind formula, world phase and rooted deformation during mesh batching changes.",
+      "exclude": "Not adopting Godot runtime."
+    },
+    {
+      "id": "OS08",
+      "repo": "joonspk-research/generative_agents",
+      "commit": "fe05a71d3e4ed7d10bf68aa4eda6dd995ec070f4",
+      "license": "Apache-2.0",
+      "status": "design_and_selective_rule_reference",
+      "paths": [
+        "reverie/backend_server/persona/cognitive_modules/plan.py"
+      ],
+      "use": "Reference daily-plan, task-decomposition and reaction structure; local rule schedules first.",
+      "exclude": "No Python/Django simulation runtime or second authoritative world."
+    },
+    {
+      "id": "OS09",
+      "repo": "xerial/sqlite-jdbc",
+      "commit": "3ee4140ae9befafe44ad68d36f3e369654199b81",
+      "license": "Apache-2.0",
+      "status": "conditional_dependency",
+      "release": "3.53.4.0",
+      "paths": [
+        "README.adoc"
+      ],
+      "use": "Optional rebuildable long-memory text index after native packaging and measured need; verify selected release separately before adoption.",
+      "exclude": "Not authoritative world state; FTS5 alone is not Chinese semantic retrieval."
+    },
+    {
+      "id": "OS10",
+      "repo": "mapeditor/tiled",
+      "commit": "2da7b84f201967de192695ebedca718add09500f",
+      "license": "Mixed: editor/plugins GPL; libtiled BSD-2-Clause; see COPYING",
+      "status": "planned_standalone_authoring_tool",
+      "paths": [
+        "COPYING",
+        "docs/reference/json-map-format.rst"
+      ],
+      "use": "Author finite camp/ruin prefabs; offline JSON export and project importer with explicit supported format subset.",
+      "exclude": "Do not link GPL editor/plugins into game; exported map data needs its own native-ID importer."
+    },
+    {
+      "id": "OS11",
+      "repo": "LibreSprite/LibreSprite",
+      "commit": "0a62d62e6700b1d9b072f815cded5397a4cb0150",
+      "license": "GPL-2.0",
+      "status": "planned_standalone_art_tool",
+      "paths": [
+        "README.md",
+        "LICENSE.txt"
+      ],
+      "use": "Pixel cleanup, animation consistency and alpha/pivot review; use existing export scripts.",
+      "exclude": "Do not link editor code into game; not an AI animation generation solution."
+    },
+    {
+      "id": "OS12",
+      "repo": "python-jsonschema/jsonschema",
+      "commit": "c497561ea0a95f5aac09cd63d15eb1420eb7bbec",
+      "license": "MIT",
+      "status": "planned_build_time_validation_tool",
+      "paths": [
+        "README.rst"
+      ],
+      "use": "Validate versioned JSON content at build time; add native-ID/capability reference checks.",
+      "exclude": "No Python runtime dependency in packaged game; JSON schema alone cannot validate native game semantics."
+    },
+    {
+      "id": "OS13",
+      "repo": "promptfoo/promptfoo",
+      "commit": "b678d240d8f1426bee776ff24c34252baa564e17",
+      "license": "MIT (core)",
+      "status": "planned_development_evaluation_tool",
+      "inspectedPackageVersion": "0.124.1",
+      "nodeRequirement": ">=22.22.0 at inspected commit",
+      "paths": [
+        "README.md",
+        "LICENSE",
+        "package.json"
+      ],
+      "use": "Local prompt/action regression fixtures and deterministic assertions; paid provider suite explicitly capped and opt-in.",
+      "exclude": "No cloud dashboard upload or LLM judge by default; latest release label is not a verified CLI version."
+    },
+    {
+      "id": "OS14",
+      "repo": "langchain4j/langchain4j",
+      "commit": "7948fba82672cdff5ec4219b0600693221ad855d",
+      "license": "Apache-2.0",
+      "status": "conditional_adapter_trial",
+      "release": "1.22.0",
+      "paths": [
+        "langchain4j/src/main/java/dev/langchain4j/memory/chat/TokenWindowChatMemory.java"
+      ],
+      "use": "Only if additional providers or token-window maintenance make direct HTTP costly; trial minimum modules behind existing ModelProvider.",
+      "exclude": "Do not replace working DeepSeek HTTP without demonstrated benefit; no autonomous SDK tool execution or beta snapshot dependency."
+    },
+    {
+      "id": "OS15",
+      "repo": "ralfstx/minimal-json",
+      "commit": "5518c876226ae07f8291d6b41209bc3c979f4a55",
+      "license": "MIT",
+      "status": "existing_source_dependency",
+      "release": "0.9.5",
+      "paths": [
+        "com.eclipsesource.json/src/main/java/com/eclipsesource/json"
+      ],
+      "use": "Keep existing request JSON encoding and response parsing.",
+      "exclude": "Not a model SDK or NPC framework.",
+      "evidence": "third-party/minimal-json/README.md records existing pinned source and archive SHA-256."
+    }
+  ],
+  "officialSources": [
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+      "purpose": "Flash price assumptions checked 2026-10-23"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/zh-cn/guides/tool_calls/",
+      "purpose": "Tool definitions and caller-owned execution boundary"
+    }
+  ]
+}

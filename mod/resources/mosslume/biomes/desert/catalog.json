@@ -1,0 +1,2307 @@
+{
+  "biome": "desert",
+  "tilePixels": 32,
+  "sourceBatches": [
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourcePixelsModified": false,
+  "directionOrder": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "LEFT"
+  ],
+  "runtimeExportVersion": 1,
+  "entries": [
+    {
+      "id": "ground",
+      "file": "desert/ground.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "886cd64c6578fc6922662dcbe576ce0295c298608b578a133c733cff4630fdf7",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "opaque_ground",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            88,
+            84,
+            495,
+            328
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "interiorCropLTRB": [
+        102,
+        61,
+        305,
+        183
+      ],
+      "tiling": "mirror-repeat of interior sample; matching border texels"
+    },
+    {
+      "id": "terrain-0",
+      "file": "desert/terrain-0.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "7074c28fe70d5f75b1d4e711b8092f8914fee4a3f8fb159d1fa7071583de2e33",
+      "alphaBounds": [
+        2,
+        10,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            88,
+            84,
+            495,
+            328
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-1",
+      "file": "desert/terrain-1.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "89f811fa1e3b738d657bdf572061e570b2cc9528737b9185a9b44feaee1d52a9",
+      "alphaBounds": [
+        2,
+        7,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            564,
+            61,
+            977,
+            332
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-2",
+      "file": "desert/terrain-2.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "d27f44687bc1f1689b0dcfe9da790f958b438df7e5ed6ac8b41ec80002c09370",
+      "alphaBounds": [
+        2,
+        9,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1048,
+            84,
+            1452,
+            332
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-3",
+      "file": "desert/terrain-3.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "49e2c10ac24988077cec37922b8b7a160d6f99399d05f88bf128ca28b0b8c66a",
+      "alphaBounds": [
+        2,
+        10,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            84,
+            382,
+            496,
+            628
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-4",
+      "file": "desert/terrain-4.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "11baf251a17bcd5e05ba6ce481fa52f72813183a1549da3001e604799e5627e1",
+      "alphaBounds": [
+        2,
+        8,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            576,
+            379,
+            969,
+            631
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-5",
+      "file": "desert/terrain-5.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "0bf4c88f2eb006fa7f77059947adc9b4edd132156279456bebba60958a468f7f",
+      "alphaBounds": [
+        2,
+        7,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1050,
+            371,
+            1452,
+            632
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-6",
+      "file": "desert/terrain-6.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "9690d61d2b88543ff2add4fad86a733df06ede3e536f9851ed9860f8c3cb0c68",
+      "alphaBounds": [
+        8,
+        2,
+        55,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            112,
+            658,
+            470,
+            992
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-7",
+      "file": "desert/terrain-7.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "de315fdb73423b9735147585dd0ac11f0f9806d7d66dcdff7784ff27f95531e6",
+      "alphaBounds": [
+        4,
+        2,
+        61,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            574,
+            658,
+            968,
+            960
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-8",
+      "file": "desert/terrain-8.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "0abd166814b3dfd633ef2b44df28d18a8177628ce87e9b31283c679fab2690e4",
+      "alphaBounds": [
+        4,
+        2,
+        61,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+          "sourceSha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1067,
+            667,
+            1448,
+            960
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "flora-0",
+      "file": "desert/flora-0.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "411024aaad2c242d892a1121aacea3ef569c7a0828dcefe26b61df635d089d9e",
+      "alphaBounds": [
+        17,
+        36,
+        47,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            213,
+            25,
+            498,
+            424
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        30,
+        48
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-1",
+      "file": "desert/flora-1.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "72ffe39fbc04d15b6040f09b2303762b45ca2a77385c407a1e8002e7883fe212",
+      "alphaBounds": [
+        3,
+        5,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            638,
+            182,
+            897,
+            428
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-2",
+      "file": "desert/flora-2.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "777a315ec323680743a2f0a97bbde5e4abbd9e673dc0758b3feb38bdf80b77d4",
+      "alphaBounds": [
+        3,
+        11,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1034,
+            186,
+            1370,
+            428
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-3",
+      "file": "desert/flora-3.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "a69abb50c568e788899103060296fd8ead4490c7321776d1fcec96e594a557cb",
+      "alphaBounds": [
+        3,
+        36,
+        61,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            152,
+            450,
+            575,
+            756
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        58,
+        42
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-4",
+      "file": "desert/flora-4.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "a18f83fc631dbf8f44cabc2621f75ccbdcc4158e9c1f1dd832bb7fea9bce7716",
+      "alphaBounds": [
+        22,
+        30,
+        42,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            711,
+            451,
+            831,
+            740
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        20,
+        62
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-5",
+      "file": "desert/flora-5.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "8ce628a936cf692fd24fe6c635673cd221d7bf4a8b12fac3bd8a7b608e31b3ab",
+      "alphaBounds": [
+        5,
+        13,
+        27,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1053,
+            485,
+            1357,
+            721
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        22,
+        24
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-6",
+      "file": "desert/flora-6.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "52fa9e6668698d4944eae2f41e15a82979fb9680fc152e2c57fb975c41b2cd3d",
+      "alphaBounds": [
+        0,
+        13,
+        32,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            145,
+            774,
+            560,
+            991
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        18
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-7",
+      "file": "desert/flora-7.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "ffc3b452a233dd4c103ba61c1ed52b4fb73a1ae89283b5b4e268fb5eae1afc3e",
+      "alphaBounds": [
+        2,
+        8,
+        30,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            627,
+            764,
+            920,
+            999
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-8",
+      "file": "desert/flora-8.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "a553933e493200768a9b98053ee4b9f4d2300816acbbea438bf237637c780270",
+      "alphaBounds": [
+        2,
+        11,
+        30,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1028,
+            746,
+            1397,
+            992
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        24
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "tree",
+      "file": "desert/tree.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "dcbe50869d3e8a121ddcd440349d4e8670dae2d6feb925081ab14e649e5dd5a2",
+      "alphaBounds": [
+        3,
+        2,
+        61,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            152,
+            450,
+            575,
+            756
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            711,
+            451,
+            831,
+            740
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-crown",
+      "file": "desert/tree-crown.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "749a8274a1c51ac8e8e4566c3998202c897024ebdd07fffe51e08ed9e1fa49e1",
+      "alphaBounds": [
+        3,
+        2,
+        61,
+        44
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            152,
+            450,
+            575,
+            756
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            711,
+            451,
+            831,
+            740
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-crown",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-trunk",
+      "file": "desert/tree-trunk.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "9344c44f6fa58cd57cc24b4a441125944ccf327c58fc2e12505991d570a3fef2",
+      "alphaBounds": [
+        20,
+        23,
+        43,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            152,
+            450,
+            575,
+            756
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+          "sourceSha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            711,
+            451,
+            831,
+            740
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-trunk",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-0",
+      "file": "desert/structure-0.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "61542fd6f92ac5375149104a76a31b641b590f48dda7c5f62e7923f344854dca",
+      "alphaBounds": [
+        2,
+        23,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            61,
+            87,
+            562,
+            380
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            600,
+            72,
+            1160,
+            381
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1245,
+            116,
+            1436,
+            383
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          23,
+          124,
+          73
+        ],
+        "shell": [
+          10,
+          80,
+          108,
+          60
+        ],
+        "door": [
+          47,
+          92,
+          34,
+          48
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-1",
+      "file": "desert/structure-1.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "86e891fdcc27dcf365e7ccc1f184ba51298fbd40b9dc7d54f22cd48d0071d639",
+      "alphaBounds": [
+        2,
+        31,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            32,
+            397,
+            619,
+            695
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            651,
+            430,
+            1096,
+            695
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1138,
+            430,
+            1508,
+            714
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          31,
+          124,
+          63
+        ],
+        "shell": [
+          12,
+          78,
+          104,
+          62
+        ],
+        "door": [
+          47,
+          114,
+          34,
+          26
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-2",
+      "file": "desert/structure-2.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "f41e7c74b2534249de6401cfb3b1e953fc7761d16ce29f4fd5a27764af2e1060",
+      "alphaBounds": [
+        2,
+        20,
+        125,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            142,
+            726,
+            475,
+            970
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            625,
+            745,
+            912,
+            979
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+          "sourceSha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1120,
+            764,
+            1430,
+            979
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          20,
+          123,
+          90
+        ],
+        "shell": [
+          26,
+          78,
+          76,
+          62
+        ],
+        "door": [
+          82,
+          116,
+          34,
+          24
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/lizard",
+      "file": "desert/animals/lizard.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "5ef32fc457acff6749209a75aeff016d2c968342b2c4cbbfad6abd9e69cfdc64",
+      "alphaBounds": [
+        19,
+        31,
+        237,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "lizard",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 26,
+      "scalePerAllFrames": 0.08496732026143791,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            25,
+            32,
+            13,
+            20
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            114,
+            57,
+            271,
+            296
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            25,
+            31,
+            13,
+            21
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            444,
+            62,
+            595,
+            304
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            25,
+            31,
+            13,
+            21
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            745,
+            61,
+            903,
+            310
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            25,
+            31,
+            13,
+            21
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1066,
+            63,
+            1215,
+            312
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            28,
+            417,
+            319,
+            562
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            353,
+            419,
+            650,
+            562
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            681,
+            419,
+            976,
+            562
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1000,
+            418,
+            1291,
+            564
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            24,
+            30,
+            15,
+            22
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            99,
+            629,
+            277,
+            890
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            24,
+            30,
+            15,
+            22
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            421,
+            628,
+            595,
+            892
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            25,
+            29,
+            14,
+            23
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            741,
+            626,
+            904,
+            893
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            25,
+            30,
+            14,
+            22
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1056,
+            628,
+            1221,
+            890
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            23,
+            988,
+            312,
+            1129
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            342,
+            987,
+            632,
+            1129
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            19,
+            40,
+            25,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            669,
+            987,
+            964,
+            1133
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            19,
+            40,
+            26,
+            12
+          ],
+          "source": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+          "sourceSha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            987,
+            986,
+            1293,
+            1133
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/fennec",
+      "file": "desert/animals/fennec.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "3c434d3fc9c07df5cd0de9df6c9a5a1fb956e118994bb3e3270e89c7d78041a3",
+      "alphaBounds": [
+        18,
+        28,
+        237,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "fennec",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 28,
+      "scalePerAllFrames": 0.09395973154362416,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            22,
+            28,
+            20,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            75,
+            42,
+            288,
+            293
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            22,
+            28,
+            20,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            389,
+            42,
+            600,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            22,
+            28,
+            19,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            717,
+            41,
+            924,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            22,
+            28,
+            20,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1038,
+            35,
+            1252,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            18,
+            29,
+            27,
+            23
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            32,
+            335,
+            321,
+            581
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            18,
+            28,
+            27,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            352,
+            333,
+            644,
+            585
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            18,
+            29,
+            28,
+            23
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            680,
+            339,
+            978,
+            585
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            18,
+            28,
+            27,
+            24
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1008,
+            333,
+            1299,
+            586
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            22,
+            27,
+            19,
+            25
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            77,
+            619,
+            278,
+            889
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            22,
+            26,
+            19,
+            26
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            394,
+            618,
+            591,
+            893
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            22,
+            26,
+            19,
+            26
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            726,
+            618,
+            929,
+            893
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            22,
+            27,
+            19,
+            25
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1047,
+            613,
+            1249,
+            876
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            18,
+            29,
+            27,
+            23
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            30,
+            914,
+            314,
+            1157
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            18,
+            29,
+            27,
+            23
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            361,
+            914,
+            644,
+            1161
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            689,
+            920,
+            974,
+            1159
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            19,
+            29,
+            26,
+            23
+          ],
+          "source": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+          "sourceSha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1016,
+            911,
+            1291,
+            1159
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/sand-scorpion",
+      "file": "desert/monsters/sand-scorpion.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "b62084b4b692cf2c1abf63c082de321d02201af0c4a35e2f105aaaa6532e24bd",
+      "alphaBounds": [
+        15,
+        16,
+        243,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "sand-scorpion",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 38,
+      "scalePerAllFrames": 0.13768115942028986,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            16,
+            16,
+            32,
+            36
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            62,
+            54,
+            292,
+            316
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            15,
+            20,
+            33,
+            32
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            394,
+            90,
+            632,
+            321
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            17,
+            18,
+            30,
+            34
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            711,
+            68,
+            929,
+            313
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            15,
+            20,
+            33,
+            32
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1008,
+            90,
+            1247,
+            321
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            15,
+            18,
+            33,
+            34
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            64,
+            360,
+            306,
+            610
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            13,
+            23,
+            38,
+            29
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            374,
+            391,
+            647,
+            602
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            14,
+            24,
+            36,
+            28
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            695,
+            396,
+            955,
+            603
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            13,
+            28,
+            38,
+            24
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            995,
+            432,
+            1271,
+            603
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/sandworm",
+      "file": "desert/monsters/sandworm.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "b2411ce21cfd251e4b4ce1e0c36423f6a9ac6dcc98500054067e1b202a9077e3",
+      "alphaBounds": [
+        17,
+        23,
+        242,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "sandworm",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 42,
+      "scalePerAllFrames": 0.12923076923076923,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            21,
+            23,
+            21,
+            29
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            94,
+            646,
+            260,
+            873
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            14,
+            28,
+            35,
+            24
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            373,
+            674,
+            643,
+            856
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            23,
+            23,
+            18,
+            29
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            749,
+            646,
+            892,
+            868
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            14,
+            28,
+            35,
+            24
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            997,
+            674,
+            1267,
+            856
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            17,
+            22,
+            30,
+            30
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            51,
+            907,
+            287,
+            1140
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            11,
+            31,
+            42,
+            21
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            348,
+            976,
+            673,
+            1136
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            17,
+            23,
+            29,
+            29
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            706,
+            912,
+            932,
+            1140
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            13,
+            36,
+            37,
+            16
+          ],
+          "source": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+          "sourceSha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            984,
+            999,
+            1274,
+            1126
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    }
+  ]
+}

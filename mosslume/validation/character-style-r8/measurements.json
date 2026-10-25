@@ -1,0 +1,398 @@
+{
+  "player": {
+    "up": {
+      "path": "mod/resources/mosslume/players/player-stand-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "height": 32,
+      "width": 20
+    },
+    "right": {
+      "path": "mod/resources/mosslume/players/player-stand-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "height": 33,
+      "width": 19
+    },
+    "down": {
+      "path": "mod/resources/mosslume/players/player-stand-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        42,
+        53
+      ],
+      "height": 32,
+      "width": 20
+    },
+    "left": {
+      "path": "mod/resources/mosslume/players/player-stand-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        23,
+        20,
+        41,
+        53
+      ],
+      "height": 33,
+      "width": 18
+    }
+  },
+  "farmer": {
+    "up": {
+      "path": "mod/resources/mosslume/residents/farmer-idle-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "height": 32,
+      "width": 17
+    },
+    "right": {
+      "path": "mod/resources/mosslume/residents/farmer-idle-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "height": 32,
+      "width": 17
+    },
+    "down": {
+      "path": "mod/resources/mosslume/residents/farmer-idle-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        23,
+        21,
+        40,
+        53
+      ],
+      "height": 32,
+      "width": 17
+    },
+    "left": {
+      "path": "mod/resources/mosslume/residents/farmer-idle-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        24,
+        21,
+        41,
+        53
+      ],
+      "height": 32,
+      "width": 17
+    }
+  },
+  "carpenter": {
+    "up": {
+      "path": "mod/resources/mosslume/residents/carpenter-idle-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ],
+      "height": 32,
+      "width": 21
+    },
+    "right": {
+      "path": "mod/resources/mosslume/residents/carpenter-idle-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        25,
+        21,
+        39,
+        53
+      ],
+      "height": 32,
+      "width": 14
+    },
+    "down": {
+      "path": "mod/resources/mosslume/residents/carpenter-idle-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        41,
+        53
+      ],
+      "height": 32,
+      "width": 19
+    },
+    "left": {
+      "path": "mod/resources/mosslume/residents/carpenter-idle-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        25,
+        21,
+        40,
+        53
+      ],
+      "height": 32,
+      "width": 15
+    }
+  },
+  "merchant": {
+    "up": {
+      "path": "mod/resources/mosslume/residents/merchant-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": true,
+      "bbox": [
+        24,
+        22,
+        39,
+        53
+      ],
+      "height": 31,
+      "width": 15
+    },
+    "right": {
+      "path": "mod/resources/mosslume/residents/merchant-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": true,
+      "bbox": [
+        25,
+        21,
+        38,
+        53
+      ],
+      "height": 32,
+      "width": 13
+    },
+    "down": {
+      "path": "mod/resources/mosslume/residents/merchant-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ],
+      "height": 32,
+      "width": 15
+    },
+    "left": {
+      "path": "mod/resources/mosslume/residents/merchant-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": true,
+      "bbox": [
+        26,
+        21,
+        39,
+        53
+      ],
+      "height": 32,
+      "width": 13
+    }
+  },
+  "ashuo": {
+    "up": {
+      "path": "mod/resources/mosslume/residents/ashuo-idle-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        23,
+        23,
+        42,
+        53
+      ],
+      "height": 30,
+      "width": 19
+    },
+    "right": {
+      "path": "mod/resources/mosslume/residents/ashuo-idle-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        24,
+        21,
+        43,
+        53
+      ],
+      "height": 32,
+      "width": 19
+    },
+    "down": {
+      "path": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        21,
+        20,
+        42,
+        53
+      ],
+      "height": 33,
+      "width": 21
+    },
+    "left": {
+      "path": "mod/resources/mosslume/residents/ashuo-idle-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        20,
+        41,
+        53
+      ],
+      "height": 33,
+      "width": 19
+    }
+  },
+  "luan": {
+    "up": {
+      "path": "mod/resources/mosslume/residents/luan-idle-up.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        22,
+        42,
+        53
+      ],
+      "height": 31,
+      "width": 20
+    },
+    "right": {
+      "path": "mod/resources/mosslume/residents/luan-idle-right.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        20,
+        43,
+        53
+      ],
+      "height": 33,
+      "width": 21
+    },
+    "down": {
+      "path": "mod/resources/mosslume/residents/luan-idle-down.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ],
+      "height": 32,
+      "width": 21
+    },
+    "left": {
+      "path": "mod/resources/mosslume/residents/luan-idle-left.png",
+      "sourceDimensions": [
+        64,
+        64
+      ],
+      "idleFallback": false,
+      "bbox": [
+        22,
+        21,
+        44,
+        53
+      ],
+      "height": 32,
+      "width": 22
+    }
+  }
+}

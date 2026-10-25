@@ -6,16 +6,20 @@ import localforest.world.noise.FastNoiseLite;
 public final class GeneratedLayout {
     public final WorldDefinition world;
     private final FastNoiseLite coast,vegetation;
+    private final BiomeLayout biomes;
     public GeneratedLayout(WorldDefinition world){
-        this.world=world;
+        if(world.isContinuous())throw new IllegalArgumentException("Continuous worlds use the native biome generator stack, not a finite layout");
+        this.world=world;biomes=world.isMultibiome()?new BiomeLayout(world):null;
         coast=new FastNoiseLite((int)world.seed);coast.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
         coast.SetFrequency(.035f);coast.SetFractalType(FastNoiseLite.FractalType.FBm);coast.SetFractalOctaves(3);
         vegetation=new FastNoiseLite((int)(world.seed>>>32)^0x5389ac);vegetation.SetFrequency(.022f);
         vegetation.SetNoiseType(FastNoiseLite.NoiseType.OpenSimplex2);
     }
+    public BiomeLayout biomeLayout(){return biomes;}
     public boolean inside(int x,int y){return x>=3&&y>=3&&x<world.width-3&&y<world.height-3;}
     public boolean land(int x,int y){
         if(!inside(x,y))return false;
+        if(world.generatorVersion>=3&&biomes!=null)return biomes.land(x,y);
         if(campArea(x,y)||trail(x,y))return true;
         double nx=(x-world.campX)/(world.width*.5),ny=(y-world.campY)/(world.height*.5);
         double radius=world.content.decimal(world.preset+".landRadius");
@@ -24,16 +28,20 @@ public final class GeneratedLayout {
     }
     public boolean campArea(int x,int y){return Math.hypot(x-world.campX,y-world.campY)<16;}
     public boolean trail(int x,int y){
+        if(biomes!=null)return biomes.path(x,y);
         if(!inside(x,y)||x<world.campX-18||x>world.caveX+3)return false;
         double t=(x-world.campX)/(double)(world.caveX-world.campX);
         double py=world.campY-12*t+Math.sin(t*Math.PI*2)*2.8;
         return Math.abs(y-py)<world.content.decimal("camp.pathWidth");
     }
-    public boolean path(int x,int y){return trail(x,y)||((Math.abs(x-world.campX)<1.4)&&(y>=world.campY-3&&y<=world.houseY+3));}
+    public boolean path(int x,int y){
+        if(world.generatorVersion>=3&&biomes!=null)return biomes.path(x,y);
+        return trail(x,y)||((Math.abs(x-world.campX)<1.4)&&(y>=world.campY-3&&y<=world.houseY+3));
+    }
     public boolean coast(int x,int y){
         return !land(x,y)&&(land(x-1,y)||land(x+1,y)||land(x,y-1)||land(x,y+1));
     }
-    public String biome(int x,int y){return world.content.biome(vegetation.GetNoise(x,y));}
+    public String biome(int x,int y){return biomes==null?world.content.biome(vegetation.GetNoise(x,y)):biomes.biome(x,y);}
     public boolean house(int x,int y){return x>=world.houseX-2&&x<=world.houseX+2&&y>=world.houseY-4&&y<=world.houseY-1;}
     public boolean farmland(int x,int y){return x>=world.campX-9&&x<=world.campX-6&&y>=world.campY+5&&y<=world.campY+7;}
     public long hash(int x,int y,int channel){long h=world.seed^((long)x*0x9e3779b97f4a7c15L)^((long)y*0xc2b2ae3d27d4eb4fL)^((long)channel*0x165667b19e3779f9L);h=(h^(h>>>30))*0xbf58476d1ce4e5b9L;h=(h^(h>>>27))*0x94d049bb133111ebL;return h^(h>>>31);}
@@ -44,6 +52,7 @@ public final class GeneratedLayout {
         double distance=Math.hypot(x-world.campX,y-world.campY);
         if(distance<12)return null;
         if(Math.hypot(x-world.caveX,y-world.caveY)<4)return null;
+        if(biomes!=null)return biomes.object(x,y,this);
         String biome=biome(x,y);double n=random(x,y,7);
         double density=world.content.decimal(world.preset+".treeDensity")*world.content.decimal(biome+".treeMultiplier");
         // One tree per staggered two-tile cell leaves traversable corridors within dense woodland.

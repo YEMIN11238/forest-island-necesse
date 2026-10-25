@@ -1,0 +1,4143 @@
+{
+  "project": "Mosslume",
+  "batch": "08",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "productionExportValidated": false,
+  "sourcePixelsModified": false,
+  "sourceAtlasCount": 14,
+  "requestedSourceRegions": 174,
+  "assets": [
+    {
+      "id": "wetland-terrain-connectors",
+      "name": "湿地泥岸与高差连接",
+      "category": "地形",
+      "biome": "湿地",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "材质与岸线",
+        "岸线转角与过渡",
+        "泥崖与台阶"
+      ],
+      "cellLabels": [
+        "湿泥地",
+        "浅沼水面",
+        "泥岸直边",
+        "泥岸内角",
+        "泥岸外角",
+        "苔地湿泥过渡",
+        "苔顶泥崖",
+        "泥崖外角",
+        "泥木台阶"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; runtime export pending",
+        "tilePixels": 32,
+        "terrainFootprintTiles": "1–2",
+        "cliffHeightTiles": 1
+      },
+      "file": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-bd9aba29-a313-41fe-9c65-4925b5869415.png",
+      "status": "source_generated_pending_runtime_export",
+      "previewKind": "terrain-kit",
+      "sourceStage": "未经运行时切片的生成源图",
+      "layout": "terrain-kit",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 835627,
+        "faintFringePixelsAlpha1To8": 79636,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            533,
+            375
+          ],
+          "visibleBounds": [
+            143,
+            57,
+            316,
+            287
+          ],
+          "label": "湿泥地"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            533,
+            0,
+            464,
+            375
+          ],
+          "visibleBounds": [
+            607,
+            55,
+            321,
+            290
+          ],
+          "label": "浅沼水面"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            997,
+            0,
+            539,
+            375
+          ],
+          "visibleBounds": [
+            1066,
+            58,
+            328,
+            297
+          ],
+          "label": "泥岸直边"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            375,
+            538,
+            285
+          ],
+          "visibleBounds": [
+            134,
+            403,
+            342,
+            235
+          ],
+          "label": "泥岸内角"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            538,
+            375,
+            463,
+            285
+          ],
+          "visibleBounds": [
+            601,
+            405,
+            334,
+            235
+          ],
+          "label": "泥岸外角"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1001,
+            375,
+            535,
+            285
+          ],
+          "visibleBounds": [
+            1067,
+            396,
+            339,
+            248
+          ],
+          "label": "苔地湿泥过渡"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            660,
+            539,
+            364
+          ],
+          "visibleBounds": [
+            134,
+            698,
+            342,
+            251
+          ],
+          "label": "苔顶泥崖"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            539,
+            660,
+            449,
+            364
+          ],
+          "visibleBounds": [
+            603,
+            677,
+            305,
+            291
+          ],
+          "label": "泥崖外角"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            988,
+            660,
+            548,
+            364
+          ],
+          "visibleBounds": [
+            1068,
+            708,
+            349,
+            243
+          ],
+          "label": "泥木台阶"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-flora-resources",
+      "name": "湿地柳树分层与水生植物",
+      "category": "植被",
+      "biome": "湿地",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "柳树分层与芦苇",
+        "水生与药用植物",
+        "腐木与湿草"
+      ],
+      "cellLabels": [
+        "柳树冠",
+        "柳树干",
+        "香蒲芦苇",
+        "睡莲叶花",
+        "湿蕨",
+        "沼泽药草",
+        "覆苔腐木",
+        "枯根树桩",
+        "莎草丛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; runtime export pending",
+        "tilePixels": 32,
+        "assembledTreePixels": [
+          40,
+          80
+        ],
+        "smallFloraWidthPixels": [
+          16,
+          26
+        ],
+        "logWidthPixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-1dd4e341-e11d-4db6-8cca-41b9858e5b32.png",
+      "status": "source_generated_pending_runtime_export",
+      "previewKind": "atlas",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1002945,
+        "faintFringePixelsAlpha1To8": 90600,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            570,
+            468
+          ],
+          "visibleBounds": [
+            122,
+            76,
+            400,
+            375
+          ],
+          "label": "柳树冠"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            570,
+            0,
+            453,
+            468
+          ],
+          "visibleBounds": [
+            618,
+            83,
+            345,
+            347
+          ],
+          "label": "柳树干"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1023,
+            0,
+            513,
+            468
+          ],
+          "visibleBounds": [
+            1083,
+            137,
+            333,
+            293
+          ],
+          "label": "香蒲芦苇"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            468,
+            559,
+            257
+          ],
+          "visibleBounds": [
+            181,
+            521,
+            286,
+            171
+          ],
+          "label": "睡莲叶花"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            559,
+            468,
+            485,
+            257
+          ],
+          "visibleBounds": [
+            651,
+            490,
+            311,
+            224
+          ],
+          "label": "湿蕨"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1044,
+            468,
+            492,
+            257
+          ],
+          "visibleBounds": [
+            1126,
+            486,
+            250,
+            227
+          ],
+          "label": "沼泽药草"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            725,
+            602,
+            299
+          ],
+          "visibleBounds": [
+            110,
+            766,
+            433,
+            192
+          ],
+          "label": "覆苔腐木"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            602,
+            725,
+            452,
+            299
+          ],
+          "visibleBounds": [
+            661,
+            737,
+            318,
+            239
+          ],
+          "label": "枯根树桩"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1054,
+            725,
+            482,
+            299
+          ],
+          "visibleBounds": [
+            1129,
+            752,
+            267,
+            210
+          ],
+          "label": "莎草丛"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-buildings-layers",
+      "name": "湿地吊脚屋、药棚与栈道亭",
+      "category": "建筑",
+      "biome": "湿地",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "吊脚屋",
+        "药草棚",
+        "栈道亭"
+      ],
+      "cellLabels": [
+        "吊脚屋屋顶",
+        "吊脚屋下层",
+        "吊脚屋门",
+        "药棚屋顶",
+        "药棚下层",
+        "药棚门",
+        "栈道亭屋顶",
+        "栈道亭支架",
+        "栈道亭门栏"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "note": "target only; separate components require pivot/fit validation",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-cbf87fa0-2c8d-4ddc-9364-670137bcdc99.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "门组件实际生成为关闭状态；开门动画需后续补齐，栈道亭屋顶仍含部分支柱，需清理分层。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 744126,
+        "faintFringePixelsAlpha1To8": 77953,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            609,
+            341
+          ],
+          "visibleBounds": [
+            76,
+            34,
+            501,
+            307
+          ],
+          "label": "吊脚屋屋顶"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            609,
+            0,
+            606,
+            341
+          ],
+          "visibleBounds": [
+            641,
+            113,
+            541,
+            228
+          ],
+          "label": "吊脚屋下层"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1215,
+            0,
+            321,
+            341
+          ],
+          "visibleBounds": [
+            1248,
+            147,
+            209,
+            194
+          ],
+          "label": "吊脚屋门"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            616,
+            371
+          ],
+          "visibleBounds": [
+            62,
+            341,
+            529,
+            359
+          ],
+          "label": "药棚屋顶"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            616,
+            341,
+            600,
+            371
+          ],
+          "visibleBounds": [
+            641,
+            341,
+            543,
+            354
+          ],
+          "label": "药棚下层"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1216,
+            341,
+            320,
+            371
+          ],
+          "visibleBounds": [
+            1248,
+            341,
+            209,
+            355
+          ],
+          "label": "药棚门"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            712,
+            603,
+            312
+          ],
+          "visibleBounds": [
+            75,
+            725,
+            493,
+            267
+          ],
+          "label": "栈道亭屋顶"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            603,
+            712,
+            421,
+            312
+          ],
+          "visibleBounds": [
+            638,
+            737,
+            386,
+            255
+          ],
+          "label": "栈道亭支架"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1024,
+            712,
+            512,
+            312
+          ],
+          "visibleBounds": [
+            1024,
+            737,
+            419,
+            255
+          ],
+          "label": "栈道亭门栏"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [
+          {
+            "row": 2,
+            "division": 2,
+            "position": 1024,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "column",
+            "row": 2,
+            "position": 1024
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-frog-directional-poses",
+      "name": "湿地青蛙四方向跳跃源图",
+      "category": "动物",
+      "biome": "湿地",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "跳跃",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.5,
+          0.45
+        ],
+        "height": 0.35,
+        "note": "target only; shared ground pivot pending export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-48328c33-0f70-4374-a3cf-fa7db12b11a1.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1045439,
+        "faintFringePixelsAlpha1To8": 123759,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            330,
+            333
+          ],
+          "visibleBounds": [
+            70,
+            127,
+            199,
+            165
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            330,
+            0,
+            319,
+            333
+          ],
+          "visibleBounds": [
+            391,
+            147,
+            200,
+            145
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            649,
+            0,
+            329,
+            333
+          ],
+          "visibleBounds": [
+            708,
+            95,
+            211,
+            181
+          ],
+          "label": "腾跃"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            978,
+            0,
+            334,
+            333
+          ],
+          "visibleBounds": [
+            1038,
+            129,
+            215,
+            163
+          ],
+          "label": "落地"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            333,
+            332,
+            263
+          ],
+          "visibleBounds": [
+            66,
+            391,
+            210,
+            171
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            332,
+            333,
+            313,
+            263
+          ],
+          "visibleBounds": [
+            389,
+            411,
+            219,
+            150
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            645,
+            333,
+            358,
+            263
+          ],
+          "visibleBounds": [
+            683,
+            375,
+            280,
+            203
+          ],
+          "label": "腾跃"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1003,
+            333,
+            309,
+            263
+          ],
+          "visibleBounds": [
+            1044,
+            403,
+            209,
+            159
+          ],
+          "label": "落地"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            596,
+            331,
+            298
+          ],
+          "visibleBounds": [
+            71,
+            667,
+            197,
+            182
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            331,
+            596,
+            319,
+            298
+          ],
+          "visibleBounds": [
+            394,
+            694,
+            194,
+            155
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            650,
+            596,
+            333,
+            298
+          ],
+          "visibleBounds": [
+            712,
+            614,
+            214,
+            236
+          ],
+          "label": "腾跃"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            983,
+            596,
+            329,
+            298
+          ],
+          "visibleBounds": [
+            1040,
+            678,
+            209,
+            171
+          ],
+          "label": "落地"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            894,
+            324,
+            305
+          ],
+          "visibleBounds": [
+            66,
+            939,
+            206,
+            171
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            324,
+            894,
+            302,
+            305
+          ],
+          "visibleBounds": [
+            376,
+            964,
+            215,
+            149
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            626,
+            894,
+            370,
+            305
+          ],
+          "visibleBounds": [
+            662,
+            939,
+            286,
+            186
+          ],
+          "label": "腾跃"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            996,
+            894,
+            316,
+            305
+          ],
+          "visibleBounds": [
+            1044,
+            949,
+            209,
+            164
+          ],
+          "label": "落地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-dragonfly-directional-poses",
+      "name": "湿地蜻蜓四方向飞行源图",
+      "category": "动物",
+      "biome": "湿地",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.45,
+          0.2
+        ],
+        "height": 0.3,
+        "note": "target only; wing spread width0.75tile; airborne anchor pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-e5edb335-8d4f-4025-a92c-7e85c5867694.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 987504,
+        "faintFringePixelsAlpha1To8": 258876,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            377,
+            347
+          ],
+          "visibleBounds": [
+            45,
+            111,
+            284,
+            199
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            377,
+            0,
+            343,
+            347
+          ],
+          "visibleBounds": [
+            425,
+            111,
+            237,
+            202
+          ],
+          "label": "上抬"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            720,
+            0,
+            224,
+            347
+          ],
+          "visibleBounds": [
+            778,
+            108,
+            101,
+            205
+          ],
+          "label": "收翅"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            944,
+            0,
+            368,
+            347
+          ],
+          "visibleBounds": [
+            1009,
+            119,
+            269,
+            195
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            347,
+            373,
+            264
+          ],
+          "visibleBounds": [
+            88,
+            408,
+            241,
+            170
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            373,
+            347,
+            316,
+            264
+          ],
+          "visibleBounds": [
+            417,
+            387,
+            236,
+            188
+          ],
+          "label": "上抬"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            689,
+            347,
+            307,
+            264
+          ],
+          "visibleBounds": [
+            726,
+            380,
+            219,
+            192
+          ],
+          "label": "收翅"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            996,
+            347,
+            316,
+            264
+          ],
+          "visibleBounds": [
+            1048,
+            434,
+            223,
+            139
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            611,
+            373,
+            279
+          ],
+          "visibleBounds": [
+            45,
+            663,
+            284,
+            197
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            373,
+            611,
+            347,
+            279
+          ],
+          "visibleBounds": [
+            417,
+            651,
+            245,
+            209
+          ],
+          "label": "上抬"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            720,
+            611,
+            221,
+            279
+          ],
+          "visibleBounds": [
+            779,
+            645,
+            95,
+            215
+          ],
+          "label": "收翅"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            941,
+            611,
+            371,
+            279
+          ],
+          "visibleBounds": [
+            1008,
+            667,
+            270,
+            188
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            890,
+            349,
+            309
+          ],
+          "visibleBounds": [
+            45,
+            945,
+            235,
+            164
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            349,
+            890,
+            345,
+            309
+          ],
+          "visibleBounds": [
+            419,
+            920,
+            234,
+            192
+          ],
+          "label": "上抬"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            694,
+            890,
+            296,
+            309
+          ],
+          "visibleBounds": [
+            735,
+            921,
+            221,
+            191
+          ],
+          "label": "收翅"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            990,
+            890,
+            322,
+            309
+          ],
+          "visibleBounds": [
+            1024,
+            971,
+            238,
+            141
+          ],
+          "label": "下拍"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-monsters-poses",
+      "name": "湿地泥怪与毒囊虫战斗姿态",
+      "category": "怪物",
+      "biome": "湿地",
+      "layout": "mixed-monster-poses",
+      "previewKind": "mixed-monster-poses",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "泥怪四向待机",
+        "泥怪右向战斗",
+        "毒囊虫四向待机",
+        "毒囊虫右向战斗"
+      ],
+      "cellLabels": [
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地",
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地"
+      ],
+      "species": [
+        {
+          "name": "泥怪",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "毒囊虫",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.9,
+          0.7
+        ],
+        "height": 0.9,
+        "note": "target only; insect footprint0.8x0.6tile; attack timeline incomplete",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-monsters-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-25714bb2-6656-4d71-a305-ac4e3714ab57.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 933200,
+        "faintFringePixelsAlpha1To8": 103129,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            344,
+            354
+          ],
+          "visibleBounds": [
+            41,
+            105,
+            270,
+            220
+          ],
+          "label": "下"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            344,
+            0,
+            299,
+            354
+          ],
+          "visibleBounds": [
+            377,
+            105,
+            230,
+            220
+          ],
+          "label": "右"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            643,
+            0,
+            350,
+            354
+          ],
+          "visibleBounds": [
+            680,
+            111,
+            273,
+            209
+          ],
+          "label": "上"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            993,
+            0,
+            319,
+            354
+          ],
+          "visibleBounds": [
+            1034,
+            105,
+            230,
+            220
+          ],
+          "label": "左"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            354,
+            312,
+            274
+          ],
+          "visibleBounds": [
+            33,
+            407,
+            254,
+            182
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            312,
+            354,
+            391,
+            274
+          ],
+          "visibleBounds": [
+            337,
+            391,
+            351,
+            203
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            703,
+            354,
+            271,
+            274
+          ],
+          "visibleBounds": [
+            718,
+            384,
+            233,
+            210
+          ],
+          "label": "受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            974,
+            354,
+            338,
+            274
+          ],
+          "visibleBounds": [
+            998,
+            461,
+            285,
+            139
+          ],
+          "label": "倒地"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            628,
+            327,
+            263
+          ],
+          "visibleBounds": [
+            64,
+            657,
+            215,
+            210
+          ],
+          "label": "下"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            327,
+            628,
+            332,
+            263
+          ],
+          "visibleBounds": [
+            376,
+            660,
+            251,
+            206
+          ],
+          "label": "右"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            659,
+            628,
+            302,
+            263
+          ],
+          "visibleBounds": [
+            691,
+            657,
+            230,
+            209
+          ],
+          "label": "上"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            961,
+            628,
+            351,
+            263
+          ],
+          "visibleBounds": [
+            1002,
+            659,
+            249,
+            207
+          ],
+          "label": "左"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            891,
+            335,
+            308
+          ],
+          "visibleBounds": [
+            49,
+            916,
+            259,
+            206
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            335,
+            891,
+            349,
+            308
+          ],
+          "visibleBounds": [
+            362,
+            950,
+            301,
+            182
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            684,
+            891,
+            294,
+            308
+          ],
+          "visibleBounds": [
+            705,
+            920,
+            247,
+            203
+          ],
+          "label": "受击"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            978,
+            891,
+            334,
+            308
+          ],
+          "visibleBounds": [
+            1005,
+            982,
+            278,
+            143
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "wetland-props-local-effects",
+      "name": "湿地生产道具、泥溅与毒泡特效",
+      "category": "道具与特效",
+      "biome": "湿地",
+      "layout": "props-vfx",
+      "previewKind": "props-vfx",
+      "columns": 4,
+      "rows": 3,
+      "plannedComponents": 12,
+      "rowLabels": [
+        "生活生产道具",
+        "泥浆喷溅四阶段",
+        "毒泡四阶段"
+      ],
+      "cellLabels": [
+        "晾药架",
+        "木栈道",
+        "药草篮",
+        "绳纹水罐",
+        "泥溅起始",
+        "泥溅上扬",
+        "泥溅散开",
+        "泥溅消散",
+        "毒泡初现",
+        "毒泡上升",
+        "毒泡破裂",
+        "毒泡残点"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.8,
+          0.8
+        ],
+        "height": 1,
+        "note": "target only; props0.5–1tile, VFX0.8–1tile; timeline/pivots pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-props-local-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-props-local-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-90587f07-a83f-42f3-b2dc-784ded8d1065.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "特效源图包含低alpha边缘；发光应由引擎重建，需导出时检查是否清理低alpha光晕。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "湿地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "22a694e3d5a8ddfbfdfd1f0c682289173753af66feb2ad92ae790db7eeb8955f",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1199612,
+        "faintFringePixelsAlpha1To8": 88399,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            438,
+            432
+          ],
+          "visibleBounds": [
+            90,
+            120,
+            309,
+            253
+          ],
+          "label": "晾药架"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            438,
+            0,
+            360,
+            432
+          ],
+          "visibleBounds": [
+            477,
+            153,
+            292,
+            228
+          ],
+          "label": "木栈道"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            798,
+            0,
+            330,
+            432
+          ],
+          "visibleBounds": [
+            828,
+            135,
+            247,
+            243
+          ],
+          "label": "药草篮"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1128,
+            0,
+            408,
+            432
+          ],
+          "visibleBounds": [
+            1181,
+            130,
+            268,
+            254
+          ],
+          "label": "绳纹水罐"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            432,
+            418,
+            290
+          ],
+          "visibleBounds": [
+            154,
+            555,
+            169,
+            133
+          ],
+          "label": "泥溅起始"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            418,
+            432,
+            346,
+            290
+          ],
+          "visibleBounds": [
+            513,
+            480,
+            186,
+            208
+          ],
+          "label": "泥溅上扬"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            764,
+            432,
+            397,
+            290
+          ],
+          "visibleBounds": [
+            829,
+            499,
+            258,
+            189
+          ],
+          "label": "泥溅散开"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1161,
+            432,
+            375,
+            290
+          ],
+          "visibleBounds": [
+            1236,
+            581,
+            150,
+            100
+          ],
+          "label": "泥溅消散"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            722,
+            402,
+            302
+          ],
+          "visibleBounds": [
+            184,
+            824,
+            108,
+            130
+          ],
+          "label": "毒泡初现"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            402,
+            722,
+            362,
+            302
+          ],
+          "visibleBounds": [
+            513,
+            757,
+            163,
+            208
+          ],
+          "label": "毒泡上升"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            764,
+            722,
+            384,
+            302
+          ],
+          "visibleBounds": [
+            853,
+            776,
+            185,
+            181
+          ],
+          "label": "毒泡破裂"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1148,
+            722,
+            388,
+            302
+          ],
+          "visibleBounds": [
+            1258,
+            817,
+            126,
+            132
+          ],
+          "label": "毒泡残点"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-terrain-connectors",
+      "name": "蘑菇林菌土地表与根崖连接",
+      "category": "地形",
+      "biome": "蘑菇林",
+      "layout": "terrain-kit",
+      "previewKind": "terrain-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "菌土材质",
+        "根洞与腐木过渡",
+        "菌崖与台阶"
+      ],
+      "cellLabels": [
+        "菌土地表",
+        "菌丝泥地",
+        "林土菌土过渡",
+        "根洞内角",
+        "根洞外角",
+        "腐木地面过渡",
+        "菌苔根崖",
+        "根崖外角",
+        "树根台阶"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; patch sizes1–2tile; not proven seamless",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-f16db620-4717-428b-ba9b-dced0106e8e9.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 721216,
+        "faintFringePixelsAlpha1To8": 68133,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            544,
+            395
+          ],
+          "visibleBounds": [
+            118,
+            67,
+            361,
+            311
+          ],
+          "label": "菌土地表"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            544,
+            0,
+            459,
+            395
+          ],
+          "visibleBounds": [
+            610,
+            67,
+            333,
+            303
+          ],
+          "label": "菌丝泥地"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1003,
+            0,
+            533,
+            395
+          ],
+          "visibleBounds": [
+            1063,
+            63,
+            393,
+            316
+          ],
+          "label": "林土菌土过渡"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            395,
+            541,
+            278
+          ],
+          "visibleBounds": [
+            89,
+            412,
+            419,
+            233
+          ],
+          "label": "根洞内角"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            541,
+            395,
+            459,
+            278
+          ],
+          "visibleBounds": [
+            574,
+            422,
+            392,
+            241
+          ],
+          "label": "根洞外角"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1000,
+            395,
+            536,
+            278
+          ],
+          "visibleBounds": [
+            1035,
+            428,
+            433,
+            228
+          ],
+          "label": "腐木地面过渡"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            673,
+            571,
+            351
+          ],
+          "visibleBounds": [
+            92,
+            695,
+            440,
+            263
+          ],
+          "label": "菌苔根崖"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            571,
+            673,
+            433,
+            351
+          ],
+          "visibleBounds": [
+            610,
+            684,
+            332,
+            297
+          ],
+          "label": "根崖外角"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1004,
+            673,
+            532,
+            351
+          ],
+          "visibleBounds": [
+            1067,
+            691,
+            382,
+            276
+          ],
+          "label": "树根台阶"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-flora-resources",
+      "name": "蘑菇树分层与菌类植物资源",
+      "category": "植被",
+      "biome": "蘑菇林",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "蘑菇树分层",
+        "菌类与腐木",
+        "蕨类孢子与地衣"
+      ],
+      "cellLabels": [
+        "巨蘑菇菌盖",
+        "巨蘑菇菌柄",
+        "褐蘑菇丛",
+        "青色荧菇",
+        "层菌腐木",
+        "珊瑚菌丛",
+        "紫蕨",
+        "闭合孢子荚",
+        "地衣枯木"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1.25,
+          0.75
+        ],
+        "height": 2.5,
+        "note": "target only; assembled cap/stem40x80px, small clumps16–24px, log32px",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-d0859221-434a-457d-8f53-ab8d680abf1b.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 939029,
+        "faintFringePixelsAlpha1To8": 95299,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            617,
+            386
+          ],
+          "visibleBounds": [
+            106,
+            61,
+            477,
+            296
+          ],
+          "label": "巨蘑菇菌盖"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            617,
+            0,
+            400,
+            386
+          ],
+          "visibleBounds": [
+            652,
+            34,
+            298,
+            329
+          ],
+          "label": "巨蘑菇菌柄"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1017,
+            0,
+            519,
+            386
+          ],
+          "visibleBounds": [
+            1085,
+            108,
+            267,
+            250
+          ],
+          "label": "褐蘑菇丛"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            386,
+            538,
+            294
+          ],
+          "visibleBounds": [
+            188,
+            409,
+            284,
+            264
+          ],
+          "label": "青色荧菇"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            538,
+            386,
+            502,
+            294
+          ],
+          "visibleBounds": [
+            605,
+            437,
+            385,
+            224
+          ],
+          "label": "层菌腐木"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1040,
+            386,
+            496,
+            294
+          ],
+          "visibleBounds": [
+            1090,
+            410,
+            281,
+            254
+          ],
+          "label": "珊瑚菌丛"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            680,
+            614,
+            344
+          ],
+          "visibleBounds": [
+            141,
+            723,
+            371,
+            265
+          ],
+          "label": "紫蕨"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            614,
+            680,
+            337,
+            344
+          ],
+          "visibleBounds": [
+            717,
+            702,
+            148,
+            283
+          ],
+          "label": "闭合孢子荚"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            951,
+            680,
+            585,
+            344
+          ],
+          "visibleBounds": [
+            1038,
+            688,
+            382,
+            304
+          ],
+          "label": "地衣枯木"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-buildings-layers",
+      "name": "蘑菇屋、采集棚与孢子研究站",
+      "category": "建筑",
+      "biome": "蘑菇林",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "蘑菇屋",
+        "采集棚",
+        "孢子研究站"
+      ],
+      "cellLabels": [
+        "蘑菇屋屋顶",
+        "蘑菇屋下层",
+        "蘑菇屋开门",
+        "采集棚屋顶",
+        "采集棚下层",
+        "采集棚开门",
+        "研究站屋顶",
+        "研究站下层",
+        "研究站开门"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "note": "target only; part matching/pivots require export check",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-3f098ab2-fddb-432c-a9f2-aad92c6f690c.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "开门组件带周围墙框；需清理后再与下层墙体叠加。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 671825,
+        "faintFringePixelsAlpha1To8": 70172,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            571,
+            341
+          ],
+          "visibleBounds": [
+            46,
+            28,
+            505,
+            313
+          ],
+          "label": "蘑菇屋屋顶"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            571,
+            0,
+            561,
+            341
+          ],
+          "visibleBounds": [
+            592,
+            85,
+            511,
+            256
+          ],
+          "label": "蘑菇屋下层"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1132,
+            0,
+            404,
+            341
+          ],
+          "visibleBounds": [
+            1161,
+            81,
+            323,
+            260
+          ],
+          "label": "蘑菇屋开门"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            560,
+            342
+          ],
+          "visibleBounds": [
+            34,
+            341,
+            510,
+            342
+          ],
+          "label": "采集棚屋顶"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            560,
+            341,
+            570,
+            342
+          ],
+          "visibleBounds": [
+            576,
+            341,
+            523,
+            310
+          ],
+          "label": "采集棚下层"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1130,
+            341,
+            406,
+            342
+          ],
+          "visibleBounds": [
+            1161,
+            341,
+            338,
+            322
+          ],
+          "label": "采集棚开门"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            683,
+            567,
+            341
+          ],
+          "visibleBounds": [
+            32,
+            683,
+            510,
+            290
+          ],
+          "label": "研究站屋顶"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            567,
+            683,
+            587,
+            341
+          ],
+          "visibleBounds": [
+            592,
+            695,
+            534,
+            265
+          ],
+          "label": "研究站下层"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1154,
+            683,
+            382,
+            341
+          ],
+          "visibleBounds": [
+            1183,
+            693,
+            297,
+            284
+          ],
+          "label": "研究站开门"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-snail-directional-poses",
+      "name": "蘑菇林蜗牛四方向移动源图",
+      "category": "动物",
+      "biome": "蘑菇林",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "滑行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.625,
+          0.35
+        ],
+        "height": 0.5,
+        "note": "target only; shell identity/pivots need runtime export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-f409166d-3964-4a41-a386-e70c1a43bcc8.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1172885,
+        "faintFringePixelsAlpha1To8": 76627,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            338,
+            337
+          ],
+          "visibleBounds": [
+            104,
+            105,
+            141,
+            177
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            338,
+            0,
+            318,
+            337
+          ],
+          "visibleBounds": [
+            431,
+            106,
+            147,
+            175
+          ],
+          "label": "前探"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            656,
+            0,
+            325,
+            337
+          ],
+          "visibleBounds": [
+            735,
+            105,
+            163,
+            172
+          ],
+          "label": "滑行"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            981,
+            0,
+            331,
+            337
+          ],
+          "visibleBounds": [
+            1065,
+            110,
+            137,
+            165
+          ],
+          "label": "回收"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            337,
+            336,
+            258
+          ],
+          "visibleBounds": [
+            85,
+            395,
+            191,
+            145
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            337,
+            330,
+            258
+          ],
+          "visibleBounds": [
+            397,
+            395,
+            225,
+            145
+          ],
+          "label": "前探"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            666,
+            337,
+            345,
+            258
+          ],
+          "visibleBounds": [
+            710,
+            392,
+            254,
+            144
+          ],
+          "label": "滑行"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1011,
+            337,
+            301,
+            258
+          ],
+          "visibleBounds": [
+            1059,
+            407,
+            192,
+            133
+          ],
+          "label": "回收"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            595,
+            338,
+            321
+          ],
+          "visibleBounds": [
+            99,
+            650,
+            141,
+            199
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            338,
+            595,
+            321,
+            321
+          ],
+          "visibleBounds": [
+            436,
+            652,
+            135,
+            216
+          ],
+          "label": "前探"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            659,
+            595,
+            322,
+            321
+          ],
+          "visibleBounds": [
+            748,
+            655,
+            138,
+            214
+          ],
+          "label": "滑行"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            981,
+            595,
+            331,
+            321
+          ],
+          "visibleBounds": [
+            1076,
+            655,
+            135,
+            190
+          ],
+          "label": "回收"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            916,
+            319,
+            283
+          ],
+          "visibleBounds": [
+            67,
+            964,
+            186,
+            136
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            319,
+            916,
+            334,
+            283
+          ],
+          "visibleBounds": [
+            386,
+            966,
+            220,
+            134
+          ],
+          "label": "前探"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            653,
+            916,
+            345,
+            283
+          ],
+          "visibleBounds": [
+            700,
+            964,
+            240,
+            136
+          ],
+          "label": "滑行"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            998,
+            916,
+            314,
+            283
+          ],
+          "visibleBounds": [
+            1056,
+            974,
+            185,
+            130
+          ],
+          "label": "回收"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-moth-directional-poses",
+      "name": "蘑菇林飞蛾四方向飞行源图",
+      "category": "动物",
+      "biome": "蘑菇林",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.3,
+          0.3
+        ],
+        "height": 0.4,
+        "note": "target only; wingspan0.7tile; wing alignment pending runtime export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-bd85a400-cf39-4396-8e5e-3315654af39f.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 944932,
+        "faintFringePixelsAlpha1To8": 140431,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            366,
+            329
+          ],
+          "visibleBounds": [
+            41,
+            137,
+            296,
+            173
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            366,
+            0,
+            319,
+            329
+          ],
+          "visibleBounds": [
+            396,
+            103,
+            240,
+            207
+          ],
+          "label": "上扬"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            685,
+            0,
+            256,
+            329
+          ],
+          "visibleBounds": [
+            735,
+            67,
+            162,
+            243
+          ],
+          "label": "合翅"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            941,
+            0,
+            371,
+            329
+          ],
+          "visibleBounds": [
+            985,
+            143,
+            280,
+            167
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            329,
+            356,
+            272
+          ],
+          "visibleBounds": [
+            39,
+            414,
+            264,
+            166
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            356,
+            329,
+            335,
+            272
+          ],
+          "visibleBounds": [
+            410,
+            355,
+            230,
+            225
+          ],
+          "label": "上扬"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            691,
+            329,
+            274,
+            272
+          ],
+          "visibleBounds": [
+            743,
+            349,
+            177,
+            231
+          ],
+          "label": "合翅"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            965,
+            329,
+            347,
+            272
+          ],
+          "visibleBounds": [
+            1010,
+            408,
+            269,
+            171
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            601,
+            376,
+            268
+          ],
+          "visibleBounds": [
+            37,
+            673,
+            306,
+            178
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            376,
+            601,
+            314,
+            268
+          ],
+          "visibleBounds": [
+            409,
+            639,
+            225,
+            215
+          ],
+          "label": "上扬"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            690,
+            601,
+            248,
+            268
+          ],
+          "visibleBounds": [
+            747,
+            623,
+            144,
+            231
+          ],
+          "label": "合翅"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            938,
+            601,
+            374,
+            268
+          ],
+          "visibleBounds": [
+            985,
+            680,
+            286,
+            174
+          ],
+          "label": "下拍"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            869,
+            363,
+            330
+          ],
+          "visibleBounds": [
+            57,
+            939,
+            263,
+            170
+          ],
+          "label": "展翅"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            363,
+            869,
+            308,
+            330
+          ],
+          "visibleBounds": [
+            406,
+            894,
+            223,
+            215
+          ],
+          "label": "上扬"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            671,
+            869,
+            271,
+            330
+          ],
+          "visibleBounds": [
+            714,
+            884,
+            170,
+            225
+          ],
+          "label": "合翅"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            942,
+            869,
+            370,
+            330
+          ],
+          "visibleBounds": [
+            1001,
+            936,
+            261,
+            173
+          ],
+          "label": "下拍"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-monsters-poses",
+      "name": "蘑菇林孢子怪与菌甲兽战斗姿态",
+      "category": "怪物",
+      "biome": "蘑菇林",
+      "layout": "mixed-monster-poses",
+      "previewKind": "mixed-monster-poses",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "孢子怪四向待机",
+        "孢子怪右向战斗",
+        "菌甲兽四向待机",
+        "菌甲兽右向战斗"
+      ],
+      "cellLabels": [
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地",
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地"
+      ],
+      "species": [
+        {
+          "name": "孢子怪",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "菌甲兽",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.7,
+          0.6
+        ],
+        "height": 1,
+        "note": "target only; armored beast1x0.7tile; movement/attacks not complete",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+      "promptFile": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-a8082a5d-3324-4699-8316-b47a056d140e.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "v2经内置生图编辑修正底行第3格受击姿态为右向；其余格身份/姿态/布局目视一致，但外轮廓有约1–3源像素重绘，非逐像素保留编辑。v1仍保留。"
+      ],
+      "previousVersion": {
+        "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v1.png",
+        "promptFile": "art/biomes/batch-08/mushroom-monsters-poses-source-v1.prompt.txt",
+        "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-9159356a-6d44-4e95-b03c-9db7b4e4130e.png"
+      },
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 945869,
+        "faintFringePixelsAlpha1To8": 60987,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            345,
+            321
+          ],
+          "visibleBounds": [
+            71,
+            85,
+            225,
+            210
+          ],
+          "label": "下"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            345,
+            0,
+            303,
+            321
+          ],
+          "visibleBounds": [
+            395,
+            76,
+            209,
+            219
+          ],
+          "label": "右"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            648,
+            0,
+            323,
+            321
+          ],
+          "visibleBounds": [
+            693,
+            76,
+            218,
+            219
+          ],
+          "label": "上"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            971,
+            0,
+            341,
+            321
+          ],
+          "visibleBounds": [
+            1031,
+            76,
+            210,
+            219
+          ],
+          "label": "左"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            321,
+            353,
+            277
+          ],
+          "visibleBounds": [
+            99,
+            409,
+            213,
+            164
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            353,
+            321,
+            313,
+            277
+          ],
+          "visibleBounds": [
+            394,
+            348,
+            243,
+            225
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            666,
+            321,
+            290,
+            277
+          ],
+          "visibleBounds": [
+            695,
+            364,
+            204,
+            209
+          ],
+          "label": "受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            956,
+            321,
+            356,
+            277
+          ],
+          "visibleBounds": [
+            1013,
+            431,
+            233,
+            143
+          ],
+          "label": "倒地"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            598,
+            313,
+            280
+          ],
+          "visibleBounds": [
+            63,
+            623,
+            207,
+            226
+          ],
+          "label": "下"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            313,
+            598,
+            366,
+            280
+          ],
+          "visibleBounds": [
+            356,
+            623,
+            290,
+            226
+          ],
+          "label": "右"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            679,
+            598,
+            270,
+            280
+          ],
+          "visibleBounds": [
+            713,
+            623,
+            198,
+            225
+          ],
+          "label": "上"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            949,
+            598,
+            363,
+            280
+          ],
+          "visibleBounds": [
+            987,
+            626,
+            284,
+            224
+          ],
+          "label": "左"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            878,
+            340,
+            321
+          ],
+          "visibleBounds": [
+            48,
+            924,
+            282,
+            198
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            340,
+            878,
+            344,
+            321
+          ],
+          "visibleBounds": [
+            351,
+            908,
+            328,
+            214
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            684,
+            878,
+            278,
+            321
+          ],
+          "visibleBounds": [
+            689,
+            907,
+            236,
+            215
+          ],
+          "label": "受击"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            962,
+            878,
+            350,
+            321
+          ],
+          "visibleBounds": [
+            999,
+            947,
+            271,
+            180
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mushroom-props-local-effects",
+      "name": "蘑菇林采集道具、孢子喷发与荧光点",
+      "category": "道具与特效",
+      "biome": "蘑菇林",
+      "layout": "props-vfx",
+      "previewKind": "props-vfx",
+      "columns": 4,
+      "rows": 3,
+      "plannedComponents": 12,
+      "rowLabels": [
+        "采集生产道具",
+        "孢子喷发四阶段",
+        "上升荧光点四阶段"
+      ],
+      "cellLabels": [
+        "蘑菇篮",
+        "采集工作台",
+        "孢子样品罐",
+        "菌类木箱",
+        "孢子起始",
+        "孢子扩散",
+        "孢子分散",
+        "孢子残留",
+        "荧点低处",
+        "荧点上升",
+        "荧点稀疏",
+        "荧点消失前"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.8,
+          0.8
+        ],
+        "height": 1,
+        "note": "target only; bench1.25tile wide, puff1tile; environment timeline/pivots pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-3895e8ab-4113-4636-bc18-c7338fe35ed5.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "特效源图包含低alpha边缘；发光应由引擎重建，需导出时检查是否清理低alpha光晕。"
+      ],
+      "sourceBatch": "08",
+      "biomeLabels": [
+        "蘑菇林"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "1bb466edbc324ed9f8d274c40302448eb4fd7d3ec24e3fe849a449a39aa6c6e5",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1192253,
+        "faintFringePixelsAlpha1To8": 67855,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            376,
+            437
+          ],
+          "visibleBounds": [
+            100,
+            178,
+            239,
+            220
+          ],
+          "label": "蘑菇篮"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            376,
+            0,
+            431,
+            437
+          ],
+          "visibleBounds": [
+            414,
+            146,
+            345,
+            254
+          ],
+          "label": "采集工作台"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            807,
+            0,
+            310,
+            437
+          ],
+          "visibleBounds": [
+            856,
+            162,
+            205,
+            236
+          ],
+          "label": "孢子样品罐"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1117,
+            0,
+            419,
+            437
+          ],
+          "visibleBounds": [
+            1174,
+            156,
+            273,
+            255
+          ],
+          "label": "菌类木箱"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            437,
+            382,
+            284
+          ],
+          "visibleBounds": [
+            142,
+            526,
+            182,
+            146
+          ],
+          "label": "孢子起始"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            382,
+            437,
+            390,
+            284
+          ],
+          "visibleBounds": [
+            441,
+            465,
+            295,
+            237
+          ],
+          "label": "孢子扩散"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            772,
+            437,
+            386,
+            284
+          ],
+          "visibleBounds": [
+            809,
+            464,
+            288,
+            238
+          ],
+          "label": "孢子分散"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1158,
+            437,
+            378,
+            284
+          ],
+          "visibleBounds": [
+            1220,
+            512,
+            189,
+            174
+          ],
+          "label": "孢子残留"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            721,
+            399,
+            303
+          ],
+          "visibleBounds": [
+            142,
+            827,
+            164,
+            107
+          ],
+          "label": "荧点低处"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            399,
+            721,
+            369,
+            303
+          ],
+          "visibleBounds": [
+            493,
+            758,
+            196,
+            196
+          ],
+          "label": "荧点上升"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            768,
+            721,
+            374,
+            303
+          ],
+          "visibleBounds": [
+            847,
+            740,
+            197,
+            222
+          ],
+          "label": "荧点稀疏"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1142,
+            721,
+            394,
+            303
+          ],
+          "visibleBounds": [
+            1240,
+            763,
+            135,
+            171
+          ],
+          "label": "荧点消失前"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    }
+  ]
+}

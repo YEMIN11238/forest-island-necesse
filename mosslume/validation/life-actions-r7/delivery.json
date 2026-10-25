@@ -1,0 +1,22 @@
+{
+  "version": "0.5.1-life-actions-preview",
+  "app": "/Users/zhangjunhao/Applications/Mosslume.app",
+  "profile": "/Users/zhangjunhao/Library/Application Support/Mosslume-Life-Preview",
+  "modSha256": "af1f8e50c4b390099adced27be156fbdc3ce64c5c72e949510a305c697c87037",
+  "packagedJarMatchesBuild": true,
+  "kernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "unitChecks": 39,
+  "nativeInitial": "native-checks.json",
+  "nativeReload": "native-checks-reload.json",
+  "combatConversation": "combat-conversation.json",
+  "visual": "visual-manifest.json",
+  "performance": "performance.json",
+  "paidModelCalls": 0,
+  "physicalKeyboardMouseTested": false,
+  "scope": "Current iteration integration only, not full PRD or all-species/all-biome/long-session completion.",
+  "windMotion": "wind-motion.json",
+  "nativePreview": "native-preview.mp4",
+  "normalAppPid": 50346,
+  "appRenamedFrom": "/Users/zhangjunhao/Applications/Mosslume Life Preview.app",
+  "entryCleanupRecord": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/build/app-cleanup/20261025-022411/cleanup.json"
+}

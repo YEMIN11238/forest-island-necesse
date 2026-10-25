@@ -1,0 +1,2307 @@
+{
+  "biome": "mushroom",
+  "tilePixels": 32,
+  "sourceBatches": [
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourcePixelsModified": false,
+  "directionOrder": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "LEFT"
+  ],
+  "runtimeExportVersion": 1,
+  "entries": [
+    {
+      "id": "ground",
+      "file": "mushroom/ground.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "ca4b051eb5aa855adeadd8fe3a4f1f513b4be17dd0ec10807ebdabb7ac0e1a70",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "opaque_ground",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            119,
+            68,
+            479,
+            378
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "interiorCropLTRB": [
+        90,
+        78,
+        270,
+        232
+      ],
+      "tiling": "mirror-repeat of interior sample; matching border texels"
+    },
+    {
+      "id": "terrain-0",
+      "file": "mushroom/terrain-0.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "f82d45b100df35822fd22fde132929e731fbb246e88955d1d2648ee3e5f3cea5",
+      "alphaBounds": [
+        6,
+        2,
+        57,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            119,
+            68,
+            479,
+            378
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-1",
+      "file": "mushroom/terrain-1.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "11b5c04c91e5ffce6fe1c36d10d6af8ddd35150b0688f7764d7d3f98b0fa5929",
+      "alphaBounds": [
+        8,
+        2,
+        57,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            611,
+            68,
+            943,
+            369
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-2",
+      "file": "mushroom/terrain-2.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "55503eb973591c011ed6a087179d2a101280647478e003390ac848306d8b81ad",
+      "alphaBounds": [
+        4,
+        2,
+        59,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1064,
+            64,
+            1456,
+            378
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-3",
+      "file": "mushroom/terrain-3.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "7cfa4f86b5d44a05d3520dad38126d9d5adb540a07e75b08f074b9134f7d3206",
+      "alphaBounds": [
+        2,
+        13,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            89,
+            412,
+            507,
+            644
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-4",
+      "file": "mushroom/terrain-4.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "31ebb7924e91215872c2e4a511dbf1ca44268fecffb7bcb76e86aa9c41d9ad27",
+      "alphaBounds": [
+        2,
+        9,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            574,
+            422,
+            965,
+            662
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-5",
+      "file": "mushroom/terrain-5.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "26a374dba2a8e62d83172e31240abd8c1601641379306f9c6b1ab108c1acc2c9",
+      "alphaBounds": [
+        2,
+        15,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1036,
+            429,
+            1467,
+            655
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-6",
+      "file": "mushroom/terrain-6.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "2ec6dd3462632df128a86a486e2d230b9b5309d696a2ae91134e84a2ebdf15b8",
+      "alphaBounds": [
+        2,
+        10,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            93,
+            695,
+            532,
+            957
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-7",
+      "file": "mushroom/terrain-7.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "b9f5b22615bb5f17317195b24af7b13dfc298e9c92f64b773ce1b3f8225ae669",
+      "alphaBounds": [
+        8,
+        2,
+        57,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            611,
+            685,
+            941,
+            980
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-8",
+      "file": "mushroom/terrain-8.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "b92a1bbc7501de345224141f6626b72bec76e984348fd0dd6b73862d697b39d3",
+      "alphaBounds": [
+        2,
+        3,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+          "sourceSha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1067,
+            691,
+            1449,
+            966
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "flora-0",
+      "file": "mushroom/flora-0.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "3d3a68bc8687fb727ca2663db07b704ebe31450837f823d988bfb80ce129dc92",
+      "alphaBounds": [
+        3,
+        42,
+        61,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            106,
+            61,
+            582,
+            357
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        60,
+        36
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-1",
+      "file": "mushroom/flora-1.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "48209e8e5de127cb97e6209ce4f38596deb7157a5675b743edc044f5fe800ac5",
+      "alphaBounds": [
+        16,
+        43,
+        48,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            652,
+            35,
+            949,
+            363
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        58
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-2",
+      "file": "mushroom/flora-2.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "3c8bdf1f6acabdd6d942161d8dbb74302ac00111987a8612bc6c7855553ffef6",
+      "alphaBounds": [
+        3,
+        6,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1085,
+            109,
+            1351,
+            357
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        28
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-3",
+      "file": "mushroom/flora-3.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "b330458087912e3c5d88d2c6d6f463936d5a1fd88a00a94b8f50d54af9c260ca",
+      "alphaBounds": [
+        3,
+        6,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            188,
+            410,
+            471,
+            673
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        30
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-4",
+      "file": "mushroom/flora-4.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "7be15a5556769bad26d6e962a302d12e8f1aef72a8eae551d38cf3c81643f08f",
+      "alphaBounds": [
+        0,
+        12,
+        32,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            606,
+            438,
+            990,
+            660
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        22
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-5",
+      "file": "mushroom/flora-5.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "ecf2d785af37065711c90da50ca35a763bdfb06a53e2c4783c97611693b4916e",
+      "alphaBounds": [
+        4,
+        8,
+        28,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1091,
+            411,
+            1370,
+            664
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        24,
+        28
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-6",
+      "file": "mushroom/flora-6.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "95991405bf31658e39ba38965db114d655deefa5c8c8f0643e973007c2679ec1",
+      "alphaBounds": [
+        3,
+        12,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            142,
+            724,
+            512,
+            987
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-7",
+      "file": "mushroom/flora-7.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "72fa6540c384e27a90b853a9ad9bcb311d0541bb0477abee405daa1ec8b1ed8f",
+      "alphaBounds": [
+        8,
+        0,
+        24,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            718,
+            703,
+            865,
+            984
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        20,
+        30
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-8",
+      "file": "mushroom/flora-8.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "9a44f9df0fa7df3d8b680da166980d18251760bc51b34bd6a583bf8212d7d6aa",
+      "alphaBounds": [
+        2,
+        8,
+        30,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1038,
+            689,
+            1419,
+            991
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        30
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "tree",
+      "file": "mushroom/tree.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "6d0e9cacf1023b98a727e01b82d09600aab2fc2d273304330a456273efed381a",
+      "alphaBounds": [
+        3,
+        8,
+        61,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            106,
+            61,
+            582,
+            357
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            652,
+            35,
+            949,
+            363
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-crown",
+      "file": "mushroom/tree-crown.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "e45d752b843b6a617c915567289afd28da6f249cc4ba7e0a8de54c03fa184f50",
+      "alphaBounds": [
+        3,
+        8,
+        61,
+        44
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            106,
+            61,
+            582,
+            357
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            652,
+            35,
+            949,
+            363
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-crown",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-trunk",
+      "file": "mushroom/tree-trunk.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "ce665252650595b80426f915062f7ca003dc2bb7110de59d36db73c11db20802",
+      "alphaBounds": [
+        17,
+        45,
+        47,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            106,
+            61,
+            582,
+            357
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+          "sourceSha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            652,
+            35,
+            949,
+            363
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-trunk",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-0",
+      "file": "mushroom/structure-0.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "480418d91e6e8c0d3ce475007d815decb10dede66f3f2ef327d2750a9586a72d",
+      "alphaBounds": [
+        2,
+        21,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            47,
+            28,
+            550,
+            348
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            593,
+            86,
+            1102,
+            349
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1162,
+            81,
+            1483,
+            366
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          21,
+          124,
+          79
+        ],
+        "shell": [
+          10,
+          84,
+          108,
+          56
+        ],
+        "door": [
+          47,
+          110,
+          34,
+          30
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-1",
+      "file": "mushroom/structure-1.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "f7870004b702959fdb9eac59855c6d43f2bf7db49dbc2a10d3d1367c1c9c8c1b",
+      "alphaBounds": [
+        2,
+        32,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            35,
+            356,
+            543,
+            653
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            576,
+            398,
+            1098,
+            650
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1161,
+            404,
+            1498,
+            663
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          32,
+          124,
+          72
+        ],
+        "shell": [
+          10,
+          88,
+          108,
+          52
+        ],
+        "door": [
+          47,
+          114,
+          34,
+          26
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-2",
+      "file": "mushroom/structure-2.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "942a372dd6e4e76d45fe8e69465100b8376a9f9f420f0165cd8952d78c375d63",
+      "alphaBounds": [
+        2,
+        26,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            33,
+            656,
+            541,
+            972
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            593,
+            696,
+            1126,
+            959
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+          "sourceSha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1183,
+            694,
+            1479,
+            977
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          26,
+          124,
+          77
+        ],
+        "shell": [
+          10,
+          87,
+          108,
+          53
+        ],
+        "door": [
+          47,
+          107,
+          34,
+          33
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/snail",
+      "file": "mushroom/animals/snail.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "042a2514cf8b309df7aa1da5a2903d73b766cd6ae0a04c4363254e269f9d2a0d",
+      "alphaBounds": [
+        23,
+        37,
+        232,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "snail",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 22,
+      "scalePerAllFrames": 0.08695652173913043,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            26,
+            37,
+            12,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            105,
+            106,
+            244,
+            281
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            25,
+            37,
+            13,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            432,
+            106,
+            577,
+            281
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            25,
+            37,
+            14,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            736,
+            106,
+            898,
+            277
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            26,
+            38,
+            12,
+            14
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1066,
+            110,
+            1202,
+            274
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            23,
+            39,
+            17,
+            13
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            85,
+            395,
+            276,
+            540
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            22,
+            39,
+            19,
+            13
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            398,
+            396,
+            622,
+            540
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            21,
+            40,
+            22,
+            12
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            710,
+            393,
+            963,
+            535
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            23,
+            40,
+            17,
+            12
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1060,
+            407,
+            1250,
+            540
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            26,
+            35,
+            12,
+            17
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            100,
+            651,
+            239,
+            848
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            26,
+            33,
+            12,
+            19
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            437,
+            653,
+            571,
+            867
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            26,
+            33,
+            12,
+            19
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            749,
+            655,
+            885,
+            868
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            26,
+            35,
+            12,
+            17
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1077,
+            655,
+            1210,
+            845
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            24,
+            40,
+            16,
+            12
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            68,
+            964,
+            252,
+            1099
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            22,
+            41,
+            19,
+            11
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            386,
+            967,
+            605,
+            1099
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            21,
+            40,
+            21,
+            12
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            701,
+            964,
+            939,
+            1100
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            24,
+            41,
+            16,
+            11
+          ],
+          "source": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+          "sourceSha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1057,
+            974,
+            1241,
+            1104
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/moth",
+      "file": "mushroom/animals/moth.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "de922f91f421d18f1f4f07e04ab40b19d11103dea87f3a6d50326c6a7c5adf7d",
+      "alphaBounds": [
+        19,
+        31,
+        236,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "moth",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 26,
+      "scalePerAllFrames": 0.08552631578947369,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            19,
+            37,
+            25,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            42,
+            138,
+            337,
+            309
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            22,
+            34,
+            20,
+            18
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            397,
+            103,
+            635,
+            309
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            25,
+            31,
+            14,
+            21
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            736,
+            67,
+            897,
+            309
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            20,
+            38,
+            24,
+            14
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            985,
+            144,
+            1265,
+            309
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            20,
+            38,
+            23,
+            14
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            39,
+            414,
+            303,
+            579
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            22,
+            33,
+            20,
+            19
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            411,
+            356,
+            639,
+            579
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            24,
+            32,
+            15,
+            20
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            743,
+            349,
+            920,
+            579
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            20,
+            37,
+            23,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1011,
+            408,
+            1278,
+            578
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            19,
+            37,
+            26,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            38,
+            673,
+            342,
+            850
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            22,
+            34,
+            19,
+            18
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            410,
+            640,
+            634,
+            854
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            26,
+            32,
+            12,
+            20
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            748,
+            624,
+            890,
+            854
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            20,
+            37,
+            24,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            985,
+            681,
+            1271,
+            854
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            21,
+            37,
+            22,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            57,
+            939,
+            320,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            22,
+            34,
+            19,
+            18
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            407,
+            894,
+            628,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            25,
+            33,
+            14,
+            19
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            714,
+            884,
+            883,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            21,
+            37,
+            22,
+            15
+          ],
+          "source": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+          "sourceSha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1001,
+            937,
+            1261,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/spore-creature",
+      "file": "mushroom/monsters/spore-creature.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "fecf1fab07c6d34596bd0de18d9f38168ccfd30857ce86437f8214481eb8ab8c",
+      "alphaBounds": [
+        15,
+        19,
+        241,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "spore-creature",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 36,
+      "scalePerAllFrames": 0.14937759336099585,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            15,
+            21,
+            33,
+            31
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            72,
+            86,
+            296,
+            294
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            16,
+            19,
+            31,
+            33
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            395,
+            77,
+            603,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            15,
+            19,
+            33,
+            33
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            693,
+            77,
+            911,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            16,
+            19,
+            31,
+            33
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1032,
+            76,
+            1240,
+            294
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            16,
+            28,
+            32,
+            24
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            100,
+            409,
+            311,
+            573
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            14,
+            18,
+            36,
+            34
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            395,
+            348,
+            636,
+            573
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            17,
+            21,
+            30,
+            31
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            696,
+            364,
+            899,
+            573
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            14,
+            31,
+            35,
+            21
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1014,
+            432,
+            1246,
+            573
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/fungus-beast",
+      "file": "mushroom/monsters/fungus-beast.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "a76f33fdd3a5751fb711cf9798650a5e863b4e1b5c550d2d9414599833f9e144",
+      "alphaBounds": [
+        13,
+        22,
+        243,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "fungus-beast",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 44,
+      "scalePerAllFrames": 0.1345565749235474,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            18,
+            22,
+            28,
+            30
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            64,
+            624,
+            269,
+            848
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            12,
+            22,
+            39,
+            30
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            356,
+            624,
+            645,
+            848
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            18,
+            22,
+            27,
+            30
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            713,
+            624,
+            911,
+            848
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            13,
+            22,
+            38,
+            30
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            988,
+            626,
+            1270,
+            850
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            13,
+            25,
+            38,
+            27
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            48,
+            925,
+            329,
+            1122
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            10,
+            23,
+            44,
+            29
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            351,
+            908,
+            678,
+            1122
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            16,
+            23,
+            32,
+            29
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            689,
+            907,
+            924,
+            1122
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            14,
+            28,
+            36,
+            24
+          ],
+          "source": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+          "sourceSha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1000,
+            948,
+            1269,
+            1127
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    }
+  ]
+}

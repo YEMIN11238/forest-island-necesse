@@ -1,0 +1,719 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": "prompts.json",
+  "foot": [
+    32,
+    52
+  ],
+  "export": "Mechanical nearest sampling. One constant scale per actor. Source alpha preserved.",
+  "actors": {
+    "ashuo": {
+      "source": "mosslume/art/animation-r7/sources/ashuo-actions-v1.png",
+      "sha256": "574a27ee81c5a74da6f3dc85755018f33758d6d46a678d435997c5b16cbe84f5",
+      "outputs": {
+        "idle-up": {
+          "file": "mod/resources/mosslume/residents/ashuo-idle-up.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              74,
+              29,
+              161,
+              169
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "walk-up": {
+          "file": "mod/resources/mosslume/residents/ashuo-walk-up.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              273,
+              30,
+              354,
+              178
+            ],
+            [
+              458,
+              29,
+              541,
+              178
+            ],
+            [
+              648,
+              30,
+              734,
+              178
+            ],
+            [
+              837,
+              30,
+              922,
+              178
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "attack-up": {
+          "file": "mod/resources/mosslume/residents/ashuo-attack-up.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1041,
+              30,
+              1127,
+              169
+            ],
+            [
+              1238,
+              30,
+              1335,
+              173
+            ],
+            [
+              1424,
+              30,
+              1525,
+              172
+            ],
+            [
+              1615,
+              30,
+              1737,
+              175
+            ],
+            [
+              1824,
+              30,
+              1912,
+              173
+            ],
+            [
+              2018,
+              30,
+              2105,
+              169
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "idle-right": {
+          "file": "mod/resources/mosslume/residents/ashuo-idle-right.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              74,
+              200,
+              161,
+              351
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "walk-right": {
+          "file": "mod/resources/mosslume/residents/ashuo-walk-right.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              269,
+              202,
+              356,
+              351
+            ],
+            [
+              457,
+              202,
+              543,
+              353
+            ],
+            [
+              647,
+              202,
+              733,
+              351
+            ],
+            [
+              838,
+              202,
+              926,
+              354
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "attack-right": {
+          "file": "mod/resources/mosslume/residents/ashuo-attack-right.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1039,
+              200,
+              1126,
+              350
+            ],
+            [
+              1225,
+              201,
+              1322,
+              351
+            ],
+            [
+              1421,
+              201,
+              1529,
+              353
+            ],
+            [
+              1609,
+              202,
+              1743,
+              351
+            ],
+            [
+              1819,
+              202,
+              1909,
+              351
+            ],
+            [
+              2018,
+              200,
+              2104,
+              351
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "idle-down": {
+          "file": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              67,
+              375,
+              166,
+              527
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "walk-down": {
+          "file": "mod/resources/mosslume/residents/ashuo-walk-down.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              269,
+              376,
+              360,
+              531
+            ],
+            [
+              454,
+              376,
+              544,
+              531
+            ],
+            [
+              644,
+              376,
+              734,
+              531
+            ],
+            [
+              832,
+              375,
+              929,
+              531
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "attack-down": {
+          "file": "mod/resources/mosslume/residents/ashuo-attack-down.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1032,
+              375,
+              1132,
+              527
+            ],
+            [
+              1225,
+              376,
+              1337,
+              528
+            ],
+            [
+              1421,
+              376,
+              1529,
+              529
+            ],
+            [
+              1620,
+              377,
+              1739,
+              529
+            ],
+            [
+              1820,
+              376,
+              1912,
+              530
+            ],
+            [
+              2010,
+              375,
+              2108,
+              527
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "idle-left": {
+          "file": "mod/resources/mosslume/residents/ashuo-idle-left.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              71,
+              545,
+              158,
+              697
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "walk-left": {
+          "file": "mod/resources/mosslume/residents/ashuo-walk-left.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              267,
+              544,
+              356,
+              695
+            ],
+            [
+              454,
+              545,
+              543,
+              696
+            ],
+            [
+              644,
+              544,
+              733,
+              695
+            ],
+            [
+              836,
+              545,
+              926,
+              697
+            ]
+          ],
+          "scale": 0.21512605042016808
+        },
+        "attack-left": {
+          "file": "mod/resources/mosslume/residents/ashuo-attack-left.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1037,
+              544,
+              1127,
+              695
+            ],
+            [
+              1223,
+              545,
+              1331,
+              695
+            ],
+            [
+              1421,
+              546,
+              1528,
+              695
+            ],
+            [
+              1604,
+              546,
+              1728,
+              695
+            ],
+            [
+              1819,
+              546,
+              1911,
+              695
+            ],
+            [
+              2013,
+              545,
+              2101,
+              697
+            ]
+          ],
+          "scale": 0.21512605042016808
+        }
+      }
+    },
+    "luan": {
+      "source": "mosslume/art/animation-r7/sources/luan-actions-v1.png",
+      "sha256": "cb68263a1f0165cb4bce5cd6eabe6e5accd96fb49ae5c64b45f33d1ee9ada829",
+      "outputs": {
+        "idle-up": {
+          "file": "mod/resources/mosslume/residents/luan-idle-up.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              60,
+              27,
+              156,
+              175
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "walk-up": {
+          "file": "mod/resources/mosslume/residents/luan-walk-up.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              259,
+              25,
+              351,
+              179
+            ],
+            [
+              451,
+              25,
+              539,
+              179
+            ],
+            [
+              631,
+              25,
+              722,
+              179
+            ],
+            [
+              827,
+              25,
+              916,
+              179
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "attack-up": {
+          "file": "mod/resources/mosslume/residents/luan-attack-up.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1037,
+              25,
+              1133,
+              176
+            ],
+            [
+              1239,
+              22,
+              1337,
+              176
+            ],
+            [
+              1436,
+              23,
+              1549,
+              176
+            ],
+            [
+              1609,
+              27,
+              1733,
+              175
+            ],
+            [
+              1819,
+              27,
+              1920,
+              178
+            ],
+            [
+              2021,
+              25,
+              2117,
+              176
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "idle-right": {
+          "file": "mod/resources/mosslume/residents/luan-idle-right.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              57,
+              201,
+              158,
+              355
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "walk-right": {
+          "file": "mod/resources/mosslume/residents/luan-walk-right.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              244,
+              200,
+              349,
+              353
+            ],
+            [
+              435,
+              201,
+              538,
+              354
+            ],
+            [
+              630,
+              201,
+              734,
+              355
+            ],
+            [
+              825,
+              200,
+              930,
+              355
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "attack-right": {
+          "file": "mod/resources/mosslume/residents/luan-attack-right.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1031,
+              200,
+              1138,
+              355
+            ],
+            [
+              1235,
+              200,
+              1339,
+              355
+            ],
+            [
+              1432,
+              200,
+              1552,
+              354
+            ],
+            [
+              1609,
+              204,
+              1738,
+              354
+            ],
+            [
+              1811,
+              204,
+              1924,
+              356
+            ],
+            [
+              2014,
+              201,
+              2116,
+              355
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "idle-down": {
+          "file": "mod/resources/mosslume/residents/luan-idle-down.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              58,
+              376,
+              158,
+              527
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "walk-down": {
+          "file": "mod/resources/mosslume/residents/luan-walk-down.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              252,
+              376,
+              349,
+              528
+            ],
+            [
+              445,
+              376,
+              541,
+              529
+            ],
+            [
+              641,
+              375,
+              737,
+              529
+            ],
+            [
+              829,
+              376,
+              923,
+              529
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "attack-down": {
+          "file": "mod/resources/mosslume/residents/luan-attack-down.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1034,
+              376,
+              1136,
+              529
+            ],
+            [
+              1239,
+              376,
+              1347,
+              528
+            ],
+            [
+              1433,
+              378,
+              1545,
+              528
+            ],
+            [
+              1623,
+              377,
+              1720,
+              529
+            ],
+            [
+              1814,
+              377,
+              1918,
+              528
+            ],
+            [
+              2016,
+              376,
+              2119,
+              528
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "idle-left": {
+          "file": "mod/resources/mosslume/residents/luan-idle-left.png",
+          "frames": 1,
+          "sourceBoxes": [
+            [
+              58,
+              548,
+              162,
+              701
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "walk-left": {
+          "file": "mod/resources/mosslume/residents/luan-walk-left.png",
+          "frames": 4,
+          "sourceBoxes": [
+            [
+              252,
+              548,
+              357,
+              697
+            ],
+            [
+              444,
+              550,
+              548,
+              699
+            ],
+            [
+              631,
+              548,
+              734,
+              701
+            ],
+            [
+              825,
+              550,
+              930,
+              701
+            ]
+          ],
+          "scale": 0.21122112211221122
+        },
+        "attack-left": {
+          "file": "mod/resources/mosslume/residents/luan-attack-left.png",
+          "frames": 6,
+          "sourceBoxes": [
+            [
+              1037,
+              550,
+              1138,
+              701
+            ],
+            [
+              1238,
+              548,
+              1349,
+              697
+            ],
+            [
+              1424,
+              549,
+              1542,
+              699
+            ],
+            [
+              1620,
+              550,
+              1743,
+              700
+            ],
+            [
+              1832,
+              550,
+              1943,
+              699
+            ],
+            [
+              2021,
+              549,
+              2122,
+              701
+            ]
+          ],
+          "scale": 0.21122112211221122
+        }
+      }
+    }
+  }
+}

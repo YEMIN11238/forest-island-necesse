@@ -5,7 +5,19 @@ import java.util.concurrent.CompletableFuture;
 
 /** Replaceable provider boundary; a provider proposes actions, never receives mutable game objects. */
 public interface ModelProvider {
-    record Request(String sessionId, String companionId, long revision, String text, String observedContext) {}
+    enum RequestKind { PLAYER, AMBIENT }
+    record ConversationTurn(String playerText,String replyText) {}
+    record Request(String sessionId, String companionId, long revision, String text, String observedContext,
+        boolean commandsAllowed,List<ConversationTurn> recentConversation,RequestKind kind) {
+        public Request { recentConversation=List.copyOf(recentConversation);kind=kind==null?RequestKind.PLAYER:kind; }
+        public Request(String sessionId,String companionId,long revision,String text,String context,boolean allowed,List<ConversationTurn> turns){
+            this(sessionId,companionId,revision,text,context,allowed,turns,RequestKind.PLAYER);
+        }
+        /** Existing task-only callers retain their recruited-companion behavior. */
+        public Request(String sessionId,String companionId,long revision,String text,String observedContext) {
+            this(sessionId,companionId,revision,text,observedContext,true,List.of());
+        }
+    }
     record Action(String name, int tileX, int tileY, int amount) {}
     record Proposal(String reply, List<Action> actions) {
         public Proposal { actions=List.copyOf(actions); }

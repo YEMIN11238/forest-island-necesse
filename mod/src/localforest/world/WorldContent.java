@@ -26,7 +26,7 @@ public final class WorldContent {
         this.version=integer("version");
         if(integer("schema")!=1||this.version!=version)throw new IllegalStateException("Unsupported world content schema/version");
         width=integer("width");height=integer("height");
-        if(width<96||height<96||width>512||height>512)throw new IllegalStateException("World dimensions outside supported budget");
+        if(version>=4?(width!=0||height!=0):(width<96||height<96||width>512||height>512))throw new IllegalStateException("World dimensions outside supported budget");
         presets=List.of(csv("presets"));biomes=List.of(csv("biomes"));
         if(presets.isEmpty()||biomes.isEmpty())throw new IllegalStateException("Empty world definitions");
         for(String id:presets){text(id+".name");decimal(id+".landRadius");decimal(id+".treeDensity");}

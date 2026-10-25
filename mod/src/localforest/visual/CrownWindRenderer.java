@@ -17,14 +17,29 @@ import org.lwjgl.opengl.GL20;
  */
 public final class CrownWindRenderer {
     private static final int SEGMENTS = 8;
-    private static final long CLOCK_ORIGIN = System.nanoTime();
     private static final Double FIXED_SECONDS = configuredTime();
     private static final boolean PIXEL_COVERAGE = !"false".equalsIgnoreCase(System.getProperty("mosslume.wind.coverage", "true"));
     private static volatile double probeSeconds = Double.NaN;
+    private static double frameSeconds=Double.NaN;
+    private static int frameDepth;
     private static GameShader shader;
     private static boolean unavailable;
     public static long meshDraws;
     public static long fallbackDraws;
+    public static boolean usesVbo() { return !Boolean.getBoolean("mosslume.wind.immediate"); }
+    public static long vboDraws() { return WindMeshBuffer.draws; }
+    public static void beginFrame() { beginFrame(null); }
+    public static void beginFrame(Level level) {
+        if(frameDepth==0){VisualClock.frame(level);frameSeconds=timeSeconds();}
+        frameDepth++;CrownSpriteBatch.begin();if(usesVbo())WindMeshBuffer.begin();
+    }
+    public static void endFrame() {
+        try{CrownSpriteBatch.end();}
+        finally{
+            if(usesVbo())WindMeshBuffer.end();
+            if(--frameDepth==0)frameSeconds=Double.NaN;
+        }
+    }
 
     // The engine GameShader queries locations on each pass call. Plants are
     // numerous, so cache our small fixed uniform set after the initial link.
@@ -63,13 +78,14 @@ public final class CrownWindRenderer {
     public static void setProbeTimeSeconds(double seconds) { probeSeconds = seconds; }
     public static void clearProbeTime() { probeSeconds = Double.NaN; }
     public static double timeSeconds() {
+        if(Double.isFinite(frameSeconds))return frameSeconds;
         if (Double.isFinite(probeSeconds)) return probeSeconds;
         String dynamic = System.getProperty("mosslume.probe.animationSeconds");
         if (dynamic != null) {
             try { double time = Double.parseDouble(dynamic); if (Double.isFinite(time)) return time; }
             catch (NumberFormatException ignored) { }
         }
-        return FIXED_SECONDS != null ? FIXED_SECONDS : (System.nanoTime() - CLOCK_ORIGIN) / 1_000_000_000.0;
+        return FIXED_SECONDS != null ? FIXED_SECONDS : VisualClock.seconds();
     }
 
     public static boolean isLegacy() { return Boolean.getBoolean("mosslume.wind.legacy"); }
@@ -103,38 +119,49 @@ public final class CrownWindRenderer {
     }
     public static boolean draw(GameTexture texture, int footX, int footY, float scale,
             GameLight light, float alpha, int tileX, int tileY, boolean crown,Level level,boolean wind,float elevation) {
+        if(CrownSpriteBatch.add(texture,footX,footY,scale,light,alpha,tileX,tileY,crown,level,wind,elevation)){
+            meshDraws++;return true;
+        }
+        CrownSpriteBatch.flush();
         GameShader current = shader();
         if (current == null) { fallbackDraws++; return false; }
         float width = Math.round(texture.getWidth() * scale);
         float height = Math.round(texture.getHeight() * scale);
-        float left = footX - width * .5f;
-        float top = footY - height;
+        VisualMaterialDefinition material=VisualMaterials.get(texture);
+        float left=material==null?footX-width*.5f:material.left(footX,scale);
+        float top=material==null?footY-height:material.top(footY,scale);
         // A shared breeze with a small world-space phase difference. Camera
         // motion never enters the wind field, so it cannot change the bend.
-        float phase = (float)Math.sin(tileX * .12 + tileY * .08) * .06f;
-        current.use();
+        float phase = WindField.phase(tileX,tileY);
+        TextureStateScope.begin();
         try {
+            current.use();
             current.pass1f("windTime", (float)timeSeconds());
-            current.pass1f("speed", crown ? 2.05f : 1.9f);
-            current.pass1f("minStrength", .38f);
-            current.pass1f("maxStrength", .70f);
-            current.pass1f("strengthScale", wind?width * (crown ? .052f : .034f):0);
-            current.pass1f("interval", 3.5f);
-            current.pass1f("detail", 1.0f);
-            current.pass1f("heightOffset", crown ? .04f : .08f);
-            current.pass1f("heightPower", crown ? 1.35f : 1.8f);
+            current.pass1f("speed",material==null?(crown?WindField.CROWN_SPEED:WindField.PLANT_SPEED):material.windSpeed);
+            current.pass1f("strengthScale",wind?width*(material==null?(crown?WindField.CROWN_AMPLITUDE:WindField.PLANT_AMPLITUDE):material.windAmplitude):0);
+            current.pass1f("heightOffset",material==null?(crown?.10f:.07f):material.windPivot);
+            current.pass1f("heightPower",crown?1.5f:1.9f);
             current.pass1f("windPhase", phase);
+            current.pass2f("worldFoot",tileX*32+16,tileY*32+29);
             current.pass1i("pixelCoverage", wind&&PIXEL_COVERAGE ? 1 : 0);
             current.pass2f("texture_pixel_size", 1f / texture.getWidth(), 1f / texture.getHeight());
             current.pass1f("smoothing_factor", 1f);
+            current.pass1i("normalizedMesh", usesVbo() ? 1 : 0);
+            current.pass4f("meshRect", left, top, width, height);
             DaylightMaterials.bindCrown(current,level,crown);
-            if(level!=null&&SceneLighting.enabled())SceneLighting.bind(current,level,tileX*32+16,tileY*32+29,width,height,elevation,crown);
+            if(level!=null&&SceneLighting.enabled())SceneLighting.bind(current,level,tileX*32+16,tileY*32+29,width,height,material==null?elevation:material.effectiveShadowHeight(scale),crown);
             else current.pass1i("surfaceLighting",0);
+            GameTexture normals=VisualMaterials.normal(texture);
+            current.pass1i("normalTexture",1);current.pass1i("hasNormalTexture",normals==null?0:1);
+            if(normals!=null)normals.bindTexture(GL13.GL_TEXTURE1);
+            SurfaceOcclusion.bind(current,level);
             texture.bindTexture(GL13.GL_TEXTURE0);
             GL11.glLoadIdentity();
             float intensity = light.getFloatLevel();
             GL11.glColor4f(light.getFloatRed() * intensity, light.getFloatGreen() * intensity,
                     light.getFloatBlue() * intensity, alpha);
+            if (usesVbo()) WindMeshBuffer.draw();
+            else {
             GL11.glBegin(GL11.GL_QUAD_STRIP);
             for (int segment = 0; segment <= SEGMENTS; segment++) {
                 float v = segment / (float)SEGMENTS;
@@ -143,10 +170,11 @@ public final class CrownWindRenderer {
                 GL11.glTexCoord2f(1, v); GL11.glVertex3f(left + width, y, 0);
             }
             GL11.glEnd();
+            }
             meshDraws++;
             return true;
         } finally {
-            current.stop();
+            try{current.stop();}finally{TextureStateScope.end();}
         }
     }
 

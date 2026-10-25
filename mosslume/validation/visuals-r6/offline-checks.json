@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-24",
+  "scope": "Visual Java/GLSL integration only; no game launch, save modification or full-game build",
+  "java": {
+    "release": 17,
+    "isolatedOutput": "/tmp/mosslume-visual-compile",
+    "compile": "passed",
+    "tests": [
+      {"name": "localforest.visual.VisualMaterialWindTest", "result": "passed", "checks": "visible alpha bounds, source/world feet, Sobel flat/outward normals and alpha, wind root/rigidity/phase/continuity, per-frame light cache storage reuse"},
+      {"name": "localforest.visual.TileColorCacheTest", "result": "passed", "checks": "dense/fallback coordinates, signed/distant positions, snapshot isolation"}
+    ]
+  },
+  "glsl": {
+    "context": "macOS offscreen CGL, independent of the game process",
+    "actualGLVersion": "2.1 Metal - 91.7",
+    "version": "120",
+    "compileAndLink": {
+      "mosslumeWind": "passed",
+      "mosslumeBatchWind": "passed",
+      "mosslumeOcean": "passed",
+      "mosslumeShadowCompose": "passed, with equivalent compatibility vertex passthrough"
+    }
+  },
+  "implementedSurfaceScope": "CPU-once SDV Sobel normals, parallel normal atlas, loaded-tile height/class map and bounded per-lamp cross-sprite occlusion, existing land/water silhouette projection and narrow receiver penumbra",
+  "notClaimed": [
+    "full upstream MRT relief replay and exact per-pixel sprite-rank buffer",
+    "authored per-pixel wall/roof heights, reflections or volumetric lighting",
+    "reference-video visual equivalence",
+    "in-game frame-time or whole-world reliability acceptance"
+  ],
+  "nextNativeAcceptance": [
+    "same-camera day/dusk/night/dawn seaside camp",
+    "tree/prop/house feet and source-pixel proportions",
+    "at least six species/instances in one shared gust with synchronized moving shadows",
+    "moving lamp and shore-to-water receiver",
+    "10-20 second water, fire, floating mote and pause/resume recording",
+    "dense vegetation plus lamps plus NPC frame-time measurement"
+  ]
+}

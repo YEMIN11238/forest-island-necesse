@@ -1,0 +1,4079 @@
+{
+  "source": "User-supplied original GIF and WebP files; no generated Boss pixels used.",
+  "directions": "Original side-view art. RIGHT is native/mirrored right-facing art; LEFT mirrored. UP and DOWN intentionally reuse the side view; no invented top-down directions.",
+  "death": "No authored death or corpse found. Native death uses original idle with fade.",
+  "sources": {
+    "stone-pillar": {
+      "source": "mosslume/art/bosses-r8/references/f57c0b3885181.560c0dcbe4424.gif",
+      "sourceSha256": "29e70d65796ed5d81d93fc3acaa6ecee7c733b7e19e619a6350e8242b05e7e73",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            244,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            80,
+            62,
+            336,
+            366
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            68,
+            64,
+            336,
+            368
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            44,
+            48,
+            336,
+            370
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            28,
+            48,
+            336,
+            368
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            28,
+            50,
+            336,
+            368
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            28,
+            50,
+            336,
+            368
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            57,
+            57,
+            57
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            28,
+            50,
+            336,
+            368
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-pillar/07.png"
+        }
+      ]
+    },
+    "stone-blue": {
+      "source": "mosslume/art/bosses-r8/references/cba5c03885181.560c0e374e22d.gif",
+      "sourceSha256": "1c01c32b941e95bbcfbc95035818596d8e9f7f6de1d05c71d467f7b33dac9012",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            244,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            76,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            96,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            116,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            124,
+            64,
+            338,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            44,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            0,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            142,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/07.png"
+        },
+        {
+          "frame": 8,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            144,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/08.png"
+        },
+        {
+          "frame": 9,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            244,
+            358,
+            336,
+            380
+          ],
+          "visibleBox": [
+            144,
+            62,
+            336,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-blue/09.png"
+        }
+      ]
+    },
+    "stone-red": {
+      "source": "mosslume/art/bosses-r8/references/6c15a63885181.560c0db5917a5.gif",
+      "sourceSha256": "ca97005500143899448c77952c6f189edc458261a7d3e602196876906dc0f212",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            146,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            150,
+            64,
+            240,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            44,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            44,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            44,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            46,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            404
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            146,
+            358,
+            238,
+            380
+          ],
+          "visibleBox": [
+            46,
+            62,
+            238,
+            316
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/stone-red/06.png"
+        }
+      ]
+    },
+    "moon-melee": {
+      "source": "mosslume/art/bosses-r8/references/c3e3b03885181.560c0d477b5ac.gif",
+      "sourceSha256": "0de8273cb5b8101f1f2f675ac1304ca0d5204693c6b1ee9027afd64103ac9797",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            40,
+            41,
+            174,
+            205
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            40,
+            41,
+            174,
+            205
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            54,
+            27,
+            180,
+            199
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            52,
+            25,
+            180,
+            195
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            18,
+            47,
+            278,
+            241
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            14,
+            49,
+            200,
+            221
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            18,
+            49,
+            186,
+            195
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            298,
+            267
+          ],
+          "backgroundRGB": [
+            52,
+            52,
+            52
+          ],
+          "paletteStripRemoved": [
+            118,
+            221,
+            162,
+            243
+          ],
+          "visibleBox": [
+            18,
+            49,
+            186,
+            195
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-melee/07.png"
+        }
+      ]
+    },
+    "moon-idle-hurt": {
+      "source": "mosslume/art/bosses-r8/references/1bd3053885181.560c0e379a1b9.gif",
+      "sourceSha256": "d8506a085753214645fc5f8da1d32c88e407ac11f9d95c022d1ff2a008adce4d",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            37,
+            174,
+            201
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            35,
+            170,
+            197
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            33,
+            170,
+            193
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            35,
+            172,
+            197
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            37,
+            174,
+            201
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            35,
+            170,
+            197
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            33,
+            170,
+            193
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            40,
+            35,
+            172,
+            197
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/07.png"
+        },
+        {
+          "frame": 8,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/08.png"
+        },
+        {
+          "frame": 9,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/09.png"
+        },
+        {
+          "frame": 10,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/10.png"
+        },
+        {
+          "frame": 11,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/11.png"
+        },
+        {
+          "frame": 12,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/12.png"
+        },
+        {
+          "frame": 13,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/13.png"
+        },
+        {
+          "frame": 14,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/14.png"
+        },
+        {
+          "frame": 15,
+          "durationMillis": 90,
+          "sourceSize": [
+            258,
+            263
+          ],
+          "backgroundRGB": [
+            176,
+            176,
+            176
+          ],
+          "paletteStripRemoved": [
+            118,
+            217,
+            162,
+            239
+          ],
+          "visibleBox": [
+            44,
+            23,
+            176,
+            189
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-idle-hurt/15.png"
+        }
+      ]
+    },
+    "moon-ambush": {
+      "source": "mosslume/art/bosses-r8/references/f8e18c3885181.560c0db5364de.gif",
+      "sourceSha256": "d99eec41876b7ef90e7aeca118bd95dbe1fcab8e04878e3e07ec372c7bab2163",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            192,
+            45,
+            326,
+            209
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            192,
+            45,
+            326,
+            209
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            192,
+            45,
+            326,
+            209
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            192,
+            45,
+            326,
+            209
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            192,
+            45,
+            326,
+            209
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": null,
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": null,
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": null,
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/07.png"
+        },
+        {
+          "frame": 8,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            22,
+            29,
+            178,
+            213
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/08.png"
+        },
+        {
+          "frame": 9,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            24,
+            31,
+            176,
+            213
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/09.png"
+        },
+        {
+          "frame": 10,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            28,
+            75,
+            324,
+            195
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/10.png"
+        },
+        {
+          "frame": 11,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            30,
+            75,
+            258,
+            193
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/11.png"
+        },
+        {
+          "frame": 12,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            30,
+            75,
+            180,
+            193
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/12.png"
+        },
+        {
+          "frame": 13,
+          "durationMillis": 90,
+          "sourceSize": [
+            356,
+            271
+          ],
+          "backgroundRGB": [
+            59,
+            59,
+            59
+          ],
+          "paletteStripRemoved": [
+            118,
+            225,
+            162,
+            247
+          ],
+          "visibleBox": [
+            30,
+            75,
+            180,
+            193
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-ambush/13.png"
+        }
+      ]
+    },
+    "moon-beam": {
+      "source": "mosslume/art/bosses-r8/references/bd62af3885181.560c0d17d84c7.gif",
+      "sourceSha256": "ea8f0d63bbe66fd908bbb98d28162f08f283058bb7e65a5b3331e00ef5baf313",
+      "sourceHadAlpha": false,
+      "foregroundRGBUnchanged": true,
+      "frames": [
+        {
+          "frame": 0,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            304,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/00.png"
+        },
+        {
+          "frame": 1,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/01.png"
+        },
+        {
+          "frame": 2,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            300,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/02.png"
+        },
+        {
+          "frame": 3,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            244,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/03.png"
+        },
+        {
+          "frame": 4,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            304,
+            460,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/04.png"
+        },
+        {
+          "frame": 5,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            460,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/05.png"
+        },
+        {
+          "frame": 6,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            300,
+            460,
+            489
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/06.png"
+        },
+        {
+          "frame": 7,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            460,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/07.png"
+        },
+        {
+          "frame": 8,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            304,
+            346,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/08.png"
+        },
+        {
+          "frame": 9,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            234,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/09.png"
+        },
+        {
+          "frame": 10,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            300,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/10.png"
+        },
+        {
+          "frame": 11,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/11.png"
+        },
+        {
+          "frame": 12,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            304,
+            396,
+            526
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/12.png"
+        },
+        {
+          "frame": 13,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            2,
+            402,
+            526
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/13.png"
+        },
+        {
+          "frame": 14,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            2,
+            416,
+            526
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/14.png"
+        },
+        {
+          "frame": 15,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            2,
+            428,
+            530
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/15.png"
+        },
+        {
+          "frame": 16,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            2,
+            386,
+            530
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/16.png"
+        },
+        {
+          "frame": 17,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            368,
+            526
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/17.png"
+        },
+        {
+          "frame": 18,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            300,
+            350,
+            526
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/18.png"
+        },
+        {
+          "frame": 19,
+          "durationMillis": 90,
+          "sourceSize": [
+            460,
+            548
+          ],
+          "backgroundRGB": [
+            58,
+            58,
+            58
+          ],
+          "paletteStripRemoved": null,
+          "visibleBox": [
+            8,
+            302,
+            166,
+            488
+          ],
+          "file": "mosslume/art/bosses-r8/direct-extracted/gif/moon-beam/19.png"
+        }
+      ]
+    },
+    "stone-webp": {
+      "source": "mosslume/art/bosses-r8/references/7420453885181.560c0e368a667.webp",
+      "sourceSha256": "75a2bcde3d1f0501e2f311258e8bf4e37f26773217a6cd64735252788da5bae7",
+      "sourceHadAlpha": false,
+      "backgroundMethod": "border-connected max RGB delta <=12",
+      "foregroundRGBUnchanged": true,
+      "note": "Lossy WebP edge RGB is kept, not repainted."
+    },
+    "moon-webp": {
+      "source": "mosslume/art/bosses-r8/references/57fc2a3885181.560c0de9a97bd.webp",
+      "sourceSha256": "335b1d01dee2fcabdf6e7ab67ae0c8bbb6d4cdcabd4ee626d7e91bfcd26366af",
+      "sourceHadAlpha": false,
+      "backgroundMethod": "border-connected max RGB delta <=12",
+      "foregroundRGBUnchanged": true,
+      "note": "Lossy WebP edge RGB is kept, not repainted."
+    }
+  },
+  "webpCells": {
+    "stone-bodies": [
+      {
+        "index": 0,
+        "sourceBox": [
+          35,
+          16,
+          131,
+          274
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          197,
+          15,
+          289,
+          272
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          35,
+          307,
+          131,
+          565
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          197,
+          307,
+          291,
+          563
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/03.png"
+      },
+      {
+        "index": 4,
+        "sourceBox": [
+          327,
+          304,
+          477,
+          563
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/04.png"
+      },
+      {
+        "index": 5,
+        "sourceBox": [
+          26,
+          767,
+          156,
+          1025
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/05.png"
+      },
+      {
+        "index": 6,
+        "sourceBox": [
+          179,
+          767,
+          307,
+          1023
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/06.png"
+      },
+      {
+        "index": 7,
+        "sourceBox": [
+          313,
+          766,
+          455,
+          1025
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/stone-bodies/07.png"
+      }
+    ],
+    "moon-bodies": [
+      {
+        "index": 0,
+        "sourceBox": [
+          10,
+          11,
+          149,
+          180
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          154,
+          11,
+          288,
+          178
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          302,
+          11,
+          436,
+          176
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          448,
+          14,
+          584,
+          180
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/03.png"
+      },
+      {
+        "index": 4,
+        "sourceBox": [
+          16,
+          193,
+          152,
+          363
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/04.png"
+      },
+      {
+        "index": 5,
+        "sourceBox": [
+          18,
+          376,
+          149,
+          552
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/05.png"
+      },
+      {
+        "index": 6,
+        "sourceBox": [
+          206,
+          378,
+          338,
+          552
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/06.png"
+      },
+      {
+        "index": 7,
+        "sourceBox": [
+          377,
+          398,
+          550,
+          550
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/07.png"
+      },
+      {
+        "index": 8,
+        "sourceBox": [
+          22,
+          574,
+          194,
+          724
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/08.png"
+      },
+      {
+        "index": 9,
+        "sourceBox": [
+          28,
+          739,
+          166,
+          908
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/09.png"
+      },
+      {
+        "index": 10,
+        "sourceBox": [
+          200,
+          743,
+          360,
+          931
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/10.png"
+      },
+      {
+        "index": 11,
+        "sourceBox": [
+          405,
+          743,
+          562,
+          930
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/11.png"
+      },
+      {
+        "index": 12,
+        "sourceBox": [
+          16,
+          961,
+          175,
+          1085
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/12.png"
+      },
+      {
+        "index": 13,
+        "sourceBox": [
+          200,
+          959,
+          354,
+          1083
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/13.png"
+      },
+      {
+        "index": 14,
+        "sourceBox": [
+          16,
+          1106,
+          178,
+          1294
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/14.png"
+      },
+      {
+        "index": 15,
+        "sourceBox": [
+          209,
+          1106,
+          371,
+          1296
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/15.png"
+      },
+      {
+        "index": 16,
+        "sourceBox": [
+          405,
+          1102,
+          567,
+          1294
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/16.png"
+      },
+      {
+        "index": 17,
+        "sourceBox": [
+          20,
+          1311,
+          182,
+          1502
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/17.png"
+      },
+      {
+        "index": 18,
+        "sourceBox": [
+          285,
+          1382,
+          355,
+          1500
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/moon-bodies/18.png"
+      }
+    ],
+    "blue-glyph": [
+      {
+        "index": 0,
+        "sourceBox": [
+          371,
+          9,
+          464,
+          69
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-glyph/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          369,
+          81,
+          430,
+          143
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-glyph/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          369,
+          151,
+          421,
+          211
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-glyph/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          371,
+          223,
+          415,
+          277
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-glyph/03.png"
+      }
+    ],
+    "red-glyph": [
+      {
+        "index": 0,
+        "sourceBox": [
+          490,
+          9,
+          583,
+          69
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-glyph/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          489,
+          81,
+          549,
+          143
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-glyph/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          489,
+          151,
+          539,
+          211
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-glyph/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          490,
+          223,
+          534,
+          277
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-glyph/03.png"
+      }
+    ],
+    "crystal-impact": [
+      {
+        "index": 0,
+        "sourceBox": [
+          18,
+          590,
+          192,
+          735
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/crystal-impact/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          211,
+          596,
+          351,
+          721
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/crystal-impact/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          371,
+          615,
+          479,
+          709
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/crystal-impact/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          498,
+          614,
+          588,
+          709
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/crystal-impact/03.png"
+      }
+    ],
+    "blue-spark": [
+      {
+        "index": 0,
+        "sourceBox": [
+          508,
+          300,
+          580,
+          362
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-spark/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          518,
+          358,
+          568,
+          393
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-spark/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          532,
+          393,
+          558,
+          419
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/blue-spark/02.png"
+      }
+    ],
+    "red-spark": [
+      {
+        "index": 0,
+        "sourceBox": [
+          508,
+          430,
+          580,
+          491
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-spark/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          518,
+          491,
+          568,
+          527
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-spark/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          532,
+          528,
+          558,
+          552
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/red-spark/02.png"
+      }
+    ],
+    "ground-rings": [
+      {
+        "index": 0,
+        "sourceBox": [
+          36,
+          1083,
+          95,
+          1108
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/ground-rings/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          121,
+          1080,
+          201,
+          1108
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/ground-rings/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          228,
+          1074,
+          331,
+          1108
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/ground-rings/02.png"
+      },
+      {
+        "index": 3,
+        "sourceBox": [
+          351,
+          1076,
+          455,
+          1106
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/ground-rings/03.png"
+      },
+      {
+        "index": 4,
+        "sourceBox": [
+          494,
+          1076,
+          556,
+          1103
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/ground-rings/04.png"
+      }
+    ],
+    "earth-pillars": [
+      {
+        "index": 0,
+        "sourceBox": [
+          26,
+          1214,
+          92,
+          1282
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/earth-pillars/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          115,
+          1136,
+          224,
+          1282
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/earth-pillars/01.png"
+      },
+      {
+        "index": 2,
+        "sourceBox": [
+          254,
+          1166,
+          368,
+          1282
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/earth-pillars/02.png"
+      }
+    ],
+    "falling-earth": [
+      {
+        "index": 0,
+        "sourceBox": [
+          490,
+          766,
+          572,
+          849
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/falling-earth/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          493,
+          870,
+          577,
+          914
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/falling-earth/01.png"
+      }
+    ],
+    "glyph-squares": [
+      {
+        "index": 0,
+        "sourceBox": [
+          480,
+          942,
+          528,
+          1000
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/glyph-squares/00.png"
+      },
+      {
+        "index": 1,
+        "sourceBox": [
+          539,
+          941,
+          589,
+          1001
+        ],
+        "file": "mosslume/art/bosses-r8/direct-extracted/webp/glyph-squares/01.png"
+      }
+    ]
+  },
+  "bosses": {
+    "stone-watcher": {
+      "constantSourceScale": 0.2677165354330709,
+      "clips": [
+        {
+          "clip": "stone-pillar",
+          "runtime": "stone-watcher-attack0.png",
+          "properties": {
+            "file": "stone-watcher-attack0",
+            "columns": 8,
+            "frameMillis": 90,
+            "frameSize": 192,
+            "footX": 96,
+            "footY": 168,
+            "windup": "0,1,2",
+            "strike": "3",
+            "recovery": "4,5,6,7",
+            "emptyFrames": "",
+            "damageFrame": 3
+          },
+          "poses": [
+            {
+              "empty": false,
+              "sourceBox": [
+                244,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                82,
+                100
+              ],
+              "sampledSize": [
+                25,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                80,
+                62,
+                336,
+                366
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                38,
+                100
+              ],
+              "sampledSize": [
+                69,
+                81
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                68,
+                64,
+                336,
+                368
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                35,
+                101
+              ],
+              "sampledSize": [
+                72,
+                81
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                44,
+                48,
+                336,
+                370
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                28,
+                97
+              ],
+              "sampledSize": [
+                78,
+                86
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                28,
+                48,
+                336,
+                368
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                24,
+                97
+              ],
+              "sampledSize": [
+                82,
+                86
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                28,
+                50,
+                336,
+                368
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                24,
+                97
+              ],
+              "sampledSize": [
+                82,
+                85
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                28,
+                50,
+                336,
+                368
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                24,
+                97
+              ],
+              "sampledSize": [
+                82,
+                85
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                28,
+                50,
+                336,
+                368
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                24,
+                97
+              ],
+              "sampledSize": [
+                82,
+                85
+              ]
+            }
+          ]
+        },
+        {
+          "clip": "stone-blue",
+          "runtime": "stone-watcher-attack1.png",
+          "properties": {
+            "file": "stone-watcher-attack1",
+            "columns": 10,
+            "frameMillis": 90,
+            "frameSize": 192,
+            "footX": 96,
+            "footY": 168,
+            "windup": "0,1,2,3,4",
+            "strike": "5,6,7",
+            "recovery": "8,9",
+            "emptyFrames": "",
+            "damageFrame": 5
+          },
+          "poses": [
+            {
+              "empty": false,
+              "sourceBox": [
+                244,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                82,
+                100
+              ],
+              "sampledSize": [
+                25,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                76,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                37,
+                100
+              ],
+              "sampledSize": [
+                70,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                96,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                42,
+                100
+              ],
+              "sampledSize": [
+                64,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                116,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                47,
+                100
+              ],
+              "sampledSize": [
+                59,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                124,
+                64,
+                338,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                50,
+                101
+              ],
+              "sampledSize": [
+                57,
+                67
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                44,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                28,
+                100
+              ],
+              "sampledSize": [
+                78,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                0,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                16,
+                100
+              ],
+              "sampledSize": [
+                90,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                142,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                54,
+                100
+              ],
+              "sampledSize": [
+                52,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                144,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                55,
+                100
+              ],
+              "sampledSize": [
+                51,
+                68
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                144,
+                62,
+                336,
+                316
+              ],
+              "sourceAnchor": [
+                297.5,
+                315
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.2677165354330709,
+              "runtimePaste": [
+                55,
+                100
+              ],
+              "sampledSize": [
+                51,
+                68
+              ]
+            }
+          ]
+        }
+      ],
+      "death": "idle-fade",
+      "baseAtlas": {
+        "poses": [
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              242,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              33,
+              12
+            ],
+            "sampledSize": [
+              26,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              242,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              33,
+              12
+            ],
+            "sampledSize": [
+              26,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 1,
+            "empty": false,
+            "sourceBox": [
+              242,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              33,
+              12
+            ],
+            "sampledSize": [
+              26,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-pillar",
+            "sourceFrame": 2,
+            "empty": false,
+            "sourceBox": [
+              210,
+              62,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              25,
+              12
+            ],
+            "sampledSize": [
+              34,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-pillar",
+            "sourceFrame": 3,
+            "empty": false,
+            "sourceBox": [
+              196,
+              46,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              21,
+              8
+            ],
+            "sampledSize": [
+              38,
+              73
+            ]
+          },
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 9,
+            "empty": false,
+            "sourceBox": [
+              190,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              19,
+              12
+            ],
+            "sampledSize": [
+              40,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              242,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              33,
+              12
+            ],
+            "sampledSize": [
+              26,
+              69
+            ]
+          },
+          {
+            "sourceClip": "stone-blue",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              242,
+              60,
+              338,
+              318
+            ],
+            "sourceAnchor": [
+              297.5,
+              315
+            ],
+            "sourceFacing": "left",
+            "nearestScale": 0.2677165354330709,
+            "runtimePaste": [
+              33,
+              12
+            ],
+            "sampledSize": [
+              26,
+              69
+            ]
+          }
+        ],
+        "note": "Compatibility body only. Locomotion reuses original idle; attack reads full clips. Column7 repeats idle for native fade; it is not an authored corpse."
+      }
+    },
+    "moon-reaper": {
+      "constantSourceScale": 0.3902439024390244,
+      "clips": [
+        {
+          "clip": "moon-melee",
+          "runtime": "moon-reaper-attack0.png",
+          "properties": {
+            "file": "moon-reaper-attack0",
+            "columns": 8,
+            "frameMillis": 90,
+            "frameSize": 192,
+            "footX": 96,
+            "footY": 168,
+            "windup": "0,1,2,3",
+            "strike": "4,5",
+            "recovery": "6,7",
+            "emptyFrames": "",
+            "damageFrame": 4
+          },
+          "poses": [
+            {
+              "empty": false,
+              "sourceBox": [
+                40,
+                41,
+                174,
+                205
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                58,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                40,
+                41,
+                174,
+                205
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                58,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                54,
+                27,
+                180,
+                199
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                64,
+                99
+              ],
+              "sampledSize": [
+                49,
+                67
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                52,
+                25,
+                180,
+                195
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                63,
+                98
+              ],
+              "sampledSize": [
+                50,
+                66
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                18,
+                47,
+                278,
+                241
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                50,
+                107
+              ],
+              "sampledSize": [
+                101,
+                76
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                14,
+                49,
+                200,
+                221
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                48,
+                108
+              ],
+              "sampledSize": [
+                73,
+                67
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                18,
+                49,
+                186,
+                195
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                50,
+                108
+              ],
+              "sampledSize": [
+                66,
+                57
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                18,
+                49,
+                186,
+                195
+              ],
+              "sourceAnchor": [
+                136.5,
+                204
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                50,
+                108
+              ],
+              "sampledSize": [
+                66,
+                57
+              ]
+            }
+          ]
+        },
+        {
+          "clip": "moon-ambush",
+          "runtime": "moon-reaper-attack1.png",
+          "properties": {
+            "file": "moon-reaper-attack1",
+            "columns": 14,
+            "frameMillis": 90,
+            "frameSize": 192,
+            "footX": 96,
+            "footY": 168,
+            "windup": "0,1,2,3,4,5,6,7",
+            "strike": "8,9,10,11",
+            "recovery": "12,13",
+            "emptyFrames": "5,6,7",
+            "damageFrame": 10
+          },
+          "poses": [
+            {
+              "empty": false,
+              "sourceBox": [
+                192,
+                45,
+                326,
+                209
+              ],
+              "sourceAnchor": [
+                228.5,
+                208
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                82,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                192,
+                45,
+                326,
+                209
+              ],
+              "sourceAnchor": [
+                228.5,
+                208
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                82,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                192,
+                45,
+                326,
+                209
+              ],
+              "sourceAnchor": [
+                228.5,
+                208
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                82,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                192,
+                45,
+                326,
+                209
+              ],
+              "sourceAnchor": [
+                228.5,
+                208
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                82,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                192,
+                45,
+                326,
+                209
+              ],
+              "sourceAnchor": [
+                228.5,
+                208
+              ],
+              "sourceFacing": "left",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                82,
+                104
+              ],
+              "sampledSize": [
+                52,
+                64
+              ]
+            },
+            {
+              "empty": true,
+              "sourceBox": null
+            },
+            {
+              "empty": true,
+              "sourceBox": null
+            },
+            {
+              "empty": true,
+              "sourceBox": null
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                22,
+                29,
+                178,
+                213
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                61,
+                98
+              ],
+              "sampledSize": [
+                61,
+                72
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                24,
+                31,
+                176,
+                213
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                61,
+                99
+              ],
+              "sampledSize": [
+                59,
+                71
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                28,
+                75,
+                324,
+                195
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                63,
+                116
+              ],
+              "sampledSize": [
+                116,
+                47
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                30,
+                75,
+                258,
+                193
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                64,
+                116
+              ],
+              "sampledSize": [
+                89,
+                46
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                30,
+                75,
+                180,
+                193
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                64,
+                116
+              ],
+              "sampledSize": [
+                59,
+                46
+              ]
+            },
+            {
+              "empty": false,
+              "sourceBox": [
+                30,
+                75,
+                180,
+                193
+              ],
+              "sourceAnchor": [
+                112.5,
+                208
+              ],
+              "sourceFacing": "right",
+              "nearestScale": 0.3902439024390244,
+              "runtimePaste": [
+                64,
+                116
+              ],
+              "sampledSize": [
+                59,
+                46
+              ]
+            }
+          ]
+        }
+      ],
+      "death": "idle-fade",
+      "baseAtlas": {
+        "poses": [
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              38,
+              39,
+              176,
+              207
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              10,
+              16
+            ],
+            "sampledSize": [
+              54,
+              66
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              38,
+              39,
+              176,
+              207
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              10,
+              16
+            ],
+            "sampledSize": [
+              54,
+              66
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 1,
+            "empty": false,
+            "sourceBox": [
+              38,
+              39,
+              176,
+              207
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              10,
+              16
+            ],
+            "sampledSize": [
+              54,
+              66
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 2,
+            "empty": false,
+            "sourceBox": [
+              52,
+              25,
+              182,
+              201
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              15,
+              10
+            ],
+            "sampledSize": [
+              51,
+              69
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 7,
+            "empty": false,
+            "sourceBox": [
+              16,
+              47,
+              188,
+              197
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              1,
+              19
+            ],
+            "sampledSize": [
+              67,
+              59
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 7,
+            "empty": false,
+            "sourceBox": [
+              16,
+              47,
+              188,
+              197
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              1,
+              19
+            ],
+            "sampledSize": [
+              67,
+              59
+            ]
+          },
+          {
+            "sourceClip": "moon-idle-hurt",
+            "sourceFrame": 9,
+            "empty": false,
+            "sourceBox": [
+              42,
+              21,
+              178,
+              191
+            ],
+            "sourceAnchor": [
+              136.5,
+              200
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              11,
+              10
+            ],
+            "sampledSize": [
+              53,
+              66
+            ]
+          },
+          {
+            "sourceClip": "moon-melee",
+            "sourceFrame": 0,
+            "empty": false,
+            "sourceBox": [
+              38,
+              39,
+              176,
+              207
+            ],
+            "sourceAnchor": [
+              136.5,
+              204
+            ],
+            "sourceFacing": "right",
+            "nearestScale": 0.3902439024390244,
+            "runtimePaste": [
+              10,
+              16
+            ],
+            "sampledSize": [
+              54,
+              66
+            ]
+          }
+        ],
+        "note": "Compatibility body only. Locomotion reuses original idle; attack reads full clips. Column7 repeats idle for native fade; it is not an authored corpse."
+      }
+    }
+  }
+}

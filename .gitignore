@@ -19,6 +19,11 @@ __pycache__/
 /rebuild/classes/
 /rebuild/*.jar
 /rebuild/sources.args
+# Duplicate downloadable exports stay local; editable sources and runtime assets are tracked.
+/mosslume/art/exports/*.zip
+/mosslume/branding/*.zip
+# Long QA recordings are release/evidence artifacts, not source inputs.
+/mosslume/validation/**/*.mp4
 /evidence/
 !/evidence/
 /evidence/*

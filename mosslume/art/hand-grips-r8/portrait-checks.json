@@ -1,0 +1,10 @@
+[
+  {
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "exit": 0,
+    "output": "ResidentPortraitsTest PASS: five exact current head crops; 5 actual kernel method signatures; 20 native face geometries, single custom texture and no original eyes/body\n"
+  }
+]

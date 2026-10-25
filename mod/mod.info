@@ -1,9 +1,9 @@
 {
 	id = localforest.island,
 	name = Mosslume Island,
-	version = 0.4.0,
+	version = 0.5.2,
 	gameVersion = 1.3.3,
 	author = Local Forest,
-	description = Finite seeded Mosslume worlds and native companion tasks with preserved pixel wind and lighting.,
+	description = Continuous Mosslume worlds and native companion life with original character actions and preserved pixel wind and lighting.,
 	clientside = false
 }

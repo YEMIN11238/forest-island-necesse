@@ -1,0 +1,614 @@
+Compiled from "ItemFinder.java"
+public class necesse.level.maps.levelData.settlementData.storage.ItemFinder {
+  private necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecordsRegionData regionData;
+
+  private java.awt.Point currentTile;
+
+  private necesse.engine.util.GameLinkedList<java.util.Map$Entry<java.awt.Point, necesse.engine.util.GameLinkedList<necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecord>>> records;
+
+  public necesse.level.maps.levelData.settlementData.storage.ItemFinder(necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecordsRegionData, java.awt.Point, necesse.engine.util.GameLinkedList<java.util.Map$Entry<java.awt.Point, necesse.engine.util.GameLinkedList<necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecord>>>, java.util.function.Predicate<necesse.inventory.InventoryItem>);
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: aload_0
+       5: aload_1
+       6: putfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+       9: aload_0
+      10: aload_2
+      11: putfield      #13                 // Field currentTile:Ljava/awt/Point;
+      14: aload_0
+      15: aload_3
+      16: putfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      19: return
+
+  public java.util.LinkedList<necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot> findPickupSlots(int, int, java.util.function.Predicate<necesse.inventory.InventoryItem>);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+       4: getfield      #21                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.index:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex;
+       7: getfield      #27                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex.level:Lnecesse/level/maps/Level;
+      10: invokevirtual #33                 // Method necesse/level/maps/Level.tickManager:()Lnecesse/engine/gameLoop/tickManager/TickManager;
+      13: ldc           #39                 // String findItems
+      15: aload_0
+      16: iload_2
+      17: aload_3
+      18: iload_1
+      19: invokedynamic #41,  0             // InvokeDynamic #0:get:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;ILjava/util/function/Predicate;I)Ljava/util/function/Supplier;
+      24: invokestatic  #45                 // Method necesse/engine/gameLoop/tickManager/Performance.record:(Lnecesse/engine/gameLoop/tickManager/PerformanceTimerManager;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/lang/Object;
+      27: checkcast     #51                 // class java/util/LinkedList
+      30: areturn
+
+  public necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot findFirstItemPickup(java.util.function.Predicate<necesse.inventory.InventoryItem>);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+       4: getfield      #21                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.index:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex;
+       7: getfield      #27                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex.level:Lnecesse/level/maps/Level;
+      10: invokevirtual #33                 // Method necesse/level/maps/Level.tickManager:()Lnecesse/engine/gameLoop/tickManager/TickManager;
+      13: ldc           #39                 // String findItems
+      15: aload_0
+      16: aload_1
+      17: invokedynamic #53,  0             // InvokeDynamic #1:get:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;Ljava/util/function/Predicate;)Ljava/util/function/Supplier;
+      22: invokestatic  #45                 // Method necesse/engine/gameLoop/tickManager/Performance.record:(Lnecesse/engine/gameLoop/tickManager/PerformanceTimerManager;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/lang/Object;
+      25: checkcast     #56                 // class necesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot
+      28: areturn
+
+  public necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot findBestItem(java.util.function.Predicate<necesse.inventory.InventoryItem>, java.util.Comparator<necesse.level.maps.levelData.settlementData.SettlementStoragePickupFuture>);
+    Code:
+       0: aload_0
+       1: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+       4: getfield      #21                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.index:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex;
+       7: getfield      #27                 // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageIndex.level:Lnecesse/level/maps/Level;
+      10: invokevirtual #33                 // Method necesse/level/maps/Level.tickManager:()Lnecesse/engine/gameLoop/tickManager/TickManager;
+      13: ldc           #39                 // String findItems
+      15: aload_0
+      16: aload_1
+      17: aload_2
+      18: invokedynamic #58,  0             // InvokeDynamic #2:get:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;Ljava/util/function/Predicate;Ljava/util/Comparator;)Ljava/util/function/Supplier;
+      23: invokestatic  #45                 // Method necesse/engine/gameLoop/tickManager/Performance.record:(Lnecesse/engine/gameLoop/tickManager/PerformanceTimerManager;Ljava/lang/String;Ljava/util/function/Supplier;)Ljava/lang/Object;
+      26: checkcast     #56                 // class necesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot
+      29: areturn
+
+  private necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot lambda$findBestItem$10(java.util.function.Predicate, java.util.Comparator);
+    Code:
+       0: new           #61                 // class java/util/HashSet
+       3: dup
+       4: invokespecial #63                 // Method java/util/HashSet."<init>":()V
+       7: astore_3
+       8: aconst_null
+       9: astore        4
+      11: aload_0
+      12: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      15: invokevirtual #64                 // Method necesse/engine/util/GameLinkedList.isEmpty:()Z
+      18: ifne          236
+      21: aload_0
+      22: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      25: invokevirtual #70                 // Method necesse/engine/util/GameLinkedList.streamElements:()Ljava/util/stream/Stream;
+      28: aload_3
+      29: invokedynamic #74,  0             // InvokeDynamic #3:test:(Ljava/util/HashSet;)Ljava/util/function/Predicate;
+      34: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      39: aload_0
+      40: invokedynamic #84,  0             // InvokeDynamic #4:applyAsDouble:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;)Ljava/util/function/ToDoubleFunction;
+      45: invokestatic  #88                 // InterfaceMethod java/util/Comparator.comparingDouble:(Ljava/util/function/ToDoubleFunction;)Ljava/util/Comparator;
+      48: invokeinterface #94,  2           // InterfaceMethod java/util/stream/Stream.min:(Ljava/util/Comparator;)Ljava/util/Optional;
+      53: aconst_null
+      54: invokevirtual #98                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      57: checkcast     #104                // class necesse/engine/util/GameLinkedList$Element
+      60: astore        5
+      62: aload         5
+      64: ifnonnull     70
+      67: goto          236
+      70: aload_3
+      71: aload         5
+      73: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+      76: checkcast     #110                // class java/util/Map$Entry
+      79: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      84: checkcast     #116                // class java/awt/Point
+      87: invokevirtual #118                // Method java/util/HashSet.add:(Ljava/lang/Object;)Z
+      90: pop
+      91: aload         5
+      93: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+      96: checkcast     #110                // class java/util/Map$Entry
+      99: invokeinterface #122,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     104: checkcast     #65                 // class necesse/engine/util/GameLinkedList
+     107: astore        6
+     109: aload         6
+     111: invokevirtual #125                // Method necesse/engine/util/GameLinkedList.getLastElement:()Lnecesse/engine/util/GameLinkedList$Element;
+     114: astore        7
+     116: aload         7
+     118: ifnull        233
+     121: aload         7
+     123: invokevirtual #129                // Method necesse/engine/util/GameLinkedList$Element.prev:()Lnecesse/engine/util/GameLinkedList$Element;
+     126: astore        8
+     128: aload_0
+     129: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+     132: aload         7
+     134: invokevirtual #132                // Method necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.validateItem:(Lnecesse/engine/util/GameLinkedList$Element;)Lnecesse/inventory/InventoryItem;
+     137: astore        9
+     139: aload         9
+     141: ifnull        222
+     144: aload         7
+     146: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     149: checkcast     #136                // class necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord
+     152: astore        10
+     154: aload_1
+     155: ifnull        169
+     158: aload_1
+     159: aload         9
+     161: invokeinterface #138,  2          // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+     166: ifeq          222
+     169: aload         7
+     171: astore        11
+     173: aload         10
+     175: getfield      #142                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.storage:Lnecesse/level/maps/levelData/settlementData/LevelStorage;
+     178: aload         10
+     180: getfield      #146                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.inventorySlot:I
+     183: aload         9
+     185: iconst_1
+     186: aload         10
+     188: aload         11
+     190: invokedynamic #150,  0            // InvokeDynamic #5:accept:(Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord;Lnecesse/engine/util/GameLinkedList$Element;)Ljava/util/function/Consumer;
+     195: invokevirtual #154                // Method necesse/level/maps/levelData/settlementData/LevelStorage.getFutureReserve:(ILnecesse/inventory/InventoryItem;ILjava/util/function/Consumer;)Lnecesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture;
+     198: astore        12
+     200: aload         4
+     202: ifnull        218
+     205: aload_2
+     206: aload         4
+     208: aload         12
+     210: invokeinterface #160,  3          // InterfaceMethod java/util/Comparator.compare:(Ljava/lang/Object;Ljava/lang/Object;)I
+     215: ifge          222
+     218: aload         12
+     220: astore        4
+     222: goto          230
+     225: astore        13
+     227: aload         13
+     229: athrow
+     230: goto          116
+     233: goto          11
+     236: aload         4
+     238: ifnull        275
+     241: aload_0
+     242: new           #116                // class java/awt/Point
+     245: dup
+     246: aload         4
+     248: getfield      #164                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.storage:Lnecesse/level/maps/levelData/settlementData/LevelStorage;
+     251: getfield      #167                // Field necesse/level/maps/levelData/settlementData/LevelStorage.tileX:I
+     254: aload         4
+     256: getfield      #164                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.storage:Lnecesse/level/maps/levelData/settlementData/LevelStorage;
+     259: getfield      #170                // Field necesse/level/maps/levelData/settlementData/LevelStorage.tileY:I
+     262: invokespecial #173                // Method java/awt/Point."<init>":(II)V
+     265: putfield      #13                 // Field currentTile:Ljava/awt/Point;
+     268: aload         4
+     270: iconst_1
+     271: invokevirtual #176                // Method necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.accept:(I)Lnecesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot;
+     274: areturn
+     275: aconst_null
+     276: areturn
+    Exception table:
+       from    to  target type
+         128   222   225   any
+         225   227   225   any
+
+  private static void lambda$findBestItem$9(necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecord, necesse.engine.util.GameLinkedList$Element, necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+       5: aload_2
+       6: getfield      #182                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot.item:Lnecesse/inventory/InventoryItem;
+       9: invokevirtual #186                // Method necesse/inventory/InventoryItem.getAmount:()I
+      12: isub
+      13: putfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+      16: aload_0
+      17: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+      20: ifgt          34
+      23: aload_1
+      24: invokevirtual #192                // Method necesse/engine/util/GameLinkedList$Element.isRemoved:()Z
+      27: ifne          34
+      30: aload_1
+      31: invokevirtual #195                // Method necesse/engine/util/GameLinkedList$Element.remove:()V
+      34: return
+
+  private double lambda$findBestItem$8(necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field currentTile:Ljava/awt/Point;
+       4: aload_1
+       5: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       8: checkcast     #110                // class java/util/Map$Entry
+      11: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      16: checkcast     #198                // class java/awt/geom/Point2D
+      19: invokevirtual #200                // Method java/awt/Point.distance:(Ljava/awt/geom/Point2D;)D
+      22: dreturn
+
+  private static boolean lambda$findBestItem$7(java.util.HashSet, necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       5: checkcast     #110                // class java/util/Map$Entry
+       8: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      13: invokevirtual #204                // Method java/util/HashSet.contains:(Ljava/lang/Object;)Z
+      16: ifne          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  private necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot lambda$findFirstItemPickup$6(java.util.function.Predicate);
+    Code:
+       0: new           #61                 // class java/util/HashSet
+       3: dup
+       4: invokespecial #63                 // Method java/util/HashSet."<init>":()V
+       7: astore_2
+       8: aload_0
+       9: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      12: invokevirtual #64                 // Method necesse/engine/util/GameLinkedList.isEmpty:()Z
+      15: ifne          276
+      18: aload_0
+      19: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      22: invokevirtual #70                 // Method necesse/engine/util/GameLinkedList.streamElements:()Ljava/util/stream/Stream;
+      25: aload_2
+      26: invokedynamic #207,  0            // InvokeDynamic #6:test:(Ljava/util/HashSet;)Ljava/util/function/Predicate;
+      31: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      36: aload_0
+      37: invokedynamic #208,  0            // InvokeDynamic #7:applyAsDouble:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;)Ljava/util/function/ToDoubleFunction;
+      42: invokestatic  #88                 // InterfaceMethod java/util/Comparator.comparingDouble:(Ljava/util/function/ToDoubleFunction;)Ljava/util/Comparator;
+      45: invokeinterface #94,  2           // InterfaceMethod java/util/stream/Stream.min:(Ljava/util/Comparator;)Ljava/util/Optional;
+      50: aconst_null
+      51: invokevirtual #98                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      54: checkcast     #104                // class necesse/engine/util/GameLinkedList$Element
+      57: astore_3
+      58: aload_3
+      59: ifnonnull     65
+      62: goto          276
+      65: aload_2
+      66: aload_3
+      67: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+      70: checkcast     #110                // class java/util/Map$Entry
+      73: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      78: checkcast     #116                // class java/awt/Point
+      81: invokevirtual #118                // Method java/util/HashSet.add:(Ljava/lang/Object;)Z
+      84: pop
+      85: aload_3
+      86: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+      89: checkcast     #110                // class java/util/Map$Entry
+      92: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      97: checkcast     #116                // class java/awt/Point
+     100: astore        4
+     102: aload_3
+     103: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     106: checkcast     #110                // class java/util/Map$Entry
+     109: invokeinterface #122,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     114: checkcast     #65                 // class necesse/engine/util/GameLinkedList
+     117: astore        5
+     119: aload         5
+     121: invokevirtual #125                // Method necesse/engine/util/GameLinkedList.getLastElement:()Lnecesse/engine/util/GameLinkedList$Element;
+     124: astore        6
+     126: iconst_0
+     127: istore        7
+     129: aload         6
+     131: ifnull        264
+     134: aload         6
+     136: invokevirtual #129                // Method necesse/engine/util/GameLinkedList$Element.prev:()Lnecesse/engine/util/GameLinkedList$Element;
+     139: astore        8
+     141: aload_0
+     142: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+     145: aload         6
+     147: invokevirtual #132                // Method necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.validateItem:(Lnecesse/engine/util/GameLinkedList$Element;)Lnecesse/inventory/InventoryItem;
+     150: astore        9
+     152: aload         9
+     154: ifnull        253
+     157: aload         6
+     159: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     162: checkcast     #136                // class necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord
+     165: astore        10
+     167: aload_1
+     168: ifnull        182
+     171: aload_1
+     172: aload         9
+     174: invokeinterface #138,  2          // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+     179: ifeq          253
+     182: iconst_1
+     183: istore        7
+     185: aload         10
+     187: getfield      #142                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.storage:Lnecesse/level/maps/levelData/settlementData/LevelStorage;
+     190: aload         10
+     192: getfield      #146                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.inventorySlot:I
+     195: aload         9
+     197: iconst_1
+     198: invokevirtual #209                // Method necesse/level/maps/levelData/settlementData/LevelStorage.reserve:(ILnecesse/inventory/InventoryItem;I)Lnecesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot;
+     201: astore        11
+     203: aload         11
+     205: ifnull        253
+     208: aload_0
+     209: aload         4
+     211: putfield      #13                 // Field currentTile:Ljava/awt/Point;
+     214: aload         10
+     216: dup
+     217: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+     220: iconst_1
+     221: isub
+     222: putfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+     225: aload         10
+     227: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+     230: ifgt          246
+     233: aload         6
+     235: invokevirtual #192                // Method necesse/engine/util/GameLinkedList$Element.isRemoved:()Z
+     238: ifne          246
+     241: aload         6
+     243: invokevirtual #195                // Method necesse/engine/util/GameLinkedList$Element.remove:()V
+     246: aload         11
+     248: astore        12
+     250: aload         12
+     252: areturn
+     253: goto          261
+     256: astore        13
+     258: aload         13
+     260: athrow
+     261: goto          129
+     264: iload         7
+     266: ifne          273
+     269: aload_3
+     270: invokevirtual #195                // Method necesse/engine/util/GameLinkedList$Element.remove:()V
+     273: goto          8
+     276: aconst_null
+     277: areturn
+    Exception table:
+       from    to  target type
+         141   250   256   any
+         256   258   256   any
+
+  private double lambda$findFirstItemPickup$5(necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field currentTile:Ljava/awt/Point;
+       4: aload_1
+       5: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       8: checkcast     #110                // class java/util/Map$Entry
+      11: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      16: checkcast     #198                // class java/awt/geom/Point2D
+      19: invokevirtual #200                // Method java/awt/Point.distance:(Ljava/awt/geom/Point2D;)D
+      22: dreturn
+
+  private static boolean lambda$findFirstItemPickup$4(java.util.HashSet, necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       5: checkcast     #110                // class java/util/Map$Entry
+       8: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      13: invokevirtual #204                // Method java/util/HashSet.contains:(Ljava/lang/Object;)Z
+      16: ifne          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+
+  private java.util.LinkedList lambda$findPickupSlots$3(int, java.util.function.Predicate, int);
+    Code:
+       0: iconst_0
+       1: istore        4
+       3: aload_0
+       4: getfield      #13                 // Field currentTile:Ljava/awt/Point;
+       7: astore        5
+       9: new           #61                 // class java/util/HashSet
+      12: dup
+      13: invokespecial #63                 // Method java/util/HashSet."<init>":()V
+      16: astore        6
+      18: new           #51                 // class java/util/LinkedList
+      21: dup
+      22: invokespecial #213                // Method java/util/LinkedList."<init>":()V
+      25: astore        7
+      27: iload         4
+      29: iload_1
+      30: if_icmpge     337
+      33: aload_0
+      34: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      37: invokevirtual #64                 // Method necesse/engine/util/GameLinkedList.isEmpty:()Z
+      40: ifne          337
+      43: aload_0
+      44: getfield      #17                 // Field records:Lnecesse/engine/util/GameLinkedList;
+      47: invokevirtual #70                 // Method necesse/engine/util/GameLinkedList.streamElements:()Ljava/util/stream/Stream;
+      50: aload         6
+      52: invokedynamic #214,  0            // InvokeDynamic #8:test:(Ljava/util/HashSet;)Ljava/util/function/Predicate;
+      57: invokeinterface #78,  2           // InterfaceMethod java/util/stream/Stream.filter:(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+      62: aload_0
+      63: invokedynamic #215,  0            // InvokeDynamic #9:applyAsDouble:(Lnecesse/level/maps/levelData/settlementData/storage/ItemFinder;)Ljava/util/function/ToDoubleFunction;
+      68: invokestatic  #88                 // InterfaceMethod java/util/Comparator.comparingDouble:(Ljava/util/function/ToDoubleFunction;)Ljava/util/Comparator;
+      71: invokeinterface #94,  2           // InterfaceMethod java/util/stream/Stream.min:(Ljava/util/Comparator;)Ljava/util/Optional;
+      76: aconst_null
+      77: invokevirtual #98                 // Method java/util/Optional.orElse:(Ljava/lang/Object;)Ljava/lang/Object;
+      80: checkcast     #104                // class necesse/engine/util/GameLinkedList$Element
+      83: astore        8
+      85: aload         8
+      87: ifnonnull     93
+      90: goto          337
+      93: aload         6
+      95: aload         8
+      97: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     100: checkcast     #110                // class java/util/Map$Entry
+     103: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     108: checkcast     #116                // class java/awt/Point
+     111: invokevirtual #118                // Method java/util/HashSet.add:(Ljava/lang/Object;)Z
+     114: pop
+     115: aload         8
+     117: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     120: checkcast     #110                // class java/util/Map$Entry
+     123: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+     128: checkcast     #116                // class java/awt/Point
+     131: astore        9
+     133: aload         8
+     135: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     138: checkcast     #110                // class java/util/Map$Entry
+     141: invokeinterface #122,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+     146: checkcast     #65                 // class necesse/engine/util/GameLinkedList
+     149: astore        10
+     151: aload         10
+     153: invokevirtual #125                // Method necesse/engine/util/GameLinkedList.getLastElement:()Lnecesse/engine/util/GameLinkedList$Element;
+     156: astore        11
+     158: iconst_0
+     159: istore        12
+     161: aload         11
+     163: ifnull        321
+     166: aload         11
+     168: invokevirtual #129                // Method necesse/engine/util/GameLinkedList$Element.prev:()Lnecesse/engine/util/GameLinkedList$Element;
+     171: astore        13
+     173: aload_0
+     174: getfield      #7                  // Field regionData:Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData;
+     177: aload         11
+     179: invokevirtual #132                // Method necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecordsRegionData.validateItem:(Lnecesse/engine/util/GameLinkedList$Element;)Lnecesse/inventory/InventoryItem;
+     182: astore        14
+     184: aload         14
+     186: ifnonnull     192
+     189: goto          161
+     192: aload         11
+     194: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+     197: checkcast     #136                // class necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord
+     200: astore        15
+     202: iconst_1
+     203: istore        12
+     205: aload_2
+     206: ifnull        223
+     209: aload_2
+     210: aload         14
+     212: invokeinterface #138,  2          // InterfaceMethod java/util/function/Predicate.test:(Ljava/lang/Object;)Z
+     217: ifne          223
+     220: goto          161
+     223: aload         15
+     225: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+     228: iload_1
+     229: iload         4
+     231: isub
+     232: invokestatic  #216                // Method java/lang/Math.min:(II)I
+     235: istore        16
+     237: aload         11
+     239: astore        17
+     241: aload         15
+     243: getfield      #142                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.storage:Lnecesse/level/maps/levelData/settlementData/LevelStorage;
+     246: aload         15
+     248: getfield      #146                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.inventorySlot:I
+     251: aload         14
+     253: iload         16
+     255: aload         15
+     257: aload         17
+     259: invokedynamic #221,  0            // InvokeDynamic #10:accept:(Lnecesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord;Lnecesse/engine/util/GameLinkedList$Element;)Ljava/util/function/Consumer;
+     264: invokevirtual #154                // Method necesse/level/maps/levelData/settlementData/LevelStorage.getFutureReserve:(ILnecesse/inventory/InventoryItem;ILjava/util/function/Consumer;)Lnecesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture;
+     267: astore        18
+     269: aload         18
+     271: ifnonnull     277
+     274: goto          161
+     277: aload         7
+     279: aload         18
+     281: invokevirtual #222                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+     284: pop
+     285: iload         4
+     287: aload         18
+     289: getfield      #223                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.item:Lnecesse/inventory/InventoryItem;
+     292: invokevirtual #186                // Method necesse/inventory/InventoryItem.getAmount:()I
+     295: iadd
+     296: istore        4
+     298: aload_0
+     299: aload         9
+     301: putfield      #13                 // Field currentTile:Ljava/awt/Point;
+     304: iload         4
+     306: iload_1
+     307: if_icmpge     313
+     310: goto          161
+     313: goto          321
+     316: astore        19
+     318: aload         19
+     320: athrow
+     321: iload         12
+     323: ifne          334
+     326: aload         8
+     328: invokevirtual #195                // Method necesse/engine/util/GameLinkedList$Element.remove:()V
+     331: goto          334
+     334: goto          27
+     337: iload         4
+     339: iload_3
+     340: if_icmpge     351
+     343: aload_0
+     344: aload         5
+     346: putfield      #13                 // Field currentTile:Ljava/awt/Point;
+     349: aconst_null
+     350: areturn
+     351: new           #51                 // class java/util/LinkedList
+     354: dup
+     355: invokespecial #213                // Method java/util/LinkedList."<init>":()V
+     358: astore        8
+     360: aload         7
+     362: invokevirtual #224                // Method java/util/LinkedList.iterator:()Ljava/util/Iterator;
+     365: astore        9
+     367: aload         9
+     369: invokeinterface #228,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     374: ifeq          411
+     377: aload         9
+     379: invokeinterface #233,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     384: checkcast     #165                // class necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture
+     387: astore        10
+     389: aload         8
+     391: aload         10
+     393: aload         10
+     395: getfield      #223                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.item:Lnecesse/inventory/InventoryItem;
+     398: invokevirtual #186                // Method necesse/inventory/InventoryItem.getAmount:()I
+     401: invokevirtual #176                // Method necesse/level/maps/levelData/settlementData/SettlementStoragePickupFuture.accept:(I)Lnecesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot;
+     404: invokevirtual #222                // Method java/util/LinkedList.add:(Ljava/lang/Object;)Z
+     407: pop
+     408: goto          367
+     411: aload         8
+     413: areturn
+    Exception table:
+       from    to  target type
+         173   189   316   any
+         192   220   316   any
+         223   274   316   any
+         277   310   316   any
+         316   318   316   any
+
+  private static void lambda$findPickupSlots$2(necesse.level.maps.levelData.settlementData.storage.SettlementStorageRecord, necesse.engine.util.GameLinkedList$Element, necesse.level.maps.levelData.settlementData.SettlementStoragePickupSlot);
+    Code:
+       0: aload_0
+       1: aload_0
+       2: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+       5: aload_2
+       6: getfield      #182                // Field necesse/level/maps/levelData/settlementData/SettlementStoragePickupSlot.item:Lnecesse/inventory/InventoryItem;
+       9: invokevirtual #186                // Method necesse/inventory/InventoryItem.getAmount:()I
+      12: isub
+      13: putfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+      16: aload_0
+      17: getfield      #179                // Field necesse/level/maps/levelData/settlementData/storage/SettlementStorageRecord.itemAmount:I
+      20: ifgt          34
+      23: aload_1
+      24: invokevirtual #192                // Method necesse/engine/util/GameLinkedList$Element.isRemoved:()Z
+      27: ifne          34
+      30: aload_1
+      31: invokevirtual #195                // Method necesse/engine/util/GameLinkedList$Element.remove:()V
+      34: return
+
+  private double lambda$findPickupSlots$1(necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: getfield      #13                 // Field currentTile:Ljava/awt/Point;
+       4: aload_1
+       5: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       8: checkcast     #110                // class java/util/Map$Entry
+      11: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      16: checkcast     #198                // class java/awt/geom/Point2D
+      19: invokevirtual #200                // Method java/awt/Point.distance:(Ljava/awt/geom/Point2D;)D
+      22: dreturn
+
+  private static boolean lambda$findPickupSlots$0(java.util.HashSet, necesse.engine.util.GameLinkedList$Element);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: getfield      #106                // Field necesse/engine/util/GameLinkedList$Element.object:Ljava/lang/Object;
+       5: checkcast     #110                // class java/util/Map$Entry
+       8: invokeinterface #112,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      13: invokevirtual #204                // Method java/util/HashSet.contains:(Ljava/lang/Object;)Z
+      16: ifne          23
+      19: iconst_1
+      20: goto          24
+      23: iconst_0
+      24: ireturn
+}

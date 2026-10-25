@@ -1,0 +1,1552 @@
+{
+  "source": "built-in imagegen",
+  "grid": "6 columns, 4 directions UP RIGHT DOWN LEFT",
+  "export": "reviewed alpha components; constant per-direction scale; foot 32,52; original alpha preserved",
+  "prompt": "Exact reference character identity, compact pixel RPG, empty hands; ready/windup/raised/strike/followthrough/ready; transparent; no tools/shadows/text. Player follow-up removes surrounding haze.",
+  "actors": {
+    "player": {
+      "source": "mosslume/art/characters-r6/sources/player-attack-v1.png",
+      "sha256": "11b62e76653a1ca1fde75bb9f019eac1d71eec30a7fb9ec3c1210e7d73f2f764",
+      "actions": {
+        "up": {
+          "file": "mod/resources/mosslume/players/player-attack-up.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                91,
+                95,
+                194,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                322,
+                94,
+                457,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                583,
+                67,
+                693,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                819,
+                94,
+                969,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1067,
+                104,
+                1224,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1340,
+                95,
+                1442,
+                272
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "right": {
+          "file": "mod/resources/mosslume/players/player-attack-right.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                91,
+                336,
+                194,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                328,
+                334,
+                459,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                585,
+                313,
+                698,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                808,
+                334,
+                976,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1061,
+                342,
+                1236,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1339,
+                336,
+                1443,
+                515
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "down": {
+          "file": "mod/resources/mosslume/players/player-attack-down.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                87,
+                561,
+                201,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                325,
+                562,
+                456,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                583,
+                544,
+                698,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                819,
+                563,
+                943,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1063,
+                572,
+                1222,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1335,
+                561,
+                1449,
+                740
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "left": {
+          "file": "mod/resources/mosslume/players/player-attack-left.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                91,
+                784,
+                192,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                336,
+                784,
+                466,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                581,
+                764,
+                698,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                811,
+                784,
+                981,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1061,
+                793,
+                1233,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1339,
+                784,
+                1440,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1787709497206704,
+              "toolInFrame": false
+            }
+          ]
+        }
+      }
+    },
+    "farmer": {
+      "source": "mosslume/art/characters-r6/sources/farmer-attack-v1.png",
+      "sha256": "15c0ad2f73b3414e39075f18a4b5e41cc9d068e0fd58bf10f5fa0fe3244d497b",
+      "actions": {
+        "up": {
+          "file": "mod/resources/mosslume/residents/farmer-attack-up.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                86,
+                78,
+                169,
+                228
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                344,
+                77,
+                437,
+                229
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                601,
+                68,
+                694,
+                228
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                842,
+                80,
+                942,
+                228
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1104,
+                78,
+                1202,
+                229
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1366,
+                78,
+                1449,
+                228
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.21333333333333335,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "right": {
+          "file": "mod/resources/mosslume/residents/farmer-attack-right.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                88,
+                313,
+                174,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                336,
+                314,
+                443,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                609,
+                311,
+                715,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                853,
+                313,
+                963,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1095,
+                315,
+                1235,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1368,
+                313,
+                1454,
+                483
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.18823529411764706,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "down": {
+          "file": "mod/resources/mosslume/residents/farmer-attack-down.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                83,
+                565,
+                173,
+                720
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                336,
+                570,
+                439,
+                723
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                600,
+                556,
+                692,
+                715
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                847,
+                570,
+                937,
+                724
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1094,
+                565,
+                1207,
+                723
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1362,
+                565,
+                1451,
+                720
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.2064516129032258,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "left": {
+          "file": "mod/resources/mosslume/residents/farmer-attack-left.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                77,
+                795,
+                165,
+                966
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                337,
+                790,
+                438,
+                966
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                577,
+                793,
+                685,
+                965
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                822,
+                795,
+                945,
+                963
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1081,
+                798,
+                1208,
+                966
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1357,
+                795,
+                1445,
+                966
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            }
+          ]
+        }
+      }
+    },
+    "carpenter": {
+      "source": "mosslume/art/characters-r6/sources/carpenter-attack-v1.png",
+      "sha256": "1dd106b6a3eabedf93079af39c3ef87f8252a7c6fed115d628cab86aa51e741e",
+      "actions": {
+        "up": {
+          "file": "mod/resources/mosslume/residents/carpenter-attack-up.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                76,
+                86,
+                179,
+                257
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                328,
+                86,
+                449,
+                257
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                580,
+                79,
+                698,
+                260
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                832,
+                74,
+                954,
+                261
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1085,
+                79,
+                1215,
+                261
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1357,
+                86,
+                1460,
+                257
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1871345029239766,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "right": {
+          "file": "mod/resources/mosslume/residents/carpenter-attack-right.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                79,
+                315,
+                178,
+                495
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                326,
+                316,
+                449,
+                497
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                586,
+                313,
+                692,
+                497
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                836,
+                316,
+                990,
+                497
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1097,
+                320,
+                1252,
+                497
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1358,
+                314,
+                1459,
+                495
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1772853185595568,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "down": {
+          "file": "mod/resources/mosslume/residents/carpenter-attack-down.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                74,
+                551,
+                180,
+                729
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                324,
+                547,
+                449,
+                732
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                575,
+                547,
+                696,
+                730
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                842,
+                554,
+                952,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1096,
+                555,
+                1213,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1353,
+                554,
+                1459,
+                730
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1807909604519774,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "left": {
+          "file": "mod/resources/mosslume/residents/carpenter-attack-left.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                73,
+                786,
+                175,
+                972
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                305,
+                786,
+                438,
+                973
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                587,
+                784,
+                698,
+                970
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                793,
+                792,
+                947,
+                973
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1064,
+                791,
+                1203,
+                973
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1355,
+                787,
+                1455,
+                972
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1725067385444744,
+              "toolInFrame": false
+            }
+          ]
+        }
+      }
+    },
+    "merchant": {
+      "source": "mosslume/art/characters-r6/sources/merchant-attack-v1.png",
+      "sha256": "a343050673d19e02879a3df85997be2edebd111df561fcfa939787e7bacb0aaf",
+      "actions": {
+        "up": {
+          "file": "mod/resources/mosslume/residents/merchant-attack-up.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                83,
+                49,
+                195,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                346,
+                49,
+                470,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                577,
+                49,
+                718,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                837,
+                49,
+                989,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1104,
+                49,
+                1248,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1343,
+                49,
+                1456,
+                237
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1702127659574468,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "right": {
+          "file": "mod/resources/mosslume/residents/merchant-attack-right.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                82,
+                299,
+                190,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                326,
+                299,
+                448,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                595,
+                299,
+                696,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                836,
+                299,
+                985,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1088,
+                299,
+                1222,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1343,
+                299,
+                1451,
+                491
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.16666666666666666,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "down": {
+          "file": "mod/resources/mosslume/residents/merchant-attack-down.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                82,
+                550,
+                195,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                342,
+                550,
+                460,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                577,
+                550,
+                710,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                849,
+                550,
+                967,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1088,
+                551,
+                1240,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1343,
+                551,
+                1456,
+                738
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.17066666666666666,
+              "toolInFrame": false
+            }
+          ]
+        },
+        "left": {
+          "file": "mod/resources/mosslume/residents/merchant-attack-left.png",
+          "frames": [
+            {
+              "frame": 0,
+              "sourceBox": [
+                87,
+                794,
+                195,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            },
+            {
+              "frame": 1,
+              "sourceBox": [
+                339,
+                794,
+                460,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            },
+            {
+              "frame": 2,
+              "sourceBox": [
+                593,
+                794,
+                702,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            },
+            {
+              "frame": 3,
+              "sourceBox": [
+                802,
+                794,
+                961,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            },
+            {
+              "frame": 4,
+              "sourceBox": [
+                1097,
+                794,
+                1227,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            },
+            {
+              "frame": 5,
+              "sourceBox": [
+                1348,
+                795,
+                1456,
+                985
+              ],
+              "foot": [
+                32,
+                52
+              ],
+              "scale": 0.1679790026246719,
+              "toolInFrame": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

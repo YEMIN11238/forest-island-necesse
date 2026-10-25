@@ -1,0 +1,96 @@
+{
+  "scope": "Offline source-pixel and atlas validation. Asset GIF playback is not a native-game recording.",
+  "sourceGIFs": 7,
+  "sourceFramesExtracted": 83,
+  "originalWebPBodyCells": 27,
+  "originalWebPEffectCells": 30,
+  "generatedPixelsUsed": false,
+  "bosses": [
+    {
+      "boss": "stone-watcher",
+      "originalBodyLogicalHeight": 67,
+      "baseDimensions": [
+        768,
+        384
+      ],
+      "oneSourceScale": 0.2677165354330709,
+      "clips": [
+        {
+          "file": "stone-watcher-attack0.png",
+          "size": [
+            1536,
+            768
+          ],
+          "sourceFrames": 8,
+          "frameMillis": 90,
+          "emptyFrames": [],
+          "damageFrame": 3,
+          "foregroundRGBSubsetOfActualSourceFrame": true,
+          "sha256": "b878299aa0c70ed65e8f813f8e5cd83a98a2eba56de857ce9433dc1c9b51dd96",
+          "assetPlayback": "mosslume/art/bosses-r8/qa/direct-source/stone-watcher-attack0-asset-playback.gif"
+        },
+        {
+          "file": "stone-watcher-attack1.png",
+          "size": [
+            1920,
+            768
+          ],
+          "sourceFrames": 10,
+          "frameMillis": 90,
+          "emptyFrames": [],
+          "damageFrame": 5,
+          "foregroundRGBSubsetOfActualSourceFrame": true,
+          "sha256": "6ed27c48b0b8fb63daedea6d554d40b78e34451d2359845552ce511484962022",
+          "assetPlayback": "mosslume/art/bosses-r8/qa/direct-source/stone-watcher-attack1-asset-playback.gif"
+        }
+      ],
+      "death": "idle-fade; original attachments do not supply a corpse animation",
+      "directions": "Original side view with honest left/right mirroring and side-view aliases for up/down"
+    },
+    {
+      "boss": "moon-reaper",
+      "originalBodyLogicalHeight": 64,
+      "baseDimensions": [
+        768,
+        384
+      ],
+      "oneSourceScale": 0.3902439024390244,
+      "clips": [
+        {
+          "file": "moon-reaper-attack0.png",
+          "size": [
+            1536,
+            768
+          ],
+          "sourceFrames": 8,
+          "frameMillis": 90,
+          "emptyFrames": [],
+          "damageFrame": 4,
+          "foregroundRGBSubsetOfActualSourceFrame": true,
+          "sha256": "92e4dc07017238d0a00ce0d2cc8162ad80e08239ff4f7ceb42ff076a43888585",
+          "assetPlayback": "mosslume/art/bosses-r8/qa/direct-source/moon-reaper-attack0-asset-playback.gif"
+        },
+        {
+          "file": "moon-reaper-attack1.png",
+          "size": [
+            2688,
+            768
+          ],
+          "sourceFrames": 14,
+          "frameMillis": 90,
+          "emptyFrames": [
+            5,
+            6,
+            7
+          ],
+          "damageFrame": 10,
+          "foregroundRGBSubsetOfActualSourceFrame": true,
+          "sha256": "7c9d6a9d246d07f60330414c59bdd48a46b6ddc955bc4a62347c8e79663d73d8",
+          "assetPlayback": "mosslume/art/bosses-r8/qa/direct-source/moon-reaper-attack1-asset-playback.gif"
+        }
+      ],
+      "death": "idle-fade; original attachments do not supply a corpse animation",
+      "directions": "Original side view with honest left/right mirroring and side-view aliases for up/down"
+    }
+  ]
+}

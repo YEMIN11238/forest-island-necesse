@@ -1,0 +1,793 @@
+{
+  "date": "2026-10-25",
+  "purpose": "Measured actual native tree motion after shared crown amplitude/speed adjustment; no draw-counter inference.",
+  "method": {
+    "images": "Existing actual capture frames; a PNG and b lossless BMP, 1200x900. Decode via ImageIO without rescaling.",
+    "timeWindow": "previous_presented_animation_seconds < 4.0 from frames.csv; excludes day/night comparison transition.",
+    "upperCrownRoiXYWH": [
+      612,
+      103,
+      76,
+      35
+    ],
+    "lowerCrownRoiXYWH": [
+      609,
+      151,
+      78,
+      32
+    ],
+    "fixedDoorRoiXYWH": [
+      330,
+      174,
+      25,
+      45
+    ],
+    "fixedTrunkDarkMaskRoiXYWH": [
+      640,
+      202,
+      17,
+      22
+    ],
+    "ncc": "Horizontal normalized cross-correlation of log(1+0.299R+0.587G+0.114B), integer shifts -4...4 and a three-point parabolic subpixel estimate around the maximum. Each case compared to its first night frame. Fixed camera.",
+    "trunkControl": "Count differing pixels in max(R,G,B)<=8 masks relative to first frame; a and b both zero changed pixels.",
+    "limitations": "Subpixel displacement is an estimate of this representative canopy texture patch, not a direct GPU transform readback or all-tree motion measurement. Lighting may vary locally; stable door/trunk controls reduce but do not remove all uncertainty. Different frame times and updated wind speed prevent a strict amplitude-only A/B. This does not establish an exact reference-video match or a 60fps recording."
+  },
+  "cases": {
+    "r7-life-visual-20261025-a": {
+      "frameCountAnalyzed": 28,
+      "upperCrownPeakToPeakEstimatePixels": 0.6705,
+      "lowerCrownPeakToPeakEstimatePixels": 0.0841,
+      "fixedDoorPeakToPeakEstimatePixels": 0.0027,
+      "maximumTrunkDarkOutlineChangedPixels": 0,
+      "csvSha256": "def0e3813d43ceec5a82276759657545da003f4fba328077c4e35914bc949b82",
+      "captureTotalFrames": 60,
+      "captureElapsedSeconds": 9.288586,
+      "queueBackpressureSkips": 149,
+      "missedCaptureIntervals": 14,
+      "measurements": [
+        {
+          "previousPresentedAnimationSeconds": 0.056232,
+          "upperCrownShiftPixels": -0.0082,
+          "lowerCrownShiftPixels": 0.0005,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.068574,
+          "upperCrownShiftPixels": -0.0024,
+          "lowerCrownShiftPixels": 0.0005,
+          "fixedDoorShiftPixels": 0.0114
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.483503,
+          "upperCrownShiftPixels": 0.2036,
+          "lowerCrownShiftPixels": 0.0346,
+          "fixedDoorShiftPixels": 0.0098
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.532009,
+          "upperCrownShiftPixels": 0.2247,
+          "lowerCrownShiftPixels": 0.0393,
+          "fixedDoorShiftPixels": 0.0098
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.57617,
+          "upperCrownShiftPixels": 0.2437,
+          "lowerCrownShiftPixels": 0.0419,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.694654,
+          "upperCrownShiftPixels": 0.3027,
+          "lowerCrownShiftPixels": 0.0489,
+          "fixedDoorShiftPixels": 0.0101
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.820969,
+          "upperCrownShiftPixels": 0.3599,
+          "lowerCrownShiftPixels": 0.0564,
+          "fixedDoorShiftPixels": 0.0103
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.945682,
+          "upperCrownShiftPixels": 0.4252,
+          "lowerCrownShiftPixels": 0.0631,
+          "fixedDoorShiftPixels": 0.0104
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.070992,
+          "upperCrownShiftPixels": 0.4882,
+          "lowerCrownShiftPixels": 0.0686,
+          "fixedDoorShiftPixels": 0.0098
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.247484,
+          "upperCrownShiftPixels": 0.5614,
+          "lowerCrownShiftPixels": 0.0749,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.439276,
+          "upperCrownShiftPixels": 0.6162,
+          "lowerCrownShiftPixels": 0.0778,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.62291,
+          "upperCrownShiftPixels": 0.6468,
+          "lowerCrownShiftPixels": 0.0824,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.748628,
+          "upperCrownShiftPixels": 0.6578,
+          "lowerCrownShiftPixels": 0.0846,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.871915,
+          "upperCrownShiftPixels": 0.6623,
+          "lowerCrownShiftPixels": 0.0847,
+          "fixedDoorShiftPixels": 0.0107
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.066029,
+          "upperCrownShiftPixels": 0.6557,
+          "lowerCrownShiftPixels": 0.0829,
+          "fixedDoorShiftPixels": 0.0102
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.258827,
+          "upperCrownShiftPixels": 0.6372,
+          "lowerCrownShiftPixels": 0.0808,
+          "fixedDoorShiftPixels": 0.0106
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.45074,
+          "upperCrownShiftPixels": 0.5997,
+          "lowerCrownShiftPixels": 0.0772,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.621267,
+          "upperCrownShiftPixels": 0.5522,
+          "lowerCrownShiftPixels": 0.073,
+          "fixedDoorShiftPixels": 0.0113
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.749389,
+          "upperCrownShiftPixels": 0.5102,
+          "lowerCrownShiftPixels": 0.0694,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.870072,
+          "upperCrownShiftPixels": 0.4607,
+          "lowerCrownShiftPixels": 0.0656,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.988071,
+          "upperCrownShiftPixels": 0.4122,
+          "lowerCrownShiftPixels": 0.0621,
+          "fixedDoorShiftPixels": 0.0113
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.117711,
+          "upperCrownShiftPixels": 0.3599,
+          "lowerCrownShiftPixels": 0.0565,
+          "fixedDoorShiftPixels": 0.0116
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.249863,
+          "upperCrownShiftPixels": 0.3145,
+          "lowerCrownShiftPixels": 0.0514,
+          "fixedDoorShiftPixels": 0.0117
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.36545,
+          "upperCrownShiftPixels": 0.277,
+          "lowerCrownShiftPixels": 0.0464,
+          "fixedDoorShiftPixels": 0.012
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.498709,
+          "upperCrownShiftPixels": 0.2303,
+          "lowerCrownShiftPixels": 0.0401,
+          "fixedDoorShiftPixels": 0.0121
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.620084,
+          "upperCrownShiftPixels": 0.195,
+          "lowerCrownShiftPixels": 0.0338,
+          "fixedDoorShiftPixels": 0.0124
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.783828,
+          "upperCrownShiftPixels": 0.1474,
+          "lowerCrownShiftPixels": 0.0279,
+          "fixedDoorShiftPixels": 0.0124
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.870896,
+          "upperCrownShiftPixels": 0.1215,
+          "lowerCrownShiftPixels": 0.0237,
+          "fixedDoorShiftPixels": 0.0123
+        }
+      ]
+    },
+    "r7-life-visual-20261025-b": {
+      "frameCountAnalyzed": 93,
+      "upperCrownPeakToPeakEstimatePixels": 1.2682,
+      "lowerCrownPeakToPeakEstimatePixels": 0.1769,
+      "fixedDoorPeakToPeakEstimatePixels": 0.0028,
+      "maximumTrunkDarkOutlineChangedPixels": 0,
+      "csvSha256": "2fcf251ad40196b129ffe40eb618ff499724a0d39bda293df64825e9cdd1eb22",
+      "captureTotalFrames": 187,
+      "captureElapsedSeconds": 8.009802,
+      "queueBackpressureSkips": 0,
+      "missedCaptureIntervals": 5,
+      "measurements": [
+        {
+          "previousPresentedAnimationSeconds": 0.064039,
+          "upperCrownShiftPixels": -0.0178,
+          "lowerCrownShiftPixels": 0.0005,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.077759,
+          "upperCrownShiftPixels": -0.0041,
+          "lowerCrownShiftPixels": 0.0052,
+          "fixedDoorShiftPixels": 0.0114
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.197913,
+          "upperCrownShiftPixels": 0.1282,
+          "lowerCrownShiftPixels": 0.0228,
+          "fixedDoorShiftPixels": 0.0112
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.220504,
+          "upperCrownShiftPixels": 0.1565,
+          "lowerCrownShiftPixels": 0.0254,
+          "fixedDoorShiftPixels": 0.0111
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.279395,
+          "upperCrownShiftPixels": 0.2382,
+          "lowerCrownShiftPixels": 0.0388,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.304934,
+          "upperCrownShiftPixels": 0.2742,
+          "lowerCrownShiftPixels": 0.044,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.334039,
+          "upperCrownShiftPixels": 0.3261,
+          "lowerCrownShiftPixels": 0.0482,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.410304,
+          "upperCrownShiftPixels": 0.4315,
+          "lowerCrownShiftPixels": 0.0607,
+          "fixedDoorShiftPixels": 0.0099
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.428554,
+          "upperCrownShiftPixels": 0.4578,
+          "lowerCrownShiftPixels": 0.064,
+          "fixedDoorShiftPixels": 0.0099
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.495713,
+          "upperCrownShiftPixels": 0.5611,
+          "lowerCrownShiftPixels": 0.073,
+          "fixedDoorShiftPixels": 0.0099
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.50602,
+          "upperCrownShiftPixels": 0.5736,
+          "lowerCrownShiftPixels": 0.0748,
+          "fixedDoorShiftPixels": 0.0099
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.571085,
+          "upperCrownShiftPixels": 0.6544,
+          "lowerCrownShiftPixels": 0.0843,
+          "fixedDoorShiftPixels": 0.0098
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.591737,
+          "upperCrownShiftPixels": 0.6745,
+          "lowerCrownShiftPixels": 0.0868,
+          "fixedDoorShiftPixels": 0.0096
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.627942,
+          "upperCrownShiftPixels": 0.713,
+          "lowerCrownShiftPixels": 0.0907,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.708497,
+          "upperCrownShiftPixels": 0.7787,
+          "lowerCrownShiftPixels": 0.0989,
+          "fixedDoorShiftPixels": 0.0102
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.788995,
+          "upperCrownShiftPixels": 0.8373,
+          "lowerCrownShiftPixels": 0.1089,
+          "fixedDoorShiftPixels": 0.0103
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.823631,
+          "upperCrownShiftPixels": 0.859,
+          "lowerCrownShiftPixels": 0.113,
+          "fixedDoorShiftPixels": 0.0103
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.871462,
+          "upperCrownShiftPixels": 0.8872,
+          "lowerCrownShiftPixels": 0.1186,
+          "fixedDoorShiftPixels": 0.0105
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.907803,
+          "upperCrownShiftPixels": 0.91,
+          "lowerCrownShiftPixels": 0.1227,
+          "fixedDoorShiftPixels": 0.0105
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.957452,
+          "upperCrownShiftPixels": 0.9455,
+          "lowerCrownShiftPixels": 0.1277,
+          "fixedDoorShiftPixels": 0.0104
+        },
+        {
+          "previousPresentedAnimationSeconds": 0.973094,
+          "upperCrownShiftPixels": 0.957,
+          "lowerCrownShiftPixels": 0.1286,
+          "fixedDoorShiftPixels": 0.0104
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.026979,
+          "upperCrownShiftPixels": 0.9932,
+          "lowerCrownShiftPixels": 0.1344,
+          "fixedDoorShiftPixels": 0.0104
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.075141,
+          "upperCrownShiftPixels": 1.0199,
+          "lowerCrownShiftPixels": 0.1392,
+          "fixedDoorShiftPixels": 0.0098
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.121549,
+          "upperCrownShiftPixels": 1.0432,
+          "lowerCrownShiftPixels": 0.1418,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.143798,
+          "upperCrownShiftPixels": 1.0548,
+          "lowerCrownShiftPixels": 0.1434,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.195421,
+          "upperCrownShiftPixels": 1.0811,
+          "lowerCrownShiftPixels": 0.1473,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.248714,
+          "upperCrownShiftPixels": 1.1058,
+          "lowerCrownShiftPixels": 0.1525,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.273334,
+          "upperCrownShiftPixels": 1.1161,
+          "lowerCrownShiftPixels": 0.1525,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.300427,
+          "upperCrownShiftPixels": 1.1276,
+          "lowerCrownShiftPixels": 0.154,
+          "fixedDoorShiftPixels": 0.0097
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.334921,
+          "upperCrownShiftPixels": 1.139,
+          "lowerCrownShiftPixels": 0.1568,
+          "fixedDoorShiftPixels": 0.0099
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.41269,
+          "upperCrownShiftPixels": 1.1612,
+          "lowerCrownShiftPixels": 0.1606,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.449283,
+          "upperCrownShiftPixels": 1.1713,
+          "lowerCrownShiftPixels": 0.162,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.495909,
+          "upperCrownShiftPixels": 1.1793,
+          "lowerCrownShiftPixels": 0.1643,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.529299,
+          "upperCrownShiftPixels": 1.1872,
+          "lowerCrownShiftPixels": 0.1643,
+          "fixedDoorShiftPixels": 0.0101
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.58257,
+          "upperCrownShiftPixels": 1.1913,
+          "lowerCrownShiftPixels": 0.1651,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.614624,
+          "upperCrownShiftPixels": 1.1926,
+          "lowerCrownShiftPixels": 0.1664,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.659928,
+          "upperCrownShiftPixels": 1.1926,
+          "lowerCrownShiftPixels": 0.1664,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.699183,
+          "upperCrownShiftPixels": 1.1913,
+          "lowerCrownShiftPixels": 0.1651,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.748412,
+          "upperCrownShiftPixels": 1.1872,
+          "lowerCrownShiftPixels": 0.1643,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.782296,
+          "upperCrownShiftPixels": 1.1793,
+          "lowerCrownShiftPixels": 0.1643,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.833077,
+          "upperCrownShiftPixels": 1.1701,
+          "lowerCrownShiftPixels": 0.162,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.866536,
+          "upperCrownShiftPixels": 1.1613,
+          "lowerCrownShiftPixels": 0.1606,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.912008,
+          "upperCrownShiftPixels": 1.1514,
+          "lowerCrownShiftPixels": 0.1588,
+          "fixedDoorShiftPixels": 0.0107
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.949173,
+          "upperCrownShiftPixels": 1.139,
+          "lowerCrownShiftPixels": 0.1569,
+          "fixedDoorShiftPixels": 0.0106
+        },
+        {
+          "previousPresentedAnimationSeconds": 1.9892,
+          "upperCrownShiftPixels": 1.1276,
+          "lowerCrownShiftPixels": 0.154,
+          "fixedDoorShiftPixels": 0.0106
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.029666,
+          "upperCrownShiftPixels": 1.1134,
+          "lowerCrownShiftPixels": 0.1525,
+          "fixedDoorShiftPixels": 0.0102
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.071992,
+          "upperCrownShiftPixels": 1.096,
+          "lowerCrownShiftPixels": 0.1497,
+          "fixedDoorShiftPixels": 0.0103
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.121584,
+          "upperCrownShiftPixels": 1.0723,
+          "lowerCrownShiftPixels": 0.1473,
+          "fixedDoorShiftPixels": 0.0102
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.159414,
+          "upperCrownShiftPixels": 1.0549,
+          "lowerCrownShiftPixels": 0.1434,
+          "fixedDoorShiftPixels": 0.0101
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.205973,
+          "upperCrownShiftPixels": 1.0364,
+          "lowerCrownShiftPixels": 0.1404,
+          "fixedDoorShiftPixels": 0.0102
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.243572,
+          "upperCrownShiftPixels": 1.0199,
+          "lowerCrownShiftPixels": 0.1392,
+          "fixedDoorShiftPixels": 0.01
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.277404,
+          "upperCrownShiftPixels": 1.0033,
+          "lowerCrownShiftPixels": 0.1355,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.32539,
+          "upperCrownShiftPixels": 0.9799,
+          "lowerCrownShiftPixels": 0.1321,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.339694,
+          "upperCrownShiftPixels": 0.9714,
+          "lowerCrownShiftPixels": 0.1312,
+          "fixedDoorShiftPixels": 0.0108
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.412164,
+          "upperCrownShiftPixels": 0.9271,
+          "lowerCrownShiftPixels": 0.1238,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.447641,
+          "upperCrownShiftPixels": 0.9065,
+          "lowerCrownShiftPixels": 0.1213,
+          "fixedDoorShiftPixels": 0.011
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.497062,
+          "upperCrownShiftPixels": 0.8818,
+          "lowerCrownShiftPixels": 0.1171,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.527498,
+          "upperCrownShiftPixels": 0.8664,
+          "lowerCrownShiftPixels": 0.1148,
+          "fixedDoorShiftPixels": 0.0109
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.578446,
+          "upperCrownShiftPixels": 0.8416,
+          "lowerCrownShiftPixels": 0.109,
+          "fixedDoorShiftPixels": 0.0113
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.613437,
+          "upperCrownShiftPixels": 0.8251,
+          "lowerCrownShiftPixels": 0.1065,
+          "fixedDoorShiftPixels": 0.0113
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.662835,
+          "upperCrownShiftPixels": 0.7976,
+          "lowerCrownShiftPixels": 0.1006,
+          "fixedDoorShiftPixels": 0.0114
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.69634,
+          "upperCrownShiftPixels": 0.7787,
+          "lowerCrownShiftPixels": 0.0989,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.74572,
+          "upperCrownShiftPixels": 0.7476,
+          "lowerCrownShiftPixels": 0.0943,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.779367,
+          "upperCrownShiftPixels": 0.7267,
+          "lowerCrownShiftPixels": 0.0927,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.826112,
+          "upperCrownShiftPixels": 0.697,
+          "lowerCrownShiftPixels": 0.088,
+          "fixedDoorShiftPixels": 0.0116
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.859889,
+          "upperCrownShiftPixels": 0.669,
+          "lowerCrownShiftPixels": 0.086,
+          "fixedDoorShiftPixels": 0.0117
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.912511,
+          "upperCrownShiftPixels": 0.6287,
+          "lowerCrownShiftPixels": 0.0811,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.949751,
+          "upperCrownShiftPixels": 0.5987,
+          "lowerCrownShiftPixels": 0.0772,
+          "fixedDoorShiftPixels": 0.0117
+        },
+        {
+          "previousPresentedAnimationSeconds": 2.995345,
+          "upperCrownShiftPixels": 0.558,
+          "lowerCrownShiftPixels": 0.073,
+          "fixedDoorShiftPixels": 0.0113
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.029479,
+          "upperCrownShiftPixels": 0.532,
+          "lowerCrownShiftPixels": 0.0697,
+          "fixedDoorShiftPixels": 0.0114
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.082882,
+          "upperCrownShiftPixels": 0.4755,
+          "lowerCrownShiftPixels": 0.0642,
+          "fixedDoorShiftPixels": 0.0115
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.111311,
+          "upperCrownShiftPixels": 0.4435,
+          "lowerCrownShiftPixels": 0.0613,
+          "fixedDoorShiftPixels": 0.0116
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.158872,
+          "upperCrownShiftPixels": 0.3998,
+          "lowerCrownShiftPixels": 0.0564,
+          "fixedDoorShiftPixels": 0.0117
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.200049,
+          "upperCrownShiftPixels": 0.3641,
+          "lowerCrownShiftPixels": 0.0532,
+          "fixedDoorShiftPixels": 0.0118
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.239513,
+          "upperCrownShiftPixels": 0.3347,
+          "lowerCrownShiftPixels": 0.049,
+          "fixedDoorShiftPixels": 0.0117
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.277115,
+          "upperCrownShiftPixels": 0.2971,
+          "lowerCrownShiftPixels": 0.0455,
+          "fixedDoorShiftPixels": 0.0118
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.33265,
+          "upperCrownShiftPixels": 0.2522,
+          "lowerCrownShiftPixels": 0.0403,
+          "fixedDoorShiftPixels": 0.0118
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.362854,
+          "upperCrownShiftPixels": 0.2304,
+          "lowerCrownShiftPixels": 0.0362,
+          "fixedDoorShiftPixels": 0.012
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.41188,
+          "upperCrownShiftPixels": 0.1887,
+          "lowerCrownShiftPixels": 0.0303,
+          "fixedDoorShiftPixels": 0.0121
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.444939,
+          "upperCrownShiftPixels": 0.1594,
+          "lowerCrownShiftPixels": 0.0281,
+          "fixedDoorShiftPixels": 0.0121
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.495594,
+          "upperCrownShiftPixels": 0.1291,
+          "lowerCrownShiftPixels": 0.0228,
+          "fixedDoorShiftPixels": 0.0122
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.527622,
+          "upperCrownShiftPixels": 0.1115,
+          "lowerCrownShiftPixels": 0.0183,
+          "fixedDoorShiftPixels": 0.0123
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.577222,
+          "upperCrownShiftPixels": 0.0848,
+          "lowerCrownShiftPixels": 0.0149,
+          "fixedDoorShiftPixels": 0.0123
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.616337,
+          "upperCrownShiftPixels": 0.0647,
+          "lowerCrownShiftPixels": 0.0122,
+          "fixedDoorShiftPixels": 0.0124
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.660077,
+          "upperCrownShiftPixels": 0.0399,
+          "lowerCrownShiftPixels": 0.0097,
+          "fixedDoorShiftPixels": 0.0123
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.695624,
+          "upperCrownShiftPixels": 0.0242,
+          "lowerCrownShiftPixels": 0.008,
+          "fixedDoorShiftPixels": 0.0125
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.746266,
+          "upperCrownShiftPixels": 0.0015,
+          "lowerCrownShiftPixels": 0.0052,
+          "fixedDoorShiftPixels": 0.0125
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.777856,
+          "upperCrownShiftPixels": -0.0115,
+          "lowerCrownShiftPixels": 0.0019,
+          "fixedDoorShiftPixels": 0.0124
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.827739,
+          "upperCrownShiftPixels": -0.0308,
+          "lowerCrownShiftPixels": -0.0016,
+          "fixedDoorShiftPixels": 0.0123
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.860915,
+          "upperCrownShiftPixels": -0.041,
+          "lowerCrownShiftPixels": -0.0024,
+          "fixedDoorShiftPixels": 0.0123
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.910112,
+          "upperCrownShiftPixels": -0.0551,
+          "lowerCrownShiftPixels": -0.0055,
+          "fixedDoorShiftPixels": 0.0122
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.949616,
+          "upperCrownShiftPixels": -0.0657,
+          "lowerCrownShiftPixels": -0.0086,
+          "fixedDoorShiftPixels": 0.0122
+        },
+        {
+          "previousPresentedAnimationSeconds": 3.996555,
+          "upperCrownShiftPixels": -0.0755,
+          "lowerCrownShiftPixels": -0.0106,
+          "fixedDoorShiftPixels": 0.0122
+        }
+      ]
+    }
+  },
+  "upperCrownMeasuredRangeRatioBtoA": 1.8914,
+  "result": "PASS representative canopy moves smoothly outward and back over first four seconds; b motion range is larger, and fixed trunk/door remain stable. User perception remains subject to preview playback and display scale."
+}

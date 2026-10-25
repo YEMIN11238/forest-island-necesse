@@ -1,0 +1,102 @@
+[
+  {
+    "file": "mod/resources/mosslume/residents/farmer-attack-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-attack-down.png",
+    "sha256": "e5a032779e35722e0b8d9640d08238a1603cd6a244c3e9fb6e5b21c49b51cfb0"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-attack-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-attack-left.png",
+    "sha256": "e229718cf36c7f8bd4b96fb7a865e751c9afddbb48a0dbcadfeaa81707d2757d"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-attack-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-attack-right.png",
+    "sha256": "188da4c79c15c7077906221970bc50abac17053c259734795ce7676f83f345cb"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-attack-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-attack-up.png",
+    "sha256": "c4c97a94c5705f2af98668f38029c8c1efab002e7aa8e28fd20b6b5ec811ecba"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-carry.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-carry.png",
+    "sha256": "c6466f285aad2237bb8b68820500892c06f545d850467e3bc28dbe9547f6c459"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-down.png",
+    "sha256": "6f5efcfe534d4b980649f59b4a0516d3626ce1fea2007f8bfe48aef297cb9eef"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-downed.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-downed.png",
+    "sha256": "0c4d4269e88f6c74f2dca27845aaa45561cdc1f8dfaa2ac692f36947575f1e3f"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-idle-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-idle-down.png",
+    "sha256": "8e3aee4b92de1480f173f7c2ced4840c6b730db5008a5775649ce3d354fcb9b2"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-idle-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-idle-left.png",
+    "sha256": "d12c1c50f2e4b4b1c11bbb60360da472d96ccdb334c307edb34c1e6ccc8c545e"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-idle-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-idle-right.png",
+    "sha256": "bf8a12a917fbe8ebbb92041abeb4acdee5f5c5618a90db6b43df0abd60cf00a4"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-idle-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-idle-up.png",
+    "sha256": "5d5081e340a99b68ddeb2d6a1ffc857be507d103f930b9b0005a1851b2208451"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-left.png",
+    "sha256": "b3f51b2d7e5db7c3b098932f8725d633ed06286a796e9330f9a48b0ebcbf24bd"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-right.png",
+    "sha256": "2a71efab7e0c9b4d17d62443d70f870503849a8b491d39bcb835b0e77a934ab0"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-sleep.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-sleep.png",
+    "sha256": "37aef3b56817b46a8ede295e332deec9b713d2d74c157b9f13d71322271dbb7f"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-up.png",
+    "sha256": "a6f3f994665e199b050ebb99616470ac7f44147dce27ff29da1d18fa7029b9f6"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-walk-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-walk-down.png",
+    "sha256": "e19d5b94f6b471c475f0101687cd63a8b600cb270e40ded5532555fceac25503"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-walk-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-walk-left.png",
+    "sha256": "84e7102a80e743020416dc897280373f845570f604687ab92c9f870afbd24f9f"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-walk-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-walk-right.png",
+    "sha256": "c6a69e537bf6427544aededaf23066a670e7253ec2044721d636d4b583484a5d"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-walk-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-walk-up.png",
+    "sha256": "7975103342405890c26aeafe3c14be78ad5e2b2659974f71e45fede0e4438fd7"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/farmer-work.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/farmer-work.png",
+    "sha256": "a89562fce1b86707751352e8766c573f31877bb4ebf4243afa8cac4e34c14859"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "mod/resources/mosslume/residents/merchant-attack-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-attack-down.png",
+    "sha256": "043ac2ea44554f2477cc18a5ac2992728e077e50860f44553db837f3e82bd7bc"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-attack-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-attack-left.png",
+    "sha256": "c85b5ad170892e0a509eb2f9011eb49d093a5e82f687881de4a525a1d4a064b5"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-attack-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-attack-right.png",
+    "sha256": "cc438211b72459a8e63338c521bedb08de6b2d907fb6c5de162d181d72834088"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-attack-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-attack-up.png",
+    "sha256": "97adfc2ce1d8cc459340abb7f49f7110a8c19da93f0a089be3e8d58a011dc893"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-down.png",
+    "sha256": "69b677676605a69c7401b2e16440cb4299edb93468ca026b707e875366005226"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-left.png",
+    "sha256": "8cb471d07c9425043ff0d3c06ae083af9ec0f3752ab3fec3187cc567a0dc8f60"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-right.png",
+    "sha256": "94a82296c735513af2409feb924ec765ad8a176cdf9d2a96b4d40b948d7c376e"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/merchant-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/merchant-up.png",
+    "sha256": "d61597b24c2807f0d98cdf9440ac2c27592d2556b327a6e99030e84ed13b2548"
+  }
+]

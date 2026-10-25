@@ -1,0 +1,262 @@
+{
+  "date": "2026-10-23",
+  "sourceAtlases": 23,
+  "sourcePixelsModified": false,
+  "gameIntegrated": false,
+  "checks": [
+    {
+      "id": "grass-earth-terraces",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "meadow-dirt-transitions",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1267,
+        1241
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "stone-terraces",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "coastal-sand-edges",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "stone-stairs-passages",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "wooden-bridge-modules",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "woodland-workshop-layers",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "fishing-hut-layers",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "deer-directional-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "chicken-directional-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1262,
+        1246
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "thorn-beast-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "tide-crab-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "coastal-life-props",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "forest-coast-combat-vfx",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "cave-wall-connectors",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mountain-ground-materials",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mountain-ore-crystal-resources",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mine-entrance-layers",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mountain-stone-shelter-layers",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mountain-goat-directional-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "cave-bat-directional-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "mountain-rock-beast-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "cave-crystal-beetle-poses",
+      "copyMatchesGeneratedSource": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "hasTransparentPixels": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false
+    }
+  ],
+  "scope": "Source file integrity, alpha and preview regions only; not seamless tiles or production animation acceptance."
+}

@@ -1,0 +1,2307 @@
+{
+  "biome": "wetland",
+  "tilePixels": 32,
+  "sourceBatches": [
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourcePixelsModified": false,
+  "directionOrder": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "LEFT"
+  ],
+  "runtimeExportVersion": 1,
+  "entries": [
+    {
+      "id": "ground",
+      "file": "wetland/ground.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "0260e4189371782859f3006067926a078ad138b4e083dd35fc52dd2272dabbe3",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "opaque_ground",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            144,
+            57,
+            458,
+            344
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "interiorCropLTRB": [
+        78,
+        72,
+        236,
+        215
+      ],
+      "tiling": "mirror-repeat of interior sample; matching border texels"
+    },
+    {
+      "id": "terrain-0",
+      "file": "wetland/terrain-0.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "70ea3084438a491cf0af0e10c0ef2f9a424619735fb4f53e73429b9da264f8fb",
+      "alphaBounds": [
+        8,
+        2,
+        56,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            144,
+            57,
+            458,
+            344
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-1",
+      "file": "wetland/terrain-1.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "04210982451e67e5a98877c4dbe3d463f96a5a7feb39342d38062c0bd5586787",
+      "alphaBounds": [
+        8,
+        2,
+        57,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            608,
+            56,
+            928,
+            344
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-2",
+      "file": "wetland/terrain-2.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "6e16ada7bb64a21f332a29b3200e215110724cbd7bfb0efb94b7940e4a7e69b3",
+      "alphaBounds": [
+        8,
+        2,
+        56,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1067,
+            58,
+            1394,
+            355
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-3",
+      "file": "wetland/terrain-3.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "1486229383627d3238502b3add77afea8b18ec2ca3d88ec7e921f90b2ec04460",
+      "alphaBounds": [
+        2,
+        5,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            135,
+            404,
+            475,
+            638
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-4",
+      "file": "wetland/terrain-4.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "ca57fccca6c208f47e4a3dd4ebf5da027561c23537b096b9c4831b14b9b0b7b1",
+      "alphaBounds": [
+        2,
+        4,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            601,
+            406,
+            934,
+            640
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-5",
+      "file": "wetland/terrain-5.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "9e9fb9ac54d6121dc9bd7ff26db863e006ed1b57a8fba2fa348621d9d7bb1c16",
+      "alphaBounds": [
+        2,
+        2,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1068,
+            397,
+            1405,
+            644
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-6",
+      "file": "wetland/terrain-6.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "c66b4716368bbe77a8a65403a1e5a786bc9bbf2df8b701aae571055b1aff7767",
+      "alphaBounds": [
+        2,
+        2,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            134,
+            698,
+            476,
+            949
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-7",
+      "file": "wetland/terrain-7.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "9a9c4e28747b8dbad74169ad0791d6959ad666436d478264dfdf5dbcd2081dfa",
+      "alphaBounds": [
+        9,
+        2,
+        55,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            603,
+            678,
+            908,
+            968
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-8",
+      "file": "wetland/terrain-8.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "f6ef51ad16eb75d5059d62528f2a343b2f645ebcf9f445c63f0a393fe3cc9444",
+      "alphaBounds": [
+        2,
+        4,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+          "sourceSha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1068,
+            708,
+            1416,
+            951
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "flora-0",
+      "file": "wetland/flora-0.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "3117156792b9478c45a8194466b8bd64487df609b77eb3829482ffe4dce23377",
+      "alphaBounds": [
+        2,
+        22,
+        62,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            123,
+            77,
+            521,
+            451
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        60,
+        58
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-1",
+      "file": "wetland/flora-1.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "d36ac1c3c3493d2cf6fb5d80823c5a850b54ece3db73ea3116f2d08c6c95d95c",
+      "alphaBounds": [
+        17,
+        48,
+        47,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            619,
+            83,
+            963,
+            429
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        30,
+        62
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-2",
+      "file": "wetland/flora-2.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "a52744093adfd8fb9f289b4b0fab3183fc3f626c6b3583bd8d6856edd42e1d38",
+      "alphaBounds": [
+        3,
+        7,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1084,
+            138,
+            1415,
+            429
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        32
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-3",
+      "file": "wetland/flora-3.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "b3b256cfefecba4d62a1d3daf9c2f904d1019216ecdbfd91721d240769b66045",
+      "alphaBounds": [
+        3,
+        14,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            182,
+            522,
+            466,
+            692
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        18
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-4",
+      "file": "wetland/flora-4.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "d861d249970f8196a8187d1c3afa156223745bda5326cfb617584b798cd321a0",
+      "alphaBounds": [
+        4,
+        13,
+        28,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            652,
+            490,
+            962,
+            713
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        24,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-5",
+      "file": "wetland/flora-5.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "04feb00a2d8b1841e93abb28a3122a8449b92fa6a4c04c984b3c068a3da3da4e",
+      "alphaBounds": [
+        5,
+        10,
+        27,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1127,
+            487,
+            1376,
+            712
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        22,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-6",
+      "file": "wetland/flora-6.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "19711e0846c91651bb3521d13d6c9c2e614d68201f073114ff995bd48019e251",
+      "alphaBounds": [
+        0,
+        16,
+        32,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            110,
+            767,
+            543,
+            958
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        18
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-7",
+      "file": "wetland/flora-7.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "26bfbfc865cfe5c077f04c0589e9b4136fb45f9fb2c4bf85f2ad6e7e3b0e4057",
+      "alphaBounds": [
+        3,
+        11,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            661,
+            738,
+            979,
+            976
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        28
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-8",
+      "file": "wetland/flora-8.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "a92bba41cb37fcc58173d630351648450f044f95de4ff649a89fcff2025ea98e",
+      "alphaBounds": [
+        5,
+        13,
+        27,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1129,
+            753,
+            1396,
+            962
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        22,
+        26
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "tree",
+      "file": "wetland/tree.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "7cc1a801ae53dde72577a62aa50bebb964f94d9952906fe29c2c5ccdf1aa8d59",
+      "alphaBounds": [
+        9,
+        24,
+        54,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            123,
+            77,
+            521,
+            451
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            619,
+            83,
+            963,
+            429
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-crown",
+      "file": "wetland/tree-crown.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "b33534b6108a123075fa52215d5046e056d78676c8425fa91a598e8df140f318",
+      "alphaBounds": [
+        9,
+        24,
+        54,
+        66
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            123,
+            77,
+            521,
+            451
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            619,
+            83,
+            963,
+            429
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-crown",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-trunk",
+      "file": "wetland/tree-trunk.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "b285831897937a26078dc7a3d34291d343504a85ade35ef79de4d9b37bcfcd47",
+      "alphaBounds": [
+        20,
+        54,
+        44,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            123,
+            77,
+            521,
+            451
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+          "sourceSha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            619,
+            83,
+            963,
+            429
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-trunk",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-0",
+      "file": "wetland/structure-0.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "846e3c4db40aaf66b8527541330c54c6f85f3a19758dec5d0850e5a167b8effd",
+      "alphaBounds": [
+        2,
+        15,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            63,
+            34,
+            591,
+            394
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            641,
+            114,
+            1181,
+            394
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1248,
+            147,
+            1457,
+            387
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          15,
+          124,
+          85
+        ],
+        "shell": [
+          10,
+          84,
+          108,
+          56
+        ],
+        "door": [
+          47,
+          101,
+          34,
+          39
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-1",
+      "file": "wetland/structure-1.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "bfaf0fd21a5f21513dd9e91f56875ea8e0c1363af562039e02dd5e91e1397adb",
+      "alphaBounds": [
+        2,
+        31,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            76,
+            396,
+            577,
+            699
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            641,
+            446,
+            1183,
+            695
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1249,
+            471,
+            1457,
+            695
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          31,
+          124,
+          75
+        ],
+        "shell": [
+          10,
+          90,
+          108,
+          50
+        ],
+        "door": [
+          47,
+          103,
+          34,
+          37
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-2",
+      "file": "wetland/structure-2.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "bc9466ab34e33187167ef5ad510ea557bc04e93eeae440727f0181348dd6baad",
+      "alphaBounds": [
+        2,
+        39,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            76,
+            726,
+            568,
+            991
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            639,
+            737,
+            1186,
+            991
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+          "sourceSha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1262,
+            755,
+            1443,
+            991
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          39,
+          124,
+          67
+        ],
+        "shell": [
+          10,
+          90,
+          108,
+          50
+        ],
+        "door": [
+          48,
+          98,
+          32,
+          42
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/frog",
+      "file": "wetland/animals/frog.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "0fce2ae68956610fb909cd55d172f94fd81ac29b5aecec77e271bebd1d10c69d",
+      "alphaBounds": [
+        24,
+        38,
+        232,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "frog",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 22,
+      "scalePerAllFrames": 0.07692307692307693,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            24,
+            39,
+            15,
+            13
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            70,
+            128,
+            268,
+            292
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            24,
+            41,
+            15,
+            11
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            391,
+            148,
+            591,
+            292
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            24,
+            38,
+            16,
+            14
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            709,
+            96,
+            918,
+            275
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            24,
+            40,
+            16,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1038,
+            130,
+            1252,
+            292
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            24,
+            39,
+            16,
+            13
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            67,
+            392,
+            276,
+            561
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            23,
+            40,
+            17,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            389,
+            411,
+            608,
+            561
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            21,
+            37,
+            22,
+            15
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            683,
+            376,
+            963,
+            577
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            24,
+            40,
+            16,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1045,
+            404,
+            1252,
+            561
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            24,
+            38,
+            15,
+            14
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            72,
+            667,
+            267,
+            849
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            24,
+            40,
+            15,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            395,
+            695,
+            587,
+            849
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            24,
+            34,
+            16,
+            18
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            713,
+            615,
+            925,
+            850
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            24,
+            39,
+            16,
+            13
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1041,
+            679,
+            1249,
+            849
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            24,
+            39,
+            16,
+            13
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            67,
+            940,
+            272,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            24,
+            41,
+            16,
+            11
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            377,
+            965,
+            591,
+            1113
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            21,
+            38,
+            22,
+            14
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            662,
+            940,
+            948,
+            1124
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            24,
+            39,
+            16,
+            13
+          ],
+          "source": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+          "sourceSha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1045,
+            950,
+            1252,
+            1113
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/dragonfly",
+      "file": "wetland/animals/dragonfly.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "5b10914db6455f8e1bcd5fc8a9f01b5f333baf006f77794bc85cb6903db0d788",
+      "alphaBounds": [
+        20,
+        35,
+        235,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "dragonfly",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 24,
+      "scalePerAllFrames": 0.0851063829787234,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            20,
+            35,
+            24,
+            17
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            46,
+            112,
+            328,
+            309
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            22,
+            35,
+            20,
+            17
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            425,
+            111,
+            661,
+            313
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            28,
+            35,
+            8,
+            17
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            779,
+            109,
+            878,
+            313
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            20,
+            36,
+            23,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1009,
+            120,
+            1278,
+            313
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            22,
+            38,
+            20,
+            14
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            89,
+            409,
+            328,
+            578
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            22,
+            36,
+            20,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            418,
+            387,
+            652,
+            575
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            22,
+            36,
+            19,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            727,
+            381,
+            945,
+            572
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            22,
+            40,
+            19,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1049,
+            435,
+            1271,
+            572
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            20,
+            35,
+            24,
+            17
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            46,
+            664,
+            328,
+            860
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            21,
+            34,
+            21,
+            18
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            417,
+            651,
+            661,
+            860
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            28,
+            34,
+            8,
+            18
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            780,
+            646,
+            873,
+            860
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            20,
+            36,
+            23,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1009,
+            668,
+            1278,
+            854
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            22,
+            38,
+            20,
+            14
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            46,
+            946,
+            280,
+            1109
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            22,
+            36,
+            20,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            420,
+            921,
+            653,
+            1111
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            22,
+            36,
+            19,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            736,
+            921,
+            955,
+            1111
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            22,
+            40,
+            20,
+            12
+          ],
+          "source": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+          "sourceSha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1025,
+            972,
+            1262,
+            1111
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/mud-creature",
+      "file": "wetland/monsters/mud-creature.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "699e4b91a842126b526bb9079a4af1d9dd1c254e2b4454af7e2532b2bf8198f2",
+      "alphaBounds": [
+        16,
+        27,
+        240,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "mud-creature",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 40,
+      "scalePerAllFrames": 0.11396011396011396,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            16,
+            27,
+            31,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            41,
+            106,
+            311,
+            325
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            19,
+            27,
+            26,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            377,
+            106,
+            607,
+            324
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            16,
+            28,
+            31,
+            24
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            681,
+            112,
+            952,
+            320
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            19,
+            27,
+            26,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1035,
+            106,
+            1264,
+            324
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            17,
+            31,
+            29,
+            21
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            33,
+            408,
+            287,
+            588
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            12,
+            29,
+            40,
+            23
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            337,
+            392,
+            688,
+            593
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            18,
+            28,
+            27,
+            24
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            718,
+            385,
+            951,
+            593
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            16,
+            36,
+            32,
+            16
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            999,
+            462,
+            1283,
+            599
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/poison-insect",
+      "file": "wetland/monsters/poison-insect.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "01089dbd7f2170ce5db5985faf8760169101d9587ea7437f1bc39e579715cbe5",
+      "alphaBounds": [
+        16,
+        27,
+        240,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "poison-insect",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 36,
+      "scalePerAllFrames": 0.12,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            19,
+            27,
+            26,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            64,
+            658,
+            278,
+            866
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            17,
+            27,
+            30,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            376,
+            661,
+            627,
+            866
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            18,
+            27,
+            27,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            692,
+            658,
+            920,
+            865
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            17,
+            27,
+            30,
+            25
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1002,
+            660,
+            1251,
+            866
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            16,
+            28,
+            31,
+            24
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            49,
+            917,
+            308,
+            1121
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            14,
+            30,
+            36,
+            22
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            362,
+            951,
+            662,
+            1132
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            17,
+            28,
+            29,
+            24
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            706,
+            921,
+            951,
+            1123
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            15,
+            35,
+            33,
+            17
+          ],
+          "source": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+          "sourceSha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1006,
+            983,
+            1283,
+            1125
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    }
+  ]
+}

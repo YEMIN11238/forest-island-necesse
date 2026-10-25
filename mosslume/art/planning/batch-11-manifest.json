@@ -1,0 +1,1805 @@
+{
+  "project": "Mosslume",
+  "batch": "11",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "productionExportValidated": false,
+  "sourcePixelsModified": false,
+  "sourceAtlasCount": 7,
+  "requestedSourceRegions": 71,
+  "assets": [
+    {
+      "id": "volcanic-ground-connectors",
+      "name": "火山灰地玄武岩与熔岩连接",
+      "category": "地形",
+      "biome": "volcano",
+      "layout": "terrain-kit",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "灰地与岩面",
+        "熔岩与岸线",
+        "崖壁与台阶"
+      ],
+      "cellLabels": [
+        "火山灰地",
+        "玄武岩地面",
+        "裂纹熔岩壳",
+        "熔岩水面",
+        "玄武岩熔岩直岸",
+        "玄武岩熔岩外角",
+        "玄武岩灰顶崖",
+        "玄武岩崖角",
+        "玄武岩台阶"
+      ],
+      "targetScale": {
+        "tilePixels": 32,
+        "terrainFootprintTiles": "1–2",
+        "cliffHeightTiles": 1,
+        "note": "target only; terrain material and emission separation require runtime export"
+      },
+      "file": "art/biomes/batch-11/volcanic-ground-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-ground-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-112e81bd-079c-45ba-9427-87895252a630.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "limitations": [
+        "无缝拼接尚未验收",
+        "熔岩底色与发光需分离导出"
+      ],
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "a99fe68bdb8fe33a5bad1157443ea873a8d31aa09fbc0c528bc5241c41b109c1",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 742355,
+        "faintFringePixelsAlpha1To8": 64292,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            546,
+            347
+          ],
+          "visibleBounds": [
+            102,
+            82,
+            411,
+            249
+          ],
+          "label": "火山灰地"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            546,
+            0,
+            446,
+            347
+          ],
+          "visibleBounds": [
+            579,
+            82,
+            379,
+            246
+          ],
+          "label": "玄武岩地面"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            992,
+            0,
+            544,
+            347
+          ],
+          "visibleBounds": [
+            1027,
+            81,
+            410,
+            245
+          ],
+          "label": "裂纹熔岩壳"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            347,
+            544,
+            303
+          ],
+          "visibleBounds": [
+            102,
+            376,
+            408,
+            251
+          ],
+          "label": "熔岩水面"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            544,
+            347,
+            471,
+            303
+          ],
+          "visibleBounds": [
+            579,
+            372,
+            379,
+            255
+          ],
+          "label": "玄武岩熔岩直岸"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1015,
+            347,
+            521,
+            303
+          ],
+          "visibleBounds": [
+            1072,
+            364,
+            364,
+            272
+          ],
+          "label": "玄武岩熔岩外角"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            650,
+            562,
+            374
+          ],
+          "visibleBounds": [
+            94,
+            677,
+            425,
+            249
+          ],
+          "label": "玄武岩灰顶崖"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            562,
+            650,
+            425,
+            374
+          ],
+          "visibleBounds": [
+            606,
+            665,
+            313,
+            283
+          ],
+          "label": "玄武岩崖角"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            987,
+            650,
+            549,
+            374
+          ],
+          "visibleBounds": [
+            1055,
+            694,
+            359,
+            247
+          ],
+          "label": "玄武岩台阶"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "volcanic-flora-resources",
+      "name": "火山焦木与矿物资源",
+      "category": "植被",
+      "layout": "sprite-source",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "rowLabels": [
+        "焦木分层",
+        "枯灌与晶矿",
+        "矿石与灰草"
+      ],
+      "cellLabels": [
+        "焦木枝冠",
+        "焦木树干",
+        "焦木树桩",
+        "耐旱枯灌木",
+        "黑曜石晶簇",
+        "硫黄矿",
+        "铁矿石",
+        "玄武岩巨石",
+        "火山灰草"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "treeHeightTiles": 2,
+        "smallPropsTiles": "0.5–1",
+        "note": "target only; separated crown/trunk fit and harvest variants pending"
+      },
+      "limitations": [
+        "焦木树冠与树干须校准共同锚点",
+        "采集倒地与再生状态未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-11/volcanic-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-264986d3-892e-4141-8846-5fbd22ae160d.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "2e99c901f94b0317ca55fa434d583f2458236dafca543fc6023d694641a93bf7",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 984671,
+        "faintFringePixelsAlpha1To8": 97888,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            524,
+            529
+          ],
+          "visibleBounds": [
+            48,
+            106,
+            433,
+            388
+          ],
+          "label": "焦木枝冠"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            524,
+            0,
+            311,
+            529
+          ],
+          "visibleBounds": [
+            567,
+            57,
+            186,
+            445
+          ],
+          "label": "焦木树干"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            835,
+            0,
+            477,
+            529
+          ],
+          "visibleBounds": [
+            917,
+            280,
+            345,
+            229
+          ],
+          "label": "焦木树桩"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            529,
+            454,
+            330
+          ],
+          "visibleBounds": [
+            96,
+            587,
+            284,
+            232
+          ],
+          "label": "耐旱枯灌木"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            454,
+            529,
+            422,
+            330
+          ],
+          "visibleBounds": [
+            528,
+            549,
+            288,
+            284
+          ],
+          "label": "黑曜石晶簇"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            876,
+            529,
+            436,
+            330
+          ],
+          "visibleBounds": [
+            937,
+            571,
+            303,
+            263
+          ],
+          "label": "硫黄矿"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            859,
+            455,
+            340
+          ],
+          "visibleBounds": [
+            86,
+            884,
+            318,
+            264
+          ],
+          "label": "铁矿石"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            455,
+            859,
+            405,
+            340
+          ],
+          "visibleBounds": [
+            506,
+            891,
+            310,
+            264
+          ],
+          "label": "玄武岩巨石"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            860,
+            859,
+            452,
+            340
+          ],
+          "visibleBounds": [
+            904,
+            910,
+            352,
+            226
+          ],
+          "label": "火山灰草"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "volcanic-buildings-layers",
+      "name": "黑石锻造所耐热营地与采矿站分层",
+      "category": "建筑",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "rowLabels": [
+        "黑石锻造所",
+        "耐热营地",
+        "火山采矿站"
+      ],
+      "cellLabels": [
+        "锻造所屋顶",
+        "锻造所墙体",
+        "锻造所门",
+        "耐热营地屋顶",
+        "耐热营地墙体",
+        "耐热营地门",
+        "采矿站屋顶",
+        "采矿站墙体",
+        "采矿站门"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "doorHeightTiles": 1.3,
+        "note": "target only; roof/wall/door fit and pivots pending"
+      },
+      "limitations": [
+        "门含门框须拆分与墙体对齐",
+        "屋顶墙体不是已校准装配",
+        "窗内高亮需另行拆发光层"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-11/volcanic-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-9bbcd8ce-adb8-44f2-a2b4-75b6cc59c77a.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "a586d5a10e329b1b5c413117f65b9cad97f318a9556036e7a404eacdc6b05a56",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 656258,
+        "faintFringePixelsAlpha1To8": 72347,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            561,
+            341
+          ],
+          "visibleBounds": [
+            52,
+            16,
+            467,
+            325
+          ],
+          "label": "锻造所屋顶"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            561,
+            0,
+            612,
+            341
+          ],
+          "visibleBounds": [
+            604,
+            79,
+            521,
+            262
+          ],
+          "label": "锻造所墙体"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1173,
+            0,
+            363,
+            341
+          ],
+          "visibleBounds": [
+            1221,
+            104,
+            240,
+            237
+          ],
+          "label": "锻造所门"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            562,
+            342
+          ],
+          "visibleBounds": [
+            49,
+            341,
+            473,
+            342
+          ],
+          "label": "耐热营地屋顶"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            562,
+            341,
+            613,
+            342
+          ],
+          "visibleBounds": [
+            603,
+            341,
+            526,
+            342
+          ],
+          "label": "耐热营地墙体"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1175,
+            341,
+            361,
+            342
+          ],
+          "visibleBounds": [
+            1221,
+            341,
+            240,
+            342
+          ],
+          "label": "耐热营地门"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            683,
+            569,
+            341
+          ],
+          "visibleBounds": [
+            46,
+            683,
+            481,
+            307
+          ],
+          "label": "采矿站屋顶"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            569,
+            683,
+            602,
+            341
+          ],
+          "visibleBounds": [
+            612,
+            683,
+            507,
+            302
+          ],
+          "label": "采矿站墙体"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1171,
+            683,
+            365,
+            341
+          ],
+          "visibleBounds": [
+            1223,
+            683,
+            235,
+            301
+          ],
+          "label": "采矿站门"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "heat-beetle-directional-poses",
+      "name": "耐热甲虫四方向步行动作源图",
+      "category": "动物",
+      "layout": "sprite-source",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3"
+      ],
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "motionName": "步行",
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          0.65,
+          0.5
+        ],
+        "height": 0.4,
+        "note": "target only; six-leg gait and common contact pivot pending"
+      },
+      "limitations": [
+        "六足步态仅关键姿态待校准",
+        "完整移动觅食受伤倒地状态未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-11/heat-beetle-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/heat-beetle-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-9672f406-a952-4d54-990a-3410e2ab44d7.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "1dc54a3197c25913aa93b67c4c1724ed6950af671abd6dd7c7b2cb579a12b511",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 995975,
+        "faintFringePixelsAlpha1To8": 145076,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            336,
+            347
+          ],
+          "visibleBounds": [
+            86,
+            80,
+            186,
+            218
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            0,
+            319,
+            347
+          ],
+          "visibleBounds": [
+            401,
+            80,
+            193,
+            218
+          ],
+          "label": "步行1"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            655,
+            0,
+            320,
+            347
+          ],
+          "visibleBounds": [
+            717,
+            80,
+            194,
+            218
+          ],
+          "label": "步行2"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            975,
+            0,
+            337,
+            347
+          ],
+          "visibleBounds": [
+            1040,
+            80,
+            186,
+            218
+          ],
+          "label": "步行3"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            347,
+            340,
+            247
+          ],
+          "visibleBounds": [
+            64,
+            398,
+            240,
+            157
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            340,
+            347,
+            331,
+            247
+          ],
+          "visibleBounds": [
+            376,
+            398,
+            263,
+            157
+          ],
+          "label": "步行1"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            671,
+            347,
+            322,
+            247
+          ],
+          "visibleBounds": [
+            704,
+            398,
+            255,
+            157
+          ],
+          "label": "步行2"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            993,
+            347,
+            319,
+            247
+          ],
+          "visibleBounds": [
+            1027,
+            397,
+            247,
+            158
+          ],
+          "label": "步行3"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            594,
+            336,
+            303
+          ],
+          "visibleBounds": [
+            83,
+            633,
+            192,
+            211
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            594,
+            319,
+            303
+          ],
+          "visibleBounds": [
+            397,
+            634,
+            197,
+            212
+          ],
+          "label": "步行1"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            655,
+            594,
+            320,
+            303
+          ],
+          "visibleBounds": [
+            717,
+            633,
+            197,
+            213
+          ],
+          "label": "步行2"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            975,
+            594,
+            337,
+            303
+          ],
+          "visibleBounds": [
+            1037,
+            633,
+            192,
+            211
+          ],
+          "label": "步行3"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            897,
+            325,
+            302
+          ],
+          "visibleBounds": [
+            54,
+            949,
+            237,
+            155
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            325,
+            897,
+            314,
+            302
+          ],
+          "visibleBounds": [
+            360,
+            949,
+            244,
+            157
+          ],
+          "label": "步行1"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            639,
+            897,
+            328,
+            302
+          ],
+          "visibleBounds": [
+            674,
+            949,
+            256,
+            157
+          ],
+          "label": "步行2"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            967,
+            897,
+            345,
+            302
+          ],
+          "visibleBounds": [
+            1004,
+            949,
+            251,
+            155
+          ],
+          "label": "步行3"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "lava-slug-poses",
+      "name": "熔岩蛞蝓造型与战斗姿态",
+      "category": "怪物",
+      "layout": "monster-keyposes",
+      "previewKind": "monster",
+      "columns": 4,
+      "rows": 2,
+      "rowLabels": [
+        "四方向待机",
+        "右向战斗关键姿态"
+      ],
+      "cellLabels": [
+        "正面待机",
+        "右侧待机",
+        "背面待机",
+        "左侧待机",
+        "右向攻击预备",
+        "右向攻击关键姿态",
+        "右向受击",
+        "右向倒地"
+      ],
+      "species": [
+        {
+          "name": "熔岩蛞蝓",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          1,
+          0.6
+        ],
+        "height": 0.55,
+        "note": "target only; body glide and separate projectile export pending"
+      },
+      "limitations": [
+        "仅待机和右向战斗关键姿态",
+        "黏足滑动与全方向战斗未补齐",
+        "口部熔岩弹需单独导出"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-11/lava-slug-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/lava-slug-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-7fa1538e-825d-4877-b57a-d501ec23b1c7.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1774,
+      "height": 887,
+      "sourceMode": "RGBA",
+      "sha256": "aa4ab39f1958935399374100b7e08aeda7f078c0f8d7cf4a95a66af35471955a",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1102084,
+        "faintFringePixelsAlpha1To8": 42105,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            413,
+            568
+          ],
+          "visibleBounds": [
+            70,
+            223,
+            288,
+            288
+          ],
+          "label": "正面待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            413,
+            0,
+            503,
+            568
+          ],
+          "visibleBounds": [
+            468,
+            275,
+            403,
+            228
+          ],
+          "label": "右侧待机"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            916,
+            0,
+            369,
+            568
+          ],
+          "visibleBounds": [
+            962,
+            221,
+            273,
+            298
+          ],
+          "label": "背面待机"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1285,
+            0,
+            489,
+            568
+          ],
+          "visibleBounds": [
+            1335,
+            275,
+            383,
+            228
+          ],
+          "label": "左侧待机"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            568,
+            409,
+            319
+          ],
+          "visibleBounds": [
+            48,
+            617,
+            355,
+            215
+          ],
+          "label": "右向攻击预备"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            409,
+            568,
+            519,
+            319
+          ],
+          "visibleBounds": [
+            415,
+            617,
+            500,
+            215
+          ],
+          "label": "右向攻击关键姿态"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            928,
+            568,
+            376,
+            319
+          ],
+          "visibleBounds": [
+            942,
+            617,
+            340,
+            215
+          ],
+          "label": "右向受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1304,
+            568,
+            470,
+            319
+          ],
+          "visibleBounds": [
+            1327,
+            704,
+            411,
+            128
+          ],
+          "label": "右向倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "obsidian-beast-poses",
+      "name": "黑曜石兽造型与战斗姿态",
+      "category": "怪物",
+      "layout": "monster-keyposes",
+      "previewKind": "monster",
+      "columns": 4,
+      "rows": 2,
+      "rowLabels": [
+        "四方向待机",
+        "右向战斗关键姿态"
+      ],
+      "cellLabels": [
+        "正面待机",
+        "右侧待机",
+        "背面待机",
+        "左侧待机",
+        "右向攻击预备",
+        "右向攻击关键姿态",
+        "右向受击",
+        "右向倒地"
+      ],
+      "species": [
+        {
+          "name": "黑曜石兽",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          1.2,
+          0.8
+        ],
+        "height": 0.9,
+        "note": "target only; quadruped gait and attack timing pending"
+      },
+      "limitations": [
+        "仅待机和右向战斗关键姿态",
+        "四足步态与冲撞时序未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-11/obsidian-beast-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/obsidian-beast-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-1e2d3b97-b3ed-4393-81ec-cddacc62cd12.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "2112ece4b50d3033f190367457268aaa37209c588cbe28b3df744dccac409093",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 983496,
+        "faintFringePixelsAlpha1To8": 88364,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            351,
+            530
+          ],
+          "visibleBounds": [
+            55,
+            151,
+            257,
+            314
+          ],
+          "label": "正面待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            351,
+            0,
+            441,
+            530
+          ],
+          "visibleBounds": [
+            390,
+            184,
+            366,
+            281
+          ],
+          "label": "右侧待机"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            792,
+            0,
+            313,
+            530
+          ],
+          "visibleBounds": [
+            828,
+            151,
+            234,
+            314
+          ],
+          "label": "背面待机"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1105,
+            0,
+            431,
+            530
+          ],
+          "visibleBounds": [
+            1148,
+            184,
+            346,
+            281
+          ],
+          "label": "左侧待机"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            530,
+            375,
+            494
+          ],
+          "visibleBounds": [
+            28,
+            620,
+            332,
+            290
+          ],
+          "label": "右向攻击预备"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            375,
+            530,
+            421,
+            494
+          ],
+          "visibleBounds": [
+            390,
+            653,
+            391,
+            257
+          ],
+          "label": "右向攻击关键姿态"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            796,
+            530,
+            356,
+            494
+          ],
+          "visibleBounds": [
+            812,
+            596,
+            340,
+            315
+          ],
+          "label": "右向受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1152,
+            530,
+            384,
+            494
+          ],
+          "visibleBounds": [
+            1152,
+            729,
+            355,
+            190
+          ],
+          "label": "右向倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [
+          {
+            "row": 1,
+            "division": 3,
+            "position": 1152,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "column",
+            "row": 1,
+            "position": 1152
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "volcano-props-vfx",
+      "name": "火山生产道具与火焰灰烬特效",
+      "category": "特效",
+      "layout": "props-vfx",
+      "previewKind": "atlas",
+      "columns": 4,
+      "rows": 3,
+      "rowLabels": [
+        "四种生产道具",
+        "右向火焰攻击四阶段",
+        "灰烬余火缓升四阶段"
+      ],
+      "cellLabels": [
+        "玄武岩铁砧",
+        "炭筐",
+        "铁坩埚",
+        "冷却水槽",
+        "火焰攻击1",
+        "火焰攻击2",
+        "火焰攻击3",
+        "火焰攻击4",
+        "灰烬余火1",
+        "灰烬余火2",
+        "灰烬余火3",
+        "灰烬余火4"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "smallPropsTiles": "0.5–1",
+        "note": "target only; VFX emission, common pivots and alpha timing pending"
+      },
+      "effectSequences": [
+        {
+          "name": "右向火焰攻击",
+          "indices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "灰烬余火缓升",
+          "indices": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "limitations": [
+        "首行为静态道具不得整表循环",
+        "两种特效需分别校准锚点与时序",
+        "灰烬上升和淡出由粒子系统补间"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-11/volcano-props-vfx-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcano-props-vfx-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-770081b4-39b8-465d-a869-b29affe691fc.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "sourceBatch": "11",
+      "biomeLabels": [
+        "火山"
+      ],
+      "width": 1448,
+      "height": 1086,
+      "sourceMode": "RGBA",
+      "sha256": "91715049c2244e5151b3439a0b79ca4eb2907530b504339f5d3c06fa2b32d4c1",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1132073,
+        "faintFringePixelsAlpha1To8": 152289,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            381,
+            429
+          ],
+          "visibleBounds": [
+            78,
+            138,
+            268,
+            247
+          ],
+          "label": "玄武岩铁砧"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            381,
+            0,
+            348,
+            429
+          ],
+          "visibleBounds": [
+            416,
+            168,
+            266,
+            213
+          ],
+          "label": "炭筐"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            729,
+            0,
+            336,
+            429
+          ],
+          "visibleBounds": [
+            777,
+            106,
+            249,
+            275
+          ],
+          "label": "铁坩埚"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1065,
+            0,
+            383,
+            429
+          ],
+          "visibleBounds": [
+            1105,
+            165,
+            308,
+            216
+          ],
+          "label": "冷却水槽"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            429,
+            343,
+            309
+          ],
+          "visibleBounds": [
+            71,
+            507,
+            194,
+            171
+          ],
+          "label": "火焰攻击1"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            343,
+            429,
+            350,
+            309
+          ],
+          "visibleBounds": [
+            422,
+            474,
+            233,
+            226
+          ],
+          "label": "火焰攻击2"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            693,
+            429,
+            450,
+            309
+          ],
+          "visibleBounds": [
+            731,
+            499,
+            391,
+            201
+          ],
+          "label": "火焰攻击3"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1143,
+            429,
+            305,
+            309
+          ],
+          "visibleBounds": [
+            1164,
+            534,
+            247,
+            129
+          ],
+          "label": "火焰攻击4"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            738,
+            365,
+            348
+          ],
+          "visibleBounds": [
+            60,
+            887,
+            255,
+            137
+          ],
+          "label": "灰烬余火1"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            365,
+            738,
+            383,
+            348
+          ],
+          "visibleBounds": [
+            415,
+            795,
+            258,
+            212
+          ],
+          "label": "灰烬余火2"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            748,
+            738,
+            342,
+            348
+          ],
+          "visibleBounds": [
+            824,
+            794,
+            173,
+            187
+          ],
+          "label": "灰烬余火3"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1090,
+            738,
+            358,
+            348
+          ],
+          "visibleBounds": [
+            1183,
+            777,
+            179,
+            182
+          ],
+          "label": "灰烬余火4"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    }
+  ]
+}

@@ -1,0 +1,1682 @@
+{
+  "date": "2026-10-23",
+  "batches": [
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourceAtlases": 65,
+  "requestedSourceRegions": 674,
+  "sourcePixelsModified": false,
+  "gameIntegrated": false,
+  "checks": [
+    {
+      "id": "grass-earth-terraces",
+      "file": "art/biomes/batch-06/grass-earth-terraces-source-v1.png",
+      "sha256": "63c3f8e52b1cc43e22f09447ce71ba7b616d37b4ac316782ef0ac58a9fc82172",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "meadow-dirt-transitions",
+      "file": "art/biomes/batch-06/meadow-dirt-transitions-source-v1.png",
+      "sha256": "7a8bf7ba02642a3a87a0893cd7e82634ec54a88d8d39e8506c6f03a4d73e6840",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1267,
+        1241
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "stone-terraces",
+      "file": "art/biomes/batch-06/stone-terraces-source-v1.png",
+      "sha256": "368fdbc04fd14032389ebf0c5141a9f1fedcc28ec94c30b2fbb94d50fb116c4e",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "coastal-sand-edges",
+      "file": "art/biomes/batch-06/coastal-sand-edges-source-v1.png",
+      "sha256": "62598013b1ddae4aa46085bb1a400dc871ee69208787b0ba8eea1560cbb4d052",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [
+          {
+            "row": 0,
+            "division": 1,
+            "position": 512,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "column",
+            "row": 0,
+            "position": 512
+          }
+        ]
+      }
+    },
+    {
+      "id": "stone-stairs-passages",
+      "file": "art/biomes/batch-06/stone-stairs-passages-source-v1.png",
+      "sha256": "4f3a885382001b091d29fe355621da96c57038f84dcbeca242d5215f0d78f8b7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wooden-bridge-modules",
+      "file": "art/biomes/batch-06/wooden-bridge-modules-source-v1.png",
+      "sha256": "e90b693668cef9250ba5099c5c5c48f5de8a801717aee66b520796d05100c0da",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "woodland-workshop-layers",
+      "file": "art/biomes/batch-06/woodland-workshop-layers-source-v1.png",
+      "sha256": "229c3700e60c10c9dca036c9fd88f8c2171d2618d6aaa12eeefd8c9707267712",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "fishing-hut-layers",
+      "file": "art/biomes/batch-06/fishing-hut-layers-source-v1.png",
+      "sha256": "a65a7a705209f9d5fd6c167a4d3cebde093c9868bd1bf7966f20d13a62533e06",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [
+          {
+            "row": 0,
+            "division": 2,
+            "position": 1024,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "column",
+            "row": 0,
+            "position": 1024
+          }
+        ]
+      }
+    },
+    {
+      "id": "deer-directional-poses",
+      "file": "art/biomes/batch-06/deer-directional-poses-source-v1.png",
+      "sha256": "ad3a982927b55b111dba6a01ea677113fa6875930746e0881a25b1c1a40a735e",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "chicken-directional-poses",
+      "file": "art/biomes/batch-06/chicken-directional-poses-source-v1.png",
+      "sha256": "857aa9f7163ec54bb5f7ce46df5cc3c17cfc36267097a969463182fb2f286e7c",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1262,
+        1246
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "thorn-beast-poses",
+      "file": "art/biomes/batch-06/thorn-beast-poses-source-v1.png",
+      "sha256": "3a16734fa3f1d776e5ae5a6bdcd0e0e4b5b469fd1e06c6348465c10b45e3655b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "tide-crab-poses",
+      "file": "art/biomes/batch-06/tide-crab-poses-source-v1.png",
+      "sha256": "acd0eefd5a1c23f47931d7c6e28b05df083c26a52bc427c4de8a94e8fcfa868d",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "coastal-life-props",
+      "file": "art/biomes/batch-06/coastal-life-props-source-v1.png",
+      "sha256": "439691be26042d65ba6f59d5da871d61fee3a0a88cb7817f53951b16f59672e5",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "forest-coast-combat-vfx",
+      "file": "art/biomes/batch-06/forest-coast-combat-vfx-source-v1.png",
+      "sha256": "674b8cdf371ba3b001604589688a745fbb7889ef038ae25772085c651ec03d66",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "cave-wall-connectors",
+      "file": "art/biomes/batch-07/cave-wall-connectors-source-v1.png",
+      "sha256": "f0250ee67efa755b54efc7bfc2269330606854595992d7d671e2c9e4510501d0",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mountain-ground-materials",
+      "file": "art/biomes/batch-07/mountain-ground-materials-source-v1.png",
+      "sha256": "9ffca29435c12b371fe194b002b63effd58bd60c9b34e0e5fa62d6e25fc23908",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mountain-ore-crystal-resources",
+      "file": "art/biomes/batch-07/mountain-ore-crystal-resources-source-v1.png",
+      "sha256": "b91bbbf13c9d853b02708ec3c0b5d1b1a3430e8d49e03cbc4064301cde2fb9ba",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mine-entrance-layers",
+      "file": "art/biomes/batch-07/mine-entrance-layers-source-v1.png",
+      "sha256": "07c148cd9523e965223d20b24b77dd38c93f3c7d5d5c0e420f846a7692adc194",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mountain-stone-shelter-layers",
+      "file": "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.png",
+      "sha256": "03330e307fddaed2eabb7638dd3fb3f6802f040635ab63dd207866cf19aa9045",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mountain-goat-directional-poses",
+      "file": "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.png",
+      "sha256": "e638e204cde7baf3b4a3987a93ce8664b5d933b979d8de542548a5ffe5be2e4b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "cave-bat-directional-poses",
+      "file": "art/biomes/batch-07/cave-bat-directional-poses-source-v1.png",
+      "sha256": "a4b3d741b4086170e21d25343a33d5cb7c160d66f319f3f8d1f3a4661e050745",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mountain-rock-beast-poses",
+      "file": "art/biomes/batch-07/mountain-rock-beast-poses-source-v1.png",
+      "sha256": "2a89313601dbf351fb83bb258cd10f94bcc9b2e1fb61ef8de21dc75aee98055b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "cave-crystal-beetle-poses",
+      "file": "art/biomes/batch-07/cave-crystal-beetle-poses-source-v1.png",
+      "sha256": "5501460e75526b6accb902bedf31ec2045ba971cc7124fe60b910f5f5a8ad0a7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-terrain-connectors",
+      "file": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+      "sha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-flora-resources",
+      "file": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+      "sha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-buildings-layers",
+      "file": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+      "sha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [
+          {
+            "row": 2,
+            "division": 2,
+            "position": 1024,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "column",
+            "row": 2,
+            "position": 1024
+          }
+        ]
+      }
+    },
+    {
+      "id": "wetland-frog-directional-poses",
+      "file": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+      "sha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-dragonfly-directional-poses",
+      "file": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+      "sha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-monsters-poses",
+      "file": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+      "sha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "wetland-props-local-effects",
+      "file": "art/biomes/batch-08/wetland-props-local-effects-source-v1.png",
+      "sha256": "22a694e3d5a8ddfbfdfd1f0c682289173753af66feb2ad92ae790db7eeb8955f",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-terrain-connectors",
+      "file": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+      "sha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-flora-resources",
+      "file": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+      "sha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-buildings-layers",
+      "file": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+      "sha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      }
+    },
+    {
+      "id": "mushroom-snail-directional-poses",
+      "file": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+      "sha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-moth-directional-poses",
+      "file": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+      "sha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-monsters-poses",
+      "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+      "sha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "mushroom-props-local-effects",
+      "file": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.png",
+      "sha256": "1bb466edbc324ed9f8d274c40302448eb4fd7d3ec24e3fe849a449a39aa6c6e5",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "snowfield-terrain-connectors",
+      "file": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+      "sha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "snowfield-flora-resources",
+      "file": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+      "sha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          }
+        ]
+      }
+    },
+    {
+      "id": "snowfield-building-layers",
+      "file": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+      "sha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      }
+    },
+    {
+      "id": "snow-rabbit-directional-poses",
+      "file": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+      "sha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "arctic-fox-directional-poses",
+      "file": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+      "sha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "snowfield-monster-poses",
+      "file": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+      "sha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "snowfield-props-effects",
+      "file": "art/biomes/batch-09/snowfield-props-effects-source-v1.png",
+      "sha256": "70e2be633dfa8016042d998be02d888aa441fc534c2cac31e758b31824ada754",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "desert-terrain-connectors",
+      "file": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+      "sha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "desert-flora-resources",
+      "file": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+      "sha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      }
+    },
+    {
+      "id": "desert-building-layers",
+      "file": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+      "sha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "desert-lizard-directional-poses",
+      "file": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+      "sha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "fennec-fox-directional-poses",
+      "file": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+      "sha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "desert-monster-poses",
+      "file": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+      "sha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "desert-props-effects",
+      "file": "art/biomes/batch-09/desert-props-effects-source-v1.png",
+      "sha256": "aad25f7b4e46b94e86327393b36fd876b9fb41fe46edb056f55f8a1b7d62203f",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-ground-connectors",
+      "file": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+      "sha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-architecture-modules",
+      "file": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+      "sha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-cover-variants",
+      "file": "art/biomes/batch-10/ruins-cover-variants-source-v1.png",
+      "sha256": "5532d173ade234682fd361467a7f1ca10194682d1d2c5c0eb68ca3bf5e5e4d8d",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      }
+    },
+    {
+      "id": "ruins-mechanism-props",
+      "file": "art/biomes/batch-10/ruins-mechanism-props-source-v1.png",
+      "sha256": "ba66877e9782d5553b14d1984646acbda05725c73b7e61be0274390fe40d9ab0",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-statue-guard-poses",
+      "file": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+      "sha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-bronze-sentinel-poses",
+      "file": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+      "sha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "ruins-mechanism-vfx",
+      "file": "art/biomes/batch-10/ruins-mechanism-vfx-source-v1.png",
+      "sha256": "7ac254e6751695394241cfcbba82c7a06be22a62e293f996440d7dd24338a192",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "volcanic-ground-connectors",
+      "file": "art/biomes/batch-11/volcanic-ground-connectors-source-v1.png",
+      "sha256": "a99fe68bdb8fe33a5bad1157443ea873a8d31aa09fbc0c528bc5241c41b109c1",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "volcanic-flora-resources",
+      "file": "art/biomes/batch-11/volcanic-flora-resources-source-v1.png",
+      "sha256": "2e99c901f94b0317ca55fa434d583f2458236dafca543fc6023d694641a93bf7",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "volcanic-buildings-layers",
+      "file": "art/biomes/batch-11/volcanic-buildings-layers-source-v1.png",
+      "sha256": "a586d5a10e329b1b5c413117f65b9cad97f318a9556036e7a404eacdc6b05a56",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      }
+    },
+    {
+      "id": "heat-beetle-directional-poses",
+      "file": "art/biomes/batch-11/heat-beetle-directional-poses-source-v1.png",
+      "sha256": "1dc54a3197c25913aa93b67c4c1724ed6950af671abd6dd7c7b2cb579a12b511",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1312,
+        1199
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "lava-slug-poses",
+      "file": "art/biomes/batch-11/lava-slug-poses-source-v1.png",
+      "sha256": "aa4ab39f1958935399374100b7e08aeda7f078c0f8d7cf4a95a66af35471955a",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    },
+    {
+      "id": "obsidian-beast-poses",
+      "file": "art/biomes/batch-11/obsidian-beast-poses-source-v1.png",
+      "sha256": "2112ece4b50d3033f190367457268aaa37209c588cbe28b3df744dccac409093",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [
+          {
+            "row": 1,
+            "division": 3,
+            "position": 1152,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "column",
+            "row": 1,
+            "position": 1152
+          }
+        ]
+      }
+    },
+    {
+      "id": "volcano-props-vfx",
+      "file": "art/biomes/batch-11/volcano-props-vfx-source-v1.png",
+      "sha256": "91715049c2244e5151b3439a0b79ca4eb2907530b504339f5d3c06fa2b32d4c1",
+      "copyMatchesGeneratedSource": true,
+      "generatedOriginalAvailable": true,
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "sourceMode": "RGBA",
+      "hasTransparentPixels": true,
+      "hasSavedPrompt": true,
+      "emptyPreviewRegions": 0,
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      }
+    }
+  ],
+  "fileIntegrityPassed": true,
+  "promptsPresent": true,
+  "allSourceReferencesExist": true,
+  "previewJavaScriptSyntax": {
+    "checked": true,
+    "passed": true,
+    "scripts": 1
+  },
+  "previewHasEmbeddedImageBase64": false,
+  "manualRegionReview": [
+    "coastal-sand-edges",
+    "fishing-hut-layers",
+    "wetland-buildings-layers",
+    "mushroom-buildings-layers",
+    "snowfield-flora-resources",
+    "snowfield-building-layers",
+    "desert-flora-resources",
+    "ruins-cover-variants",
+    "volcanic-buildings-layers",
+    "obsidian-beast-poses"
+  ],
+  "browserRuntimeQA": {
+    "date": "2026-10-24",
+    "performed": true,
+    "checkedAtlasCount": 65,
+    "allImagesLoaded": true,
+    "javascriptErrors": [],
+    "defaultNewRoundVisible": 42,
+    "biomeFilters": [
+      {
+        "name": "湿地",
+        "count": 7
+      },
+      {
+        "name": "蘑菇林",
+        "count": 7
+      },
+      {
+        "name": "遗迹",
+        "count": 7
+      },
+      {
+        "name": "雪地",
+        "count": 7
+      },
+      {
+        "name": "沙漠",
+        "count": 7
+      },
+      {
+        "name": "火山",
+        "count": 7
+      }
+    ],
+    "animalKeyframePlaybackChecked": true,
+    "mixedMonsterSpeciesChecked": {
+      "asset": "mushroom-monsters-poses",
+      "actor": "菌甲兽",
+      "pose": "14"
+    },
+    "screenshot": "art/planning/six-biomes-preview-final-check-v1.png",
+    "sourceArtOnly": true,
+    "runtimeGameQA": false
+  },
+  "notValidated": [
+    "seamless/autotile connections",
+    "exact runtime scale and pivots",
+    "complete animations",
+    "emission and shadow maps",
+    "game collision and runtime integration"
+  ]
+}

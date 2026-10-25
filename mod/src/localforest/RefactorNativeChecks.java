@@ -19,6 +19,8 @@ import localforest.visual.RadianceShadowRenderer;
 import localforest.visual.SceneLighting;
 import localforest.world.GeneratedLayout;
 import localforest.world.GeneratedWorldLevel;
+import localforest.world.ContinuousSurfaceLevel;
+import localforest.world.ContinuousCaveLevel;
 import localforest.world.IslandWorld;
 import localforest.world.WorldDefinition;
 import necesse.engine.GameEventListener;
@@ -65,14 +67,22 @@ public final class RefactorNativeChecks extends WorldData {
     private volatile Request request;
     private volatile Submission submission;
     private volatile boolean done;
-    private boolean loaded,started,checkpointComplete;
+    private volatile long lastServerPulse;
+    private boolean watchdogWritten;
+    private boolean loaded,started,checkpointComplete,gameplayChecked,traversalChecked;
     private int marker,chestX,chestY,chestSlot,expectedLogs,expectedTorches,selectedMob;
     private String savedSeed="",selectedId="",savedMemoryId="";
     private int phase,waitTicks,commandIndex;
     private long startNanos,phaseNanos;
+    private long soakStart,soakPrevious,soakMaximumGap;
+    private int soakTicks;
     private WorldDefinition definition;
     private NativeHarvestCheck harvestCheck;
     private volatile localforest.ai.NativeModelCheck modelCheck;
+    private volatile localforest.companions.NativeCognitionCheck cognitionCheck;
+    private volatile localforest.world.NativeContinuousTraversalCheck traversalCheck;
+    private volatile localforest.biomes.NativeCreatureAnimationCheck creatureAnimationCheck;
+    private volatile localforest.bosses.NativeBossEncounterCheck bossEncounterCheck;
     private int harvestRequestIndex=100;
     private final Map<String,Object> evidence=new LinkedHashMap<>();
     private final List<Map<String,Object>> commandEvidence=new ArrayList<>();
@@ -116,10 +126,17 @@ public final class RefactorNativeChecks extends WorldData {
         necesse.engine.Settings.pauseOnFocusLoss=false;
         RefactorNativeChecks check=active;Client client=game.getClient();
         if(check==null||check.done||client==null||client.isDisconnected()||client.getLocalServer()!=check.getServer())return;
+        if(check.lastServerPulse!=0&&System.nanoTime()-check.lastServerPulse>20_000_000_000L&&!check.watchdogWritten){
+            check.writeStallEvidence();return;
+        }
         if(!game.isRunning())game.setRunning(true);
         PlayerMob player=client.getPlayer();if(player==null||player.getLevel()==null)return;
         probeClient=client;Level level=player.getLevel();
         if(check.modelCheck!=null)check.modelCheck.frame(client);
+        if(check.cognitionCheck!=null)check.cognitionCheck.frame(game);
+        if(check.traversalCheck!=null)check.traversalCheck.observe(client);
+        if(check.creatureAnimationCheck!=null)check.creatureAnimationCheck.frame(game);
+        if(check.bossEncounterCheck!=null)check.bossEncounterCheck.frame(game);
         if(IslandWorld.isIsland(level)&&!level.isCave){
             TileBounds b=RegionSceneQuery.visibleLights(level);
             visual=new VisualSample(level.tileWidth,level.tileHeight,SceneLighting.lastQueryTiles,b.width()*b.height(),
@@ -140,17 +157,30 @@ public final class RefactorNativeChecks extends WorldData {
     }
     @Override public void tick(){
         if(done||!enabled()||!safeProfile()||!isServer())return;
+        lastServerPulse=System.nanoTime();
         try{
             long now=System.nanoTime();if(startNanos==0)startNanos=now;
-            require(now-startNanos<(Boolean.getBoolean("mosslume.refactorProbe.harvest")||Boolean.getBoolean("mosslume.refactorProbe.ai")?180_000_000_000L:60_000_000_000L),"Native probe timed out in phase "+phase);
+            require(now-startNanos<(Boolean.getBoolean("mosslume.refactorProbe.harvest")||Boolean.getBoolean("mosslume.refactorProbe.ai")||Boolean.getBoolean("mosslume.refactorProbe.cognition")||localforest.bosses.NativeBossEncounterCheck.enabled()?180_000_000_000L:Boolean.getBoolean("mosslume.regionProbe")?120_000_000_000L:60_000_000_000L),"Native probe timed out in phase "+phase);
             ServerClient client=getServer().streamClients().filter(c->c.hasSpawned()&&c.playerMob!=null).findFirst().orElse(null);
             if(client==null)return;
             if(!started){
-                if(!(client.getLevel() instanceof GeneratedWorldLevel)||client.getLevel().isCave)return;
+                if(!(client.getLevel() instanceof GeneratedWorldLevel)&&!(client.getLevel() instanceof ContinuousSurfaceLevel)||client.getLevel().isCave)return;
                 started=true;definition=WorldDefinition.forLevel(client.getLevel());require(definition!=null,"Generated definition missing");
                 checkWorld(client);
+                if(Boolean.getBoolean("mosslume.regionProbe"))evidence.put("regions",localforest.world.ContinuousWorldChecks.run(client,loaded));
                 phaseNanos=now;
-                if(Boolean.getBoolean("mosslume.refactorProbe.ai")){
+                if(localforest.bosses.NativeBossEncounterCheck.enabled()){
+                    require(!loaded&&definition.isContinuous(),"Boss encounters require their own fresh continuous QA world");
+                    require(!Boolean.getBoolean("mosslume.refactorProbe.ai"),"Offline Boss checks must not enable paid AI");
+                    bossEncounterCheck=new localforest.bosses.NativeBossEncounterCheck();phase=10;
+                    evidence.put("inventoryInjectionSkipped",true);evidence.put("commandFixturesSkipped",true);
+                }else if(Boolean.getBoolean("mosslume.visualProbe.sceneOnly")){
+                    phase=6;evidence.put("inventoryInjectionSkipped",true);evidence.put("commandFixturesSkipped",true);
+                }else if(Boolean.getBoolean("mosslume.refactorProbe.cognition")){
+                    require(!loaded,"Cognition check requires a fresh disposable world");
+                    cognitionCheck=new localforest.companions.NativeCognitionCheck();phase=9;
+                    evidence.put("cognition",cognitionCheck.evidence());evidence.put("inventoryInjectionSkipped",true);
+                }else if(Boolean.getBoolean("mosslume.refactorProbe.ai")){
                     require(!loaded,"AI smoke check requires a fresh disposable world");
                     modelCheck=new localforest.ai.NativeModelCheck();phase=8;
                     evidence.put("ai",modelCheck.evidence());evidence.put("inventoryInjectionSkipped",true);
@@ -176,7 +206,24 @@ public final class RefactorNativeChecks extends WorldData {
             }
             if(phase==4){
                 Client local=probeClient;if(local==null||local.getLocalServer()!=getServer())return;
+                if(Boolean.getBoolean("mosslume.regionProbe")&&!loaded&&!traversalChecked){
+                    if(traversalCheck==null)traversalCheck=new localforest.world.NativeContinuousTraversalCheck();
+                    if(!traversalCheck.tick(client,local,now))return;
+                    Map<String,Object> result=traversalCheck.evidence();evidence.put("clientTraversal",result);
+                    require(Boolean.TRUE.equals(result.get("passed")),"Native client streaming failed: "+result);traversalChecked=true;
+                }
                 List<CompanionView> companions=CompanionSystem.snapshot(local).companions();if(companions.size()<2)return;
+                if(Boolean.getBoolean("mosslume.refactorProbe.gameplay")&&!gameplayChecked){
+                    require(!loaded,"Gameplay fixtures require a fresh disposable world");
+                    Map<String,Object> result=localforest.GameplayRepairChecks.run(client);
+                    if(result==null)return; // Fixtures advance over real server ticks, never sleep here.
+                    evidence.put("gameplay",result);gameplayChecked=true;
+                }
+                if(localforest.biomes.NativeCreatureAnimationCheck.enabled()){
+                    if(creatureAnimationCheck==null)creatureAnimationCheck=new localforest.biomes.NativeCreatureAnimationCheck();
+                    if(!creatureAnimationCheck.tick(client,now))return;
+                    evidence.put("nativeCreatureAnimations",creatureAnimationCheck.evidence());
+                }
                 if(loaded){checkReloadCompanion(companions);phase=6;}
                 else{
                     CompanionView selected=companions.stream().filter(c->c.name().contains("禾")).findFirst().orElse(companions.get(0));
@@ -189,32 +236,63 @@ public final class RefactorNativeChecks extends WorldData {
                 savedMemoryId=harvestCheck.latestTaskId();phase=6;
             }
             if(phase==8&&modelCheck.tick(client,probeClient,now))phase=6;
+            if(phase==9&&cognitionCheck.tick(client,probeClient,now))phase=6;
+            if(phase==10&&bossEncounterCheck.tick(client,now)){
+                Map<String,Object> result=bossEncounterCheck.evidence();evidence.put("nativeBossEncounters",result);
+                require(Boolean.TRUE.equals(result.get("passed")),"Native Boss encounters failed: "+result);phase=6;
+            }
             if(phase==6)finishWhenRendered(now);
         }catch(Throwable error){fail(error);}
     }
+    /** Client-side watchdog remains runnable when the authoritative server is stuck.
+     * This belongs only to explicitly opted-in disposable probes, not player saves. */
+    private void writeStallEvidence(){
+        watchdogWritten=true;
+        try{
+            Path out=Path.of(System.getProperty("mosslume.refactorProbe"));Files.createDirectories(out);
+            StringBuilder stacks=new StringBuilder("Authoritative server heartbeat stale for >20 seconds; probe phase "+phase+"\n");
+            Thread.getAllStackTraces().entrySet().stream().sorted(java.util.Comparator.comparing(e->e.getKey().getName())).forEach(entry->{
+                stacks.append('\n').append(entry.getKey().getName()).append(" ").append(entry.getKey().getState()).append('\n');
+                for(StackTraceElement frame:entry.getValue())stacks.append("  at ").append(frame).append('\n');
+            });
+            Files.writeString(out.resolve("stalled-server-threads.txt"),stacks,StandardCharsets.UTF_8);
+            Files.writeString(out.resolve("native-checks-failed.json"),"{\"passed\":false,\"serverHeartbeatStalled\":true,\"phase\":"+phase+",\"threadEvidence\":\"stalled-server-threads.txt\"}\n",StandardCharsets.UTF_8);
+            for(jdk.jfr.Recording recording:jdk.jfr.FlightRecorder.getFlightRecorder().getRecordings())
+                if(recording.getState()==jdk.jfr.RecordingState.RUNNING)recording.dump(out.resolve("stalled-server-"+recording.getId()+".jfr"));
+            System.err.println("MOSSLUME_NATIVE_PROBE_STALLED phase="+phase+" evidence="+out);
+        }catch(Exception error){System.err.println("MOSSLUME_NATIVE_PROBE_STALL_EVIDENCE_FAILED "+error);}
+        System.exit(2);
+    }
     private void checkWorld(ServerClient client){
-        Level level=client.getLevel();WorldDefinition d=definition;GeneratedLayout layout=((GeneratedWorldLevel)level).layout();
+        Level level=client.getLevel();WorldDefinition d=definition;
         require(level.tileWidth==d.width&&level.tileHeight==d.height,"Native dimensions differ from versioned definition");
         require(d.encodedSeed.equals(worldEntity.worldSeed),"Native world seed lost its versioned definition");
         require(d.encodedSeed.equals(level.gndData.getString("mosslumeWorldDefinition","")),"Level metadata differs from native world seed");
         require(worldEntity.spawnTile.equals(new Point(d.spawnX,d.spawnY)),"Native world spawn differs from definition");
         require(!level.isLiquidTile(d.spawnX,d.spawnY)&&!level.isSolidTile(d.spawnX,d.spawnY),"Spawn is not walkable");
-        int samples=0;
-        for(int x=0;x<d.width;x++){require(!layout.land(x,0)&&!layout.land(x,d.height-1),"Land escaped north/south limit");samples+=2;}
-        for(int y=0;y<d.height;y++){require(!layout.land(0,y)&&!layout.land(d.width-1,y),"Land escaped east/west limit");samples+=2;}
-        int coastX=d.campX;while(coastX<d.width-1&&layout.land(coastX,d.campY))coastX++;
-        level.regionManager.ensureTileIsLoaded(coastX,d.campY);
-        require(layout.coast(coastX,d.campY),"Coast boundary sample missing");
-        require(level.getObject(coastX,d.campY).getStringID().equals("lfcoastbarrier")&&level.getObject(coastX,d.campY).isSolid,"Native coast collision missing");
+        int samples=0,coastX=-1;
+        if(d.isContinuous()){
+            require(level instanceof ContinuousSurfaceLevel&&level.isOneWorldLevel(),"Native continuous surface missing");
+            require(level.isTileWithinBounds(-1024,1024)&&level.isTileWithinBounds(1024,-1024),"Native coordinate bounds are finite");
+        }else{
+            GeneratedLayout layout=((GeneratedWorldLevel)level).layout();
+            for(int x=0;x<d.width;x++){require(!layout.land(x,0)&&!layout.land(x,d.height-1),"Land escaped north/south limit");samples+=2;}
+            for(int y=0;y<d.height;y++){require(!layout.land(0,y)&&!layout.land(d.width-1,y),"Land escaped east/west limit");samples+=2;}
+            coastX=d.campX;while(coastX<d.width-1&&layout.land(coastX,d.campY))coastX++;
+            level.regionManager.ensureTileIsLoaded(coastX,d.campY);
+            require(layout.coast(coastX,d.campY),"Coast boundary sample missing");
+            require(level.getObject(coastX,d.campY).getStringID().equals("lfcoastbarrier")&&level.getObject(coastX,d.campY).isSolid,"Native coast collision missing");
+        }
         LevelIdentifier before=client.getLevelIdentifier();client.changeLevel(new LevelIdentifier("mosslume-probe-forbidden"));
         require(before.equals(client.getLevelIdentifier()),"Invalid map travel escaped generated world");
-        require(SceneStructures.houses(level).size()==1,"Generated house anchor missing");
-        var house=SceneStructures.houses(level).get(0);require(house.footTileX==d.houseX&&house.footTileY==d.houseY,"House visual anchor differs from world structure");
+        require(SceneStructures.houses(level).stream().anyMatch(house->house.footTileX==d.houseX&&house.footTileY==d.houseY),"House visual anchor differs from world structure");
         Map<String,Object> world=new LinkedHashMap<>();
         world.put("seed",d.userSeed);world.put("encodedSeed",d.encodedSeed);world.put("preset",d.preset);world.put("rules",d.rules);
         world.put("generatorVersion",d.generatorVersion);world.put("contentVersion",d.contentVersion);world.put("width",d.width);world.put("height",d.height);
         world.put("spawn",List.of(d.spawnX,d.spawnY));world.put("house",List.of(d.houseX,d.houseY));world.put("finiteEdgeSamples",samples);
-        world.put("solidCoastSample",List.of(coastX,d.campY));world.put("invalidTravelBlocked",true);evidence.put("world",world);
+        if(!d.isContinuous())world.put("solidCoastSample",List.of(coastX,d.campY));
+        world.put("worldType",d.isContinuous()?"continuous":"finite");world.put("invalidTravelBlocked",true);evidence.put("world",world);
+        if(d.isMultibiome())evidence.put("biomes",localforest.biomes.BiomeWorldChecks.verify(client,loaded));
     }
     private void checkInventory(ServerClient client){
         Level level=client.getLevel();PlayerMob player=client.playerMob;
@@ -279,7 +357,7 @@ public final class RefactorNativeChecks extends WorldData {
         require(object instanceof LadderDownObjectEntity,"Native ladder-down missing");((LadderDownObjectEntity)object).use(getServer(),client);
     }
     private void leaveCave(ServerClient client){
-        Level cave=client.getLevel();require(cave instanceof GeneratedWorldLevel&&cave.isCave&&LevelIdentifier.CAVE_IDENTIFIER.equals(cave.getIdentifier()),"Native ladder did not enter generated cave");
+        Level cave=client.getLevel();require((cave instanceof GeneratedWorldLevel||cave instanceof ContinuousCaveLevel)&&cave.isCave&&LevelIdentifier.CAVE_IDENTIFIER.equals(cave.getIdentifier()),"Native ladder did not enter generated cave");
         require(SceneStructures.houses(cave).isEmpty(),"Surface house fallback appeared in cave");
         var up=cave.entityManager.getObjectEntity(definition.caveX,definition.caveY);require(up instanceof PortalObjectEntity,"Native reciprocal ladder missing");
         ((PortalObjectEntity)up).use(getServer(),client);
@@ -348,24 +426,44 @@ public final class RefactorNativeChecks extends WorldData {
         VisualSample v=visual;if(v==null||v.shadowFrames()<12||v.windDraws()<1||v.queryTiles()<1||v.receiverTiles()<1)return;
         require(v.shadowGpu(),"Shadow renderer fell back from GPU");require(v.windFallbacks()==0,"Wind renderer used fallback path");
         require(v.queryTiles()<=v.lightBoundsTiles(),"Light query escaped camera neighborhood");
-        require(v.queryTiles()<v.levelWidth()*v.levelHeight(),"Light query scanned whole generated world");
-        require(v.receiverTiles()==v.receiverWidth()*v.receiverHeight()&&v.receiverTiles()<v.levelWidth()*v.levelHeight(),"Shadow receiver cache is not bounded");
+        boolean unbounded=v.levelWidth()<=0||v.levelHeight()<=0;
+        if(!unbounded)require(v.queryTiles()<v.levelWidth()*v.levelHeight(),"Light query scanned whole generated world");
+        require(v.receiverTiles()==v.receiverWidth()*v.receiverHeight(),"Shadow receiver dimensions are inconsistent");
+        require(unbounded?v.receiverTiles()<=v.lightBoundsTiles():v.receiverTiles()<v.levelWidth()*v.levelHeight(),"Shadow receiver cache is not bounded");
+        int soak=Math.max(0,Math.min(60,Integer.getInteger("mosslume.refactorProbe.soakSeconds",0)));
+        if(soak>0){
+            if(soakStart==0)soakStart=now;
+            if(soakPrevious!=0)soakMaximumGap=Math.max(soakMaximumGap,now-soakPrevious);
+            soakPrevious=now;soakTicks++;
+            if(now-soakStart<soak*1_000_000_000L)return;
+            require(soakTicks>=soak*5,"Authoritative server did not continue ticking during soak");
+            evidence.put("postInteractionSoak",Map.of("seconds",(now-soakStart)/1e9,"serverTicks",soakTicks,"maximumTickGapMillis",soakMaximumGap/1e6));
+        }
         Map<String,Object> render=new LinkedHashMap<>();render.put("lightTilesQueried",v.queryTiles());render.put("cameraLightBoundsTiles",v.lightBoundsTiles());
-        render.put("worldTiles",v.levelWidth()*v.levelHeight());render.put("receiverTiles",v.receiverTiles());render.put("receiverOrigin",List.of(v.receiverX(),v.receiverY()));
+        render.put("worldTiles",unbounded?null:Integer.valueOf(v.levelWidth()*v.levelHeight()));render.put("continuousWorld",unbounded);render.put("receiverTiles",v.receiverTiles());render.put("receiverOrigin",List.of(v.receiverX(),v.receiverY()));
         render.put("receiverDimensions",List.of(v.receiverWidth(),v.receiverHeight()));render.put("shadowGpu",v.shadowGpu());render.put("shadowFrames",v.shadowFrames());
         render.put("windGpuDraws",v.windDraws());render.put("windFallbacks",v.windFallbacks());render.put("lightTilesScannedCumulative",v.lightsScanned());
         render.put("companionSprites",v.companionSprites());evidence.put("visual",render);
         checkpointComplete=true;done=true;evidence.put("passed",true);evidence.put("reload",loaded);evidence.put("profile",GlobalData.appDataPath());
         evidence.put("elapsedSeconds",(now-startNanos)/1e9);evidence.put("checkpointMarker",marker);
-        evidence.put("scope",modelCheck!=null?
+        evidence.put("creatureAnimations",localforest.biomes.BiomeCreatureSprites.animationDiagnostics());
+        getServer().streamClients().filter(c->c.hasSpawned()&&c.playerMob!=null).findFirst().ifPresent(c->evidence.put("residentLife",localforest.companions.NpcPopulationService.lifeSummary(c.getLevel())));
+        evidence.put("scope",bossEncounterCheck!=null?
+            "Offline native Boss encounters in a fresh disposable world: real server attacks, native cow targets, native projectiles/hits, half-health phase, SaveData round trip and client draw counters. No paid model calls, physical input or full-fight balance claim.":Boolean.getBoolean("mosslume.visualProbe.sceneOnly")?
+            "Read-only native world/render checks for natural resident observation. No inventory markers, companion commands, physical input or paid model calls.":cognitionCheck!=null?
+            "Native cognition and social adapter fixtures in a disposable world: actual NPC path movement, world bubbles and native save wiring. No paid model calls or physical mouse input. Model SDK separately exercised against local HTTP fixtures.":modelCheck!=null?
             "Opt-in three-request DeepSeek integration in a disposable native world: natural-language follow and cancel matched native commands, conversation preserved task. No physical input or autonomous-behavior claim.":harvestCheck==null?
             "Native server inventory/world/command checks in an opt-in disposable QA profile; commands use the same client queue as UI buttons. No physical mouse, AI-provider, aesthetic similarity or long-session performance claim.":
             "Native crop harvest, in-flight cancellation and re-execution in an opt-in fresh disposable QA profile. Uses original generated crops and native inventories; no crop/item injection. Harvest output is not a warehouse-delivery claim.");
+        if(gameplayChecked)evidence.put("gameplayScope","Offline native server combat/conversation/population fixtures; not physical input or paid-model evidence.");
+        if(Boolean.getBoolean("mosslume.regionProbe"))evidence.put("regionScope",loaded?"Native remote edits verified after disk reopen, then unload/reload repeated; client traversal was checked separately in the fresh run.":"Native generation/unload/reload plus server-driven client teleports and ordinary region streaming across four cardinal directions/negative coordinates, then return home. No physical walking claim; disk reopen requires a separate --reload run.");
         write(loaded?"native-checks-reload.json":"native-checks.json");
         System.out.println("MOSSLUME_REFACTOR_NATIVE_CHECKS "+json(evidence));
         if(Boolean.getBoolean("mosslume.refactorProbe.stop"))getServer().stop(server->{System.out.println("MOSSLUME_REFACTOR_PROBE_SAVED");System.exit(0);});
     }
     private void fail(Throwable error){
+        if(bossEncounterCheck!=null){evidence.put("nativeBossEncounters",bossEncounterCheck.evidence());bossEncounterCheck.cleanup();}
+        if(creatureAnimationCheck!=null){evidence.put("nativeCreatureAnimations",creatureAnimationCheck.evidence());creatureAnimationCheck.cleanup();}
         done=true;request=null;evidence.put("passed",false);evidence.put("reload",loaded);evidence.put("phase",phase);evidence.put("error",error.toString());
         evidence.put("scope","Opt-in disposable native API probe; no physical mouse input");
         try{write("native-checks-failed.json");}catch(Exception writeError){System.err.println("MOSSLUME_REFACTOR_PROBE_WRITE_FAILED "+writeError);}
@@ -377,7 +475,7 @@ public final class RefactorNativeChecks extends WorldData {
     }
     private void write(String file) throws Exception {Path dir=Path.of(System.getProperty("mosslume.refactorProbe"));Files.createDirectories(dir);Files.writeString(dir.resolve(file),json(evidence)+"\n",StandardCharsets.UTF_8);}
     private static void require(boolean condition,String error){if(!condition)throw new IllegalStateException(error);}
-    private static String json(Object value){
+    static String json(Object value){
         if(value==null)return "null";if(value instanceof Number||value instanceof Boolean)return value.toString();
         if(value instanceof Map<?,?>){StringBuilder out=new StringBuilder("{");for(var e:((Map<?,?>)value).entrySet()){if(out.length()>1)out.append(',');out.append(json(e.getKey().toString())).append(':').append(json(e.getValue()));}return out.append('}').toString();}
         if(value instanceof Iterable<?>){StringBuilder out=new StringBuilder("[");for(Object item:(Iterable<?>)value){if(out.length()>1)out.append(',');out.append(json(item));}return out.append(']').toString();}

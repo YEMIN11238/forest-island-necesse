@@ -18,19 +18,27 @@ import necesse.entity.mobs.PlayerMob;
 import necesse.gfx.HumanLook;
 import localforest.world.IslandWorld;
 import localforest.visual.IslandVisuals;
+import localforest.visual.BiomeVisuals;
+import localforest.biomes.BiomeCreatures;
 
 @ModEntry
 public class IslandMod {
-    public static final String VERSION="0.4.0-r2";
+ public static final String VERSION="0.5.2-combat-bosses";
     public static boolean enabled() { return GameLaunch.launchOptions!=null && GameLaunch.launchOptions.containsKey("islandprofile"); }
     public void init() {
         if(!enabled())return;
+        BiomeVisuals.init();BiomeCreatures.register();localforest.bosses.MosslumeBosses.register();
         IslandWorld.init();IslandNativeChecks.register();IslandVisuals.init();
         localforest.companions.CompanionSystem.init();
+        localforest.companions.NativeStorageFinderRepair.install();
         RefactorNativeChecks.register();
         System.out.println("LOCALFOREST_INIT version="+VERSION+" kernel=Necesse-1.3.3 profile="+GlobalData.appDataPath());
     }
-    public void initResources() { if(enabled()){IslandVisuals.initResources();localforest.branding.MosslumeBranding.initResources();} }
+    public void initResources() {
+        if(!enabled())return;
+        IslandVisuals.initResources();BiomeVisuals.initResources();BiomeCreatures.initResources();localforest.bosses.MosslumeBosses.initResources();
+        localforest.branding.MosslumeBranding.initResources();
+    }
     public void postInit() {
         if(!enabled())return;
         Settings.displayMode=DisplayMode.Windowed;Settings.displaySize=new Dimension(1200,900);

@@ -1,0 +1,363 @@
+{
+  "atlases": 14,
+  "requestedSourceSlots": 174,
+  "integrityPassed": true,
+  "edgeReview": [],
+  "assets": [
+    {
+      "id": "wetland-terrain-connectors",
+      "file": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "bdd78048638d5b754a53e8ffba8f92e833e40d5608171a5bb3d093f7ca486b4d",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 835627,
+      "lowAlphaPixels": 79636,
+      "foregroundBboxAtAlpha32": [
+        134,
+        55,
+        1417,
+        968
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-flora-resources",
+      "file": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "10842809a28fc8661d809e4c119624c7121b660e664ee73580378cd70ac766e7",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 1002945,
+      "lowAlphaPixels": 90600,
+      "foregroundBboxAtAlpha32": [
+        110,
+        76,
+        1416,
+        976
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-buildings-layers",
+      "file": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "245c9f0437908517fde72c4b91796d578c6de2da49f58bd7c0d7d3e22a737c6b",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 744126,
+      "lowAlphaPixels": 77953,
+      "foregroundBboxAtAlpha32": [
+        62,
+        34,
+        1457,
+        992
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-frog-directional-poses",
+      "file": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "6b1582d68b24896760e278aeb8165db6bb46084e0f08a1bfd879fe2e681df281",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 1045439,
+      "lowAlphaPixels": 123759,
+      "foregroundBboxAtAlpha32": [
+        66,
+        95,
+        1253,
+        1125
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-dragonfly-directional-poses",
+      "file": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "aa96753ca7ab546334d836589a10c6d674b5b95a85f819ecb7566175b5243fad",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 987504,
+      "lowAlphaPixels": 258876,
+      "foregroundBboxAtAlpha32": [
+        45,
+        108,
+        1278,
+        1112
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-monsters-poses",
+      "file": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "bfc759d2ab13c823537e3e5ad100ed06cf5eadf30fc31b63b95763730fe19bb9",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 933200,
+      "lowAlphaPixels": 103129,
+      "foregroundBboxAtAlpha32": [
+        33,
+        105,
+        1283,
+        1132
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "wetland-props-local-effects",
+      "file": "art/biomes/batch-08/wetland-props-local-effects-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "22a694e3d5a8ddfbfdfd1f0c682289173753af66feb2ad92ae790db7eeb8955f",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 1199612,
+      "lowAlphaPixels": 88399,
+      "foregroundBboxAtAlpha32": [
+        90,
+        120,
+        1449,
+        965
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-terrain-connectors",
+      "file": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "1ddd5e72cc0072ee4088192546ff9782da9b6922d782d48328eadb52e1552604",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 721216,
+      "lowAlphaPixels": 68133,
+      "foregroundBboxAtAlpha32": [
+        89,
+        63,
+        1468,
+        981
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-flora-resources",
+      "file": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "29bf4457cfe4d6d590165b3a4691166198ed86ae23d0864e0e7731ef9e091098",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 939029,
+      "lowAlphaPixels": 95299,
+      "foregroundBboxAtAlpha32": [
+        106,
+        34,
+        1420,
+        992
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-buildings-layers",
+      "file": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "ac2e7f871753897628cc9887368ccc3a791c90a8f8c51729823cfc6dc2d257df",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 671825,
+      "lowAlphaPixels": 70172,
+      "foregroundBboxAtAlpha32": [
+        32,
+        28,
+        1499,
+        977
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-snail-directional-poses",
+      "file": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "7089eb39b4c8e4a2481a804af91d5b371bf916338de30e6f345152d580b52baa",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 1172885,
+      "lowAlphaPixels": 76627,
+      "foregroundBboxAtAlpha32": [
+        67,
+        105,
+        1251,
+        1104
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-moth-directional-poses",
+      "file": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "45946934b07cfaee51dce0fbe9b960e2909ff92e007ecd92dc72ce85a6110a01",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 944932,
+      "lowAlphaPixels": 140431,
+      "foregroundBboxAtAlpha32": [
+        37,
+        67,
+        1279,
+        1109
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-monsters-poses",
+      "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "sha256": "87012c43054016441522ba7b72bc40932fc055f9eaa13f50d3e64aae1797313e",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentPixels": 945869,
+      "lowAlphaPixels": 60987,
+      "foregroundBboxAtAlpha32": [
+        48,
+        76,
+        1271,
+        1127
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    },
+    {
+      "id": "mushroom-props-local-effects",
+      "file": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "1bb466edbc324ed9f8d274c40302448eb4fd7d3ec24e3fe849a449a39aa6c6e5",
+      "hashMatchesOriginal": true,
+      "alphaRange": [
+        0,
+        254
+      ],
+      "transparentPixels": 1192253,
+      "lowAlphaPixels": 67855,
+      "foregroundBboxAtAlpha32": [
+        100,
+        146,
+        1447,
+        962
+      ],
+      "foregroundTouchesEdge": false,
+      "promptExists": true
+    }
+  ],
+  "limitations": [
+    "Source artwork only; no runtime integration, seamless autotile proof, fixed pivot animation or attack timeline acceptance.",
+    "Generated alpha preserved, including low-alpha fringes.",
+    "Mushroom monsters selected v2 corrects right-facing hit; other outlines lightly redrawn1–3sourcepx; v1 preserved."
+  ]
+}

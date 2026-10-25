@@ -1,0 +1,21 @@
+{
+  "runtimePngCount": 168,
+  "biomeCount": 6,
+  "sourcePixelsModified": false,
+  "allPassed": true,
+  "failures": [],
+  "validation": [
+    "dimensions",
+    "hard_alpha",
+    "nonempty_frames",
+    "fixed_foot_baseline",
+    "ground_opacity_and_matching_edges",
+    "copied_resources_hash",
+    "original_source_hash"
+  ],
+  "limitations": [
+    "Generated walking keyposes are a first runtime set, not fully authored animation cycles.",
+    "Terrain-module atlas is not an autotile adjacency atlas.",
+    "No collider or gameplay behavior is implied by this art export."
+  ]
+}

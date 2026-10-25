@@ -1,0 +1,775 @@
+{
+  "schema": 1,
+  "frameSize": 64,
+  "foot": [
+    32,
+    52
+  ],
+  "scale": 2,
+  "directions": [
+    "up",
+    "right",
+    "down",
+    "left"
+  ],
+  "frames": 6,
+  "definition": "Visible dominant hand centre in each authored empty-hand attack pose. Coordinates are local to the 64px frame; no animation-time interpolation across discrete body frames.",
+  "actors": {
+    "player": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/players/player-attack-up.png",
+        "sha256": "2b564193da50649b9825fa539c8b92f1ddbecaf53c3ba3c41cedb87a15735597",
+        "hands": [
+          [
+            39,
+            40
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            38,
+            23
+          ],
+          [
+            45,
+            30
+          ],
+          [
+            48,
+            36
+          ],
+          [
+            39,
+            40
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/players/player-attack-right.png",
+        "sha256": "5a54edd58119292a3a1602c96f79162e2d97051e4a12f2800ca1d26d1887c0ac",
+        "hands": [
+          [
+            36,
+            42
+          ],
+          [
+            24,
+            32
+          ],
+          [
+            29,
+            20
+          ],
+          [
+            48,
+            36
+          ],
+          [
+            49,
+            38
+          ],
+          [
+            35,
+            42
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/players/player-attack-down.png",
+        "sha256": "ca1fbd615a226f0f98068186e4a80d253b5dbead461a2ec04b8af29ed4e3a8cc",
+        "hands": [
+          [
+            39,
+            41
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            40,
+            20
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            47,
+            38
+          ],
+          [
+            39,
+            41
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/players/player-attack-left.png",
+        "sha256": "39333c9ce39f474c1aff700809fa942db2330c57c4093374ad946ef4b70d85d2",
+        "hands": [
+          [
+            26,
+            41
+          ],
+          [
+            40,
+            31
+          ],
+          [
+            35,
+            18
+          ],
+          [
+            15,
+            35
+          ],
+          [
+            15,
+            38
+          ],
+          [
+            26,
+            41
+          ]
+        ]
+      }
+    ],
+    "ashuo": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/residents/ashuo-attack-up.png",
+        "sha256": "d08f4355751e98b4c8c8a640b94b5876d220820f689d042dea3d82fcd124fc6c",
+        "hands": [
+          [
+            39,
+            43
+          ],
+          [
+            42,
+            38
+          ],
+          [
+            43,
+            36
+          ],
+          [
+            44,
+            36
+          ],
+          [
+            39,
+            43
+          ],
+          [
+            40,
+            43
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/residents/ashuo-attack-right.png",
+        "sha256": "98c1abec3232c4c07f78be9f24f4ca2dc805fe02dc8b20529b193094a4f12d9b",
+        "hands": [
+          [
+            39,
+            42
+          ],
+          [
+            41,
+            38
+          ],
+          [
+            42,
+            37
+          ],
+          [
+            49,
+            37
+          ],
+          [
+            37,
+            44
+          ],
+          [
+            39,
+            43
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/residents/ashuo-attack-down.png",
+        "sha256": "bb985ff216af6445b72e69749dc9819899037db194c92ab874bdc9a0f75564e9",
+        "hands": [
+          [
+            40,
+            43
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            40,
+            34
+          ],
+          [
+            44,
+            38
+          ],
+          [
+            39,
+            43
+          ],
+          [
+            39,
+            43
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/residents/ashuo-attack-left.png",
+        "sha256": "80081362f41c09aa24de7ffae9f19a4d2f984a0dec074118963ce1a698070d68",
+        "hands": [
+          [
+            24,
+            44
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            21,
+            37
+          ],
+          [
+            16,
+            38
+          ],
+          [
+            24,
+            43
+          ],
+          [
+            26,
+            43
+          ]
+        ]
+      }
+    ],
+    "luan": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/residents/luan-attack-up.png",
+        "sha256": "a1176d735c9d0d59b66a94aa7cb7a2799203c42efacde6d43f3424a4297fa6ef",
+        "hands": [
+          [
+            38,
+            43
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            43,
+            36
+          ],
+          [
+            42,
+            36
+          ],
+          [
+            40,
+            39
+          ],
+          [
+            38,
+            43
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/residents/luan-attack-right.png",
+        "sha256": "23c8600652df46fd27d4410280090de21fe0683fda600b9fe0cb1b5ad20c3ac9",
+        "hands": [
+          [
+            40,
+            39
+          ],
+          [
+            39,
+            38
+          ],
+          [
+            43,
+            34
+          ],
+          [
+            43,
+            37
+          ],
+          [
+            40,
+            41
+          ],
+          [
+            39,
+            43
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/residents/luan-attack-down.png",
+        "sha256": "e93900118c5283856f99cd95f53518761f4df35eabbe7600ceaf0b361bee9181",
+        "hands": [
+          [
+            26,
+            41
+          ],
+          [
+            23,
+            41
+          ],
+          [
+            24,
+            43
+          ],
+          [
+            26,
+            42
+          ],
+          [
+            23,
+            39
+          ],
+          [
+            25,
+            41
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/residents/luan-attack-left.png",
+        "sha256": "63dda63e27dce019c09a07d7b3bdaecb60d0834b1be77ea205c2b68822d694f6",
+        "hands": [
+          [
+            24,
+            44
+          ],
+          [
+            22,
+            41
+          ],
+          [
+            21,
+            35
+          ],
+          [
+            20,
+            40
+          ],
+          [
+            22,
+            41
+          ],
+          [
+            24,
+            43
+          ]
+        ]
+      }
+    ],
+    "farmer": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/residents/farmer-attack-up.png",
+        "sha256": "41390665bb4f88bfe2673dc6f11f51d688814e02aa1e1428600ba691950615e7",
+        "hands": [
+          [
+            39,
+            42
+          ],
+          [
+            41,
+            36
+          ],
+          [
+            42,
+            35
+          ],
+          [
+            43,
+            35
+          ],
+          [
+            39,
+            42
+          ],
+          [
+            39,
+            42
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/residents/farmer-attack-right.png",
+        "sha256": "f17af9a0ed5cb83e39eee9ef53a77d17fe078006086c50b35657e6095b05fd72",
+        "hands": [
+          [
+            37,
+            39
+          ],
+          [
+            39,
+            36
+          ],
+          [
+            44,
+            33
+          ],
+          [
+            46,
+            36
+          ],
+          [
+            34,
+            41
+          ],
+          [
+            36,
+            40
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/residents/farmer-attack-down.png",
+        "sha256": "9688c8dec680161c9873b53300306e19799b1ed134f55c7b95708fe4429b6134",
+        "hands": [
+          [
+            39,
+            40
+          ],
+          [
+            40,
+            36
+          ],
+          [
+            41,
+            30
+          ],
+          [
+            42,
+            36
+          ],
+          [
+            38,
+            42
+          ],
+          [
+            39,
+            41
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/residents/farmer-attack-left.png",
+        "sha256": "e22a47b4562ff2d68aaca87da41b1f984d262d5c659bd1eda08f28de0ca8a7bb",
+        "hands": [
+          [
+            26,
+            40
+          ],
+          [
+            22,
+            37
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            18,
+            37
+          ],
+          [
+            26,
+            39
+          ],
+          [
+            30,
+            41
+          ]
+        ]
+      }
+    ],
+    "merchant": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/residents/merchant-attack-up.png",
+        "sha256": "04eafa6409d1dd2d31a8357c93ae78b6608ff6a0fd10095f1851c4c7643daab9",
+        "hands": [
+          [
+            39,
+            42
+          ],
+          [
+            41,
+            36
+          ],
+          [
+            42,
+            35
+          ],
+          [
+            43,
+            35
+          ],
+          [
+            39,
+            42
+          ],
+          [
+            39,
+            42
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/residents/merchant-attack-right.png",
+        "sha256": "b1a05dac4535f6422445343e3815c855773b713bbd87c5a7d8f25dc35a7e1224",
+        "hands": [
+          [
+            37,
+            40
+          ],
+          [
+            38,
+            36
+          ],
+          [
+            44,
+            33
+          ],
+          [
+            45,
+            35
+          ],
+          [
+            32,
+            40
+          ],
+          [
+            36,
+            40
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/residents/merchant-attack-down.png",
+        "sha256": "9f427760c3c6f1e4036dbc763e61f906bda958b2577ad6604a68789b7e7682d0",
+        "hands": [
+          [
+            39,
+            40
+          ],
+          [
+            40,
+            36
+          ],
+          [
+            42,
+            30
+          ],
+          [
+            42,
+            36
+          ],
+          [
+            38,
+            42
+          ],
+          [
+            40,
+            39
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/residents/merchant-attack-left.png",
+        "sha256": "c6519500deb4717df20ce4762e575a1de077c884af2900a35f2d68814b77a8fd",
+        "hands": [
+          [
+            26,
+            40
+          ],
+          [
+            22,
+            36
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            18,
+            36
+          ],
+          [
+            26,
+            40
+          ],
+          [
+            29,
+            40
+          ]
+        ]
+      }
+    ],
+    "carpenter": [
+      {
+        "direction": "up",
+        "strip": "mod/resources/mosslume/residents/carpenter-attack-up.png",
+        "sha256": "be76639b77325e940ebd39dfce0911c221a788bcbbd0c728ab0faa61447844b7",
+        "hands": [
+          [
+            39,
+            41
+          ],
+          [
+            41,
+            36
+          ],
+          [
+            42,
+            35
+          ],
+          [
+            43,
+            35
+          ],
+          [
+            39,
+            41
+          ],
+          [
+            39,
+            41
+          ]
+        ]
+      },
+      {
+        "direction": "right",
+        "strip": "mod/resources/mosslume/residents/carpenter-attack-right.png",
+        "sha256": "a2a316aca129adc3215b447337553db3b3fb46e46f01906c93a1ddbe9eb45ed3",
+        "hands": [
+          [
+            36,
+            40
+          ],
+          [
+            38,
+            36
+          ],
+          [
+            44,
+            34
+          ],
+          [
+            46,
+            35
+          ],
+          [
+            33,
+            40
+          ],
+          [
+            36,
+            40
+          ]
+        ]
+      },
+      {
+        "direction": "down",
+        "strip": "mod/resources/mosslume/residents/carpenter-attack-down.png",
+        "sha256": "69dce33e669bed6f26a98c5f6c9d9c910a7c66d4c8d02ebbd62f57c0e6035b37",
+        "hands": [
+          [
+            38,
+            40
+          ],
+          [
+            40,
+            36
+          ],
+          [
+            42,
+            29
+          ],
+          [
+            43,
+            36
+          ],
+          [
+            38,
+            40
+          ],
+          [
+            39,
+            40
+          ]
+        ]
+      },
+      {
+        "direction": "left",
+        "strip": "mod/resources/mosslume/residents/carpenter-attack-left.png",
+        "sha256": "f98b61522d4499d8b6bbc96600f9c342b2569a96914ee0eb4a5eecdd16450dfc",
+        "hands": [
+          [
+            26,
+            40
+          ],
+          [
+            22,
+            36
+          ],
+          [
+            24,
+            35
+          ],
+          [
+            18,
+            36
+          ],
+          [
+            26,
+            41
+          ],
+          [
+            30,
+            41
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -35,16 +35,23 @@ public final class IslandWorld {
  private static int coastID;
  private static final List<Placement> placements=new ArrayList<>();
  public static boolean enabled(){return Boolean.getBoolean("localforest.islandprofile")||(GameLaunch.launchOptions!=null&&GameLaunch.launchOptions.containsKey("islandprofile"));}
- public static boolean isIsland(Level l){return l instanceof IslandLevel||l instanceof GeneratedWorldLevel||(l!=null&&l.gndData.getBoolean("localforestisland"));}
+ public static boolean isIsland(Level l){return l instanceof IslandLevel||l instanceof GeneratedWorldLevel||l instanceof ContinuousSurfaceLevel||l instanceof ContinuousCaveLevel||(l!=null&&l.gndData.getBoolean("localforestisland"));}
  public static void init(){
   LevelRegistry.registerLevel("localforestisland",IslandLevel.class);
   LevelRegistry.registerLevel("mosslumegenerated",GeneratedWorldLevel.class);
+  LevelRegistry.registerLevel("mosslumecontinuous",ContinuousSurfaceLevel.class);
+  LevelRegistry.registerLevel("mosslumecontinuouscave",ContinuousCaveLevel.class);
+  MosslumeContinuousBiome.register();
   NaturalPathWorld.init();
   coastID=ObjectRegistry.registerObject("lfcoastbarrier",new CoastBarrier(),-1.0f,false);
   WorldGenerator.registerGenerator(new WorldGenerator(){
    @Override public Level getNewLevel(LevelIdentifier id,Server server,GameBlackboard board){
     if(!enabled())return null;
     WorldDefinition definition=WorldDefinition.forWorld(server.world.worldEntity);
+    if(definition!=null&&definition.isContinuous()){
+     if(LevelIdentifier.SURFACE_IDENTIFIER.equals(id))return new ContinuousSurfaceLevel(id,0,0,server.world.worldEntity);
+     if(LevelIdentifier.CAVE_IDENTIFIER.equals(id))return new ContinuousCaveLevel(id,0,0,server.world.worldEntity);
+    }
     if(definition!=null&&(LevelIdentifier.SURFACE_IDENTIFIER.equals(id)||LevelIdentifier.CAVE_IDENTIFIER.equals(id)))
       return new GeneratedWorldLevel(id,definition.width,definition.height,server.world.worldEntity);
     if(definition==null&&LevelIdentifier.SURFACE_IDENTIFIER.equals(id))return new IslandLevel(id,IslandLayout.WIDTH,IslandLayout.HEIGHT,server.world.worldEntity);
@@ -92,7 +99,9 @@ public final class IslandWorld {
   world.serverWorld.settings.difficulty=d.rules.equals("relaxed")?necesse.engine.GameDifficulty.CASUAL:necesse.engine.GameDifficulty.CLASSIC;
   world.serverWorld.settings.saveSettings();
   Level level=world.serverWorld.getLevel(world.spawnLevelIdentifier);
-  level.regionManager.ensureTilesAreLoaded(d.campX-48,d.campY-48,d.campX+56,d.campY+48);
+  // Native streaming owns exploration. Loading the whole finite expedition here
+  // also created every remote entity/structure before the player could move.
+  level.regionManager.ensureTilesAreLoaded(d.campX-(d.isContinuous()?30:24),d.campY-(d.isContinuous()?36:24),d.campX+24,d.campY+24);
   addGeneratedResidents(level,d);
   System.out.println("MOSSLUME_GENERATED_WORLD_READY preset="+d.preset+" userSeed="+d.userSeed+" generator="+d.generatorVersion+" content="+d.contentVersion+" dimensions="+d.width+"x"+d.height);
  }
@@ -103,6 +112,7 @@ public final class IslandWorld {
    settlement.networkData.setOwner(client);
    if(!settlement.networkData.isSettlementNameSet())settlement.networkData.setName(new StaticMessage("苔光营地"));
    completeInitialRecruitment(level,settlement);
+   localforest.companions.NpcPopulationService.ensureInitialPopulation(level,d.campX,d.campY);
    if(client.playerMob!=null&&(!level.isTileWithinBounds(client.playerMob.getTileX(),client.playerMob.getTileY())||level.getTile(client.playerMob.getTileX(),client.playerMob.getTileY()).isLiquid))
     client.playerMob.setPos(d.spawnX*32+16,d.spawnY*32+16,true);
   }
@@ -116,7 +126,7 @@ public final class IslandWorld {
    ||d!=null&&LevelIdentifier.CAVE_IDENTIFIER.equals(client.spawnLevelIdentifier);
   int width=d==null?IslandLayout.WIDTH:d.width,height=d==null?IslandLayout.HEIGHT:d.height;
   Point tile=client.spawnTile;
-  if(allowed&&tile!=null&&tile.x>=0&&tile.y>=0&&tile.x<width&&tile.y<height)return;
+  if(allowed&&tile!=null&&(d!=null&&d.isContinuous()||tile.x>=0&&tile.y>=0&&tile.x<width&&tile.y<height))return;
   client.spawnLevelIdentifier=LevelIdentifier.SURFACE_IDENTIFIER;
   client.spawnTile=d==null?new Point(IslandLayout.SPAWN_X,IslandLayout.SPAWN_Y):new Point(d.spawnX,d.spawnY);
  }
@@ -139,15 +149,19 @@ public final class IslandWorld {
    if(object.role().endsWith("storage"))settlement.storageManager.assignStorage(object.x(d),object.y(d),false);
    if(object.role().equals("workstation"))settlement.storageManager.assignWorkstation(object.x(d),object.y(d),false);
   }
+  CoastalCampLayout coastal=d.isContinuous()?ContinuousWorldLayout.forWorld(d).coast:null;
   for(int i=0;i<6;i++){
    String type=i<2?"sheep":i<4?"chicken":"rabbit";
    necesse.entity.mobs.Mob animal=MobRegistry.getMob(type,level);
-   int x=d.campX-9+i*2,y=d.campY-11;
+   // The old row crossed district-1's house footprint and prevented its two
+   // core residents from ever being seeded. V4 keeps animals in their own grove.
+   int x=coastal==null?d.campX-9+i*2:coastal.animalX(i),y=coastal==null?d.campY-11:coastal.animalY(i);
    if(level.getObjectID(x,y)!=0)level.setObject(x,y,0);
    animal.onSpawned(x*32+16,y*32+16);animal.canDespawn=false;
    level.entityManager.addMob(animal,x*32+16,y*32+16);
   }
   level.gndData.setBoolean("mosslumeResidentsSeededV1",true);
+  localforest.companions.NpcPopulationService.ensureInitialPopulation(level,d.campX,d.campY);
  }
  /** Finish the same recruitment lifecycle as the native shop action, once per starter resident.
   * Early 0.4 previews only moved residents into beds and omitted their joining thought/cooldowns.

@@ -1,0 +1,294 @@
+{
+  "batch": "09",
+  "selectedAtlases": 14,
+  "plannedSourceRegions": 174,
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "checks": [
+    {
+      "id": "snowfield-terrain-connectors",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 715239,
+      "faintAlphaPixels": 61520,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        76,
+        79,
+        1460,
+        971
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "snowfield-flora-resources",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 1102523,
+      "faintAlphaPixels": 75968,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        168,
+        67,
+        1409,
+        997
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "snowfield-building-layers",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 680526,
+      "faintAlphaPixels": 72566,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        80,
+        16,
+        1460,
+        997
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "snow-rabbit-directional-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 1015660,
+      "faintAlphaPixels": 88781,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        48,
+        74,
+        1273,
+        1146
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "arctic-fox-directional-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 814774,
+      "faintAlphaPixels": 146722,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        38,
+        59,
+        1304,
+        1152
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "snowfield-monster-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 840520,
+      "faintAlphaPixels": 104529,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        26,
+        58,
+        1297,
+        1153
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "snowfield-props-effects",
+      "size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 933772,
+      "faintAlphaPixels": 176421,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        32,
+        58,
+        1423,
+        1039
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-terrain-connectors",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 728383,
+      "faintAlphaPixels": 67080,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        84,
+        61,
+        1453,
+        993
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-flora-resources",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 979518,
+      "faintAlphaPixels": 102880,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        144,
+        25,
+        1398,
+        999
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-building-layers",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 778100,
+      "faintAlphaPixels": 108568,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        32,
+        71,
+        1509,
+        980
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-lizard-directional-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 1014804,
+      "faintAlphaPixels": 165806,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        22,
+        56,
+        1294,
+        1133
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "fennec-fox-directional-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 897320,
+      "faintAlphaPixels": 122934,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        29,
+        34,
+        1300,
+        1162
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-monster-poses",
+      "size": [
+        1312,
+        1199
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 872240,
+      "faintAlphaPixels": 164902,
+      "maxAlpha": 255,
+      "foreground32Bbox": [
+        50,
+        53,
+        1275,
+        1141
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    },
+    {
+      "id": "desert-props-effects",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "fullyTransparentPixels": 1097013,
+      "faintAlphaPixels": 96471,
+      "maxAlpha": 254,
+      "foreground32Bbox": [
+        74,
+        141,
+        1501,
+        951
+      ],
+      "foregroundTouchesCanvas": false,
+      "allPlannedRegionsNonempty": true,
+      "copyMatchesGenerated": true
+    }
+  ],
+  "limitations": [
+    "File and broad-cell presence inspection only, not runtime integration acceptance.",
+    "Transparent pixels and faint alpha fringes preserved exactly from built-in generator; no post-processing performed.",
+    "Exact pixel grid, tile seamlessness, pivots, projection silhouettes, and smooth animation timing need production export and runtime QA."
+  ]
+}

@@ -32,7 +32,7 @@ public class GeneratedWorldLevel extends Level {
         return layout;
     }
     @Override public boolean isSurfaceLevel(){return !isCave;}
-    @Override public GameMessage getLocationMessage(int x,int y){WorldDefinition d=WorldDefinition.forLevel(this);return new StaticMessage(d==null?"苔光世界":isCave?"苔光洞穴":d.displayName());}
+    @Override public GameMessage getLocationMessage(int x,int y){WorldDefinition d=WorldDefinition.forLevel(this);return new StaticMessage(d==null?"苔光世界":isCave?"苔光洞穴":d.isMultibiome()?localforest.visual.BiomeVisuals.name(layout().biome(x,y)):d.displayName());}
     @Override public void generateRegion(Region r){
         GeneratedLayout g=layout();WorldDefinition d=g.world;
         for(int x=0;x<r.tileWidth;x++)for(int y=0;y<r.tileHeight;y++){
@@ -60,8 +60,38 @@ public class GeneratedWorldLevel extends Level {
                 else {String object=g.object(tx,ty);if(object!=null)place(object,tx,ty,0);}
             }
         }
-        if(!isCave)camp(r,d);
+        if(!isCave){
+            if(d.isMultibiome())biomeOutposts(r,g);
+            camp(r,d);
+            if(d.isMultibiome())localforest.biomes.BiomeCreatures.populate(this,r,d,g);
+        }
         // The native ladder creates and persists its reciprocal endpoint on first use.
+    }
+    private void biomeOutposts(Region region,GeneratedLayout layout){
+        for(BiomeLayout.Structure structure:layout.biomeLayout().structures()){
+            if(!contains(region,structure.x(),structure.y()))continue;
+            place(structure.id(),structure.x(),structure.y(),0);
+            ObjectEntity entity=entityManager.getObjectEntity(structure.x(),structure.y());
+            if(entity instanceof InventoryObjectEntity storage){
+                storage.getInventory().setItem(0,new InventoryItem("apple",4));
+                storage.getInventory().setItem(1,new InventoryItem("torch",3));
+                storage.getInventory().setItem(2,new InventoryItem("stone",6));
+            }
+        }
+        for(String biome:BiomeLayout.IDS){
+            java.awt.Point center=layout.biomeLayout().center(biome);
+            if(layout.world.generatorVersion>=3){
+                // Expedition utilities belong to an inhabited outpost, not six
+                // identical workbench-and-torch exhibits at biome centers.
+                var outpost=layout.biomeLayout().structures().stream().filter(s->s.biome().equals(biome)&&s.variant()==0).findFirst().orElseThrow();
+                center=new java.awt.Point(outpost.x(),outpost.y()+1);
+            }
+            // Existing workstations, inventories and recipes provide real expedition utility.
+            int x=center.x-3,y=center.y+2;
+            if(contains(region,x,y))place("workstation",x,y,0);
+            x=center.x+3;
+            if(contains(region,x,y))place("torch",x,y,0);
+        }
     }
     private boolean contains(Region r,int x,int y){return x>=r.tileXOffset&&y>=r.tileYOffset&&x<r.tileXOffset+r.tileWidth&&y<r.tileYOffset+r.tileHeight;}
     private void camp(Region r,WorldDefinition d){

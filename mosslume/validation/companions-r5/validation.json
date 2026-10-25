@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-24",
+  "app": "/Users/zhangjunhao/Applications/Mosslume Companions Preview.app",
+  "version": "0.4.6",
+  "profile": "Mosslume-Biomes-Preview",
+  "adapterSha256": "96784b0e16c5d0dfe0b3cdaecf0a09c7544f569bf126337d0252c1c511a750df",
+  "kernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "agentscopeVersion": "2.0.4",
+  "lockedDependenciesVerified": 8,
+  "offlineSuites": 20,
+  "offlinePassed": 20,
+  "nativeChecks": "native-checks.json",
+  "nativeScope": "Production social planner and native navigation with explicitly marked history/task fixtures; paired world bubbles and relationship UI viewed; offline model, no physical keyboard or mouse input. SDK separately tested against local HTTP. No long-session performance claim.",
+  "screenshots": [
+    "cognition-bubbles.png",
+    "cognition-relationships.png"
+  ]
+}

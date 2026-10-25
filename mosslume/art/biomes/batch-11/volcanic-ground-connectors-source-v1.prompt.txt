@@ -1,0 +1,8 @@
+Use case: stylized-concept. Asset type: original Mosslume volcanic terrain source sprite atlas.
+Input images are STYLE REFERENCES ONLY: same chunky pixel clustering, dark charcoal contour, topdown orthographic RPG view with visible front faces; create new assets rather than copying reference layouts.
+Create ONE transparent PNG atlas with EXACTLY 3 columns x 3 rows, nine isolated components, uniform invisible cells and generous fully clear gutters. No text, lines, numbering, scenery, baseplates, isometric diamonds or drop shadows.
+Row 1: flat volcanic ash material patch; solid basalt paving material patch; cracked dark cooled lava crust material patch.
+Row 2: orange hot lava material patch with dark red crust islands (hard pixel color only, no bloom); basalt-to-lava shoreline straight bank; basalt-to-lava outer-corner bank.
+Row 3: front-visible basalt cliff with ash top; matching basalt cliff outside corner; short basalt stairs.
+Style: compact 2D pixel RPG tiles for the same game as the references, crisp clearly stepped edges, large clean pixel clusters, restrained texture, neutral material shading. Charcoal/slate stone, muted warm grey ash; small orange/yellow inside lava only. No soft gradients, anti-aliased illustration, photographic texture, bloom, fog or cast shadows outside sprites. True transparent background, NOT a drawn checkerboard or black rectangle.
+Scale design target: 32px world tile unit; each terrain component roughly 1–2 tiles; cliffs one tile high; shared orthographic top/front ratio. Leave at least 6% clear padding in every cell. This is a source atlas for later seamless/autotile export, not a landscape screenshot.

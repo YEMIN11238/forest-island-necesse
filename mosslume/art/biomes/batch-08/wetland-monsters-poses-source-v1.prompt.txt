@@ -1,0 +1,9 @@
+Use case: stylized-concept. Asset type: original Mosslume pixel RPG SOURCE sprite atlas. Match the attached Mosslume terrain/stone shelter/goat reference style ONLY, not their subjects. Crisp chunky pixel clusters, dark charcoal/olive stepped outlines, orthographic top-down RPG with a visible front face, no isometric diamonds. Controlled low-to-medium saturation, neutral daylight material shading. No soft gradients, no blur, no bloom, no external shadows. Shared runtime scale: one ground tile 32 pixels, adult humanoid 24x48 pixels, compact house footprint 96x80 pixels, tree 40x80 pixels, small animal 14-32 pixels wide. Image is enlarged source artwork; keep coherent proportions for those eventual sizes. TRUE TRANSPARENT BACKGROUND, blank transparent margins and wide gutters. No assembled scene, no labels, no grid, no ground shadow, no watermark.
+Primary request: TWO ORIGINAL wetland enemy species, exactly SIXTEEN isolated poses in FOUR columns by FOUR rows.
+Species A rows1-2: squat lumpy peat-mud creature, moss shoulders, stubby arms, two small amber eyes, no humanoid clothes, wide low silhouette. Eventual ground footprint0.9x0.7tile, height0.9tile.
+Row1 four IDLE orientations: down, right, up, left.
+Row2 all face RIGHT: compressing windup; one heavy mud arm slap extended; recoiling from hit; collapsed mud mound/downed.
+Species B rows3-4: six-legged poison-sac marsh insect, dark olive chitin, THREE muted plum translucent sacs on abdomen, mandibles. Eventual footprint0.8x0.6tile.
+Row3 four IDLE orientations down, right, up, left.
+Row4 all face RIGHT: abdomen lifted preparing spit; forward spitting body pose with tiny poison bead at mouth; hit recoil; legs curled downed.
+Do NOT attach splash, trails, clouds, health bars, environment, or projectile streak to these body sprites. Consistent identity and scale of species across their8 cells.

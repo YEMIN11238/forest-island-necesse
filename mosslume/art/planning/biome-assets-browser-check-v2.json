@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-24",
+  "performed": true,
+  "checkedAtlasCount": 65,
+  "allImagesLoaded": true,
+  "javascriptErrors": [],
+  "defaultNewRoundVisible": 42,
+  "biomeFilters": [
+    {
+      "name": "湿地",
+      "count": 7
+    },
+    {
+      "name": "蘑菇林",
+      "count": 7
+    },
+    {
+      "name": "遗迹",
+      "count": 7
+    },
+    {
+      "name": "雪地",
+      "count": 7
+    },
+    {
+      "name": "沙漠",
+      "count": 7
+    },
+    {
+      "name": "火山",
+      "count": 7
+    }
+  ],
+  "animalKeyframePlaybackChecked": true,
+  "mixedMonsterSpeciesChecked": {
+    "asset": "mushroom-monsters-poses",
+    "actor": "菌甲兽",
+    "pose": "14"
+  },
+  "screenshot": "art/planning/six-biomes-preview-final-check-v1.png",
+  "sourceArtOnly": true,
+  "runtimeGameQA": false
+}

@@ -1,0 +1,760 @@
+{
+  "project": "Mosslume",
+  "batch": "08",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "wetland-terrain-connectors",
+      "name": "湿地泥岸与高差连接",
+      "category": "地形",
+      "biome": "湿地",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "材质与岸线",
+        "岸线转角与过渡",
+        "泥崖与台阶"
+      ],
+      "cellLabels": [
+        "湿泥地",
+        "浅沼水面",
+        "泥岸直边",
+        "泥岸内角",
+        "泥岸外角",
+        "苔地湿泥过渡",
+        "苔顶泥崖",
+        "泥崖外角",
+        "泥木台阶"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; runtime export pending",
+        "tilePixels": 32,
+        "terrainFootprintTiles": "1–2",
+        "cliffHeightTiles": 1
+      },
+      "file": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-bd9aba29-a313-41fe-9c65-4925b5869415.png",
+      "status": "source_generated_pending_runtime_export",
+      "previewKind": "terrain-kit",
+      "sourceStage": "未经运行时切片的生成源图",
+      "layout": "terrain-kit",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "wetland-flora-resources",
+      "name": "湿地柳树分层与水生植物",
+      "category": "植被",
+      "biome": "湿地",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "柳树分层与芦苇",
+        "水生与药用植物",
+        "腐木与湿草"
+      ],
+      "cellLabels": [
+        "柳树冠",
+        "柳树干",
+        "香蒲芦苇",
+        "睡莲叶花",
+        "湿蕨",
+        "沼泽药草",
+        "覆苔腐木",
+        "枯根树桩",
+        "莎草丛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; runtime export pending",
+        "tilePixels": 32,
+        "assembledTreePixels": [
+          40,
+          80
+        ],
+        "smallFloraWidthPixels": [
+          16,
+          26
+        ],
+        "logWidthPixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-1dd4e341-e11d-4db6-8cca-41b9858e5b32.png",
+      "status": "source_generated_pending_runtime_export",
+      "previewKind": "atlas",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "wetland-buildings-layers",
+      "name": "湿地吊脚屋、药棚与栈道亭",
+      "category": "建筑",
+      "biome": "湿地",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "吊脚屋",
+        "药草棚",
+        "栈道亭"
+      ],
+      "cellLabels": [
+        "吊脚屋屋顶",
+        "吊脚屋下层",
+        "吊脚屋门",
+        "药棚屋顶",
+        "药棚下层",
+        "药棚门",
+        "栈道亭屋顶",
+        "栈道亭支架",
+        "栈道亭门栏"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "note": "target only; separate components require pivot/fit validation",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-cbf87fa0-2c8d-4ddc-9364-670137bcdc99.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "门组件实际生成为关闭状态；开门动画需后续补齐，栈道亭屋顶仍含部分支柱，需清理分层。"
+      ]
+    },
+    {
+      "id": "wetland-frog-directional-poses",
+      "name": "湿地青蛙四方向跳跃源图",
+      "category": "动物",
+      "biome": "湿地",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地",
+        "待机",
+        "蓄力",
+        "腾跃",
+        "落地"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "跳跃",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.5,
+          0.45
+        ],
+        "height": 0.35,
+        "note": "target only; shared ground pivot pending export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-frog-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-48328c33-0f70-4374-a3cf-fa7db12b11a1.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "wetland-dragonfly-directional-poses",
+      "name": "湿地蜻蜓四方向飞行源图",
+      "category": "动物",
+      "biome": "湿地",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍",
+        "展翅",
+        "上抬",
+        "收翅",
+        "下拍"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.45,
+          0.2
+        ],
+        "height": 0.3,
+        "note": "target only; wing spread width0.75tile; airborne anchor pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-e5edb335-8d4f-4025-a92c-7e85c5867694.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "wetland-monsters-poses",
+      "name": "湿地泥怪与毒囊虫战斗姿态",
+      "category": "怪物",
+      "biome": "湿地",
+      "layout": "mixed-monster-poses",
+      "previewKind": "mixed-monster-poses",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "泥怪四向待机",
+        "泥怪右向战斗",
+        "毒囊虫四向待机",
+        "毒囊虫右向战斗"
+      ],
+      "cellLabels": [
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地",
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地"
+      ],
+      "species": [
+        {
+          "name": "泥怪",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "毒囊虫",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.9,
+          0.7
+        ],
+        "height": 0.9,
+        "note": "target only; insect footprint0.8x0.6tile; attack timeline incomplete",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-monsters-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-monsters-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-25714bb2-6656-4d71-a305-ac4e3714ab57.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "wetland-props-local-effects",
+      "name": "湿地生产道具、泥溅与毒泡特效",
+      "category": "道具特效",
+      "biome": "湿地",
+      "layout": "props-vfx",
+      "previewKind": "props-vfx",
+      "columns": 4,
+      "rows": 3,
+      "plannedComponents": 12,
+      "rowLabels": [
+        "生活生产道具",
+        "泥浆喷溅四阶段",
+        "毒泡四阶段"
+      ],
+      "cellLabels": [
+        "晾药架",
+        "木栈道",
+        "药草篮",
+        "绳纹水罐",
+        "泥溅起始",
+        "泥溅上扬",
+        "泥溅散开",
+        "泥溅消散",
+        "毒泡初现",
+        "毒泡上升",
+        "毒泡破裂",
+        "毒泡残点"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.8,
+          0.8
+        ],
+        "height": 1,
+        "note": "target only; props0.5–1tile, VFX0.8–1tile; timeline/pivots pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/wetland-props-local-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-08/wetland-props-local-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-90587f07-a83f-42f3-b2dc-784ded8d1065.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "特效源图包含低alpha边缘；发光应由引擎重建，需导出时检查是否清理低alpha光晕。"
+      ]
+    },
+    {
+      "id": "mushroom-terrain-connectors",
+      "name": "蘑菇林菌土地表与根崖连接",
+      "category": "地形",
+      "biome": "蘑菇林",
+      "layout": "terrain-kit",
+      "previewKind": "terrain-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "菌土材质",
+        "根洞与腐木过渡",
+        "菌崖与台阶"
+      ],
+      "cellLabels": [
+        "菌土地表",
+        "菌丝泥地",
+        "林土菌土过渡",
+        "根洞内角",
+        "根洞外角",
+        "腐木地面过渡",
+        "菌苔根崖",
+        "根崖外角",
+        "树根台阶"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; patch sizes1–2tile; not proven seamless",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-f16db620-4717-428b-ba9b-dced0106e8e9.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "mushroom-flora-resources",
+      "name": "蘑菇树分层与菌类植物资源",
+      "category": "植被",
+      "biome": "蘑菇林",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "蘑菇树分层",
+        "菌类与腐木",
+        "蕨类孢子与地衣"
+      ],
+      "cellLabels": [
+        "巨蘑菇菌盖",
+        "巨蘑菇菌柄",
+        "褐蘑菇丛",
+        "青色荧菇",
+        "层菌腐木",
+        "珊瑚菌丛",
+        "紫蕨",
+        "闭合孢子荚",
+        "地衣枯木"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1.25,
+          0.75
+        ],
+        "height": 2.5,
+        "note": "target only; assembled cap/stem40x80px, small clumps16–24px, log32px",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-d0859221-434a-457d-8f53-ab8d680abf1b.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "mushroom-buildings-layers",
+      "name": "蘑菇屋、采集棚与孢子研究站",
+      "category": "建筑",
+      "biome": "蘑菇林",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "蘑菇屋",
+        "采集棚",
+        "孢子研究站"
+      ],
+      "cellLabels": [
+        "蘑菇屋屋顶",
+        "蘑菇屋下层",
+        "蘑菇屋开门",
+        "采集棚屋顶",
+        "采集棚下层",
+        "采集棚开门",
+        "研究站屋顶",
+        "研究站下层",
+        "研究站开门"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "note": "target only; part matching/pivots require export check",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-3f098ab2-fddb-432c-a9f2-aad92c6f690c.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "开门组件带周围墙框；需清理后再与下层墙体叠加。"
+      ]
+    },
+    {
+      "id": "mushroom-snail-directional-poses",
+      "name": "蘑菇林蜗牛四方向移动源图",
+      "category": "动物",
+      "biome": "蘑菇林",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收",
+        "待机",
+        "前探",
+        "滑行",
+        "回收"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "滑行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.625,
+          0.35
+        ],
+        "height": 0.5,
+        "note": "target only; shell identity/pivots need runtime export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-f409166d-3964-4a41-a386-e70c1a43bcc8.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "mushroom-moth-directional-poses",
+      "name": "蘑菇林飞蛾四方向飞行源图",
+      "category": "动物",
+      "biome": "蘑菇林",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍",
+        "展翅",
+        "上扬",
+        "合翅",
+        "下拍"
+      ],
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.3,
+          0.3
+        ],
+        "height": 0.4,
+        "note": "target only; wingspan0.7tile; wing alignment pending runtime export",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-bd85a400-cf39-4396-8e5e-3315654af39f.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。"
+      ]
+    },
+    {
+      "id": "mushroom-monsters-poses",
+      "name": "蘑菇林孢子怪与菌甲兽战斗姿态",
+      "category": "怪物",
+      "biome": "蘑菇林",
+      "layout": "mixed-monster-poses",
+      "previewKind": "mixed-monster-poses",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "rowLabels": [
+        "孢子怪四向待机",
+        "孢子怪右向战斗",
+        "菌甲兽四向待机",
+        "菌甲兽右向战斗"
+      ],
+      "cellLabels": [
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地",
+        "下",
+        "右",
+        "上",
+        "左",
+        "蓄力",
+        "攻击",
+        "受击",
+        "倒地"
+      ],
+      "species": [
+        {
+          "name": "孢子怪",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "菌甲兽",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.7,
+          0.6
+        ],
+        "height": 1,
+        "note": "target only; armored beast1x0.7tile; movement/attacks not complete",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.png",
+      "promptFile": "art/biomes/batch-08/mushroom-monsters-poses-source-v2.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-a8082a5d-3324-4699-8316-b47a056d140e.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "v2经内置生图编辑修正底行第3格受击姿态为右向；其余格身份/姿态/布局目视一致，但外轮廓有约1–3源像素重绘，非逐像素保留编辑。v1仍保留。"
+      ],
+      "previousVersion": {
+        "file": "art/biomes/batch-08/mushroom-monsters-poses-source-v1.png",
+        "promptFile": "art/biomes/batch-08/mushroom-monsters-poses-source-v1.prompt.txt",
+        "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-9159356a-6d44-4e95-b03c-9db7b4e4130e.png"
+      }
+    },
+    {
+      "id": "mushroom-props-local-effects",
+      "name": "蘑菇林采集道具、孢子喷发与荧光点",
+      "category": "道具特效",
+      "biome": "蘑菇林",
+      "layout": "props-vfx",
+      "previewKind": "props-vfx",
+      "columns": 4,
+      "rows": 3,
+      "plannedComponents": 12,
+      "rowLabels": [
+        "采集生产道具",
+        "孢子喷发四阶段",
+        "上升荧光点四阶段"
+      ],
+      "cellLabels": [
+        "蘑菇篮",
+        "采集工作台",
+        "孢子样品罐",
+        "菌类木箱",
+        "孢子起始",
+        "孢子扩散",
+        "孢子分散",
+        "孢子残留",
+        "荧点低处",
+        "荧点上升",
+        "荧点稀疏",
+        "荧点消失前"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.8,
+          0.8
+        ],
+        "height": 1,
+        "note": "target only; bench1.25tile wide, puff1tile; environment timeline/pivots pending",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-08/mushroom-props-local-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a16959-ca97-7f10-a042-a533d79e1acc/exec-3895e8ab-4113-4636-bc18-c7338fe35ed5.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "reviewNotes": [
+        "已目视核对整体造型和素材风格；源图需要统一逻辑像素、切片与锚点，尚未接入游戏。",
+        "特效源图包含低alpha边缘；发光应由引擎重建，需导出时检查是否清理低alpha光晕。"
+      ]
+    }
+  ]
+}

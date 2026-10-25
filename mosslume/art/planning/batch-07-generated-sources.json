@@ -1,0 +1,115 @@
+{
+  "project": "Mosslume",
+  "batch": "07",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "cave-wall-connectors",
+      "name": "洞穴岩壁与通道连接",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/cave-wall-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-wall-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-21394c13-4f76-4cf4-8c91-80f569eadaaf.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mountain-ground-materials",
+      "name": "山地岩面与碎石地表",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-ground-materials-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-ground-materials-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7b3e85a7-a48b-466b-b36c-39c241f54407.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mountain-ore-crystal-resources",
+      "name": "山地矿石与洞穴晶簇",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-ore-crystal-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-ore-crystal-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-fe7909cb-9a53-4fef-889f-0f98d5d525eb.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mine-entrance-layers",
+      "name": "矿井入口与支撑组件",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mine-entrance-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mine-entrance-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e4341c94-15ac-4bc8-bce5-9653e95e1daf.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mountain-stone-shelter-layers",
+      "name": "山地石屋分层建筑",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e4beb594-04b5-4024-8a75-f5a44efb2114.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mountain-goat-directional-poses",
+      "name": "山羊四方向动作源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-c85987c5-84d9-46d7-b530-986d3641071d.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "cave-bat-directional-poses",
+      "name": "洞穴蝙蝠四方向飞行源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "file": "art/biomes/batch-07/cave-bat-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-bat-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-40885075-dbf4-4203-800f-c4555474f697.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "mountain-rock-beast-poses",
+      "name": "山地岩甲兽造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-07/mountain-rock-beast-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-rock-beast-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-bdc267e2-5c28-4288-8e7a-2fd6656d9738.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "cave-crystal-beetle-poses",
+      "name": "洞穴晶壳虫造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-07/cave-crystal-beetle-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-crystal-beetle-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-1dc76837-ba2a-4e9c-9f7e-46a781cdf8ac.png",
+      "status": "source_generated_pending_runtime_export"
+    }
+  ]
+}

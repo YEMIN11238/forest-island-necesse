@@ -1,0 +1,62 @@
+Mosslume 六类地形素材源稿
+2026-10-23
+本轮42张图集，每类7张，连同此前两批累计65张。
+使用内置image_gen；原始PNG与逐张提示词保存在对应批次。
+统一32px目标格；视角、轮廓及饱和度沿用前两批。实际游戏比例仍待导出配准。
+
+湿地（7张）
+  湿地泥岸与高差连接  art/biomes/batch-08/wetland-terrain-connectors-source-v1.png
+  湿地柳树分层与水生植物  art/biomes/batch-08/wetland-flora-resources-source-v1.png
+  湿地吊脚屋、药棚与栈道亭  art/biomes/batch-08/wetland-buildings-layers-source-v1.png
+  湿地青蛙四方向跳跃源图  art/biomes/batch-08/wetland-frog-directional-poses-source-v1.png
+  湿地蜻蜓四方向飞行源图  art/biomes/batch-08/wetland-dragonfly-directional-poses-source-v1.png
+  湿地泥怪与毒囊虫战斗姿态  art/biomes/batch-08/wetland-monsters-poses-source-v1.png
+  湿地生产道具、泥溅与毒泡特效  art/biomes/batch-08/wetland-props-local-effects-source-v1.png
+
+蘑菇林（7张）
+  蘑菇林菌土地表与根崖连接  art/biomes/batch-08/mushroom-terrain-connectors-source-v1.png
+  蘑菇树分层与菌类植物资源  art/biomes/batch-08/mushroom-flora-resources-source-v1.png
+  蘑菇屋、采集棚与孢子研究站  art/biomes/batch-08/mushroom-buildings-layers-source-v1.png
+  蘑菇林蜗牛四方向移动源图  art/biomes/batch-08/mushroom-snail-directional-poses-source-v1.png
+  蘑菇林飞蛾四方向飞行源图  art/biomes/batch-08/mushroom-moth-directional-poses-source-v1.png
+  蘑菇林孢子怪与菌甲兽战斗姿态  art/biomes/batch-08/mushroom-monsters-poses-source-v2.png
+  蘑菇林采集道具、孢子喷发与荧光点  art/biomes/batch-08/mushroom-props-local-effects-source-v1.png
+
+遗迹（7张）
+  遗迹地砖与断墙连接  art/biomes/batch-10/ruins-ground-connectors-source-v1.png
+  遗迹拱门石柱与地下入口  art/biomes/batch-10/ruins-architecture-modules-source-v1.png
+  遗迹苔藓积沙积雪变体  art/biomes/batch-10/ruins-cover-variants-source-v1.png
+  遗迹机关与探索道具  art/biomes/batch-10/ruins-mechanism-props-source-v1.png
+  遗迹石像守卫四向与战斗姿态  art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png
+  遗迹铜壳哨兵四向与战斗姿态  art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png
+  遗迹能量命中崩解与激活光点  art/biomes/batch-10/ruins-mechanism-vfx-source-v1.png
+
+雪地（7张）
+  雪地积雪冰面与崖壁连接  art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png
+  雪地树木灌木与矿物  art/biomes/batch-09/snowfield-flora-resources-source-v1.png
+  雪地木屋猎人营地与石炉屋分层  art/biomes/batch-09/snowfield-building-layers-source-v1.png
+  雪兔四方向动作源图  art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png
+  北极狐四方向动作源图  art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png
+  冰甲兽与雪地掘穴怪姿态  art/biomes/batch-09/snowfield-monster-poses-source-v1.png
+  雪地生产道具与冰雪特效  art/biomes/batch-09/snowfield-props-effects-source-v1.png
+
+沙漠（7张）
+  沙漠沙丘砂岩绿洲与崖壁连接  art/biomes/batch-09/desert-terrain-connectors-source-v1.png
+  沙漠仙人掌棕榈与采集资源  art/biomes/batch-09/desert-flora-resources-source-v1.png
+  沙漠土屋商队帐篷与水井分层  art/biomes/batch-09/desert-building-layers-source-v1.png
+  沙漠蜥蜴四方向动作源图  art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png
+  耳廓狐四方向动作源图  art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png
+  砂蝎与沙虫姿态源图  art/biomes/batch-09/desert-monster-poses-source-v1.png
+  沙漠生活道具与扬沙特效  art/biomes/batch-09/desert-props-effects-source-v1.png
+
+火山（7张）
+  火山灰地玄武岩与熔岩连接  art/biomes/batch-11/volcanic-ground-connectors-source-v1.png
+  火山焦木与矿物资源  art/biomes/batch-11/volcanic-flora-resources-source-v1.png
+  黑石锻造所耐热营地与采矿站分层  art/biomes/batch-11/volcanic-buildings-layers-source-v1.png
+  耐热甲虫四方向步行动作源图  art/biomes/batch-11/heat-beetle-directional-poses-source-v1.png
+  熔岩蛞蝓造型与战斗姿态  art/biomes/batch-11/lava-slug-poses-source-v1.png
+  黑曜石兽造型与战斗姿态  art/biomes/batch-11/obsidian-beast-poses-source-v1.png
+  火山生产道具与火焰灰烬特效  art/biomes/batch-11/volcano-props-vfx-source-v1.png
+
+当前是源图覆盖，尚未接入游戏。
+待完成：地形无缝/自动拼接与高差接缝；建筑层配准、门框拆分、共同锚点；树冠/树干配准与风动遮罩；动物脚点及完整移动生活受伤动作；怪物完整四向移动/攻击/受击/死亡动作；发光层、投影轮廓、粒子时序；游戏碰撞、采集状态、物品配置与运行时验收

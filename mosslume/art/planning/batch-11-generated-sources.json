@@ -1,0 +1,374 @@
+{
+  "project": "Mosslume",
+  "batch": "11",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "sourcePixelsModified": false,
+  "runtimeScaleCalibrated": false,
+  "assets": [
+    {
+      "id": "volcanic-ground-connectors",
+      "name": "火山灰地玄武岩与熔岩连接",
+      "category": "地形",
+      "biome": "volcano",
+      "layout": "terrain-kit",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "rowLabels": [
+        "灰地与岩面",
+        "熔岩与岸线",
+        "崖壁与台阶"
+      ],
+      "cellLabels": [
+        "火山灰地",
+        "玄武岩地面",
+        "裂纹熔岩壳",
+        "熔岩水面",
+        "玄武岩熔岩直岸",
+        "玄武岩熔岩外角",
+        "玄武岩灰顶崖",
+        "玄武岩崖角",
+        "玄武岩台阶"
+      ],
+      "targetScale": {
+        "tilePixels": 32,
+        "terrainFootprintTiles": "1–2",
+        "cliffHeightTiles": 1,
+        "note": "target only; terrain material and emission separation require runtime export"
+      },
+      "file": "art/biomes/batch-11/volcanic-ground-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-ground-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-112e81bd-079c-45ba-9427-87895252a630.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图",
+      "limitations": [
+        "无缝拼接尚未验收",
+        "熔岩底色与发光需分离导出"
+      ]
+    },
+    {
+      "id": "volcanic-flora-resources",
+      "name": "火山焦木与矿物资源",
+      "category": "植物",
+      "layout": "sprite-source",
+      "previewKind": "atlas",
+      "columns": 3,
+      "rows": 3,
+      "rowLabels": [
+        "焦木分层",
+        "枯灌与晶矿",
+        "矿石与灰草"
+      ],
+      "cellLabels": [
+        "焦木枝冠",
+        "焦木树干",
+        "焦木树桩",
+        "耐旱枯灌木",
+        "黑曜石晶簇",
+        "硫黄矿",
+        "铁矿石",
+        "玄武岩巨石",
+        "火山灰草"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "treeHeightTiles": 2,
+        "smallPropsTiles": "0.5–1",
+        "note": "target only; separated crown/trunk fit and harvest variants pending"
+      },
+      "limitations": [
+        "焦木树冠与树干须校准共同锚点",
+        "采集倒地与再生状态未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-11/volcanic-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-264986d3-892e-4141-8846-5fbd22ae160d.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    },
+    {
+      "id": "volcanic-buildings-layers",
+      "name": "黑石锻造所耐热营地与采矿站分层",
+      "category": "建筑",
+      "layout": "building-kit",
+      "previewKind": "building-kit",
+      "columns": 3,
+      "rows": 3,
+      "rowLabels": [
+        "黑石锻造所",
+        "耐热营地",
+        "火山采矿站"
+      ],
+      "cellLabels": [
+        "锻造所屋顶",
+        "锻造所墙体",
+        "锻造所门",
+        "耐热营地屋顶",
+        "耐热营地墙体",
+        "耐热营地门",
+        "采矿站屋顶",
+        "采矿站墙体",
+        "采矿站门"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 3.2,
+        "doorHeightTiles": 1.3,
+        "note": "target only; roof/wall/door fit and pivots pending"
+      },
+      "limitations": [
+        "门含门框须拆分与墙体对齐",
+        "屋顶墙体不是已校准装配",
+        "窗内高亮需另行拆发光层"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-11/volcanic-buildings-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcanic-buildings-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-9bbcd8ce-adb8-44f2-a2b4-75b6cc59c77a.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    },
+    {
+      "id": "heat-beetle-directional-poses",
+      "name": "耐热甲虫四方向步行动作源图",
+      "category": "动物",
+      "layout": "sprite-source",
+      "previewKind": "animal",
+      "columns": 4,
+      "rows": 4,
+      "rowLabels": [
+        "下",
+        "右",
+        "上",
+        "左"
+      ],
+      "cellLabels": [
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3",
+        "待机",
+        "步行1",
+        "步行2",
+        "步行3"
+      ],
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "motionName": "步行",
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          0.65,
+          0.5
+        ],
+        "height": 0.4,
+        "note": "target only; six-leg gait and common contact pivot pending"
+      },
+      "limitations": [
+        "六足步态仅关键姿态待校准",
+        "完整移动觅食受伤倒地状态未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-11/heat-beetle-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/heat-beetle-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-9672f406-a952-4d54-990a-3410e2ab44d7.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    },
+    {
+      "id": "lava-slug-poses",
+      "name": "熔岩蛞蝓造型与战斗姿态",
+      "category": "怪物",
+      "layout": "monster-keyposes",
+      "previewKind": "monster",
+      "columns": 4,
+      "rows": 2,
+      "rowLabels": [
+        "四方向待机",
+        "右向战斗关键姿态"
+      ],
+      "cellLabels": [
+        "正面待机",
+        "右侧待机",
+        "背面待机",
+        "左侧待机",
+        "右向攻击预备",
+        "右向攻击关键姿态",
+        "右向受击",
+        "右向倒地"
+      ],
+      "species": [
+        {
+          "name": "熔岩蛞蝓",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          1,
+          0.6
+        ],
+        "height": 0.55,
+        "note": "target only; body glide and separate projectile export pending"
+      },
+      "limitations": [
+        "仅待机和右向战斗关键姿态",
+        "黏足滑动与全方向战斗未补齐",
+        "口部熔岩弹需单独导出"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-11/lava-slug-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/lava-slug-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-7fa1538e-825d-4877-b57a-d501ec23b1c7.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    },
+    {
+      "id": "obsidian-beast-poses",
+      "name": "黑曜石兽造型与战斗姿态",
+      "category": "怪物",
+      "layout": "monster-keyposes",
+      "previewKind": "monster",
+      "columns": 4,
+      "rows": 2,
+      "rowLabels": [
+        "四方向待机",
+        "右向战斗关键姿态"
+      ],
+      "cellLabels": [
+        "正面待机",
+        "右侧待机",
+        "背面待机",
+        "左侧待机",
+        "右向攻击预备",
+        "右向攻击关键姿态",
+        "右向受击",
+        "右向倒地"
+      ],
+      "species": [
+        {
+          "name": "黑曜石兽",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "footprint": [
+          1.2,
+          0.8
+        ],
+        "height": 0.9,
+        "note": "target only; quadruped gait and attack timing pending"
+      },
+      "limitations": [
+        "仅待机和右向战斗关键姿态",
+        "四足步态与冲撞时序未补齐"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-11/obsidian-beast-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-11/obsidian-beast-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-1e2d3b97-b3ed-4393-81ec-cddacc62cd12.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    },
+    {
+      "id": "volcano-props-vfx",
+      "name": "火山生产道具与火焰灰烬特效",
+      "category": "特效",
+      "layout": "props-vfx",
+      "previewKind": "atlas",
+      "columns": 4,
+      "rows": 3,
+      "rowLabels": [
+        "四种生产道具",
+        "右向火焰攻击四阶段",
+        "灰烬余火缓升四阶段"
+      ],
+      "cellLabels": [
+        "玄武岩铁砧",
+        "炭筐",
+        "铁坩埚",
+        "冷却水槽",
+        "火焰攻击1",
+        "火焰攻击2",
+        "火焰攻击3",
+        "火焰攻击4",
+        "灰烬余火1",
+        "灰烬余火2",
+        "灰烬余火3",
+        "灰烬余火4"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "tilePixels": 32,
+        "smallPropsTiles": "0.5–1",
+        "note": "target only; VFX emission, common pivots and alpha timing pending"
+      },
+      "effectSequences": [
+        {
+          "name": "右向火焰攻击",
+          "indices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "灰烬余火缓升",
+          "indices": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "limitations": [
+        "首行为静态道具不得整表循环",
+        "两种特效需分别校准锚点与时序",
+        "灰烬上升和淡出由粒子系统补间"
+      ],
+      "biome": "volcano",
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-11/volcano-props-vfx-source-v1.png",
+      "promptFile": "art/biomes/batch-11/volcano-props-vfx-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-b3a5-7b90-a16e-c2b8e6215feb/exec-770081b4-39b8-465d-a869-b29affe691fc.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceStage": "未经运行时切片的生成源图"
+    }
+  ]
+}

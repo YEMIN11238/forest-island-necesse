@@ -1,0 +1,163 @@
+{
+  "project": "Mosslume",
+  "batch": "06",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "grass-earth-terraces",
+      "name": "草土台地与崖壁",
+      "file": "art/biomes/batch-06/grass-earth-terraces-source-v1.png",
+      "promptFile": "art/biomes/batch-06/grass-earth-terraces-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-3991bfde-e16b-4afd-8bb8-9ab1cddebb41.png",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "meadow-dirt-transitions",
+      "name": "草甸与泥路过渡",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-06/meadow-dirt-transitions-source-v1.png",
+      "promptFile": "art/biomes/batch-06/meadow-dirt-transitions-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-8d3cf720-7431-4cb5-a981-54b809a9eda1.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "stone-terraces",
+      "name": "岩石台地与崖壁",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/stone-terraces-source-v1.png",
+      "promptFile": "art/biomes/batch-06/stone-terraces-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-20612f3f-cb7d-495f-b8bd-a24a403e290c.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "coastal-sand-edges",
+      "name": "沙滩与礁岸连接",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/coastal-sand-edges-source-v1.png",
+      "promptFile": "art/biomes/batch-06/coastal-sand-edges-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-ff52ed0f-ceb2-41bc-82cd-88e6459930b0.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "stone-stairs-passages",
+      "name": "石阶与高台通路",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/stone-stairs-passages-source-v1.png",
+      "promptFile": "art/biomes/batch-06/stone-stairs-passages-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-3442c10a-8156-4bdd-ab3f-f80965fb6a28.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "wooden-bridge-modules",
+      "name": "木桥与栈道组件",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/wooden-bridge-modules-source-v1.png",
+      "promptFile": "art/biomes/batch-06/wooden-bridge-modules-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-c9675111-6bd5-4cd8-ab72-79ebe1f5a02a.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "woodland-workshop-layers",
+      "name": "林间工坊分层建筑",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/woodland-workshop-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-06/woodland-workshop-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-a94a7318-a110-4cef-a9bd-f4df83386877.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "fishing-hut-layers",
+      "name": "海岸渔屋分层建筑",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/fishing-hut-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-06/fishing-hut-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-094273c4-2d83-4f34-8b6d-e828725f3629.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "deer-directional-poses",
+      "name": "林地鹿四方向动作源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-06/deer-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-06/deer-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7077199d-9bb3-43fb-90ed-88ab2dbd5268.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "chicken-directional-poses",
+      "name": "营地鸡四方向动作源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-06/chicken-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-06/chicken-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-1d0663f8-cae6-4085-9918-0f26900d96ca.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "thorn-beast-poses",
+      "name": "森林荆棘兽造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-06/thorn-beast-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-06/thorn-beast-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5232f26a-7167-4672-be21-4df5783d1872.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "tide-crab-poses",
+      "name": "海岸潮壳蟹造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-06/tide-crab-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-06/tide-crab-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-cf38983f-70b1-4e66-ab1e-a4e0b700cb99.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "coastal-life-props",
+      "name": "海岸生产与生活道具",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-06/coastal-life-props-source-v1.png",
+      "promptFile": "art/biomes/batch-06/coastal-life-props-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-146920fb-e029-47a7-9dab-34b64136da3e.png",
+      "status": "source_generated_pending_runtime_export"
+    },
+    {
+      "id": "forest-coast-combat-vfx",
+      "name": "森林与海岸攻击特效源图",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-06/forest-coast-combat-vfx-source-v1.png",
+      "promptFile": "art/biomes/batch-06/forest-coast-combat-vfx-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-d6a76eb3-439c-441f-8b22-13342be74ec7.png",
+      "status": "source_generated_pending_runtime_export"
+    }
+  ]
+}

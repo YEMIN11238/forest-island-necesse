@@ -1,0 +1,190 @@
+{
+  "project": "Mosslume",
+  "reviewDate": "2026-10-23",
+  "reviewedBatches": [
+    "08",
+    "09",
+    "10"
+  ],
+  "reviewMethod": "view_image inspected every selected atlas in batch 08 and batch 10; batch 09 was visually inspected during generation and representative rabbit/lizard sheets rechecked. No source image edits. This reviewer authored batch 09, so that batch is a self-review rather than an independent second author review.",
+  "referenceAssets": [
+    "art/biomes/batch-06/grass-earth-terraces-source-v1.png",
+    "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.png",
+    "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.png"
+  ],
+  "reviewedSelectedAtlasCount": 35,
+  "sourceArtworkCoverage": "passed",
+  "blockingRegenerationFindings": [],
+  "runtimeScaleCalibrated": false,
+  "runtimeIntegrationAccepted": false,
+  "overallConclusion": "源图素材覆盖通过，未发现需要立即重生的严重缺项、错行或形体错误。风格方向基本一致；实际游戏内比例、像素网格、连续动画和地图拼接尚未校准，不能据此宣称运行时画面已完成。",
+  "unifiedIntendedScale": {
+    "unit": "tile",
+    "groundTilePixels": 32,
+    "adultHumanoidVisibleBoundsTiles": [
+      0.75,
+      1.5
+    ],
+    "houseBaseTiles": [
+      3,
+      2.5
+    ],
+    "treeAssembledVisibleBoundsTiles": [
+      1.25,
+      2.5
+    ],
+    "smallShrubHeightTiles": [
+      0.25,
+      0.6
+    ],
+    "smallAnimalFootprintTiles": [
+      0.4,
+      1.0
+    ],
+    "insectWingSpanTiles": [
+      0.4,
+      0.75
+    ],
+    "normalMonsterFootprintTiles": [
+      0.75,
+      1.25
+    ],
+    "note": "Targets for future export only. Visible sprite bounds differ from ground collision footprint. Do not normalize every source cell to the same world size. Oversized guardians and architecture need explicit per-asset exceptions."
+  },
+  "styleContract": {
+    "camera": "2D topdown orthographic, front faces visible; no change to a diamond isometric grid",
+    "outline": "dark olive or charcoal stepped contour",
+    "materials": "compact large pixel clusters and restrained saturation; biome material hues may differ",
+    "light": "neutral source material shading; world light, shadows, emission and wind remain separate runtime passes",
+    "export": "snap to chosen native pixel grid, preserve alpha, point sampling, integer display scale where practical"
+  },
+  "perBiomeReviews": [
+    {
+      "biome": "湿地",
+      "representativeAssets": [
+        "wetland-terrain-connectors",
+        "wetland-flora-resources",
+        "wetland-buildings-layers",
+        "wetland-frog-directional-poses",
+        "wetland-dragonfly-directional-poses",
+        "wetland-monsters-poses",
+        "wetland-props-local-effects"
+      ],
+      "sourceCoverage": "passed",
+      "styleFinding": "橄榄绿植被、深青积水、暖棕木材与第 07 批的轮廓和材质语汇相容。青蛙与蜻蜓方向排列可辨，泥怪与毒囊虫形体不同。",
+      "nonBlockingExportIssues": [
+        "柳树冠/树干需用共同枢轴组装，芦苇与小草不能按图集单元格填满后导出成和树一样大。",
+        "吊脚屋和栈道亭入口/屋顶源稿有门框或支柱，与下墙/底座叠合时需拆除重复部分。",
+        "岸线与台阶是连接源形状，尚未按地形邻接掩码、液面层级与碰撞高度验收。",
+        "跳跃/飞行关键帧仍需统一基线、足部接触和时间曲线。"
+      ]
+    },
+    {
+      "biome": "蘑菇林",
+      "representativeAssets": [
+        "mushroom-terrain-connectors",
+        "mushroom-flora-resources",
+        "mushroom-buildings-layers",
+        "mushroom-snail-directional-poses",
+        "mushroom-moth-directional-poses",
+        "mushroom-monsters-poses",
+        "mushroom-props-local-effects"
+      ],
+      "sourceCoverage": "passed",
+      "styleFinding": "菌盖紫红、朽木棕与暗橄榄绿构成独立地形辨识；大菌盖、菌柄、菌丛、蜗牛、飞蛾及两类怪物完整可辨。",
+      "nonBlockingExportIssues": [
+        "蘑菇树冠与菌柄按统一树高组装，小菌丛与孢子草按小植物目标导出。",
+        "蘑菇屋入口含墙边，研究站门框需和下墙开口对齐。",
+        "孢子和荧光源图需拆成独立四阶段序列，并由粒子/光照系统驱动；不把整张混合图当一段循环。",
+        "个别预览显示的彩色外晕来自透明像素保留的 RGB；抽样点 alpha 为 0。仍应检查轮廓边缘低 alpha 像素，不能凭深色底截图认定已经烘焙光晕。",
+        "蜗牛缓慢蠕动与飞蛾翼动需要运行时时间连续性校准。"
+      ]
+    },
+    {
+      "biome": "雪地",
+      "representativeAssets": [
+        "snowfield-terrain-connectors",
+        "snowfield-flora-resources",
+        "snowfield-building-layers",
+        "snow-rabbit-directional-poses",
+        "arctic-fox-directional-poses",
+        "snowfield-monster-poses",
+        "snowfield-props-effects"
+      ],
+      "sourceCoverage": "passed",
+      "styleFinding": "冷灰雪面、暗针叶与暖木材清晰区分。雪兔 v2 为低伏体形，北极狐为短耳厚毛，冰甲兽与掘穴怪的轮廓可区分。",
+      "resolvedDuringGeneration": [
+        "雪兔 v1 后肢偏长，已重生 v2 为蹲伏后腿/短跳步；精选清单选择 v2，旧版保留。"
+      ],
+      "nonBlockingExportIssues": [
+        "覆盖雪量不能替代材质色彩校准，白色需在现有夜晚照明中保留层次。",
+        "雪松冠/干组装、猎人棚重复支柱与石炉门框仍需整理。",
+        "冰刃四阶段和扬雪四阶段分别导出，不与顶行道具一起播放。",
+        "怪物只有四方向待机与朝右战斗源姿态，不是完整移动/全向战斗动画。"
+      ]
+    },
+    {
+      "biome": "沙漠",
+      "representativeAssets": [
+        "desert-terrain-connectors",
+        "desert-flora-resources",
+        "desert-building-layers",
+        "desert-lizard-directional-poses",
+        "fennec-fox-directional-poses",
+        "desert-monster-poses",
+        "desert-props-effects"
+      ],
+      "sourceCoverage": "passed",
+      "styleFinding": "砂岩/赭沙、暗绿仙人掌、木材和土屋在共同暗轮廓下可辨；耳廓狐大耳形与北极狐不同，蜥蜴、砂蝎、沙虫没有缺失方向行。",
+      "nonBlockingExportIssues": [
+        "蜥蜴为偏可爱的四足造型，侧面脚部需在最终像素尺寸下强化爬行感；未达到必须重生的严重形体错误。",
+        "棕榈冠/干、小仙人掌、干草与铁矿需要各自按目标尺寸导出，不能按源格面积等大。",
+        "土屋、帐篷和水井分别按屋顶/下壳/入口或井棚/井台/桶组装；不是九幢建筑。",
+        "地形内外角命名与地砖接缝需以运行时连接测试为准。",
+        "扬沙特效与动物尾部基线需要时序/枢轴校准。"
+      ]
+    },
+    {
+      "biome": "遗迹",
+      "representativeAssets": [
+        "ruins-ground-connectors",
+        "ruins-architecture-modules",
+        "ruins-cover-variants",
+        "ruins-mechanism-props",
+        "ruins-statue-guard-poses",
+        "ruins-bronze-sentinel-poses",
+        "ruins-mechanism-vfx"
+      ],
+      "sourceCoverage": "passed",
+      "styleFinding": "灰石、黄铜、苔藓共享第 07 批的厚轮廓和块面材质。石像守卫四方向完整，铜壳哨兵姿态清楚，苔藓/积沙/积雪为相同构件的环境变体。",
+      "nonBlockingExportIssues": [
+        "遗迹属于可跨地形的叠加结构，不能为它另外引入一套不兼容的地图比例。",
+        "石柱、拱门、地窖入口和栏杆需按人的通行宽度与遮挡排序导出，图集格内等大不代表世界等大。",
+        "苔藓/沙/雪变体仍需统一脚底锚点和同构件轮廓，避免切换变体时发生跳动。",
+        "机关压板两状态、箱子两状态、能量命中/崩解/激活三组特效要独立标注和播放。",
+        "守卫与哨兵的动作只是关键姿态，移动、蓄力时长、攻击命中和碰撞轮廓尚未完成。"
+      ]
+    }
+  ],
+  "nextAcceptanceGate": [
+    "At intended native export resolution, compose humanoid, house, tree, shrub, animal and monster together on the same 32px grid.",
+    "Check door passage and base pivots, obstacle collision vs visible shape, canopy depth ordering, cliff height and coast connections.",
+    "Play each motion with stable foot/flight anchors and time-based timing under existing wind and lighting.",
+    "Check day/night material colors, alpha edge fringes, separate dynamic shadow masks and emission layers in the actual game."
+  ],
+  "scopeExclusions": [
+    "Volcano batch 11 not included because it was still generating at review start.",
+    "No source atlas or any other batch manifest was modified.",
+    "No claim that seamless tiling, fixed frame rate, smooth animation or game integration has passed."
+  ],
+  "additionalVolcanoReview": {
+    "sourceAtlases": 7,
+    "reviewedBy": "火山生成检查；主代理复查植被、建筑、黑曜石兽",
+    "outcome": "源图风格与既有图集相符；目标比例需导出配准",
+    "issues": [
+      "建筑门框拆分与图集切分待复核",
+      "黑曜石兽图集切分待人工复核",
+      "熔岩发光层和完整动作尚需制作"
+    ]
+  }
+}

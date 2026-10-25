@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.LinkedHashMap;
+import java.util.Iterator;
 import javax.imageio.ImageIO;
 import necesse.gfx.drawOptions.texture.SharedTextureDrawOptions;
 import necesse.gfx.drawables.LevelTileTerrainDrawOptions;
 import necesse.gfx.gameTexture.GameTexture;
 import necesse.gfx.res.ResourceEncoder;
 import necesse.level.maps.Level;
+import localforest.scene.RegionSceneQuery;
 
 /** Connected dirt trails rendered from the existing ground and dirt art.
  * Native tile IDs, digging, farmland, collision and saved terrain remain authoritative.
@@ -19,18 +22,51 @@ import necesse.level.maps.Level;
 public final class NaturalPathRenderer {
     private static final int TILE=32, PAGE_TILES=16, PAGE_SIZE=TILE*PAGE_TILES;
     private static final List<GameTexture> pages=new ArrayList<>();
-    private static final Map<Long,Entry> tiles=new HashMap<>();
+    private static final TileSlots tiles=new TileSlots(4096);
     private static BufferedImage grass,dirt;
     private static boolean failed;
     public static long draws,rebuilds;
-    private static final class Entry {
+    static final class Entry {
         final int page,x,y;
+        long used;
         int neighbours=-1;
+        String material="";
         Entry(int index){page=index/(PAGE_TILES*PAGE_TILES);int slot=index%(PAGE_TILES*PAGE_TILES);x=(slot%PAGE_TILES)*TILE;y=(slot/PAGE_TILES)*TILE;}
     }
+    /** LRU slots protect both the current preparation and the preceding draw buffer. */
+    static final class TileSlots {
+        final int capacity;private int allocated;private long epoch=1;
+        private final LinkedHashMap<Long,Entry> entries=new LinkedHashMap<>(512,.75f,true);
+        long pinnedMisses;
+        TileSlots(int capacity){if(capacity<1)throw new IllegalArgumentException("Empty path atlas");this.capacity=capacity;}
+        void begin(){epoch++;}
+        Entry acquire(long key){
+            Entry entry=entries.get(key);
+            if(entry==null){
+                if(allocated<capacity)entry=new Entry(allocated++);
+                else{
+                    Iterator<Map.Entry<Long,Entry>> it=entries.entrySet().iterator();
+                    while(it.hasNext()){
+                        Entry candidate=it.next().getValue();
+                        if(candidate.used<epoch-1){entry=candidate;it.remove();break;}
+                    }
+                    if(entry==null){pinnedMisses++;return null;}
+                }
+                entry.neighbours=-1;entry.material="";entries.put(key,entry);
+            }
+            entry.used=epoch;return entry;
+        }
+        int size(){return entries.size();}
+        boolean contains(long key){return entries.containsKey(key);}
+    }
+    public static synchronized void beginFrame(){tiles.begin();}
+    public static synchronized int cachedTiles(){return tiles.size();}
+    public static synchronized int atlasPages(){return pages.size();}
 
     public static boolean isPath(Level level,int x,int y) {
-        if(x<0||y<0||x>=level.tileWidth||y>=level.tileHeight)return false;
+        // Continuous levels use width/height zero and allow negative coordinates.
+        // Only inspect already loaded native regions; never generate land from a draw query.
+        if(!RegionSceneQuery.loaded(level,x,y))return false;
         String id=level.getTile(x,y).getStringID();
         return !id.contains("farmland")&&(id.contains("dirt")||id.contains("path")||id.contains("gravel"));
     }
@@ -38,7 +74,8 @@ public final class NaturalPathRenderer {
     public static synchronized boolean draw(LevelTileTerrainDrawOptions under,Level level,int tx,int ty,int dx,int dy) {
         if(Boolean.getBoolean("mosslume.visual.legacy")||failed)return false;
         boolean road=isPath(level,tx,ty);
-        if(!road&&(!"grasstile".equals(level.getTile(tx,ty).getStringID())||level.tileLayer.isPlayerPlaced(tx,ty)))return false;
+        boolean biomeGround=BiomeVisuals.biomeGround(level,tx,ty);
+        if(!road&&((!"grasstile".equals(level.getTile(tx,ty).getStringID())&&!biomeGround)||level.tileLayer.isPlayerPlaced(tx,ty)))return false;
         int neighbours=(isPath(level,tx,ty-1)?1:0)|(isPath(level,tx+1,ty)?2:0)
             |(isPath(level,tx,ty+1)?4:0)|(isPath(level,tx-1,ty)?8:0)
             |(isPath(level,tx-1,ty-1)?16:0)|(isPath(level,tx+1,ty-1)?32:0)
@@ -53,17 +90,18 @@ public final class NaturalPathRenderer {
         } catch(Exception e) {
             failed=true;System.err.println("MOSSLUME_NATURAL_PATH_UNAVAILABLE "+e);return false;
         }
+        String biomeMaterial=BiomeVisuals.pathGround(level,tx,ty);
+        String material=biomeMaterial==null?"forest":biomeMaterial;
+        BiomeTerrainMaterials.Material biome=biomeMaterial==null?null:BiomeTerrainMaterials.get(biomeMaterial);
         int signature=neighbours|(road?256:0);
-        long key=((long)tx<<32)^(ty&0xffffffffL);
-        Entry entry=tiles.get(key);
-        if(entry==null) {
-            entry=new Entry(tiles.size());tiles.put(key,entry);
-            while(pages.size()<=entry.page) {
-                GameTexture texture=new GameTexture("mosslume-natural-path-"+pages.size(),PAGE_SIZE,PAGE_SIZE);
-                texture.setBlendQuality(GameTexture.BlendQuality.NEAREST);pages.add(texture);
-            }
+        long key=coordinateKey(tx,ty);
+        Entry entry=tiles.acquire(key);
+        if(entry==null)return false;
+        while(pages.size()<=entry.page) {
+            GameTexture texture=new GameTexture("mosslume-natural-path-"+pages.size(),PAGE_SIZE,PAGE_SIZE);
+            texture.setBlendQuality(GameTexture.BlendQuality.NEAREST);pages.add(texture);
         }
-        if(entry.neighbours!=signature) {
+        if(entry.neighbours!=signature||!entry.material.equals(material)) {
             GameTexture page=pages.get(entry.page);
             byte[] row=new byte[TILE*4];
             for(int y=0;y<TILE;y++) {
@@ -71,8 +109,8 @@ public final class NaturalPathRenderer {
                     int wx=tx*TILE+x,wy=ty*TILE+y;
                     int alpha=road?NaturalPathShape.coverage(x,y,tx*TILE,ty*TILE,neighbours)
                         :NaturalPathShape.cornerCoverage(x,y,tx*TILE,ty*TILE,neighbours);
-                    int g=grass.getRGB(Math.floorMod(wx,grass.getWidth()),Math.floorMod(wy,grass.getHeight()));
-                    int d=dirt.getRGB(Math.floorMod(wx,dirt.getWidth()),Math.floorMod(wy,dirt.getHeight()));
+                    int g=biome==null?grass.getRGB(Math.floorMod(wx,grass.getWidth()),Math.floorMod(wy,grass.getHeight())):biome.ground(wx,wy);
+                    int d=biome==null?dirt.getRGB(Math.floorMod(wx,dirt.getWidth()),Math.floorMod(wy,dirt.getHeight())):biome.road(wx,wy);
                     row[x*4]=(byte)mix((g>>>16)&255,(d>>>16)&255,alpha);
                     row[x*4+1]=(byte)mix((g>>>8)&255,(d>>>8)&255,alpha);
                     row[x*4+2]=(byte)mix(g&255,d&255,alpha);row[x*4+3]=(byte)255;
@@ -80,13 +118,22 @@ public final class NaturalPathRenderer {
                 // Dirty the shared atlas once per changed row. No per-frame image allocation or upload.
                 page.putData(((entry.y+y)*PAGE_SIZE+entry.x)*4,row);
             }
-            entry.neighbours=signature;rebuilds++;
+            entry.neighbours=signature;entry.material=material;rebuilds++;
         }
         final GameTexture page=pages.get(entry.page);
-        SharedTextureDrawOptions batch=under.specialDrawables.getOrCreate("mosslume-natural-path-"+entry.page,0,()->DaylightMaterials.groundBatch(page,level));
+        SharedTextureDrawOptions batch=under.specialDrawables.getOrCreate("mosslume-natural-path-"+entry.page+(biomeMaterial==null?"-forest":"-biome"),0,
+            ()->biomeMaterial==null?DaylightMaterials.groundBatch(page,level):new SharedTextureDrawOptions(page));
         batch.addSection(entry.x,entry.x+TILE,entry.y,entry.y+TILE).pos(dx,dy);
         draws++;return true;
     }
     private static int mix(int a,int b,int alpha){return (a*(255-alpha)+b*alpha+127)/255;}
+    static long coordinateKey(int x,int y) {
+        // Packed Long.hashCode is x^y: diagonal paths form collision trees.
+        // Bijective mixing retains full signed coordinates and spreads buckets.
+        long key=((long)x<<32)|(y&0xffffffffL);
+        key=(key^(key>>>30))*0xbf58476d1ce4e5b9L;
+        key=(key^(key>>>27))*0x94d049bb133111ebL;
+        return key^(key>>>31);
+    }
     private NaturalPathRenderer(){}
 }

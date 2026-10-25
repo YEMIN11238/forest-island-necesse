@@ -1,0 +1,312 @@
+{
+  "farmer": {
+    "idle-down": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-idle-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        21,
+        40,
+        53
+      ]
+    },
+    "walk-down": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-walk-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        21,
+        40,
+        53
+      ]
+    },
+    "attack-down": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-attack-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        21,
+        42,
+        53
+      ]
+    },
+    "carry": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-carry.png",
+      "fallback": false,
+      "bbox": [
+        25,
+        21,
+        40,
+        53
+      ]
+    },
+    "sleep": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-sleep.png",
+      "fallback": false,
+      "bbox": [
+        25,
+        25,
+        38,
+        53
+      ]
+    },
+    "downed": {
+      "usedFile": "mod/resources/mosslume/residents/farmer-downed.png",
+      "fallback": false,
+      "bbox": [
+        1,
+        38,
+        33,
+        53
+      ]
+    }
+  },
+  "carpenter": {
+    "idle-down": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-idle-down.png",
+      "fallback": false,
+      "bbox": [
+        22,
+        21,
+        41,
+        53
+      ]
+    },
+    "walk-down": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-walk-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        21,
+        42,
+        53
+      ]
+    },
+    "attack-down": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-attack-down.png",
+      "fallback": false,
+      "bbox": [
+        22,
+        21,
+        41,
+        53
+      ]
+    },
+    "carry": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-carry.png",
+      "fallback": false,
+      "bbox": [
+        25,
+        21,
+        41,
+        53
+      ]
+    },
+    "sleep": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-sleep.png",
+      "fallback": false,
+      "bbox": [
+        24,
+        23,
+        41,
+        53
+      ]
+    },
+    "downed": {
+      "usedFile": "mod/resources/mosslume/residents/carpenter-downed.png",
+      "fallback": false,
+      "bbox": [
+        1,
+        39,
+        33,
+        53
+      ]
+    }
+  },
+  "merchant": {
+    "idle-down": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-down.png",
+      "fallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ]
+    },
+    "walk-down": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-down.png",
+      "fallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ]
+    },
+    "attack-down": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-attack-down.png",
+      "fallback": false,
+      "bbox": [
+        22,
+        21,
+        41,
+        53
+      ]
+    },
+    "carry": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-down.png",
+      "fallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ]
+    },
+    "sleep": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-down.png",
+      "fallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ]
+    },
+    "downed": {
+      "usedFile": "mod/resources/mosslume/residents/merchant-down.png",
+      "fallback": true,
+      "bbox": [
+        24,
+        21,
+        39,
+        53
+      ]
+    }
+  },
+  "ashuo": {
+    "idle-down": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+      "fallback": false,
+      "bbox": [
+        21,
+        20,
+        42,
+        53
+      ]
+    },
+    "walk-down": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-walk-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        20,
+        43,
+        53
+      ]
+    },
+    "attack-down": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-attack-down.png",
+      "fallback": false,
+      "bbox": [
+        21,
+        20,
+        43,
+        53
+      ]
+    },
+    "carry": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        21,
+        20,
+        42,
+        53
+      ]
+    },
+    "sleep": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        21,
+        20,
+        42,
+        53
+      ]
+    },
+    "downed": {
+      "usedFile": "mod/resources/mosslume/residents/ashuo-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        21,
+        20,
+        42,
+        53
+      ]
+    }
+  },
+  "luan": {
+    "idle-down": {
+      "usedFile": "mod/resources/mosslume/residents/luan-idle-down.png",
+      "fallback": false,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ]
+    },
+    "walk-down": {
+      "usedFile": "mod/resources/mosslume/residents/luan-walk-down.png",
+      "fallback": false,
+      "bbox": [
+        23,
+        21,
+        43,
+        53
+      ]
+    },
+    "attack-down": {
+      "usedFile": "mod/resources/mosslume/residents/luan-attack-down.png",
+      "fallback": false,
+      "bbox": [
+        21,
+        21,
+        43,
+        53
+      ]
+    },
+    "carry": {
+      "usedFile": "mod/resources/mosslume/residents/luan-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ]
+    },
+    "sleep": {
+      "usedFile": "mod/resources/mosslume/residents/luan-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ]
+    },
+    "downed": {
+      "usedFile": "mod/resources/mosslume/residents/luan-idle-down.png",
+      "fallback": true,
+      "bbox": [
+        22,
+        21,
+        43,
+        53
+      ]
+    }
+  }
+}

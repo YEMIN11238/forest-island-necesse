@@ -1,0 +1,197 @@
+[
+  {
+    "test": "MemoryRankingCheck",
+    "exit": 0,
+    "output": "MemoryRankingCheck: 7 checks passed\n"
+  },
+  {
+    "test": "localforest.world.GeneratedLayoutTest",
+    "exit": 0,
+    "output": "GeneratedLayoutTest PASS worlds=16 traversalOrder=stable biomeCoverage=true bounds=true resourceAccess=true legacySeedPreserved=true unknownVersionRejected=true\n"
+  },
+  {
+    "test": "localforest.world.BiomeLayoutTest",
+    "exit": 0,
+    "output": "BiomeLayoutTest PASS v3worlds=9 placementStress=32 forestSpawnRadius=32 campExits=1 noGlobalRoads=true regions=6 structures=18 utilityApproaches=12 reachable=true contentV1V2=unchanged mapV1V2=golden\n"
+  },
+  {
+    "test": "localforest.world.NativeFiniteTerrainTest",
+    "exit": 0,
+    "output": "NativeFiniteTerrainTest PASS worlds=4 nativeCellularAutomaton=true connectedMainland=true deterministic=true forestLattice=false spacingSafe=true\n"
+  },
+  {
+    "test": "localforest.world.ContinuousWorldLayoutTest",
+    "exit": 0,
+    "output": "ContinuousWorldLayoutTest PASS nativeBounds=0x0 versionsIsolated=true biomes=7 negativeCoordinates=true traversalOrder=stable finiteArrays=forbidden sites=bounded\n"
+  },
+  {
+    "test": "localforest.world.RegionCacheInvalidationTest",
+    "exit": 0,
+    "output": "RegionCacheInvalidationTest PASS originalBug=reproduced patchedBytecode=true unloadedLookup=null reload=fresh negativeCoordinates=true\n"
+  },
+  {
+    "test": "localforest.scene.SceneGeometryTest",
+    "exit": 0,
+    "output": "SceneGeometryTest PASS: legacy house preserved, translated door/lights, bounded camera queries\n"
+  },
+  {
+    "test": "localforest.scene.SceneViewportTest",
+    "exit": 0,
+    "output": "SceneViewportTest PASS: unchanged inputs reused; move, resize and level bounds invalidate independently\n"
+  },
+  {
+    "test": "localforest.scene.SceneMetadataTest",
+    "exit": 0,
+    "output": "SceneMetadataTest PASS: native zero omission, explicit zero, packet round trip, last-house removal\n"
+  },
+  {
+    "test": "localforest.visual.DaylightMaterialTest",
+    "exit": 0,
+    "output": "Daylight material night isolation and continuous day transitions passed\n"
+  },
+  {
+    "test": "localforest.visual.TileColorCacheTest",
+    "exit": 0,
+    "output": "TileColorCacheTest PASS: dense/fallback equivalence, negative and edge coordinates, fresh-snapshot isolation\n"
+  },
+  {
+    "test": "localforest.tasks.CompanionTaskSaveTest",
+    "exit": 0,
+    "output": "PASS: stable task ID/target, safe resume gate, terminal states, progress, Unicode save round trip\n"
+  },
+  {
+    "test": "localforest.companions.CompanionWorldSaveTest",
+    "exit": 0,
+    "output": "PASS: native WorldData identity/downed/task/memory round trip; immediate request invalidation; recruited/visitor identity, paired 8-turn dialogue history, typed status, cancelled/accepted receipts and map/unload rejection; NPC-owned UUID and strict legacy identity migration\n"
+  },
+  {
+    "test": "localforest.companions.NpcCognitionSaveTest",
+    "exit": 0,
+    "output": "NpcCognitionSaveTest PASS: actual WorldData schema-1 migration, typed evidence and 8-turn claims, 90 additional observations through native save/parse/reload, long-term preference/event recall, traits not replayed, NPC isolation, social relationship cooldown, reported/last timestamps and pending native social-guard ownership markers persisted across repeated reloads; marker consumption requires native runtime QA; no game or paid model\n"
+  },
+  {
+    "test": "localforest.tasks.NativeWorkCompletionTest",
+    "exit": 0,
+    "output": "PASS: native single-job completion; exactly-once result; cancel/finish race\n"
+  },
+  {
+    "test": "localforest.ai.DeepSeekProviderTest",
+    "exit": 0,
+    "output": "DeepSeekProviderTest PASS: actual AgentScope Java 2.0.4 model/message/tool + guarded HTTP path, JSON/action validation, chat-only, visitor tool and intent permission, paired multi-turn context, typed dialogue/status, budget/restart, HTTP mapping, usage, cancellation, sanitized errors, response-size bound; no paid calls\n"
+  },
+  {
+    "test": "localforest.ai.NpcMindTest",
+    "exit": 0,
+    "output": "NpcMindTest PASS: native save/parse/reload, long-term Chinese recall beyond 8 turns, preference correction/negation with topic replacement and rejection of questions/conditionals, typed claims/preferences/events, identity isolation, evidence reflections, dedup and growth caps, real-event personality growth, NPC social relationships/cooldowns, immutable publication, bounded state, old saves; no paid calls or native startup\n"
+  },
+  {
+    "test": "localforest.ai.NpcSocialPlannerTest",
+    "exit": 0,
+    "output": "NpcSocialPlannerTest PASS: AI Town invite/accept/approach/talk/leave, deterministic personality, real event priority, busy/combat/chat protection, injured busy/combat distress without movement, reported-event replay/retry, native movement eligibility, failure/timeout cleanup, night/day, world isolation, rate limits and multiple characters; no paid calls\n"
+  },
+  {
+    "test": "localforest.ai.AiIntentAmbientTest",
+    "exit": 0,
+    "output": "AiIntentAmbientTest PASS: tool-free autonomous binding, action rejection, busy reservation, error/3s-timeout replacement isolation, provider-swap cancellation and bound-future cancellation; fixture models only, no credentials or paid calls\n"
+  },
+  {
+    "test": "localforest.visual.PathCoordinateKeyTest",
+    "exit": 0,
+    "output": "PathCoordinateKeyTest PASS: diagonal distribution, signed/extreme coordinate identity\n"
+  },
+  {
+    "test": "localforest.visual.SceneDrawOrderTest",
+    "exit": 0,
+    "output": "SceneDrawOrderTest PASS: native ordering, mixed native/buffered draws, signed coordinates and ties\n"
+  },
+  {
+    "test": "localforest.visual.OceanGeometryCacheTest",
+    "exit": 0,
+    "output": "OceanGeometryCacheTest PASS: exact legacy depth/corner bits, reusable immutable colors, negative edges, edits/load state and camera movement\n"
+  },
+  {
+    "test": "localforest.ai.AiRequestSchedulerTest",
+    "exit": 0,
+    "output": "AiRequestSchedulerTest PASS: aggregate 2-request cap, reserved player channel, one background, actor cooldown, shared minute/day allowance, idempotent release and day rollover; no network\n"
+  },
+  {
+    "test": "localforest.companions.NpcPopulationPolicyTest",
+    "exit": 0,
+    "output": "NpcPopulationPolicyTest PASS: 4 core + 6 residents + visitor definitions, native node patch signature, simulation tiers/daily phases, lease eligibility, 200-resident actual WorldData round trip with bounded snapshots and preserved remote memories; no game or model\n"
+  },
+  {
+    "test": "localforest.visual.VisualMaterialWindTest",
+    "exit": 0,
+    "output": "VisualMaterialWindTest PASS: visible bounds, feet, Sobel normals, wind roots/rigidity/phase/continuity, dynamic-light cache reuse\n"
+  },
+  {
+    "test": "localforest.visual.VisualCatalogResourceTest",
+    "exit": 0,
+    "output": "VisualCatalogResourceTest PASS: native PNG index, native JSON exclusion, six JAR ClassLoader catalogs, exact anchors, independent render-frame identity\n"
+  },
+  {
+    "test": "localforest.visual.CharacterAnimationTest",
+    "exit": 0,
+    "output": "CharacterAnimationTest PASS: native-progress frames and four-way aim\n"
+  },
+  {
+    "test": "localforest.biomes.AttackCycleTest",
+    "exit": 0,
+    "output": "AttackCycleTest PASS: no windup damage; one impact; cancel; no late recovery damage\n"
+  },
+  {
+    "test": "localforest.world.CoastalCampLayoutTest",
+    "exit": 0,
+    "output": "CoastalCampLayoutTest PASS worlds=6 realTerrainPolicy=true compactSeaVisible=true allHutsDry=true allPathsConnected=true minCoreTrees=28 nativeFarField=true\n"
+  },
+  {
+    "test": "localforest.world.CoastalHydrologyTest",
+    "exit": 0,
+    "output": "CoastalHydrologyTest PASS worlds=8 nativeKernelSampling=true classifierContracts=8 dryNativeExits=8 maxExitDistance=40 remoteWaterUnchanged=true\n"
+  },
+  {
+    "test": "localforest.scene.ResidenceMetadataTest",
+    "exit": 0,
+    "output": "ResidenceMetadataTest PASS: actual native GND writer/save/packet, zero/negative anchors, idempotence, independent main-house stamp, 7x6 collision/bed/door/roof geometry and scaled window lights; no game or model\n"
+  },
+  {
+    "test": "localforest.visual.GroundDecorationPolicyTest",
+    "exit": 0,
+    "output": "GroundDecorationPolicyTest PASS: actual GrassTile/SimpleFloorTile, live build-after-prepare, plant/shadow floor veto, landscaping, occupancy, demolition, unloading\n"
+  },
+  {
+    "test": "localforest.companions.NativeStorageFinderRepairTest",
+    "exit": 0,
+    "output": "MOSSLUME_STORAGE_FINDER_REPAIR installed cursor-finally native-reservations\nNativeStorageFinderRepairTest PASS actualAdvice=true nativeValidation=true nativeReservation=true cursorRemoval/filter/nullFuture=true minMax/order/callback/cursor=true scope=Mosslume\n"
+  },
+  {
+    "test": "localforest.companions.PopulationSpawnSearchTest",
+    "exit": 0,
+    "output": "PopulationSpawnSearchTest PASS connectedDryLand=true collisionRejected=true retryAfterLoad=true stableChoice=true boundedLoadedSearch=true negativeCoordinates=true\n"
+  },
+  {
+    "test": "localforest.visual.PathAtlasCacheTest",
+    "exit": 0,
+    "output": "PathAtlasCacheTest PASS: current/previous pinning, LRU slot reuse, signature reset, 24000 signed-coordinate road cells bounded to 4096 tiles/16 pages\n"
+  },
+  {
+    "test": "localforest.companions.NpcLifeSuppliesTest",
+    "exit": 0,
+    "output": "NpcLifeSuppliesTest PASS nativeInventory=true nativeMarkerSave=true onceOnlyRationAndPantry=true preservePlayerItems=true atomicInsufficientSpace=true bedsAndDoorClear=true failedStockAndRegistrationRetry=true\n"
+  },
+  {
+    "test": "localforest.companions.NpcActivityScheduleTest",
+    "exit": 0,
+    "output": "NpcActivityScheduleTest PASS nativeNeedsFirst=true tenDistinctSites=true districtEveningSites=true staggeredVisits=true boundedWindows=true nightRest=true failedRouteRetry=5000ms perNpc=true\n"
+  },
+  {
+    "test": "localforest.companions.NativeInteractionApproachTest",
+    "exit": 0,
+    "output": "NativeInteractionApproachTest PASS actualNativeRange=75 candidateOuterRadius=50 blockedSide=true allBlockedRejected=true seatedAppearancePoint=true negativeCoordinates=true noNpcMutation=true\n"
+  },
+  {
+    "test": "CreatureAnimationCheck",
+    "exit": 0,
+    "output": "CreatureAnimationCheck passed: four directions, server impact synchronization, hurt phases and non-looping death\n"
+  }
+]

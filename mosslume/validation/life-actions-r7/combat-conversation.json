@@ -1,0 +1,132 @@
+{
+  "melee": {
+    "firstObservedDamageProgress": 0.48095238,
+    "hits": 1,
+    "windupNoDamage": true
+  },
+  "ranged": {
+    "windupNoProjectile": true,
+    "shots": 1
+  },
+  "removedTarget": {
+    "hits": 0,
+    "animationStopped": true,
+    "cancelled": 1
+  },
+  "dodge": {
+    "hits": 0,
+    "targetHealthUnchanged": true
+  },
+  "conversationPopulation": {
+    "maxDriftWorldPixels": 0.0,
+    "phase": 3,
+    "populationReseedKeepsIds": true,
+    "nativeMovementBeforeChat": 73.61866231321373,
+    "coreCandidateStates": [
+      {
+        "threatened": false,
+        "loaded": true,
+        "role": "草药与照护",
+        "downed": false,
+        "level": "surface"
+      },
+      {
+        "threatened": false,
+        "loaded": true,
+        "role": "种植与食物",
+        "downed": false,
+        "level": "surface"
+      },
+      {
+        "threatened": false,
+        "loaded": true,
+        "role": "营地顾问",
+        "downed": false,
+        "level": "surface"
+      },
+      {
+        "threatened": false,
+        "loaded": true,
+        "role": "营地守卫",
+        "downed": false,
+        "level": "surface"
+      }
+    ],
+    "approachPoint": [
+      400,
+      463
+    ],
+    "heldSeconds": 5.048036875,
+    "nativeRangeImmediatelyAfterApproach": true,
+    "population": {
+      "loadedResidents": 6,
+      "seededCore": 4,
+      "pendingTemplates": [],
+      "seededResidents": 6,
+      "loadedCore": 4,
+      "loadedVisitors": 0,
+      "seedingComplete": true,
+      "waiting": {}
+    },
+    "approachAttempts": 1,
+    "facingSamples": 102,
+    "uniquePersistentIds": true,
+    "heldSamples": 102,
+    "nativeMovementAfterExit": 156.68149312661876,
+    "scope": "Actual server conversation-presence/lease/native-AI chain; collision-checked native player approach (at most three before acquisition), client teleport/position agreement, unchanged native interaction range, continuous 5-second hold, native movement and NPC save payload. No NPC freezing/position injection, physical keyboard/composer input, paid model, full save reload, or combat-interrupt claim.",
+    "approachDistanceToInteraction": 32.0,
+    "worldData": {
+      "visible": 10,
+      "loaded": 10,
+      "activeMinds": 10,
+      "conversationHeld": false,
+      "known": 10
+    },
+    "releasedAfterExit": true,
+    "elapsedSeconds": 7.860354208,
+    "nativeNpcSavePayloadLoadedCount": 10,
+    "actorInteractionPosition": [
+      556,
+      411
+    ],
+    "nativeClientLandingConfirmed": true,
+    "nativeGuardPreserved": true,
+    "actorUsingObject": false,
+    "playerTile": [
+      12,
+      14
+    ],
+    "fixtureGuardStillPresent": true,
+    "nativeNpcSavePayloadUuidRoundTrip": true,
+    "nativeClientLandingMatched": true,
+    "landingSamples": 107,
+    "passed": true,
+    "knownPermanentCharacters": [
+      "sisi",
+      "luan",
+      "aqiao",
+      "ashuo",
+      "linshu",
+      "mumo",
+      "shiyan",
+      "haitang",
+      "xiaohe",
+      "ayue"
+    ],
+    "actor": {
+      "tile": [
+        17,
+        12
+      ],
+      "removed": false,
+      "downed": false,
+      "samePlace": true,
+      "distance": 164.35522,
+      "inRange": false,
+      "template": "ashuo",
+      "attacking": false
+    }
+  },
+  "passed": true,
+  "scope": "Real server ticks, native hit and projectile creation, and server conversation lease. No paid model or physical keyboard/mouse input."
+}

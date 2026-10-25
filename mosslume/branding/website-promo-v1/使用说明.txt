@@ -1,0 +1,25 @@
+Mosslume 网站素材包
+
+宣传插画与实机截图已分开：
+根目录01～03为宣传插画；in-game/为6张真实游戏开发阶段截图。
+PNG保留原始尺寸与内容；WebP适合网页加载。
+网页实机图片建议统一标注「开发中实机画面」，部分图来自较早版本。
+
+01-camp-day.png — 白天海岸营地（0.5.1-life-actions-preview）
+原生游戏画面，保留原始HUD。
+
+02-camp-night.png — 夜间营地与火光（0.5.1-life-actions-preview）
+原生游戏画面，保留原始HUD。
+
+03-npc-conversation.png — NPC 对话气泡（0.4.6）
+原生NPC气泡与任务历史的离线验证场景，不代表实时线上模型对话。
+
+04-mushroom-forest.png — 蘑菇林与蘑菇屋（0.4.0-r4-wilderness）
+较早开发版本的原生地形截图。
+
+05-snowfield.png — 雪地、雪屋与动物（0.4.0-r4-wilderness）
+较早开发版本的原生地形截图。
+
+06-moonreaper-boss.png — 白发镰刃 Boss 实机测试（0.5.2-combat-bosses）
+原生Boss攻击验证场景，对象为测试用动物，不是玩家实战或平衡性展示。
+

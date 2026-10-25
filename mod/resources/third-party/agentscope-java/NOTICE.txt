@@ -1,0 +1,12 @@
+AgentScope Java 2.0.4
+Copyright 2024-2026 the original author or authors.
+Source: https://github.com/agentscope-ai/agentscope-java/tree/v2.0.4
+Commit: 0b6743b263ba8e39eb417e35048026f1e0196548
+License: Apache-2.0 (included as LICENSE).
+Mosslume uses unmodified official agentscope-core and agentscope-extensions-model-openai binaries.
+Integration code in localforest.ai is original Mosslume glue code. The SDK is used for its
+OpenAIChatModel, DeepSeekFormatter, Msg, ToolSchema and typed model response path only.
+No generic filesystem, terminal, MCP, memory service or telemetry tool is initialized.
+Model data is sent only by the guarded DeepSeek transport, with bounded responses,
+request cancellation, one attempt, daily accounting and validated game intents.
+The exact artifacts and checksums are in mod/dependencies/agentscope-lock.json.

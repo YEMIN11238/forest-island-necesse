@@ -1,0 +1,3053 @@
+{
+  "tool": "built-in image_gen; mechanical nearest RGBA export",
+  "layout": {
+    "rows": [
+      "up",
+      "right",
+      "down",
+      "left"
+    ],
+    "columns": [
+      "ready",
+      "moveA",
+      "moveB",
+      "windup",
+      "strike",
+      "recover",
+      "hurt",
+      "death"
+    ]
+  },
+  "alpha": "Source RGBA retained in every cropped group; no repainting, background removal, component masking, or thresholded runtime alpha.",
+  "scaling": "One constant scale per Boss; width constraints can reduce the whole actor below target ready height. Death stays short.",
+  "bosses": {
+    "stone-watcher": {
+      "source": "mosslume/art/bosses-r8/sources/stone-watcher-actions-v2.png",
+      "sourceSha256": "7f2244118ef18af3cfd32cbc7d73acbdd6c085b69b58274a362f6b4684af955d",
+      "sourceDimensions": [
+        1774,
+        887
+      ],
+      "frameSize": [
+        96,
+        96
+      ],
+      "foot": [
+        48,
+        80
+      ],
+      "requestedReadyHeight": 68,
+      "requestedScale": 0.39080459770114945,
+      "oneScaleForBoss": 0.37540533724137937,
+      "scaleLimitedByFrame": true,
+      "readyVisibleHeights": [
+        64,
+        68,
+        65,
+        65
+      ],
+      "readyMeanVisibleHeight": 65.5,
+      "output": "mod/resources/mosslume/bosses/stone-watcher.png",
+      "poses": [
+        {
+          "row": 0,
+          "column": 0,
+          "direction": "up",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            0,
+            227,
+            233
+          ],
+          "sourceBox": [
+            24,
+            50,
+            213,
+            220
+          ],
+          "sourceOpaqueBox": [
+            26,
+            52,
+            211,
+            218
+          ],
+          "sourceFoot": [
+            93.0,
+            167
+          ],
+          "runtimePaste": [
+            14,
+            18
+          ],
+          "runtimeCropSize": [
+            71,
+            64
+          ],
+          "sampledFoot": [
+            34.5,
+            62
+          ],
+          "runtimeVisibleBox": [
+            14,
+            18,
+            85,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "direction": "up",
+          "pose": "moveA",
+          "groupBox": [
+            227,
+            0,
+            441,
+            233
+          ],
+          "sourceBox": [
+            242,
+            61,
+            419,
+            217
+          ],
+          "sourceOpaqueBox": [
+            244,
+            63,
+            417,
+            215
+          ],
+          "sourceFoot": [
+            78.0,
+            153
+          ],
+          "runtimePaste": [
+            19,
+            23
+          ],
+          "runtimeCropSize": [
+            66,
+            59
+          ],
+          "sampledFoot": [
+            29.0,
+            57
+          ],
+          "runtimeVisibleBox": [
+            19,
+            23,
+            85,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "direction": "up",
+          "pose": "moveB",
+          "groupBox": [
+            441,
+            0,
+            662,
+            233
+          ],
+          "sourceBox": [
+            464,
+            55,
+            640,
+            220
+          ],
+          "sourceOpaqueBox": [
+            466,
+            57,
+            638,
+            218
+          ],
+          "sourceFoot": [
+            68.0,
+            162
+          ],
+          "runtimePaste": [
+            22,
+            20
+          ],
+          "runtimeCropSize": [
+            66,
+            62
+          ],
+          "sampledFoot": [
+            25.5,
+            60
+          ],
+          "runtimeVisibleBox": [
+            22,
+            20,
+            88,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "direction": "up",
+          "pose": "windup",
+          "groupBox": [
+            662,
+            0,
+            890,
+            233
+          ],
+          "sourceBox": [
+            685,
+            28,
+            881,
+            218
+          ],
+          "sourceOpaqueBox": [
+            687,
+            30,
+            879,
+            216
+          ],
+          "sourceFoot": [
+            97.0,
+            187
+          ],
+          "runtimePaste": [
+            12,
+            11
+          ],
+          "runtimeCropSize": [
+            74,
+            71
+          ],
+          "sampledFoot": [
+            36.5,
+            69
+          ],
+          "runtimeVisibleBox": [
+            12,
+            11,
+            86,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 4,
+          "direction": "up",
+          "pose": "strike",
+          "groupBox": [
+            890,
+            0,
+            1116,
+            233
+          ],
+          "sourceBox": [
+            899,
+            74,
+            1099,
+            222
+          ],
+          "sourceOpaqueBox": [
+            901,
+            76,
+            1097,
+            220
+          ],
+          "sourceFoot": [
+            99.5,
+            145
+          ],
+          "runtimePaste": [
+            11,
+            26
+          ],
+          "runtimeCropSize": [
+            75,
+            56
+          ],
+          "sampledFoot": [
+            37.0,
+            54
+          ],
+          "runtimeVisibleBox": [
+            11,
+            26,
+            86,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 5,
+          "direction": "up",
+          "pose": "recover",
+          "groupBox": [
+            1116,
+            0,
+            1334,
+            233
+          ],
+          "sourceBox": [
+            1133,
+            51,
+            1309,
+            220
+          ],
+          "sourceOpaqueBox": [
+            1135,
+            53,
+            1307,
+            218
+          ],
+          "sourceFoot": [
+            88.0,
+            166
+          ],
+          "runtimePaste": [
+            15,
+            19
+          ],
+          "runtimeCropSize": [
+            66,
+            63
+          ],
+          "sampledFoot": [
+            33.0,
+            61
+          ],
+          "runtimeVisibleBox": [
+            15,
+            19,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 6,
+          "direction": "up",
+          "pose": "hurt",
+          "groupBox": [
+            1334,
+            0,
+            1535,
+            233
+          ],
+          "sourceBox": [
+            1359,
+            62,
+            1532,
+            220
+          ],
+          "sourceOpaqueBox": [
+            1361,
+            64,
+            1530,
+            218
+          ],
+          "sourceFoot": [
+            68.0,
+            155
+          ],
+          "runtimePaste": [
+            22,
+            23
+          ],
+          "runtimeCropSize": [
+            65,
+            59
+          ],
+          "sampledFoot": [
+            25.5,
+            57
+          ],
+          "runtimeVisibleBox": [
+            22,
+            23,
+            87,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 7,
+          "direction": "up",
+          "pose": "death",
+          "groupBox": [
+            1535,
+            0,
+            1774,
+            233
+          ],
+          "sourceBox": [
+            1539,
+            120,
+            1764,
+            228
+          ],
+          "sourceOpaqueBox": [
+            1541,
+            122,
+            1762,
+            226
+          ],
+          "sourceFoot": [
+            112.0,
+            105
+          ],
+          "runtimePaste": [
+            6,
+            41
+          ],
+          "runtimeCropSize": [
+            84,
+            41
+          ],
+          "sampledFoot": [
+            41.5,
+            39
+          ],
+          "runtimeVisibleBox": [
+            6,
+            41,
+            90,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "direction": "right",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            233,
+            208,
+            451
+          ],
+          "sourceBox": [
+            30,
+            258,
+            181,
+            439
+          ],
+          "sourceOpaqueBox": [
+            32,
+            260,
+            179,
+            437
+          ],
+          "sourceFoot": [
+            79.0,
+            178
+          ],
+          "runtimePaste": [
+            18,
+            14
+          ],
+          "runtimeCropSize": [
+            57,
+            68
+          ],
+          "sampledFoot": [
+            29.5,
+            66
+          ],
+          "runtimeVisibleBox": [
+            18,
+            14,
+            75,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "direction": "right",
+          "pose": "moveA",
+          "groupBox": [
+            208,
+            233,
+            420,
+            451
+          ],
+          "sourceBox": [
+            236,
+            270,
+            372,
+            439
+          ],
+          "sourceOpaqueBox": [
+            238,
+            272,
+            370,
+            437
+          ],
+          "sourceFoot": [
+            67.5,
+            166
+          ],
+          "runtimePaste": [
+            23,
+            19
+          ],
+          "runtimeCropSize": [
+            51,
+            63
+          ],
+          "sampledFoot": [
+            25.0,
+            61
+          ],
+          "runtimeVisibleBox": [
+            23,
+            19,
+            74,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "direction": "right",
+          "pose": "moveB",
+          "groupBox": [
+            420,
+            233,
+            654,
+            451
+          ],
+          "sourceBox": [
+            469,
+            270,
+            616,
+            439
+          ],
+          "sourceOpaqueBox": [
+            471,
+            272,
+            614,
+            437
+          ],
+          "sourceFoot": [
+            61.0,
+            166
+          ],
+          "runtimePaste": [
+            26,
+            19
+          ],
+          "runtimeCropSize": [
+            55,
+            63
+          ],
+          "sampledFoot": [
+            22.5,
+            61
+          ],
+          "runtimeVisibleBox": [
+            26,
+            19,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "direction": "right",
+          "pose": "windup",
+          "groupBox": [
+            654,
+            233,
+            860,
+            451
+          ],
+          "sourceBox": [
+            693,
+            239,
+            820,
+            439
+          ],
+          "sourceOpaqueBox": [
+            695,
+            241,
+            818,
+            437
+          ],
+          "sourceFoot": [
+            77.5,
+            197
+          ],
+          "runtimePaste": [
+            19,
+            7
+          ],
+          "runtimeCropSize": [
+            48,
+            75
+          ],
+          "sampledFoot": [
+            29.0,
+            73
+          ],
+          "runtimeVisibleBox": [
+            19,
+            7,
+            67,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 4,
+          "direction": "right",
+          "pose": "strike",
+          "groupBox": [
+            860,
+            233,
+            1116,
+            451
+          ],
+          "sourceBox": [
+            900,
+            294,
+            1087,
+            439
+          ],
+          "sourceOpaqueBox": [
+            902,
+            296,
+            1085,
+            437
+          ],
+          "sourceFoot": [
+            62.0,
+            142
+          ],
+          "runtimePaste": [
+            25,
+            28
+          ],
+          "runtimeCropSize": [
+            70,
+            54
+          ],
+          "sampledFoot": [
+            23.0,
+            52
+          ],
+          "runtimeVisibleBox": [
+            25,
+            28,
+            95,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 5,
+          "direction": "right",
+          "pose": "recover",
+          "groupBox": [
+            1116,
+            233,
+            1328,
+            451
+          ],
+          "sourceBox": [
+            1146,
+            271,
+            1290,
+            439
+          ],
+          "sourceOpaqueBox": [
+            1148,
+            273,
+            1288,
+            437
+          ],
+          "sourceFoot": [
+            64.0,
+            165
+          ],
+          "runtimePaste": [
+            24,
+            19
+          ],
+          "runtimeCropSize": [
+            54,
+            63
+          ],
+          "sampledFoot": [
+            24.0,
+            61
+          ],
+          "runtimeVisibleBox": [
+            24,
+            19,
+            78,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 6,
+          "direction": "right",
+          "pose": "hurt",
+          "groupBox": [
+            1328,
+            233,
+            1523,
+            451
+          ],
+          "sourceBox": [
+            1367,
+            278,
+            1513,
+            440
+          ],
+          "sourceOpaqueBox": [
+            1369,
+            280,
+            1511,
+            438
+          ],
+          "sourceFoot": [
+            67.5,
+            159
+          ],
+          "runtimePaste": [
+            23,
+            21
+          ],
+          "runtimeCropSize": [
+            55,
+            61
+          ],
+          "sampledFoot": [
+            25.0,
+            59
+          ],
+          "runtimeVisibleBox": [
+            23,
+            21,
+            78,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 7,
+          "direction": "right",
+          "pose": "death",
+          "groupBox": [
+            1523,
+            233,
+            1774,
+            451
+          ],
+          "sourceBox": [
+            1534,
+            354,
+            1760,
+            447
+          ],
+          "sourceOpaqueBox": [
+            1536,
+            356,
+            1758,
+            445
+          ],
+          "sourceFoot": [
+            112.5,
+            90
+          ],
+          "runtimePaste": [
+            6,
+            47
+          ],
+          "runtimeCropSize": [
+            85,
+            35
+          ],
+          "sampledFoot": [
+            42.0,
+            33
+          ],
+          "runtimeVisibleBox": [
+            6,
+            47,
+            91,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "direction": "down",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            451,
+            233,
+            663
+          ],
+          "sourceBox": [
+            19,
+            477,
+            214,
+            650
+          ],
+          "sourceOpaqueBox": [
+            21,
+            479,
+            212,
+            648
+          ],
+          "sourceFoot": [
+            100.0,
+            170
+          ],
+          "runtimePaste": [
+            10,
+            17
+          ],
+          "runtimeCropSize": [
+            73,
+            65
+          ],
+          "sampledFoot": [
+            37.5,
+            63
+          ],
+          "runtimeVisibleBox": [
+            10,
+            17,
+            83,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "direction": "down",
+          "pose": "moveA",
+          "groupBox": [
+            233,
+            451,
+            443,
+            663
+          ],
+          "sourceBox": [
+            253,
+            488,
+            421,
+            655
+          ],
+          "sourceOpaqueBox": [
+            255,
+            490,
+            419,
+            653
+          ],
+          "sourceFoot": [
+            63.5,
+            164
+          ],
+          "runtimePaste": [
+            24,
+            19
+          ],
+          "runtimeCropSize": [
+            63,
+            63
+          ],
+          "sampledFoot": [
+            23.5,
+            61
+          ],
+          "runtimeVisibleBox": [
+            24,
+            19,
+            87,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "direction": "down",
+          "pose": "moveB",
+          "groupBox": [
+            443,
+            451,
+            658,
+            663
+          ],
+          "sourceBox": [
+            465,
+            487,
+            637,
+            654
+          ],
+          "sourceOpaqueBox": [
+            467,
+            489,
+            635,
+            652
+          ],
+          "sourceFoot": [
+            107.0,
+            164
+          ],
+          "runtimePaste": [
+            8,
+            19
+          ],
+          "runtimeCropSize": [
+            65,
+            63
+          ],
+          "sampledFoot": [
+            40.0,
+            61
+          ],
+          "runtimeVisibleBox": [
+            8,
+            19,
+            73,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "direction": "down",
+          "pose": "windup",
+          "groupBox": [
+            658,
+            451,
+            889,
+            663
+          ],
+          "sourceBox": [
+            680,
+            456,
+            879,
+            650
+          ],
+          "sourceOpaqueBox": [
+            682,
+            458,
+            877,
+            648
+          ],
+          "sourceFoot": [
+            90.0,
+            191
+          ],
+          "runtimePaste": [
+            14,
+            9
+          ],
+          "runtimeCropSize": [
+            75,
+            73
+          ],
+          "sampledFoot": [
+            34.0,
+            71
+          ],
+          "runtimeVisibleBox": [
+            14,
+            9,
+            89,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 4,
+          "direction": "down",
+          "pose": "strike",
+          "groupBox": [
+            889,
+            451,
+            1116,
+            663
+          ],
+          "sourceBox": [
+            900,
+            505,
+            1099,
+            654
+          ],
+          "sourceOpaqueBox": [
+            902,
+            507,
+            1097,
+            652
+          ],
+          "sourceFoot": [
+            98.0,
+            146
+          ],
+          "runtimePaste": [
+            12,
+            26
+          ],
+          "runtimeCropSize": [
+            75,
+            56
+          ],
+          "sampledFoot": [
+            36.5,
+            54
+          ],
+          "runtimeVisibleBox": [
+            12,
+            26,
+            87,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 5,
+          "direction": "down",
+          "pose": "recover",
+          "groupBox": [
+            1116,
+            451,
+            1328,
+            663
+          ],
+          "sourceBox": [
+            1134,
+            481,
+            1309,
+            652
+          ],
+          "sourceOpaqueBox": [
+            1136,
+            483,
+            1307,
+            650
+          ],
+          "sourceFoot": [
+            82.5,
+            168
+          ],
+          "runtimePaste": [
+            18,
+            18
+          ],
+          "runtimeCropSize": [
+            66,
+            64
+          ],
+          "sampledFoot": [
+            30.5,
+            62
+          ],
+          "runtimeVisibleBox": [
+            18,
+            18,
+            84,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 6,
+          "direction": "down",
+          "pose": "hurt",
+          "groupBox": [
+            1328,
+            451,
+            1536,
+            663
+          ],
+          "sourceBox": [
+            1347,
+            496,
+            1532,
+            655
+          ],
+          "sourceOpaqueBox": [
+            1349,
+            498,
+            1530,
+            653
+          ],
+          "sourceFoot": [
+            93.0,
+            156
+          ],
+          "runtimePaste": [
+            14,
+            22
+          ],
+          "runtimeCropSize": [
+            69,
+            60
+          ],
+          "sampledFoot": [
+            34.5,
+            58
+          ],
+          "runtimeVisibleBox": [
+            14,
+            22,
+            83,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 7,
+          "direction": "down",
+          "pose": "death",
+          "groupBox": [
+            1536,
+            451,
+            1774,
+            663
+          ],
+          "sourceBox": [
+            1541,
+            549,
+            1760,
+            663
+          ],
+          "sourceOpaqueBox": [
+            1543,
+            551,
+            1758,
+            661
+          ],
+          "sourceFoot": [
+            109.0,
+            111
+          ],
+          "runtimePaste": [
+            8,
+            39
+          ],
+          "runtimeCropSize": [
+            82,
+            43
+          ],
+          "sampledFoot": [
+            40.5,
+            41
+          ],
+          "runtimeVisibleBox": [
+            8,
+            39,
+            90,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "direction": "left",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            663,
+            230,
+            887
+          ],
+          "sourceBox": [
+            42,
+            689,
+            196,
+            861
+          ],
+          "sourceOpaqueBox": [
+            44,
+            691,
+            194,
+            859
+          ],
+          "sourceFoot": [
+            71.5,
+            169
+          ],
+          "runtimePaste": [
+            22,
+            17
+          ],
+          "runtimeCropSize": [
+            58,
+            65
+          ],
+          "sampledFoot": [
+            26.5,
+            63
+          ],
+          "runtimeVisibleBox": [
+            22,
+            17,
+            80,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "direction": "left",
+          "pose": "moveA",
+          "groupBox": [
+            230,
+            663,
+            438,
+            887
+          ],
+          "sourceBox": [
+            265,
+            695,
+            403,
+            864
+          ],
+          "sourceOpaqueBox": [
+            267,
+            697,
+            401,
+            862
+          ],
+          "sourceFoot": [
+            72.5,
+            166
+          ],
+          "runtimePaste": [
+            21,
+            19
+          ],
+          "runtimeCropSize": [
+            52,
+            63
+          ],
+          "sampledFoot": [
+            27.0,
+            61
+          ],
+          "runtimeVisibleBox": [
+            21,
+            19,
+            73,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "direction": "left",
+          "pose": "moveB",
+          "groupBox": [
+            438,
+            663,
+            663,
+            887
+          ],
+          "sourceBox": [
+            473,
+            694,
+            629,
+            864
+          ],
+          "sourceOpaqueBox": [
+            475,
+            696,
+            627,
+            862
+          ],
+          "sourceFoot": [
+            91.5,
+            167
+          ],
+          "runtimePaste": [
+            14,
+            18
+          ],
+          "runtimeCropSize": [
+            59,
+            64
+          ],
+          "sampledFoot": [
+            34.0,
+            62
+          ],
+          "runtimeVisibleBox": [
+            14,
+            18,
+            73,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "direction": "left",
+          "pose": "windup",
+          "groupBox": [
+            663,
+            663,
+            847,
+            887
+          ],
+          "sourceBox": [
+            697,
+            663,
+            809,
+            863
+          ],
+          "sourceOpaqueBox": [
+            699,
+            665,
+            807,
+            861
+          ],
+          "sourceFoot": [
+            48.5,
+            197
+          ],
+          "runtimePaste": [
+            30,
+            7
+          ],
+          "runtimeCropSize": [
+            42,
+            75
+          ],
+          "sampledFoot": [
+            18.0,
+            73
+          ],
+          "runtimeVisibleBox": [
+            30,
+            7,
+            72,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 4,
+          "direction": "left",
+          "pose": "strike",
+          "groupBox": [
+            847,
+            663,
+            1112,
+            887
+          ],
+          "sourceBox": [
+            885,
+            724,
+            1079,
+            861
+          ],
+          "sourceOpaqueBox": [
+            887,
+            726,
+            1077,
+            859
+          ],
+          "sourceFoot": [
+            130.0,
+            134
+          ],
+          "runtimePaste": [
+            0,
+            31
+          ],
+          "runtimeCropSize": [
+            73,
+            51
+          ],
+          "sampledFoot": [
+            48.5,
+            49
+          ],
+          "runtimeVisibleBox": [
+            0,
+            31,
+            73,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 5,
+          "direction": "left",
+          "pose": "recover",
+          "groupBox": [
+            1112,
+            663,
+            1317,
+            887
+          ],
+          "sourceBox": [
+            1145,
+            693,
+            1283,
+            864
+          ],
+          "sourceOpaqueBox": [
+            1147,
+            695,
+            1281,
+            862
+          ],
+          "sourceFoot": [
+            81.5,
+            168
+          ],
+          "runtimePaste": [
+            18,
+            18
+          ],
+          "runtimeCropSize": [
+            52,
+            64
+          ],
+          "sampledFoot": [
+            30.5,
+            62
+          ],
+          "runtimeVisibleBox": [
+            18,
+            18,
+            70,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 6,
+          "direction": "left",
+          "pose": "hurt",
+          "groupBox": [
+            1317,
+            663,
+            1517,
+            887
+          ],
+          "sourceBox": [
+            1351,
+            701,
+            1496,
+            864
+          ],
+          "sourceOpaqueBox": [
+            1353,
+            703,
+            1494,
+            862
+          ],
+          "sourceFoot": [
+            80.0,
+            160
+          ],
+          "runtimePaste": [
+            18,
+            21
+          ],
+          "runtimeCropSize": [
+            54,
+            61
+          ],
+          "sampledFoot": [
+            29.5,
+            59
+          ],
+          "runtimeVisibleBox": [
+            18,
+            21,
+            72,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 7,
+          "direction": "left",
+          "pose": "death",
+          "groupBox": [
+            1517,
+            663,
+            1774,
+            887
+          ],
+          "sourceBox": [
+            1539,
+            768,
+            1763,
+            870
+          ],
+          "sourceOpaqueBox": [
+            1541,
+            770,
+            1761,
+            868
+          ],
+          "sourceFoot": [
+            111.5,
+            99
+          ],
+          "runtimePaste": [
+            6,
+            44
+          ],
+          "runtimeCropSize": [
+            84,
+            38
+          ],
+          "sampledFoot": [
+            41.5,
+            36
+          ],
+          "runtimeVisibleBox": [
+            6,
+            44,
+            89,
+            82
+          ]
+        }
+      ],
+      "icon": {
+        "file": "mod/resources/mosslume/bosses/stone-echo.png",
+        "description": "DOWN ready chest/core crop",
+        "sourcePose": "DOWN ready",
+        "sourceCropWithinPose": [
+          51,
+          69,
+          136,
+          135
+        ],
+        "mechanicalNearestScale": 0.32941176470588235
+      }
+    },
+    "moon-reaper": {
+      "source": "mosslume/art/bosses-r8/sources/moon-reaper-actions-v1.png",
+      "sourceSha256": "451f494659f68e422f90a67753d1a929c967f05db41b51b1a9831759ffac3e4d",
+      "sourceDimensions": [
+        1774,
+        887
+      ],
+      "frameSize": [
+        96,
+        96
+      ],
+      "foot": [
+        48,
+        80
+      ],
+      "requestedReadyHeight": 68,
+      "requestedScale": 0.36707152496626183,
+      "oneScaleForBoss": 0.31570293179815184,
+      "scaleLimitedByFrame": true,
+      "readyVisibleHeights": [
+        59,
+        58,
+        58,
+        59
+      ],
+      "readyMeanVisibleHeight": 58.5,
+      "output": "mod/resources/mosslume/bosses/moon-reaper.png",
+      "poses": [
+        {
+          "row": 0,
+          "column": 0,
+          "direction": "up",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            0,
+            237,
+            227
+          ],
+          "sourceBox": [
+            31,
+            26,
+            219,
+            213
+          ],
+          "sourceOpaqueBox": [
+            33,
+            28,
+            217,
+            211
+          ],
+          "sourceFoot": [
+            121.0,
+            184
+          ],
+          "runtimePaste": [
+            17,
+            23
+          ],
+          "runtimeCropSize": [
+            59,
+            59
+          ],
+          "sampledFoot": [
+            31.0,
+            57
+          ],
+          "runtimeVisibleBox": [
+            17,
+            23,
+            76,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "direction": "up",
+          "pose": "moveA",
+          "groupBox": [
+            237,
+            0,
+            466,
+            227
+          ],
+          "sourceBox": [
+            256,
+            28,
+            451,
+            206
+          ],
+          "sourceOpaqueBox": [
+            258,
+            30,
+            449,
+            204
+          ],
+          "sourceFoot": [
+            97.0,
+            175
+          ],
+          "runtimePaste": [
+            18,
+            26
+          ],
+          "runtimeCropSize": [
+            62,
+            56
+          ],
+          "sampledFoot": [
+            30.0,
+            54
+          ],
+          "runtimeVisibleBox": [
+            18,
+            26,
+            80,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "direction": "up",
+          "pose": "moveB",
+          "groupBox": [
+            466,
+            0,
+            682,
+            227
+          ],
+          "sourceBox": [
+            482,
+            29,
+            668,
+            213
+          ],
+          "sourceOpaqueBox": [
+            484,
+            31,
+            666,
+            211
+          ],
+          "sourceFoot": [
+            100.0,
+            181
+          ],
+          "runtimePaste": [
+            28,
+            24
+          ],
+          "runtimeCropSize": [
+            59,
+            58
+          ],
+          "sampledFoot": [
+            20.0,
+            56
+          ],
+          "runtimeVisibleBox": [
+            28,
+            24,
+            87,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "direction": "up",
+          "pose": "windup",
+          "groupBox": [
+            682,
+            0,
+            903,
+            227
+          ],
+          "sourceBox": [
+            697,
+            27,
+            891,
+            212
+          ],
+          "sourceOpaqueBox": [
+            699,
+            29,
+            889,
+            210
+          ],
+          "sourceFoot": [
+            93.0,
+            182
+          ],
+          "runtimePaste": [
+            19,
+            24
+          ],
+          "runtimeCropSize": [
+            61,
+            58
+          ],
+          "sampledFoot": [
+            29.0,
+            56
+          ],
+          "runtimeVisibleBox": [
+            19,
+            24,
+            80,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 4,
+          "direction": "up",
+          "pose": "strike",
+          "groupBox": [
+            903,
+            0,
+            1160,
+            227
+          ],
+          "sourceBox": [
+            916,
+            25,
+            1152,
+            212
+          ],
+          "sourceOpaqueBox": [
+            918,
+            27,
+            1150,
+            210
+          ],
+          "sourceFoot": [
+            103.5,
+            184
+          ],
+          "runtimePaste": [
+            16,
+            23
+          ],
+          "runtimeCropSize": [
+            75,
+            59
+          ],
+          "sampledFoot": [
+            32.5,
+            57
+          ],
+          "runtimeVisibleBox": [
+            16,
+            23,
+            91,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 5,
+          "direction": "up",
+          "pose": "recover",
+          "groupBox": [
+            1160,
+            0,
+            1363,
+            227
+          ],
+          "sourceBox": [
+            1169,
+            28,
+            1353,
+            208
+          ],
+          "sourceOpaqueBox": [
+            1171,
+            30,
+            1351,
+            206
+          ],
+          "sourceFoot": [
+            92.0,
+            177
+          ],
+          "runtimePaste": [
+            20,
+            25
+          ],
+          "runtimeCropSize": [
+            58,
+            57
+          ],
+          "sampledFoot": [
+            28.5,
+            55
+          ],
+          "runtimeVisibleBox": [
+            20,
+            25,
+            78,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 6,
+          "direction": "up",
+          "pose": "hurt",
+          "groupBox": [
+            1363,
+            0,
+            1548,
+            227
+          ],
+          "sourceBox": [
+            1373,
+            60,
+            1536,
+            212
+          ],
+          "sourceOpaqueBox": [
+            1375,
+            62,
+            1534,
+            210
+          ],
+          "sourceFoot": [
+            55.5,
+            149
+          ],
+          "runtimePaste": [
+            31,
+            34
+          ],
+          "runtimeCropSize": [
+            51,
+            48
+          ],
+          "sampledFoot": [
+            17.0,
+            46
+          ],
+          "runtimeVisibleBox": [
+            31,
+            34,
+            82,
+            82
+          ]
+        },
+        {
+          "row": 0,
+          "column": 7,
+          "direction": "up",
+          "pose": "death",
+          "groupBox": [
+            1548,
+            0,
+            1774,
+            227
+          ],
+          "sourceBox": [
+            1560,
+            90,
+            1753,
+            204
+          ],
+          "sourceOpaqueBox": [
+            1562,
+            92,
+            1751,
+            202
+          ],
+          "sourceFoot": [
+            96.0,
+            111
+          ],
+          "runtimePaste": [
+            18,
+            46
+          ],
+          "runtimeCropSize": [
+            61,
+            36
+          ],
+          "sampledFoot": [
+            30.0,
+            34
+          ],
+          "runtimeVisibleBox": [
+            18,
+            46,
+            79,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "direction": "right",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            227,
+            243,
+            448
+          ],
+          "sourceBox": [
+            37,
+            241,
+            216,
+            425
+          ],
+          "sourceOpaqueBox": [
+            39,
+            243,
+            214,
+            423
+          ],
+          "sourceFoot": [
+            75.0,
+            181
+          ],
+          "runtimePaste": [
+            24,
+            24
+          ],
+          "runtimeCropSize": [
+            57,
+            58
+          ],
+          "sampledFoot": [
+            23.5,
+            56
+          ],
+          "runtimeVisibleBox": [
+            24,
+            24,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "direction": "right",
+          "pose": "moveA",
+          "groupBox": [
+            243,
+            227,
+            468,
+            448
+          ],
+          "sourceBox": [
+            270,
+            241,
+            444,
+            430
+          ],
+          "sourceOpaqueBox": [
+            272,
+            243,
+            442,
+            428
+          ],
+          "sourceFoot": [
+            65.0,
+            186
+          ],
+          "runtimePaste": [
+            28,
+            22
+          ],
+          "runtimeCropSize": [
+            55,
+            60
+          ],
+          "sampledFoot": [
+            20.0,
+            58
+          ],
+          "runtimeVisibleBox": [
+            28,
+            22,
+            83,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "direction": "right",
+          "pose": "moveB",
+          "groupBox": [
+            468,
+            227,
+            687,
+            448
+          ],
+          "sourceBox": [
+            492,
+            241,
+            659,
+            430
+          ],
+          "sourceOpaqueBox": [
+            494,
+            243,
+            657,
+            428
+          ],
+          "sourceFoot": [
+            53.0,
+            186
+          ],
+          "runtimePaste": [
+            32,
+            22
+          ],
+          "runtimeCropSize": [
+            53,
+            60
+          ],
+          "sampledFoot": [
+            16.0,
+            58
+          ],
+          "runtimeVisibleBox": [
+            32,
+            22,
+            85,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "direction": "right",
+          "pose": "windup",
+          "groupBox": [
+            687,
+            227,
+            870,
+            448
+          ],
+          "sourceBox": [
+            715,
+            242,
+            857,
+            438
+          ],
+          "sourceOpaqueBox": [
+            717,
+            244,
+            855,
+            436
+          ],
+          "sourceFoot": [
+            79.5,
+            193
+          ],
+          "runtimePaste": [
+            23,
+            20
+          ],
+          "runtimeCropSize": [
+            45,
+            62
+          ],
+          "sampledFoot": [
+            25.0,
+            60
+          ],
+          "runtimeVisibleBox": [
+            23,
+            20,
+            68,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 4,
+          "direction": "right",
+          "pose": "strike",
+          "groupBox": [
+            870,
+            227,
+            1160,
+            448
+          ],
+          "sourceBox": [
+            883,
+            245,
+            1147,
+            430
+          ],
+          "sourceOpaqueBox": [
+            885,
+            247,
+            1145,
+            428
+          ],
+          "sourceFoot": [
+            122.5,
+            182
+          ],
+          "runtimePaste": [
+            10,
+            24
+          ],
+          "runtimeCropSize": [
+            83,
+            58
+          ],
+          "sampledFoot": [
+            38.0,
+            56
+          ],
+          "runtimeVisibleBox": [
+            10,
+            24,
+            93,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 5,
+          "direction": "right",
+          "pose": "recover",
+          "groupBox": [
+            1160,
+            227,
+            1353,
+            448
+          ],
+          "sourceBox": [
+            1173,
+            241,
+            1341,
+            427
+          ],
+          "sourceOpaqueBox": [
+            1175,
+            243,
+            1339,
+            425
+          ],
+          "sourceFoot": [
+            65.5,
+            183
+          ],
+          "runtimePaste": [
+            28,
+            23
+          ],
+          "runtimeCropSize": [
+            53,
+            59
+          ],
+          "sampledFoot": [
+            20.5,
+            57
+          ],
+          "runtimeVisibleBox": [
+            28,
+            23,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 6,
+          "direction": "right",
+          "pose": "hurt",
+          "groupBox": [
+            1353,
+            227,
+            1538,
+            448
+          ],
+          "sourceBox": [
+            1366,
+            284,
+            1526,
+            423
+          ],
+          "sourceOpaqueBox": [
+            1368,
+            286,
+            1524,
+            421
+          ],
+          "sourceFoot": [
+            60.5,
+            136
+          ],
+          "runtimePaste": [
+            28,
+            38
+          ],
+          "runtimeCropSize": [
+            51,
+            44
+          ],
+          "sampledFoot": [
+            20.0,
+            42
+          ],
+          "runtimeVisibleBox": [
+            28,
+            38,
+            79,
+            82
+          ]
+        },
+        {
+          "row": 1,
+          "column": 7,
+          "direction": "right",
+          "pose": "death",
+          "groupBox": [
+            1538,
+            227,
+            1774,
+            448
+          ],
+          "sourceBox": [
+            1550,
+            318,
+            1756,
+            427
+          ],
+          "sourceOpaqueBox": [
+            1552,
+            320,
+            1754,
+            425
+          ],
+          "sourceFoot": [
+            102.5,
+            106
+          ],
+          "runtimePaste": [
+            16,
+            48
+          ],
+          "runtimeCropSize": [
+            65,
+            34
+          ],
+          "sampledFoot": [
+            32.0,
+            32
+          ],
+          "runtimeVisibleBox": [
+            16,
+            48,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "direction": "down",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            448,
+            229,
+            662
+          ],
+          "sourceBox": [
+            29,
+            459,
+            205,
+            642
+          ],
+          "sourceOpaqueBox": [
+            31,
+            461,
+            203,
+            640
+          ],
+          "sourceFoot": [
+            89.0,
+            180
+          ],
+          "runtimePaste": [
+            20,
+            24
+          ],
+          "runtimeCropSize": [
+            56,
+            58
+          ],
+          "sampledFoot": [
+            28.0,
+            56
+          ],
+          "runtimeVisibleBox": [
+            20,
+            24,
+            76,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "direction": "down",
+          "pose": "moveA",
+          "groupBox": [
+            229,
+            448,
+            452,
+            662
+          ],
+          "sourceBox": [
+            253,
+            460,
+            429,
+            647
+          ],
+          "sourceOpaqueBox": [
+            255,
+            462,
+            427,
+            645
+          ],
+          "sourceFoot": [
+            91.0,
+            184
+          ],
+          "runtimePaste": [
+            20,
+            23
+          ],
+          "runtimeCropSize": [
+            56,
+            59
+          ],
+          "sampledFoot": [
+            28.5,
+            57
+          ],
+          "runtimeVisibleBox": [
+            20,
+            23,
+            76,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "direction": "down",
+          "pose": "moveB",
+          "groupBox": [
+            452,
+            448,
+            674,
+            662
+          ],
+          "sourceBox": [
+            475,
+            461,
+            655,
+            647
+          ],
+          "sourceOpaqueBox": [
+            477,
+            463,
+            653,
+            645
+          ],
+          "sourceFoot": [
+            91.0,
+            183
+          ],
+          "runtimePaste": [
+            20,
+            23
+          ],
+          "runtimeCropSize": [
+            57,
+            59
+          ],
+          "sampledFoot": [
+            28.0,
+            57
+          ],
+          "runtimeVisibleBox": [
+            20,
+            23,
+            77,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "direction": "down",
+          "pose": "windup",
+          "groupBox": [
+            674,
+            448,
+            882,
+            662
+          ],
+          "sourceBox": [
+            694,
+            459,
+            869,
+            642
+          ],
+          "sourceOpaqueBox": [
+            696,
+            461,
+            867,
+            640
+          ],
+          "sourceFoot": [
+            72.5,
+            180
+          ],
+          "runtimePaste": [
+            26,
+            24
+          ],
+          "runtimeCropSize": [
+            55,
+            58
+          ],
+          "sampledFoot": [
+            22.5,
+            56
+          ],
+          "runtimeVisibleBox": [
+            26,
+            24,
+            81,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 4,
+          "direction": "down",
+          "pose": "strike",
+          "groupBox": [
+            882,
+            448,
+            1162,
+            662
+          ],
+          "sourceBox": [
+            895,
+            462,
+            1156,
+            655
+          ],
+          "sourceOpaqueBox": [
+            897,
+            464,
+            1154,
+            653
+          ],
+          "sourceFoot": [
+            108.5,
+            190
+          ],
+          "runtimePaste": [
+            14,
+            21
+          ],
+          "runtimeCropSize": [
+            82,
+            61
+          ],
+          "sampledFoot": [
+            33.5,
+            59
+          ],
+          "runtimeVisibleBox": [
+            14,
+            21,
+            96,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 5,
+          "direction": "down",
+          "pose": "recover",
+          "groupBox": [
+            1162,
+            448,
+            1353,
+            662
+          ],
+          "sourceBox": [
+            1169,
+            459,
+            1341,
+            642
+          ],
+          "sourceOpaqueBox": [
+            1171,
+            461,
+            1339,
+            640
+          ],
+          "sourceFoot": [
+            85.5,
+            180
+          ],
+          "runtimePaste": [
+            22,
+            24
+          ],
+          "runtimeCropSize": [
+            54,
+            58
+          ],
+          "sampledFoot": [
+            26.5,
+            56
+          ],
+          "runtimeVisibleBox": [
+            22,
+            24,
+            76,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 6,
+          "direction": "down",
+          "pose": "hurt",
+          "groupBox": [
+            1353,
+            448,
+            1539,
+            662
+          ],
+          "sourceBox": [
+            1366,
+            502,
+            1527,
+            644
+          ],
+          "sourceOpaqueBox": [
+            1368,
+            504,
+            1525,
+            642
+          ],
+          "sourceFoot": [
+            102.0,
+            139
+          ],
+          "runtimePaste": [
+            17,
+            37
+          ],
+          "runtimeCropSize": [
+            51,
+            45
+          ],
+          "sampledFoot": [
+            31.0,
+            43
+          ],
+          "runtimeVisibleBox": [
+            17,
+            37,
+            68,
+            82
+          ]
+        },
+        {
+          "row": 2,
+          "column": 7,
+          "direction": "down",
+          "pose": "death",
+          "groupBox": [
+            1539,
+            448,
+            1774,
+            662
+          ],
+          "sourceBox": [
+            1552,
+            535,
+            1753,
+            642
+          ],
+          "sourceOpaqueBox": [
+            1554,
+            537,
+            1751,
+            640
+          ],
+          "sourceFoot": [
+            100.0,
+            104
+          ],
+          "runtimePaste": [
+            17,
+            48
+          ],
+          "runtimeCropSize": [
+            63,
+            34
+          ],
+          "sampledFoot": [
+            31.0,
+            32
+          ],
+          "runtimeVisibleBox": [
+            17,
+            48,
+            80,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "direction": "left",
+          "pose": "ready",
+          "groupBox": [
+            0,
+            662,
+            229,
+            887
+          ],
+          "sourceBox": [
+            30,
+            671,
+            206,
+            858
+          ],
+          "sourceOpaqueBox": [
+            32,
+            673,
+            204,
+            856
+          ],
+          "sourceFoot": [
+            103.5,
+            184
+          ],
+          "runtimePaste": [
+            16,
+            23
+          ],
+          "runtimeCropSize": [
+            56,
+            59
+          ],
+          "sampledFoot": [
+            32.5,
+            57
+          ],
+          "runtimeVisibleBox": [
+            16,
+            23,
+            72,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "direction": "left",
+          "pose": "moveA",
+          "groupBox": [
+            229,
+            662,
+            455,
+            887
+          ],
+          "sourceBox": [
+            253,
+            672,
+            426,
+            856
+          ],
+          "sourceOpaqueBox": [
+            255,
+            674,
+            424,
+            854
+          ],
+          "sourceFoot": [
+            115.5,
+            181
+          ],
+          "runtimePaste": [
+            12,
+            24
+          ],
+          "runtimeCropSize": [
+            55,
+            58
+          ],
+          "sampledFoot": [
+            36.5,
+            56
+          ],
+          "runtimeVisibleBox": [
+            12,
+            24,
+            67,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "direction": "left",
+          "pose": "moveB",
+          "groupBox": [
+            455,
+            662,
+            685,
+            887
+          ],
+          "sourceBox": [
+            484,
+            671,
+            650,
+            861
+          ],
+          "sourceOpaqueBox": [
+            486,
+            673,
+            648,
+            859
+          ],
+          "sourceFoot": [
+            107.5,
+            187
+          ],
+          "runtimePaste": [
+            15,
+            22
+          ],
+          "runtimeCropSize": [
+            52,
+            60
+          ],
+          "sampledFoot": [
+            33.0,
+            58
+          ],
+          "runtimeVisibleBox": [
+            15,
+            22,
+            67,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "direction": "left",
+          "pose": "windup",
+          "groupBox": [
+            685,
+            662,
+            875,
+            887
+          ],
+          "sourceBox": [
+            720,
+            672,
+            855,
+            861
+          ],
+          "sourceOpaqueBox": [
+            722,
+            674,
+            853,
+            859
+          ],
+          "sourceFoot": [
+            46.5,
+            186
+          ],
+          "runtimePaste": [
+            34,
+            22
+          ],
+          "runtimeCropSize": [
+            43,
+            60
+          ],
+          "sampledFoot": [
+            14.5,
+            58
+          ],
+          "runtimeVisibleBox": [
+            34,
+            22,
+            77,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 4,
+          "direction": "left",
+          "pose": "strike",
+          "groupBox": [
+            875,
+            662,
+            1161,
+            887
+          ],
+          "sourceBox": [
+            896,
+            685,
+            1161,
+            854
+          ],
+          "sourceOpaqueBox": [
+            898,
+            687,
+            1160,
+            852
+          ],
+          "sourceFoot": [
+            143.5,
+            166
+          ],
+          "runtimePaste": [
+            3,
+            29
+          ],
+          "runtimeCropSize": [
+            84,
+            53
+          ],
+          "sampledFoot": [
+            45.0,
+            51
+          ],
+          "runtimeVisibleBox": [
+            3,
+            29,
+            87,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 5,
+          "direction": "left",
+          "pose": "recover",
+          "groupBox": [
+            1161,
+            662,
+            1351,
+            887
+          ],
+          "sourceBox": [
+            1161,
+            669,
+            1332,
+            858
+          ],
+          "sourceOpaqueBox": [
+            1162,
+            671,
+            1330,
+            856
+          ],
+          "sourceFoot": [
+            108.0,
+            186
+          ],
+          "runtimePaste": [
+            14,
+            22
+          ],
+          "runtimeCropSize": [
+            54,
+            60
+          ],
+          "sampledFoot": [
+            34.0,
+            58
+          ],
+          "runtimeVisibleBox": [
+            14,
+            22,
+            68,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 6,
+          "direction": "left",
+          "pose": "hurt",
+          "groupBox": [
+            1351,
+            662,
+            1546,
+            887
+          ],
+          "sourceBox": [
+            1371,
+            718,
+            1536,
+            856
+          ],
+          "sourceOpaqueBox": [
+            1373,
+            720,
+            1534,
+            854
+          ],
+          "sourceFoot": [
+            98.0,
+            135
+          ],
+          "runtimePaste": [
+            18,
+            38
+          ],
+          "runtimeCropSize": [
+            52,
+            44
+          ],
+          "sampledFoot": [
+            30.5,
+            42
+          ],
+          "runtimeVisibleBox": [
+            18,
+            38,
+            70,
+            82
+          ]
+        },
+        {
+          "row": 3,
+          "column": 7,
+          "direction": "left",
+          "pose": "death",
+          "groupBox": [
+            1546,
+            662,
+            1774,
+            887
+          ],
+          "sourceBox": [
+            1556,
+            743,
+            1759,
+            858
+          ],
+          "sourceOpaqueBox": [
+            1558,
+            745,
+            1757,
+            856
+          ],
+          "sourceFoot": [
+            101.0,
+            112
+          ],
+          "runtimePaste": [
+            16,
+            46
+          ],
+          "runtimeCropSize": [
+            64,
+            36
+          ],
+          "sampledFoot": [
+            31.5,
+            34
+          ],
+          "runtimeVisibleBox": [
+            16,
+            46,
+            80,
+            82
+          ]
+        }
+      ],
+      "icon": {
+        "file": "mod/resources/mosslume/bosses/moon-seal.png",
+        "description": "DOWN ready antlers/head crop",
+        "sourcePose": "DOWN ready",
+        "sourceCropWithinPose": [
+          35,
+          5,
+          141,
+          101
+        ],
+        "mechanicalNearestScale": 0.2641509433962264
+      }
+    }
+  }
+}

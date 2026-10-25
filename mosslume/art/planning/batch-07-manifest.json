@@ -1,0 +1,1619 @@
+{
+  "project": "Mosslume",
+  "batch": "07",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "productionExportValidated": false,
+  "sourcePixelsModified": false,
+  "sourceAtlasCount": 9,
+  "requestedSourceRegions": 78,
+  "assets": [
+    {
+      "id": "cave-wall-connectors",
+      "name": "洞穴岩壁与通道连接",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/cave-wall-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-wall-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-21394c13-4f76-4cf4-8c91-80f569eadaaf.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "地形",
+      "biomeLabels": [
+        "洞穴"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "f0250ee67efa755b54efc7bfc2269330606854595992d7d671e2c9e4510501d0",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 931494,
+        "faintFringePixelsAlpha1To8": 43235,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            654,
+            516
+          ],
+          "visibleBounds": [
+            53,
+            171,
+            578,
+            302
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            654,
+            0,
+            403,
+            516
+          ],
+          "visibleBounds": [
+            677,
+            84,
+            349,
+            391
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1057,
+            0,
+            479,
+            516
+          ],
+          "visibleBounds": [
+            1089,
+            98,
+            406,
+            398
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            516,
+            559,
+            508
+          ],
+          "visibleBounds": [
+            224,
+            538,
+            222,
+            418
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            559,
+            516,
+            476,
+            508
+          ],
+          "visibleBounds": [
+            672,
+            537,
+            237,
+            421
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1035,
+            516,
+            501,
+            508
+          ],
+          "visibleBounds": [
+            1161,
+            610,
+            233,
+            322
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mountain-ground-materials",
+      "name": "山地岩面与碎石地表",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-ground-materials-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-ground-materials-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7b3e85a7-a48b-466b-b36c-39c241f54407.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "地形",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "9ffca29435c12b371fe194b002b63effd58bd60c9b34e0e5fa62d6e25fc23908",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 547718,
+        "faintFringePixelsAlpha1To8": 50969,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            525,
+            516
+          ],
+          "visibleBounds": [
+            62,
+            72,
+            425,
+            410
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            525,
+            0,
+            485,
+            516
+          ],
+          "visibleBounds": [
+            564,
+            72,
+            409,
+            409
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1010,
+            0,
+            526,
+            516
+          ],
+          "visibleBounds": [
+            1047,
+            73,
+            426,
+            408
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            516,
+            523,
+            508
+          ],
+          "visibleBounds": [
+            60,
+            551,
+            427,
+            411
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            523,
+            516,
+            488,
+            508
+          ],
+          "visibleBounds": [
+            560,
+            551,
+            414,
+            412
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1011,
+            516,
+            525,
+            508
+          ],
+          "visibleBounds": [
+            1049,
+            551,
+            428,
+            411
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mountain-ore-crystal-resources",
+      "name": "山地矿石与洞穴晶簇",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-ore-crystal-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-ore-crystal-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-fe7909cb-9a53-4fef-889f-0f98d5d525eb.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "地形",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "b91bbbf13c9d853b02708ec3c0b5d1b1a3430e8d49e03cbc4064301cde2fb9ba",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 744282,
+        "faintFringePixelsAlpha1To8": 198220,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            539,
+            513
+          ],
+          "visibleBounds": [
+            66,
+            112,
+            439,
+            366
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            539,
+            0,
+            481,
+            513
+          ],
+          "visibleBounds": [
+            573,
+            124,
+            410,
+            358
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1020,
+            0,
+            516,
+            513
+          ],
+          "visibleBounds": [
+            1057,
+            114,
+            427,
+            361
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            513,
+            535,
+            511
+          ],
+          "visibleBounds": [
+            76,
+            545,
+            418,
+            382
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            535,
+            513,
+            484,
+            511
+          ],
+          "visibleBounds": [
+            577,
+            591,
+            402,
+            328
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1019,
+            513,
+            517,
+            511
+          ],
+          "visibleBounds": [
+            1060,
+            681,
+            409,
+            250
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mine-entrance-layers",
+      "name": "矿井入口与支撑组件",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mine-entrance-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mine-entrance-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e4341c94-15ac-4bc8-bce5-9653e95e1daf.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "建筑",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "07c148cd9523e965223d20b24b77dd38c93f3c7d5d5c0e420f846a7692adc194",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 806354,
+        "faintFringePixelsAlpha1To8": 74121,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            557,
+            516
+          ],
+          "visibleBounds": [
+            18,
+            80,
+            523,
+            418
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            557,
+            0,
+            430,
+            516
+          ],
+          "visibleBounds": [
+            574,
+            155,
+            391,
+            331
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            987,
+            0,
+            549,
+            516
+          ],
+          "visibleBounds": [
+            1009,
+            80,
+            517,
+            418
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            516,
+            603,
+            508
+          ],
+          "visibleBounds": [
+            19,
+            535,
+            530,
+            423
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            603,
+            516,
+            426,
+            508
+          ],
+          "visibleBounds": [
+            657,
+            600,
+            285,
+            358
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1029,
+            516,
+            507,
+            508
+          ],
+          "visibleBounds": [
+            1117,
+            667,
+            289,
+            255
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mountain-stone-shelter-layers",
+      "name": "山地石屋分层建筑",
+      "columns": 3,
+      "rows": 2,
+      "plannedComponents": 6,
+      "file": "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-stone-shelter-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-e4beb594-04b5-4024-8a75-f5a44efb2114.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "建筑",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "03330e307fddaed2eabb7638dd3fb3f6802f040635ab63dd207866cf19aa9045",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 976335,
+        "faintFringePixelsAlpha1To8": 53182,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            615,
+            598
+          ],
+          "visibleBounds": [
+            35,
+            116,
+            567,
+            454
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            615,
+            0,
+            596,
+            598
+          ],
+          "visibleBounds": [
+            628,
+            237,
+            571,
+            341
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1211,
+            0,
+            325,
+            598
+          ],
+          "visibleBounds": [
+            1223,
+            294,
+            263,
+            288
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            598,
+            578,
+            426
+          ],
+          "visibleBounds": [
+            179,
+            615,
+            311,
+            331
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            578,
+            598,
+            398,
+            426
+          ],
+          "visibleBounds": [
+            667,
+            686,
+            215,
+            209
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            976,
+            598,
+            560,
+            426
+          ],
+          "visibleBounds": [
+            1071,
+            686,
+            213,
+            209
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mountain-goat-directional-poses",
+      "name": "山羊四方向动作源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-goat-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-c85987c5-84d9-46d7-b530-986d3641071d.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "动物",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "e638e204cde7baf3b4a3987a93ce8664b5d933b979d8de542548a5ffe5be2e4b",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 964138,
+        "faintFringePixelsAlpha1To8": 107948,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            346,
+            291
+          ],
+          "visibleBounds": [
+            109,
+            31,
+            159,
+            238
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            346,
+            0,
+            317,
+            291
+          ],
+          "visibleBounds": [
+            424,
+            36,
+            166,
+            234
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            663,
+            0,
+            312,
+            291
+          ],
+          "visibleBounds": [
+            736,
+            33,
+            162,
+            240
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            975,
+            0,
+            337,
+            291
+          ],
+          "visibleBounds": [
+            1052,
+            29,
+            164,
+            243
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            291,
+            351,
+            285
+          ],
+          "visibleBounds": [
+            66,
+            312,
+            241,
+            240
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            351,
+            291,
+            321,
+            285
+          ],
+          "visibleBounds": [
+            395,
+            313,
+            240,
+            243
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            672,
+            291,
+            327,
+            285
+          ],
+          "visibleBounds": [
+            709,
+            312,
+            253,
+            244
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            999,
+            291,
+            313,
+            285
+          ],
+          "visibleBounds": [
+            1037,
+            309,
+            245,
+            243
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            576,
+            346,
+            310
+          ],
+          "visibleBounds": [
+            106,
+            598,
+            161,
+            265
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            346,
+            576,
+            313,
+            310
+          ],
+          "visibleBounds": [
+            425,
+            603,
+            159,
+            269
+          ]
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            659,
+            576,
+            317,
+            310
+          ],
+          "visibleBounds": [
+            735,
+            601,
+            163,
+            274
+          ]
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            976,
+            576,
+            336,
+            310
+          ],
+          "visibleBounds": [
+            1054,
+            596,
+            161,
+            271
+          ]
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            886,
+            333,
+            313
+          ],
+          "visibleBounds": [
+            40,
+            902,
+            258,
+            248
+          ]
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            333,
+            886,
+            326,
+            313
+          ],
+          "visibleBounds": [
+            368,
+            904,
+            256,
+            246
+          ]
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            659,
+            886,
+            321,
+            313
+          ],
+          "visibleBounds": [
+            695,
+            902,
+            255,
+            243
+          ]
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            980,
+            886,
+            332,
+            313
+          ],
+          "visibleBounds": [
+            1011,
+            898,
+            260,
+            249
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "cave-bat-directional-poses",
+      "name": "洞穴蝙蝠四方向飞行源图",
+      "columns": 4,
+      "rows": 4,
+      "plannedComponents": 16,
+      "previewSequence": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "motionName": "飞行",
+      "file": "art/biomes/batch-07/cave-bat-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-bat-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-40885075-dbf4-4203-800f-c4555474f697.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "动物",
+      "biomeLabels": [
+        "洞穴"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "a4b3d741b4086170e21d25343a33d5cb7c160d66f319f3f8d1f3a4661e050745",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1031062,
+        "faintFringePixelsAlpha1To8": 103189,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            281,
+            304
+          ],
+          "visibleBounds": [
+            75,
+            46,
+            179,
+            225
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            281,
+            0,
+            400,
+            304
+          ],
+          "visibleBounds": [
+            309,
+            98,
+            367,
+            156
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            681,
+            0,
+            305,
+            304
+          ],
+          "visibleBounds": [
+            686,
+            106,
+            272,
+            170
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            986,
+            0,
+            326,
+            304
+          ],
+          "visibleBounds": [
+            1014,
+            91,
+            272,
+            180
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            304,
+            325,
+            303
+          ],
+          "visibleBounds": [
+            91,
+            332,
+            208,
+            220
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            325,
+            304,
+            356,
+            303
+          ],
+          "visibleBounds": [
+            352,
+            375,
+            281,
+            186
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            681,
+            304,
+            332,
+            303
+          ],
+          "visibleBounds": [
+            730,
+            398,
+            231,
+            198
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1013,
+            304,
+            299,
+            303
+          ],
+          "visibleBounds": [
+            1065,
+            342,
+            221,
+            219
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            607,
+            282,
+            269
+          ],
+          "visibleBounds": [
+            71,
+            619,
+            186,
+            213
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            282,
+            607,
+            399,
+            269
+          ],
+          "visibleBounds": [
+            307,
+            657,
+            369,
+            168
+          ]
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            681,
+            607,
+            304,
+            269
+          ],
+          "visibleBounds": [
+            686,
+            661,
+            271,
+            183
+          ]
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            985,
+            607,
+            327,
+            269
+          ],
+          "visibleBounds": [
+            1013,
+            661,
+            270,
+            171
+          ]
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            876,
+            306,
+            323
+          ],
+          "visibleBounds": [
+            50,
+            908,
+            211,
+            213
+          ]
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            306,
+            876,
+            359,
+            323
+          ],
+          "visibleBounds": [
+            352,
+            948,
+            281,
+            186
+          ]
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            665,
+            876,
+            318,
+            323
+          ],
+          "visibleBounds": [
+            697,
+            967,
+            242,
+            198
+          ]
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            983,
+            876,
+            329,
+            323
+          ],
+          "visibleBounds": [
+            1028,
+            910,
+            230,
+            224
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "mountain-rock-beast-poses",
+      "name": "山地岩甲兽造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-07/mountain-rock-beast-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/mountain-rock-beast-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-bdc267e2-5c28-4288-8e7a-2fd6656d9738.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "怪物",
+      "biomeLabels": [
+        "山地"
+      ],
+      "width": 1774,
+      "height": 887,
+      "sourceMode": "RGBA",
+      "sha256": "2a89313601dbf351fb83bb258cd10f94bcc9b2e1fb61ef8de21dc75aee98055b",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 882870,
+        "faintFringePixelsAlpha1To8": 90842,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            400,
+            491
+          ],
+          "visibleBounds": [
+            69,
+            84,
+            294,
+            347
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            400,
+            0,
+            510,
+            491
+          ],
+          "visibleBounds": [
+            438,
+            154,
+            437,
+            274
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            910,
+            0,
+            367,
+            491
+          ],
+          "visibleBounds": [
+            945,
+            84,
+            302,
+            349
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1277,
+            0,
+            497,
+            491
+          ],
+          "visibleBounds": [
+            1307,
+            154,
+            440,
+            277
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            491,
+            446,
+            396
+          ],
+          "visibleBounds": [
+            15,
+            580,
+            421,
+            244
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            446,
+            491,
+            464,
+            396
+          ],
+          "visibleBounds": [
+            456,
+            566,
+            449,
+            250
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            910,
+            491,
+            363,
+            396
+          ],
+          "visibleBounds": [
+            916,
+            550,
+            341,
+            284
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1273,
+            491,
+            501,
+            396
+          ],
+          "visibleBounds": [
+            1290,
+            620,
+            469,
+            208
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    },
+    {
+      "id": "cave-crystal-beetle-poses",
+      "name": "洞穴晶壳虫造型与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-07/cave-crystal-beetle-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-07/cave-crystal-beetle-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-1dc76837-ba2a-4e9c-9f7e-46a781cdf8ac.png",
+      "status": "source_generated_pending_runtime_export",
+      "sourceBatch": "07",
+      "category": "怪物",
+      "biomeLabels": [
+        "洞穴"
+      ],
+      "width": 1774,
+      "height": 887,
+      "sourceMode": "RGBA",
+      "sha256": "5501460e75526b6accb902bedf31ec2045ba971cc7124fe60b910f5f5a8ad0a7",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 670395,
+        "faintFringePixelsAlpha1To8": 373019,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            423,
+            467
+          ],
+          "visibleBounds": [
+            58,
+            61,
+            303,
+            359
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            423,
+            0,
+            485,
+            467
+          ],
+          "visibleBounds": [
+            485,
+            116,
+            381,
+            283
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            908,
+            0,
+            384,
+            467
+          ],
+          "visibleBounds": [
+            950,
+            81,
+            283,
+            342
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1292,
+            0,
+            482,
+            467
+          ],
+          "visibleBounds": [
+            1351,
+            114,
+            383,
+            285
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            467,
+            460,
+            420
+          ],
+          "visibleBounds": [
+            41,
+            511,
+            391,
+            314
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            460,
+            467,
+            454,
+            420
+          ],
+          "visibleBounds": [
+            488,
+            535,
+            413,
+            285
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            914,
+            467,
+            415,
+            420
+          ],
+          "visibleBounds": [
+            928,
+            513,
+            363,
+            318
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1329,
+            467,
+            445,
+            420
+          ],
+          "visibleBounds": [
+            1368,
+            602,
+            366,
+            219
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false,
+      "integratedIntoGame": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "scope": "Actual ResourceFolder/GameFileEntry + ResourceEncoder index and packaged JAR class-loader regression, no game launch",
+  "modJar": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/dist/localforest-island.jar",
+  "compileExit": 0,
+  "runExit": 0,
+  "output": "VisualCatalogResourceTest PASS: native PNG index, native JSON exclusion, six JAR ClassLoader catalogs, exact anchors, independent render-frame identity\n",
+  "changed": [
+    "VisualMaterials.catalog ClassLoader full resources/ path",
+    "VisualClock.frameIndex independent of visual time",
+    "mote budget uses actual frame index"
+  ]
+}

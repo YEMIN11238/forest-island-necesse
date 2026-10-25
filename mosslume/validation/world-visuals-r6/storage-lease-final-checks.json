@@ -1,0 +1,12 @@
+[
+  {
+    "test": "localforest.companions.NativeStorageFinderRepairTest",
+    "exit": 0,
+    "output": "MOSSLUME_STORAGE_FINDER_REPAIR installed cursor-finally native-reservations\nNativeStorageFinderRepairTest PASS actualAdvice=true nativeValidation=true nativeReservation=true cursorRemoval/filter/nullFuture=true minMax/order/callback/cursor=true scope=Mosslume\n"
+  },
+  {
+    "test": "localforest.companions.NpcPopulationPolicyTest",
+    "exit": 0,
+    "output": "NpcPopulationPolicyTest PASS: 4 core + 6 residents + visitor definitions, native node patch signature, simulation tiers/daily phases, lease eligibility, 200-resident actual WorldData round trip with bounded snapshots and preserved remote memories; no game or model\n"
+  }
+]

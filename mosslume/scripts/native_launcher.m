@@ -164,8 +164,9 @@ int main(int argc, char **argv) {
             fprintf(stderr, "MOSSLUME_LAUNCH missing Java, kernel or island adapter\n");
             alertFailure("游戏运行文件不完整。请重新运行打包脚本恢复应用。", logfile); return 1;
         }
+        BOOL intelRuntime = ![bundleInfo[@"MosslumeJavaArchitecture"] isEqualToString:@"arm64"];
         char *probe[] = {"/usr/bin/arch", "-x86_64", "/usr/bin/true", NULL};
-        if (runChild(probe)) {
+        if (intelRuntime && runChild(probe)) {
             alertFailure("此版本需要 macOS Rosetta 才能运行 Intel Java。请完成系统的 Rosetta 安装后重新打开。", logfile); return 1;
         }
         char steamFailure[1024];
@@ -173,8 +174,11 @@ int main(int argc, char **argv) {
             alertFailure(steamFailure, logfile); return 1;
         }
         if (chdir(game)) { alertFailure("无法读取游戏运行目录。", logfile); return 1; }
-        char *args[96] = {"/usr/bin/arch", "-x86_64", java, "-Xdock:name=Mosslume", dockIcon, "-Dapple.awt.application.name=Mosslume", "-Dmosslume=true", "-Dmosslume.windowTitle=Mosslume", "-Dlocalforest.kernel=Necesse-source-built-1.3.3.jar", "-Djdk.attach.allowAttachSelf=true", "-Xms512m", "-Xmx3g", "-jar", "Necesse-source-built-1.3.3.jar", "-datadir", profile, "-mod", mods, "-islandprofile", "-mosslume", "-windowpos", "100,70", "-windowsize", "1200,900", NULL};
-        int count = 24;
+        // Execute the bundled binary directly: macOS selects its native slice.
+        // Forcing arch -x86_64 would reject an ARM runtime or add Rosetta overhead.
+        char *collector=[bundleInfo[@"MosslumeGarbageCollector"] isEqualToString:@"zgc"]?"-XX:+UseZGC":"-XX:MaxGCPauseMillis=10";
+        char *args[96] = {java, "-javaagent:lib/mosslume-byte-buddy-agent.jar", "-Xdock:name=Mosslume", dockIcon, "-Dapple.awt.application.name=Mosslume", "-Dmosslume=true", "-Dmosslume.windowTitle=Mosslume", "-Dlocalforest.kernel=Necesse-source-built-1.3.3.jar", "-Djdk.attach.allowAttachSelf=true", "-Xms512m", "-Xmx2g", collector, "-cp", "Necesse-source-built-1.3.3.jar:lib/*", "StartSteamClient", "-datadir", profile, "-mod", mods, "-islandprofile", "-mosslume", "-windowpos", "100,70", "-windowsize", "1200,900", NULL};
+        int count = 0;while(args[count])count++;
         for (int i = 1; i < argc && count < 94; i++) if (strcmp(argv[i], "-psn_0_0") != 0 && strncmp(argv[i], "-psn_", 5) != 0) args[count++] = argv[i];
         args[count] = NULL;
         fflush(stdout); fflush(stderr);

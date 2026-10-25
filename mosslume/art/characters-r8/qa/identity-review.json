@@ -1,0 +1,70 @@
+{
+  "actors": [
+    {
+      "actor": "farmer",
+      "poses": 44,
+      "outputs": 16,
+      "scale": 0.2,
+      "opaqueFootYs": [
+        52
+      ],
+      "standingHeights": [
+        31,
+        33,
+        33,
+        31
+      ],
+      "standingMeanHeight": 32.0,
+      "backupFiles": 20,
+      "visualReview": {
+        "directions": "UP RIGHT DOWN LEFT observed",
+        "crossStateIdentity": "same hair, clothes and head proportions across idle/walk/attack",
+        "reviewedContact": "qa/farmer-actions-runtime.png"
+      }
+    },
+    {
+      "actor": "carpenter",
+      "poses": 44,
+      "outputs": 16,
+      "scale": 0.20382165605095542,
+      "opaqueFootYs": [
+        52
+      ],
+      "standingHeights": [
+        31,
+        32,
+        33,
+        32
+      ],
+      "standingMeanHeight": 32.0,
+      "backupFiles": 20,
+      "visualReview": {
+        "directions": "UP RIGHT DOWN LEFT observed",
+        "crossStateIdentity": "same hair, clothes and head proportions across idle/walk/attack",
+        "reviewedContact": "qa/carpenter-actions-runtime.png"
+      }
+    },
+    {
+      "actor": "merchant",
+      "poses": 44,
+      "outputs": 16,
+      "scale": 0.19541984732824427,
+      "opaqueFootYs": [
+        52
+      ],
+      "standingHeights": [
+        30,
+        33,
+        33,
+        33
+      ],
+      "standingMeanHeight": 32.25,
+      "backupFiles": 8,
+      "visualReview": {
+        "directions": "UP RIGHT DOWN LEFT observed",
+        "crossStateIdentity": "same hair, clothes and head proportions across idle/walk/attack",
+        "reviewedContact": "qa/merchant-actions-runtime.png"
+      }
+    }
+  ]
+}

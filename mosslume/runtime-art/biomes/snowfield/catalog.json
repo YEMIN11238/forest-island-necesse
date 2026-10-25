@@ -1,0 +1,2307 @@
+{
+  "biome": "snowfield",
+  "tilePixels": 32,
+  "sourceBatches": [
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourcePixelsModified": false,
+  "directionOrder": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "LEFT"
+  ],
+  "runtimeExportVersion": 1,
+  "entries": [
+    {
+      "id": "ground",
+      "file": "snowfield/ground.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "787b1e4196ae1c5e0501fafd2e1fd4bc3fd5af9607b77e353b3ebc4458ccdcb5",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "opaque_ground",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            584,
+            80,
+            953,
+            346
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "interiorCropLTRB": [
+        92,
+        66,
+        277,
+        200
+      ],
+      "tiling": "mirror-repeat of interior sample; matching border texels"
+    },
+    {
+      "id": "terrain-0",
+      "file": "snowfield/terrain-0.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "d8d709efbbafcdd133d74c1c06d09623284a61a807708a74c60f5a8cd5b5ff39",
+      "alphaBounds": [
+        2,
+        6,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            93,
+            80,
+            490,
+            347
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-1",
+      "file": "snowfield/terrain-1.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "3e8d5612c90a5f32b46000b53dfcfce4c10dadea93d85bdf2c5bff89dd082d78",
+      "alphaBounds": [
+        2,
+        3,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            584,
+            80,
+            953,
+            346
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-2",
+      "file": "snowfield/terrain-2.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "a8d5c8636151121b33fdf740774e1c3e2d6c440754c9f52dca97e11b7c6f12f4",
+      "alphaBounds": [
+        2,
+        6,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1041,
+            79,
+            1446,
+            347
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-3",
+      "file": "snowfield/terrain-3.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "82daa2ba3d766aa7be792a44578e2388340c50a5530033476cf1ef091e80313d",
+      "alphaBounds": [
+        2,
+        11,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            77,
+            399,
+            509,
+            649
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-4",
+      "file": "snowfield/terrain-4.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "4dbea6756bd0233557edfa6030a5c494b6cfbe881dbd22bb10c44051cff6a5ae",
+      "alphaBounds": [
+        4,
+        2,
+        59,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            592,
+            385,
+            940,
+            664
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-5",
+      "file": "snowfield/terrain-5.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "2f1a0c220ac6b4af07d9ecee5131dda4d04ff83c8435436977efb4dff25be7dc",
+      "alphaBounds": [
+        2,
+        7,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1048,
+            385,
+            1454,
+            652
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-6",
+      "file": "snowfield/terrain-6.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "b1e6ede5bb411c3b9833aacffbab7e91f6258f461df8c40f92749ae46f0dcb6b",
+      "alphaBounds": [
+        2,
+        13,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            78,
+            725,
+            510,
+            965
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-7",
+      "file": "snowfield/terrain-7.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "7d52f3bf51b876266c812f20ea942674d3b580923f6d649cf1531347c230e96e",
+      "alphaBounds": [
+        4,
+        2,
+        61,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            595,
+            690,
+            947,
+            964
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-8",
+      "file": "snowfield/terrain-8.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "5ecceb22c706a00e96c9cf1c907603e5c78f872cbf1dba42c35b918855e7986f",
+      "alphaBounds": [
+        2,
+        11,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+          "sourceSha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1034,
+            723,
+            1460,
+            971
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "flora-0",
+      "file": "snowfield/flora-0.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "f929824144285c856cd712c7079a7a8f0c637275e3d65b0d1f6bba2584a29638",
+      "alphaBounds": [
+        5,
+        16,
+        59,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            168,
+            75,
+            522,
+            481
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        54,
+        62
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-1",
+      "file": "snowfield/flora-1.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "bcb904c4d1c4ee080af69328fa2870d18336c6754e542c053df87e13d8995cf8",
+      "alphaBounds": [
+        20,
+        22,
+        44,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            704,
+            110,
+            857,
+            470
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        24,
+        60
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-2",
+      "file": "snowfield/flora-2.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "2d97102169f2686c3c24a371a0ea260f38581a149cd366d5fc1494720bff4364",
+      "alphaBounds": [
+        9,
+        17,
+        55,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1090,
+            67,
+            1409,
+            489
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        46,
+        68
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-3",
+      "file": "snowfield/flora-3.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "388d2176ec66e41a87abe2f7b513de2a3aee55d99b67b111fc88e6bc6ba4e15f",
+      "alphaBounds": [
+        2,
+        10,
+        30,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            199,
+            541,
+            486,
+            742
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        24
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-4",
+      "file": "snowfield/flora-4.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "e7ca0df4c9c05deac4b4413a3a01deb2dc793b491ed31b6e50d2820454341d39",
+      "alphaBounds": [
+        3,
+        9,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            656,
+            551,
+            909,
+            754
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        28
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-5",
+      "file": "snowfield/flora-5.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "524db164ed0d7a6e1777b5298b3148c468744074f042c6a6a45a05db6e2fc4ec",
+      "alphaBounds": [
+        3,
+        9,
+        29,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1099,
+            532,
+            1379,
+            754
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        26,
+        28
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-6",
+      "file": "snowfield/flora-6.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "c943844e3407f23113d1450961230d133af4e7f298bf2a3a8660b7dfa838d0e5",
+      "alphaBounds": [
+        2,
+        10,
+        30,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            199,
+            784,
+            487,
+            989
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        22
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-7",
+      "file": "snowfield/flora-7.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "1e808322fe07fe66c7666db28e11952110bc66ca6f5a4f090113496718de0f8b",
+      "alphaBounds": [
+        0,
+        13,
+        32,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            628,
+            823,
+            951,
+            990
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        18
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-8",
+      "file": "snowfield/flora-8.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "a6bb71c03fc397be8c28df33a7113c08130aa3d01c9d081c32b826c151732e03",
+      "alphaBounds": [
+        5,
+        9,
+        27,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "flora",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1128,
+            784,
+            1352,
+            997
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "targetVisibleMax": [
+        22,
+        24
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "tree",
+      "file": "snowfield/tree.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "5f37cb50cbce28bd5651428bc99d46e26cca71fe0b2428c1e146a865b4c0ea28",
+      "alphaBounds": [
+        6,
+        4,
+        57,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            168,
+            75,
+            522,
+            481
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            704,
+            110,
+            857,
+            470
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-crown",
+      "file": "snowfield/tree-crown.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "7183343e652c6278acab1656a8f6be54aecbd7c3e0388100f63f635f03c4a114",
+      "alphaBounds": [
+        6,
+        4,
+        57,
+        62
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            168,
+            75,
+            522,
+            481
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            704,
+            110,
+            857,
+            470
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-crown",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "tree-trunk",
+      "file": "snowfield/tree-trunk.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "c632826df7441c6a335b599d0c92d1677781f0db80ce3742878ce34bccc7743c",
+      "alphaBounds": [
+        20,
+        23,
+        43,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "layered_tree",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            168,
+            75,
+            522,
+            481
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+          "sourceSha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            704,
+            110,
+            857,
+            470
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        32,
+        78
+      ],
+      "windPivot": [
+        32,
+        58
+      ],
+      "layer": "tree-trunk",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-0",
+      "file": "snowfield/structure-0.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "59a38df709e5784fccb9d2a878d7b91f527ac54b8420acf36eeac4be46648cfc",
+      "alphaBounds": [
+        6,
+        6,
+        122,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            80,
+            17,
+            574,
+            400
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            612,
+            82,
+            1134,
+            373
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1190,
+            114,
+            1403,
+            372
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          6,
+          6,
+          116,
+          90
+        ],
+        "shell": [
+          10,
+          80,
+          108,
+          60
+        ],
+        "door": [
+          47,
+          99,
+          34,
+          41
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-1",
+      "file": "snowfield/structure-1.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "e19c4e32f7a1e3e85e40e09ae383e30aa3ca34302f38325e508608005d28f5d7",
+      "alphaBounds": [
+        2,
+        25,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            80,
+            388,
+            574,
+            688
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            618,
+            421,
+            1116,
+            680
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1155,
+            451,
+            1459,
+            673
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          25,
+          124,
+          75
+        ],
+        "shell": [
+          10,
+          84,
+          108,
+          56
+        ],
+        "door": [
+          47,
+          115,
+          34,
+          25
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-2",
+      "file": "snowfield/structure-2.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "e95808f0ead4c7894c1dd8160efb2969ebec7e9c0c11de7918edb192c5dcfba6",
+      "alphaBounds": [
+        2,
+        19,
+        126,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "assembled_structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            82,
+            682,
+            561,
+            997
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            596,
+            714,
+            1142,
+            993
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        },
+        {
+          "source": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+          "sourceSha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1190,
+            738,
+            1429,
+            987
+          ],
+          "cutReview": "explicit_reviewed_connected_silhouette",
+          "sourceManualCutFlag": true
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "layerPlacements": {
+        "roof": [
+          2,
+          19,
+          124,
+          82
+        ],
+        "shell": [
+          10,
+          85,
+          108,
+          55
+        ],
+        "door": [
+          47,
+          105,
+          34,
+          35
+        ]
+      },
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/snow-rabbit",
+      "file": "snowfield/animals/snow-rabbit.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "98181bae93b6914fc9f2260f115f76fb5c9e0f43619112b4ea988f4d373f9c66",
+      "alphaBounds": [
+        20,
+        30,
+        235,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "snow-rabbit",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 26,
+      "scalePerAllFrames": 0.1,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            23,
+            32,
+            17,
+            20
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            87,
+            77,
+            253,
+            279
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            23,
+            30,
+            18,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            404,
+            75,
+            579,
+            291
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            23,
+            30,
+            18,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            733,
+            77,
+            911,
+            295
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            23,
+            31,
+            18,
+            21
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1056,
+            76,
+            1233,
+            285
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            20,
+            30,
+            23,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            76,
+            350,
+            302,
+            568
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            20,
+            28,
+            23,
+            24
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            394,
+            345,
+            625,
+            581
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            19,
+            29,
+            25,
+            23
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            706,
+            342,
+            953,
+            568
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            21,
+            30,
+            22,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1047,
+            351,
+            1272,
+            569
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            24,
+            30,
+            16,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            97,
+            640,
+            255,
+            863
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            24,
+            28,
+            16,
+            24
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            411,
+            635,
+            574,
+            879
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            24,
+            26,
+            15,
+            26
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            736,
+            631,
+            888,
+            891
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            24,
+            29,
+            15,
+            23
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1058,
+            640,
+            1210,
+            867
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            21,
+            30,
+            22,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            48,
+            919,
+            273,
+            1138
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            21,
+            29,
+            22,
+            23
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            380,
+            919,
+            600,
+            1145
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            19,
+            29,
+            25,
+            23
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            694,
+            917,
+            941,
+            1143
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            21,
+            30,
+            22,
+            22
+          ],
+          "source": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+          "sourceSha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1024,
+            919,
+            1248,
+            1136
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "animals/arctic-fox",
+      "file": "snowfield/animals/arctic-fox.png",
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "f31d70b2c6363fb8d7a885031c40f2ece7cd21e71c900616ef38107581370d60",
+      "alphaBounds": [
+        18,
+        28,
+        237,
+        244
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "animal",
+      "species": "arctic-fox",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 16,
+      "targetVisibleMax": 28,
+      "scalePerAllFrames": 0.09333333333333334,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            23,
+            28,
+            18,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            96,
+            61,
+            287,
+            314
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            23,
+            28,
+            18,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            410,
+            60,
+            608,
+            319
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            22,
+            28,
+            20,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            732,
+            60,
+            947,
+            319
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            22,
+            28,
+            20,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1046,
+            60,
+            1259,
+            319
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            18,
+            31,
+            28,
+            21
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            41,
+            364,
+            339,
+            594
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            362,
+            359,
+            654,
+            599
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            18,
+            30,
+            28,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            689,
+            359,
+            985,
+            598
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1017,
+            359,
+            1304,
+            598
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 8,
+          "placement": [
+            25,
+            28,
+            14,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            107,
+            628,
+            254,
+            886
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 9,
+          "placement": [
+            25,
+            28,
+            13,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            432,
+            628,
+            569,
+            884
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 10,
+          "placement": [
+            25,
+            28,
+            14,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            742,
+            628,
+            888,
+            883
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 11,
+          "placement": [
+            25,
+            28,
+            14,
+            24
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1073,
+            629,
+            1218,
+            883
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 12,
+          "placement": [
+            18,
+            31,
+            28,
+            21
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            38,
+            919,
+            338,
+            1149
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 13,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            362,
+            919,
+            656,
+            1151
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 14,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            669,
+            919,
+            962,
+            1151
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 15,
+          "placement": [
+            18,
+            30,
+            27,
+            22
+          ],
+          "source": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+          "sourceSha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            989,
+            918,
+            1280,
+            1151
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "DOWN",
+        "RIGHT",
+        "UP",
+        "LEFT"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/ice-beast",
+      "file": "snowfield/monsters/ice-beast.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "6514f73c1104359df940496f196d2c8df81e6143244d4febbed574eb3871703a",
+      "alphaBounds": [
+        13,
+        15,
+        244,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "ice-beast",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 44,
+      "scalePerAllFrames": 0.12643678160919541,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            18,
+            15,
+            28,
+            37
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            58,
+            58,
+            279,
+            350
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            12,
+            21,
+            39,
+            31
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            357,
+            99,
+            667,
+            344
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            20,
+            15,
+            24,
+            37
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            734,
+            59,
+            926,
+            350
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            13,
+            21,
+            38,
+            31
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            995,
+            99,
+            1297,
+            343
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            13,
+            24,
+            37,
+            28
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            26,
+            428,
+            319,
+            651
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            10,
+            26,
+            44,
+            26
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            352,
+            441,
+            700,
+            644
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            17,
+            23,
+            29,
+            29
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            715,
+            421,
+            948,
+            652
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            12,
+            31,
+            40,
+            21
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            978,
+            483,
+            1295,
+            649
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/snow-burrower",
+      "file": "snowfield/monsters/snow-burrower.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "2f8be7307ee977d6e9711b8e5648a25c2a98d684a38458607bf8b11311331f38",
+      "alphaBounds": [
+        17,
+        28,
+        241,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "snow-burrower",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 36,
+      "scalePerAllFrames": 0.12121212121212122,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            19,
+            29,
+            25,
+            23
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            67,
+            726,
+            271,
+            918
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            17,
+            30,
+            29,
+            22
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 9,
+          "sourceBoundsLTRB": [
+            377,
+            732,
+            616,
+            914
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            19,
+            28,
+            26,
+            24
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 10,
+          "sourceBoundsLTRB": [
+            719,
+            726,
+            934,
+            922
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            18,
+            30,
+            28,
+            22
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 11,
+          "sourceBoundsLTRB": [
+            1039,
+            731,
+            1271,
+            914
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            17,
+            30,
+            29,
+            22
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 12,
+          "sourceBoundsLTRB": [
+            46,
+            971,
+            284,
+            1152
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            14,
+            30,
+            36,
+            22
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 13,
+          "sourceBoundsLTRB": [
+            374,
+            966,
+            671,
+            1144
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            18,
+            29,
+            28,
+            23
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 14,
+          "sourceBoundsLTRB": [
+            719,
+            958,
+            954,
+            1150
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            15,
+            33,
+            34,
+            19
+          ],
+          "source": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+          "sourceSha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+          "sourceCell": 15,
+          "sourceBoundsLTRB": [
+            1011,
+            998,
+            1295,
+            1152
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    }
+  ]
+}

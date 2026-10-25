@@ -1,0 +1,1281 @@
+{
+  "biome": "ruins",
+  "tilePixels": 32,
+  "sourceBatches": [
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourcePixelsModified": false,
+  "directionOrder": [
+    "DOWN",
+    "RIGHT",
+    "UP",
+    "LEFT"
+  ],
+  "runtimeExportVersion": 1,
+  "entries": [
+    {
+      "id": "ground",
+      "file": "ruins/ground.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "070e1e43ed8827f73671c3c1874f4cc0d89eed65a1998269b558bb93bc3b6862",
+      "alphaBounds": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "opaque_ground",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            64,
+            97,
+            502,
+            353
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "interiorCropLTRB": [
+        110,
+        64,
+        328,
+        192
+      ],
+      "tiling": "mirror-repeat of interior sample; matching border texels"
+    },
+    {
+      "id": "terrain-0",
+      "file": "ruins/terrain-0.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "deb4cc9e34e56a466c0aa593d4645c65dd053e7843247d8e8d2676d41029de34",
+      "alphaBounds": [
+        2,
+        11,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            64,
+            97,
+            502,
+            353
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-1",
+      "file": "ruins/terrain-1.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "ebae93adb032a612f5ea7ec0af901eb4ac94324d0071353875171ce861e0a7a7",
+      "alphaBounds": [
+        2,
+        6,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            584,
+            98,
+            964,
+            351
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-2",
+      "file": "ruins/terrain-2.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "6361615efdee193ee193eb04af9873862558102fbb889e76e156e74ef2a031d1",
+      "alphaBounds": [
+        2,
+        18,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1035,
+            142,
+            1487,
+            351
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-3",
+      "file": "ruins/terrain-3.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "97f89ec989958cf87b2214a1387c31c6d6fd9b5376bcb5fb0366d42719c83062",
+      "alphaBounds": [
+        3,
+        2,
+        61,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            102,
+            400,
+            453,
+            666
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-4",
+      "file": "ruins/terrain-4.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "c018af50e8c4d9e0bee6b60c5eedf8d5fc3cdb994c017b13fd060440176eda88",
+      "alphaBounds": [
+        2,
+        4,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            629,
+            413,
+            994,
+            666
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-5",
+      "file": "ruins/terrain-5.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "6f9ee10fb849abfe880ac8924fa123eec4205487552c2c1b1ed7568c6aec5451",
+      "alphaBounds": [
+        16,
+        2,
+        47,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1228,
+            417,
+            1398,
+            658
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-6",
+      "file": "ruins/terrain-6.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "3f54775a32d755544d49cd1a0509cf086f2a86884a9ca7f86340fb36809e8191",
+      "alphaBounds": [
+        2,
+        22,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            69,
+            766,
+            508,
+            944
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-7",
+      "file": "ruins/terrain-7.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "edeb173f90ec9d452bfa0dfd989965c8e769a861b555ea01432b0d056247e696",
+      "alphaBounds": [
+        2,
+        11,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            576,
+            717,
+            974,
+            950
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "terrain-8",
+      "file": "ruins/terrain-8.png",
+      "dimensions": [
+        64,
+        48
+      ],
+      "sha256": "9eaf6ddcc7b6142208a78a6ea2b674b0e2f09e63e47d9400a2d0602db768667c",
+      "alphaBounds": [
+        2,
+        16,
+        62,
+        46
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "terrain_module",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+          "sourceSha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1045,
+            735,
+            1485,
+            954
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "autotileValidated": false,
+      "footAnchor": [
+        32,
+        46
+      ]
+    },
+    {
+      "id": "flora-0",
+      "file": "ruins/flora-0.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "a3a3f3bc1c026278f568c5fd6d50bc29d383d37174a3754e7e45ead5a39eac3e",
+      "alphaBounds": [
+        4,
+        29,
+        60,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            103,
+            25,
+            507,
+            375
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        56,
+        62
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-1",
+      "file": "ruins/flora-1.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "9f9dc60833a84e7e217900f2015da1487dab13e80ffec029c34b5363af0e0a38",
+      "alphaBounds": [
+        18,
+        43,
+        46,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            655,
+            57,
+            905,
+            371
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        28,
+        52
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-2",
+      "file": "ruins/flora-2.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "f5b109df9cec254a924bfead1d82a8700b5f2bc7d1fb6df92f7457b7a479c87e",
+      "alphaBounds": [
+        12,
+        58,
+        52,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            1071,
+            194,
+            1423,
+            371
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        40,
+        24
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-3",
+      "file": "ruins/flora-3.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "6cfd8096708b789800879dd04da53e5bd192f21f29833b8b41a0fd33d20b2f4d",
+      "alphaBounds": [
+        12,
+        49,
+        52,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            131,
+            449,
+            460,
+            688
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        40,
+        32
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-4",
+      "file": "ruins/flora-4.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "8ec3427ee1485875a4cb836d1af98add7cad65c7c9d9d3b53a527175cd4e7453",
+      "alphaBounds": [
+        7,
+        37,
+        57,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            579,
+            397,
+            961,
+            708
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        50,
+        60
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-5",
+      "file": "ruins/flora-5.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "522beb5389cbf82590b1a4480fd0f7f22cf25b96b32ae7ef77758b07f641cd02",
+      "alphaBounds": [
+        7,
+        43,
+        57,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            1067,
+            420,
+            1463,
+            699
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        50,
+        44
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-6",
+      "file": "ruins/flora-6.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "58620bb331d9ebc6eb92adbb4b7373b499a82911d4e8b4255ac4916a755b082f",
+      "alphaBounds": [
+        12,
+        58,
+        52,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            79,
+            768,
+            494,
+            978
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        40,
+        28
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "flora-7",
+      "file": "ruins/flora-7.png",
+      "dimensions": [
+        32,
+        32
+      ],
+      "sha256": "fe1f1fca882d4fb60d264bbebbdc15807a615f291dc54fd6a5c9b0beb83f01cf",
+      "alphaBounds": [
+        0,
+        15,
+        32,
+        30
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            558,
+            777,
+            985,
+            974
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        32,
+        24
+      ],
+      "footAnchor": [
+        16,
+        30
+      ]
+    },
+    {
+      "id": "flora-8",
+      "file": "ruins/flora-8.png",
+      "dimensions": [
+        64,
+        80
+      ],
+      "sha256": "0aeb2c0b178b6134768aec72713e6542ae7022b36c920de05d94d2848cb99526",
+      "alphaBounds": [
+        15,
+        60,
+        49,
+        78
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "architecture_prop",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 8,
+          "sourceBoundsLTRB": [
+            1037,
+            746,
+            1478,
+            979
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "targetVisibleMax": [
+        40,
+        18
+      ],
+      "footAnchor": [
+        32,
+        78
+      ]
+    },
+    {
+      "id": "structure-0",
+      "file": "ruins/structure-0.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "9a642ad5382c5e9ffe24390f46e5cd153e5372717bdadfad1b2e051501f35edb",
+      "alphaBounds": [
+        8,
+        59,
+        120,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            131,
+            449,
+            460,
+            688
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-1",
+      "file": "ruins/structure-1.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "49cee1c5c57b700cd1d182c22bb5a0716ac473cf461438894cc307304b501e88",
+      "alphaBounds": [
+        8,
+        43,
+        120,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            103,
+            25,
+            507,
+            375
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "castsBakedShadow": false
+    },
+    {
+      "id": "structure-2",
+      "file": "ruins/structure-2.png",
+      "dimensions": [
+        128,
+        144
+      ],
+      "sha256": "eebab20844f2f1ebefb85ebb9c00ca4dab22d6294a64c419b9091dee84faf56a",
+      "alphaBounds": [
+        8,
+        49,
+        120,
+        140
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "structure",
+      "sourceCrops": [
+        {
+          "source": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+          "sourceSha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            579,
+            397,
+            961,
+            708
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "footAnchor": [
+        64,
+        140
+      ],
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/stone-guard",
+      "file": "ruins/monsters/stone-guard.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "2c63ab2ea4c40571142182b8cf65de1cccabaf697008c542e697c7e08315e0f8",
+      "alphaBounds": [
+        14,
+        8,
+        244,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "stone-guard",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 44,
+      "scalePerAllFrames": 0.10757946210268948,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            14,
+            8,
+            36,
+            44
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            42,
+            83,
+            374,
+            490
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            21,
+            8,
+            22,
+            44
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            463,
+            81,
+            672,
+            490
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            14,
+            9,
+            35,
+            43
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            802,
+            86,
+            1125,
+            487
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            20,
+            8,
+            24,
+            44
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1239,
+            81,
+            1458,
+            490
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            14,
+            15,
+            36,
+            37
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            33,
+            596,
+            363,
+            936
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            10,
+            16,
+            44,
+            36
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            388,
+            594,
+            794,
+            931
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            18,
+            13,
+            27,
+            39
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            818,
+            579,
+            1072,
+            941
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            11,
+            32,
+            41,
+            20
+          ],
+          "source": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+          "sourceSha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1134,
+            770,
+            1517,
+            955
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    },
+    {
+      "id": "monsters/bronze-sentinel",
+      "file": "ruins/monsters/bronze-sentinel.png",
+      "dimensions": [
+        256,
+        128
+      ],
+      "sha256": "b936985c4a7766f2c63c3bebd366d47d15deca982cc5b14daa63d28d24a043b8",
+      "alphaBounds": [
+        13,
+        20,
+        245,
+        116
+      ],
+      "resampling": "nearest",
+      "alphaThreshold": 128,
+      "kind": "monster",
+      "species": "bronze-sentinel",
+      "frameSize": [
+        64,
+        64
+      ],
+      "footAnchor": [
+        32,
+        52
+      ],
+      "frameCount": 8,
+      "targetVisibleMax": 42,
+      "scalePerAllFrames": 0.12352941176470589,
+      "frames": [
+        {
+          "index": 0,
+          "placement": [
+            13,
+            21,
+            38,
+            31
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 0,
+          "sourceBoundsLTRB": [
+            50,
+            193,
+            359,
+            445
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 1,
+          "placement": [
+            12,
+            20,
+            39,
+            32
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 1,
+          "sourceBoundsLTRB": [
+            424,
+            193,
+            740,
+            455
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 2,
+          "placement": [
+            13,
+            21,
+            38,
+            31
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 2,
+          "sourceBoundsLTRB": [
+            805,
+            193,
+            1113,
+            445
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 3,
+          "placement": [
+            12,
+            20,
+            39,
+            32
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 3,
+          "sourceBoundsLTRB": [
+            1179,
+            193,
+            1497,
+            455
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 4,
+          "placement": [
+            13,
+            23,
+            37,
+            29
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 4,
+          "sourceBoundsLTRB": [
+            37,
+            645,
+            336,
+            877
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 5,
+          "placement": [
+            11,
+            23,
+            41,
+            29
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 5,
+          "sourceBoundsLTRB": [
+            421,
+            644,
+            751,
+            877
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 6,
+          "placement": [
+            13,
+            21,
+            37,
+            31
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 6,
+          "sourceBoundsLTRB": [
+            805,
+            619,
+            1104,
+            873
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        },
+        {
+          "index": 7,
+          "placement": [
+            11,
+            30,
+            42,
+            22
+          ],
+          "source": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+          "sourceSha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+          "sourceCell": 7,
+          "sourceBoundsLTRB": [
+            1165,
+            698,
+            1505,
+            873
+          ],
+          "cutReview": "transparent_gutter_and_silhouette_reviewed",
+          "sourceManualCutFlag": false
+        }
+      ],
+      "rows": [
+        "directional_idle_DOWN_RIGHT_UP_LEFT",
+        "right_windup_attack_hit_downed"
+      ],
+      "animationStatus": "source_keyposes; no invented full combat sequence",
+      "castsBakedShadow": false
+    }
+  ]
+}

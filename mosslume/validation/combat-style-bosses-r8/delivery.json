@@ -1,0 +1,60 @@
+{
+  "version": "0.5.2",
+  "application": "/Users/zhangjunhao/Applications/Mosslume.app",
+  "bundleVersion": "0.5.2",
+  "desktopPointsToSameApp": true,
+  "profile": "/Users/zhangjunhao/Library/Application Support/Mosslume-Life-Preview",
+  "saveBackup": "build/r8-user-save-backup/20261025-042410",
+  "sourceJarMatchesPackaged": true,
+  "modSha256": "7748a713a4fc01c472bec5886e1cb9d87ec4ee1e65d98d0d923bd8fb5b083958",
+  "kernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "tests": {
+    "unitCount": 42,
+    "unitPassed": true,
+    "weaponMatrixPassed": true,
+    "playerCombinations": 12,
+    "npcCombinations": 60,
+    "portraitShaderMismatches": 0,
+    "bossNativePassed": true,
+    "bosses": 2,
+    "nativeBossCaptures": 14
+  },
+  "performance": {
+    "scope": "10 seconds of one isolated coastal camp; no framebuffer readback/portrait HUD during measurement; not a whole-game or long-session guarantee",
+    "frames": 584,
+    "meanFps": 58.605423,
+    "p95Ms": 24.7505,
+    "over50ms": 0
+  },
+  "assets": {
+    "bossArt": "Direct user GIF/WebP, no generated pixels substituted",
+    "originalAttackFrames": 40,
+    "sourceFrameMillis": 90,
+    "newResidentPoses": 132,
+    "generatedBossesKept": "mosslume/art/bosses-r8/generated-runtime-backup",
+    "prompts": "mosslume/art/generation-r8-prompts.json",
+    "generationTool": "built-in image_gen for new art kept separately"
+  },
+  "unchanged": [
+    "AI dialogue/provider settings",
+    "existing light/wind/water pipeline",
+    "native player damage and timing logic"
+  ],
+  "limits": [
+    "Source Boss art is side-view; UP/DOWN reuse side-view and LEFT uses mirroring.",
+    "No source death clip: original idle fades.",
+    "Bow holds a forward pose; no bespoke two-hand draw cycle.",
+    "Five resident appearance families are shared by more than five named residents.",
+    "Boss checks use native target fixtures, not a physical-input full-fight balance or cross-process Boss reload claim."
+  ],
+  "evidence": {
+    "boss": "build/refactor-evidence/combat-r8-direct-boss-c/initial",
+    "matrix": "build/refactor-evidence/combat-r8-matrix-c/initial"
+  },
+  "normalLaunch": {
+    "pid": 57888,
+    "profile": "Mosslume-Life-Preview",
+    "titleMenuReady": true,
+    "onlyOneGameProcess": true
+  }
+}

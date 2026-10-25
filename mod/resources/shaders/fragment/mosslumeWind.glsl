@@ -5,6 +5,7 @@ uniform float smoothing_factor;
 uniform int pixelCoverage;
 uniform int surfaceLighting;
 uniform vec3 dayMaterial;
+uniform float nightAmount;
 uniform vec3 ambientRGB;
 uniform vec2 worldFoot;
 uniform vec2 spriteSize;
@@ -18,12 +19,41 @@ uniform vec4 lampColor0;
 uniform vec4 lampColor1;
 uniform vec4 lampColor2;
 
+uniform sampler2D normalTexture;
+uniform int hasNormalTexture;
+uniform sampler2D occlusionMap;
+uniform int occlusionEnabled;
+uniform vec4 occlusionBounds;
+
+// SurfaceMap/floodlight height-ray occlusion, SDV-Radiance MIT concepts.
+// The native tile map is camera-bounded; samples never cause region generation.
+float lampVisibility(vec3 point,vec4 lamp){
+    if(occlusionEnabled==0)return 1.0;
+    float visibility=1.0;
+    for(int i=1;i<=12;i++){
+        float t=float(i)/13.0;
+        vec3 ray=mix(point,lamp.xyz,t);
+        vec2 uv=(ray.xy-occlusionBounds.xy)/occlusionBounds.zw;
+        if(uv.x<0.0||uv.y<0.0||uv.x>=1.0||uv.y>=1.0)continue;
+        // The receiving sprite must not shadow itself via its own collision tile.
+        vec2 own=floor(worldFoot/32.0),cell=floor(ray.xy/32.0);
+        if(abs(own.x-cell.x)<0.5&&abs(own.y-cell.y)<0.5)continue;
+        vec4 blocker=texture2D(occlusionMap,uv);
+        float blockHeight=blocker.r*255.0;
+        float penumbra=smoothstep(ray.z-7.0,ray.z+7.0,blockHeight);
+        visibility=min(visibility,1.0-penumbra*blocker.b*.88);
+    }
+    return visibility;
+}
+
 vec3 lampLight(vec3 point, vec3 normal, vec4 lamp, vec4 color) {
+    if(color.a<=0.0)return vec3(0.0);
     vec3 delta = lamp.xyz - point;
     float distanceRatio = length(delta.xy) / max(1.0, lamp.w);
     float falloff = 1.0 - smoothstep(0.0, 1.0, distanceRatio);
-    float facing = 0.68 + 0.32 * max(0.0, dot(normal, normalize(delta + vec3(0.0, 0.0, 0.01))));
-    return color.rgb * color.a * falloff * facing * 0.76;
+    falloff *= falloff;
+    float facing = 0.35 + 0.65 * max(0.0, dot(normal, normalize(delta + vec3(0.0, 0.0, 0.01))));
+    return color.rgb * color.a * falloff * facing * lampVisibility(point,lamp) * 0.82;
 }
 
 vec3 surfaceLight(vec2 uv) {
@@ -32,8 +62,11 @@ vec3 surfaceLight(vec2 uv) {
     vec3 normal = roundedSurface != 0
         ? normalize(vec3((uv.x - 0.5) * 1.35, (uv.y - 0.5) * 0.42, 0.92))
         : normalize(vec3((uv.x - 0.5) * 0.30, -0.12, 1.0));
+    vec4 baked=texture2D(normalTexture,uv);
+    vec3 relief=vec3(baked.rg*2.0-1.0,baked.b);
+    if(hasNormalTexture!=0&&baked.a>0.02)normal=normalize(mix(normal,relief,.68));
     vec3 point = vec3(worldFoot + vec2((uv.x - 0.5) * spriteSize.x,
-                      (uv.y - 1.0) * spriteSize.y * 0.12), (1.0 - uv.y) * elevation * 0.48);
+                      (uv.y - 1.0) * spriteSize.y * 0.12), (1.0 - uv.y) * elevation * 0.90);
     vec3 result = ambientRGB * (0.83 + 0.20 * max(0.0, dot(normal, normalize(skyDirection))));
     result += lampLight(point, normal, lamp0, lampColor0);
     result += lampLight(point, normal, lamp1, lampColor1);
@@ -86,13 +119,18 @@ void main() {
     // not blur the world render target or change the source pixel dimensions.
     vec4 color = pixelCoverage != 0 ? pixelCoveredSample(gl_TexCoord[0].xy)
                                    : texture2D(texture, gl_TexCoord[0].xy);
+    if(color.a<=0.0){gl_FragColor=vec4(0.0);return;}
     // Only crowns have a nonzero day amount. Keep painted highlight luminance
     // while reducing neon saturation; night takes the original arithmetic path.
-    if (dayMaterial.x > 0.0) {
-        float luminance = dot(color.rgb, vec3(0.2126, 0.7152, 0.0722));
-        vec3 graded = mix(vec3(luminance), color.rgb, dayMaterial.y) * dayMaterial.z;
-        color.rgb = mix(color.rgb, graded, dayMaterial.x);
-    }
+    float foliage=smoothstep(-.10,.10,color.g-color.r)*smoothstep(0.0,.10,color.g-color.b);
+    float luminance=dot(color.rgb,vec3(.2126,.7152,.0722));
+    vec3 daySource=mix(vec3(luminance),color.rgb,dayMaterial.y)*dayMaterial.z;
+    color.rgb=mix(color.rgb,daySource,dayMaterial.x*foliage);
+    float yellowHighlight=smoothstep(.62,.92,luminance)*foliage*dayMaterial.x;
+    color.rgb*=vec3(1.0-.08*yellowHighlight,1.0-.035*yellowHighlight,1.0);
+    color.b+=.035*yellowHighlight;
+    vec3 nightSource=mix(color.rgb,vec3(luminance*.92,luminance*.98,luminance*1.06),.22);
+    color.rgb=mix(color.rgb,nightSource,nightAmount*foliage);
     gl_FragColor = surfaceLighting != 0
         ? vec4(color.rgb * surfaceLight(gl_TexCoord[0].xy), color.a * gl_Color.a)
         : color * gl_Color;

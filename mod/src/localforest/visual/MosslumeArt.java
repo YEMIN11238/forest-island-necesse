@@ -55,11 +55,12 @@ public final class MosslumeArt {
         alias("furnace","forge");alias("lantern","torch");alias("wood-wall","woodwall","wooddoor","wooddooropen");
         alias("berry","blueberry","raspberry","blackberry");alias("trade-coin","coin");
         alias("bread","freshbread");alias("vegetable-stew","vegetablestew","potatosoup");alias("grilled-fish","cookedfish","roastedfish");
-        for(String d:DIRS){load("players/player-stand-"+d);load("players/player-walk-"+d);for(String role:new String[]{"farmer","carpenter","merchant"})load("residents/"+role+"-"+d);}
+        for(String d:DIRS){load("players/player-stand-"+d);load("players/player-walk-"+d);load("players/player-attack-"+d);for(String role:new String[]{"farmer","carpenter","merchant"})load("residents/"+role+"-"+d);}
+        AttackHandSockets.init();
         CompanionSprites.initResources();
         String[] objects={"anvil","bed","berry-empty","berry-flowering","berry-unripe","berry-ripe","bookshelf","chair","chest-closed","chest-opening","chest-open","cupboard","fallen-branch","floor-lamp","interior-wall","noticeboard","occlusion-trim","plank-floor","potted-plant","rock-cracked","rock-damaged","rock-depleted","rock-intact","sapling","seedling","stump","stump-regrowth","table","wall-lamp","woven-rug","young-tree"};
         for(String s:objects){load("world/"+s);registerShadow("world/"+s);}
-        for(String s:new String[]{"roof","walls","door-closed","door-open","windows-dark","windows-lit"})load("world/house-layers/"+s);
+        for(String s:new String[]{"roof","walls","door-closed","door-open","windows-dark","windows-lit"}){load("world/house-layers/"+s);registerShadow("world/house-layers/"+s);}
         registerHouseShadow();
         for(String crop:new String[]{"wheat","carrot","pumpkin"})for(String stage:new String[]{"sown","sprout","young","growing","ripe","harvested"}){load("crops/"+crop+"-"+stage);registerShadow("crops/"+crop+"-"+stage);}
         ready=true;System.out.println("MOSSLUME_ART_READY textures="+textures.size()+" aliases="+aliases.size()+" sourceFoot=32,52 characterScale=2 bodyWorldPixels=64");
@@ -87,31 +88,25 @@ public final class MosslumeArt {
     }
     public static DrawOptions player(PlayerMob player,int x,int y,GameLight light,GameCamera camera){
         if(player==null||!active(player.getLevel())||player.isRiding()||player.getUsingObject()!=null)return null;
-        int dir=Math.floorMod(player.getDir(),4);String d=DIRS[dir];
+        int dir=player.isAttacking&&player.attackDir!=null?CharacterAnimation.direction(player.attackDir.x,player.attackDir.y,player.getDir()):Math.floorMod(player.getDir(),4);String d=DIRS[dir];
         boolean moving=!player.isAttacking&&(Math.abs(player.dx)+Math.abs(player.dy)>2);
-        String key="players/player-"+(moving?"walk-":"stand-")+d;
+        String key="players/player-"+(player.isAttacking?"attack-":moving?"walk-":"stand-")+d;
         final GameTexture body=textures.get(key);if(body==null)return null;
         // Four authored compact poses, selected by actual movement. The cycle
         // covers 48 world pixels, matching the previous six-frame stride.
-        final int f=moving?Math.floorMod((int)(player.getDistanceRan()/12.0),walkFrameCount(body)):0;
-        final int footX=camera.getDrawX(x),footY=camera.getDrawY(y);
-        final int px=footX-CHARACTER_FOOT_X*CHARACTER_SCALE,py=footY-CHARACTER_FOOT_Y*CHARACTER_SCALE;
-        final GameLight sceneLight=SceneLighting.light(player.getLevel(),x,y);
-        InventoryItem selected=player.getSelectedItem();String tool=selected==null?null:iconKey(selected.item);
-        final GameTexture handTool=player.isAttacking&&tool!=null?textures.get("items/"+tool):null;
         final float progress=Math.max(0,Math.min(1,player.isAttacking?player.getAttackAnimProgress():0));
-        final float alpha=player.getInvincibilityFrameAlpha();
-        // Keep the compact body through every native attack. The icon rotates
-        // around its grip, with the hand and draw order selected by direction.
-        // Damage, target selection and attack duration remain native.
-        final float baseAngle=dir==0?-34:dir==1?56:dir==2?146:236;
-        final float angle=baseAngle-80+105*progress;
-        final int handX=footX+(dir==3?-10:10),handY=footY+(dir==0?-30:dir==2?-18:-22);
-        final DrawOptions toolDraw=()->{if(handTool!=null)handTool.initDraw().size(32,32).rotate(angle,8,25).light(sceneLight).alpha(alpha).draw(handX-8,handY-25);};
+        final InventoryItem attacking=CharacterAnimation.activeItem(player);
+        final int f=player.isAttacking?CharacterAnimation.attackFrame(attacking,progress,walkFrameCount(body)):moving?Math.floorMod((int)(player.getDistanceRan()/12.0),walkFrameCount(body)):0;
+        final int footX=camera.getDrawX(x),footY=camera.getDrawY(y);
+        final GameLight sceneLight=SceneLighting.light(player.getLevel(),x,y);
+        final DrawOptions bodyDraw=CharacterAnimation.body(body,f,CHARACTER_FRAME,CHARACTER_SCALE,footX,footY,player,sceneLight,!moving&&!player.isAttacking,player);
+        final DrawOptions toolDraw=CharacterAnimation.weapon(player,attacking,dir,progress,footX,footY,sceneLight,player,"player",f,CHARACTER_SCALE);
+        final DrawOptions palm=toolDraw==null?null:CharacterAnimation.palm(body,f,CHARACTER_FRAME,CHARACTER_SCALE,footX,footY,player,sceneLight,"player",dir);
         return ()->{
-            if(dir==0)toolDraw.draw();
-            body.initDraw().sprite(f,0,CHARACTER_FRAME).size(CHARACTER_FRAME*CHARACTER_SCALE,CHARACTER_FRAME*CHARACTER_SCALE).light(sceneLight).alpha(alpha).draw(px,py);
-            if(dir!=0)toolDraw.draw();
+            if(dir==0&&toolDraw!=null)toolDraw.draw();
+            bodyDraw.draw();
+            if(dir!=0&&toolDraw!=null)toolDraw.draw();
+            if(palm!=null)palm.draw();
             playerDraws++;
         };
     }
@@ -162,13 +157,13 @@ public final class MosslumeArt {
         PlayerMob player=level.getClient()==null?null:level.getClient().getPlayer();boolean inside=player!=null&&house.contains(player.getTileX(),player.getTileY());
         boolean open=level.getObject(house.doorTileX,house.doorTileY).getStringID().contains("open");
         float hour=level.getWorldEntity().getDayTimeHourFloat();boolean lit=hour>=18||hour<7;
-        final float scale=Boolean.getBoolean("mosslume.visual.legacy")?2.4f:2f;
+        final float scale=Boolean.getBoolean("mosslume.visual.legacy")?2.4f:house.visualScale;
         int x=footX-Math.round(48*scale),y=footY-Math.round(108*scale);
         GameLight light=IslandVisuals.light(level,house.footTileX,house.footTileY);
         for(String layer:new String[]{"walls",open?"door-open":"door-closed",lit?"windows-lit":"windows-dark","roof"}){
             float alpha=inside?(layer.equals("roof")?.12f:.36f):1f;
             GameTexture t=textures.get("world/house-layers/"+layer);
-            if(!layer.equals("windows-lit")&&SceneLighting.enabled()&&CrownWindRenderer.draw(t,footX,footY+Math.round(4*scale),scale,light,alpha,house.footTileX,house.footTileY,false,level,false,100))continue;
+            if(!layer.equals("windows-lit")&&SceneLighting.enabled()&&CrownWindRenderer.draw(t,footX,footY,scale,light,alpha,house.footTileX,house.footTileY,false,level,false,100*scale/2f))continue;
             t.initDraw().size(Math.round(96*scale),Math.round(112*scale)).light(layer.equals("windows-lit")?new GameLight(150):light).alpha(alpha).draw(x,y);
         }
         return true;

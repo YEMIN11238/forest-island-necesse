@@ -1,0 +1,1196 @@
+{
+  "project": "Mosslume",
+  "batch": "09",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "snowfield-terrain-connectors",
+      "name": "雪地积雪冰面与崖壁连接",
+      "biome": "雪地",
+      "category": "地形",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "地表",
+        "台地连接",
+        "过渡与通路"
+      ],
+      "cellLabels": [
+        [
+          "薄雪覆土",
+          "厚雪地表",
+          "冰面"
+        ],
+        [
+          "积雪崖壁直段",
+          "积雪崖外角",
+          "积雪崖内角"
+        ],
+        [
+          "雪岩过渡",
+          "雪地石阶",
+          "雪岸冰缘"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-3b51e364-20b8-4668-8342-d3bbdb63e770.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "terrain-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [
+        "源图的台地角件仍需按运行时邻接位掩码重新命名、切片和接缝校准；不宣称直接无缝拼接。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "snowfield-flora-resources",
+      "name": "雪地树木灌木与矿物",
+      "biome": "雪地",
+      "category": "植被",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "树木分层",
+        "灌木与冰晶",
+        "采集资源"
+      ],
+      "cellLabels": [
+        [
+          "雪松树冠",
+          "雪松树干",
+          "冬季裸树"
+        ],
+        [
+          "覆雪绿灌木",
+          "枯枝灌木",
+          "冰晶簇"
+        ],
+        [
+          "覆雪铁矿",
+          "积雪木段",
+          "冬草簇"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-f56f77e4-cd0d-4ae5-b38e-0aceffa30bd3.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "sprite-source",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "snowfield-building-layers",
+      "name": "雪地木屋猎人营地与石炉屋分层",
+      "biome": "雪地",
+      "category": "建筑",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "mixed",
+      "rowLabels": [
+        "雪地木屋：屋顶／墙体／门",
+        "猎人营地：棚顶／底座／入口",
+        "石炉屋：屋顶／墙体／炉门"
+      ],
+      "cellLabels": [
+        [
+          "木屋雪顶",
+          "木屋下墙壳",
+          "木屋门板"
+        ],
+        [
+          "猎人棚雪顶",
+          "猎人棚支架地台",
+          "猎人棚帆布入口"
+        ],
+        [
+          "石炉屋雪顶",
+          "石炉屋下墙壳",
+          "铁炉门"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-building-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-2f43fac5-8947-4edc-889f-48b0c7d9fd4c.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "building-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [
+        "木屋门与炉门源稿含门框/墙边，正式导出前需分离并校准屋顶、下墙与入口的统一枢轴。",
+        "猎人棚入口还带支柱，与底座叠合时需处理重复支柱。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "snow-rabbit-directional-poses",
+      "name": "雪兔四方向动作源图",
+      "biome": "雪地",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.45,
+          0.6
+        ],
+        "height": 0.5,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+      "promptFile": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-cebfcb4f-941e-4b17-bab6-219e51e0e3f9.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "version": 2,
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "motionName": "跳步",
+      "sourceQaNotes": [
+        "v2 replaces selected v1 because v1 hind legs were too long.",
+        "Movement keys are concept sources; contact and temporal continuity require cleanup.",
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "arctic-fox-directional-poses",
+      "name": "北极狐四方向动作源图",
+      "biome": "雪地",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.85,
+          0.55
+        ],
+        "height": 0.7,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-52e514f2-f6dd-4a4f-901c-f1b599081126.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "snowfield-monster-poses",
+      "name": "冰甲兽与雪地掘穴怪姿态",
+      "biome": "雪地",
+      "category": "怪物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "mixed",
+      "layout": "mixed-monster-poses",
+      "species": [
+        {
+          "name": "冰甲兽",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "雪地掘穴怪",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "rowLabels": [
+        "冰甲兽四方向待机",
+        "冰甲兽朝右战斗姿态",
+        "雪地掘穴怪四方向待机",
+        "雪地掘穴怪朝右战斗姿态"
+      ],
+      "cellLabels": [
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ],
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-monster-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-0ba4b010-7fd0-462a-b274-fa8b09801f01.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "两种怪物各有四方向待机和朝右蓄力/攻击/受伤/倒地源姿态；移动及其余方向战斗动画尚未生成。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "snowfield-props-effects",
+      "name": "雪地生产道具与冰雪特效",
+      "biome": "雪地",
+      "category": "道具与特效",
+      "columns": 4,
+      "rows": 3,
+      "previewKind": "mixed",
+      "layout": "props-vfx",
+      "rowLabels": [
+        "生产道具",
+        "冰刃攻击四阶段",
+        "扬雪环境四阶段"
+      ],
+      "cellLabels": [
+        [
+          "覆雪木柴架",
+          "铁炉",
+          "皮毛睡袋",
+          "木雪橇"
+        ],
+        [
+          "起势",
+          "展开",
+          "峰值",
+          "消散"
+        ],
+        [
+          "起扬",
+          "扩散",
+          "上升",
+          "消散"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-09/snowfield-props-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-props-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-9e3d7b9c-ccfa-4c43-a71b-680f13e68963.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "蓝色边缘与半透明像素为原始生成 alpha 保留，正式特效需要检查低 alpha 边缘并统一像素轮廓。",
+        "道具静帧与两组四阶段特效是不同用途，不合成一个循环。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-terrain-connectors",
+      "name": "沙漠沙丘砂岩绿洲与崖壁连接",
+      "biome": "沙漠",
+      "category": "地形",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "基础地表",
+        "过渡与崖壁",
+        "台地角与石阶"
+      ],
+      "cellLabels": [
+        [
+          "沙地",
+          "低矮沙丘",
+          "砂岩地砖"
+        ],
+        [
+          "干裂地表",
+          "绿洲岸线",
+          "砂岩崖直段"
+        ],
+        [
+          "砂岩崖外角",
+          "砂岩崖内角",
+          "砂岩石阶"
+        ]
+      ],
+      "layout": "terrain-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-410148cd-7217-447e-9bfc-5880ce9d5eda.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "源图的台地角件仍需按运行时邻接位掩码重新命名、切片和接缝校准；不宣称直接无缝拼接。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-flora-resources",
+      "name": "沙漠仙人掌棕榈与采集资源",
+      "biome": "沙漠",
+      "category": "植被",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "仙人掌与灌木",
+        "棕榈分层与草丛",
+        "采集资源"
+      ],
+      "cellLabels": [
+        [
+          "双臂仙人掌",
+          "圆桶仙人掌",
+          "荆棘干灌木"
+        ],
+        [
+          "棕榈树冠",
+          "棕榈树干",
+          "荒漠草簇"
+        ],
+        [
+          "风化木段",
+          "砂岩铁矿",
+          "仙人掌果丛"
+        ]
+      ],
+      "layout": "sprite-source",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-a9f17a87-bfb4-48bd-bbca-5ffdd802e21d.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-building-layers",
+      "name": "沙漠土屋商队帐篷与水井分层",
+      "biome": "沙漠",
+      "category": "建筑",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "mixed",
+      "rowLabels": [
+        "土屋：屋顶／墙体／门板",
+        "商队帐篷：棚顶／底座／入口",
+        "水井：井棚／井台／水桶"
+      ],
+      "cellLabels": [
+        [
+          "土屋平顶",
+          "土屋下墙壳",
+          "土屋门板"
+        ],
+        [
+          "商队帐篷顶",
+          "帐篷支架地台",
+          "卷帘入口"
+        ],
+        [
+          "木井棚",
+          "砂岩井台",
+          "水桶与绳圈"
+        ]
+      ],
+      "layout": "building-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-building-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-22632064-14fa-4072-a7d3-cab8144727eb.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "土屋、帐篷、水井为三个不同组件组合，水井使用盖棚/井台/水桶，不按三张完整房屋展示。",
+        "正式导出时需校准同一建筑的部件尺寸和枢轴。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-lizard-directional-poses",
+      "name": "沙漠蜥蜴四方向动作源图",
+      "biome": "沙漠",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.9,
+          0.45
+        ],
+        "height": 0.3,
+        "note": "target only; tail-inclusive footprint; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-d61eb87e-297d-490c-b6ca-0d03dceda385.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "fennec-fox-directional-poses",
+      "name": "耳廓狐四方向动作源图",
+      "biome": "沙漠",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.75,
+          0.5
+        ],
+        "height": 0.8,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-5f05b227-685f-4ed6-916b-92ae42ac7d5b.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-monster-poses",
+      "name": "砂蝎与沙虫姿态源图",
+      "biome": "沙漠",
+      "category": "怪物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "mixed",
+      "layout": "mixed-monster-poses",
+      "species": [
+        {
+          "name": "砂蝎",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "沙虫",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "rowLabels": [
+        "砂蝎四方向待机",
+        "砂蝎朝右战斗姿态",
+        "沙虫四方向待机",
+        "沙虫朝右战斗姿态"
+      ],
+      "cellLabels": [
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ],
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-monster-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-92f25872-3361-45dd-bfca-f3d95a91d383.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "两种怪物各有四方向待机和朝右蓄力/攻击/受伤/倒地源姿态；移动及其余方向战斗动画尚未生成。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    },
+    {
+      "id": "desert-props-effects",
+      "name": "沙漠生活道具与扬沙特效",
+      "biome": "沙漠",
+      "category": "道具与特效",
+      "columns": 4,
+      "rows": 3,
+      "previewKind": "mixed",
+      "layout": "props-vfx",
+      "rowLabels": [
+        "生活生产道具",
+        "沙虫冲击四阶段",
+        "风沙环境四阶段"
+      ],
+      "cellLabels": [
+        [
+          "陶制水罐",
+          "芦苇粮篮",
+          "木晾晒架",
+          "卷织席"
+        ],
+        [
+          "起势",
+          "展开",
+          "峰值",
+          "消散"
+        ],
+        [
+          "低卷",
+          "延展",
+          "升散",
+          "消散"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-09/desert-props-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-props-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-d74366e5-8a01-4597-99ce-3ce13cfc689f.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "道具静帧与两组四阶段特效是不同用途，不合成一个循环。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      }
+    }
+  ],
+  "sourceStatus": "源图集已生成，未导出为运行时素材，未接入游戏",
+  "selectedAtlases": 14,
+  "plannedSourceRegions": 174
+}

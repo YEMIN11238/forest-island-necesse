@@ -1,0 +1,102 @@
+[
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-attack-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-attack-down.png",
+    "sha256": "4931698eab424616fc63473f08cdb10d060d1b402d9c834a6ef8812610d2d5a2"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-attack-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-attack-left.png",
+    "sha256": "1b581f0d64b33cc4b1b4a56b067f71d3c131b2c74ee5640fe81a199b9c23f5c5"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-attack-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-attack-right.png",
+    "sha256": "4e2cc4b416622015e8aba8bf5156b3dd110dee2449032d399aa7bd37b2bf509c"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-attack-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-attack-up.png",
+    "sha256": "cfa6ef6ab00fa8a5e9d1814a4925a3ee3b02bf3abbbbdda31811ba8e0c6d0e4c"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-carry.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-carry.png",
+    "sha256": "40abdc179310bd89a94fa72602938507794b526976dd88b6334a850ca69c62f7"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-down.png",
+    "sha256": "ae81faf30bef211f021b27a38a412baca0258b33fe2bfb00819dd9191b840e7e"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-downed.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-downed.png",
+    "sha256": "e67383b6c3329f07a45b0e2c5129fa17299e744809e49f5941bec6d61ce2e4d5"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-idle-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-idle-down.png",
+    "sha256": "071450395b0e95ecf4a389e48201d893eb7a8e7e609ed5a811e23709076c9359"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-idle-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-idle-left.png",
+    "sha256": "9f4edc41e90afe1ea96b5f495b0aec9ff76eb9d094caf9a36326b968e00cdc15"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-idle-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-idle-right.png",
+    "sha256": "09d47383eef6671d1e1c109e6e61772602b34bdadae54b420b3fcb391b4d2b58"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-idle-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-idle-up.png",
+    "sha256": "4a85b2c6c395fd2aa11ac22fdada982d403f110c5b7aaa922e96c66b1aa8061b"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-left.png",
+    "sha256": "c19d3dee5c7f185404c87e4f7575b59f701676699c2e5805e509c0ca21a8f531"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-right.png",
+    "sha256": "62c1d15c93565a4ae29607104df2bc3d5a80b2f68b6ca299f30f2bb4fff4f3fe"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-sleep.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-sleep.png",
+    "sha256": "91ddd6bb664edcee3cefe2213fc42bb3bcb388a92d80fafb383a4960c6aa440d"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-up.png",
+    "sha256": "9efbee40038a891562aa8285dedea4e0c770fc922d0ad6376763f407cc79a69f"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-walk-down.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-walk-down.png",
+    "sha256": "0668d7b91b7233ca77e26aa8267a57063cd4fd692cf91c752536f0b1cee08149"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-walk-left.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-walk-left.png",
+    "sha256": "bea68e0d1c6a6f179ccc39abc23454bd6bf652d8a5c603f5b5d37ff3c73c052f"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-walk-right.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-walk-right.png",
+    "sha256": "9b683e7344ee1eb7c940f2004c16faed42bf8ac0cc0e7717d43388949d2cdf97"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-walk-up.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-walk-up.png",
+    "sha256": "c69e38cdf58c0afa6698d72d5c0131b2ba246f08be6d664be259422b017f30fc"
+  },
+  {
+    "file": "mod/resources/mosslume/residents/carpenter-work.png",
+    "backup": "mosslume/art/characters-r8/backup-before-r8/residents/carpenter-work.png",
+    "sha256": "5e70202e08f3584253678a970cfe71c3d2be8f653869a043a1c6257fc0d9ec6f"
+  }
+]

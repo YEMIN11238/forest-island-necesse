@@ -1,0 +1,14 @@
+[
+  {
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "exit": 0,
+    "output": "AttackHandSocketsTest PASS: 144 visible reviewed sockets; 960 actual native axe/sword/bow quads incl. charge, four-way aim and translated feet; angles preserved; one weapon, zero native arm/body duplicates\n"
+  },
+  {
+    "exit": 0,
+    "output": "CharacterAnimationTest PASS: native-progress frames and four-way aim\n"
+  }
+]

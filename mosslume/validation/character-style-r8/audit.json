@@ -1,0 +1,81 @@
+{
+  "scope": "Read-only current asset and source audit, before r8 replacement. No live game or global build performed.",
+  "AI_behavior": "Not changed",
+  "primaryCause": "Mixed generated art batches selected by animation state, rather than missing HumanShop rendering patch.",
+  "families": [
+    {
+      "family": "merchant",
+      "npcs": [
+        "海棠/anglerhuman",
+        "阿越/hunterhuman",
+        "阿穆/traderhuman",
+        "知路/explorerhuman"
+      ],
+      "idle": "Old batch-03 narrow body, 13–15 logical pixels wide at 31–32 pixels tall; 4 stand-only files, no directional idle/walk strips.",
+      "attack": "r6 much larger head/wider body, so entering attack changes silhouette.",
+      "recommendation": "Replace all directional idle, walk and attack from a single new atlas; use same player compact 32-pixel visible height and consistent per-actor scale."
+    },
+    {
+      "family": "carpenter",
+      "npcs": [
+        "林叔/elderhuman",
+        "阿巧/blacksmithhuman",
+        "石岩/minerhuman"
+      ],
+      "idle": "Gray-haired older man with dark skin.",
+      "attack": "r6 switches to brown-haired younger-looking man and different face.",
+      "recommendation": "Regenerate a single coherent 4-direction idle/walk/attack family preserving elder/carpenter identity."
+    },
+    {
+      "family": "farmer",
+      "npcs": [
+        "小禾/farmerhuman",
+        "木木/animalkeeperhuman",
+        "思思/stylisthuman"
+      ],
+      "idle": "Orange bob hair, cream sleeves/apron.",
+      "attack": "r6 changes to brown-red hair and green sleeveless outfit.",
+      "recommendation": "Regenerate a single coherent 4-direction idle/walk/attack family preserving farmer identity."
+    },
+    {
+      "family": "ashuo",
+      "npcs": [
+        "阿朔/guardhuman"
+      ],
+      "idle": "30–33 pixel height, large compact head and stable shoes.",
+      "attack": "Same r7 atlas as idle/walk; no identity switch detected.",
+      "recommendation": "Keep art; root hand socket correction applies."
+    },
+    {
+      "family": "luan",
+      "npcs": [
+        "鹿安/alchemisthuman"
+      ],
+      "idle": "31–33 pixel height, compact head, pale braid/violet cape.",
+      "attack": "Same r7 atlas as idle/walk; no identity switch detected.",
+      "recommendation": "Keep art; root hand socket correction applies."
+    }
+  ],
+  "nativeDrawOverrides": {
+    "HumanShopAndProfessions": "No addDrawables/getUserDrawOptions override in actual source-rebuild hierarchy, apart from ElderHumanMob.",
+    "ElderHumanMob": "addDrawables only bypasses super on GameSeasons.isAprilFools() && !isAttacking. Other dates call patched HumanMob. Current 2026-10-25 does not explain observed mismatch.",
+    "objectUsers": "MosslumeResidentObjectUserPatch targets HumanMob.getUserDrawOptions; bed/chair own sorting receives same custom resident. No profession override found."
+  },
+  "additionalGaps": [
+    "Farmer/carpenter have single side-specific carry/sleep/downed poses from older batch. No direction-aware carry/sleep poses. Ashuo/luan have same-body idle fallbacks and procedural downed/sleep rotation. These do not expose original native skin but remain visual limitations.",
+    "All native professions are mapped to five visual families; six residents currently share farmer/carpenter/merchant appearances instead of unique costumes. Fixing family style will not create ten distinct identities."
+  ],
+  "evidence": [
+    "idle-contact.png",
+    "measurements.json",
+    "lifecycle-contact.png",
+    "lifecycle.json"
+  ],
+  "recommendedMinimum": [
+    "Regenerate farmer/carpenter/merchant coherent atlases using player as style reference",
+    "Preserve 64x64 frame, shoe foot32,52, visible standing32px, nearest sampling",
+    "Export idle/walk/attack together with one scale per actor",
+    "Use same hand-socket atlas metadata as body frames; no independent item animation origin",
+    "Keep native NPC profession IDs, behavior, AI memory and saves unchanged"
+  ]
+}

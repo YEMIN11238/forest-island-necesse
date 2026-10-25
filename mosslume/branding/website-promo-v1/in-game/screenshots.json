@@ -1,0 +1,83 @@
+{
+  "notes": "真实游戏开发阶段实机截图，非生成插画。PNG是未经修改的原始截图副本；WebP仅作格式压缩，不裁切、不补绘、不改色。",
+  "images": [
+    {
+      "label": "白天海岸营地",
+      "png": "01-camp-day.png",
+      "webp": "01-camp-day.webp",
+      "width": 2400,
+      "height": 1800,
+      "build": "0.5.1-life-actions-preview",
+      "type": "actual-in-game-development-capture",
+      "source": "mosslume/validation/life-actions-r7/day.png",
+      "source_sha256": "d4debc9003fc15bf710e5016331562d8930d003d9c4e7fbc6505ca7d69d759d2",
+      "png_is_unchanged_copy": true,
+      "note": "原生游戏画面，保留原始HUD。"
+    },
+    {
+      "label": "夜间营地与火光",
+      "png": "02-camp-night.png",
+      "webp": "02-camp-night.webp",
+      "width": 2400,
+      "height": 1800,
+      "build": "0.5.1-life-actions-preview",
+      "type": "actual-in-game-development-capture",
+      "source": "mosslume/validation/life-actions-r7/night.png",
+      "source_sha256": "7c4ddc4e172364e6e48374eb55bd8a0be0c1fb2416a3ca5246687b8ef0ded225",
+      "png_is_unchanged_copy": true,
+      "note": "原生游戏画面，保留原始HUD。"
+    },
+    {
+      "label": "NPC 对话气泡",
+      "png": "03-npc-conversation.png",
+      "webp": "03-npc-conversation.webp",
+      "width": 2400,
+      "height": 1740,
+      "build": "0.4.6",
+      "type": "actual-in-game-development-capture",
+      "source": "mosslume/validation/companions-r5/cognition-bubbles.png",
+      "source_sha256": "7876465f663d9d926657e2e2bdcc11fd7e57c694d4c3fbc89ac011811e5f81ed",
+      "png_is_unchanged_copy": true,
+      "note": "原生NPC气泡与任务历史的离线验证场景，不代表实时线上模型对话。"
+    },
+    {
+      "label": "蘑菇林与蘑菇屋",
+      "png": "04-mushroom-forest.png",
+      "webp": "04-mushroom-forest.webp",
+      "width": 2400,
+      "height": 1800,
+      "build": "0.4.0-r4-wilderness",
+      "type": "actual-in-game-development-capture",
+      "source": "mosslume/validation/biomes-r4/biome-mushroom.png",
+      "source_sha256": "9b50677c5a47d8a79b111f2de4ceb44d3c8397027957346017f807b6cc0ef115",
+      "png_is_unchanged_copy": true,
+      "note": "较早开发版本的原生地形截图。"
+    },
+    {
+      "label": "雪地、雪屋与动物",
+      "png": "05-snowfield.png",
+      "webp": "05-snowfield.webp",
+      "width": 2400,
+      "height": 1800,
+      "build": "0.4.0-r4-wilderness",
+      "type": "actual-in-game-development-capture",
+      "source": "mosslume/validation/biomes-r4/biome-snowfield.png",
+      "source_sha256": "79ce590f45523c032f1e9f82141af9eea95ccc2cda2ba57d39c671cdfa0b7177",
+      "png_is_unchanged_copy": true,
+      "note": "较早开发版本的原生地形截图。"
+    },
+    {
+      "label": "白发镰刃 Boss 实机测试",
+      "png": "06-moonreaper-boss.png",
+      "webp": "06-moonreaper-boss.webp",
+      "width": 2400,
+      "height": 1740,
+      "build": "0.5.2-combat-bosses",
+      "type": "actual-in-game-development-capture",
+      "source": "build/refactor-evidence/combat-r8-direct-boss-c/initial/mlmoonreaper-second-4.png",
+      "source_sha256": "5185a9b46f4d5498634866e44e0cb370554b55a04eb74a3e2595f1758da7a4d2",
+      "png_is_unchanged_copy": true,
+      "note": "原生Boss攻击验证场景，对象为测试用动物，不是玩家实战或平衡性展示。"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-23",
+  "statusMeaning": "六组首轮源图已保存；尚未完成运行时素材导出或新地形功能。后续可继续增加变体和完整动画。",
+  "sourceBatches": [
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11"
+  ],
+  "sourceCoverage": [
+    "forest",
+    "meadow",
+    "coast",
+    "mountain",
+    "cave",
+    "wetland",
+    "mushroom_forest",
+    "ruins_overlay",
+    "snowfield",
+    "desert",
+    "volcano"
+  ],
+  "pendingPacks": [],
+  "existingPackGaps": [
+    "terrain seamless/autotile export and cliff seams",
+    "building scale/pivot/layer assembly",
+    "animal life/run/injury states",
+    "monster movement and complete directional combat cycles",
+    "separate emission/shadow contours/projectiles",
+    "native IDs/collision/runtime visual QA"
+  ],
+  "lastUpdated": "2026-10-23",
+  "generatedPacks": [
+    {
+      "name": "湿地",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "wetland-terrain-connectors",
+        "wetland-flora-resources",
+        "wetland-buildings-layers",
+        "wetland-frog-directional-poses",
+        "wetland-dragonfly-directional-poses",
+        "wetland-monsters-poses",
+        "wetland-props-local-effects"
+      ],
+      "plannedNeeds": [
+        "湿泥/浅水/浮萍/岸边过渡",
+        "柳树/枯树/芦苇",
+        "高脚屋/草药棚/栈道",
+        "青蛙/蜻蜓",
+        "泥沼怪/毒囊虫"
+      ]
+    },
+    {
+      "name": "蘑菇林",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "mushroom-terrain-connectors",
+        "mushroom-flora-resources",
+        "mushroom-buildings-layers",
+        "mushroom-snail-directional-poses",
+        "mushroom-moth-directional-poses",
+        "mushroom-monsters-poses",
+        "mushroom-props-local-effects"
+      ],
+      "plannedNeeds": [
+        "菌毯/菌丝/腐木",
+        "分层菌伞/发光孢子",
+        "菌林小屋/采菌棚/研究小站",
+        "蜗牛/蛾",
+        "孢子怪/菌甲兽"
+      ]
+    },
+    {
+      "name": "遗迹",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "ruins-ground-connectors",
+        "ruins-architecture-modules",
+        "ruins-cover-variants",
+        "ruins-mechanism-props",
+        "ruins-statue-guard-poses",
+        "ruins-bronze-sentinel-poses",
+        "ruins-mechanism-vfx"
+      ],
+      "plannedNeeds": [
+        "破损石砖/石墙/柱/拱门",
+        "祭坛/废塔/地下入口",
+        "苔藓/积沙/积雪覆盖变体",
+        "石像守卫/遗迹哨兵",
+        "机关/崩解/开门特效"
+      ]
+    },
+    {
+      "name": "雪地",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "snowfield-terrain-connectors",
+        "snowfield-flora-resources",
+        "snowfield-building-layers",
+        "snow-rabbit-directional-poses",
+        "arctic-fox-directional-poses",
+        "snowfield-monster-poses",
+        "snowfield-props-effects"
+      ],
+      "plannedNeeds": [
+        "厚薄雪/冰面/雪崖/过渡",
+        "覆雪树冠与树干",
+        "雪地木屋/猎人营地/石炉屋",
+        "雪兔/北极狐",
+        "冰甲兽/雪地潜伏者"
+      ]
+    },
+    {
+      "name": "沙漠",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "desert-terrain-connectors",
+        "desert-flora-resources",
+        "desert-building-layers",
+        "desert-lizard-directional-poses",
+        "fennec-fox-directional-poses",
+        "desert-monster-poses",
+        "desert-props-effects"
+      ],
+      "plannedNeeds": [
+        "沙地/沙丘/砂岩/干裂地/绿洲",
+        "仙人掌/耐旱灌木",
+        "土坯屋/商队帐篷/水井",
+        "蜥蜴/沙狐",
+        "沙蝎/钻沙虫"
+      ]
+    },
+    {
+      "name": "火山",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "volcanic-ground-connectors",
+        "volcanic-flora-resources",
+        "volcanic-buildings-layers",
+        "heat-beetle-directional-poses",
+        "lava-slug-poses",
+        "obsidian-beast-poses",
+        "volcano-props-vfx"
+      ],
+      "plannedNeeds": [
+        "灰烬/玄武岩/裂隙/熔岩纹理",
+        "焦木/火山矿石",
+        "黑石锻造所/耐热营地/采矿站",
+        "耐热甲虫",
+        "熔岩蛞蝓/黑曜石兽"
+      ]
+    }
+  ],
+  "pendingProductionTasks": [
+    "地形无缝/自动拼接与高差接缝",
+    "建筑层配准、门框拆分、共同锚点",
+    "树冠/树干配准与风动遮罩",
+    "动物脚点及完整移动生活受伤动作",
+    "怪物完整四向移动/攻击/受击/死亡动作",
+    "发光层、投影轮廓、粒子时序",
+    "游戏碰撞、采集状态、物品配置与运行时验收"
+  ]
+}

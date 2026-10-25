@@ -1,0 +1,1583 @@
+{
+  "project": "Mosslume",
+  "batch": "10",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "productionExportValidated": false,
+  "sourcePixelsModified": false,
+  "sourceAtlasCount": 7,
+  "requestedSourceRegions": 64,
+  "assets": [
+    {
+      "id": "ruins-ground-connectors",
+      "name": "遗迹地砖与断墙连接",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "category": "地形",
+      "biome": "遗迹",
+      "layout": "terrain-kit",
+      "cellLabels": [
+        "完整石砖",
+        "破损石砖",
+        "断墙直段",
+        "外墙角",
+        "内墙角",
+        "断墙端头",
+        "石台正面",
+        "石阶",
+        "碎石"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 0.75,
+        "note": "目标比例，待运行时校准",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-ground-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5d9b4dbc-57f4-467e-8021-65bcff7705f6.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "c21bb3bc4b1496bb6b7fab2f1eb41d8461c31d749c407472f1c30d27191d2e0b",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 860036,
+        "faintFringePixelsAlpha1To8": 88955,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            543,
+            376
+          ],
+          "visibleBounds": [
+            63,
+            96,
+            440,
+            257
+          ],
+          "label": "完整石砖"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            543,
+            0,
+            457,
+            376
+          ],
+          "visibleBounds": [
+            584,
+            97,
+            381,
+            255
+          ],
+          "label": "破损石砖"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1000,
+            0,
+            536,
+            376
+          ],
+          "visibleBounds": [
+            1035,
+            141,
+            453,
+            210
+          ],
+          "label": "断墙直段"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            376,
+            540,
+            316
+          ],
+          "visibleBounds": [
+            102,
+            399,
+            351,
+            268
+          ],
+          "label": "外墙角"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            540,
+            376,
+            571,
+            316
+          ],
+          "visibleBounds": [
+            628,
+            413,
+            367,
+            254
+          ],
+          "label": "内墙角"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1111,
+            376,
+            425,
+            316
+          ],
+          "visibleBounds": [
+            1228,
+            416,
+            171,
+            243
+          ],
+          "label": "断墙端头"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            692,
+            542,
+            332
+          ],
+          "visibleBounds": [
+            68,
+            765,
+            441,
+            179
+          ],
+          "label": "石台正面"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            542,
+            692,
+            467,
+            332
+          ],
+          "visibleBounds": [
+            575,
+            717,
+            399,
+            233
+          ],
+          "label": "石阶"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1009,
+            692,
+            527,
+            332
+          ],
+          "visibleBounds": [
+            1045,
+            735,
+            441,
+            220
+          ],
+          "label": "碎石"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-architecture-modules",
+      "name": "遗迹拱门石柱与地下入口",
+      "columns": 3,
+      "rows": 3,
+      "category": "建筑",
+      "biome": "遗迹",
+      "layout": "building-kit",
+      "cellLabels": [
+        "断拱门",
+        "残柱",
+        "倒柱",
+        "祭坛",
+        "废塔墙",
+        "地下入口",
+        "栏杆",
+        "断梁",
+        "门槛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1.5,
+          1
+        ],
+        "height": 2,
+        "note": "拱门目标；其它组件按人高配准",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-architecture-modules-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-832f96e4-1029-43e0-b80f-ed5cb25414d6.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "84094f573e694feb473da530ace7fc2d977ae5ee35f5d06add4fb35a2ea527e7",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 934985,
+        "faintFringePixelsAlpha1To8": 74596,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            581,
+            386
+          ],
+          "visibleBounds": [
+            102,
+            24,
+            406,
+            352
+          ],
+          "label": "断拱门"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            581,
+            0,
+            406,
+            386
+          ],
+          "visibleBounds": [
+            654,
+            56,
+            251,
+            316
+          ],
+          "label": "残柱"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            987,
+            0,
+            549,
+            386
+          ],
+          "visibleBounds": [
+            1070,
+            194,
+            354,
+            178
+          ],
+          "label": "倒柱"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            386,
+            519,
+            341
+          ],
+          "visibleBounds": [
+            130,
+            448,
+            331,
+            240
+          ],
+          "label": "祭坛"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            519,
+            386,
+            494,
+            341
+          ],
+          "visibleBounds": [
+            578,
+            397,
+            383,
+            312
+          ],
+          "label": "废塔墙"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1013,
+            386,
+            523,
+            341
+          ],
+          "visibleBounds": [
+            1066,
+            419,
+            398,
+            280
+          ],
+          "label": "地下入口"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            727,
+            526,
+            297
+          ],
+          "visibleBounds": [
+            79,
+            768,
+            416,
+            210
+          ],
+          "label": "栏杆"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            526,
+            727,
+            485,
+            297
+          ],
+          "visibleBounds": [
+            558,
+            776,
+            428,
+            199
+          ],
+          "label": "断梁"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1011,
+            727,
+            525,
+            297
+          ],
+          "visibleBounds": [
+            1037,
+            745,
+            442,
+            234
+          ],
+          "label": "门槛"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-cover-variants",
+      "name": "遗迹苔藓积沙积雪变体",
+      "columns": 3,
+      "rows": 3,
+      "category": "建筑",
+      "biome": "遗迹",
+      "layout": "building-kit",
+      "rowLabels": [
+        "苔藓",
+        "积沙",
+        "积雪"
+      ],
+      "cellLabels": [
+        "苔藓残柱",
+        "苔藓墙",
+        "苔藓坛",
+        "积沙残柱",
+        "积沙墙",
+        "积沙坛",
+        "积雪残柱",
+        "积雪墙",
+        "积雪坛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1.5,
+        "note": "同列形体为目标；覆盖配准待复核",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-cover-variants-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-cover-variants-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-039ef6ae-6938-4781-83bd-ea3a55c5abb0.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品",
+        "积雪覆盖下柱体可见高度略有变化；需用实际石柱尺度配准，不按图集格子自动等高缩放"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "5532d173ade234682fd361467a7f1ca10194682d1d2c5c0eb68ca3bf5e5e4d8d",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 908759,
+        "faintFringePixelsAlpha1To8": 71032,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            482,
+            341
+          ],
+          "visibleBounds": [
+            139,
+            25,
+            297,
+            316
+          ],
+          "label": "苔藓残柱"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            482,
+            0,
+            530,
+            341
+          ],
+          "visibleBounds": [
+            529,
+            125,
+            444,
+            216
+          ],
+          "label": "苔藓墙"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1012,
+            0,
+            524,
+            341
+          ],
+          "visibleBounds": [
+            1051,
+            118,
+            355,
+            223
+          ],
+          "label": "苔藓坛"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            478,
+            342
+          ],
+          "visibleBounds": [
+            139,
+            341,
+            298,
+            342
+          ],
+          "label": "积沙残柱"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            478,
+            341,
+            535,
+            342
+          ],
+          "visibleBounds": [
+            520,
+            341,
+            455,
+            342
+          ],
+          "label": "积沙墙"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1013,
+            341,
+            523,
+            342
+          ],
+          "visibleBounds": [
+            1051,
+            341,
+            354,
+            342
+          ],
+          "label": "积沙坛"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            683,
+            479,
+            341
+          ],
+          "visibleBounds": [
+            137,
+            683,
+            300,
+            319
+          ],
+          "label": "积雪残柱"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            479,
+            683,
+            531,
+            341
+          ],
+          "visibleBounds": [
+            522,
+            683,
+            453,
+            319
+          ],
+          "label": "积雪墙"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1010,
+            683,
+            526,
+            341
+          ],
+          "visibleBounds": [
+            1045,
+            683,
+            357,
+            316
+          ],
+          "label": "积雪坛"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-mechanism-props",
+      "name": "遗迹机关与探索道具",
+      "columns": 3,
+      "rows": 3,
+      "category": "道具",
+      "biome": "遗迹",
+      "layout": "props-kit",
+      "cellLabels": [
+        "拉杆",
+        "未触发踏板",
+        "已触发踏板",
+        "空晶座",
+        "嵌晶座",
+        "关闭石箱",
+        "打开石箱",
+        "残碑",
+        "陶罐"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.75,
+          0.75
+        ],
+        "height": 1,
+        "note": "按可触及高度配准",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-mechanism-props-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-mechanism-props-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7117ecc5-c46b-4813-92e9-e2d090989082.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "ba66877e9782d5553b14d1984646acbda05725c73b7e61be0274390fe40d9ab0",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1007712,
+        "faintFringePixelsAlpha1To8": 55584,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            527,
+            347
+          ],
+          "visibleBounds": [
+            126,
+            69,
+            335,
+            262
+          ],
+          "label": "拉杆"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            527,
+            0,
+            478,
+            347
+          ],
+          "visibleBounds": [
+            594,
+            129,
+            337,
+            193
+          ],
+          "label": "未触发踏板"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1005,
+            0,
+            531,
+            347
+          ],
+          "visibleBounds": [
+            1080,
+            156,
+            347,
+            175
+          ],
+          "label": "已触发踏板"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            347,
+            519,
+            328
+          ],
+          "visibleBounds": [
+            142,
+            396,
+            291,
+            264
+          ],
+          "label": "空晶座"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            519,
+            347,
+            460,
+            328
+          ],
+          "visibleBounds": [
+            605,
+            364,
+            299,
+            296
+          ],
+          "label": "嵌晶座"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            979,
+            347,
+            557,
+            328
+          ],
+          "visibleBounds": [
+            1055,
+            418,
+            383,
+            239
+          ],
+          "label": "关闭石箱"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            675,
+            546,
+            349
+          ],
+          "visibleBounds": [
+            113,
+            690,
+            362,
+            282
+          ],
+          "label": "打开石箱"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            546,
+            675,
+            432,
+            349
+          ],
+          "visibleBounds": [
+            618,
+            691,
+            284,
+            282
+          ],
+          "label": "残碑"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            978,
+            675,
+            558,
+            349
+          ],
+          "visibleBounds": [
+            1055,
+            728,
+            385,
+            250
+          ],
+          "label": "陶罐"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-statue-guard-poses",
+      "name": "遗迹石像守卫四向与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "category": "怪物",
+      "biome": "遗迹",
+      "layout": "monster-poses",
+      "species": [
+        {
+          "name": "石像守卫",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          0.75
+        ],
+        "height": 1.6,
+        "note": "普通守卫目标比例",
+        "tilePixels": 32
+      },
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-b06cea21-bdff-45c3-8ae5-05d034d43d36.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "cellLabels": [
+        "向下待机",
+        "向右待机",
+        "向上待机",
+        "向左待机",
+        "向右蓄力",
+        "向右攻击",
+        "向右受击",
+        "倒地"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "6344d27426b471214a55552ab1bbab3f843af71bd2a833fadc247acb32962f28",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 874481,
+        "faintFringePixelsAlpha1To8": 125751,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            418,
+            534
+          ],
+          "visibleBounds": [
+            41,
+            82,
+            333,
+            408
+          ],
+          "label": "向下待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            418,
+            0,
+            318,
+            534
+          ],
+          "visibleBounds": [
+            463,
+            80,
+            209,
+            410
+          ],
+          "label": "向右待机"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            736,
+            0,
+            446,
+            534
+          ],
+          "visibleBounds": [
+            801,
+            85,
+            324,
+            403
+          ],
+          "label": "向上待机"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1182,
+            0,
+            354,
+            534
+          ],
+          "visibleBounds": [
+            1239,
+            80,
+            219,
+            410
+          ],
+          "label": "向左待机"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            534,
+            375,
+            490
+          ],
+          "visibleBounds": [
+            32,
+            595,
+            332,
+            341
+          ],
+          "label": "向右蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            375,
+            534,
+            431,
+            490
+          ],
+          "visibleBounds": [
+            387,
+            594,
+            408,
+            337
+          ],
+          "label": "向右攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            806,
+            534,
+            297,
+            490
+          ],
+          "visibleBounds": [
+            817,
+            578,
+            256,
+            364
+          ],
+          "label": "向右受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1103,
+            534,
+            433,
+            490
+          ],
+          "visibleBounds": [
+            1133,
+            769,
+            384,
+            186
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-bronze-sentinel-poses",
+      "name": "遗迹铜壳哨兵四向与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "category": "怪物",
+      "biome": "遗迹",
+      "layout": "monster-poses",
+      "species": [
+        {
+          "name": "铜壳哨兵",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          0.75
+        ],
+        "height": 0.7,
+        "note": "低矮远程构装体目标比例",
+        "tilePixels": 32
+      },
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-ac3bf89c-7311-432c-8e16-9b7bbe84fe92.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "cellLabels": [
+        "向下待机",
+        "向右待机",
+        "向上待机",
+        "向左待机",
+        "向右蓄力",
+        "向右攻击",
+        "向右受击",
+        "倒地"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "23331755894eabf430adfe9e0e664713ce3f8c08ad8dc221d4f33e7fb6918e10",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1107340,
+        "faintFringePixelsAlpha1To8": 76938,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            391,
+            536
+          ],
+          "visibleBounds": [
+            49,
+            193,
+            310,
+            252
+          ],
+          "label": "向下待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            391,
+            0,
+            381,
+            536
+          ],
+          "visibleBounds": [
+            423,
+            193,
+            318,
+            262
+          ],
+          "label": "向右待机"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            772,
+            0,
+            374,
+            536
+          ],
+          "visibleBounds": [
+            804,
+            193,
+            310,
+            252
+          ],
+          "label": "向上待机"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1146,
+            0,
+            390,
+            536
+          ],
+          "visibleBounds": [
+            1179,
+            193,
+            318,
+            262
+          ],
+          "label": "向左待机"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            536,
+            378,
+            488
+          ],
+          "visibleBounds": [
+            36,
+            644,
+            300,
+            234
+          ],
+          "label": "向右蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            378,
+            536,
+            399,
+            488
+          ],
+          "visibleBounds": [
+            421,
+            643,
+            330,
+            235
+          ],
+          "label": "向右攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            777,
+            536,
+            357,
+            488
+          ],
+          "visibleBounds": [
+            804,
+            618,
+            300,
+            256
+          ],
+          "label": "向右受击"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1134,
+            536,
+            402,
+            488
+          ],
+          "visibleBounds": [
+            1164,
+            697,
+            342,
+            177
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "ruins-mechanism-vfx",
+      "name": "遗迹能量命中崩解与激活光点",
+      "columns": 4,
+      "rows": 3,
+      "category": "特效",
+      "biome": "遗迹",
+      "layout": "vfx-sequences",
+      "rowLabels": [
+        "能量命中",
+        "石块崩解",
+        "上升激活光点"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1.5,
+        "note": "四阶段效果关键图，完整曲线待引擎驱动",
+        "tilePixels": 32
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-10/ruins-mechanism-vfx-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-mechanism-vfx-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6c6c694e-979f-4fba-8407-7f3ffb843f71.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "sourceBatch": "10",
+      "biomeLabels": [
+        "遗迹"
+      ],
+      "width": 1448,
+      "height": 1086,
+      "sourceMode": "RGBA",
+      "sha256": "7ac254e6751695394241cfcbba82c7a06be22a62e293f996440d7dd24338a192",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1148323,
+        "faintFringePixelsAlpha1To8": 150261,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            379,
+            400
+          ],
+          "visibleBounds": [
+            104,
+            111,
+            229,
+            240
+          ]
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            379,
+            0,
+            360,
+            400
+          ],
+          "visibleBounds": [
+            426,
+            103,
+            280,
+            269
+          ]
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            739,
+            0,
+            376,
+            400
+          ],
+          "visibleBounds": [
+            773,
+            109,
+            264,
+            263
+          ]
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1115,
+            0,
+            333,
+            400
+          ],
+          "visibleBounds": [
+            1194,
+            150,
+            158,
+            173
+          ]
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            400,
+            378,
+            366
+          ],
+          "visibleBounds": [
+            67,
+            467,
+            290,
+            257
+          ]
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            378,
+            400,
+            372,
+            366
+          ],
+          "visibleBounds": [
+            400,
+            429,
+            323,
+            312
+          ]
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            750,
+            400,
+            368,
+            366
+          ],
+          "visibleBounds": [
+            777,
+            440,
+            284,
+            305
+          ]
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1118,
+            400,
+            330,
+            366
+          ],
+          "visibleBounds": [
+            1176,
+            489,
+            182,
+            235
+          ]
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            766,
+            398,
+            320
+          ],
+          "visibleBounds": [
+            138,
+            863,
+            156,
+            136
+          ]
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            398,
+            766,
+            347,
+            320
+          ],
+          "visibleBounds": [
+            502,
+            787,
+            131,
+            229
+          ]
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            745,
+            766,
+            360,
+            320
+          ],
+          "visibleBounds": [
+            857,
+            791,
+            119,
+            228
+          ]
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1105,
+            766,
+            343,
+            320
+          ],
+          "visibleBounds": [
+            1234,
+            821,
+            79,
+            182
+          ]
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "sdkVersion": "2.0.4",
+  "javaRelease": 17,
+  "scope": "Explicit OpenAIChatModel, DeepSeekFormatter, message and ToolSchema path only; host supplies SLF4J 1.7 API. No generic agent tools, MCP, filesystem, shell, network tracing or remote memory backends are initialized.",
+  "artifacts": [
+    {
+      "group": "io.agentscope",
+      "artifact": "agentscope-core",
+      "version": "2.0.4",
+      "url": "https://repo.maven.apache.org/maven2/io/agentscope/agentscope-core/2.0.4/agentscope-core-2.0.4.jar",
+      "sha256": "032a90cb1510b30f52f344a8e6a1047fa969314feb97c43c3da753e0505617a5",
+      "bytes": 857138
+    },
+    {
+      "group": "io.agentscope",
+      "artifact": "agentscope-extensions-model-openai",
+      "version": "2.0.4",
+      "url": "https://repo.maven.apache.org/maven2/io/agentscope/agentscope-extensions-model-openai/2.0.4/agentscope-extensions-model-openai-2.0.4.jar",
+      "sha256": "b815c797400ee112382b841fa908196908c946bff58a97b72cdf6cd1e8522c3e",
+      "bytes": 145021
+    },
+    {
+      "group": "io.projectreactor",
+      "artifact": "reactor-core",
+      "version": "3.8.2",
+      "url": "https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.8.2/reactor-core-3.8.2.jar",
+      "sha256": "e800681657a370c6416ae66b3060bf2fe87d3a3107bd7ce932acac0c2e002d97",
+      "bytes": 1937041
+    },
+    {
+      "group": "org.reactivestreams",
+      "artifact": "reactive-streams",
+      "version": "1.0.4",
+      "url": "https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar",
+      "sha256": "f75ca597789b3dac58f61857b9ac2e1034a68fa672db35055a8fb4509e325f28",
+      "bytes": 11640
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "artifact": "jackson-databind",
+      "version": "2.21.1",
+      "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.21.1/jackson-databind-2.21.1.jar",
+      "sha256": "b011eb5202d9ec889e27f1dcbdf6c63f06a76e7a16c0a1b30c6048d556c9a28e",
+      "bytes": 1701769
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "artifact": "jackson-core",
+      "version": "2.21.1",
+      "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-core/2.21.1/jackson-core-2.21.1.jar",
+      "sha256": "1edd5f2e49dca5f8e4519957c24b7b3050bd1c7ee883920da33cff031ff1f7c0",
+      "bytes": 594806
+    },
+    {
+      "group": "com.fasterxml.jackson.core",
+      "artifact": "jackson-annotations",
+      "version": "2.21",
+      "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.21/jackson-annotations-2.21.jar",
+      "sha256": "53ca085f4a150f703f49e1aabd935bd03b43e1ea3d55d135438292af22cef56b",
+      "bytes": 82104
+    },
+    {
+      "group": "com.fasterxml.jackson.datatype",
+      "artifact": "jackson-datatype-jsr310",
+      "version": "2.21.1",
+      "url": "https://repo.maven.apache.org/maven2/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.21.1/jackson-datatype-jsr310-2.21.1.jar",
+      "sha256": "4d63378b0a6b53733f086ebd301023ba211b9387e417bd584a5400320cd08b8d",
+      "bytes": 136580
+    }
+  ],
+  "sourceTag": "v2.0.4",
+  "sourceCommit": "0b6743b263ba8e39eb417e35048026f1e0196548"
+}

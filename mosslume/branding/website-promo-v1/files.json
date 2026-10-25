@@ -1,0 +1,26 @@
+[
+  {
+    "png": "01-mosslume-original-key-art.png",
+    "webp": "01-mosslume-original-key-art.webp",
+    "width": 1672,
+    "height": 941,
+    "png_bytes": 2672291,
+    "webp_bytes": 504236
+  },
+  {
+    "png": "02-coastal-camp-no-ui.png",
+    "webp": "02-coastal-camp-no-ui.webp",
+    "width": 1672,
+    "height": 941,
+    "png_bytes": 3037595,
+    "webp_bytes": 616638
+  },
+  {
+    "png": "03-glowing-forest-no-ui.png",
+    "webp": "03-glowing-forest-no-ui.webp",
+    "width": 1672,
+    "height": 941,
+    "png_bytes": 3157270,
+    "webp_bytes": 643832
+  }
+]

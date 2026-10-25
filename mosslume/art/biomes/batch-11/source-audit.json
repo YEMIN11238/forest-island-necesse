@@ -1,0 +1,184 @@
+{
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "sourceAtlases": 7,
+  "requestedSourceRegions": 71,
+  "sourcePixelsModified": false,
+  "runtimeScaleCalibrated": false,
+  "integratedIntoGame": false,
+  "checks": [
+    {
+      "id": "volcanic-ground-connectors",
+      "copyMatchesGeneratedSource": true,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 742355,
+        "faintFringePixelsAlpha1To8": 64292,
+        "maximum": 254
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "volcanic-flora-resources",
+      "copyMatchesGeneratedSource": true,
+      "width": 1312,
+      "height": 1199,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 984671,
+        "faintFringePixelsAlpha1To8": 97888,
+        "maximum": 255
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "volcanic-buildings-layers",
+      "copyMatchesGeneratedSource": true,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 656258,
+        "faintFringePixelsAlpha1To8": 72347,
+        "maximum": 255
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "heat-beetle-directional-poses",
+      "copyMatchesGeneratedSource": true,
+      "width": 1312,
+      "height": 1199,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 995975,
+        "faintFringePixelsAlpha1To8": 145076,
+        "maximum": 255
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "lava-slug-poses",
+      "copyMatchesGeneratedSource": true,
+      "width": 1774,
+      "height": 887,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1102084,
+        "faintFringePixelsAlpha1To8": 42105,
+        "maximum": 255
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "obsidian-beast-poses",
+      "copyMatchesGeneratedSource": true,
+      "width": 1536,
+      "height": 1024,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 983496,
+        "faintFringePixelsAlpha1To8": 88364,
+        "maximum": 254
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": true,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [
+          {
+            "row": 1,
+            "division": 3,
+            "position": 1152,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "column",
+            "row": 1,
+            "position": 1152
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false
+    },
+    {
+      "id": "volcano-props-vfx",
+      "copyMatchesGeneratedSource": true,
+      "width": 1448,
+      "height": 1086,
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1132073,
+        "faintFringePixelsAlpha1To8": 152289,
+        "maximum": 255
+      },
+      "emptyPreviewRegions": 0,
+      "manualRegionReviewNeeded": false,
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false
+    }
+  ]
+}

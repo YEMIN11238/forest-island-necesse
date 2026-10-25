@@ -1,0 +1,365 @@
+{
+  "scope": "Offline pixel dimensions, nonempty cells and feet; actual combat runtime validated separately by root.",
+  "bosses": [
+    {
+      "boss": "stone-watcher",
+      "atlasDimensions": [
+        768,
+        384
+      ],
+      "cellsNonempty": 32,
+      "opaqueFootYs": [
+        80
+      ],
+      "iconDimensions": [
+        32,
+        32
+      ],
+      "sha256": "62c193e11bba26f886c3b9eb11d02f364d57b06914cc4b09a301b94bbc44dd8a",
+      "oneScaleForAllStates": 0.37540533724137937,
+      "poses": [
+        {
+          "direction": "up",
+          "pose": "ready",
+          "height": 64
+        },
+        {
+          "direction": "up",
+          "pose": "moveA",
+          "height": 59
+        },
+        {
+          "direction": "up",
+          "pose": "moveB",
+          "height": 62
+        },
+        {
+          "direction": "up",
+          "pose": "windup",
+          "height": 71
+        },
+        {
+          "direction": "up",
+          "pose": "strike",
+          "height": 56
+        },
+        {
+          "direction": "up",
+          "pose": "recover",
+          "height": 63
+        },
+        {
+          "direction": "up",
+          "pose": "hurt",
+          "height": 59
+        },
+        {
+          "direction": "up",
+          "pose": "death",
+          "height": 41
+        },
+        {
+          "direction": "right",
+          "pose": "ready",
+          "height": 68
+        },
+        {
+          "direction": "right",
+          "pose": "moveA",
+          "height": 63
+        },
+        {
+          "direction": "right",
+          "pose": "moveB",
+          "height": 63
+        },
+        {
+          "direction": "right",
+          "pose": "windup",
+          "height": 75
+        },
+        {
+          "direction": "right",
+          "pose": "strike",
+          "height": 54
+        },
+        {
+          "direction": "right",
+          "pose": "recover",
+          "height": 63
+        },
+        {
+          "direction": "right",
+          "pose": "hurt",
+          "height": 61
+        },
+        {
+          "direction": "right",
+          "pose": "death",
+          "height": 35
+        },
+        {
+          "direction": "down",
+          "pose": "ready",
+          "height": 65
+        },
+        {
+          "direction": "down",
+          "pose": "moveA",
+          "height": 63
+        },
+        {
+          "direction": "down",
+          "pose": "moveB",
+          "height": 63
+        },
+        {
+          "direction": "down",
+          "pose": "windup",
+          "height": 73
+        },
+        {
+          "direction": "down",
+          "pose": "strike",
+          "height": 56
+        },
+        {
+          "direction": "down",
+          "pose": "recover",
+          "height": 64
+        },
+        {
+          "direction": "down",
+          "pose": "hurt",
+          "height": 60
+        },
+        {
+          "direction": "down",
+          "pose": "death",
+          "height": 43
+        },
+        {
+          "direction": "left",
+          "pose": "ready",
+          "height": 65
+        },
+        {
+          "direction": "left",
+          "pose": "moveA",
+          "height": 63
+        },
+        {
+          "direction": "left",
+          "pose": "moveB",
+          "height": 64
+        },
+        {
+          "direction": "left",
+          "pose": "windup",
+          "height": 75
+        },
+        {
+          "direction": "left",
+          "pose": "strike",
+          "height": 51
+        },
+        {
+          "direction": "left",
+          "pose": "recover",
+          "height": 64
+        },
+        {
+          "direction": "left",
+          "pose": "hurt",
+          "height": 61
+        },
+        {
+          "direction": "left",
+          "pose": "death",
+          "height": 38
+        }
+      ],
+      "visualReview": "All 32 cells reviewed in runtime contact, directions correct; low corpse silhouette and complete blades/rock fragments retained."
+    },
+    {
+      "boss": "moon-reaper",
+      "atlasDimensions": [
+        768,
+        384
+      ],
+      "cellsNonempty": 32,
+      "opaqueFootYs": [
+        80
+      ],
+      "iconDimensions": [
+        32,
+        32
+      ],
+      "sha256": "e0e9b3dd6ff8c5a403157afa5f1e45a4f46fae2342a942a034ad8a657a13fee7",
+      "oneScaleForAllStates": 0.31570293179815184,
+      "poses": [
+        {
+          "direction": "up",
+          "pose": "ready",
+          "height": 59
+        },
+        {
+          "direction": "up",
+          "pose": "moveA",
+          "height": 56
+        },
+        {
+          "direction": "up",
+          "pose": "moveB",
+          "height": 58
+        },
+        {
+          "direction": "up",
+          "pose": "windup",
+          "height": 58
+        },
+        {
+          "direction": "up",
+          "pose": "strike",
+          "height": 59
+        },
+        {
+          "direction": "up",
+          "pose": "recover",
+          "height": 57
+        },
+        {
+          "direction": "up",
+          "pose": "hurt",
+          "height": 48
+        },
+        {
+          "direction": "up",
+          "pose": "death",
+          "height": 36
+        },
+        {
+          "direction": "right",
+          "pose": "ready",
+          "height": 58
+        },
+        {
+          "direction": "right",
+          "pose": "moveA",
+          "height": 60
+        },
+        {
+          "direction": "right",
+          "pose": "moveB",
+          "height": 60
+        },
+        {
+          "direction": "right",
+          "pose": "windup",
+          "height": 62
+        },
+        {
+          "direction": "right",
+          "pose": "strike",
+          "height": 58
+        },
+        {
+          "direction": "right",
+          "pose": "recover",
+          "height": 59
+        },
+        {
+          "direction": "right",
+          "pose": "hurt",
+          "height": 44
+        },
+        {
+          "direction": "right",
+          "pose": "death",
+          "height": 34
+        },
+        {
+          "direction": "down",
+          "pose": "ready",
+          "height": 58
+        },
+        {
+          "direction": "down",
+          "pose": "moveA",
+          "height": 59
+        },
+        {
+          "direction": "down",
+          "pose": "moveB",
+          "height": 59
+        },
+        {
+          "direction": "down",
+          "pose": "windup",
+          "height": 58
+        },
+        {
+          "direction": "down",
+          "pose": "strike",
+          "height": 61
+        },
+        {
+          "direction": "down",
+          "pose": "recover",
+          "height": 58
+        },
+        {
+          "direction": "down",
+          "pose": "hurt",
+          "height": 45
+        },
+        {
+          "direction": "down",
+          "pose": "death",
+          "height": 34
+        },
+        {
+          "direction": "left",
+          "pose": "ready",
+          "height": 59
+        },
+        {
+          "direction": "left",
+          "pose": "moveA",
+          "height": 58
+        },
+        {
+          "direction": "left",
+          "pose": "moveB",
+          "height": 60
+        },
+        {
+          "direction": "left",
+          "pose": "windup",
+          "height": 60
+        },
+        {
+          "direction": "left",
+          "pose": "strike",
+          "height": 53
+        },
+        {
+          "direction": "left",
+          "pose": "recover",
+          "height": 60
+        },
+        {
+          "direction": "left",
+          "pose": "hurt",
+          "height": 44
+        },
+        {
+          "direction": "left",
+          "pose": "death",
+          "height": 36
+        }
+      ],
+      "visualReview": "All 32 cells reviewed in runtime contact, directions correct; low corpse silhouette and complete blades/rock fragments retained."
+    }
+  ]
+}

@@ -46,15 +46,17 @@ public final class MosslumeNewWorldForm extends NewSaveForm {
         seed.setText(ServerCreationSettings.getNewRandomSpawnSeed());
         label("地图形态", 202);
         preset = setup.addComponent(new FormDropdownSelectionButton<String>(24, 227, FormInputSize.SIZE_32_TO_40, ButtonColor.BASE, 208));
+        preset.options.add("continuous", new StaticMessage("连续荒野"));
+        preset.options.add("biomes", new StaticMessage("自然荒野"));
         preset.options.add("forest_island", new StaticMessage("森林海岛"));
         preset.options.add("woodland", new StaticMessage("林地"));
-        preset.setSelected("forest_island", new StaticMessage("森林海岛"));
+        preset.setSelected("continuous", new StaticMessage("连续荒野"));
         setup.addComponent(new FormLabel("生存规则", new FontOptions(16), -1, 248, 202));
         rules = setup.addComponent(new FormDropdownSelectionButton<String>(248, 227, FormInputSize.SIZE_32_TO_40, ButtonColor.BASE, 208));
         rules.options.add("standard", new StaticMessage("标准生存"));
         rules.options.add("relaxed", new StaticMessage("宽松生存"));
         rules.setSelected("standard", new StaticMessage("标准生存"));
-        setup.addComponent(new FormLabel("与伙伴建设营地，探索有限的随机世界。\n伙伴默认重伤可救援。模型服务尚未连接。",
+        setup.addComponent(new FormLabel("从海岸营地出发，与伙伴探索荒野。\n沿林间小路进入大陆，发现不同地形与遗迹。",
             new FontOptions(16), -1, 24, 282, 432));
         FormTextButton begin = setup.addComponent(new FormTextButton("创建世界", 24, 372, 208));
         begin.setCooldown(1500); begin.onClicked(e -> createSelected());
@@ -84,7 +86,7 @@ public final class MosslumeNewWorldForm extends NewSaveForm {
             temporary.settings.canSettlersDie = false;
             temporary.settings.playerHunger = true;
             temporary.settings.survivalMode = true;
-            temporary.settings.unloadSettlements = false;
+            temporary.settings.unloadSettlements = WorldDefinition.fromSeed(encoded).isContinuous();
             temporary.settings.saveSettings();
         } finally { temporary.closeFileSystem(); }
         return new ServerCreationSettings(file, encoded, false);

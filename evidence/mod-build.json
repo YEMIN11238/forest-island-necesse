@@ -1,9 +1,44 @@
 {
-  "javaSources": 104,
-  "classes": 188,
+  "javaSources": 181,
+  "classes": 416,
   "jar": "/Users/zhangjunhao/Documents/Codex/2026-10-13/z-g-s/outputs/necesse-island/mod/dist/localforest-island.jar",
-  "sha256": "e009b72bd884cde57621894e591bf6bb26d2cf7cc53f5a555328336439c31041",
+  "sha256": "22ccfaa42526a67c93ffafa370e4a94613dd8a87dc7f13343342dd0d17a9f13b",
   "classpathKernelSha256": "0f0a2a5144d70810218c21f6a4020236776ddd9c9d6828b80e997882cf3d90e6",
+  "agentScopeVersion": "2.0.4",
+  "agentScopeDependencies": [
+    {
+      "name": "agentscope-core-2.0.4.jar",
+      "sha256": "032a90cb1510b30f52f344a8e6a1047fa969314feb97c43c3da753e0505617a5"
+    },
+    {
+      "name": "agentscope-extensions-model-openai-2.0.4.jar",
+      "sha256": "b815c797400ee112382b841fa908196908c946bff58a97b72cdf6cd1e8522c3e"
+    },
+    {
+      "name": "reactor-core-3.8.2.jar",
+      "sha256": "e800681657a370c6416ae66b3060bf2fe87d3a3107bd7ce932acac0c2e002d97"
+    },
+    {
+      "name": "reactive-streams-1.0.4.jar",
+      "sha256": "f75ca597789b3dac58f61857b9ac2e1034a68fa672db35055a8fb4509e325f28"
+    },
+    {
+      "name": "jackson-databind-2.21.1.jar",
+      "sha256": "b011eb5202d9ec889e27f1dcbdf6c63f06a76e7a16c0a1b30c6048d556c9a28e"
+    },
+    {
+      "name": "jackson-core-2.21.1.jar",
+      "sha256": "1edd5f2e49dca5f8e4519957c24b7b3050bd1c7ee883920da33cff031ff1f7c0"
+    },
+    {
+      "name": "jackson-annotations-2.21.jar",
+      "sha256": "53ca085f4a150f703f49e1aabd935bd03b43e1ea3d55d135438292af22cef56b"
+    },
+    {
+      "name": "jackson-datatype-jsr310-2.21.1.jar",
+      "sha256": "4d63378b0a6b53733f086ebd301023ba211b9387e417bd584a5400320cd08b8d"
+    }
+  ],
   "compilation": "javac --release 17",
   "scope": "Mod compilation; does not assert full recovered kernel recompilation or runtime correctness."
 }

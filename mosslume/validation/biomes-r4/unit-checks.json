@@ -1,0 +1,82 @@
+[
+  {
+    "test": "MemoryRankingCheck",
+    "exit": 0,
+    "output": "MemoryRankingCheck: 7 checks passed\n"
+  },
+  {
+    "test": "localforest.world.GeneratedLayoutTest",
+    "exit": 0,
+    "output": "GeneratedLayoutTest PASS worlds=16 traversalOrder=stable biomeCoverage=true bounds=true resourceAccess=true legacySeedPreserved=true unknownVersionRejected=true\n"
+  },
+  {
+    "test": "localforest.world.BiomeLayoutTest",
+    "exit": 0,
+    "output": "BiomeLayoutTest PASS v3worlds=9 placementStress=32 forestSpawnRadius=32 campExits=1 noGlobalRoads=true regions=6 structures=18 utilityApproaches=12 reachable=true contentV1V2=unchanged mapV1V2=golden\n"
+  },
+  {
+    "test": "localforest.world.NativeFiniteTerrainTest",
+    "exit": 0,
+    "output": "NativeFiniteTerrainTest PASS worlds=4 nativeCellularAutomaton=true connectedMainland=true deterministic=true forestLattice=false spacingSafe=true\n"
+  },
+  {
+    "test": "localforest.scene.SceneGeometryTest",
+    "exit": 0,
+    "output": "SceneGeometryTest PASS: legacy house preserved, translated door/lights, bounded camera queries\n"
+  },
+  {
+    "test": "localforest.scene.SceneViewportTest",
+    "exit": 0,
+    "output": "SceneViewportTest PASS: unchanged inputs reused; move, resize and level bounds invalidate independently\n"
+  },
+  {
+    "test": "localforest.scene.SceneMetadataTest",
+    "exit": 0,
+    "output": "SceneMetadataTest PASS: native zero omission, explicit zero, packet round trip, last-house removal\n"
+  },
+  {
+    "test": "localforest.visual.DaylightMaterialTest",
+    "exit": 0,
+    "output": "Daylight material night isolation and continuous day transitions passed\n"
+  },
+  {
+    "test": "localforest.visual.TileColorCacheTest",
+    "exit": 0,
+    "output": "TileColorCacheTest PASS: dense/fallback equivalence, negative and edge coordinates, fresh-snapshot isolation\n"
+  },
+  {
+    "test": "localforest.tasks.CompanionTaskSaveTest",
+    "exit": 0,
+    "output": "PASS: stable task ID/target, safe resume gate, terminal states, progress, Unicode save round trip\n"
+  },
+  {
+    "test": "localforest.companions.CompanionWorldSaveTest",
+    "exit": 0,
+    "output": "PASS: native WorldData identity/downed/task/memory round trip; immediate request invalidation\n"
+  },
+  {
+    "test": "localforest.tasks.NativeWorkCompletionTest",
+    "exit": 0,
+    "output": "PASS: native single-job completion; exactly-once result; cancel/finish race\n"
+  },
+  {
+    "test": "localforest.ai.DeepSeekProviderTest",
+    "exit": 0,
+    "output": "DeepSeekProviderTest PASS: JSON/action validation, chat-only, budget/restart, HTTP mapping, usage, cancellation, sanitized errors, response-size bound; no paid calls\n"
+  },
+  {
+    "test": "localforest.visual.PathCoordinateKeyTest",
+    "exit": 0,
+    "output": "PathCoordinateKeyTest PASS: diagonal distribution, signed/extreme coordinate identity\n"
+  },
+  {
+    "test": "localforest.visual.SceneDrawOrderTest",
+    "exit": 0,
+    "output": "SceneDrawOrderTest PASS: native ordering, mixed native/buffered draws, signed coordinates and ties\n"
+  },
+  {
+    "test": "localforest.visual.OceanGeometryCacheTest",
+    "exit": 0,
+    "output": "OceanGeometryCacheTest PASS: exact legacy depths, negative edges, edits/load state and camera movement\n"
+  }
+]

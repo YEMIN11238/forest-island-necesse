@@ -1,0 +1,4561 @@
+{
+  "project": "Mosslume",
+  "batch": "09",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "productionExportValidated": false,
+  "sourcePixelsModified": false,
+  "sourceAtlasCount": 14,
+  "requestedSourceRegions": 174,
+  "assets": [
+    {
+      "id": "snowfield-terrain-connectors",
+      "name": "雪地积雪冰面与崖壁连接",
+      "biome": "雪地",
+      "category": "地形",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "地表",
+        "台地连接",
+        "过渡与通路"
+      ],
+      "cellLabels": [
+        [
+          "薄雪覆土",
+          "厚雪地表",
+          "冰面"
+        ],
+        [
+          "积雪崖壁直段",
+          "积雪崖外角",
+          "积雪崖内角"
+        ],
+        [
+          "雪岩过渡",
+          "雪地石阶",
+          "雪岸冰缘"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-3b51e364-20b8-4668-8342-d3bbdb63e770.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "terrain-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [
+        "源图的台地角件仍需按运行时邻接位掩码重新命名、切片和接缝校准；不宣称直接无缝拼接。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "d627fcc32836a417158482a07837a6516cd68ceb9a637f5ca9176d4af25f6a98",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 715239,
+        "faintFringePixelsAlpha1To8": 61520,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            537,
+            366
+          ],
+          "visibleBounds": [
+            92,
+            80,
+            399,
+            268
+          ],
+          "label": "薄雪覆土"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            537,
+            0,
+            460,
+            366
+          ],
+          "visibleBounds": [
+            584,
+            79,
+            370,
+            268
+          ],
+          "label": "厚雪地表"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            997,
+            0,
+            539,
+            366
+          ],
+          "visibleBounds": [
+            1041,
+            79,
+            405,
+            269
+          ],
+          "label": "冰面"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            366,
+            551,
+            311
+          ],
+          "visibleBounds": [
+            76,
+            398,
+            434,
+            252
+          ],
+          "label": "积雪崖壁直段"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            551,
+            366,
+            443,
+            311
+          ],
+          "visibleBounds": [
+            592,
+            384,
+            349,
+            281
+          ],
+          "label": "积雪崖外角"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            994,
+            366,
+            542,
+            311
+          ],
+          "visibleBounds": [
+            1047,
+            384,
+            408,
+            269
+          ],
+          "label": "积雪崖内角"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            677,
+            552,
+            347
+          ],
+          "visibleBounds": [
+            78,
+            724,
+            432,
+            242
+          ],
+          "label": "雪岩过渡"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            552,
+            677,
+            438,
+            347
+          ],
+          "visibleBounds": [
+            594,
+            689,
+            353,
+            276
+          ],
+          "label": "雪地石阶"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            990,
+            677,
+            546,
+            347
+          ],
+          "visibleBounds": [
+            1034,
+            723,
+            426,
+            248
+          ],
+          "label": "雪岸冰缘"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "snowfield-flora-resources",
+      "name": "雪地树木灌木与矿物",
+      "biome": "雪地",
+      "category": "植被",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "树木分层",
+        "灌木与冰晶",
+        "采集资源"
+      ],
+      "cellLabels": [
+        [
+          "雪松树冠",
+          "雪松树干",
+          "冬季裸树"
+        ],
+        [
+          "覆雪绿灌木",
+          "枯枝灌木",
+          "冰晶簇"
+        ],
+        [
+          "覆雪铁矿",
+          "积雪木段",
+          "冬草簇"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-f56f77e4-cd0d-4ae5-b38e-0aceffa30bd3.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "sprite-source",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "c50dbe97a27a3530b63ef9226bd399174c02fcbc1e08733fdfb844afb2c16b68",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1102523,
+        "faintFringePixelsAlpha1To8": 75968,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            608,
+            341
+          ],
+          "visibleBounds": [
+            175,
+            74,
+            337,
+            267
+          ],
+          "label": "雪松树冠"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            608,
+            0,
+            366,
+            341
+          ],
+          "visibleBounds": [
+            704,
+            109,
+            154,
+            232
+          ],
+          "label": "雪松树干"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            974,
+            0,
+            562,
+            341
+          ],
+          "visibleBounds": [
+            1090,
+            67,
+            319,
+            274
+          ],
+          "label": "冬季裸树"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            589,
+            427
+          ],
+          "visibleBounds": [
+            168,
+            341,
+            355,
+            401
+          ],
+          "label": "覆雪绿灌木"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            589,
+            341,
+            415,
+            427
+          ],
+          "visibleBounds": [
+            656,
+            341,
+            254,
+            413
+          ],
+          "label": "枯枝灌木"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1004,
+            341,
+            532,
+            427
+          ],
+          "visibleBounds": [
+            1098,
+            341,
+            282,
+            413
+          ],
+          "label": "冰晶簇"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            768,
+            557,
+            256
+          ],
+          "visibleBounds": [
+            198,
+            783,
+            289,
+            207
+          ],
+          "label": "覆雪铁矿"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            557,
+            768,
+            483,
+            256
+          ],
+          "visibleBounds": [
+            627,
+            822,
+            325,
+            168
+          ],
+          "label": "积雪木段"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1040,
+            768,
+            496,
+            256
+          ],
+          "visibleBounds": [
+            1128,
+            784,
+            224,
+            213
+          ],
+          "label": "冬草簇"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false
+    },
+    {
+      "id": "snowfield-building-layers",
+      "name": "雪地木屋猎人营地与石炉屋分层",
+      "biome": "雪地",
+      "category": "建筑",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "mixed",
+      "rowLabels": [
+        "雪地木屋：屋顶／墙体／门",
+        "猎人营地：棚顶／底座／入口",
+        "石炉屋：屋顶／墙体／炉门"
+      ],
+      "cellLabels": [
+        [
+          "木屋雪顶",
+          "木屋下墙壳",
+          "木屋门板"
+        ],
+        [
+          "猎人棚雪顶",
+          "猎人棚支架地台",
+          "猎人棚帆布入口"
+        ],
+        [
+          "石炉屋雪顶",
+          "石炉屋下墙壳",
+          "铁炉门"
+        ]
+      ],
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/snowfield-building-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-building-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-2f43fac5-8947-4edc-889f-48b0c7d9fd4c.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "layout": "building-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "sourceQaNotes": [
+        "木屋门与炉门源稿含门框/墙边，正式导出前需分离并校准屋顶、下墙与入口的统一枢轴。",
+        "猎人棚入口还带支柱，与底座叠合时需处理重复支柱。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "917b6096b6ee283a8b1f3429eee06e851306c540147aa0d45068243f1c9b21ab",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 680526,
+        "faintFringePixelsAlpha1To8": 72566,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            593,
+            341
+          ],
+          "visibleBounds": [
+            80,
+            16,
+            495,
+            325
+          ],
+          "label": "木屋雪顶"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            593,
+            0,
+            569,
+            341
+          ],
+          "visibleBounds": [
+            611,
+            81,
+            523,
+            260
+          ],
+          "label": "木屋下墙壳"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1162,
+            0,
+            374,
+            341
+          ],
+          "visibleBounds": [
+            1190,
+            113,
+            213,
+            228
+          ],
+          "label": "木屋门板"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            593,
+            342
+          ],
+          "visibleBounds": [
+            80,
+            341,
+            495,
+            342
+          ],
+          "label": "猎人棚雪顶"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            593,
+            341,
+            551,
+            342
+          ],
+          "visibleBounds": [
+            612,
+            341,
+            522,
+            339
+          ],
+          "label": "猎人棚支架地台"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1144,
+            341,
+            392,
+            342
+          ],
+          "visibleBounds": [
+            1155,
+            341,
+            305,
+            332
+          ],
+          "label": "猎人棚帆布入口"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            683,
+            578,
+            341
+          ],
+          "visibleBounds": [
+            81,
+            683,
+            480,
+            314
+          ],
+          "label": "石炉屋雪顶"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            578,
+            683,
+            588,
+            341
+          ],
+          "visibleBounds": [
+            595,
+            714,
+            548,
+            279
+          ],
+          "label": "石炉屋下墙壳"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1166,
+            683,
+            370,
+            341
+          ],
+          "visibleBounds": [
+            1190,
+            737,
+            240,
+            251
+          ],
+          "label": "铁炉门"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 1,
+            "position": 341,
+            "reason": "no_clear_gutter_near_grid_division"
+          },
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 341
+          },
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false
+    },
+    {
+      "id": "snow-rabbit-directional-poses",
+      "name": "雪兔四方向动作源图",
+      "biome": "雪地",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.45,
+          0.6
+        ],
+        "height": 0.5,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.png",
+      "promptFile": "art/biomes/batch-09/snow-rabbit-directional-poses-source-v2.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-cebfcb4f-941e-4b17-bab6-219e51e0e3f9.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "version": 2,
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "motionName": "跳步",
+      "sourceQaNotes": [
+        "v2 replaces selected v1 because v1 hind legs were too long.",
+        "Movement keys are concept sources; contact and temporal continuity require cleanup.",
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "3b32090458abfd4197f64335f55950b69e7a5d3d52b5e1eac5d9d2bd3250c3c7",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1015660,
+        "faintFringePixelsAlpha1To8": 88781,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            329,
+            319
+          ],
+          "visibleBounds": [
+            87,
+            76,
+            167,
+            204
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            329,
+            0,
+            327,
+            319
+          ],
+          "visibleBounds": [
+            404,
+            74,
+            175,
+            217
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            656,
+            0,
+            327,
+            319
+          ],
+          "visibleBounds": [
+            733,
+            76,
+            178,
+            220
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            983,
+            0,
+            329,
+            319
+          ],
+          "visibleBounds": [
+            1055,
+            75,
+            178,
+            211
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            319,
+            347,
+            287
+          ],
+          "visibleBounds": [
+            76,
+            349,
+            226,
+            220
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            347,
+            319,
+            318,
+            287
+          ],
+          "visibleBounds": [
+            393,
+            344,
+            233,
+            238
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            665,
+            319,
+            334,
+            287
+          ],
+          "visibleBounds": [
+            705,
+            342,
+            248,
+            227
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            999,
+            319,
+            313,
+            287
+          ],
+          "visibleBounds": [
+            1046,
+            350,
+            227,
+            219
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            606,
+            333,
+            297
+          ],
+          "visibleBounds": [
+            96,
+            640,
+            160,
+            223
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            333,
+            606,
+            321,
+            297
+          ],
+          "visibleBounds": [
+            411,
+            634,
+            163,
+            245
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            654,
+            606,
+            319,
+            297
+          ],
+          "visibleBounds": [
+            735,
+            631,
+            154,
+            260
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            973,
+            606,
+            339,
+            297
+          ],
+          "visibleBounds": [
+            1057,
+            639,
+            154,
+            229
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            903,
+            326,
+            296
+          ],
+          "visibleBounds": [
+            48,
+            918,
+            225,
+            220
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            326,
+            903,
+            321,
+            296
+          ],
+          "visibleBounds": [
+            379,
+            918,
+            222,
+            228
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            647,
+            903,
+            336,
+            296
+          ],
+          "visibleBounds": [
+            693,
+            916,
+            249,
+            228
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            983,
+            903,
+            329,
+            296
+          ],
+          "visibleBounds": [
+            1024,
+            919,
+            225,
+            217
+          ],
+          "label": "行走关键帧C"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "arctic-fox-directional-poses",
+      "name": "北极狐四方向动作源图",
+      "biome": "雪地",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.85,
+          0.55
+        ],
+        "height": 0.7,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/arctic-fox-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-52e514f2-f6dd-4a4f-901c-f1b599081126.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "b575ddef5beeb8bb3f9f6ac0d1091f9ec86b0681e40cc114ae9ee582328083b1",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 814774,
+        "faintFringePixelsAlpha1To8": 146722,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            348,
+            339
+          ],
+          "visibleBounds": [
+            95,
+            60,
+            192,
+            254
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            348,
+            0,
+            321,
+            339
+          ],
+          "visibleBounds": [
+            409,
+            59,
+            199,
+            260
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            669,
+            0,
+            327,
+            339
+          ],
+          "visibleBounds": [
+            731,
+            59,
+            217,
+            260
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            996,
+            0,
+            316,
+            339
+          ],
+          "visibleBounds": [
+            1045,
+            59,
+            215,
+            260
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            339,
+            350,
+            274
+          ],
+          "visibleBounds": [
+            40,
+            363,
+            299,
+            232
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            350,
+            339,
+            322,
+            274
+          ],
+          "visibleBounds": [
+            361,
+            359,
+            294,
+            240
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            672,
+            339,
+            328,
+            274
+          ],
+          "visibleBounds": [
+            689,
+            359,
+            296,
+            239
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1000,
+            339,
+            312,
+            274
+          ],
+          "visibleBounds": [
+            1016,
+            359,
+            288,
+            240
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            613,
+            343,
+            289
+          ],
+          "visibleBounds": [
+            107,
+            628,
+            148,
+            259
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            343,
+            613,
+            312,
+            289
+          ],
+          "visibleBounds": [
+            432,
+            628,
+            138,
+            257
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            655,
+            613,
+            326,
+            289
+          ],
+          "visibleBounds": [
+            741,
+            628,
+            148,
+            255
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            981,
+            613,
+            331,
+            289
+          ],
+          "visibleBounds": [
+            1073,
+            628,
+            146,
+            255
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            902,
+            350,
+            297
+          ],
+          "visibleBounds": [
+            38,
+            918,
+            300,
+            232
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            350,
+            902,
+            313,
+            297
+          ],
+          "visibleBounds": [
+            362,
+            918,
+            295,
+            234
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            663,
+            902,
+            313,
+            297
+          ],
+          "visibleBounds": [
+            669,
+            918,
+            294,
+            234
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            976,
+            902,
+            336,
+            297
+          ],
+          "visibleBounds": [
+            989,
+            917,
+            291,
+            235
+          ],
+          "label": "行走关键帧C"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "snowfield-monster-poses",
+      "name": "冰甲兽与雪地掘穴怪姿态",
+      "biome": "雪地",
+      "category": "怪物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "mixed",
+      "layout": "mixed-monster-poses",
+      "species": [
+        {
+          "name": "冰甲兽",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "雪地掘穴怪",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "rowLabels": [
+        "冰甲兽四方向待机",
+        "冰甲兽朝右战斗姿态",
+        "雪地掘穴怪四方向待机",
+        "雪地掘穴怪朝右战斗姿态"
+      ],
+      "cellLabels": [
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ],
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/snowfield-monster-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-monster-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-0ba4b010-7fd0-462a-b274-fa8b09801f01.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "两种怪物各有四方向待机和朝右蓄力/攻击/受伤/倒地源姿态；移动及其余方向战斗动画尚未生成。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "8a3d16a4c7d89a19e0d34a98a4a9108d718da6523c2bbf2769ce021a5e41b974",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 840520,
+        "faintFringePixelsAlpha1To8": 104529,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            318,
+            386
+          ],
+          "visibleBounds": [
+            58,
+            58,
+            221,
+            292
+          ],
+          "label": "朝下"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            318,
+            0,
+            383,
+            386
+          ],
+          "visibleBounds": [
+            357,
+            99,
+            312,
+            245
+          ],
+          "label": "朝右"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            701,
+            0,
+            259,
+            386
+          ],
+          "visibleBounds": [
+            733,
+            58,
+            194,
+            293
+          ],
+          "label": "朝上"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            960,
+            0,
+            352,
+            386
+          ],
+          "visibleBounds": [
+            994,
+            99,
+            303,
+            245
+          ],
+          "label": "朝左"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            386,
+            336,
+            302
+          ],
+          "visibleBounds": [
+            26,
+            428,
+            294,
+            223
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            386,
+            372,
+            302
+          ],
+          "visibleBounds": [
+            352,
+            440,
+            349,
+            205
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            708,
+            386,
+            255,
+            302
+          ],
+          "visibleBounds": [
+            715,
+            421,
+            234,
+            231
+          ],
+          "label": "受伤"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            963,
+            386,
+            349,
+            302
+          ],
+          "visibleBounds": [
+            977,
+            482,
+            318,
+            167
+          ],
+          "label": "倒地"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            688,
+            324,
+            252
+          ],
+          "visibleBounds": [
+            66,
+            725,
+            206,
+            194
+          ],
+          "label": "朝下"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            324,
+            688,
+            344,
+            252
+          ],
+          "visibleBounds": [
+            376,
+            731,
+            241,
+            184
+          ],
+          "label": "朝右"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            668,
+            688,
+            319,
+            252
+          ],
+          "visibleBounds": [
+            719,
+            725,
+            216,
+            197
+          ],
+          "label": "朝上"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            987,
+            688,
+            325,
+            252
+          ],
+          "visibleBounds": [
+            1039,
+            731,
+            233,
+            184
+          ],
+          "label": "朝左"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            940,
+            329,
+            259
+          ],
+          "visibleBounds": [
+            46,
+            971,
+            239,
+            182
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            329,
+            940,
+            366,
+            259
+          ],
+          "visibleBounds": [
+            374,
+            966,
+            297,
+            179
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            695,
+            940,
+            287,
+            259
+          ],
+          "visibleBounds": [
+            719,
+            958,
+            236,
+            193
+          ],
+          "label": "受伤"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            982,
+            940,
+            330,
+            259
+          ],
+          "visibleBounds": [
+            1010,
+            997,
+            286,
+            156
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "snowfield-props-effects",
+      "name": "雪地生产道具与冰雪特效",
+      "biome": "雪地",
+      "category": "道具与特效",
+      "columns": 4,
+      "rows": 3,
+      "previewKind": "mixed",
+      "layout": "props-vfx",
+      "rowLabels": [
+        "生产道具",
+        "冰刃攻击四阶段",
+        "扬雪环境四阶段"
+      ],
+      "cellLabels": [
+        [
+          "覆雪木柴架",
+          "铁炉",
+          "皮毛睡袋",
+          "木雪橇"
+        ],
+        [
+          "起势",
+          "展开",
+          "峰值",
+          "消散"
+        ],
+        [
+          "起扬",
+          "扩散",
+          "上升",
+          "消散"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-09/snowfield-props-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-09/snowfield-props-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-9e3d7b9c-ccfa-4c43-a71b-680f13e68963.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "蓝色边缘与半透明像素为原始生成 alpha 保留，正式特效需要检查低 alpha 边缘并统一像素轮廓。",
+        "道具静帧与两组四阶段特效是不同用途，不合成一个循环。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "雪地"
+      ],
+      "width": 1448,
+      "height": 1086,
+      "sourceMode": "RGBA",
+      "sha256": "70e2be633dfa8016042d998be02d888aa441fc534c2cac31e758b31824ada754",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 933772,
+        "faintFringePixelsAlpha1To8": 176421,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            378,
+            431
+          ],
+          "visibleBounds": [
+            32,
+            133,
+            319,
+            260
+          ],
+          "label": "覆雪木柴架"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            378,
+            0,
+            304,
+            431
+          ],
+          "visibleBounds": [
+            405,
+            58,
+            253,
+            348
+          ],
+          "label": "铁炉"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            682,
+            0,
+            382,
+            431
+          ],
+          "visibleBounds": [
+            707,
+            205,
+            339,
+            201
+          ],
+          "label": "皮毛睡袋"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1064,
+            0,
+            384,
+            431
+          ],
+          "visibleBounds": [
+            1082,
+            189,
+            341,
+            216
+          ],
+          "label": "木雪橇"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            431,
+            363,
+            330
+          ],
+          "visibleBounds": [
+            117,
+            511,
+            184,
+            203
+          ],
+          "label": "起势"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            363,
+            431,
+            342,
+            330
+          ],
+          "visibleBounds": [
+            426,
+            496,
+            254,
+            232
+          ],
+          "label": "展开"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            705,
+            431,
+            399,
+            330
+          ],
+          "visibleBounds": [
+            731,
+            457,
+            337,
+            279
+          ],
+          "label": "峰值"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1104,
+            431,
+            344,
+            330
+          ],
+          "visibleBounds": [
+            1141,
+            543,
+            241,
+            161
+          ],
+          "label": "消散"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            761,
+            345,
+            325
+          ],
+          "visibleBounds": [
+            61,
+            844,
+            244,
+            192
+          ],
+          "label": "起扬"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            345,
+            761,
+            401,
+            325
+          ],
+          "visibleBounds": [
+            386,
+            787,
+            329,
+            252
+          ],
+          "label": "扩散"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            746,
+            761,
+            366,
+            325
+          ],
+          "visibleBounds": [
+            777,
+            804,
+            256,
+            235
+          ],
+          "label": "上升"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1112,
+            761,
+            336,
+            325
+          ],
+          "visibleBounds": [
+            1192,
+            836,
+            122,
+            156
+          ],
+          "label": "消散"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-terrain-connectors",
+      "name": "沙漠沙丘砂岩绿洲与崖壁连接",
+      "biome": "沙漠",
+      "category": "地形",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "基础地表",
+        "过渡与崖壁",
+        "台地角与石阶"
+      ],
+      "cellLabels": [
+        [
+          "沙地",
+          "低矮沙丘",
+          "砂岩地砖"
+        ],
+        [
+          "干裂地表",
+          "绿洲岸线",
+          "砂岩崖直段"
+        ],
+        [
+          "砂岩崖外角",
+          "砂岩崖内角",
+          "砂岩石阶"
+        ]
+      ],
+      "layout": "terrain-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-terrain-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-terrain-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-410148cd-7217-447e-9bfc-5880ce9d5eda.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "源图的台地角件仍需按运行时邻接位掩码重新命名、切片和接缝校准；不宣称直接无缝拼接。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "7e2d1c81d7db8a638254849551f375350956a3c65b15b5d8267cb71f0b0b604c",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 728383,
+        "faintFringePixelsAlpha1To8": 67080,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            530,
+            351
+          ],
+          "visibleBounds": [
+            87,
+            83,
+            409,
+            245
+          ],
+          "label": "沙地"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            530,
+            0,
+            482,
+            351
+          ],
+          "visibleBounds": [
+            564,
+            61,
+            413,
+            272
+          ],
+          "label": "低矮沙丘"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1012,
+            0,
+            524,
+            351
+          ],
+          "visibleBounds": [
+            1048,
+            83,
+            405,
+            250
+          ],
+          "label": "砂岩地砖"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            351,
+            536,
+            293
+          ],
+          "visibleBounds": [
+            84,
+            381,
+            413,
+            248
+          ],
+          "label": "干裂地表"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            536,
+            351,
+            473,
+            293
+          ],
+          "visibleBounds": [
+            575,
+            378,
+            395,
+            253
+          ],
+          "label": "绿洲岸线"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1009,
+            351,
+            527,
+            293
+          ],
+          "visibleBounds": [
+            1049,
+            370,
+            404,
+            262
+          ],
+          "label": "砂岩崖直段"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            644,
+            522,
+            380
+          ],
+          "visibleBounds": [
+            111,
+            657,
+            360,
+            336
+          ],
+          "label": "砂岩崖外角"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            522,
+            644,
+            496,
+            380
+          ],
+          "visibleBounds": [
+            573,
+            657,
+            396,
+            304
+          ],
+          "label": "砂岩崖内角"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1018,
+            644,
+            518,
+            380
+          ],
+          "visibleBounds": [
+            1067,
+            667,
+            382,
+            293
+          ],
+          "label": "砂岩石阶"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-flora-resources",
+      "name": "沙漠仙人掌棕榈与采集资源",
+      "biome": "沙漠",
+      "category": "植被",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "static",
+      "rowLabels": [
+        "仙人掌与灌木",
+        "棕榈分层与草丛",
+        "采集资源"
+      ],
+      "cellLabels": [
+        [
+          "双臂仙人掌",
+          "圆桶仙人掌",
+          "荆棘干灌木"
+        ],
+        [
+          "棕榈树冠",
+          "棕榈树干",
+          "荒漠草簇"
+        ],
+        [
+          "风化木段",
+          "砂岩铁矿",
+          "仙人掌果丛"
+        ]
+      ],
+      "layout": "sprite-source",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-flora-resources-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-flora-resources-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-a9f17a87-bfb4-48bd-bbca-5ffdd802e21d.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "801ec8071b4db248d4eeefdaf03737a4ea07853e3b296d51c5880137df73429b",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 979518,
+        "faintFringePixelsAlpha1To8": 102880,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            567,
+            439
+          ],
+          "visibleBounds": [
+            212,
+            25,
+            286,
+            399
+          ],
+          "label": "双臂仙人掌"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            567,
+            0,
+            399,
+            439
+          ],
+          "visibleBounds": [
+            637,
+            181,
+            261,
+            248
+          ],
+          "label": "圆桶仙人掌"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            966,
+            0,
+            570,
+            439
+          ],
+          "visibleBounds": [
+            1034,
+            185,
+            336,
+            243
+          ],
+          "label": "荆棘干灌木"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            439,
+            643,
+            244
+          ],
+          "visibleBounds": [
+            151,
+            449,
+            425,
+            234
+          ],
+          "label": "棕榈树冠"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            643,
+            439,
+            298,
+            244
+          ],
+          "visibleBounds": [
+            711,
+            450,
+            120,
+            233
+          ],
+          "label": "棕榈树干"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            941,
+            439,
+            595,
+            244
+          ],
+          "visibleBounds": [
+            1052,
+            485,
+            306,
+            198
+          ],
+          "label": "荒漠草簇"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            683,
+            593,
+            341
+          ],
+          "visibleBounds": [
+            144,
+            683,
+            416,
+            309
+          ],
+          "label": "风化木段"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            593,
+            683,
+            381,
+            341
+          ],
+          "visibleBounds": [
+            627,
+            683,
+            294,
+            316
+          ],
+          "label": "砂岩铁矿"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            974,
+            683,
+            562,
+            341
+          ],
+          "visibleBounds": [
+            1027,
+            683,
+            371,
+            309
+          ],
+          "label": "仙人掌果丛"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [
+          {
+            "division": 2,
+            "position": 683,
+            "reason": "no_clear_gutter_near_grid_division"
+          }
+        ],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": [
+          {
+            "axis": "row",
+            "position": 683
+          }
+        ]
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": true,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-building-layers",
+      "name": "沙漠土屋商队帐篷与水井分层",
+      "biome": "沙漠",
+      "category": "建筑",
+      "columns": 3,
+      "rows": 3,
+      "previewKind": "mixed",
+      "rowLabels": [
+        "土屋：屋顶／墙体／门板",
+        "商队帐篷：棚顶／底座／入口",
+        "水井：井棚／井台／水桶"
+      ],
+      "cellLabels": [
+        [
+          "土屋平顶",
+          "土屋下墙壳",
+          "土屋门板"
+        ],
+        [
+          "商队帐篷顶",
+          "帐篷支架地台",
+          "卷帘入口"
+        ],
+        [
+          "木井棚",
+          "砂岩井台",
+          "水桶与绳圈"
+        ]
+      ],
+      "layout": "building-kit",
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          3,
+          2.5
+        ],
+        "height": 2.5,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-09/desert-building-layers-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-building-layers-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-22632064-14fa-4072-a7d3-cab8144727eb.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "土屋、帐篷、水井为三个不同组件组合，水井使用盖棚/井台/水桶，不按三张完整房屋展示。",
+        "正式导出时需校准同一建筑的部件尺寸和枢轴。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "45c53be3898881178fbe348e04bb4c7e927cfdcb7fcfac84354cb74678bd0169",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 778100,
+        "faintFringePixelsAlpha1To8": 108568,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            581,
+            390
+          ],
+          "visibleBounds": [
+            60,
+            87,
+            503,
+            294
+          ],
+          "label": "土屋平顶"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            581,
+            0,
+            622,
+            390
+          ],
+          "visibleBounds": [
+            600,
+            71,
+            561,
+            311
+          ],
+          "label": "土屋下墙壳"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            1203,
+            0,
+            333,
+            390
+          ],
+          "visibleBounds": [
+            1245,
+            116,
+            192,
+            267
+          ],
+          "label": "土屋门板"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            390,
+            635,
+            330
+          ],
+          "visibleBounds": [
+            32,
+            397,
+            588,
+            299
+          ],
+          "label": "商队帐篷顶"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            635,
+            390,
+            482,
+            330
+          ],
+          "visibleBounds": [
+            651,
+            429,
+            445,
+            266
+          ],
+          "label": "帐篷支架地台"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            1117,
+            390,
+            419,
+            330
+          ],
+          "visibleBounds": [
+            1138,
+            429,
+            371,
+            286
+          ],
+          "label": "卷帘入口"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            720,
+            550,
+            304
+          ],
+          "visibleBounds": [
+            141,
+            726,
+            335,
+            245
+          ],
+          "label": "木井棚"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            550,
+            720,
+            466,
+            304
+          ],
+          "visibleBounds": [
+            624,
+            745,
+            288,
+            235
+          ],
+          "label": "砂岩井台"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            1016,
+            720,
+            520,
+            304
+          ],
+          "visibleBounds": [
+            1120,
+            763,
+            310,
+            217
+          ],
+          "label": "水桶与绳圈"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-lizard-directional-poses",
+      "name": "沙漠蜥蜴四方向动作源图",
+      "biome": "沙漠",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.9,
+          0.45
+        ],
+        "height": 0.3,
+        "note": "target only; tail-inclusive footprint; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-lizard-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-d61eb87e-297d-490c-b6ca-0d03dceda385.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "4d8fb50a92bfbd676e561409f1100c729e725c323e8c5fe968381111fda1fef1",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1014804,
+        "faintFringePixelsAlpha1To8": 165806,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            358,
+            364
+          ],
+          "visibleBounds": [
+            113,
+            56,
+            159,
+            240
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            358,
+            0,
+            312,
+            364
+          ],
+          "visibleBounds": [
+            444,
+            61,
+            151,
+            244
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            670,
+            0,
+            314,
+            364
+          ],
+          "visibleBounds": [
+            745,
+            60,
+            159,
+            250
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            984,
+            0,
+            328,
+            364
+          ],
+          "visibleBounds": [
+            1065,
+            62,
+            150,
+            250
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            364,
+            336,
+            231
+          ],
+          "visibleBounds": [
+            28,
+            416,
+            292,
+            147
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            364,
+            329,
+            231
+          ],
+          "visibleBounds": [
+            352,
+            418,
+            299,
+            145
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            665,
+            364,
+            323,
+            231
+          ],
+          "visibleBounds": [
+            680,
+            419,
+            296,
+            144
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            988,
+            364,
+            324,
+            231
+          ],
+          "visibleBounds": [
+            1000,
+            417,
+            292,
+            148
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            595,
+            349,
+            344
+          ],
+          "visibleBounds": [
+            98,
+            628,
+            180,
+            263
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            349,
+            595,
+            319,
+            344
+          ],
+          "visibleBounds": [
+            421,
+            627,
+            174,
+            266
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            668,
+            595,
+            312,
+            344
+          ],
+          "visibleBounds": [
+            741,
+            626,
+            163,
+            268
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            980,
+            595,
+            332,
+            344
+          ],
+          "visibleBounds": [
+            1056,
+            627,
+            166,
+            264
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            939,
+            326,
+            260
+          ],
+          "visibleBounds": [
+            22,
+            988,
+            290,
+            142
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            326,
+            939,
+            325,
+            260
+          ],
+          "visibleBounds": [
+            341,
+            987,
+            292,
+            143
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            651,
+            939,
+            324,
+            260
+          ],
+          "visibleBounds": [
+            669,
+            987,
+            295,
+            146
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            975,
+            939,
+            337,
+            260
+          ],
+          "visibleBounds": [
+            987,
+            985,
+            307,
+            148
+          ],
+          "label": "行走关键帧C"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "fennec-fox-directional-poses",
+      "name": "耳廓狐四方向动作源图",
+      "biome": "沙漠",
+      "category": "动物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "animal",
+      "rowLabels": [
+        "朝下",
+        "朝右",
+        "朝上",
+        "朝左"
+      ],
+      "cellLabels": [
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ],
+        [
+          "待机",
+          "行走关键帧A",
+          "行走关键帧B",
+          "行走关键帧C"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.75,
+          0.5
+        ],
+        "height": 0.8,
+        "note": "target only; runtime scale and animation cleanup pending"
+      },
+      "layout": "sprite-source",
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/fennec-fox-directional-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-5f05b227-685f-4ed6-916b-92ae42ac7d5b.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "四方向姿态与动作关键帧为源稿，需要统一脚底基线、接触点和时间曲线后再作为正式动画。"
+      ],
+      "motionName": "行走",
+      "previewSequence": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "7441489be9451c6b9f1d6acb0941012b9104b684cbf7163189bdb34ee2332acf",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 897320,
+        "faintFringePixelsAlpha1To8": 122934,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            338,
+            314
+          ],
+          "visibleBounds": [
+            74,
+            41,
+            214,
+            252
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            338,
+            0,
+            321,
+            314
+          ],
+          "visibleBounds": [
+            388,
+            41,
+            213,
+            255
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            659,
+            0,
+            322,
+            314
+          ],
+          "visibleBounds": [
+            717,
+            41,
+            207,
+            255
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            981,
+            0,
+            331,
+            314
+          ],
+          "visibleBounds": [
+            1038,
+            34,
+            214,
+            262
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            314,
+            336,
+            285
+          ],
+          "visibleBounds": [
+            31,
+            335,
+            290,
+            246
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            314,
+            326,
+            285
+          ],
+          "visibleBounds": [
+            351,
+            332,
+            294,
+            254
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            662,
+            314,
+            331,
+            285
+          ],
+          "visibleBounds": [
+            679,
+            338,
+            299,
+            248
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            993,
+            314,
+            319,
+            285
+          ],
+          "visibleBounds": [
+            1008,
+            333,
+            292,
+            253
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            599,
+            336,
+            303
+          ],
+          "visibleBounds": [
+            77,
+            619,
+            202,
+            271
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            336,
+            599,
+            322,
+            303
+          ],
+          "visibleBounds": [
+            393,
+            617,
+            198,
+            277
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            658,
+            599,
+            329,
+            303
+          ],
+          "visibleBounds": [
+            726,
+            617,
+            203,
+            277
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            987,
+            599,
+            325,
+            303
+          ],
+          "visibleBounds": [
+            1046,
+            612,
+            203,
+            265
+          ],
+          "label": "行走关键帧C"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            902,
+            338,
+            297
+          ],
+          "visibleBounds": [
+            29,
+            913,
+            286,
+            245
+          ],
+          "label": "待机"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            338,
+            902,
+            328,
+            297
+          ],
+          "visibleBounds": [
+            361,
+            914,
+            284,
+            248
+          ],
+          "label": "行走关键帧A"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            666,
+            902,
+            329,
+            297
+          ],
+          "visibleBounds": [
+            688,
+            919,
+            287,
+            241
+          ],
+          "label": "行走关键帧B"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            995,
+            902,
+            317,
+            297
+          ],
+          "visibleBounds": [
+            1015,
+            910,
+            277,
+            250
+          ],
+          "label": "行走关键帧C"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-monster-poses",
+      "name": "砂蝎与沙虫姿态源图",
+      "biome": "沙漠",
+      "category": "怪物",
+      "columns": 4,
+      "rows": 4,
+      "previewKind": "mixed",
+      "layout": "mixed-monster-poses",
+      "species": [
+        {
+          "name": "砂蝎",
+          "idleRow": 0,
+          "combatRow": 1
+        },
+        {
+          "name": "沙虫",
+          "idleRow": 2,
+          "combatRow": 3
+        }
+      ],
+      "rowLabels": [
+        "砂蝎四方向待机",
+        "砂蝎朝右战斗姿态",
+        "沙虫四方向待机",
+        "沙虫朝右战斗姿态"
+      ],
+      "cellLabels": [
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ],
+        [
+          "朝下",
+          "朝右",
+          "朝上",
+          "朝左"
+        ],
+        [
+          "蓄力",
+          "攻击",
+          "受伤",
+          "倒地"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 16,
+      "file": "art/biomes/batch-09/desert-monster-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-monster-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-92f25872-3361-45dd-bfca-f3d95a91d383.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "两种怪物各有四方向待机和朝右蓄力/攻击/受伤/倒地源姿态；移动及其余方向战斗动画尚未生成。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1312,
+      "height": 1199,
+      "sourceMode": "RGBA",
+      "sha256": "5638c74f040948856e7d66b152750f4f4275531546747d3522f77786bf723957",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 872240,
+        "faintFringePixelsAlpha1To8": 164902,
+        "maximum": 255
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            343,
+            341
+          ],
+          "visibleBounds": [
+            62,
+            53,
+            231,
+            263
+          ],
+          "label": "朝下"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            343,
+            0,
+            328,
+            341
+          ],
+          "visibleBounds": [
+            394,
+            90,
+            239,
+            232
+          ],
+          "label": "朝右"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            671,
+            0,
+            297,
+            341
+          ],
+          "visibleBounds": [
+            710,
+            67,
+            220,
+            247
+          ],
+          "label": "朝上"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            968,
+            0,
+            344,
+            341
+          ],
+          "visibleBounds": [
+            1007,
+            90,
+            240,
+            232
+          ],
+          "label": "朝左"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            341,
+            340,
+            286
+          ],
+          "visibleBounds": [
+            63,
+            360,
+            244,
+            250
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            340,
+            341,
+            331,
+            286
+          ],
+          "visibleBounds": [
+            373,
+            390,
+            274,
+            213
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            671,
+            341,
+            303,
+            286
+          ],
+          "visibleBounds": [
+            695,
+            395,
+            260,
+            209
+          ],
+          "label": "受伤"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            974,
+            341,
+            338,
+            286
+          ],
+          "visibleBounds": [
+            994,
+            432,
+            278,
+            172
+          ],
+          "label": "倒地"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            627,
+            317,
+            262
+          ],
+          "visibleBounds": [
+            93,
+            645,
+            168,
+            228
+          ],
+          "label": "朝下"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            317,
+            627,
+            378,
+            262
+          ],
+          "visibleBounds": [
+            373,
+            673,
+            270,
+            184
+          ],
+          "label": "朝右"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            695,
+            627,
+            249,
+            262
+          ],
+          "visibleBounds": [
+            748,
+            645,
+            145,
+            224
+          ],
+          "label": "朝上"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            944,
+            627,
+            368,
+            262
+          ],
+          "visibleBounds": [
+            996,
+            673,
+            271,
+            183
+          ],
+          "label": "朝左"
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            889,
+            318,
+            310
+          ],
+          "visibleBounds": [
+            50,
+            906,
+            238,
+            235
+          ],
+          "label": "蓄力"
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "sourceRegion": [
+            318,
+            889,
+            371,
+            310
+          ],
+          "visibleBounds": [
+            348,
+            975,
+            325,
+            161
+          ],
+          "label": "攻击"
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "sourceRegion": [
+            689,
+            889,
+            269,
+            310
+          ],
+          "visibleBounds": [
+            705,
+            912,
+            228,
+            229
+          ],
+          "label": "受伤"
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "sourceRegion": [
+            958,
+            889,
+            354,
+            310
+          ],
+          "visibleBounds": [
+            984,
+            998,
+            291,
+            128
+          ],
+          "label": "倒地"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    },
+    {
+      "id": "desert-props-effects",
+      "name": "沙漠生活道具与扬沙特效",
+      "biome": "沙漠",
+      "category": "道具与特效",
+      "columns": 4,
+      "rows": 3,
+      "previewKind": "mixed",
+      "layout": "props-vfx",
+      "rowLabels": [
+        "生活生产道具",
+        "沙虫冲击四阶段",
+        "风沙环境四阶段"
+      ],
+      "cellLabels": [
+        [
+          "陶制水罐",
+          "芦苇粮篮",
+          "木晾晒架",
+          "卷织席"
+        ],
+        [
+          "起势",
+          "展开",
+          "峰值",
+          "消散"
+        ],
+        [
+          "低卷",
+          "延展",
+          "升散",
+          "消散"
+        ]
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1,
+        "note": "target only; per-component export scale validation pending"
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-09/desert-props-effects-source-v1.png",
+      "promptFile": "art/biomes/batch-09/desert-props-effects-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1695a-3016-7382-b971-68bd384825b9/exec-d74366e5-8a01-4597-99ce-3ce13cfc689f.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "targetWorldScale": {
+        "groundTilePixels": 32,
+        "adultHumanoidTiles": [
+          0.75,
+          1.5
+        ],
+        "houseBaseTiles": [
+          3,
+          2.5
+        ],
+        "treeTiles": [
+          1.25,
+          2.5
+        ],
+        "animalFootprintTiles": [
+          0.4,
+          1
+        ],
+        "validation": "target_only_pending_runtime_export"
+      },
+      "sourceQaNotes": [
+        "道具静帧与两组四阶段特效是不同用途，不合成一个循环。"
+      ],
+      "styleContract": {
+        "camera": "topdown_orthographic_front_visible",
+        "materialLighting": "neutral_diffuse",
+        "externalCastShadow": "not_baked",
+        "scaleValidation": "target_only_pending_runtime_export"
+      },
+      "sourceBatch": "09",
+      "biomeLabels": [
+        "沙漠"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "sourceMode": "RGBA",
+      "sha256": "aad25f7b4e46b94e86327393b36fd876b9fb41fe46edb056f55f8a1b7d62203f",
+      "alpha": {
+        "hasFullyTransparentPixels": true,
+        "fullyTransparentPixels": 1097013,
+        "faintFringePixelsAlpha1To8": 96471,
+        "maximum": 254
+      },
+      "regions": [
+        {
+          "row": 0,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            0,
+            379,
+            445
+          ],
+          "visibleBounds": [
+            90,
+            143,
+            227,
+            275
+          ],
+          "label": "陶制水罐"
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "sourceRegion": [
+            379,
+            0,
+            357,
+            445
+          ],
+          "visibleBounds": [
+            442,
+            186,
+            257,
+            227
+          ],
+          "label": "芦苇粮篮"
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "sourceRegion": [
+            736,
+            0,
+            409,
+            445
+          ],
+          "visibleBounds": [
+            774,
+            141,
+            333,
+            272
+          ],
+          "label": "木晾晒架"
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "sourceRegion": [
+            1145,
+            0,
+            391,
+            445
+          ],
+          "visibleBounds": [
+            1184,
+            189,
+            317,
+            230
+          ],
+          "label": "卷织席"
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            445,
+            370,
+            343
+          ],
+          "visibleBounds": [
+            89,
+            587,
+            228,
+            154
+          ],
+          "label": "起势"
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "sourceRegion": [
+            370,
+            445,
+            375,
+            343
+          ],
+          "visibleBounds": [
+            424,
+            512,
+            284,
+            240
+          ],
+          "label": "展开"
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "sourceRegion": [
+            745,
+            445,
+            430,
+            343
+          ],
+          "visibleBounds": [
+            782,
+            471,
+            344,
+            282
+          ],
+          "label": "峰值"
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "sourceRegion": [
+            1175,
+            445,
+            361,
+            343
+          ],
+          "visibleBounds": [
+            1224,
+            578,
+            249,
+            143
+          ],
+          "label": "消散"
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "sourceRegion": [
+            0,
+            788,
+            376,
+            236
+          ],
+          "visibleBounds": [
+            74,
+            844,
+            251,
+            107
+          ],
+          "label": "低卷"
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "sourceRegion": [
+            376,
+            788,
+            415,
+            236
+          ],
+          "visibleBounds": [
+            428,
+            840,
+            313,
+            111
+          ],
+          "label": "延展"
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "sourceRegion": [
+            791,
+            788,
+            405,
+            236
+          ],
+          "visibleBounds": [
+            842,
+            823,
+            288,
+            127
+          ],
+          "label": "升散"
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "sourceRegion": [
+            1196,
+            788,
+            340,
+            236
+          ],
+          "visibleBounds": [
+            1263,
+            858,
+            196,
+            74
+          ],
+          "label": "消散"
+        }
+      ],
+      "emptyRegions": 0,
+      "regionMethod": "Alpha projection at threshold 32; tentative preview coordinates only",
+      "regionReview": {
+        "rowFallbacks": [],
+        "columnFallbacks": [],
+        "foregroundCrossesCuts": []
+      },
+      "contentTouchesCanvasEdge": false,
+      "manualRegionReviewNeeded": false,
+      "productionExportValidated": false
+    }
+  ]
+}

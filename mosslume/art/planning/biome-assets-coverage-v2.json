@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "newSelectedAtlases": 42,
+  "allSelectedAtlases": 65,
+  "packs": [
+    {
+      "name": "湿地",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "wetland-terrain-connectors",
+        "wetland-flora-resources",
+        "wetland-buildings-layers",
+        "wetland-frog-directional-poses",
+        "wetland-dragonfly-directional-poses",
+        "wetland-monsters-poses",
+        "wetland-props-local-effects"
+      ]
+    },
+    {
+      "name": "蘑菇林",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "mushroom-terrain-connectors",
+        "mushroom-flora-resources",
+        "mushroom-buildings-layers",
+        "mushroom-snail-directional-poses",
+        "mushroom-moth-directional-poses",
+        "mushroom-monsters-poses",
+        "mushroom-props-local-effects"
+      ]
+    },
+    {
+      "name": "遗迹",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "ruins-ground-connectors",
+        "ruins-architecture-modules",
+        "ruins-cover-variants",
+        "ruins-mechanism-props",
+        "ruins-statue-guard-poses",
+        "ruins-bronze-sentinel-poses",
+        "ruins-mechanism-vfx"
+      ]
+    },
+    {
+      "name": "雪地",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "snowfield-terrain-connectors",
+        "snowfield-flora-resources",
+        "snowfield-building-layers",
+        "snow-rabbit-directional-poses",
+        "arctic-fox-directional-poses",
+        "snowfield-monster-poses",
+        "snowfield-props-effects"
+      ]
+    },
+    {
+      "name": "沙漠",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "desert-terrain-connectors",
+        "desert-flora-resources",
+        "desert-building-layers",
+        "desert-lizard-directional-poses",
+        "fennec-fox-directional-poses",
+        "desert-monster-poses",
+        "desert-props-effects"
+      ]
+    },
+    {
+      "name": "火山",
+      "sourceAtlasCount": 7,
+      "sourceArtCoverage": "selected_sources_saved",
+      "runtimeIntegrated": false,
+      "atlasIds": [
+        "volcanic-ground-connectors",
+        "volcanic-flora-resources",
+        "volcanic-buildings-layers",
+        "heat-beetle-directional-poses",
+        "lava-slug-poses",
+        "obsidian-beast-poses",
+        "volcano-props-vfx"
+      ]
+    }
+  ],
+  "sourceAtlasMeaning": "一张可包含多组件或多姿态；数量不等于物种或独立物品数",
+  "style": "同一俯视视角、粗像素簇、深色轮廓、受控饱和度",
+  "scaleContract": {
+    "tilePixels": 32,
+    "adultHumanoidTiles": [
+      0.75,
+      1.5
+    ],
+    "treeAssembledWidthHeightTiles": [
+      1.25,
+      2.5
+    ],
+    "smallHouseFootprintTiles": [
+      3,
+      2.5
+    ],
+    "status": "目标尺度；非游戏内比例验收"
+  },
+  "remainingProductionTasks": [
+    "地形无缝/自动拼接与高差接缝",
+    "建筑层配准、门框拆分、共同锚点",
+    "树冠/树干配准与风动遮罩",
+    "动物脚点及完整移动生活受伤动作",
+    "怪物完整四向移动/攻击/受击/死亡动作",
+    "发光层、投影轮廓、粒子时序",
+    "游戏碰撞、采集状态、物品配置与运行时验收"
+  ]
+}

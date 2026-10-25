@@ -14,6 +14,7 @@ import necesse.engine.window.WindowManager;
 import necesse.engine.window.GameWindow;
 import necesse.gfx.camera.GameCamera;
 import necesse.gfx.drawables.OrderableDrawables;
+import necesse.gfx.drawOptions.texture.SharedTextureDrawOptions;
 import necesse.gfx.gameTexture.GameTexture;
 import necesse.gfx.gameTexture.GameFrameBuffer;
 import necesse.gfx.shader.GameShader;
@@ -39,7 +40,7 @@ public final class RadianceShadowRenderer {
             if(directional)return strength;
             float dx=wx-x,dy=wy-y;
             float d=(float)Math.sqrt(dx*dx+dy*dy)/radius;
-            return d>=1?0:strength*(1-d*d*(3-2*d));
+            float fall=1-d*d*(3-2*d);return d>=1?0:strength*fall*fall;
         }
     }
     private static final class Mask {
@@ -55,24 +56,19 @@ public final class RadianceShadowRenderer {
     }
     private static final class Cast {
         final Mask mask;final float x,y,worldX,worldY,scale,height;final int tx,ty;final boolean crown,plant;
+        final VisualMaterialDefinition material;final float anchorX,anchorY;
         final float[] windOffsets=new float[9];
         final float[] projectedVertices=new float[36];
         float seaX,seaY;boolean gpuVisible;
         Cast(Mask mask,String id,float x,float y,float wx,float wy,float scale,float height,int tx,int ty) {
             this.mask=mask;this.x=x;this.y=y;worldX=wx;worldY=wy;this.scale=scale;this.height=height;this.tx=tx;this.ty=ty;
-            crown=id.contains("-top")||id.startsWith("crown-");
-            plant=crown||id.contains("bush")||id.equals("fern")||id.equals("grass")||id.contains("flower")||id.equals("reeds");
+            material=VisualMaterials.get(id);crown=material!=null?material.crown:id.contains("-top")||id.startsWith("crown-");
+            plant=material!=null&&material.rigidity<1;
+            anchorX=material==null?mask.w*.5f:material.anchorX;anchorY=material==null?mask.h:material.anchorY;
         }
         void prepareWind(double time) {
             if(!plant||CrownWindRenderer.isLegacy())return;
-            float phase=(float)Math.sin(tx*.12+ty*.08)*.06f;
-            double t=time*(crown?2.05:1.9)+phase;
-            double diff=(.70-.38)*(.70-.38);
-            double strength=Math.max(.38,Math.min(.70,.38+diff+Math.sin(t/3.5)*diff))*mask.w*scale*(crown?.052:.034);
-            double amplitude=(Math.sin(t)+Math.cos(t))*strength;
-            // These are the same nine vertices as the GPU's eight-segment
-            // mesh, so interpolation reproduces its actual raster geometry.
-            for(int i=0;i<9;i++)windOffsets[i]=(float)(amplitude*Math.pow(Math.max(0,1-i/8.0-(crown?.04:.08)),crown?1.35:1.8));
+            for(int i=0;i<9;i++)windOffsets[i]=WindField.offset(time,tx,ty,i/8f,mask.w*scale,material,crown,true);
         }
         float wind(float v) {
             float at=Math.max(0,Math.min(8,v*8));int i=Math.min(7,(int)at);float f=at-i;
@@ -95,7 +91,7 @@ public final class RadianceShadowRenderer {
         final Level level;final List<Light> lights;final List<Cast> casts=Collections.synchronizedList(new ArrayList<>());
         float cameraX,cameraY;boolean shore;
         Group(Level level,List<Light> lights){this.level=level;this.lights=new ArrayList<>(lights);}
-        void draw(){render(this);}
+        void draw(){render(this);contacts(this);}
     }
     private static final Map<String,Mask> masks=new HashMap<>();
     private static final Map<OrderableDrawables,Group> groups=new WeakHashMap<>();
@@ -118,12 +114,35 @@ public final class RadianceShadowRenderer {
     private static GameShader maskShader,composeShader;
     private static final GameFrameBuffer[] gpuMasks=new GameFrameBuffer[8];
     private static GameTexture waterMap,white;
+    private static GameTexture contactTexture;
     private static ByteBuffer waterUpload;
     private static FloatBuffer vertexUpload;
     private static final class CachedShader extends GameShader {
         private final Map<String,Integer> locations=new HashMap<>();
         CachedShader(String vertex,String fragment){super(vertex,fragment);}
         @Override public int getUniform(String name){return locations.computeIfAbsent(name,super::getUniform);}
+    }
+
+    /** Narrow near-ground ambient contact, separate from the moving cast silhouette. */
+    private static void contacts(Group group){
+        if(contactTexture==null){
+            int w=32,h=16;byte[] pixels=new byte[w*h*4];
+            for(int y=0;y<h;y++)for(int x=0;x<w;x++){
+                double dx=(x+.5-w*.5)/(w*.5),dy=(y+.5-h*.5)/(h*.5);
+                float a=(float)Math.max(0,1-dx*dx-dy*dy);int at=(x+y*w)*4;
+                pixels[at]=3;pixels[at+1]=7;pixels[at+2]=11;pixels[at+3]=(byte)Math.round(a*a*255);
+            }
+            contactTexture=new GameTexture("mosslume-ground-contact",w,h,pixels);
+            contactTexture.setBlendQuality(GameTexture.BlendQuality.LINEAR);
+        }
+        SharedTextureDrawOptions batch=new SharedTextureDrawOptions(contactTexture);
+        synchronized(group.casts){for(Cast c:group.casts){
+            if(!RegionSceneQuery.loaded(group.level,c.tx,c.ty)||RegionSceneQuery.liquid(group.level,c.tx,c.ty))continue;
+            float visibleWidth=c.material==null?c.mask.w:c.material.maxX-c.material.minX;
+            int width=Math.round(Math.max(9,Math.min(56,visibleWidth*c.scale*.46f))),height=Math.max(4,Math.round(width*.28f));
+            batch.addFull().size(width,height).alpha(c.crown?.20f:.14f).pos(Math.round(c.x-width*.5f),Math.round(c.y-height*.5f));
+        }}
+        batch.draw();
     }
 
     public static void registerMask(String id,int width,int height,int[] alpha){masks.put(id,new Mask(width,height,alpha));}
@@ -164,7 +183,8 @@ public final class RadianceShadowRenderer {
         float seaDrop=light.directional?10*light.radius:Math.min(18,10*distance/Math.max(32,light.z)*.38f);
         float minX=Float.POSITIVE_INFINITY,minY=minX,maxX=-minX,maxY=-minX;
         for(int yy=0;yy<=1;yy++)for(int xx=0;xx<=1;xx++) {
-            float xxp=px+p.x(xx==0?-half:half,yy*scaleHeight),yyp=py+p.y(xx==0?-half:half,yy*scaleHeight);
+            float across=(xx==0?-c.anchorX:c.mask.w-c.anchorX)*c.scale,above=(c.anchorY-(yy==0?0:c.mask.h))*c.scale;
+            float xxp=px+p.x(across,above),yyp=py+p.y(across,above);
             minX=Math.min(minX,xxp);maxX=Math.max(maxX,xxp);minY=Math.min(minY,yyp);maxY=Math.max(maxY,yyp);
         }
         int pad=4+(int)Math.ceil(seaDrop);
@@ -178,10 +198,10 @@ public final class RadianceShadowRenderer {
             if(water(g.level,x+g.cameraX,y+g.cameraY)){ox-=dx*seaDrop;oy-=dy*seaDrop;}
             float across=(ox*p.alongY-oy*p.alongX)/det;
             float above=(p.acrossX*oy-p.acrossY*ox)/det;
-            float v=1-above/scaleHeight;
+            float v=(c.anchorY*c.scale-above)/scaleHeight;
             if(v<0||v>1)continue;
             across-=c.wind(v);
-            float sx=across/c.scale+c.mask.w*.5f-.5f,sy=v*c.mask.h-.5f;
+            float sx=across/c.scale+c.anchorX-.5f,sy=v*c.mask.h-.5f;
             int a=(int)(c.mask.sample(sx,sy)*(1-.10f*(1-v)));
             if(a>0)layer.put(x,y,a);
         }
@@ -214,10 +234,10 @@ public final class RadianceShadowRenderer {
         shoreQuads++;
     }
     private static void shoreline(Group g,Light light,Layer layer) {
-        int left=Math.max(0,(int)(g.cameraX-48)/32),right=Math.min(g.level.tileWidth,(int)(g.cameraX+layer.width+48)/32+1);
-        int top=Math.max(0,(int)(g.cameraY-48)/32),bottom=Math.min(g.level.tileHeight,(int)(g.cameraY+layer.height+48)/32+1);
+        int left=(int)Math.floor((g.cameraX-48)/32),right=(int)Math.floor((g.cameraX+layer.width+48)/32)+1;
+        int top=(int)Math.floor((g.cameraY-48)/32),bottom=(int)Math.floor((g.cameraY+layer.height+48)/32)+1;
         for(int y=top;y<bottom;y++)for(int x=left;x<right;x++) {
-            if(water(g.level,x*32+16,y*32+16))continue;
+            if(!RegionSceneQuery.loaded(g.level,x,y)||water(g.level,x*32+16,y*32+16))continue;
             float x0=x*32,y0=y*32;
             if(water(g.level,x0+16,y0-16))shoreEdge(g,light,layer,x0,y0,x0+32,y0);
             if(water(g.level,x0+16,y0+48))shoreEdge(g,light,layer,x0,y0+32,x0+32,y0+32);
@@ -227,6 +247,8 @@ public final class RadianceShadowRenderer {
     }
     private static void render(Group g) {
         long started=System.nanoTime();
+        synchronized(g.casts){g.casts.removeIf(c->c.material!=null&&c.material.rigidity<1&&!GroundDecorationPolicy.canShowWildPlant(g.level,c.tx,c.ty));}
+        g.lights.clear();g.lights.addAll(SceneLighting.shadowSources(g.level));
         try {
             if(!Boolean.getBoolean("mosslume.shadow.cpu")&&!gpuUnavailable) {
                 try {renderGpu(g);gpuActive=true;return;}
@@ -309,12 +331,12 @@ public final class RadianceShadowRenderer {
         float seaDrop=light.directional?10*light.radius:Math.min(18,10*distance/Math.max(32,light.z)*.38f);
         c.seaX=dx*seaDrop;c.seaY=dy*seaDrop;
         for(int row=0;row<=8;row++) {
-            float v=row/8f,above=(1-v)*height,bend=c.windOffsets[row];
+            float v=row/8f,above=(c.anchorY-v*c.mask.h)*c.scale,bend=c.windOffsets[row];
             int at=row*4;
-            c.projectedVertices[at]=px+p.x(-width*.5f+bend,above);
-            c.projectedVertices[at+1]=py+p.y(-width*.5f+bend,above);
-            c.projectedVertices[at+2]=px+p.x(width*.5f+bend,above);
-            c.projectedVertices[at+3]=py+p.y(width*.5f+bend,above);
+            c.projectedVertices[at]=px+p.x(-c.anchorX*c.scale+bend,above);
+            c.projectedVertices[at+1]=py+p.y(-c.anchorX*c.scale+bend,above);
+            c.projectedVertices[at+2]=px+p.x((c.mask.w-c.anchorX)*c.scale+bend,above);
+            c.projectedVertices[at+3]=py+p.y((c.mask.w-c.anchorX)*c.scale+bend,above);
         }
         c.gpuVisible=true;
         castsDrawn++;
@@ -365,12 +387,12 @@ public final class RadianceShadowRenderer {
         shoreQuads++;
     }
     private static void gpuShore(Group group,Light light,int width,int height) {
-        int left=Math.max(0,(int)(group.cameraX-48)/32),right=Math.min(group.level.tileWidth,(int)(group.cameraX+width+48)/32+1);
-        int top=Math.max(0,(int)(group.cameraY-48)/32),bottom=Math.min(group.level.tileHeight,(int)(group.cameraY+height+48)/32+1);
+        int left=(int)Math.floor((group.cameraX-48)/32),right=(int)Math.floor((group.cameraX+width+48)/32)+1;
+        int top=(int)Math.floor((group.cameraY-48)/32),bottom=(int)Math.floor((group.cameraY+height+48)/32)+1;
         maskShader.pass1i("receiverMode",2);maskShader.pass1f("heightFade",0);white.bindTexture(GL13.GL_TEXTURE0);
         GL11.glBegin(GL11.GL_QUADS);
         for(int y=top;y<bottom;y++)for(int x=left;x<right;x++) {
-            if(nativeWater(group.level,x,y))continue;
+            if(!RegionSceneQuery.loaded(group.level,x,y)||nativeWater(group.level,x,y))continue;
             float wx=x*32,wy=y*32;
             if(nativeWater(group.level,x,y-1))gpuShoreEdge(group,light,wx,wy,wx+32,wy);
             if(nativeWater(group.level,x,y+1))gpuShoreEdge(group,light,wx,wy+32,wx+32,wy+32);
@@ -429,6 +451,7 @@ public final class RadianceShadowRenderer {
             composeShader.use();
             try {
                 composeShader.pass2f("cameraWorld",group.cameraX,group.cameraY);composeShader.pass2f("sceneSize",w,h);
+                composeShader.pass1f("shadowOpacity",.38f-.04f*SceneLighting.night(group.level));
                 for(int i=0;i<8;i++) {
                     composeShader.pass1i("mask"+i,i);gpuMasks[i].bindTexture(GL13.GL_TEXTURE0+i);
                     Light l=i<visible.size()?visible.get(i):null;
@@ -486,14 +509,14 @@ public final class RadianceShadowRenderer {
         layers.keySet().removeIf(key->{for(Light light:visible)if(light.key==key)return false;return true;});
         for(int pixel=0;pixel<touchedCount;pixel++) {
             int at=touched[pixel],x=at%w,y=at/w;
-            float blocked=0,total=.52f;
+            float blocked=0,total=.80f;
             for(int i=0;i<active.length;i++) {
                 Light l=visible.get(i);float energy=l.energy(x+g.cameraX,y+g.cameraY);
                 total+=energy;blocked+=energy*(active[i].pixels[at]&255)/255f;
             }
-            int alpha=(int)(Math.min(.58f,blocked/total*.97f)*255);
+            int alpha=(int)(Math.min(.38f-.04f*SceneLighting.night(g.level),blocked/total*.85f)*255);
             int dst=at*4;
-            upload.put(dst,(byte)3).put(dst+1,(byte)8).put(dst+2,(byte)13).put(dst+3,(byte)alpha);
+            upload.put(dst,(byte)9).put(dst+1,(byte)15).put(dst+2,(byte)25).put(dst+3,(byte)alpha);
         }
         upload.position(0);upload.limit(w*h*4);texture.bindTexture();
         GL11.glTexSubImage2D(GL11.GL_TEXTURE_2D,0,0,0,w,h,GL11.GL_RGBA,GL11.GL_UNSIGNED_BYTE,upload);

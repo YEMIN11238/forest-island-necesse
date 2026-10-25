@@ -1,0 +1,310 @@
+{
+  "project": "Mosslume",
+  "batch": "10",
+  "date": "2026-10-23",
+  "generator": "built-in image_gen",
+  "integratedIntoGame": false,
+  "assets": [
+    {
+      "id": "ruins-ground-connectors",
+      "name": "遗迹地砖与断墙连接",
+      "columns": 3,
+      "rows": 3,
+      "plannedComponents": 9,
+      "category": "地形",
+      "biome": "遗迹",
+      "layout": "terrain-kit",
+      "cellLabels": [
+        "完整石砖",
+        "破损石砖",
+        "断墙直段",
+        "外墙角",
+        "内墙角",
+        "断墙端头",
+        "石台正面",
+        "石阶",
+        "碎石"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 0.75,
+        "note": "目标比例，待运行时校准",
+        "tilePixels": 32
+      },
+      "file": "art/biomes/batch-10/ruins-ground-connectors-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-ground-connectors-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-5d9b4dbc-57f4-467e-8021-65bcff7705f6.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品"
+      ]
+    },
+    {
+      "id": "ruins-architecture-modules",
+      "name": "遗迹拱门石柱与地下入口",
+      "columns": 3,
+      "rows": 3,
+      "category": "建筑",
+      "biome": "遗迹",
+      "layout": "building-kit",
+      "cellLabels": [
+        "断拱门",
+        "残柱",
+        "倒柱",
+        "祭坛",
+        "废塔墙",
+        "地下入口",
+        "栏杆",
+        "断梁",
+        "门槛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1.5,
+          1
+        ],
+        "height": 2,
+        "note": "拱门目标；其它组件按人高配准",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-architecture-modules-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-architecture-modules-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-832f96e4-1029-43e0-b80f-ed5cb25414d6.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品"
+      ]
+    },
+    {
+      "id": "ruins-cover-variants",
+      "name": "遗迹苔藓积沙积雪变体",
+      "columns": 3,
+      "rows": 3,
+      "category": "建筑",
+      "biome": "遗迹",
+      "layout": "building-kit",
+      "rowLabels": [
+        "苔藓",
+        "积沙",
+        "积雪"
+      ],
+      "cellLabels": [
+        "苔藓残柱",
+        "苔藓墙",
+        "苔藓坛",
+        "积沙残柱",
+        "积沙墙",
+        "积沙坛",
+        "积雪残柱",
+        "积雪墙",
+        "积雪坛"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1.5,
+        "note": "同列形体为目标；覆盖配准待复核",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-cover-variants-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-cover-variants-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-039ef6ae-6938-4781-83bd-ea3a55c5abb0.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "地形/建筑角件和接缝需按统一网格重新配准；当前组件非自动拼接成品",
+        "积雪覆盖下柱体可见高度略有变化；需用实际石柱尺度配准，不按图集格子自动等高缩放"
+      ]
+    },
+    {
+      "id": "ruins-mechanism-props",
+      "name": "遗迹机关与探索道具",
+      "columns": 3,
+      "rows": 3,
+      "category": "道具",
+      "biome": "遗迹",
+      "layout": "props-kit",
+      "cellLabels": [
+        "拉杆",
+        "未触发踏板",
+        "已触发踏板",
+        "空晶座",
+        "嵌晶座",
+        "关闭石箱",
+        "打开石箱",
+        "残碑",
+        "陶罐"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          0.75,
+          0.75
+        ],
+        "height": 1,
+        "note": "按可触及高度配准",
+        "tilePixels": 32
+      },
+      "plannedComponents": 9,
+      "file": "art/biomes/batch-10/ruins-mechanism-props-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-mechanism-props-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-7117ecc5-c46b-4813-92e9-e2d090989082.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ]
+    },
+    {
+      "id": "ruins-statue-guard-poses",
+      "name": "遗迹石像守卫四向与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "category": "怪物",
+      "biome": "遗迹",
+      "layout": "monster-poses",
+      "species": [
+        {
+          "name": "石像守卫",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          0.75
+        ],
+        "height": 1.6,
+        "note": "普通守卫目标比例",
+        "tilePixels": 32
+      },
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-statue-guard-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-b06cea21-bdff-45c3-8ae5-05d034d43d36.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "cellLabels": [
+        "向下待机",
+        "向右待机",
+        "向上待机",
+        "向左待机",
+        "向右蓄力",
+        "向右攻击",
+        "向右受击",
+        "倒地"
+      ]
+    },
+    {
+      "id": "ruins-bronze-sentinel-poses",
+      "name": "遗迹铜壳哨兵四向与战斗姿态",
+      "columns": 4,
+      "rows": 2,
+      "category": "怪物",
+      "biome": "遗迹",
+      "layout": "monster-poses",
+      "species": [
+        {
+          "name": "铜壳哨兵",
+          "idleRow": 0,
+          "combatRow": 1
+        }
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          0.75
+        ],
+        "height": 0.7,
+        "note": "低矮远程构装体目标比例",
+        "tilePixels": 32
+      },
+      "plannedComponents": 8,
+      "file": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-bronze-sentinel-poses-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-ac3bf89c-7311-432c-8e16-9b7bbe84fe92.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ],
+      "cellLabels": [
+        "向下待机",
+        "向右待机",
+        "向上待机",
+        "向左待机",
+        "向右蓄力",
+        "向右攻击",
+        "向右受击",
+        "倒地"
+      ]
+    },
+    {
+      "id": "ruins-mechanism-vfx",
+      "name": "遗迹能量命中崩解与激活光点",
+      "columns": 4,
+      "rows": 3,
+      "category": "特效",
+      "biome": "遗迹",
+      "layout": "vfx-sequences",
+      "rowLabels": [
+        "能量命中",
+        "石块崩解",
+        "上升激活光点"
+      ],
+      "targetScale": {
+        "unit": "tile",
+        "footprint": [
+          1,
+          1
+        ],
+        "height": 1.5,
+        "note": "四阶段效果关键图，完整曲线待引擎驱动",
+        "tilePixels": 32
+      },
+      "plannedComponents": 12,
+      "file": "art/biomes/batch-10/ruins-mechanism-vfx-source-v1.png",
+      "promptFile": "art/biomes/batch-10/ruins-mechanism-vfx-source-v1.prompt.txt",
+      "sourceFile": "/Users/zhangjunhao/.codex/generated_images/01a1336f-4018-7dc3-a548-a66dff7389cc/exec-6c6c694e-979f-4fba-8407-7f3ffb843f71.png",
+      "status": "source_generated_pending_runtime_export",
+      "integratedIntoGame": false,
+      "sourceStage": "生成源图；尚未完成切片、动画和运行时配准",
+      "reviewNotes": [
+        "关键姿态或特效阶段尚非完整动画；锚点、时序和发光/投影需运行时处理"
+      ]
+    }
+  ],
+  "styleContract": {
+    "camera": "orthographic_top_down_front_visible",
+    "tilePixels": 32,
+    "outline": "charcoal_olive",
+    "saturation": "controlled",
+    "externalCastShadows": "runtime_only",
+    "transparentOutsideObjects": true,
+    "status": "source_art_pending_export"
+  }
+}
