@@ -1,40 +1,199 @@
-# Mosslume 世界与伙伴重构
+<div align="center">
 
-当前开发分支是 **0.4.0-r2 世界与 DeepSeek 伙伴预览**。包含新建/选择世界、两种有限种子世界、洞穴通道、伙伴任务和真实事件记录；保留既有像素显示、风动和光影。DeepSeek 需通过本机私有配置显式启用，只有发送文字指令才调用；没有凭据时保持离线。接入与用量限制见 [DeepSeek 本机配置](docs/AI-DEEPSEEK-SETUP.md)。完整目标见 [PRD 0.4](docs/PRD-0.4-world-companions-refactor.md)，基础重构与未完成部分见 [r1 实施记录](docs/IMPLEMENTATION-0.4-r1.md)。
+# Mosslume
 
-稳定版仍是标签 `v0.3.0-visual-baseline.1`，没有被本轮预览替换。0.4 使用独立应用 `~/Applications/Mosslume 0.4 Preview.app` 和资料目录 `~/Library/Application Support/Mosslume-0.4`，不自动迁移旧个人存档。
+**在荒野安顿下来，和伙伴一起生活。**
+
+A pixel-art survival sandbox with AI companions.
+
+**0.5.2 开发预览** · macOS · Java 17 · 单人 + AI 伙伴
+
+[下载 Mac 开发预览](https://github.com/YEMIN11238/forest-island-necesse/releases/tag/v0.5.2-dev.1) · [实机画廊](#实机画廊) · [玩法与伙伴](#玩法与伙伴) · [开始体验](#开始体验) · [开发记录](#开发记录)
+
+<img src="docs/media/mosslume-cover.webp" alt="Mosslume 宣传插画：海岸木屋、营火、田园和伙伴" width="100%">
+
+<sub>封面为 AI 生成的宣传插画，用于表达美术方向；下方画廊为实际运行中的游戏画面。</sub>
+
+</div>
+
+Mosslume 正在把**采集、制作、种植、营地生活与 AI 伙伴**放进同一个像素世界。你可以在海岸安家，沿着荒野寻找资源，与居民打字交谈，让已招募的伙伴跟随、守卫或参与工作，再为远行准备装备和补给。
+
+当前版本基于 Necesse 1.3.3 的既有玩法系统做开发适配，重点加入自有美术、连续区域世界、昼夜光影、风动、居民记忆和社交。项目仍在开发；独立自主探索、建设分营地等后续设想，尚未作为已完成玩法提供。
+
+## 实机画廊
+
+点击图片查看大图。截图保留原始 HUD，没有补绘或改色；不同开发阶段的版本在图下注明。
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="docs/media/camp-day.webp"><img src="docs/media/camp-day.webp" alt="白天的海岸营地：林木、小径、房屋与工作区" width="100%"></a>
+      <strong>海岸营地 · 白天</strong><br>
+      <sub>树荫、自然小径与临海居住区。0.5.1 开发实机。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="docs/media/camp-night.webp"><img src="docs/media/camp-night.webp" alt="夜晚的海岸营地：火光、窗灯与深色海面" width="100%"></a>
+      <strong>营火亮起 · 夜晚</strong><br>
+      <sub>环境暗下来，篝火、窗灯和荧光点照亮身边。0.5.1 开发实机。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="docs/media/npc-conversation.webp"><img src="docs/media/npc-conversation.webp" alt="两位角色在营地交谈，头顶显示中文聊天气泡" width="100%"></a>
+      <strong>伙伴交谈 · 头顶气泡</strong><br>
+      <sub>0.4.6 离线认知与任务回执验证画面，展示真实气泡；不是线上模型回答的展示。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="docs/media/moonreaper-boss.webp"><img src="docs/media/moonreaper-boss.webp" alt="白发镰刃战士在沙地场景进行攻击的原生测试画面" width="100%"></a>
+      <strong>白发镰刃战士 · Boss 攻击</strong><br>
+      <sub>0.5.2 原素材技能测试，攻击对象为测试动物；不代表玩家实战或平衡性验收。</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="docs/media/mushroom-forest.webp"><img src="docs/media/mushroom-forest.webp" alt="紫色地表的蘑菇林，包含巨型蘑菇、蘑菇屋与资源" width="100%"></a>
+      <strong>走入蘑菇林</strong><br>
+      <sub>菌类植被、地形材质和群系建筑。0.4.0-r4 较早版本实机。</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="docs/media/snowfield.webp"><img src="docs/media/snowfield.webp" alt="积雪覆盖的森林、雪屋、岩石和动物" width="100%"></a>
+      <strong>雪地中的足迹</strong><br>
+      <sub>积雪林木、雪屋、动物和资源。0.4.0-r4 较早版本实机。</sub>
+    </td>
+  </tr>
+</table>
+
+[查看图片来源与版本说明](docs/media/README.md) · [查看 0.5.2 实施与验证记录](docs/IMPLEMENTATION-0.5.2-r8-combat-bosses.md)
+
+## 玩法与伙伴
+
+| 在这个世界里 | 当前已经接入的内容 |
+| --- | --- |
+| **从一把工具开始** | 原生采集、库存、制作、种植和储物系统，保留真实物品消耗与产出。 |
+| **走出海岸营地** | 新建 v4“连续荒野”按区域生成、加载和保存，接入本作群系、建筑外观、资源、动物与怪物。旧世界保留原布局。 |
+| **与居民一起生活** | 开局配置 4 位核心伙伴和 6 位周边居民，安排职业、床位、工作与休息日程，另有条件出现的旅人、商人。 |
+| **直接和角色说话** | 就近与具名友好人形打字交谈，玩家与 NPC 都有头顶气泡。交谈时停步、面向玩家，结束后恢复活动。 |
+| **让共同经历留下痕迹** | 保存称呼、喜好、真实工作与伤病等记忆；信任、谨慎和社交倾向随事件变化。空闲居民可邀聊、靠近与主动报告。 |
+| **让伙伴参与工作** | 已招募伙伴可接受跟随、守卫、回家、恢复工作、采收与搬运等受控指令，由原生寻路和任务系统执行。 |
+| **准备迎战首领** | 两个自定义 Boss：石符术士、白发镰刃战士，直接使用用户提供的角色及攻击素材，包含技能、半血强化和掉落。 |
+| **看营地从白天进入夜晚** | 树冠风动、火焰与烟雾、上升渐隐荧光、水纹与水色变化，以及窗灯、营火局部光照、物件和岸边投影。 |
+
+### AI 如何融入游戏
+
+AI 承担角色表达、记忆上下文和部分行动意图；**游戏状态决定事实，游戏系统执行行动**。角色说“我去搬东西”，需要真实任务与库存回执才能认定完成。
+
+当前通过 **AgentScope Java 2.0.4** 实际调用模型，借鉴并移植 **AI Town** 的记忆排序与社交流程。可选接入本机 DeepSeek 配置；没有模型时，原生生活、离线任务及本地回执仍可运行。玩家对话优先，背景发言有并发、次数与费用预算。
+
+长期记忆目前使用中文词与双字检索，尚无向量服务。NPC 还没有完整的长期目标规划、离屏自主生存、自动建房或多营地经营能力；这些属于下一阶段设计。[查看伙伴记忆与社交实现](docs/IMPLEMENTATION-0.4-r5-companion-minds.md)。
+
+### 0.5.2 这次更新
+
+- **武器握在手上。** 主角及五套居民以 144 个逐帧手位对齐身体、握柄和攻击时间；覆盖斧、剑、弓的四方向动作。
+- **身体和头像保持一致。** 统一农夫、工匠、商人的四向待机、行走、攻击，以及地图、对话和指令头像。
+- **把原素材 Boss 放进世界。** 石柱、飞符、挥镰、渐隐突袭直接使用原始动画，通过工作台制作召唤物触发。
+
+两个召唤配方和场地条件见 [Boss 召唤说明](docs/IMPLEMENTATION-0.5.2-r8-combat-bosses.md#在游戏里召唤)。Boss 不会自动出现在旧营地。
+
+## 开始体验
+
+当前已验证平台是 **macOS / Apple Silicon**。日常入口统一为 `~/Applications/Mosslume.app`，桌面和 Dock 应指向同一个应用；存档继续使用 `~/Library/Application Support/Mosslume-Life-Preview`。更新前正常保存并退出，打包器会阻止覆盖仍在运行的应用。
+
+[0.5.2 开发预览与校验文件](https://github.com/YEMIN11238/forest-island-necesse/releases/tag/v0.5.2-dev.1) 已随私有仓库保存，供有权限的协作者备份与恢复。压缩包不含个人存档或模型凭据。
+
+1. 打开现有 Mosslume 应用，创建新世界并选择 **“连续荒野”**，体验 v4 世界与海岸起点。
+2. 在营地采集、制作、种植，找到居民并通过伙伴界面交谈或下达已支持的指令。
+3. 如需模型对话，按 [DeepSeek 本机配置说明](docs/AI-DEEPSEEK-SETUP.md) 配置自己的凭据。该文档保留早期界面与路径记录，当前应用入口及存档目录以上文为准；模型配置目录独立于游戏存档。
+
+本仓库是开发源码与素材快照，**仅克隆仓库不能直接运行完整游戏**。当前运行仍依赖已合法获得的 Necesse 运行资源、原有 Steam 环境及验证流程；没有新建公共安装包或独立发行承诺。
+
+## 开发与复用
+
+### 工程结构
+
+```text
+mod/src/              当前游戏适配、AI、世界、任务与渲染源码
+mod/resources/        已导入运行的贴图、材质与第三方许可
+mod/tests/            离线、存档与原生接口回归
+scripts/              构建、检查、打包与隔离探针
+mosslume/art/         美术源图、提示词、切片及导出清单
+mosslume/validation/  已保存的分阶段验收证据
+docs/                 PRD、实施记录与研究来源
+source-rebuild/       历史底座恢复源码
+rebuild/              历史底座构建与接口核对记录
+```
+
+### 已采用的技术
+
+| 模块 | 复用来源与实际范围 |
+| --- | --- |
+| 世界与玩法 | Necesse 1.3.3 既有区域链、寻路、库存、工作、战斗和存档；本作适配层负责群系、人物、素材与交互。 |
+| 模型接入 | [AgentScope Java](https://github.com/agentscope-ai/agentscope-java/tree/0b6743b263ba8e39eb417e35048026f1e0196548) 2.0.4，实际 SDK 调用，依赖锁定 SHA-256。[接入说明](mod/dependencies/README.md)。 |
+| 记忆与社交 | [AI Town](https://github.com/a16z-infra/ai-town/tree/8e05997f2409275669c8344b84a51692e83f3f33) 部分机制的 Java 移植；没有嵌入完整 Convex 应用。[移植范围](third-party/ai-town/README.md)。 |
+| 光影与风动 | SDV-Radiance 的部分表面光照与投影、Simple Wind Shader 2D 的风动思路，适配现有 LWJGL 管线。[视觉方案与来源](docs/PLAN-REFERENCE-VISUALS-2026-10-24.md)。 |
+| 水面与像素显示 | GDQuest 二维水面算法、Sharp Shimmerless 缩放方案及自有纹理；保留对应来源与许可。[本地第三方目录](mosslume/third-party/)。 |
+| 地形与动画 | FastNoiseLite 地形噪声；libGDX Animation 的选帧思路。没有为这些效果另加一套游戏引擎。[固定来源清单](docs/research/prd-0.5-open-source-2026-10-23.json)。 |
+
+### 构建与检查
+
+需要 Python 3、JDK 21（编译目标 Java 17）、macOS 构建工具和本机合法运行资源。当前脚本仍包含原工作机的 JDK 路径，换机器时先调整 `scripts/build_mod.py`、`scripts/check_refactor.py`、`rebuild/build.py` 中的工具路径。
+
+已有本项目运行包时，可恢复被 Git 忽略的运行依赖，再构建适配器：
 
 ```sh
+python3 scripts/restore_release_runtime.py --app "$HOME/Applications/Mosslume.app"
 python3 scripts/check_refactor.py
 python3 scripts/package_refactor.py --skip-build
 ```
 
-隔离原生检查使用 `scripts/run_refactor_probe.py --case <新名字>`；`--reload` 验证同一档恢复，`--ladders --preset woodland` 验证洞穴往返，`--harvest` 验证原生采收与取消。`--ai` 是单独显式启用的三请求付费模型验证，常规测试不调用模型。每个首次案例必须使用新名字，证据默认写入忽略的 `build/refactor-evidence/`。检查会真实修改其专用 QA 存档，不应对个人资料目录使用探针。
+`check_refactor.py` 会先编译，再运行离线回归；AgentScope 依赖由构建脚本校验或下载。Apple Silicon 的 Java 17 运行时也需本机准备，不随源码仓库提交。更新默认写回唯一 Mosslume 入口，不创建一排新的预览应用。
 
-本次保存最新 Java 适配源码、运行素材、原创美术源图、素材导出与打包脚本、第三方 shader 来源和许可证，以及实际昼夜截图和视频。`mosslume/` 是原 `outputs/mosslume/` 的可移植资料快照；当前 `mod/` 是实际运行的适配器源码。个人存档、日志和测试缓存不在仓库中。
+<details>
+<summary><strong>隔离原生检查与已有验证范围</strong></summary>
 
-## 0.3.0 已保存效果
+使用 `python3 scripts/run_refactor_probe.py --case <全新案例名>` 建立专用 QA 存档，证据默认写入被忽略的 `build/refactor-evidence/`。不要将探针对准个人存档。`--reload` 检查重载，`--harvest` 检查原生采收，`--cognition --preset woodland` 检查认知、实际移动和气泡接线。
 
-- 清晰像素显示、连续树冠风动、紧凑人物比例和连续自然小径。
-- 昼夜环境光、营火及窗户局部暖光、GPU 树木和物品投影、岸边投向海面的阴影。
-- 已调暗的夜间环境，保留火焰和窗户自发光。
-- 最新适配器 SHA-256：`720feaac7f568127f946797281d1e88659591444937e753e7848205a2afa1234`。
+常规离线回归不读取真实密钥、不产生付费请求。`--ai` 是另行显式启用的付费模型检查，不能当作普通测试默认参数。
 
-实际画面对照在 `mosslume/validation/visual-baseline-0.3.0/`。当前 6 秒无截图性能段平均约 55.6 fps；仍不代表稳定 60 fps 或完整玩法回归。地图仍是视觉测试岛；AI 尚未接入。
+2026-10-26 发布备份前重新编译，42 项离线检查全部通过；新构建与已安装适配器的 1,097 个文件内容逐项相同。0.5.2 还保存了 960 组原生握持几何、12 个玩家和 60 个居民武器/方向组合、两个 Boss 的技能与实际扣血等此前原生验证证据。短时单场景性能检查约 10 秒、平均 58.61 FPS；不代表稳定 60 FPS、长局表现或所有地形已经验收。
 
-## 恢复 0.3.0 工作区
+详见 [0.5.2 实施记录](docs/IMPLEMENTATION-0.5.2-r8-combat-bosses.md) 与 [交付记录](mosslume/validation/combat-style-bosses-r8/delivery.json)。
 
-可运行 Mac 包与校验信息放在对应私有 Release。源码快照保留了此前脚本的相邻目录关系，恢复时使用以下布局：
+</details>
+
+## 还在完善
+
+- 树冠分层运动、风动自然度、建筑与人物比例，以及更丰富的场景构图。
+- 长时间探索、区域加载和复杂场景性能；连续世界已经接入，但完整全地形长局验收仍未完成。
+- 素材的实际使用覆盖、功能建筑与地形高差。部分已导入建筑目前只有储物功能，不能将源图数量当作玩法数量。
+- 更多角色专属动作、完整方向动画和 Boss 战斗平衡。弓尚无专用双手拉弦序列；两个 Boss 的原素材主要为侧视。
+- 从真实资源需求出发的 NPC 探索、精确交付、建造及分营地经营，目前仍处于方案阶段。
+
+现版保留光影与风动，但**尚未达到参考视频的完整效果，也没有完成全部 PRD**。
+
+## 开发记录
+
+| 版本 / 主题 | 记录 |
+| --- | --- |
+| **0.5.2 · 武器、人物一致性与原素材 Boss** | [实施记录](docs/IMPLEMENTATION-0.5.2-r8-combat-bosses.md) · [握持方案](docs/WEAPON-HAND-ATTACHMENT-r8.md) |
+| **0.5.1 · 居民生活与动作** | [原生生活、聊天站定与动作验证](docs/IMPLEMENTATION-0.5.1-r7-life-actions.md) |
+| **0.5.0 · 连续世界与场景** | [区域生成、卡住修复与视觉接入](docs/IMPLEMENTATION-0.5-r6-world-visuals.md) |
+| **0.4 · 伙伴记忆与地形** | [认知与社交](docs/IMPLEMENTATION-0.4-r5-companion-minds.md) · [自然荒野](docs/IMPLEMENTATION-0.4-r4-wilderness.md) |
+| **整体目标** | [功能与性能 PRD](docs/PRD-0.5-feature-optimization.md) · [世界交互与画面方案](docs/PLAN-WORLD-NPC-VISUALS-2026-10-24.md) |
+
+<details>
+<summary><strong>历史基线与恢复说明</strong></summary>
+
+`v0.3.0-visual-baseline.1` 是已保留的历史视觉基线，不代表当前 0.5.2 功能。旧版岛屿、独立 Preview 应用及旧资料目录是历史记录；当前日常入口与资料目录见“开始体验”。旧 v1–v3 世界保留原布局，不会自动重绘成 v4。
+
+恢复历史 0.3.0 时，先检出对应标签，按当时的相邻目录布局放置资料：
 
 ```text
 workspace/
-  necesse-island/       # 本仓库克隆目录
-  mosslume/            # 从本仓库 mosslume/ 复制出来
+  necesse-island/    本仓库
+  mosslume/          从该标签的 mosslume/ 复制出来
 ```
 
 ```sh
-git clone https://github.com/YEMIN11238/forest-island-necesse.git necesse-island
-cd necesse-island
 git checkout v0.3.0-visual-baseline.1
 cp -R mosslume ../mosslume
 python3 scripts/restore_release_runtime.py --app '/path/to/Mosslume S1 Preview.app'
@@ -42,40 +201,12 @@ cd ../mosslume
 python3 scripts/build_game.py --skip-export
 ```
 
-当前构建仍需配置 JDK 路径与 macOS 构建工具。默认重新打包独立预览，保留日常应用。运行包保持原有 Steam 依赖及验证流程，存档另外保存在用户资料目录。GitHub 中的美术快照与实际绑定素材分别见 `mosslume/art/`、`mosslume/runtime-art/` 和 `mod/resources/`。
+更早的 0.1.0 底座恢复使用 `scripts/restore_release_runtime.py` 与 `scripts/build_project.py`；该历史版包含 Intel JRE，Apple Silicon 需要 Rosetta。不要把这些要求与当前 ARM Java 17 运行时混淆。底座全量编译、接口与初始化核对记录位于 [rebuild/](rebuild/README.md)，不等同于游戏全部玩法均已回归。
 
-## 历史 0.1.0 底座备份
+</details>
 
-2026-10-21 的私有项目备份，版本 **0.1.0**。源码、美术和构建脚本保存在本仓库；可运行 Mac 应用位于 [Releases](https://github.com/YEMIN11238/forest-island-necesse/releases)。
+## 素材、凭据与使用范围
 
-## 已保存的内容
+本仓库是**私人开发快照**，包含第三方游戏的恢复代码，不附加整体开源授权，也不代表可以重新分发原游戏或其素材。第三方开源组件分别保留自身许可；用户提供的 Boss 素材与 AI 生成美术按各自来源记录管理。[Boss 原素材清单](mosslume/art/bosses-r8/direct-source-export.json) · [本批人物与备用设计生成记录](mosslume/art/generation-r8-prompts.json)。
 
-- `source-rebuild/`：6,504 份反编译并修复的 Java 源文件，包含客户端与服务器代码。
-- `mod/src/`：固定岛屿地图、原生玩法接入和画面适配。
-- `mod/resources/`：本项目已使用的树木、灌木、火焰、水面、房屋及物品素材。
-- `rebuild/`：全量构建、接口核对、初始化顺序核对和资源来源记录。
-- `scripts/`：素材与运行资源准备、构建和原生 Mac 应用打包。
-- `evidence/`：本次可运行版本的必要验证摘要。
-
-采集、制作、库存、种植、居民与存档继续使用原生系统。地图固定在我们的岛屿。树冠摇动、8 帧火焰、烟雾、上升荧光、水面变化和局部投影使用已有素材。
-
-## 恢复并运行
-
-从 Releases 下载 Mac 应用压缩包并解压。应用包含重建内核、素材和运行库；保持原有 Steam 可用后启动。正式存档位于 `~/Library/Application Support/ForestIslandNecesse/`，个人存档未上传。
-
-从该应用恢复源码工程依赖：
-
-```sh
-python3 scripts/restore_release_runtime.py --app '/path/to/林间小岛·Necesse.app'
-python3 scripts/build_project.py
-```
-
-重建需要 JDK 21 和 Xcode Command Line Tools。当前构建脚本保留原工作机的工具路径；新机器可先修改 `rebuild/build.py`、`scripts/build_mod.py` 中的 `javac` 路径。原生客户端使用包内 Intel JRE，Apple Silicon 仍需 Rosetta。
-
-## 核验范围
-
-已全量编译；7,540 个具名类的 public/protected 接口无差异；932 个类的静态字段初始化写入顺序已对齐。重建内核已实际启动并读回存档，制作、箱子、边界碰撞和地图跳转限制通过原生接口检查。
-
-未逐项回归整个游戏的全部玩法。人物和界面目前沿用 Necesse，道路阶梯边缘仍待细化。
-
-本仓库为私人项目快照，包含第三方游戏的恢复代码，不附加开源授权。运行日志、个人存档、测试缓存及大体积运行资源没有放入 Git 历史；对应运行资源随私有 Release 应用保存。
+个人存档、日志、测试缓存、模型密钥和本机费用记录不属于介绍页或源码分发内容。不要把本机 `deepseek.key`、私有配置或游戏存档加入 Git。

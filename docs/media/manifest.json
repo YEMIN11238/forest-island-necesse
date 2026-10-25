@@ -1,0 +1,82 @@
+{
+  "purpose": "GitHub README showcase",
+  "media_transform": "Exact copies of existing WebP exports; no pixel edits in this documentation update",
+  "total_bytes": 6288260,
+  "images": [
+    {
+      "file": "docs/media/mosslume-cover.webp",
+      "copied_from": "mosslume/branding/website-cards/mosslume-cover-day-v1.webp",
+      "sha256": "3776e09e21934291ab903723db97bd47f07add1936c39e1795c0bebf8c23f008",
+      "bytes": 661614,
+      "width": 1610,
+      "height": 977,
+      "type": "AI-generated-promotional-illustration-not-gameplay"
+    },
+    {
+      "file": "docs/media/camp-day.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/01-camp-day.webp",
+      "sha256": "6dbee80f0697820eeacf5c1a4d0a5ac571b41c2a259c6462ba52a8355289f4c4",
+      "bytes": 968634,
+      "width": 2400,
+      "height": 1800,
+      "type": "actual-in-game-development-capture",
+      "build": "0.5.1-life-actions-preview",
+      "note": "原生游戏画面，保留原始HUD。"
+    },
+    {
+      "file": "docs/media/camp-night.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/02-camp-night.webp",
+      "sha256": "55c44c34b1db05edf779e352ae75dd877f29dc531fcfa5e373575bf8e134b940",
+      "bytes": 635838,
+      "width": 2400,
+      "height": 1800,
+      "type": "actual-in-game-development-capture",
+      "build": "0.5.1-life-actions-preview",
+      "note": "原生游戏画面，保留原始HUD。"
+    },
+    {
+      "file": "docs/media/npc-conversation.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/03-npc-conversation.webp",
+      "sha256": "3caa5d17f5847962e12d7fd026db53e8ab724325bba81d389b747952ffe36d05",
+      "bytes": 1089932,
+      "width": 2400,
+      "height": 1740,
+      "type": "actual-in-game-development-capture",
+      "build": "0.4.6",
+      "note": "原生NPC气泡与任务历史的离线验证场景，不代表实时线上模型对话。"
+    },
+    {
+      "file": "docs/media/mushroom-forest.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/04-mushroom-forest.webp",
+      "sha256": "c420f98470927be06e5e127f56001dad449b55e8a8dfac8ac80995bc23547405",
+      "bytes": 1090096,
+      "width": 2400,
+      "height": 1800,
+      "type": "actual-in-game-development-capture",
+      "build": "0.4.0-r4-wilderness",
+      "note": "较早开发版本的原生地形截图。"
+    },
+    {
+      "file": "docs/media/snowfield.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/05-snowfield.webp",
+      "sha256": "9383784fdfcfd16c200c2335ef2f7ae65531ffbc238c05137c8fe8dfbb4d20c6",
+      "bytes": 796450,
+      "width": 2400,
+      "height": 1800,
+      "type": "actual-in-game-development-capture",
+      "build": "0.4.0-r4-wilderness",
+      "note": "较早开发版本的原生地形截图。"
+    },
+    {
+      "file": "docs/media/moonreaper-boss.webp",
+      "copied_from": "mosslume/branding/website-promo-v1/in-game/06-moonreaper-boss.webp",
+      "sha256": "0728ffc621cf9e0213a3d8dc11c5e14ee6cc608b453861f93e83045af49b5fe4",
+      "bytes": 1045696,
+      "width": 2400,
+      "height": 1740,
+      "type": "actual-in-game-development-capture",
+      "build": "0.5.2-combat-bosses",
+      "note": "原生Boss攻击验证场景，对象为测试用动物，不是玩家实战或平衡性展示。"
+    }
+  ]
+}
